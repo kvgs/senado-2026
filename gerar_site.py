@@ -101,6 +101,20 @@ for c in cands:
         "sequencial": c.get("sequencial_tse"),
         "suplentes": c.get("suplentes", []),
         "foto": None,   # encaixe: preenchido quando o dataset de fotos do TSE for baixado
+        # --- Fase 6: ficha completa para a pagina de perfil ---
+        "nascimento": c["pessoa"].get("data_nascimento"),
+        "escolaridade": c["pessoa"].get("escolaridade"),
+        "bens": c.get("bens_declarados_brl"),
+        "coligacao_comp": colig.get("composicao", ""),
+        "parlamentar": (c.get("situacao_parlamentar") or [None])[0],
+        "mandatos": c.get("mandatos_anteriores", []),
+        "cargos_exec": c.get("cargos_executivos_anteriores", []),
+        "cargos_repr": c.get("cargos_representacao", []),
+        "areas_declaradas": c.get("areas_atuacao_declaradas", []),
+        "base_eleitoral": c.get("base_eleitoral_declarada", []),
+        "obs_registro": (c.get("_pendencias") or []) + (
+            [c["_nota"]] if c.get("_nota") else []),
+        "concorrentes": c.get("candidaturas_concorrentes_2026", []),
     }
 
 ordem = sorted(cand_por_id, key=lambda k: int(cand_por_id[k]["numero"]))

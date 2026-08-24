@@ -194,6 +194,42 @@
   .selos-lista li{display:grid;grid-template-columns:11px minmax(0,1fr);gap:11px;font-size:.93rem;
     color:var(--ink-2)}
   .selos-lista .dot{margin-top:7px}
+  /* ---------- perfil (Fase 6) ---------- */
+  .voltar{display:inline-flex;align-items:center;gap:7px;font:inherit;font-size:.92rem;
+    font-weight:600;background:none;border:0;color:var(--s-registro);cursor:pointer;padding:8px 0;
+    text-decoration:underline;text-underline-offset:3px}
+  .perfil-topo{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap;margin-top:6px}
+  .perfil-topo .retrato{flex:0 0 84px;width:84px;height:84px;font-size:1.5rem}
+  .perfil-ident{min-width:min(280px,100%);flex:1}
+  .perfil-ident h2{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px}
+  .ficha-dl{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+    gap:12px 22px;margin:20px 0 0;padding:16px 18px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:4px}
+  .ficha-dl li{min-width:0}
+  .ficha-dl b{display:block;font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;
+    color:var(--muted);font-weight:600;margin-bottom:2px}
+  .ficha-dl span{font-size:.95rem}
+  .secao{margin-top:32px}
+  .secao > h3{padding-bottom:9px;border-bottom:1px solid var(--rule);margin-bottom:14px;
+    font-size:1.12rem;font-family:"Source Serif 4",Georgia,serif;font-weight:600}
+  .hist{list-style:none;display:flex;flex-direction:column;gap:7px}
+  .hist li{display:grid;grid-template-columns:4.2rem minmax(0,1fr);gap:12px;font-size:.94rem;
+    color:var(--ink-2)}
+  .hist .ano{font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums}
+  .hist .res-eleito{color:var(--s-oficial);font-weight:600}
+  .hist .res-nao{color:var(--muted)}
+  .tema-bloco{background:var(--surface);border:1px solid var(--rule);border-radius:4px;
+    margin-bottom:12px;overflow:hidden}
+  .tema-bloco > h4{margin:0;padding:12px 17px;background:var(--surface-2);
+    border-bottom:1px solid var(--rule);font-size:.95rem;font-weight:700;
+    font-family:system-ui,sans-serif}
+  .tema-bloco .card-body{padding:15px 17px}
+  .obs{background:var(--surface-2);border-left:3px solid var(--s-verificada);padding:11px 14px;
+    border-radius:0 3px 3px 0;font-size:.9rem;color:var(--ink-2);margin-bottom:9px}
+  .link-perfil{font:inherit;font-size:.88rem;font-weight:600;background:none;border:0;
+    color:var(--s-registro);cursor:pointer;padding:6px 0;text-decoration:underline;
+    text-underline-offset:3px;margin-top:9px;display:inline-block}
+
   .vis-oculto{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
     clip:rect(0 0 0 0);white-space:nowrap;border:0}
   @media (max-width:600px){
@@ -221,6 +257,7 @@
     <button role="tab" id="tab-temas" aria-controls="p-temas" aria-selected="false" tabindex="-1">Por tema</button>
     <button role="tab" id="tab-comparar" aria-controls="p-comparar" aria-selected="false" tabindex="-1">Comparar</button>
     <button role="tab" id="tab-pesquisa" aria-controls="p-pesquisa" aria-selected="false" tabindex="-1">Pesquisa</button>
+    <button role="tab" id="tab-perfil" aria-controls="p-perfil" aria-selected="false" tabindex="-1" hidden>Perfil</button>
   </div>
 
   <main id="principal">
@@ -265,6 +302,10 @@
         pesquisa. Ela não aparece junto de cada candidatura de propósito: repetir a porcentagem em
         todo cartão transformaria a lista num ranking.</p>
       <div id="saida-pesquisa"></div>
+    </div>
+    <div role="tabpanel" id="p-perfil" aria-labelledby="tab-perfil" tabindex="0" hidden>
+      <button class="voltar" id="btn-voltar" type="button">&larr; Voltar para a lista de candidaturas</button>
+      <div id="saida-perfil" aria-live="polite"></div>
     </div>
   </main>
 
@@ -421,6 +462,8 @@ function corpoTema(cid,tid){
       '<p class="bio">'+esc(c.bio)+'</p>'+
       '<p class="meta">Situação do registro: <strong>'+esc(c.situacao)+'</strong>, observada em '+
       esc(dataBR(c.situacao_em))+'. Suplentes: '+esc(c.suplentes.join(', ')||'não informados')+'.</p>'+
+      '<button class="link-perfil" data-perfil="'+cid+'" type="button">Ver perfil completo de '+
+      esc(c.nome)+' &rarr;</button>'+
       '</div></div></li>';
     return h;
   }).join('');
@@ -553,10 +596,138 @@ function renderComp(){
       if(n!==null){e.preventDefault();ativa(n,true);}
     });
   });
+  window.__ativaAba=function(id,foco){const k=tabs.findIndex(t=>t.id===id); if(k>=0) ativa(k,foco);};
   let ini=0;
-  try{const s=localStorage.getItem('aba');const k=tabs.findIndex(t=>t.id===s);if(k>=0)ini=k;}catch(e){}
+  try{const s=localStorage.getItem('aba');const k=tabs.findIndex(t=>t.id===s);
+      if(k>=0 && tabs[k].id!=='tab-perfil') ini=k;}catch(e){}
   ativa(ini,false);
 })();
+
+/* ---------- Fase 6: perfil por candidatura, enderecavel por link ---------- */
+const BRL = v => v==null ? '\u2014'
+  : 'R$ ' + v.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
+const CARGO = {deputado_federal:'Deputado federal',deputado_estadual:'Deputado estadual',
+  senador:'Senador',vereador:'Vereador',prefeito:'Prefeito',vice_governador:'Vice-governador',
+  presidente:'Presidente',suplente_senador:'Suplente de senador'};
+
+function renderPerfil(cid){
+  const c=D.candidatos[cid]; if(!c) return false;
+  let h='<div class="perfil-topo">'+retrato(c)+'<div class="perfil-ident">'+
+    '<h2><span class="urna">'+esc(c.numero)+'</span> '+esc(c.nome)+
+    ' <span class="sigla">'+esc(c.partido)+'</span></h2>'+
+    '<p class="meta" style="margin-top:7px">'+esc(c.completo)+'</p>'+
+    '<p class="bio" style="margin-top:9px;max-width:64ch">'+esc(c.bio)+'</p></div></div>';
+
+  const linhas=[
+    ['N\u00famero de urna',c.numero],['Partido',c.partido+' \u2014 '+c.partido_nome],
+    ['Coliga\u00e7\u00e3o',c.coligacao||'Sem coliga\u00e7\u00e3o'],
+    ['Situa\u00e7\u00e3o do registro',c.situacao+' (observada em '+dataBR(c.situacao_em)+')'],
+    ['Ocupa\u00e7\u00e3o declarada',c.ocupacao||'\u2014'],
+    ['Escolaridade',c.escolaridade||'\u2014'],
+    ['Nascimento',dataBR(c.nascimento)||'\u2014'],
+    ['Bens declarados',BRL(c.bens)],
+    ['Sequencial no TSE',c.sequencial||'\u2014'],
+    ['Suplentes',c.suplentes.length?c.suplentes.join(', '):'n\u00e3o informados']
+  ];
+  if(c.coligacao_comp) linhas.push(['Composi\u00e7\u00e3o da coliga\u00e7\u00e3o',c.coligacao_comp]);
+  if(c.areas_declaradas&&c.areas_declaradas.length)
+    linhas.push(['\u00c1reas de atua\u00e7\u00e3o que declarou',c.areas_declaradas.join(', ')]);
+  if(c.base_eleitoral&&c.base_eleitoral.length)
+    linhas.push(['Base eleitoral que declarou',c.base_eleitoral.join(', ')]);
+  h+='<ul class="ficha-dl">'+linhas.map(function(par){
+      return '<li><b>'+esc(par[0])+'</b><span>'+esc(par[1])+'</span></li>';}).join('')+'</ul>';
+
+  let obs=(c.obs_registro||[]).slice();
+  (c.concorrentes||[]).forEach(function(x){
+    obs.push('Tamb\u00e9m registrou candidatura a '+(CARGO[x.cargo]||x.cargo).toLowerCase()+
+      ' ('+x.uf+', n\u00famero '+x.numero_urna+'), com situa\u00e7\u00e3o: '+x.situacao+'.');});
+  if(obs.length){
+    h+='<div class="secao"><h3>Observa\u00e7\u00f5es sobre o registro</h3>'+
+       obs.map(function(o){return '<p class="obs">'+esc(o)+'</p>';}).join('')+'</div>';
+  }
+
+  if(c.parlamentar){
+    const pl=c.parlamentar;
+    const casa = pl.casa==='camara' ? 'C\u00e2mara dos Deputados'
+               : pl.casa==='alesp'  ? 'Assembleia Legislativa de S\u00e3o Paulo' : pl.casa;
+    h+='<div class="secao"><h3>Mandato em exerc\u00edcio</h3><p class="txt">Casa: <strong>'+
+      esc(casa)+'</strong>. Situa\u00e7\u00e3o: <strong>'+esc(pl.situacao||'\u2014')+'</strong>'+
+      (pl.desde?', em exerc\u00edcio desde <strong>'+esc(dataBR(pl.desde))+'</strong>':'')+'.'+
+      (pl.cargo_na_casa?' Ocupa o cargo de <strong>'+esc(pl.cargo_na_casa)+'</strong>.':'')+'</p>';
+    if(pl.motivo_afastamento_anterior){
+      const m=pl.motivo_afastamento_anterior;
+      h+='<p class="obs" style="margin-top:10px"><strong>Contexto necess\u00e1rio:</strong> antes dessa '+
+        'data, '+esc(m.charAt(0).toLowerCase()+m.slice(1))+'. Produ\u00e7\u00e3o legislativa menor no '+
+        'per\u00edodo reflete aus\u00eancia formal do parlamento, n\u00e3o inatividade.</p>';
+    }
+    h+='</div>';
+  }
+
+  if(c.mandatos&&c.mandatos.length){
+    h+='<div class="secao"><h3>Hist\u00f3rico eleitoral</h3><ul class="hist">'+
+      c.mandatos.map(function(m){
+        const el=String(m.resultado||'').indexOf('eleit')===0;
+        const onde=m.uf||m.municipio||'';
+        return '<li><span class="ano">'+esc(m.ano)+'</span><span>'+
+          esc(CARGO[m.cargo]||m.cargo)+(onde?' \u2014 '+esc(onde):'')+
+          (m.partido_na_epoca?' (pelo '+esc(String(m.partido_na_epoca).toUpperCase())+')':'')+
+          ' \u00b7 <span class="'+(el?'res-eleito':'res-nao')+'">'+esc(m.resultado)+'</span>'+
+          (m.votos?' \u00b7 '+m.votos.toLocaleString('pt-BR')+' votos':'')+'</span></li>';
+      }).join('')+'</ul></div>';
+  }
+  if(c.cargos_exec&&c.cargos_exec.length){
+    h+='<div class="secao"><h3>Cargos executivos anteriores</h3><ul class="hist">'+
+      c.cargos_exec.map(function(x){return '<li><span class="ano">'+esc(String(x.de||'').slice(0,4))+
+        '</span><span>'+esc(x.cargo)+' \u2014 '+esc(x.ente)+'</span></li>';}).join('')+'</ul></div>';
+  }
+  if(c.cargos_repr&&c.cargos_repr.length){
+    h+='<div class="secao"><h3>Cargos de representa\u00e7\u00e3o</h3><ul class="hist">'+
+      c.cargos_repr.map(function(x){return '<li><span class="ano">atual</span><span>'+
+        esc(x.cargo)+'</span></li>';}).join('')+'</ul></div>';
+  }
+
+  h+='<div class="secao"><h3>Posi\u00e7\u00f5es nos 10 temas</h3>';
+  D.temas.forEach(function(tm){
+    h+='<div class="tema-bloco"><h4>'+esc(tm.nome)+'</h4><div class="card-body">'+
+       corpoTema(cid,tm.id)+'</div></div>';});
+  h+='</div>';
+
+  h+='<p style="margin-top:26px;font-size:.9rem;color:var(--muted)">A posi\u00e7\u00e3o desta '+
+     'candidatura na pesquisa de inten\u00e7\u00e3o de voto est\u00e1 na aba <strong>Pesquisa</strong>, '+
+     'com a ficha t\u00e9cnica completa. N\u00e3o aparece aqui para que o perfil n\u00e3o vire placar.</p>';
+
+  document.getElementById('saida-perfil').innerHTML=h;
+  return true;
+}
+
+function abrirPerfil(cid,viaHash){
+  if(!renderPerfil(cid)) return;
+  const tb=document.getElementById('tab-perfil');
+  tb.hidden=false; tb.textContent='Perfil: '+D.candidatos[cid].nome;
+  window.__ativaAba(tb.id,false);
+  if(!viaHash) location.hash='#perfil/'+D.candidatos[cid].numero;
+  const alvo=document.querySelector('#saida-perfil h2');
+  if(alvo){ alvo.setAttribute('tabindex','-1'); alvo.focus(); }
+}
+
+document.addEventListener('click',function(e){
+  const b=e.target.closest('[data-perfil]');
+  if(b){ e.preventDefault(); abrirPerfil(b.dataset.perfil,false); }
+});
+document.getElementById('btn-voltar').addEventListener('click',function(){
+  history.pushState('',document.title,location.pathname+location.search);
+  window.__ativaAba('tab-candidatos',true);
+});
+
+function porHash(){
+  const m=(location.hash||'').match(/^#perfil\/(\d+)$/);
+  if(!m) return false;
+  const cid=D.ordem.find(function(k){return D.candidatos[k].numero===m[1];});
+  if(cid){ abrirPerfil(cid,true); return true; }
+  return false;
+}
+window.addEventListener('hashchange',function(){
+  if(!porHash()) window.__ativaAba('tab-candidatos',false);});
 
 preencheSelects();
 renderChecks();
@@ -565,4 +736,5 @@ renderComp();
 document.getElementById('sel-tema').addEventListener('change',renderTema);
 document.getElementById('sel-tema-comp').addEventListener('change',renderComp);
 document.getElementById('checks').addEventListener('change',renderComp);
+porHash();   /* link direto para um perfil vence a aba guardada */
 </script>
