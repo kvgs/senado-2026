@@ -41,6 +41,14 @@ from email.message import EmailMessage
 
 PADRAO_URL = "https://agente-senado-sp-2026.senado-2026.workers.dev"
 
+# A Cloudflare bloqueia o User-Agent padrao do Python ("Python-urllib/3.x") com
+# erro 1010 antes de a requisicao chegar no worker. Um identificador proprio
+# passa — e diz de verdade quem esta chamando, que e o que um User-Agent serve
+# para fazer.
+AGENTE_HTTP = "senado-sp-2026-enviar/1.0 (+https://kvgs.github.io/senado-sp-2026/)"
+
+QUEBRA = chr(10)   # escape de nova linha nao sobrevive a todo caminho de edicao
+
 
 # --------------------------------------------------------------- credenciais
 
@@ -58,15 +66,28 @@ def chamar(url, token, caminho, corpo=None):
     req = urllib.request.Request(
         url.rstrip("/") + caminho,
         data=json.dumps(corpo).encode("utf-8") if corpo is not None else None,
-        headers={"x-token": token, "content-type": "application/json"},
+        headers={"x-token": token, "content-type": "application/json",
+                 "User-Agent": AGENTE_HTTP},
         method="POST" if corpo is not None else "GET",
     )
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
             return json.loads(r.read().decode("utf-8"))
     except urllib.error.HTTPError as e:
-        detalhe = e.read().decode("utf-8", "replace")[:200]
-        raise SystemExit(f"Erro {e.code} ao falar com o backend: {detalhe}")
+        detalhe = e.read().decode("utf-8", "replace")
+        if e.code == 401:
+            raise SystemExit(QUEBRA.join([
+                "Token recusado (401). Confira se e o mesmo valor gravado com:",
+                "  npx wrangler secret put TOKEN_ADMIN",
+            ]))
+        if "1010" in detalhe:
+            raise SystemExit(QUEBRA.join([
+                "A Cloudflare bloqueou a chamada antes de chegar no worker (erro 1010).",
+                "Isso acontece quando o User-Agent parece robo. O script ja manda um",
+                "identificador proprio; se voltou a acontecer, veja em Security -> Bots,",
+                "no painel da Cloudflare, se o Bot Fight Mode foi ligado.",
+            ]))
+        raise SystemExit(f"Erro {e.code} ao falar com o backend: {detalhe[:200]}")
     except urllib.error.URLError as e:
         raise SystemExit(f"Nao consegui alcancar o backend: {e.reason}")
 
