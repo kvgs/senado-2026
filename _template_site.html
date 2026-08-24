@@ -194,6 +194,34 @@
   .selos-lista li{display:grid;grid-template-columns:11px minmax(0,1fr);gap:11px;font-size:.93rem;
     color:var(--ink-2)}
   .selos-lista .dot{margin-top:7px}
+  /* ---------- modo assistido ---------- */
+  .opcoes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin-top:18px}
+  .opcao{background:var(--surface);border:1px solid var(--rule);border-radius:4px;padding:16px 18px}
+  .opcao h4{margin:0 0 7px;font-size:1rem;font-weight:700;font-family:system-ui,sans-serif}
+  .opcao p{font-size:.9rem;color:var(--ink-2);margin-bottom:11px}
+  .opcao button{font:inherit;font-size:.92rem;font-weight:600;padding:10px 16px;border:1px solid var(--ink);
+    border-radius:4px;background:var(--ink);color:var(--ground);cursor:pointer}
+  .opcao button.sec{background:var(--surface);color:var(--ink)}
+  .contatos-lista{list-style:none;display:flex;flex-direction:column;gap:9px;margin-top:16px}
+  .contatos-lista li{background:var(--surface);border:1px solid var(--rule);border-radius:4px;
+    padding:13px 16px}
+  .contatos-lista .quem-c{display:flex;flex-wrap:wrap;gap:9px;align-items:baseline;margin-bottom:8px}
+  .contatos-lista .acoes{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .contatos-lista .acoes a,.contatos-lista .acoes button{font:inherit;font-size:.87rem;font-weight:600;
+    padding:8px 13px;border:1px solid var(--rule-strong);border-radius:4px;background:var(--surface);
+    color:var(--s-registro);cursor:pointer;text-decoration:none;display:inline-block}
+  .contatos-lista .acoes a:hover,.contatos-lista .acoes button:hover{background:var(--surface-2)}
+  .sem-contato{font-size:.87rem;color:var(--muted)}
+  .guardadas{list-style:none;display:flex;flex-direction:column;gap:7px;margin-top:14px}
+  .guardadas li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:center;
+    background:var(--surface);border:1px solid var(--rule);border-radius:4px;padding:10px 14px;
+    font-size:.92rem}
+  .guardadas .data{font-size:.78rem;color:var(--muted)}
+  .guardadas button{font:inherit;font-size:.82rem;padding:5px 10px;border:1px solid var(--rule-strong);
+    border-radius:4px;background:var(--surface);color:var(--ink-2);cursor:pointer}
+  .nota-envio{margin-top:16px;padding:13px 16px;background:var(--surface-2);border-radius:4px;
+    font-size:.87rem;color:var(--ink-2)}
+
   /* ---------- consulta (Fase 7) ---------- */
   .busca-caixa{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px}
   .busca-caixa input{flex:1 1 320px;font:inherit;font-size:1.02rem;padding:12px 14px;
@@ -912,6 +940,20 @@ function responder(q){
        'há informação catalogada que corresponda à sua pergunta — não que o assunto não exista nem que '+
        'as candidaturas não tenham posição sobre ele. Tente um termo mais simples, o nome de uma '+
        'candidatura, ou um dos temas.</div>';
+    h+='<div class="opcoes">'+
+       '<div class="opcao"><h4>Pergunte você mesmo</h4>'+
+       '<p>Abrimos um e-mail já redigido, em tom formal, para o contato oficial da candidatura — e '+
+       'preparamos um texto curto para mensagem direta. Você lê, ajusta se quiser, e envia.</p>'+
+       '<button type="button" data-abrir="box-contatos" aria-expanded="false" '+
+       'aria-controls="box-contatos">Ver contatos e textos prontos</button></div>'+
+       '<div class="opcao"><h4>Guardar a pergunta</h4>'+
+       '<p>Fica salva neste navegador, só para você, e pode ser exportada. Serve para você levar a '+
+       'lista adiante — nada é enviado nem sai do seu computador.</p>'+
+       '<button type="button" class="sec" id="btn-guardar">Guardar esta pergunta</button></div>'+
+       '</div>'+
+       '<div id="box-contatos" hidden>'+blocoContatos(q)+'</div>'+
+       '<div style="margin-top:24px"><h3 style="font-size:1.02rem">Perguntas que você guardou</h3>'+
+       '<div id="guardadas-box"></div></div>';
   } else {
     h+='<p style="margin-top:20px;font-size:.9rem;color:var(--muted)">'+achou+
        ' resultado(s), em ordem de número de urna. A ordem não expressa relevância nem preferência.</p>'+corpo;
@@ -921,6 +963,10 @@ function responder(q){
        'o que numa resposta corrida é fácil esquecer, porque texto fluente soa mais seguro do que é.</div>';
   }
   out.innerHTML=h;
+  const bg=document.getElementById('btn-guardar');
+  if(bg) bg.addEventListener('click',function(){ guardarPergunta(q); renderGuardadas();
+    bg.textContent='Guardada'; bg.disabled=true; });
+  renderGuardadas();
 }
 
 (function(){
@@ -942,6 +988,126 @@ function responder(q){
     e.preventDefault(); responder(document.getElementById('q').value);
   });
 })();
+
+/* ---------- modo assistido: ajudar a perguntar, sem enviar por ninguem ---------- */
+const CHAVE_PERG = 'perguntas_sem_resposta';
+
+function perguntasGuardadas(){
+  try{ return JSON.parse(localStorage.getItem(CHAVE_PERG)||'[]'); }catch(e){ return []; }
+}
+function guardarPergunta(q){
+  try{
+    const l=perguntasGuardadas();
+    if(l.some(function(x){return x.q===q;})) return l;
+    l.unshift({q:q, em:new Date().toISOString().slice(0,10)});
+    localStorage.setItem(CHAVE_PERG, JSON.stringify(l.slice(0,50)));
+    return l;
+  }catch(e){ return perguntasGuardadas(); }
+}
+function esquecerPergunta(q){
+  try{
+    const l=perguntasGuardadas().filter(function(x){return x.q!==q;});
+    localStorage.setItem(CHAVE_PERG, JSON.stringify(l));
+  }catch(e){}
+  renderGuardadas();
+}
+
+function corpoEmail(c,q){
+  return 'Prezado(a) '+c.nome+',\n\n'+
+    'Escrevo como eleitor(a) de São Paulo. Consultei o site público que reúne as propostas das '+
+    'candidaturas ao Senado Federal por São Paulo nas eleições de 2026, organizadas por tema e com a '+
+    'fonte de cada informação, e não encontrei posição registrada da sua candidatura sobre o seguinte:\n\n'+
+    '    '+q+'\n\n'+
+    'Gostaria de saber qual é a sua posição sobre esse ponto. Se houver documento, programa ou material '+
+    'público que trate do assunto, o link já é suficiente — e será incluído no site com a devida '+
+    'atribuição à sua candidatura.\n\n'+
+    'O site é https://kvgs.github.io/senado-sp-2026/ e nele consta a fonte de cada informação exibida, '+
+    'bem como os casos em que não localizamos fonte, sinalizados como tal.\n\n'+
+    'Agradeço a atenção.\n';
+}
+function textoDM(c,q){
+  return 'Olá! Sou eleitor(a) de SP. Não encontrei a posição da sua candidatura sobre: '+q+
+         ' Consegue indicar? Se houver material público, o link basta. (Consulta em '+
+         'kvgs.github.io/senado-sp-2026)';
+}
+
+function blocoContatos(q){
+  let h='<ul class="contatos-lista">';
+  for(const cid of D.ordem){
+    const c=D.candidatos[cid], ct=c.contato||{};
+    h+='<li><div class="quem-c"><span class="urna">'+esc(c.numero)+'</span><strong>'+esc(c.nome)+
+       '</strong><span class="sigla">'+esc(c.partido)+'</span></div>';
+    if(ct.email){
+      const assunto='Pergunta de eleitor sobre proposta - Senado SP 2026';
+      const url='mailto:'+encodeURIComponent(ct.email)+'?subject='+encodeURIComponent(assunto)+
+                '&body='+encodeURIComponent(corpoEmail(c,q));
+      h+='<div class="acoes">'+
+         '<a href="'+url+'">Abrir e-mail já escrito</a>'+
+         '<button type="button" data-copiar="'+esc(textoDM(c,q))+'">Copiar texto para mensagem</button>'+
+         '</div>'+
+         '<p class="sem-contato" style="margin-top:8px">'+esc(ct.email)+' — '+esc(ct.email_fonte)+
+         '. E-mail institucional do gabinete, não de campanha.</p>';
+    } else {
+      h+='<p class="sem-contato">Contato oficial ainda não disponível. O dataset de redes sociais de '+
+         'candidatos do TSE, autodeclarado no registro, está pendente. Não usamos contato de outra '+
+         'origem para não haver risco de escrever para a pessoa errada.</p>'+
+         '<div class="acoes"><button type="button" data-copiar="'+esc(textoDM(c,q))+
+         '">Copiar texto para mensagem</button></div>';
+    }
+    h+='</li>';
+  }
+  return h+'</ul>'+
+    '<p class="nota-envio"><strong>Quem envia é você, e é de propósito.</strong> O site prepara o texto '+
+    'mas não manda nada em nome de ninguém. A API do Instagram não permite mensagem não solicitada, e '+
+    'um botão de envio automático num site público viraria um canal de disparo em massa — com mensagem '+
+    'assinada por terceiros. Assim você lê antes, envia do seu endereço e responde pelo que escreveu. '+
+    'Dos '+D.ordem.length+' contatos, '+D.ordem.filter(function(k){return (D.candidatos[k].contato||{}).email;}).length+
+    ' têm e-mail oficial hoje — e só porque têm mandato, o que favorece quem já foi eleito.</p>';
+}
+
+function renderGuardadas(){
+  const alvo=document.getElementById('guardadas-box');
+  if(!alvo) return;
+  const l=perguntasGuardadas();
+  if(!l.length){ alvo.innerHTML='<p class="sem-contato">Nenhuma pergunta guardada neste navegador.</p>'; return; }
+  alvo.innerHTML='<ul class="guardadas">'+l.map(function(x){
+      return '<li><span>'+esc(x.q)+'<br><span class="data">guardada em '+esc(x.em)+'</span></span>'+
+             '<button type="button" data-esquecer="'+esc(x.q)+'">Remover</button></li>';}).join('')+'</ul>'+
+    '<div class="acoes" style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">'+
+    '<button type="button" id="exportar-perg" class="sec">Exportar como texto</button></div>'+
+    '<p class="sem-contof sem-contato" style="margin-top:10px">Estas perguntas ficam apenas neste '+
+    'navegador. Não são enviadas a ninguém e não saem do seu computador.</p>';
+}
+
+document.addEventListener('click',function(e){
+  const cp=e.target.closest('[data-copiar]');
+  if(cp){
+    const txt=cp.dataset.copiar;
+    const antigo=cp.textContent;
+    const feito=function(){ cp.textContent='Copiado'; setTimeout(function(){cp.textContent=antigo;},1600); };
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(txt).then(feito,function(){window.prompt('Copie o texto:',txt);});
+    } else { window.prompt('Copie o texto:',txt); }
+    return;
+  }
+  const esq=e.target.closest('[data-esquecer]');
+  if(esq){ esquecerPergunta(esq.dataset.esquecer); return; }
+  if(e.target.id==='exportar-perg'){
+    const l=perguntasGuardadas();
+    const txt='Perguntas sem resposta no acervo\n'+
+      'Senado por Sao Paulo 2026 - kvgs.github.io/senado-sp-2026\n\n'+
+      l.map(function(x,i){return (i+1)+'. '+x.q+'   ['+x.em+']';}).join('\n')+'\n';
+    const a=document.createElement('a');
+    a.href='data:text/plain;charset=utf-8,'+encodeURIComponent(txt);
+    a.download='perguntas-sem-resposta.txt';
+    document.body.appendChild(a); a.click(); a.remove();
+  }
+  const op=e.target.closest('[data-abrir]');
+  if(op){
+    const alvo=document.getElementById(op.dataset.abrir);
+    if(alvo){ alvo.hidden=!alvo.hidden; op.setAttribute('aria-expanded', alvo.hidden?'false':'true'); }
+  }
+});
 
 preencheSelects();
 renderChecks();

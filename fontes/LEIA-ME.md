@@ -60,6 +60,28 @@ a vir do documento registrado.
 **O 2 é o programa do PCB** registrado no TSE, que substitui a página do
 pcb.org.br como fonte de Petter Maahs.
 
+## Pendente de download — dataset de contatos do TSE
+
+Para o recurso "pergunte você mesmo" funcionar para as 15 candidaturas, falta
+o dataset oficial de **Redes sociais de candidatos** do TSE — dado
+autodeclarado pelo próprio candidato à Justiça Eleitoral no ato do registro.
+
+1. Abra no navegador: **https://dadosabertos.tse.jus.br/dataset/candidatos-2026**
+2. Procure o arquivo de **redes sociais de candidatos** (nome costuma ser algo
+   como `rede_social_candidato_2026.zip`)
+3. Baixe e coloque nesta pasta, com o nome **`redes-sociais-candidatos-2026.zip`**
+
+Hoje só 4 das 15 candidaturas têm contato, e por um motivo que enviesa: o
+e-mail vem do **gabinete**, então só existe para quem já tem mandato — Marina
+Silva, Guilherme Derrite, Ricardo Salles e André do Prado. As outras 11
+aparecem como "contato não disponível", o que é honesto mas favorece quem já
+está eleito. Com esse dataset, todas as 15 ficam no mesmo pé.
+
+⚠️ **Regra que não vai ser flexibilizada:** só entra contato de fonte oficial.
+Nunca raspagem de rede social, nunca contato achado em busca. O risco de
+mandar mensagem de eleitor para a pessoa errada, com nome de candidato ao
+lado, é alto demais.
+
 ## Ainda por localizar — 3 documentos que provavelmente existem
 
 Não achei a URL destes, mas há razão concreta para acreditar que existem:

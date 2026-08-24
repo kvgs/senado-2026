@@ -115,6 +115,7 @@ for c in cands:
         "obs_registro": (c.get("_pendencias") or []) + (
             [c["_nota"]] if c.get("_nota") else []),
         "concorrentes": c.get("candidaturas_concorrentes_2026", []),
+        "contato": c.get("contato") or {},
     }
 
 ordem = sorted(cand_por_id, key=lambda k: int(cand_por_id[k]["numero"]))
