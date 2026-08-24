@@ -251,7 +251,7 @@
   .aviso-rev b{color:var(--alert)}
 
   /* ---------- resumo redigido por IA (acessorio, nunca a voz principal) ---------- */
-  .ia{margin-top:26px;padding:16px 18px;background:var(--surface);
+  .ia{margin-top:18px;padding:16px 18px;background:var(--surface);
     border:1px solid var(--rule-strong);border-radius:4px}
   .ia > h3{margin:0 0 6px;font-size:1rem;font-family:system-ui,sans-serif}
   .ia .chamada{font-size:.88rem;color:var(--muted);margin-bottom:12px}
@@ -380,10 +380,16 @@
     </div>
     <div role="tabpanel" id="p-consulta" aria-labelledby="tab-consulta" tabindex="0" hidden>
       <h2>Perguntar ao acervo</h2>
-      <p style="margin-top:10px;color:var(--ink-2);max-width:72ch">Esta busca devolve <strong>apenas
-        informações que existem no acervo</strong>, com a fonte de cada uma. Ela não redige respostas,
-        não interpreta e não completa com conhecimento de fora — se não houver informação, ela diz que
-        não há, em vez de inventar.</p>
+      <p style="margin-top:10px;color:var(--ink-2);max-width:72ch">A busca devolve <strong>apenas
+        informações que existem no acervo</strong>, com a fonte de cada uma. Ela não completa com
+        conhecimento de fora: se não houver informação, ela diz que não há, em vez de inventar.</p>
+      <p style="margin-top:10px;color:var(--ink-2);max-width:72ch">Quando a busca encontra alguma
+        coisa, você pode pedir um <strong>resumo em texto corrido, escrito por inteligência
+        artificial</strong>. Ele só aparece se você clicar, recebe apenas as informações que a busca
+        já achou — nem o acervo inteiro, nem a internet — e é instruído a não acrescentar nada.
+        Resumir, porém, é interpretar: ele pode perder uma ressalva ou trocar de quem é a proposta.
+        <strong>Quando a busca não acha nada, não há resumo nenhum</strong> — a IA não é chamada para
+        preencher vazio.</p>
       <form class="busca-caixa" id="form-busca" role="search">
         <label for="q" class="vis-oculto">Sua pergunta ou termo de busca</label>
         <input type="search" id="q" placeholder="Ex.: o que Marina Silva propõe sobre saúde?"
@@ -1000,6 +1006,22 @@ function responder(q){
   }
 
   h+='<div class="resp-cabeca"><p class="q">'+esc(q)+'</p><p class="como">'+esc(como)+'</p></div>';
+
+  /* Resumo no topo, por decisao de produto: a maioria das pessoas quer a sintese
+     primeiro. Contrapesos, porque sintese no topo desestimula descer ate a fonte:
+     ele NAO aparece sozinho (exige clique), a ressalva vem grudada nele, e os
+     numeros [n] remetem as linhas logo abaixo. */
+  const usados=COLETA||[]; COLETA=null;
+  if(D.agente_url && achou && usados.length){
+    h+='<div class="ia"><h3>Resumo em texto corrido</h3>'+
+       '<p class="chamada">Um modelo de linguagem pode reescrever em um parágrafo só as '+
+       usados.length+' informação(ões) que aparecem abaixo. Ele recebe apenas essas linhas — '+
+       'não o acervo inteiro, não a internet — e é instruído a não acrescentar nada. '+
+       'É opcional: a resposta com fonte, abaixo, já está completa sem ele.</p>'+
+       '<button type="button" id="btn-ia">Redigir resumo</button>'+
+       '<div id="ia-saida" aria-live="polite"></div></div>';
+  }
+
   if(!achou){
     h+='<div class="resp-nada"><b>Não encontrei nada no acervo para isso.</b> Isto significa que não '+
        'há informação catalogada que corresponda à sua pergunta — não que o assunto não exista nem que '+
@@ -1028,20 +1050,6 @@ function responder(q){
        'o que numa resposta corrida é fácil esquecer, porque texto fluente soa mais seguro do que é.</div>';
   }
 
-  /* O resumo em texto corrido vem DEPOIS das fontes, e nao antes, porque a
-     informacao com procedencia e a resposta — o resumo e conveniencia. */
-  const usados=COLETA||[]; COLETA=null;
-  const podeIA = D.agente_url && achou && usados.length;
-  if(podeIA){
-    h+='<div class="ia"><h3>Resumo em texto corrido</h3>'+
-       '<p class="chamada">Um modelo de linguagem pode reescrever as '+usados.length+
-       ' informação(ões) acima em um parágrafo só. Ele recebe apenas essas linhas — '+
-       'não o acervo inteiro, não a internet — e é instruído a não acrescentar nada. '+
-       'É opcional: a resposta com fonte já está completa acima.</p>'+
-       '<button type="button" id="btn-ia">Redigir resumo</button>'+
-       '<div id="ia-saida" aria-live="polite"></div></div>';
-  }
-
   out.innerHTML=h;
   const bg=document.getElementById('btn-guardar');
   if(bg) bg.addEventListener('click',function(){ guardarPergunta(q); renderGuardadas();
@@ -1064,7 +1072,8 @@ function linhaParaAgente(i){
 }
 
 function legendaIA(linhas){
-  return '<div class="legenda"><p>De onde veio cada número:</p><ol>'+
+  return '<div class="legenda"><p>De onde veio cada número (o detalhe com fonte '+
+      'e selo está logo abaixo, na mesma ordem):</p><ol>'+
     linhas.map(function(l){
       return '<li>'+esc(l.cand)+' — '+esc(l.tema)+
              (l.de_partido?' — proposta do partido '+esc(l.partido):'')+
@@ -1106,13 +1115,13 @@ async function pedirResumo(pergunta, usados, botao){
   alvo.innerHTML='<div class="texto">'+
       paras.map(function(x){return '<p>'+esc(x.trim())+'</p>';}).join('')+'</div>'+
       legendaIA(linhas)+
-      (cortou?'<p class="legenda"><strong>Atenção:</strong> a resposta acima tinha '+
+      (cortou?'<p class="legenda"><strong>Atenção:</strong> a resposta abaixo tem '+
               usados.length+' informações e o resumo usou apenas as '+IA_MAX_LINHAS+
               ' primeiras. Ele não cobre tudo.</p>':'')+
       '<div class="rodape"><b>Texto gerado por IA.</b> Ele reescreve as informações '+
-      'listadas acima e não pode acrescentar outras, mas pode errar ao resumir, '+
+      'listadas abaixo e não pode acrescentar outras, mas pode errar ao resumir, '+
       'perder uma ressalva ou trocar de quem é a proposta. Em caso de dúvida, o que '+
-      'vale é o texto original com a fonte, logo acima — e nenhuma dessas informações '+
+      'vale é o texto original com a fonte, logo abaixo — e nenhuma dessas informações '+
       'passou por revisão humana ainda.</div>';
 }
 
