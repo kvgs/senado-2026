@@ -1074,7 +1074,8 @@ function renderGuardadas(){
       return '<li><span>'+esc(x.q)+'<br><span class="data">guardada em '+esc(x.em)+'</span></span>'+
              '<button type="button" data-esquecer="'+esc(x.q)+'">Remover</button></li>';}).join('')+'</ul>'+
     '<div class="acoes" style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">'+
-    '<button type="button" id="exportar-perg" class="sec">Exportar como texto</button></div>'+
+    '<button type="button" id="exportar-perg" class="sec">Mostrar lista para copiar</button></div>'+
+    '<div id="export-box" hidden style="margin-top:12px"></div>'+
     '<p class="sem-contof sem-contato" style="margin-top:10px">Estas perguntas ficam apenas neste '+
     'navegador. Não são enviadas a ninguém e não saem do seu computador.</p>';
 }
@@ -1093,14 +1094,28 @@ document.addEventListener('click',function(e){
   const esq=e.target.closest('[data-esquecer]');
   if(esq){ esquecerPergunta(esq.dataset.esquecer); return; }
   if(e.target.id==='exportar-perg'){
+    /* Nada de link de download: em visualizadores embutidos a pagina nao recebe
+       permissao de download e o botao simplesmente nao faz nada. Botao que morre
+       em um dos contextos e pior que botao nenhum. Campo selecionavel + copiar
+       funciona em qualquer lugar — e para uma lista de perguntas, copiar e mais
+       util que baixar um .txt. */
     const l=perguntasGuardadas();
     const txt='Perguntas sem resposta no acervo\n'+
       'Senado por Sao Paulo 2026 - kvgs.github.io/senado-sp-2026\n\n'+
-      l.map(function(x,i){return (i+1)+'. '+x.q+'   ['+x.em+']';}).join('\n')+'\n';
-    const a=document.createElement('a');
-    a.href='data:text/plain;charset=utf-8,'+encodeURIComponent(txt);
-    a.download='perguntas-sem-resposta.txt';
-    document.body.appendChild(a); a.click(); a.remove();
+      l.map(function(x,i){return (i+1)+'. '+x.q+'   ['+x.em+']';}).join('\n');
+    const box=document.getElementById('export-box');
+    if(box){
+      box.hidden=false;
+      box.innerHTML='<label for="export-txt" class="vis-oculto">Lista de perguntas para copiar</label>'+
+        '<textarea id="export-txt" rows="'+Math.min(14,l.length+4)+'" readonly '+
+        'style="width:100%;font:inherit;font-size:.88rem;padding:11px;'+
+        'border:1px solid var(--rule-strong);border-radius:4px;background:var(--surface);'+
+        'color:var(--ink);resize:vertical"></textarea>'+
+        '<div class="acoes" style="margin-top:8px"><button type="button" data-copiar="'+esc(txt)+
+        '">Copiar lista</button></div>';
+      const ta=box.querySelector('#export-txt');
+      ta.value=txt; ta.focus(); ta.select();
+    }
   }
   const op=e.target.closest('[data-abrir]');
   if(op){
