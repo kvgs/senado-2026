@@ -147,7 +147,11 @@ def gravar(id_posicao, decisao, nota, citacao=""):
     return True
 
 
-PAGINA = """<!doctype html>
+# String CRUA. Sem o r, o Python interpreta as sequencias de escape que
+# existem dentro do JavaScript e insere quebras de linha reais no meio de
+# literais de string. O script inteiro morre e a pagina abre em branco, sem
+# erro nenhum do lado do Python.
+PAGINA = r"""<!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Revisao do acervo</title>
@@ -334,7 +338,30 @@ class Handler(http.server.BaseHTTPRequestHandler):
         pass
 
 
+def conferir_pagina():
+    """Recusa subir com JavaScript quebrado, em vez de servir tela em branco."""
+    import re
+    achado = re.search(r"<script>(.*?)</script>", PAGINA, re.S)
+    if not achado:
+        raise SystemExit("A pagina perdeu o bloco <script>.")
+    js = achado.group(1)
+
+    partidas = [n for n, linha in enumerate(js.split("\n"), 1) if linha.count("'") % 2]
+    if partidas:
+        raise SystemExit(
+            "JavaScript quebrado nas linhas " + ", ".join(map(str, partidas[:5])) + " do bloco.\n"
+            "Quase sempre e uma sequencia de escape interpretada pelo Python: confira se\n"
+            'PAGINA continua sendo string CRUA (r"""), senao \\n vira quebra de linha real\n'
+            "dentro de um literal de string e a pagina abre vazia."
+        )
+
+    for marca in ('id="cit"', 'id="nota"', 'data-d="confere"', "/api/decidir"):
+        if marca not in js and marca not in PAGINA:
+            raise SystemExit(f"A pagina perdeu um elemento essencial: {marca}")
+
+
 def main():
+    conferir_pagina()
     origem = DADOS / "posicoes.json"
     backup = DADOS / "posicoes.json.antes-da-revisao"
     if not backup.exists():
