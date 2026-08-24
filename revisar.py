@@ -48,9 +48,10 @@ O_QUE_CONFERIR = {
                             "muda sem aviso, e a data de referência tem de bater com o que se vê hoje.",
     "registro_legislativo": "Confira o número e o ano da proposição, e se a autoria é mesmo desta "
                             "candidatura — em projeto com muitos autores, ser um deles não é ser o autor.",
-    "oficial": "Confira se o trecho está no documento registrado e se ele vale para São Paulo. "
-               "Programa nacional cobre a candidatura por atribuição partidária; programa de outro "
-               "estado, não.",
+    "oficial": "Aqui a pergunta não é se o assunto está no documento — costuma estar. É se a "
+               "REDAÇÃO bate. Paráfrase escorrega: já houve um caso em que 'controle estatal dos "
+               "preços' virou 'congelamento de preços', que é outra política. Confira palavra a "
+               "palavra, e confira se o documento vale para São Paulo.",
 }
 
 
@@ -104,10 +105,17 @@ def montar_itens():
             "revisao": r.get("revisao") or {},
         })
 
+    # Dentro de cada classe, primeiro o que NAO tem citacao literal.
+    # Hipotese, nao fato medido: parafrase sem trecho citado nao tem ancora, e
+    # foi assim que "controle estatal dos precos" virou "congelamento de precos"
+    # numa posicao do programa da UP. A revisao feita ate agora nao testa isso
+    # (so 1 dos 35 itens revisados tinha citacao), entao vale como ordem de
+    # prioridade, nunca como certificado de qualidade dos que tem citacao.
     itens.sort(key=lambda x: (
         bool(x["revisado"] or x["revisao"]),
         ORDEM_FORCA.get(x["forca"], 9),
         ORDEM_FONTE.get(x["nivel_fonte"], 9),
+        bool(x["citacao"].strip()),
         x["id"],
     ))
     return itens
@@ -208,7 +216,7 @@ function desenhar(){
     '<span class="tag">'+esc(it.nivel_fonte)+'</span>'+
     (it.de_partido?'<span class="tag">programa do '+esc(it.partido)+'</span>':'')+
     '</div>'+
-    (it.citacao?'<blockquote>'+esc(it.citacao)+'</blockquote>':'')+
+    (it.citacao?'<blockquote>'+esc(it.citacao)+'</blockquote>':'<p class="confira" style="border-style:solid"><strong>Sem citação literal.</strong> Esta linha é paráfrase da fonte, sem trecho citado que a ancore — é onde a redação costuma escorregar. Compare com o documento palavra a palavra.</p>')+
     (it.texto?'<p class="txt">'+esc(it.texto)+'</p>':'')+
     (it.escopo?'<p class="txt"><strong>Escopo:</strong> '+esc(it.escopo)+'</p>':'')+
     '<div class="meta">'+
