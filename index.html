@@ -860,19 +860,54 @@ function detectaCands(q){
 }
 function itensDe(cid,tid){ return (D.grade[tid]&&D.grade[tid][cid])||[]; }
 
-function buscaTexto(q){
-  const termos=nrm(q).split(' ').filter(w=>w.length>3 &&
-    ['sobre','quem','qual','quais','como','onde','propoe','proposta','propostas','defende','candidato',
-     'candidatura','faz','fazem','dizem','diz'].indexOf(w)<0);
-  if(!termos.length) return [];
-  const res=[];
+/* Casamento por fronteira de palavra. Substring e armadilha: "para" casa
+   dentro de "preparar" e "comparar", "arma" dentro de "farmacia". Num acervo
+   pequeno isso transforma pergunta qualquer em resposta cheia. */
+const temPalavra=function(txt,w){
+  return new RegExp('(^|[^a-z0-9])'+w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+
+                    '[a-z]{0,3}([^a-z0-9]|$)').test(txt);
+};
+
+/* corpus achatado uma vez, para medir quao comum e cada termo */
+const CORPUS=(function(){
+  const c=[];
   for(const cid of D.ordem) for(const t of D.temas) for(const i of itensDe(cid,t.id)){
     if(i.estado!=='A'&&i.estado!=='B') continue;
-    const alvo=nrm((i.texto||'')+' '+(i.citacao||'')+' '+(i.escopo||''));
-    const acertos=termos.filter(w=>alvo.indexOf(w)>=0);
-    if(acertos.length) res.push({cid:cid,tid:t.id,item:i,acertos:acertos.length});
+    c.push({cid:cid,tid:t.id,item:i,
+            txt:nrm((i.texto||'')+' '+(i.citacao||'')+' '+(i.escopo||''))});
   }
-  return res;
+  return c;
+})();
+const PARADAS=['sobre','quem','qual','quais','como','onde','propoe','propoem','proposta','propostas',
+  'defende','defendem','candidato','candidatos','candidatura','candidaturas','faz','fazem','dizem',
+  'diz','para','pelo','pela','isso','esse','essa','tem','ha','uma','uns','das','dos','que','posicao'];
+
+function buscaTexto(q){
+  let termos=nrm(q).split(' ').filter(function(w){
+    return w.length>3 && PARADAS.indexOf(w)<0; });
+  if(!termos.length) return {res:[], descartados:[]};
+
+  /* termo que aparece em mais de 25% do acervo nao discrimina nada: "paulista",
+     "nacional", "publico". Deixar entrar faz uma palavra comum arrastar o acervo
+     inteiro como se respondesse a pergunta. */
+  const LIMITE=Math.max(3, Math.floor(CORPUS.length*0.20));
+  const descartados=[];
+  const uteis=termos.filter(function(w){
+    const n=CORPUS.filter(function(c){return temPalavra(c.txt,w);}).length;
+    if(n>LIMITE){ descartados.push(w); return false; }
+    return true;
+  });
+  if(!uteis.length) return {res:[], descartados:descartados};
+
+  const brutos=[];
+  for(const c of CORPUS){
+    const acertos=uteis.filter(function(w){return temPalavra(c.txt,w);});
+    if(acertos.length) brutos.push({cid:c.cid,tid:c.tid,item:c.item,acertos:acertos.length});
+  }
+  if(!brutos.length) return {res:[], descartados:descartados};
+  /* so sobrevive quem casa com o maior numero de termos uteis */
+  const teto=Math.max.apply(null, brutos.map(function(r){return r.acertos;}));
+  return {res:brutos.filter(function(r){return r.acertos===teto;}), descartados:descartados};
 }
 
 function blocoGrupo(cid,titulo,corpoHTML){
@@ -920,9 +955,13 @@ function responder(q){
       if(reais.length){ achou++; corpo+=blocoGrupo(cid,nome,reais.map(proposta).join('')); }
     }
   } else {
-    const res=buscaTexto(q);
+    const busca=buscaTexto(q), res=busca.res;
     como='Não reconheci candidatura nem tema na sua pergunta, então busquei os termos no texto de '+
          'todas as informações do acervo.';
+    if(busca.descartados.length){
+      como+=' Ignorei '+busca.descartados.map(function(w){return '“'+w+'”';}).join(', ')+
+            ' por aparecer em boa parte do acervo — termo comum demais não distingue nada.';
+    }
     const porCand={};
     res.forEach(function(r){ (porCand[r.cid]=porCand[r.cid]||[]).push(r); });
     for(const cid of D.ordem){
