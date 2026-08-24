@@ -1,7 +1,6 @@
 <title>Senado por São Paulo 2026</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap">
+<!-- Sem fonte externa de proposito: num site sobre candidatos, carregar
+     tipografia de terceiro contaria a esse terceiro quem esta lendo. -->
 
 <style>
   /* ---------------------------------------------------------------
@@ -9,13 +8,13 @@
      normal, 3:1 texto grande e componentes) nos dois temas.
      --------------------------------------------------------------- */
   :root{
-    --ground:#F7F8F7; --surface:#FFFFFF; --surface-2:#EDEFED; --surface-3:#E1E5E2;
-    --ink:#171A18;      /* 15.9:1 sobre surface */
-    --ink-2:#3A403C;    /*  9.6:1 */
-    --muted:#5C645F;    /*  6.1:1 */
+    --ground:#F7F7F8; --surface:#FFFFFF; --surface-2:#EEEEEF; --surface-3:#E2E2E4;
+    --ink:#18181A;      /* 15.8:1 sobre surface */
+    --ink-2:#3B3B3E;    /*  9.5:1 */
+    --muted:#5D5D62;    /*  6.1:1 */
     /* rule-strong desenha borda de campo e de botao, entao precisa de 3:1
        (WCAG 1.4.11). O valor anterior, #A9B1AB, dava 2.2:1. */
-    --rule:#D6DBD7; --rule-strong:#828A84;
+    --rule:#D9D9DC; --rule-strong:#84848B;
     --focus:#1F5FA8;
 
     --s-oficial:#1F6B41;      /* 5.4:1 */
@@ -27,18 +26,18 @@
   }
   @media (prefers-color-scheme: dark){
     :root:not([data-theme="light"]){
-      --ground:#0F1210; --surface:#171B18; --surface-2:#212621; --surface-3:#2C322D;
-      --ink:#EDF0EE; --ink-2:#C3CAC5; --muted:#9AA29C;
-      --rule:#2A302C; --rule-strong:#6E766F; --focus:#7FB2E8;
+      --ground:#101012; --surface:#18181B; --surface-2:#222226; --surface-3:#2D2D33;
+      --ink:#EEEEF0; --ink-2:#C5C5CA; --muted:#9B9BA3;
+      --rule:#2B2B30; --rule-strong:#70707A; --focus:#7FB2E8;
       --s-oficial:#6FC091; --s-verificada:#E0B45E; --s-secundaria:#F0897C;
       --s-declaracao:#C29BE8; --s-registro:#82B4E8;
       --alert:#F0897C; --alert-bg:#2B1C1A; --alert-line:#663932;
     }
   }
   :root[data-theme="dark"]{
-    --ground:#0F1210; --surface:#171B18; --surface-2:#212621; --surface-3:#2C322D;
-    --ink:#EDF0EE; --ink-2:#C3CAC5; --muted:#9AA29C;
-    --rule:#2A302C; --rule-strong:#6E766F; --focus:#7FB2E8;
+    --ground:#101012; --surface:#18181B; --surface-2:#222226; --surface-3:#2D2D33;
+    --ink:#EEEEF0; --ink-2:#C5C5CA; --muted:#9B9BA3;
+    --rule:#2B2B30; --rule-strong:#70707A; --focus:#7FB2E8;
     --s-oficial:#6FC091; --s-verificada:#E0B45E; --s-secundaria:#F0897C;
     --s-declaracao:#C29BE8; --s-registro:#82B4E8;
     --alert:#F0897C; --alert-bg:#2B1C1A; --alert-line:#663932;
@@ -52,8 +51,7 @@
     font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased}
   .wrap{max-width:1120px;margin:0 auto;padding:0 20px 88px}
-  h1,h2,h3{margin:0;font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
-    font-weight:600;text-wrap:balance;letter-spacing:-.008em}
+  h1,h2,h3{margin:0;font-family:inherit;font-weight:700;text-wrap:balance;letter-spacing:-.015em}
   h1{font-size:clamp(1.75rem,4vw,2.5rem);line-height:1.12}
   h2{font-size:clamp(1.3rem,2.6vw,1.7rem);line-height:1.2}
   h3{font-size:1.05rem;line-height:1.3;font-weight:700}
@@ -128,7 +126,7 @@
   .quem .nrev{color:var(--muted);font-weight:600;font-size:.72rem;letter-spacing:.08em;
     text-transform:uppercase}
   blockquote{margin:0 0 9px;padding:2px 0 2px 14px;border-left:3px solid var(--rule-strong);
-    font-family:"Source Serif 4",Georgia,serif;font-size:1.02rem;color:var(--ink)}
+    font-size:1.02rem;color:var(--ink)}
   .txt{font-size:.96rem;color:var(--ink-2)}
   .escopo{margin-top:9px;font-size:.85rem;color:var(--ink-2);background:var(--surface-2);
     border-left:3px solid var(--s-verificada);padding:7px 11px;border-radius:0 3px 3px 0}
@@ -313,7 +311,7 @@
   .ficha-dl span{font-size:.95rem}
   .secao{margin-top:32px}
   .secao > h3{padding-bottom:9px;border-bottom:1px solid var(--rule);margin-bottom:14px;
-    font-size:1.12rem;font-family:"Source Serif 4",Georgia,serif;font-weight:600}
+    font-size:1.12rem;font-weight:700}
   .hist{list-style:none;display:flex;flex-direction:column;gap:7px}
   .hist li{display:grid;grid-template-columns:4.2rem minmax(0,1fr);gap:12px;font-size:.94rem;
     color:var(--ink-2)}
