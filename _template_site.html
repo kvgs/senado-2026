@@ -495,12 +495,21 @@ document.getElementById('atualizado').textContent=D.atualizado;
 /* ---------- aviso de revisao ---------- */
 (function(){
   const t=D.totais,el=document.getElementById('aviso');
-  el.innerHTML = t.revisadas===0
-    ? '<b>Rascunho de trabalho.</b> Nenhuma das '+t.posicoes+' informações desta página passou '+
-      'por revisão humana. Todas foram levantadas das fontes citadas e conferidas automaticamente '+
-      'contra elas, mas a curadoria final ainda não foi feita. Não use como referência para decidir voto.'
-    : '<b>'+t.revisadas+' de '+t.posicoes+' informações revisadas.</b> As que ainda não foram '+
-      'aparecem marcadas uma a uma.';
+  /* Tres estados, nao dois. Dizer so "N de M revisadas" esconderia o que a
+     revisao encontrou — e o que ela encontrou e a informacao mais util que este
+     site tem sobre a propria confiabilidade. */
+  const falta=t.posicoes-t.revisadas;
+  let h='<b>Revisão em andamento.</b> '+t.revisadas+' de '+t.posicoes+
+        ' informações desta página já foram conferidas por uma pessoa contra a fonte original';
+  h+= falta ? '; as outras '+falta+' aparecem marcadas como <em>não revisado</em>, uma a uma. '
+            : '. ';
+  if(t.reprovadas){
+    h+='Outras '+t.reprovadas+' foram levantadas, reprovadas na revisão e <strong>retiradas '+
+       'daqui</strong> — a fonte não sustentava o que estava escrito. Ficam registradas nos '+
+       'dados abertos do projeto, com o motivo, porque erro escondido é erro que volta.';
+  }
+  if(falta) h+=' Enquanto a revisão não termina, confira na fonte antes de usar como referência.';
+  el.innerHTML=h;
 })();
 
 /* ---------- pedacos reutilizaveis ---------- */
@@ -1123,8 +1132,9 @@ function responder(q){
        ' resultado(s), em ordem de número de urna. A ordem não expressa relevância nem preferência.</p>'+corpo;
     h+='<div class="aviso-rev"><b>Como ler isto.</b> Cada informação acima é exibida exatamente como '+
        'está no acervo, com a fonte e o selo de origem. Nada foi reescrito, resumido ou interpretado '+
-       'para responder à sua pergunta. E nada aqui passou por revisão humana ainda — '+
-       'o que numa resposta corrida é fácil esquecer, porque texto fluente soa mais seguro do que é.</div>';
+       'para responder à sua pergunta. As que ainda não passaram por revisão humana estão marcadas '+
+       'como <em>não revisado</em> — o que numa resposta corrida é fácil esquecer, porque texto '+
+       'fluente soa mais seguro do que é.</div>';
     /* Sempre, e nao so quando a busca volta vazia: um acervo pequeno devolve
        resultado tangente com facilidade, e resultado tangente e resposta nao
        dada. Quem sabe se serviu e quem perguntou. */

@@ -120,8 +120,16 @@ for c in cands:
 
 ordem = sorted(cand_por_id, key=lambda k: int(cand_por_id[k]["numero"]))
 
+# Posicao reprovada na revisao humana NAO vai para o site. Continua em
+# posicoes.json, com a nota de quem reprovou: o arquivo guarda a memoria do erro,
+# que e o que impede repeti-lo. O que sai daqui e a publicacao, nao o registro.
+REPROVADAS = {"remover", "corrigir"}
+pos_publicaveis = [r for r in pos
+                   if (r.get("revisao") or {}).get("resultado") not in REPROVADAS]
+pos_reprovadas = len(pos) - len(pos_publicaveis)
+
 grade = {t["id_tema"]: {cid: [] for cid in ordem} for t in temas}
-for r in pos:
+for r in pos_publicaveis:
     alvo = r.get("id_candidatura_contexto") or r.get("atribuido_a_id")
     if alvo not in grade[r["id_tema"]]: continue
     doc = docs.get(r.get("id_documento"), {})
@@ -192,17 +200,24 @@ dados = {
     "votos": votos, "pesquisa": pesquisa, "respostas": respostas,
     "selos": {k: {"nome": v["nome"], "def": v["definicao"], "eixo": v["eixo"]}
               for k, v in selos.items()},
-    "totais": {"posicoes": len(pos),
-               "revisadas": sum(1 for r in pos if r.get("revisado_por_humano"))},
+    "totais": {
+        "posicoes": len(pos_publicaveis),
+        "revisadas": sum(1 for r in pos_publicaveis if r.get("revisado_por_humano")),
+        "reprovadas": pos_reprovadas,
+        "levantadas": len(pos),
+    },
 }
 
 # Hashes do acervo. O backend so aceita redigir a partir de texto cujo hash esta
 # aqui: e a prova de que a linha veio do acervo, e nao de um navegador adulterado.
 # Gerado junto com o site pela mesma razao que o site e gerado — nao pode divergir.
+# So o que e publicavel entra: se uma posicao foi reprovada na revisao e saiu do
+# site, o backend tambem nao deve aceitar redigir a partir dela. Deixar o hash
+# para tras manteria o texto errado alcancavel por um cliente adulterado.
 chaves = sorted({
     hashlib.sha256(((r.get("texto") or "") + chr(0) + (r.get("citacao_literal") or ""))
                    .encode("utf-8")).hexdigest()[:16]
-    for r in pos
+    for r in pos_publicaveis
 })
 ag = HERE/"agente"
 ag.mkdir(exist_ok=True)
@@ -236,5 +251,6 @@ ag.mkdir(exist_ok=True)
 tpl = (HERE/"_template_site.html").read_text(encoding="utf-8")
 OUT.write_text(tpl.replace("/*__DADOS__*/", json.dumps(dados, ensure_ascii=False)), encoding="utf-8")
 print(f"gerado: {OUT.name}  ({OUT.stat().st_size/1024:.0f} KB)")
-print(f"  temas {len(temas)} · candidaturas {len(ordem)} · posicoes {len(pos)} · revisadas {dados['totais']['revisadas']}")
+print(f"  temas {len(temas)} · candidaturas {len(ordem)} · publicadas {len(pos_publicaveis)}"
+      f" · revisadas {dados['totais']['revisadas']} · reprovadas e retiradas {pos_reprovadas}")
 print(f"  fotos: 0 de {len(ordem)} (dataset do TSE bloqueado — encaixe pronto)")
