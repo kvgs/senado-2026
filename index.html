@@ -194,6 +194,34 @@
   .selos-lista li{display:grid;grid-template-columns:11px minmax(0,1fr);gap:11px;font-size:.93rem;
     color:var(--ink-2)}
   .selos-lista .dot{margin-top:7px}
+  /* ---------- consulta (Fase 7) ---------- */
+  .busca-caixa{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px}
+  .busca-caixa input{flex:1 1 320px;font:inherit;font-size:1.02rem;padding:12px 14px;
+    border:1px solid var(--rule-strong);border-radius:4px;background:var(--surface);color:var(--ink)}
+  .busca-caixa button{font:inherit;font-size:.98rem;font-weight:600;padding:12px 22px;border:0;
+    border-radius:4px;background:var(--ink);color:var(--ground);cursor:pointer}
+  .sugestoes{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+  .sugestoes button{font:inherit;font-size:.87rem;padding:7px 13px;border:1px solid var(--rule-strong);
+    border-radius:100px;background:var(--surface);color:var(--ink-2);cursor:pointer;text-align:left}
+  .sugestoes button:hover{background:var(--surface-2);color:var(--ink)}
+  .resp-cabeca{margin-top:26px;padding:14px 18px;background:var(--surface-2);
+    border-left:4px solid var(--ink);border-radius:0 4px 4px 0}
+  .resp-cabeca .q{font-weight:600;font-size:1rem}
+  .resp-cabeca .como{margin-top:7px;font-size:.87rem;color:var(--muted)}
+  .resp-nada{margin-top:22px;padding:16px 18px;background:var(--alert-bg);
+    border:1px solid var(--alert-line);border-left:4px solid var(--alert);border-radius:0 4px 4px 0;
+    font-size:.95rem;color:var(--ink-2)}
+  .resp-nada b{color:var(--alert)}
+  .grupo{margin-top:16px;background:var(--surface);border:1px solid var(--rule);border-radius:4px;
+    overflow:hidden}
+  .grupo > h3{margin:0;padding:12px 17px;background:var(--surface-2);border-bottom:1px solid var(--rule);
+    font-size:.98rem;font-weight:700;font-family:system-ui,sans-serif;display:flex;flex-wrap:wrap;
+    gap:9px;align-items:baseline}
+  .grupo .card-body{padding:15px 17px}
+  .aviso-rev{margin-top:20px;padding:12px 16px;border:1px dashed var(--rule-strong);border-radius:4px;
+    font-size:.88rem;color:var(--ink-2);background:var(--surface)}
+  .aviso-rev b{color:var(--alert)}
+
   /* ---------- perfil (Fase 6) ---------- */
   .voltar{display:inline-flex;align-items:center;gap:7px;font:inherit;font-size:.92rem;
     font-weight:600;background:none;border:0;color:var(--s-registro);cursor:pointer;padding:8px 0;
@@ -256,6 +284,7 @@
     <button role="tab" id="tab-candidatos" aria-controls="p-candidatos" aria-selected="true">Candidatos</button>
     <button role="tab" id="tab-temas" aria-controls="p-temas" aria-selected="false" tabindex="-1">Por tema</button>
     <button role="tab" id="tab-comparar" aria-controls="p-comparar" aria-selected="false" tabindex="-1">Comparar</button>
+    <button role="tab" id="tab-consulta" aria-controls="p-consulta" aria-selected="false" tabindex="-1">Perguntar</button>
     <button role="tab" id="tab-pesquisa" aria-controls="p-pesquisa" aria-selected="false" tabindex="-1">Pesquisa</button>
     <button role="tab" id="tab-perfil" aria-controls="p-perfil" aria-selected="false" tabindex="-1" hidden>Perfil</button>
   </div>
@@ -302,6 +331,21 @@
         pesquisa. Ela não aparece junto de cada candidatura de propósito: repetir a porcentagem em
         todo cartão transformaria a lista num ranking.</p>
       <div id="saida-pesquisa"></div>
+    </div>
+    <div role="tabpanel" id="p-consulta" aria-labelledby="tab-consulta" tabindex="0" hidden>
+      <h2>Perguntar ao acervo</h2>
+      <p style="margin-top:10px;color:var(--ink-2);max-width:72ch">Esta busca devolve <strong>apenas
+        informações que existem no acervo</strong>, com a fonte de cada uma. Ela não redige respostas,
+        não interpreta e não completa com conhecimento de fora — se não houver informação, ela diz que
+        não há, em vez de inventar.</p>
+      <form class="busca-caixa" id="form-busca" role="search">
+        <label for="q" class="vis-oculto">Sua pergunta ou termo de busca</label>
+        <input type="search" id="q" placeholder="Ex.: o que Marina Silva propõe sobre saúde?"
+               autocomplete="off">
+        <button type="submit">Buscar</button>
+      </form>
+      <div class="sugestoes" id="sugestoes"></div>
+      <div aria-live="polite" id="saida-consulta"></div>
     </div>
     <div role="tabpanel" id="p-perfil" aria-labelledby="tab-perfil" tabindex="0" hidden>
       <button class="voltar" id="btn-voltar" type="button">&larr; Voltar para a lista de candidaturas</button>
@@ -728,6 +772,176 @@ function porHash(){
 }
 window.addEventListener('hashchange',function(){
   if(!porHash()) window.__ativaAba('tab-candidatos',false);});
+
+/* ---------- Fase 7: motor de consulta deterministico ---------- */
+const SIN = {
+ t1:['seguranca','policia','policial','crime','criminal','faccao','faccoes','presidio','prisao',
+     'maioridade','penal','violencia','arma','armas','pcc','desmilitarizacao','encarceramento','droga','drogas'],
+ t2:['educacao','escola','escolas','professor','professores','universidade','creche','creches',
+     'alfabetizacao','ensino','aluno','estudante','fundeb','cotas','vestibular','enem'],
+ t3:['saude','sus','hospital','hospitais','medico','vacina','vacinacao','remedio','medicamento',
+     'fila','exame','exames','aposta','apostas','bet','bets','saude mental'],
+ t4:['economia','emprego','trabalho','salario','imposto','impostos','tributo','tributaria','jornada',
+     'clt','previdencia','fiscal','orcamento','banco','bancos','divida','supersalario','supersalarios',
+     'escala 6x1','6x1','36 horas','30 horas','fortuna','fortunas'],
+ t5:['infraestrutura','mobilidade','transporte','metro','onibus','tarifa','saneamento','estrada',
+     'rodovia','ferrovia','trem','cptm','sabesp','pedagio','obra','obras'],
+ t6:['meio ambiente','ambiental','clima','climatica','desmatamento','mineracao','minerio','agrotoxico',
+     'petroleo','indigena','indigenas','quilombola','quilombolas','amazonia','cerrado','agronegocio',
+     'terra','terras','reforma agraria','energia'],
+ t7:['habitacao','moradia','casa','casas','aluguel','favela','favelas','despejo','imovel','imoveis',
+     'especulacao','desfavelizacao','urbanizacao'],
+ t8:['tecnologia','inteligencia artificial','ia','digital','dados','internet','algoritmo','bitcoin',
+     'plataforma','plataformas','aplicativo','aplicativos','semicondutor','terras raras','software',
+     'data center','soberania digital'],
+ t9:['cultura','direitos humanos','racismo','racial','mulher','mulheres','feminicidio','lgbt','lgbtfobia',
+     'genero','arte','cinema','rouanet','games','quilombo','negra','negras','diversidade','anistia','ditadura'],
+ t10:['senado','legislativo','stf','supremo','constituinte','federativo','unicameral','congresso',
+      'parlamento','mandato','judiciario','soberania']
+};
+const NEG = ['nao tem','nao ha','sem proposta','nao propoe','nao fala','quem nao','falta','ausencia',
+             'nao aborda','nada sobre'];
+
+const nrm = s => (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+                  .toLowerCase().replace(/\s+/g,' ').trim();
+
+function detectaTemas(q){
+  /* termo curto exige fronteira de palavra: senao 'ia' casa dentro de 'policia',
+     'arma' dentro de 'farmacia', e o tema errado entra na resposta. */
+  const n=' '+nrm(q)+' ', achados=[];
+  const casa=function(alvo){
+    const a=nrm(alvo); if(!a) return false;
+    if(a.length<=4) return new RegExp('(^|[^a-z0-9])'+a+'([^a-z0-9]|$)').test(n);
+    return n.indexOf(a)>=0;
+  };
+  for(const t of D.temas){
+    if([nrm(t.nome)].concat(SIN[t.id]||[]).some(casa)) achados.push(t.id);
+  }
+  return achados;
+}
+function detectaCands(q){
+  const n=' '+nrm(q)+' ', achados=[];
+  for(const cid of D.ordem){
+    const c=D.candidatos[cid];
+    const nome=nrm(c.nome), partes=nome.split(' ').filter(w=>w.length>3);
+    if(n.indexOf(' '+nome+' ')>=0 || n.indexOf(' '+c.numero+' ')>=0 ||
+       partes.some(w=>n.indexOf(' '+w+' ')>=0) ||
+       n.indexOf(' '+nrm(c.partido)+' ')>=0){ achados.push(cid); }
+  }
+  return achados;
+}
+function itensDe(cid,tid){ return (D.grade[tid]&&D.grade[tid][cid])||[]; }
+
+function buscaTexto(q){
+  const termos=nrm(q).split(' ').filter(w=>w.length>3 &&
+    ['sobre','quem','qual','quais','como','onde','propoe','proposta','propostas','defende','candidato',
+     'candidatura','faz','fazem','dizem','diz'].indexOf(w)<0);
+  if(!termos.length) return [];
+  const res=[];
+  for(const cid of D.ordem) for(const t of D.temas) for(const i of itensDe(cid,t.id)){
+    if(i.estado!=='A'&&i.estado!=='B') continue;
+    const alvo=nrm((i.texto||'')+' '+(i.citacao||'')+' '+(i.escopo||''));
+    const acertos=termos.filter(w=>alvo.indexOf(w)>=0);
+    if(acertos.length) res.push({cid:cid,tid:t.id,item:i,acertos:acertos.length});
+  }
+  return res;
+}
+
+function blocoGrupo(cid,titulo,corpoHTML){
+  const c=D.candidatos[cid];
+  return '<div class="grupo"><h3><span class="urna">'+esc(c.numero)+'</span> '+esc(c.nome)+
+    ' <span class="sigla">'+esc(c.partido)+'</span>'+(titulo?' <span style="font-weight:400;color:var(--muted)">'+esc(titulo)+'</span>':'')+
+    '</h3><div class="card-body">'+corpoHTML+'</div></div>';
+}
+
+function responder(q){
+  const out=document.getElementById('saida-consulta');
+  if(!nrm(q)){ out.innerHTML=''; return; }
+  const temas=detectaTemas(q), cands=detectaCands(q);
+  const negativa=NEG.some(x=>nrm(q).indexOf(nrm(x))>=0);
+  let h='', como='', corpo='', achou=0;
+
+  if(negativa && temas.length){
+    const tid=temas[0], nome=D.temas.find(t=>t.id===tid).nome;
+    como='Procurei, entre as 15 candidaturas, quais NÃO têm proposta registrada em '+nome+
+         ' — e por qual dos motivos, que não é o mesmo em todos os casos.';
+    for(const cid of D.ordem){
+      const its=itensDe(cid,tid);
+      const reais=its.filter(i=>i.estado==='A'||i.estado==='B');
+      if(reais.length) continue;
+      achou++;
+      corpo+=blocoGrupo(cid,nome,corpoTema(cid,tid));
+    }
+  } else if(cands.length && temas.length){
+    const nomes=temas.map(x=>D.temas.find(t=>t.id===x).nome).join(', ');
+    como='Encontrei '+cands.length+' candidatura(s) e '+temas.length+' tema(s) na sua pergunta: '+nomes+'.';
+    for(const cid of cands) for(const tid of temas){ achou++; corpo+=blocoGrupo(cid,D.temas.find(t=>t.id===tid).nome,corpoTema(cid,tid)); }
+  } else if(cands.length){
+    como='Encontrei candidatura na sua pergunta, mas nenhum tema. Mostrando os temas em que ela tem posição registrada.';
+    for(const cid of cands){
+      for(const t of D.temas){
+        const reais=itensDe(cid,t.id).filter(i=>i.estado==='A'||i.estado==='B');
+        if(reais.length){ achou++; corpo+=blocoGrupo(cid,t.nome,reais.map(proposta).join('')); }
+      }
+    }
+  } else if(temas.length){
+    const tid=temas[0], nome=D.temas.find(t=>t.id===tid).nome;
+    como='Encontrei o tema '+nome+'. Mostrando as candidaturas que têm posição registrada nele.';
+    for(const cid of D.ordem){
+      const reais=itensDe(cid,tid).filter(i=>i.estado==='A'||i.estado==='B');
+      if(reais.length){ achou++; corpo+=blocoGrupo(cid,nome,reais.map(proposta).join('')); }
+    }
+  } else {
+    const res=buscaTexto(q);
+    como='Não reconheci candidatura nem tema na sua pergunta, então busquei os termos no texto de '+
+         'todas as informações do acervo.';
+    const porCand={};
+    res.forEach(function(r){ (porCand[r.cid]=porCand[r.cid]||[]).push(r); });
+    for(const cid of D.ordem){
+      if(!porCand[cid]) continue;
+      achou++;
+      corpo+=blocoGrupo(cid,'', porCand[cid].map(function(r){
+        return '<p class="lbl" style="margin-bottom:6px">'+esc(D.temas.find(t=>t.id===r.tid).nome)+'</p>'+
+               proposta(r.item);}).join(''));
+    }
+  }
+
+  h+='<div class="resp-cabeca"><p class="q">'+esc(q)+'</p><p class="como">'+esc(como)+'</p></div>';
+  if(!achou){
+    h+='<div class="resp-nada"><b>Não encontrei nada no acervo para isso.</b> Isto significa que não '+
+       'há informação catalogada que corresponda à sua pergunta — não que o assunto não exista nem que '+
+       'as candidaturas não tenham posição sobre ele. Tente um termo mais simples, o nome de uma '+
+       'candidatura, ou um dos temas.</div>';
+  } else {
+    h+='<p style="margin-top:20px;font-size:.9rem;color:var(--muted)">'+achou+
+       ' resultado(s), em ordem de número de urna. A ordem não expressa relevância nem preferência.</p>'+corpo;
+    h+='<div class="aviso-rev"><b>Como ler isto.</b> Cada informação acima é exibida exatamente como '+
+       'está no acervo, com a fonte e o selo de origem. Nada foi reescrito, resumido ou interpretado '+
+       'para responder à sua pergunta. E nada aqui passou por revisão humana ainda — '+
+       'o que numa resposta corrida é fácil esquecer, porque texto fluente soa mais seguro do que é.</div>';
+  }
+  out.innerHTML=h;
+}
+
+(function(){
+  const SUG=['O que Marina Silva propõe sobre saúde?',
+             'Quem defende extinguir o Senado?',
+             'Quem não tem proposta sobre habitação?',
+             'Propostas sobre inteligência artificial',
+             'O que Guilherme Derrite propõe sobre segurança?',
+             'Quem fala sobre apostas e BETs?',
+             'Desmilitarização da polícia',
+             'Quem não tem proposta sobre tecnologia?'];
+  document.getElementById('sugestoes').innerHTML=SUG.map(function(s){
+    return '<button type="button" data-q="'+esc(s)+'">'+esc(s)+'</button>';}).join('');
+  document.getElementById('sugestoes').addEventListener('click',function(e){
+    const b=e.target.closest('button'); if(!b) return;
+    document.getElementById('q').value=b.dataset.q; responder(b.dataset.q);
+  });
+  document.getElementById('form-busca').addEventListener('submit',function(e){
+    e.preventDefault(); responder(document.getElementById('q').value);
+  });
+})();
 
 preencheSelects();
 renderChecks();
