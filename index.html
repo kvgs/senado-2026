@@ -882,13 +882,20 @@ const nrm = s => (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'')
                   .toLowerCase().replace(/\s+/g,' ').trim();
 
 function detectaTemas(q){
-  /* termo curto exige fronteira de palavra: senao 'ia' casa dentro de 'policia',
-     'arma' dentro de 'farmacia', e o tema errado entra na resposta. */
+  /* Fronteira de palavra para TODO termo, nao so para os curtos.
+     A versao anterior so protegia termos de ate 4 letras, e por isso 'cultura'
+     casava dentro de 'apicultura': quem perguntava sobre apicultura recebia o
+     tema Cultura e Direitos Humanos inteiro. Falso positivo e pior que resposta
+     vazia, porque parece resposta.
+     Termo longo ainda aceita ate 3 letras a mais no fim, para plural e flexao
+     ('cultura' casa 'culturas', 'cultural'); termo curto exige palavra exata,
+     senao 'ia' comecaria a casar 'iate'. */
   const n=' '+nrm(q)+' ', achados=[];
   const casa=function(alvo){
     const a=nrm(alvo); if(!a) return false;
-    if(a.length<=4) return new RegExp('(^|[^a-z0-9])'+a+'([^a-z0-9]|$)').test(n);
-    return n.indexOf(a)>=0;
+    const lit=a.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const cauda=a.length<=4 ? '' : '[a-z]{0,3}';
+    return new RegExp('(^|[^a-z0-9])'+lit+cauda+'([^a-z0-9]|$)').test(n);
   };
   for(const t of D.temas){
     if([nrm(t.nome)].concat(SIN[t.id]||[]).some(casa)) achados.push(t.id);
@@ -926,9 +933,15 @@ const CORPUS=(function(){
   }
   return c;
 })();
+/* Verbos e pronomes de pergunta. Nao dizem nada sobre o assunto, mas casam com
+   muita coisa: 'trata' casa 'tratar', 'tratado', 'tratam', e fazia
+   "alguem trata de X" devolver o acervo meio inteiro para qualquer X. */
 const PARADAS=['sobre','quem','qual','quais','como','onde','propoe','propoem','proposta','propostas',
   'defende','defendem','candidato','candidatos','candidatura','candidaturas','faz','fazem','dizem',
-  'diz','para','pelo','pela','isso','esse','essa','tem','ha','uma','uns','das','dos','que','posicao'];
+  'diz','para','pelo','pela','isso','esse','essa','tem','ha','uma','uns','das','dos','que','posicao',
+  'trata','tratam','tratar','fala','falam','falar','pensa','pensam','acha','acham','acredita',
+  'aborda','abordam','abordar','alguem','alguma','algum','existe','existem','opiniao','opinioes',
+  'posicionamento','posicoes','pretende','pretendem','planeja','planejam','quer','querem'];
 
 function buscaTexto(q){
   let termos=nrm(q).split(' ').filter(function(w){
