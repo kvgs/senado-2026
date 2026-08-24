@@ -212,13 +212,6 @@
     color:var(--s-registro);cursor:pointer;text-decoration:none;display:inline-block}
   .contatos-lista .acoes a:hover,.contatos-lista .acoes button:hover{background:var(--surface-2)}
   .sem-contato{font-size:.87rem;color:var(--muted)}
-  .guardadas{list-style:none;display:flex;flex-direction:column;gap:7px;margin-top:14px}
-  .guardadas li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:center;
-    background:var(--surface);border:1px solid var(--rule);border-radius:4px;padding:10px 14px;
-    font-size:.92rem}
-  .guardadas .data{font-size:.78rem;color:var(--muted)}
-  .guardadas button{font:inherit;font-size:.82rem;padding:5px 10px;border:1px solid var(--rule-strong);
-    border-radius:4px;background:var(--surface);color:var(--ink-2);cursor:pointer}
   .nota-envio{margin-top:16px;padding:13px 16px;background:var(--surface-2);border-radius:4px;
     font-size:.87rem;color:var(--ink-2)}
 
@@ -1063,15 +1056,9 @@ function responder(q){
        'preparamos um texto curto para mensagem direta. Você lê, ajusta se quiser, e envia.</p>'+
        '<button type="button" data-abrir="box-contatos" aria-expanded="false" '+
        'aria-controls="box-contatos">Ver contatos e textos prontos</button></div>'+
-       '<div class="opcao"><h4>Guardar a pergunta</h4>'+
-       '<p>Fica salva neste navegador, só para você, e pode ser exportada. Serve para você levar a '+
-       'lista adiante — nada é enviado nem sai do seu computador.</p>'+
-       '<button type="button" class="sec" id="btn-guardar">Guardar esta pergunta</button></div>'+
        '</div>'+
        '<div id="box-contatos" hidden>'+blocoContatos(q)+'</div>'+
-       blocoPedir(q, cands[0]||'', temas[0]||'')+
-       '<div style="margin-top:24px"><h3 style="font-size:1.02rem">Perguntas que você guardou</h3>'+
-       '<div id="guardadas-box"></div></div>';
+       blocoPedir(q, cands[0]||'', temas[0]||'', false);
   } else {
     h+='<p style="margin-top:20px;font-size:.9rem;color:var(--muted)">'+achou+
        ' resultado(s), em ordem de número de urna. A ordem não expressa relevância nem preferência.</p>'+corpo;
@@ -1079,25 +1066,21 @@ function responder(q){
        'está no acervo, com a fonte e o selo de origem. Nada foi reescrito, resumido ou interpretado '+
        'para responder à sua pergunta. E nada aqui passou por revisão humana ainda — '+
        'o que numa resposta corrida é fácil esquecer, porque texto fluente soa mais seguro do que é.</div>';
-    /* Achou a candidatura mas nenhuma proposta: so ausencia. Para quem perguntou,
-       isto tambem e ficar sem resposta — e e exatamente o caso em que perguntar
-       ao gabinete faz mais sentido, porque ja se sabe de quem e sobre o que. */
-    if(!usados.length) h+=blocoPedir(q, cands[0]||'', temas[0]||'');
+    /* Sempre, e nao so quando a busca volta vazia: um acervo pequeno devolve
+       resultado tangente com facilidade, e resultado tangente e resposta nao
+       dada. Quem sabe se serviu e quem perguntou. */
+    h+=blocoPedir(q, cands[0]||'', temas[0]||'', usados.length>0);
   }
 
   out.innerHTML=h;
-  const bg=document.getElementById('btn-guardar');
-  if(bg) bg.addEventListener('click',function(){ guardarPergunta(q); renderGuardadas();
-    bg.textContent='Guardada'; bg.disabled=true; });
   const bi=document.getElementById('btn-ia');
   if(bi) bi.addEventListener('click',function(){ pedirResumo(q, usados, bi); });
   ligarPedir();
-  renderGuardadas();
 }
 
 /* ---------- pedir que a gente pergunte ao gabinete ---------- */
 
-function blocoPedir(q, candSugerida, temaSugerido){
+function blocoPedir(q, candSugerida, temaSugerido, houveResposta){
   if(!D.agente_url) return '';
   const cands=D.ordem.map(function(cid){
     const c=D.candidatos[cid];
@@ -1109,8 +1092,20 @@ function blocoPedir(q, candSugerida, temaSugerido){
            esc(x.nome)+'</option>';
   }).join('');
 
-  return '<div class="pedir"><h4>Peça para a gente perguntar</h4>'+
-    '<p class="chamada">Sua pergunta entra numa fila. Quando várias pessoas perguntam a mesma '+
+  /* Quem decide se a resposta serviu e quem perguntou, nao o motor de busca.
+     Por isso o convite existe nos dois casos, so muda o enquadramento. */
+  const titulo = houveResposta
+    ? 'Não era isso que você procurava?'
+    : 'Peça para a gente perguntar';
+  const abertura = houveResposta
+    ? 'O acervo devolveu o que tinha, mas pode não ser o que você queria saber — e às vezes '+
+      'o assunto exato simplesmente não está registrado em lugar nenhum. Se for o caso, '+
+      'pergunte direto à candidatura. '
+    : '';
+
+  return '<div class="pedir"><h4>'+esc(titulo)+'</h4>'+
+    '<p class="chamada">'+abertura+
+    'Sua pergunta entra numa fila. Quando várias pessoas perguntam a mesma '+
     'coisa para a mesma candidatura, escrevemos <strong>uma</strong> mensagem ao contato oficial '+
     'representando todas — porque um eleitor sozinho é fácil de ignorar, e quinze não são. '+
     'Nada é enviado automaticamente: uma pessoa lê antes.</p>'+
@@ -1256,27 +1251,6 @@ async function pedirResumo(pergunta, usados, botao){
 })();
 
 /* ---------- modo assistido: ajudar a perguntar, sem enviar por ninguem ---------- */
-const CHAVE_PERG = 'perguntas_sem_resposta';
-
-function perguntasGuardadas(){
-  try{ return JSON.parse(localStorage.getItem(CHAVE_PERG)||'[]'); }catch(e){ return []; }
-}
-function guardarPergunta(q){
-  try{
-    const l=perguntasGuardadas();
-    if(l.some(function(x){return x.q===q;})) return l;
-    l.unshift({q:q, em:new Date().toISOString().slice(0,10)});
-    localStorage.setItem(CHAVE_PERG, JSON.stringify(l.slice(0,50)));
-    return l;
-  }catch(e){ return perguntasGuardadas(); }
-}
-function esquecerPergunta(q){
-  try{
-    const l=perguntasGuardadas().filter(function(x){return x.q!==q;});
-    localStorage.setItem(CHAVE_PERG, JSON.stringify(l));
-  }catch(e){}
-  renderGuardadas();
-}
 
 function corpoEmail(c,q){
   return 'Prezado(a) '+c.nome+',\n\n'+
@@ -1352,21 +1326,6 @@ function blocoContatos(q){
     ' têm Instagram declarado no registro do TSE, que não depende de mandato nenhum.</p>';
 }
 
-function renderGuardadas(){
-  const alvo=document.getElementById('guardadas-box');
-  if(!alvo) return;
-  const l=perguntasGuardadas();
-  if(!l.length){ alvo.innerHTML='<p class="sem-contato">Nenhuma pergunta guardada neste navegador.</p>'; return; }
-  alvo.innerHTML='<ul class="guardadas">'+l.map(function(x){
-      return '<li><span>'+esc(x.q)+'<br><span class="data">guardada em '+esc(x.em)+'</span></span>'+
-             '<button type="button" data-esquecer="'+esc(x.q)+'">Remover</button></li>';}).join('')+'</ul>'+
-    '<div class="acoes" style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">'+
-    '<button type="button" id="exportar-perg" class="sec">Mostrar lista para copiar</button></div>'+
-    '<div id="export-box" hidden style="margin-top:12px"></div>'+
-    '<p class="sem-contof sem-contato" style="margin-top:10px">Estas perguntas ficam apenas neste '+
-    'navegador. Não são enviadas a ninguém e não saem do seu computador.</p>';
-}
-
 document.addEventListener('click',function(e){
   const cp=e.target.closest('[data-copiar]');
   if(cp){
@@ -1377,32 +1336,6 @@ document.addEventListener('click',function(e){
       navigator.clipboard.writeText(txt).then(feito,function(){window.prompt('Copie o texto:',txt);});
     } else { window.prompt('Copie o texto:',txt); }
     return;
-  }
-  const esq=e.target.closest('[data-esquecer]');
-  if(esq){ esquecerPergunta(esq.dataset.esquecer); return; }
-  if(e.target.id==='exportar-perg'){
-    /* Nada de link de download: em visualizadores embutidos a pagina nao recebe
-       permissao de download e o botao simplesmente nao faz nada. Botao que morre
-       em um dos contextos e pior que botao nenhum. Campo selecionavel + copiar
-       funciona em qualquer lugar — e para uma lista de perguntas, copiar e mais
-       util que baixar um .txt. */
-    const l=perguntasGuardadas();
-    const txt='Perguntas sem resposta no acervo\n'+
-      'Senado por Sao Paulo 2026 - kvgs.github.io/senado-sp-2026\n\n'+
-      l.map(function(x,i){return (i+1)+'. '+x.q+'   ['+x.em+']';}).join('\n');
-    const box=document.getElementById('export-box');
-    if(box){
-      box.hidden=false;
-      box.innerHTML='<label for="export-txt" class="vis-oculto">Lista de perguntas para copiar</label>'+
-        '<textarea id="export-txt" rows="'+Math.min(14,l.length+4)+'" readonly '+
-        'style="width:100%;font:inherit;font-size:.88rem;padding:11px;'+
-        'border:1px solid var(--rule-strong);border-radius:4px;background:var(--surface);'+
-        'color:var(--ink);resize:vertical"></textarea>'+
-        '<div class="acoes" style="margin-top:8px"><button type="button" data-copiar="'+esc(txt)+
-        '">Copiar lista</button></div>';
-      const ta=box.querySelector('#export-txt');
-      ta.value=txt; ta.focus(); ta.select();
-    }
   }
   const op=e.target.closest('[data-abrir]');
   if(op){
