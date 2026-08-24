@@ -481,6 +481,106 @@ async function rotaPromovidas(request, env, origem) {
   return json({ ok: true, marcadas: ids.length }, 200, origem);
 }
 
+const REGRAS_PESQUISA = `Você ajuda a curadoria de um acervo sobre as candidaturas ao Senado por São Paulo em 2026. Sua função é ENCONTRAR FONTES para uma pessoa conferir — nunca responder a pergunta.
+
+O QUE VOCÊ DEVOLVE
+Uma lista de documentos e páginas que podem tratar do assunto perguntado, com link. Para cada um, diga o que ele parece conter e por que pode servir. Não afirme qual é a posição da candidatura: você não sabe, e quem vai ler a fonte e decidir é uma pessoa.
+
+Escreva "a página X diz que...", nunca "a candidatura defende...". A diferença não é estilo: a primeira é verificável no link, a segunda é uma afirmação sua sobre uma pessoa real em ano eleitoral.
+
+PRIORIDADE DE FONTES, nesta ordem
+1. Documento registrado no TSE (programa de partido, plano de governo)
+2. Site oficial da candidatura ou do partido, e redes declaradas no registro
+3. Registro legislativo: projeto, voto, relatoria em câmara, assembleia ou senado
+4. Entrevista ou declaração publicada em veículo jornalístico identificado
+5. Qualquer outra coisa — sinalize como frágil
+
+Uma entrevista NÃO é equivalente a um documento registrado, e a diferença tem de aparecer no que você escreve. Material de campanha de outro estado, ou de outra eleição, não serve para São Paulo: se encontrar, diga isso explicitamente.
+
+FORMATO — repita este bloco para cada fonte, e não escreva mais nada fora deles:
+
+FONTE
+titulo: <título da página ou documento>
+url: <endereço completo>
+veiculo: <quem publica>
+data: <data da publicação, ou "não identificada">
+tipo: <oficial | verificada | secundaria | declaracao_candidato | registro_legislativo>
+trecho: <o que a página efetivamente diz sobre o assunto, em uma ou duas frases>
+porque: <por que isso serve, e qual a ressalva>
+FIM
+
+Se não encontrar nada que trate do assunto, responda apenas:
+
+NADA ENCONTRADO
+<uma frase dizendo o que você procurou e onde>
+
+Não preencha a lista com fontes que não tratam do assunto perguntado. Lista curta e certa vale mais que lista longa: quem vai abrir cada link é uma pessoa, e link que não serve custa o tempo dela.`;
+
+function analisaFontes(saida) {
+  if (/^\s*NADA ENCONTRADO/i.test(saida)) {
+    return { nada: true, nota: saida.replace(/^\s*NADA ENCONTRADO\s*/i, "").trim(), fontes: [] };
+  }
+  const fontes = [];
+  const blocos = saida.split(/^FONTE\s*$/m).slice(1);
+  for (const b of blocos) {
+    const corpo = b.split(/^FIM\s*$/m)[0];
+    const campo = (nome) => {
+      const m = corpo.match(new RegExp("^" + nome + ":\\s*(.+)$", "mi"));
+      return m ? m[1].trim() : "";
+    };
+    const url = campo("url");
+    if (!url) continue;
+    fontes.push({
+      titulo: campo("titulo"), url, veiculo: campo("veiculo"), data: campo("data"),
+      tipo: campo("tipo"), trecho: campo("trecho"), porque: campo("porque"),
+    });
+  }
+  return { nada: false, nota: "", fontes };
+}
+
+/** Ferramenta de bancada da autora: busca fontes para ela conferir. */
+async function rotaPesquisar(request, env, origem) {
+  if (!tokenOk(request, env)) return json({ erro: "Não autorizado." }, 401, origem);
+
+  let c;
+  try { c = JSON.parse(await request.text()); }
+  catch { return json({ erro: "Pedido malformado." }, 400, origem); }
+
+  const pergunta = corta(c.pergunta, 400).trim();
+  const idc = corta(c.id_candidatura, 80);
+  if (!pergunta) return json({ erro: "Pergunta vazia." }, 400, origem);
+  if (idc && !CANDIDATURAS.has(idc)) return json({ erro: "Candidatura desconhecida." }, 400, origem);
+
+  const cand = idc ? CANDIDATURAS.get(idc) : null;
+  const alvo = cand
+    ? `Candidatura: ${cand.nome} (${cand.partido}), número ${cand.numero}, ao Senado por São Paulo em 2026.`
+    : "Candidaturas ao Senado por São Paulo em 2026.";
+
+  const client = new Anthropic({ apiKey: env.ANTHROPIC_API_KEY });
+  try {
+    const r = await client.messages.create({
+      model: "claude-opus-5",
+      max_tokens: 8000,
+      thinking: { type: "adaptive" },
+      output_config: { effort: "medium" },
+      system: REGRAS_PESQUISA,
+      tools: [{ type: "web_search_20260209", name: "web_search", max_uses: 8 }],
+      messages: [{ role: "user", content: alvo + "\n\nAssunto procurado: " + pergunta }],
+    });
+
+    if (r.stop_reason === "refusal") {
+      return json({ erro: "O modelo recusou esta busca." }, 200, origem);
+    }
+    const saida = r.content.filter((b) => b.type === "text").map((b) => b.text).join("").trim();
+    const res = analisaFontes(saida);
+    return json({ ...res, bruto: res.fontes.length ? undefined : saida.slice(0, 1200) }, 200, origem);
+  } catch (e) {
+    const s = e && e.status;
+    if (s === 429) return json({ erro: "Limite de uso da API atingido. Tente daqui a pouco." }, 200, origem);
+    return json({ erro: "Não consegui pesquisar agora." }, 200, origem);
+  }
+}
+
 export default {
   async fetch(request, env) {
     const origem = request.headers.get("origin") || "";
@@ -504,6 +604,7 @@ export default {
 
     if (rota === "/decidir") return rotaDecidir(request, env, origem);
     if (rota === "/responder") return rotaResponder(request, env, origem);
+    if (rota === "/pesquisar") return rotaPesquisar(request, env, origem);
     if (rota === "/promovidas") return rotaPromovidas(request, env, origem);
     if (rota === "/perguntar") return rotaPerguntar(request, env, origem);
     return rotaResumo(request, env, origem);

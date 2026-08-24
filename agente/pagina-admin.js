@@ -91,6 +91,19 @@ export const PAGINA_ADMIN = `<!doctype html>
   .form-resp select,.form-resp input[type=date]{width:100%;font:inherit;padding:9px 11px;
     border:1px solid var(--rule-forte);border-radius:4px;background:var(--surface);color:var(--ink)}
   .form-resp .par{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+  .q .achar{font:inherit;font-size:.78rem;font-weight:600;padding:3px 9px;flex:0 0 auto;
+    border:1px solid var(--rule-forte);background:transparent;color:var(--ink-2);border-radius:3px}
+  .fontes{margin:8px 0 4px 27px;padding:12px 14px;background:var(--surface-2);
+    border:1px solid var(--rule);border-radius:5px;font-size:.9rem}
+  .fontes > p.cabeca{margin:0 0 10px;font-size:.83rem;color:var(--muted)}
+  .fontes ol{margin:0;padding-left:20px}
+  .fontes li{margin-top:11px}
+  .fontes li:first-child{margin-top:0}
+  .fontes .meta{display:block;font-size:.79rem;color:var(--muted);margin-top:2px}
+  .fontes .trecho{display:block;margin-top:4px}
+  .fontes .porque{display:block;margin-top:4px;font-size:.83rem;color:var(--muted)}
+  .fontes .tipo{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.05em;
+    text-transform:uppercase;padding:1px 6px;border-radius:3px;border:1px solid var(--rule-forte)}
 </style>
 </head>
 <body>
@@ -233,7 +246,10 @@ export const PAGINA_ADMIN = `<!doctype html>
               return '<div class="q"><input type="checkbox" id="c-' + esc(p.id) + '" value="' +
                 esc(p.id) + '" data-cand="' + esc(cid) + '" checked>' +
                 '<label class="txt" for="c-' + esc(p.id) + '">' + esc(p.pergunta) +
-                '<span class="quando">recebida em ' + esc(quando(p.criada_em)) + "</span></label></div>";
+                '<span class="quando">recebida em ' + esc(quando(p.criada_em)) + "</span></label>" +
+                '<button type="button" class="achar" data-achar="' + esc(p.id) +
+                '" data-cand="' + esc(cid) + '">Buscar fontes</button></div>' +
+                '<div data-fontes="' + esc(p.id) + '"></div>';
             }).join("") + "</div>";
         }).join("");
 
@@ -340,6 +356,53 @@ export const PAGINA_ADMIN = `<!doctype html>
       var ta = document.getElementById("msg-" + cid);
       ta.value = "Assunto: " + m.assunto + "\\n\\n" + m.corpo;
       ta.focus(); ta.select();
+      return;
+    }
+
+    if (b.dataset.achar){
+      var pid = b.dataset.achar;
+      var pergObj = DADOS.perguntas.filter(function(x){ return x.id === pid; })[0];
+      var caixa = document.querySelector('[data-fontes="' + pid + '"]');
+      if (!pergObj || !caixa) return;
+
+      b.disabled = true; b.textContent = "Buscando…";
+      caixa.innerHTML = '<div class="fontes"><p class="cabeca">Procurando fontes públicas…</p></div>';
+
+      api("/pesquisar", {
+        method: "POST",
+        headers: {"content-type": "application/json"},
+        body: JSON.stringify({ pergunta: pergObj.pergunta, id_candidatura: b.dataset.cand })
+      }).then(function(r){
+        b.disabled = false; b.textContent = "Buscar de novo";
+        if (r.erro){ caixa.innerHTML = '<div class="erro">' + esc(r.erro) + "</div>"; return; }
+
+        if (r.nada || !r.fontes || !r.fontes.length){
+          caixa.innerHTML = '<div class="fontes"><p class="cabeca">Nada encontrado.</p><p>' +
+            esc(r.nota || r.bruto || "A busca não localizou material sobre este assunto.") +
+            '</p><p class="porque" style="margin-top:8px">Isso não significa que a candidatura ' +
+            'não tenha posição — significa que não localizamos fonte pública. Continua valendo ' +
+            'perguntar ao gabinete.</p></div>';
+          return;
+        }
+
+        caixa.innerHTML = '<div class="fontes">' +
+          '<p class="cabeca"><strong>' + r.fontes.length + ' fonte(s) para você conferir.</strong> ' +
+          'Nada disto entrou no acervo. Abra cada link e decida — o modelo achou as páginas, ' +
+          'mas quem lê e julga é você.</p><ol>' +
+          r.fontes.map(function(f){
+            return '<li><a href="' + esc(f.url) + '" target="_blank" rel="noopener">' +
+              esc(f.titulo || f.url) + "</a>" +
+              '<span class="meta">' + (f.tipo ? '<span class="tipo">' + esc(f.tipo) + "</span> " : "") +
+              esc(f.veiculo || "veículo não identificado") + " · " +
+              esc(f.data || "data não identificada") + "</span>" +
+              (f.trecho ? '<span class="trecho">' + esc(f.trecho) + "</span>" : "") +
+              (f.porque ? '<span class="porque">' + esc(f.porque) + "</span>" : "") +
+              "</li>";
+          }).join("") + "</ol></div>";
+      }).catch(function(){
+        b.disabled = false; b.textContent = "Buscar fontes";
+        caixa.innerHTML = '<div class="erro">Não consegui falar com o servidor.</div>';
+      });
       return;
     }
 
