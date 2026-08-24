@@ -41,9 +41,42 @@ estadual para **São Paulo**, ele provavelmente tem o mesmo nível de detalhe �
 e seria a fonte certa para Marcio Alves e Maíra de Souza, muito melhor que o
 nacional. Vale procurar no TSE.
 
-## Ainda faltam aqui
+## Ainda faltam aqui — 2 documentos localizados, pendentes de download
 
-Nenhum. Os três PDFs que estavam pendentes foram baixados em 24/ago/2026.
+Mesma rotina de antes: abrir no navegador, salvar, colocar nesta pasta com o
+nome indicado.
 
-Se aparecerem novos documentos para baixar, eles serão listados aqui com o
-link e o nome de arquivo a usar.
+| # | Link para abrir no navegador | Salvar como | Efeito |
+|---|---|---|---|
+| 1 | https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017002789 | `programa-missao-2026.pdf` | Guto Schiavetto (144) sai de 🟣 para 🟢 |
+| 2 | https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017107286 | `programa-pcb-2026.pdf` | Petter Maahs (211) sai de 🟣 para 🟢 |
+
+**O 1 é o "Livro Amarelo" do MISSÃO** — a versão condensada de 51 páginas
+registrada no TSE, em 3 partes e 14 temas. O original tem cerca de 500
+páginas, e uma versão de 360 não pôde ser protocolada por limite do TSE. Hoje
+as propostas de Schiavetto vêm da página web da campanha; com este PDF passam
+a vir do documento registrado.
+
+**O 2 é o programa do PCB** registrado no TSE, que substitui a página do
+pcb.org.br como fonte de Petter Maahs.
+
+## Ainda por localizar — 3 documentos que provavelmente existem
+
+Não achei a URL destes, mas há razão concreta para acreditar que existem:
+
+1. **Programa estadual do PSTU para São Paulo.** Existe um registrado para o
+   **Rio de Janeiro** (`doc/190016929078`), o que mostra que o partido
+   registra programa por unidade federativa. A candidata do PSTU ao governo de
+   SP é Vera Lúcia. Cobriria Dra Eliana Ferreira (161) e Weller Gonçalves (160)
+   com fonte estadual, muito melhor que o programa nacional.
+2. **Programa estadual da UP para São Paulo.** O programa estadual da UP para
+   o Espírito Santo tem 23 páginas contra 2 do nacional. A candidata da UP ao
+   governo de SP é **Vivian Mendes**, com propostas especificamente paulistas
+   já divulgadas: reestatização da Sabesp, retomada da CPTM, salário mínimo
+   paulista. Cobriria Marcio Alves (800) e Maíra de Souza (808).
+3. **Programa do PCO registrado no TSE.** O PCO tem candidatura própria à
+   Presidência (Rui Costa Pimenta), então deve haver documento registrado.
+   Hoje a fonte de Ednelson Cesaretti (290) é cobertura de imprensa.
+
+Se aparecerem novos documentos, eles entram nesta lista com link e nome de
+arquivo.
