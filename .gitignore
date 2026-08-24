@@ -38,3 +38,6 @@ fontes/consulta-candidatos-2026.zip
 # publico e o que facilita o mau uso. Fica local; documentos.json guarda URL e
 # sha256 para reproduzir.
 fontes/prestacao-contas-2026.zip
+
+# Copia de seguranca que revisar.py faz ao iniciar; o git ja e o historico
+dados/posicoes.json.antes-da-revisao
