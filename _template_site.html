@@ -250,6 +250,24 @@
     font-size:.88rem;color:var(--ink-2);background:var(--surface)}
   .aviso-rev b{color:var(--alert)}
 
+  /* ---------- resumo redigido por IA (acessorio, nunca a voz principal) ---------- */
+  .ia{margin-top:26px;padding:16px 18px;background:var(--surface);
+    border:1px solid var(--rule-strong);border-radius:4px}
+  .ia > h3{margin:0 0 6px;font-size:1rem;font-family:system-ui,sans-serif}
+  .ia .chamada{font-size:.88rem;color:var(--muted);margin-bottom:12px}
+  .ia .texto{margin-top:14px;padding:14px 16px;background:var(--surface-2);
+    border-left:4px solid var(--s-registro);border-radius:0 4px 4px 0;
+    font-size:.96rem;line-height:1.65}
+  .ia .texto p+p{margin-top:10px}
+  .ia .legenda{margin-top:12px;font-size:.84rem;color:var(--muted)}
+  .ia .legenda li{margin-top:4px}
+  .ia .legenda ol{margin:6px 0 0;padding-left:22px}
+  .ia .rodape{margin-top:12px;padding:11px 14px;border:1px dashed var(--rule-strong);
+    border-radius:4px;font-size:.86rem;color:var(--ink-2)}
+  .ia .rodape b{color:var(--alert)}
+  .ia .falha{margin-top:14px;padding:12px 15px;background:var(--alert-bg);
+    border:1px solid var(--alert-line);border-radius:4px;font-size:.9rem;color:var(--ink-2)}
+
   /* ---------- perfil (Fase 6) ---------- */
   .voltar{display:inline-flex;align-items:center;gap:7px;font:inherit;font-size:.92rem;
     font-weight:600;background:none;border:0;color:var(--s-registro);cursor:pointer;padding:8px 0;
@@ -473,7 +491,14 @@ function fonteLinha(i){
   if(i.ressalva) h+='<span class="ress">Ressalva: '+esc(i.ressalva)+'</span>';
   return h+'</p>';
 }
+/* Coletor: enquanto vale um array, toda proposta RENDERIZADA e registrada nele.
+   Assim o que vai para o modelo e exatamente o que esta na tela, sem uma segunda
+   travessia da grade que poderia divergir da primeira. Fora da aba Perguntar
+   vale null e nada acontece. */
+let COLETA=null;
+
 function proposta(i){
+  if(COLETA) COLETA.push(i);
   let h='<div class="prop"><p class="quem">';
   h+= i.de_partido ? '<span class="part">Proposta do '+esc(i.partido)+', não da candidatura</span>'
                    : '<span>Proposta própria</span>';
@@ -920,6 +945,7 @@ function blocoGrupo(cid,titulo,corpoHTML){
 function responder(q){
   const out=document.getElementById('saida-consulta');
   if(!nrm(q)){ out.innerHTML=''; return; }
+  COLETA=[];
   const temas=detectaTemas(q), cands=detectaCands(q);
   const negativa=NEG.some(x=>nrm(q).indexOf(nrm(x))>=0);
   let h='', como='', corpo='', achou=0;
@@ -1001,11 +1027,93 @@ function responder(q){
        'para responder à sua pergunta. E nada aqui passou por revisão humana ainda — '+
        'o que numa resposta corrida é fácil esquecer, porque texto fluente soa mais seguro do que é.</div>';
   }
+
+  /* O resumo em texto corrido vem DEPOIS das fontes, e nao antes, porque a
+     informacao com procedencia e a resposta — o resumo e conveniencia. */
+  const usados=COLETA||[]; COLETA=null;
+  const podeIA = D.agente_url && achou && usados.length;
+  if(podeIA){
+    h+='<div class="ia"><h3>Resumo em texto corrido</h3>'+
+       '<p class="chamada">Um modelo de linguagem pode reescrever as '+usados.length+
+       ' informação(ões) acima em um parágrafo só. Ele recebe apenas essas linhas — '+
+       'não o acervo inteiro, não a internet — e é instruído a não acrescentar nada. '+
+       'É opcional: a resposta com fonte já está completa acima.</p>'+
+       '<button type="button" id="btn-ia">Redigir resumo</button>'+
+       '<div id="ia-saida" aria-live="polite"></div></div>';
+  }
+
   out.innerHTML=h;
   const bg=document.getElementById('btn-guardar');
   if(bg) bg.addEventListener('click',function(){ guardarPergunta(q); renderGuardadas();
     bg.textContent='Guardada'; bg.disabled=true; });
+  const bi=document.getElementById('btn-ia');
+  if(bi) bi.addEventListener('click',function(){ pedirResumo(q, usados, bi); });
   renderGuardadas();
+}
+
+/* ---------- camada de LLM: redige a partir do que ja foi recuperado ---------- */
+
+const IA_MAX_LINHAS = 24;   /* tem de bater com MAX_LINHAS do worker */
+
+function linhaParaAgente(i){
+  const c=D.candidatos[i.cid]||{}, tm=D.temas.find(function(x){return x.id===i.tid;});
+  return {cand:(c.nome||'')+' ('+(c.partido||'')+')', tema:(tm&&tm.nome)||'',
+          de_partido:!!i.de_partido, partido:i.partido||'',
+          texto:i.texto||'', citacao:i.citacao||'', escopo:i.escopo||'',
+          fonte:i.fonte||'', data:dataBR(i.data)};
+}
+
+function legendaIA(linhas){
+  return '<div class="legenda"><p>De onde veio cada número:</p><ol>'+
+    linhas.map(function(l){
+      return '<li>'+esc(l.cand)+' — '+esc(l.tema)+
+             (l.de_partido?' — proposta do partido '+esc(l.partido):'')+
+             ' — '+esc(l.fonte)+'</li>';}).join('')+'</ol></div>';
+}
+
+async function pedirResumo(pergunta, usados, botao){
+  const alvo=document.getElementById('ia-saida');
+  if(!alvo) return;
+
+  /* Corte declarado. Truncar em silencio faria o resumo parecer cobrir tudo. */
+  const linhas=usados.slice(0,IA_MAX_LINHAS).map(linhaParaAgente);
+  const cortou=usados.length>IA_MAX_LINHAS;
+
+  botao.disabled=true; botao.textContent='Redigindo…';
+  alvo.setAttribute('aria-busy','true');
+  alvo.innerHTML='<p class="chamada" style="margin-top:12px">Redigindo o resumo…</p>';
+
+  let dados;
+  try{
+    const r=await fetch(D.agente_url,{method:'POST',
+      headers:{'content-type':'application/json'},
+      body:JSON.stringify({pergunta:pergunta.slice(0,300), linhas:linhas})});
+    dados=await r.json();
+  }catch(e){
+    dados={erro:'Não consegui falar com o serviço que redige o resumo. '+
+                'As informações com fonte continuam acima, completas.'};
+  }
+
+  alvo.removeAttribute('aria-busy');
+  botao.disabled=false; botao.textContent='Redigir de novo';
+
+  if(!dados||dados.erro){
+    alvo.innerHTML='<div class="falha">'+esc((dados&&dados.erro)||'Falha desconhecida.')+'</div>';
+    return;
+  }
+
+  const paras=String(dados.texto).split(/\n{2,}/).filter(function(x){return x.trim();});
+  alvo.innerHTML='<div class="texto">'+
+      paras.map(function(x){return '<p>'+esc(x.trim())+'</p>';}).join('')+'</div>'+
+      legendaIA(linhas)+
+      (cortou?'<p class="legenda"><strong>Atenção:</strong> a resposta acima tinha '+
+              usados.length+' informações e o resumo usou apenas as '+IA_MAX_LINHAS+
+              ' primeiras. Ele não cobre tudo.</p>':'')+
+      '<div class="rodape"><b>Texto gerado por IA.</b> Ele reescreve as informações '+
+      'listadas acima e não pode acrescentar outras, mas pode errar ao resumir, '+
+      'perder uma ressalva ou trocar de quem é a proposta. Em caso de dúvida, o que '+
+      'vale é o texto original com a fonte, logo acima — e nenhuma dessas informações '+
+      'passou por revisão humana ainda.</div>';
 }
 
 (function(){

@@ -11,7 +11,7 @@ Regras respeitadas (secao 4 do contexto):
   - ordem dos candidatos: numero de urna
   - bio gerada mecanicamente do registro, sem adjetivo
 """
-import json, pathlib
+import hashlib, json, pathlib
 
 BASE = pathlib.Path(__file__).parent
 HERE = BASE
@@ -138,6 +138,9 @@ for r in pos:
         "busca_escopo": r.get("escopo_da_busca",""),
         "ressalva": (r.get("conferido_por_ia") or {}).get("ressalva",""),
         "revisado": bool(r.get("revisado_por_humano")),
+        # contexto embutido: o agente precisa saber de quem e de que tema e a linha,
+        # e derivar isso no navegador seria uma segunda fonte de verdade
+        "cid": alvo, "tid": r["id_tema"],
     })
 # citacao literal primeiro — regra mecanica declarada, sem juizo editorial
 for t in grade:
@@ -171,8 +174,14 @@ pesquisa = {"instituto": q["instituto"], "registro": q["registro_tse"],
             "resultados": {r["id_candidatura"]: r for r in q["resultados"]},
             "outros": q.get("outros", [])}
 
+# Endpoint do backend do agente. Arquivo ausente = recurso desligado e o site
+# se comporta exatamente como antes. Nada de chave nem segredo aqui: so a URL.
+_ep = HERE/"agente-endpoint.txt"
+agente_url = _ep.read_text(encoding="utf-8").strip() if _ep.exists() else ""
+
 dados = {
     "atualizado": "24 de agosto de 2026",
+    "agente_url": agente_url,
     "temas": [{"id": t["id_tema"], "nome": t["nome"]} for t in temas],
     "ordem": ordem, "candidatos": cand_por_id, "grade": grade, "leg": leg,
     "votos": votos, "pesquisa": pesquisa,
@@ -181,6 +190,20 @@ dados = {
     "totais": {"posicoes": len(pos),
                "revisadas": sum(1 for r in pos if r.get("revisado_por_humano"))},
 }
+
+# Hashes do acervo. O backend so aceita redigir a partir de texto cujo hash esta
+# aqui: e a prova de que a linha veio do acervo, e nao de um navegador adulterado.
+# Gerado junto com o site pela mesma razao que o site e gerado — nao pode divergir.
+chaves = sorted({
+    hashlib.sha256(((r.get("texto") or "") + chr(0) + (r.get("citacao_literal") or ""))
+                   .encode("utf-8")).hexdigest()[:16]
+    for r in pos
+})
+ag = HERE/"agente"
+ag.mkdir(exist_ok=True)
+(ag/"acervo-hashes.json").write_text(
+    json.dumps({"gerado_de": "dados/posicoes.json", "n": len(chaves), "chaves": chaves},
+               ensure_ascii=False, indent=1), encoding="utf-8")
 
 tpl = (HERE/"_template_site.html").read_text(encoding="utf-8")
 OUT.write_text(tpl.replace("/*__DADOS__*/", json.dumps(dados, ensure_ascii=False)), encoding="utf-8")

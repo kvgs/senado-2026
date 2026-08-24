@@ -1,0 +1,16 @@
+{
+  "name": "agente-senado-sp-2026",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Backend do agente do site Senado por Sao Paulo 2026. Guarda a chave da API e redige resumos apenas a partir de linhas que provam vir do acervo.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.72.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

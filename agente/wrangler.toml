@@ -1,0 +1,16 @@
+name = "agente-senado-sp-2026"
+main = "worker.js"
+compatibility_date = "2026-08-01"
+compatibility_flags = ["nodejs_compat"]
+
+# A chave da API NAO vai aqui. Ela e gravada como segredo, fora do repositorio:
+#   npx wrangler secret put ANTHROPIC_API_KEY
+# Segredo em arquivo versionado e chave publicada, so que devagar.
+
+# Limitador por IP: 6 pedidos por minuto. O worker funciona sem isto — se o
+# deploy reclamar desta secao, apague as 5 linhas abaixo e siga.
+[[unsafe.bindings]]
+name = "LIMITADOR"
+type = "ratelimit"
+namespace_id = "2026"
+simple = { limit = 6, period = 60 }
