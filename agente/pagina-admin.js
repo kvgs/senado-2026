@@ -1,0 +1,362 @@
+/**
+ * Página privada de moderação da fila de perguntas.
+ *
+ * Servida pelo próprio worker, e não pelo GitHub Pages, por um motivo: assim o
+ * token de acesso nunca precisa existir no repositório público do site.
+ *
+ * O que ela faz: mostra as perguntas que os visitantes deixaram sem resposta,
+ * agrupadas por candidatura e tema, e monta UMA mensagem formal representando
+ * todas as perguntas selecionadas. Quem envia é a autora, do próprio e-mail.
+ * Nada sai daqui sozinho.
+ *
+ * O JavaScript de dentro da página usa concatenação e evita template literals
+ * de propósito: o arquivo inteiro já é um template literal, e aninhar os dois
+ * vira um campo minado de escapes.
+ */
+export const PAGINA_ADMIN = `<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Moderação da fila — Senado SP 2026</title>
+<style>
+  :root{
+    --ground:#F7F8F7; --surface:#FFFFFF; --surface-2:#EDEFED;
+    --ink:#16181A; --ink-2:#33383C; --muted:#5C6469;
+    --rule:#D9DEDA; --rule-forte:#A9B2AC;
+    --acento:#1F5C46; --alerta:#8A2F1F; --alerta-bg:#FBF0EE;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --ground:#141715; --surface:#1C201E; --surface-2:#252A27;
+      --ink:#EEF1EF; --ink-2:#C8CFCA; --muted:#98A29B;
+      --rule:#333A36; --rule-forte:#4E5852;
+      --acento:#6FC091; --alerta:#F0897C; --alerta-bg:#2A1C19;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ground);color:var(--ink);
+    font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;padding:24px 18px 80px}
+  main{max-width:900px;margin:0 auto}
+  h1{font-size:1.4rem;margin:0 0 4px}
+  .sub{color:var(--muted);font-size:.9rem;margin:0 0 24px}
+  fieldset{border:1px solid var(--rule);border-radius:6px;padding:16px;margin:0 0 20px;
+    background:var(--surface)}
+  legend{padding:0 8px;font-weight:600;font-size:.95rem}
+  label{display:block;font-size:.88rem;color:var(--ink-2);margin-bottom:6px}
+  input[type=password],input[type=text],textarea{width:100%;font:inherit;padding:10px 12px;
+    border:1px solid var(--rule-forte);border-radius:4px;background:var(--surface);color:var(--ink)}
+  textarea{font-size:.9rem;line-height:1.55;resize:vertical}
+  button{font:inherit;font-weight:600;padding:9px 15px;border-radius:4px;cursor:pointer;
+    border:1px solid var(--acento);background:var(--acento);color:var(--ground)}
+  button.sec{background:transparent;color:var(--ink);border-color:var(--rule-forte)}
+  button:disabled{opacity:.5;cursor:not-allowed}
+  button:focus-visible,input:focus-visible,textarea:focus-visible,
+  a:focus-visible,summary:focus-visible{outline:3px solid var(--acento);outline-offset:2px}
+  .barra{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:14px}
+  .grupo{background:var(--surface);border:1px solid var(--rule);border-radius:6px;
+    margin-bottom:16px;overflow:hidden}
+  .grupo > h2{margin:0;padding:13px 16px;background:var(--surface-2);
+    border-bottom:1px solid var(--rule);font-size:1rem;
+    display:flex;flex-wrap:wrap;gap:10px;align-items:baseline}
+  .num{font-variant-numeric:tabular-nums;font-weight:400;color:var(--muted);font-size:.85rem}
+  .corpo{padding:14px 16px}
+  .sem-contato{background:var(--alerta-bg);border:1px solid var(--alerta);color:var(--ink-2);
+    border-radius:4px;padding:10px 13px;font-size:.86rem;margin-bottom:12px}
+  .sem-contato b{color:var(--alerta)}
+  .tema{margin-top:14px}
+  .tema:first-child{margin-top:0}
+  .tema > h3{font-size:.86rem;text-transform:uppercase;letter-spacing:.06em;
+    color:var(--muted);margin:0 0 8px}
+  .q{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-top:1px solid var(--rule)}
+  .q:first-of-type{border-top:0}
+  .q input{margin-top:5px;width:17px;height:17px;flex:0 0 auto;accent-color:var(--acento)}
+  .q .txt{flex:1;font-size:.94rem}
+  .q .quando{display:block;color:var(--muted);font-size:.78rem;font-variant-numeric:tabular-nums;
+    margin-top:3px}
+  .vazio{color:var(--muted);padding:26px 0;text-align:center}
+  .erro{background:var(--alerta-bg);border:1px solid var(--alerta);border-radius:4px;
+    padding:11px 14px;color:var(--ink-2);margin-top:12px}
+  .oculto{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  details{margin-top:18px}
+  summary{cursor:pointer;font-weight:600;font-size:.92rem}
+  .hist{font-size:.86rem;color:var(--muted);margin-top:10px}
+  .hist li{margin-top:5px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Moderação da fila</h1>
+  <p class="sub">Perguntas que os visitantes deixaram porque o acervo não respondeu.
+     Nada sai daqui sozinho: você escolhe, monta a mensagem e envia do seu próprio e-mail.</p>
+
+  <fieldset id="caixa-token">
+    <legend>Acesso</legend>
+    <label for="tok">Token de moderação</label>
+    <input type="password" id="tok" autocomplete="current-password">
+    <div class="barra"><button type="button" id="entrar">Entrar</button></div>
+    <div id="erro-token"></div>
+  </fieldset>
+
+  <div id="painel" hidden>
+    <div class="barra" style="margin:0 0 18px">
+      <button type="button" class="sec" id="recarregar">Recarregar</button>
+      <span class="num" id="resumo-fila"></span>
+    </div>
+    <div id="lista" aria-live="polite"></div>
+    <details id="historico" hidden>
+      <summary>Já decididas</summary>
+      <ul class="hist" id="lista-hist"></ul>
+    </details>
+  </div>
+</main>
+
+<script>
+(function(){
+  "use strict";
+  var TOKEN = "";
+  var DADOS = null;
+
+  function esc(s){
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function(c){
+      return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];
+    });
+  }
+  function quando(iso){
+    var d = new Date(iso);
+    if (isNaN(d)) return iso || "";
+    var p = function(n){ return String(n).padStart(2,"0"); };
+    return p(d.getDate())+"/"+p(d.getMonth()+1)+"/"+d.getFullYear()+" "+p(d.getHours())+"h"+p(d.getMinutes());
+  }
+  function api(caminho, opcoes){
+    opcoes = opcoes || {};
+    opcoes.headers = Object.assign({"x-token": TOKEN}, opcoes.headers || {});
+    return fetch(caminho, opcoes).then(function(r){ return r.json(); });
+  }
+
+  document.getElementById("entrar").addEventListener("click", entrar);
+  document.getElementById("tok").addEventListener("keydown", function(e){
+    if (e.key === "Enter") entrar();
+  });
+  document.getElementById("recarregar").addEventListener("click", carregar);
+
+  function entrar(){
+    TOKEN = document.getElementById("tok").value.trim();
+    if (!TOKEN) return;
+    carregar();
+  }
+
+  function carregar(){
+    var alvoErro = document.getElementById("erro-token");
+    alvoErro.innerHTML = "";
+    api("/fila").then(function(d){
+      if (d.erro){
+        alvoErro.innerHTML = '<div class="erro">' + esc(d.erro) + "</div>";
+        return;
+      }
+      try { sessionStorage.setItem("tok_mod", TOKEN); } catch(e){}
+      DADOS = d;
+      document.getElementById("caixa-token").hidden = true;
+      document.getElementById("painel").hidden = false;
+      desenhar();
+    }).catch(function(){
+      alvoErro.innerHTML = '<div class="erro">Não consegui falar com o servidor.</div>';
+    });
+  }
+
+  function nomeCand(id){
+    var c = DADOS.catalogo.candidaturas.filter(function(x){ return x.id === id; })[0];
+    return c ? c : { id: id, nome: id, partido: "", numero: "", email: null };
+  }
+  function nomeTema(id){
+    var t = DADOS.catalogo.temas.filter(function(x){ return x.id === id; })[0];
+    return t ? t.nome : "Sem tema identificado";
+  }
+
+  function desenhar(){
+    var pend = DADOS.perguntas.filter(function(p){ return p.estado === "pendente"; });
+    var feitas = DADOS.perguntas.filter(function(p){ return p.estado !== "pendente"; });
+
+    document.getElementById("resumo-fila").textContent =
+      pend.length + " pendente(s) · " + feitas.length + " já decidida(s)";
+
+    var lista = document.getElementById("lista");
+    if (!pend.length){
+      lista.innerHTML = '<p class="vazio">Nenhuma pergunta pendente.</p>';
+    } else {
+      /* Agrupa por candidatura e, dentro dela, por tema. A contagem por grupo e
+         o ponto todo: uma pergunta e ignoravel, quinze nao sao. */
+      var porCand = {};
+      pend.forEach(function(p){
+        (porCand[p.id_candidatura] = porCand[p.id_candidatura] || []).push(p);
+      });
+      var ordem = Object.keys(porCand).sort(function(a,b){
+        return porCand[b].length - porCand[a].length;
+      });
+
+      lista.innerHTML = ordem.map(function(cid){
+        var c = nomeCand(cid), itens = porCand[cid];
+        var porTema = {};
+        itens.forEach(function(p){ (porTema[p.id_tema || ""] = porTema[p.id_tema || ""] || []).push(p); });
+
+        var aviso = c.email ? "" :
+          '<div class="sem-contato"><b>Sem contato oficial registrado.</b> ' +
+          'Dá para moderar e agrupar, mas ainda não dá para enviar: só temos e-mail ' +
+          'das candidaturas com mandato. O dataset de redes sociais do TSE, que os ' +
+          'próprios candidatos preenchem no registro, está pendente de download.</div>';
+
+        var blocos = Object.keys(porTema).map(function(tid){
+          return '<div class="tema"><h3>' + esc(nomeTema(tid)) + " · " + porTema[tid].length +
+            " pergunta(s)</h3>" +
+            porTema[tid].map(function(p){
+              return '<div class="q"><input type="checkbox" id="c-' + esc(p.id) + '" value="' +
+                esc(p.id) + '" data-cand="' + esc(cid) + '" checked>' +
+                '<label class="txt" for="c-' + esc(p.id) + '">' + esc(p.pergunta) +
+                '<span class="quando">recebida em ' + esc(quando(p.criada_em)) + "</span></label></div>";
+            }).join("") + "</div>";
+        }).join("");
+
+        return '<section class="grupo"><h2>' + esc(c.nome) +
+          ' <span class="num">' + esc(c.partido) + " · " + esc(c.numero) + "</span>" +
+          '<span class="num">' + itens.length + " pergunta(s) na fila</span></h2>" +
+          '<div class="corpo">' + aviso + blocos +
+          '<div class="barra">' +
+            '<button type="button" data-montar="' + esc(cid) + '"' + (c.email ? "" : " disabled") +
+              ">Montar mensagem</button>" +
+            '<button type="button" class="sec" data-marcar="enviada" data-cand="' + esc(cid) + '">Marcar como enviadas</button>' +
+            '<button type="button" class="sec" data-marcar="descartada" data-cand="' + esc(cid) + '">Descartar</button>' +
+          "</div>" +
+          '<div data-saida="' + esc(cid) + '"></div>' +
+          "</div></section>";
+      }).join("");
+    }
+
+    var hist = document.getElementById("historico");
+    hist.hidden = !feitas.length;
+    document.getElementById("lista-hist").innerHTML = feitas.slice(0, 200).map(function(p){
+      return "<li><strong>" + esc(p.estado) + "</strong> · " + esc(nomeCand(p.id_candidatura).nome) +
+        " · " + esc(p.pergunta) + "</li>";
+    }).join("");
+  }
+
+  function selecionadas(cid){
+    return Array.prototype.slice.call(
+      document.querySelectorAll('input[type=checkbox][data-cand="' + cid + '"]:checked')
+    ).map(function(i){ return i.value; });
+  }
+
+  function montarMensagem(cid){
+    var c = nomeCand(cid);
+    var ids = selecionadas(cid);
+    var itens = DADOS.perguntas.filter(function(p){ return ids.indexOf(p.id) >= 0; });
+    if (!itens.length) return null;
+
+    var porTema = {};
+    itens.forEach(function(p){ (porTema[p.id_tema || ""] = porTema[p.id_tema || ""] || []).push(p); });
+
+    var n = itens.length;
+    var corpo =
+      "Prezada assessoria de " + c.nome + ",\\n\\n" +
+      "Escrevo em nome do projeto Senado por São Paulo 2026 " +
+      "(https://kvgs.github.io/senado-sp-2026/), um site independente e sem fins " +
+      "lucrativos que reúne as propostas das candidaturas ao Senado por São Paulo, " +
+      "sempre com a fonte oficial de cada informação.\\n\\n" +
+      "Procuramos nas fontes públicas disponíveis e não localizamos posição registrada " +
+      "sobre os pontos abaixo. " +
+      (n === 1
+        ? "Um eleitor nos perguntou o seguinte:"
+        : n + " eleitores nos perguntaram sobre estes pontos:") + "\\n\\n";
+
+    Object.keys(porTema).forEach(function(tid){
+      corpo += nomeTema(tid).toUpperCase() + "\\n";
+      porTema[tid].forEach(function(p){ corpo += "  - " + p.pergunta + "\\n"; });
+      corpo += "\\n";
+    });
+
+    corpo +=
+      "Qualquer resposta será publicada na íntegra, identificada como declaração da " +
+      "candidatura e com a data em que foi recebida. Se a candidatura preferir não " +
+      "responder, registraremos apenas que a pergunta foi feita, sem interpretar o " +
+      "silêncio.\\n\\n" +
+      "Se preferirem indicar um documento público que já trate do assunto, também " +
+      "serve — e é a forma que preferimos, porque podemos citar a fonte original.\\n\\n" +
+      "Agradeço a atenção.\\n";
+
+    var assunto = "Pergunta de eleitores sobre a candidatura ao Senado por SP" +
+      (n > 1 ? " (" + n + " perguntas)" : "");
+
+    return { para: c.email, assunto: assunto, corpo: corpo, ids: ids, cand: c };
+  }
+
+  document.addEventListener("click", function(e){
+    var b = e.target.closest ? e.target.closest("button") : null;
+    if (!b) return;
+
+    if (b.dataset.montar){
+      var cid = b.dataset.montar;
+      var m = montarMensagem(cid);
+      var saida = document.querySelector('[data-saida="' + cid + '"]');
+      if (!m){ saida.innerHTML = '<div class="erro">Nenhuma pergunta selecionada.</div>'; return; }
+
+      /* Campo copiavel ALEM do link mailto: cliente de e-mail engasga com corpo
+         longo, e link que morre em silencio e pior que link nenhum. */
+      var href = "mailto:" + encodeURIComponent(m.para) +
+        "?subject=" + encodeURIComponent(m.assunto) +
+        "&body=" + encodeURIComponent(m.corpo);
+
+      saida.innerHTML =
+        '<div style="margin-top:16px">' +
+        '<p style="font-size:.86rem;color:var(--muted)">Para: <strong>' + esc(m.para) + "</strong>" +
+        ' · fonte do contato: ' + esc(m.cand.email_fonte || "não registrada") + "</p>" +
+        '<label for="msg-' + esc(cid) + '">Mensagem (' + m.ids.length + " pergunta(s))</label>" +
+        '<textarea id="msg-' + esc(cid) + '" rows="16" readonly></textarea>' +
+        '<div class="barra">' +
+          '<a href="' + esc(href) + '"><button type="button">Abrir no cliente de e-mail</button></a>' +
+          '<button type="button" class="sec" data-copiar="' + esc(cid) + '">Copiar mensagem</button>' +
+        "</div></div>";
+
+      var ta = document.getElementById("msg-" + cid);
+      ta.value = "Assunto: " + m.assunto + "\\n\\n" + m.corpo;
+      ta.focus(); ta.select();
+      return;
+    }
+
+    if (b.dataset.copiar){
+      var ta2 = document.getElementById("msg-" + b.dataset.copiar);
+      ta2.focus(); ta2.select();
+      try { document.execCommand("copy"); b.textContent = "Copiada"; } catch(err){}
+      if (navigator.clipboard) navigator.clipboard.writeText(ta2.value).catch(function(){});
+      return;
+    }
+
+    if (b.dataset.marcar){
+      var cid2 = b.dataset.cand, estado = b.dataset.marcar;
+      var ids2 = selecionadas(cid2);
+      var saida2 = document.querySelector('[data-saida="' + cid2 + '"]');
+      if (!ids2.length){ saida2.innerHTML = '<div class="erro">Nenhuma pergunta selecionada.</div>'; return; }
+      if (estado === "descartada" &&
+          !confirm("Descartar " + ids2.length + " pergunta(s)? Elas saem da fila.")) return;
+
+      b.disabled = true;
+      api("/decidir", {
+        method: "POST",
+        headers: {"content-type": "application/json"},
+        body: JSON.stringify({ids: ids2, estado: estado})
+      }).then(function(r){
+        b.disabled = false;
+        if (r.erro){ saida2.innerHTML = '<div class="erro">' + esc(r.erro) + "</div>"; return; }
+        carregar();
+      });
+    }
+  });
+
+  /* Token guardado na aba, nao no disco: fechou a aba, some. */
+  try {
+    var guardado = sessionStorage.getItem("tok_mod");
+    if (guardado){ TOKEN = guardado; document.getElementById("tok").value = guardado; carregar(); }
+  } catch(e){}
+})();
+</script>
+</body>
+</html>`;

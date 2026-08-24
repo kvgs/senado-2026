@@ -14,3 +14,9 @@ name = "LIMITADOR"
 type = "ratelimit"
 namespace_id = "2026"
 simple = { limit = 6, period = 60 }
+
+# Fila de perguntas sem resposta no acervo. Nada sai daqui sem moderacao.
+[[d1_databases]]
+binding = "FILA"
+database_name = "perguntas-senado-sp"
+database_id = "611b4323-cc78-4eec-890d-8734a142a6ab"

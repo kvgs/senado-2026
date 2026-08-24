@@ -33,9 +33,11 @@ versão fluente dele — com a conta indo para a sua chave, e com aparência de 
 saído do acervo. Confiar no que o navegador manda é confiar em código que está na
 mão do visitante.
 
-**Consequência prática:** sempre que você editar `dados/posicoes.json`, rode
-`python gerar_site.py` e faça deploy do worker de novo. Se os hashes ficarem para
-trás, o agente vai recusar as linhas novas.
+**Consequência prática:** sempre que você editar `dados/posicoes.json` ou
+`dados/candidaturas.json`, rode `python gerar_site.py` e faça deploy do worker de
+novo. O gerador reescreve `acervo-hashes.json` e `catalogo.json`, e o worker leva
+os dois embutidos: se ficarem para trás, o agente recusa as linhas novas e a fila
+recusa as candidaturas novas.
 
 O CORS restrito à origem do site reduz uso acidental por outra página, mas não é
 defesa: CORS é regra de navegador, e `curl` não é navegador. As defesas reais são
@@ -98,6 +100,72 @@ python gerar_site.py
 ```
 git add -A && git commit -m "liga a camada de LLM na aba Perguntar" && git push
 ```
+
+## A fila de perguntas
+
+Quando o acervo não responde, o visitante pode deixar a pergunta numa fila. O
+site **não envia nada sozinho**.
+
+O ciclo é: o visitante escolhe a candidatura e escreve a pergunta → ela entra no
+banco D1 → você abre a página de moderação, vê quantas pessoas perguntaram a
+mesma coisa para a mesma candidatura → seleciona, monta uma mensagem formal que
+representa todas → envia do **seu próprio e-mail** → marca como enviadas.
+
+A agregação é o ponto. Uma pergunta de um eleitor é fácil de ignorar; quinze
+eleitores perguntando a mesma coisa é outra conversa. É isso que torna o pedido
+respondível.
+
+**Privacidade:** a fila guarda a pergunta, a candidatura e a data. Não guarda IP,
+cookie, login nem qualquer identificador de visitante. Pergunta política diz
+muito sobre quem pergunta, e o projeto não tem motivo para saber quem foi.
+
+**Limite real hoje:** só 4 das 15 candidaturas têm e-mail oficial registrado —
+as que têm mandato, com endereço institucional de gabinete. As outras dependem
+do dataset *Redes sociais de candidatos* do TSE, preenchido pelos próprios
+candidatos no registro, que continua pendente de download manual. A fila aceita
+perguntas para todas as 15; o envio, por enquanto, só funciona para as 4. A
+página de moderação diz isso explicitamente em cada grupo.
+
+### Página de moderação
+
+Fica em `SUA-URL-DO-WORKER/admin`, servida pelo próprio worker — não pelo
+GitHub Pages — para que o token nunca precise existir no repositório público.
+Ela é `noindex` e não mostra nada sem o token.
+
+Para definir o token:
+
+```
+cd agente
+npx wrangler secret put TOKEN_ADMIN
+```
+
+Use uma senha longa e aleatória, gerada por um gerenciador de senhas. Ela é a
+única coisa entre a fila e a internet.
+
+### Banco de dados
+
+D1, `perguntas-senado-sp`. O esquema está em `migracoes/0001_fila.sql`. Para
+aplicar num banco novo:
+
+```
+npx wrangler d1 execute perguntas-senado-sp --remote --file=migracoes/0001_fila.sql
+```
+
+Para olhar a fila pela linha de comando, sem a página:
+
+```
+npx wrangler d1 execute perguntas-senado-sp --remote   --command "SELECT criada_em, id_candidatura, pergunta FROM perguntas WHERE estado='pendente'"
+```
+
+## Rotas do worker
+
+| Rota | Método | O que faz | Protegida por |
+|---|---|---|---|
+| `/` | POST | Redige o resumo a partir das linhas recuperadas | origem + hash do acervo |
+| `/perguntar` | POST | Põe uma pergunta na fila | origem + limitador |
+| `/admin` | GET | Página de moderação | o token, pedido na própria página |
+| `/fila` | GET | Lista a fila em JSON | `x-token` |
+| `/decidir` | POST | Marca perguntas como enviadas ou descartadas | `x-token` |
 
 ## Custo
 

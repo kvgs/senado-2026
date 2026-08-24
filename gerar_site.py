@@ -205,6 +205,24 @@ ag.mkdir(exist_ok=True)
     json.dumps({"gerado_de": "dados/posicoes.json", "n": len(chaves), "chaves": chaves},
                ensure_ascii=False, indent=1), encoding="utf-8")
 
+# Catalogo para o backend: quem sao as candidaturas e os temas validos, e qual
+# o contato OFICIAL de cada uma. O worker recusa pergunta dirigida a id que nao
+# esteja aqui, e a pagina de moderacao usa o e-mail para montar a mensagem.
+# Contato so de fonte oficial — nunca raspado de rede social, nunca achado em
+# busca: mandar eleitor escrever para a pessoa errada seria pior que nao mandar.
+(ag/"catalogo.json").write_text(json.dumps({
+    "temas": [{"id": t["id_tema"], "nome": t["nome"]} for t in temas],
+    "candidaturas": [{
+        "id": cid,
+        "nome": cand_por_id[cid]["nome"],
+        "partido": cand_por_id[cid]["partido"],
+        "numero": cand_por_id[cid]["numero"],
+        "email": (cand_por_id[cid].get("contato") or {}).get("email"),
+        "email_fonte": (cand_por_id[cid].get("contato") or {}).get("email_fonte"),
+        "email_tipo": (cand_por_id[cid].get("contato") or {}).get("email_tipo"),
+    } for cid in ordem],
+}, ensure_ascii=False, indent=1), encoding="utf-8")
+
 tpl = (HERE/"_template_site.html").read_text(encoding="utf-8")
 OUT.write_text(tpl.replace("/*__DADOS__*/", json.dumps(dados, ensure_ascii=False)), encoding="utf-8")
 print(f"gerado: {OUT.name}  ({OUT.stat().st_size/1024:.0f} KB)")

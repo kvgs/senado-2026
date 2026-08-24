@@ -19,8 +19,14 @@
 
 import Anthropic from "@anthropic-ai/sdk";
 import ACERVO from "./acervo-hashes.json";
+import CATALOGO from "./catalogo.json";
+import { PAGINA_ADMIN } from "./pagina-admin.js";
 
 const CHAVES = new Set(ACERVO.chaves);
+const CANDIDATURAS = new Map(CATALOGO.candidaturas.map((c) => [c.id, c]));
+const TEMAS = new Map(CATALOGO.temas.map((x) => [x.id, x]));
+
+const MAX_FILA_PENDENTE = 5000;   /* respiro contra enchente; nao e seguranca */
 
 /* Origens autorizadas. Isto reduz uso acidental por outra página, não é defesa
    contra uso deliberado — CORS é regra de navegador, e curl não é navegador.
@@ -128,25 +134,26 @@ function montarPergunta(pergunta, linhas) {
     `Redija o resumo seguindo as regras.`;
 }
 
-export default {
-  async fetch(request, env, ctx) {
-    const origem = request.headers.get("origin") || "";
+/* Limitador por IP. Opcional: se a associação não estiver configurada no
+   wrangler.toml, o worker segue funcionando sem ela. Devolve null quando pode
+   seguir, ou a resposta de recusa. */
+async function limitar(request, env, origem) {
+  if (!(env.LIMITADOR && typeof env.LIMITADOR.limit === "function")) return null;
+  const ip = request.headers.get("cf-connecting-ip") || "sem-ip";
+  try {
+    const { success } = await env.LIMITADOR.limit({ key: ip });
+    if (!success) {
+      return json({ erro: "Muitos pedidos em pouco tempo. Espere um minuto e tente de novo." }, 429, origem);
+    }
+  } catch (e) { /* limitador indisponível não pode derrubar a resposta */ }
+  return null;
+}
 
-    if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: cabecalhos(origem) });
-    if (request.method !== "POST") return json({ erro: "Método não permitido." }, 405, origem);
+async function rotaResumo(request, env, origem) {
     if (!ORIGENS.has(origem)) return json({ erro: "Origem não autorizada." }, 403, origem);
 
-    /* Limitador por IP. Opcional: se a associação não estiver configurada no
-       wrangler.toml, o worker segue funcionando sem ela. */
-    if (env.LIMITADOR && typeof env.LIMITADOR.limit === "function") {
-      const ip = request.headers.get("cf-connecting-ip") || "sem-ip";
-      try {
-        const { success } = await env.LIMITADOR.limit({ key: ip });
-        if (!success) {
-          return json({ erro: "Muitos pedidos em pouco tempo. Espere um minuto e tente de novo." }, 429, origem);
-        }
-      } catch (e) { /* limitador indisponível não pode derrubar a resposta */ }
-    }
+    const barrado = await limitar(request, env, origem);
+    if (barrado) return barrado;
 
     const bruto = await request.text();
     if (bruto.length > MAX_CORPO) return json({ erro: "Pedido grande demais." }, 413, origem);
@@ -212,5 +219,118 @@ export default {
       if (status === 401) return json({ erro: "Chave da API inválida ou ausente no backend." }, 200, origem);
       return json({ erro: "Não consegui redigir agora. As informações do acervo continuam na tela." }, 200, origem);
     }
+}
+
+/* ===================== fila moderada de perguntas ===================== */
+
+const MAX_PERGUNTA_FILA = 400;
+
+/** Comparacao em tempo constante: comparar token com === vaza o tamanho do
+ *  prefixo correto pelo tempo de resposta. */
+function tokenOk(request, env) {
+  const dado = request.headers.get("x-token") || "";
+  const esperado = env.TOKEN_ADMIN || "";
+  if (!esperado || dado.length !== esperado.length) return false;
+  let dif = 0;
+  for (let i = 0; i < dado.length; i++) dif |= dado.charCodeAt(i) ^ esperado.charCodeAt(i);
+  return dif === 0;
+}
+
+async function rotaPerguntar(request, env, origem) {
+  if (!ORIGENS.has(origem)) return json({ erro: "Origem não autorizada." }, 403, origem);
+  if (!env.FILA) return json({ erro: "A fila de perguntas não está configurada." }, 200, origem);
+
+  const barrado = await limitar(request, env, origem);
+  if (barrado) return barrado;
+
+  let corpo;
+  try { corpo = JSON.parse(await request.text()); }
+  catch { return json({ erro: "Pedido malformado." }, 400, origem); }
+
+  const pergunta = corta(corpo.pergunta, MAX_PERGUNTA_FILA).trim();
+  const idc = corta(corpo.id_candidatura, 80);
+  const idt = corta(corpo.id_tema, 40);
+
+  if (pergunta.length < 8) return json({ erro: "Escreva a pergunta com um pouco mais de detalhe." }, 400, origem);
+  if (!CANDIDATURAS.has(idc)) return json({ erro: "Escolha uma candidatura." }, 400, origem);
+  if (idt && !TEMAS.has(idt)) return json({ erro: "Tema desconhecido." }, 400, origem);
+
+  const { total } = await env.FILA.prepare(
+    "SELECT COUNT(*) AS total FROM perguntas WHERE estado = 'pendente'").first();
+  if (total >= MAX_FILA_PENDENTE) {
+    return json({ erro: "A fila está cheia no momento. Tente mais tarde." }, 503, origem);
+  }
+
+  const id = crypto.randomUUID();
+  await env.FILA.prepare(
+    "INSERT INTO perguntas (id, criada_em, pergunta, id_candidatura, id_tema) VALUES (?, ?, ?, ?, ?)"
+  ).bind(id, new Date().toISOString(), pergunta, idc, idt || null).run();
+
+  const c = CANDIDATURAS.get(idc);
+  const { fila } = await env.FILA.prepare(
+    "SELECT COUNT(*) AS fila FROM perguntas WHERE estado = 'pendente' AND id_candidatura = ?"
+  ).bind(idc).first();
+
+  return json({ ok: true, candidatura: c.nome, na_fila: fila, tem_contato: !!c.email }, 200, origem);
+}
+
+async function rotaFila(request, env, origem) {
+  if (!tokenOk(request, env)) return json({ erro: "Não autorizado." }, 401, origem);
+  if (!env.FILA) return json({ erro: "Fila não configurada." }, 500, origem);
+
+  const { results } = await env.FILA.prepare(
+    "SELECT id, criada_em, pergunta, id_candidatura, id_tema, estado, decidida_em, nota " +
+    "FROM perguntas ORDER BY criada_em DESC LIMIT 1000").all();
+
+  return json({ perguntas: results || [], catalogo: CATALOGO }, 200, origem);
+}
+
+async function rotaDecidir(request, env, origem) {
+  if (!tokenOk(request, env)) return json({ erro: "Não autorizado." }, 401, origem);
+  if (!env.FILA) return json({ erro: "Fila não configurada." }, 500, origem);
+
+  let corpo;
+  try { corpo = JSON.parse(await request.text()); }
+  catch { return json({ erro: "Pedido malformado." }, 400, origem); }
+
+  const ids = Array.isArray(corpo.ids) ? corpo.ids.slice(0, 500).filter((x) => typeof x === "string") : [];
+  const estado = corta(corpo.estado, 20);
+  const nota = corta(corpo.nota, 500);
+  if (!ids.length) return json({ erro: "Nenhuma pergunta selecionada." }, 400, origem);
+  if (!["pendente", "enviada", "descartada"].includes(estado)) {
+    return json({ erro: "Estado inválido." }, 400, origem);
+  }
+
+  const marcas = ids.map(() => "?").join(",");
+  await env.FILA.prepare(
+    `UPDATE perguntas SET estado = ?, decidida_em = ?, nota = ? WHERE id IN (${marcas})`
+  ).bind(estado, new Date().toISOString(), nota || null, ...ids).run();
+
+  return json({ ok: true, atualizadas: ids.length }, 200, origem);
+}
+
+export default {
+  async fetch(request, env) {
+    const origem = request.headers.get("origin") || "";
+    const rota = new URL(request.url).pathname.replace(/\/+$/, "") || "/";
+
+    if (request.method === "OPTIONS") {
+      return new Response(null, { status: 204, headers: cabecalhos(origem) });
+    }
+
+    /* Pagina de moderacao: servida pelo proprio worker, para que o token nunca
+       precise existir no repositorio publico do site. */
+    if (rota === "/admin" && request.method === "GET") {
+      return new Response(PAGINA_ADMIN, {
+        headers: { "content-type": "text/html; charset=utf-8", "x-robots-tag": "noindex, nofollow" },
+      });
+    }
+    if (rota === "/fila" && request.method === "GET") return rotaFila(request, env, origem);
+
+    if (request.method !== "POST") return json({ erro: "Método não permitido." }, 405, origem);
+
+    if (rota === "/decidir") return rotaDecidir(request, env, origem);
+    if (rota === "/perguntar") return rotaPerguntar(request, env, origem);
+    return rotaResumo(request, env, origem);
   },
 };

@@ -250,6 +250,23 @@
     font-size:.88rem;color:var(--ink-2);background:var(--surface)}
   .aviso-rev b{color:var(--alert)}
 
+  /* ---------- pedir que a gente pergunte ao gabinete ---------- */
+  .pedir{margin-top:18px;padding:16px 18px;background:var(--surface);
+    border:1px solid var(--rule-strong);border-radius:4px}
+  .pedir h4{margin:0 0 6px;font-size:1rem;font-family:system-ui,sans-serif}
+  .pedir .chamada{font-size:.88rem;color:var(--muted);margin-bottom:14px}
+  .pedir .campo{margin-top:12px}
+  .pedir label{display:block;font-size:.86rem;font-weight:600;color:var(--ink-2);margin-bottom:5px}
+  .pedir select,.pedir textarea{width:100%;font:inherit;font-size:.94rem;padding:9px 11px;
+    border:1px solid var(--rule-strong);border-radius:4px;background:var(--surface);color:var(--ink)}
+  .pedir textarea{resize:vertical;line-height:1.55}
+  .pedir .aviso{margin-top:12px;padding:10px 13px;border:1px dashed var(--rule-strong);
+    border-radius:4px;font-size:.85rem;color:var(--ink-2)}
+  .pedir .ok{margin-top:14px;padding:12px 15px;background:var(--surface-2);
+    border-left:4px solid var(--s-registro);border-radius:0 4px 4px 0;font-size:.93rem}
+  .pedir .falha{margin-top:14px;padding:12px 15px;background:var(--alert-bg);
+    border:1px solid var(--alert-line);border-radius:4px;font-size:.9rem;color:var(--ink-2)}
+
   /* ---------- resumo redigido por IA (acessorio, nunca a voz principal) ---------- */
   .ia{margin-top:18px;padding:16px 18px;background:var(--surface);
     border:1px solid var(--rule-strong);border-radius:4px}
@@ -1039,6 +1056,7 @@ function responder(q){
        '<button type="button" class="sec" id="btn-guardar">Guardar esta pergunta</button></div>'+
        '</div>'+
        '<div id="box-contatos" hidden>'+blocoContatos(q)+'</div>'+
+       blocoPedir(q, cands[0]||'', temas[0]||'')+
        '<div style="margin-top:24px"><h3 style="font-size:1.02rem">Perguntas que você guardou</h3>'+
        '<div id="guardadas-box"></div></div>';
   } else {
@@ -1048,6 +1066,10 @@ function responder(q){
        'está no acervo, com a fonte e o selo de origem. Nada foi reescrito, resumido ou interpretado '+
        'para responder à sua pergunta. E nada aqui passou por revisão humana ainda — '+
        'o que numa resposta corrida é fácil esquecer, porque texto fluente soa mais seguro do que é.</div>';
+    /* Achou a candidatura mas nenhuma proposta: so ausencia. Para quem perguntou,
+       isto tambem e ficar sem resposta — e e exatamente o caso em que perguntar
+       ao gabinete faz mais sentido, porque ja se sabe de quem e sobre o que. */
+    if(!usados.length) h+=blocoPedir(q, cands[0]||'', temas[0]||'');
   }
 
   out.innerHTML=h;
@@ -1056,7 +1078,82 @@ function responder(q){
     bg.textContent='Guardada'; bg.disabled=true; });
   const bi=document.getElementById('btn-ia');
   if(bi) bi.addEventListener('click',function(){ pedirResumo(q, usados, bi); });
+  ligarPedir();
   renderGuardadas();
+}
+
+/* ---------- pedir que a gente pergunte ao gabinete ---------- */
+
+function blocoPedir(q, candSugerida, temaSugerido){
+  if(!D.agente_url) return '';
+  const cands=D.ordem.map(function(cid){
+    const c=D.candidatos[cid];
+    return '<option value="'+esc(cid)+'"'+(cid===candSugerida?' selected':'')+'>'+
+           esc(c.numero)+' — '+esc(c.nome)+' ('+esc(c.partido)+')</option>';
+  }).join('');
+  const tms=D.temas.map(function(x){
+    return '<option value="'+esc(x.id)+'"'+(x.id===temaSugerido?' selected':'')+'>'+
+           esc(x.nome)+'</option>';
+  }).join('');
+
+  return '<div class="pedir"><h4>Peça para a gente perguntar</h4>'+
+    '<p class="chamada">Sua pergunta entra numa fila. Quando várias pessoas perguntam a mesma '+
+    'coisa para a mesma candidatura, escrevemos <strong>uma</strong> mensagem ao contato oficial '+
+    'representando todas — porque um eleitor sozinho é fácil de ignorar, e quinze não são. '+
+    'Nada é enviado automaticamente: uma pessoa lê antes.</p>'+
+    '<div class="campo"><label for="pd-cand">Para qual candidatura?</label>'+
+    '<select id="pd-cand"><option value="">Escolha uma candidatura</option>'+cands+'</select></div>'+
+    '<div class="campo"><label for="pd-tema">Sobre qual tema? (opcional)</label>'+
+    '<select id="pd-tema"><option value="">Não sei dizer</option>'+tms+'</select></div>'+
+    '<div class="campo"><label for="pd-texto">Sua pergunta</label>'+
+    '<textarea id="pd-texto" rows="3" maxlength="400">'+esc(q)+'</textarea></div>'+
+    '<div class="acoes" style="margin-top:14px"><button type="button" id="pd-enviar">'+
+    'Colocar na fila</button></div>'+
+    '<p class="aviso">Não escrevemos em seu nome e não guardamos quem você é: a fila registra a '+
+    'pergunta, a candidatura e a data, e mais nada — sem IP, sem cookie, sem login. '+
+    'A pergunta pode acabar num e-mail para o gabinete, então não escreva dados pessoais nela. '+
+    'Se a candidatura responder, publicamos a resposta na íntegra; se não responder, registramos '+
+    'apenas que a pergunta foi feita — silêncio não vira posição.</p>'+
+    '<div id="pd-saida" aria-live="polite"></div></div>';
+}
+
+function ligarPedir(){
+  const b=document.getElementById('pd-enviar');
+  if(!b) return;
+  b.addEventListener('click', async function(){
+    const cid=document.getElementById('pd-cand').value;
+    const tid=document.getElementById('pd-tema').value;
+    const txt=document.getElementById('pd-texto').value.trim();
+    const out=document.getElementById('pd-saida');
+
+    if(!cid){ out.innerHTML='<div class="falha">Escolha para qual candidatura é a pergunta.</div>';
+      document.getElementById('pd-cand').focus(); return; }
+    if(txt.length<8){ out.innerHTML='<div class="falha">Escreva a pergunta com um pouco mais de detalhe.</div>';
+      document.getElementById('pd-texto').focus(); return; }
+
+    b.disabled=true; b.textContent='Enviando…';
+    let d;
+    try{
+      const r=await fetch(D.agente_url.replace(/\/+$/,'')+'/perguntar',{method:'POST',
+        headers:{'content-type':'application/json'},
+        body:JSON.stringify({pergunta:txt, id_candidatura:cid, id_tema:tid})});
+      d=await r.json();
+    }catch(e){ d={erro:'Não consegui falar com o serviço da fila. Tente de novo daqui a pouco.'}; }
+
+    b.disabled=false; b.textContent='Colocar na fila';
+    if(!d||d.erro){ out.innerHTML='<div class="falha">'+esc((d&&d.erro)||'Falha desconhecida.')+'</div>'; return; }
+
+    out.innerHTML='<div class="ok"><strong>Pergunta na fila.</strong> '+
+      (d.na_fila>1 ? 'Com a sua, já são '+d.na_fila+' perguntas aguardando para '+esc(d.candidatura)+'. '
+                   : 'É a primeira pergunta na fila para '+esc(d.candidatura)+'. ')+
+      (d.tem_contato
+        ? 'Temos o contato oficial dessa candidatura, então dá para enviar.'
+        : '<strong>Ainda não temos contato oficial dessa candidatura</strong> — só temos e-mail das '+
+          'que têm mandato. A pergunta fica registrada mesmo assim, e segue para envio assim que '+
+          'houver contato de fonte oficial.')+
+      ' Não prometemos resposta: quem responde é o gabinete.</div>';
+    document.getElementById('pd-texto').value='';
+  });
 }
 
 /* ---------- camada de LLM: redige a partir do que ja foi recuperado ---------- */

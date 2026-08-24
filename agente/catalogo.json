@@ -1,0 +1,181 @@
+{
+ "temas": [
+  {
+   "id": "t1",
+   "nome": "Segurança Pública"
+  },
+  {
+   "id": "t2",
+   "nome": "Educação"
+  },
+  {
+   "id": "t3",
+   "nome": "Saúde"
+  },
+  {
+   "id": "t4",
+   "nome": "Economia e Emprego"
+  },
+  {
+   "id": "t5",
+   "nome": "Infraestrutura e Mobilidade Urbana"
+  },
+  {
+   "id": "t6",
+   "nome": "Meio Ambiente e Mudança Climática"
+  },
+  {
+   "id": "t7",
+   "nome": "Habitação"
+  },
+  {
+   "id": "t8",
+   "nome": "Tecnologia e Inteligência Artificial"
+  },
+  {
+   "id": "t9",
+   "nome": "Cultura e Direitos Humanos"
+  },
+  {
+   "id": "t10",
+   "nome": "Organização do Estado e Prioridades Legislativas"
+  }
+ ],
+ "candidaturas": [
+  {
+   "id": "sen-sp-2026-derrite",
+   "nome": "Guilherme Derrite",
+   "partido": "PP",
+   "numero": "111",
+   "email": "dep.guilhermederrite@camara.leg.br",
+   "email_fonte": "Câmara dos Deputados (dados abertos)",
+   "email_tipo": "institucional"
+  },
+  {
+   "id": "sen-sp-2026-schiavetto",
+   "nome": "Guto Schiavetto",
+   "partido": "MISSÃO",
+   "numero": "144",
+   "email": null,
+   "email_fonte": null,
+   "email_tipo": null
+  },
+  {
+   "id": "sen-sp-2026-weller",
+   "nome": "Weller Gonçalves",
+   "partido": "PSTU",
+   "numero": "160",
+   "email": null,
+   "email_fonte": null,
+   "email_tipo": null
+  },
+  {
+   "id": "sen-sp-2026-eliana-ferreira",
+   "nome": "Dra Eliana Ferreira",
+   "partido": "PSTU",
+   "numero": "161",
+   "email": null,
+   "email_fonte": null,
+   "email_tipo": null
+  },
+  {
+   "id": "sen-sp-2026-marina",
+   "nome": "Marina Silva",
+   "partido": "REDE",
+   "numero": "180",
+   "email": "dep.marinasilva@camara.leg.br",
+   "email_fonte": "Câmara dos Deputados (dados abertos)",
+   "email_tipo": "institucional"
+  },
+  {
+   "id": "sen-sp-2026-rufino",
+   "nome": "Geraldo Rufino",
+   "partido": "PODE",
+   "numero": "200",
+   "email": null,
+   "email_fonte": null,
+   "email_tipo": null
+  },
+  {
+   "id": "sen-sp-2026-petter-maahs",
+   "nome": "Petter Maahs",
+   "partido": "PCB",
+   "numero": "211",
+   "email": null,
+   "email_fonte": null,
+   "email_tipo": null
+  },
+  {
+   "id": "sen-sp-2026-andre-do-prado",
+   "nome": "André do Prado",
+   "partido": "PL",
+   "numero": "222",
+   "email": "andredoprado@al.sp.gov.br",
+   "email_fonte": "ALESP (dados abertos)",
+   "email_tipo": "institucional"
+  },
+  {
+   "id": "sen-sp-2026-soninha",
+   "nome": "Soninha Francine",
+   "partido": "CIDADANIA",
+   "numero": "232",
+   "email": null,
+   "email_fonte": null,
+   "email_tipo": null
+  },
+  {
+   "id": "sen-sp-2026-cesaretti",
+   "nome": "Ednelson Cesaretti",
+   "partido": "PCO",
+   "numero": "290",
+   "email": null,
+   "email_fonte": null,
+   "email_tipo": null
+  },
+  {
+   "id": "sen-sp-2026-salles",
+   "nome": "Salles",
+   "partido": "NOVO",
+   "numero": "300",
+   "email": "dep.ricardosalles@camara.leg.br",
+   "email_fonte": "Câmara dos Deputados (dados abertos)",
+   "email_tipo": "institucional"
+  },
+  {
+   "id": "sen-sp-2026-william-teixeira",
+   "nome": "William Teixeira",
+   "partido": "AGIR",
+   "numero": "360",
+   "email": null,
+   "email_fonte": null,
+   "email_tipo": null
+  },
+  {
+   "id": "sen-sp-2026-tebet",
+   "nome": "Simone Tebet",
+   "partido": "PSB",
+   "numero": "400",
+   "email": null,
+   "email_fonte": null,
+   "email_tipo": null
+  },
+  {
+   "id": "sen-sp-2026-marcio-alves",
+   "nome": "Marcio Alves",
+   "partido": "UP",
+   "numero": "800",
+   "email": null,
+   "email_fonte": null,
+   "email_tipo": null
+  },
+  {
+   "id": "sen-sp-2026-maira",
+   "nome": "Maíra de Souza",
+   "partido": "UP",
+   "numero": "808",
+   "email": null,
+   "email_fonte": null,
+   "email_tipo": null
+  }
+ ]
+}
