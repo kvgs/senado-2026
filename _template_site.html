@@ -408,21 +408,9 @@
     </div>
     <div role="tabpanel" id="p-consulta" aria-labelledby="tab-consulta" tabindex="0" hidden>
       <h2>Perguntar ao acervo</h2>
-      <p style="margin-top:10px;color:var(--ink-2);max-width:72ch">A busca devolve <strong>apenas
-        informações que existem no acervo</strong>, com a fonte de cada uma. Ela não completa com
-        conhecimento de fora: se não houver informação, ela diz que não há, em vez de inventar.</p>
-      <p style="margin-top:10px;color:var(--ink-2);max-width:72ch">Quando a busca encontra alguma
-        coisa, você pode pedir um <strong>resumo em texto corrido, escrito por inteligência
-        artificial</strong>. Ele só aparece se você clicar, recebe apenas as informações que a busca
-        já achou — nem o acervo inteiro, nem a internet — e é instruído a não acrescentar nada.</p>
-      <p style="margin-top:10px;color:var(--ink-2);max-width:72ch">Resumir é interpretar, e é aí que
-        mora o risco: trocar de quem é a proposta, perder uma ressalva, inventar um dado. Por isso
-        <strong>todo resumo é conferido antes de aparecer</strong> — automaticamente, e depois por uma
-        segunda checagem que compara o texto com as informações de origem. Resumo reprovado é
-        descartado e você não chega a vê-lo. Isso reduz o risco; não o elimina. O que vale continua
-        sendo o texto original com a fonte, logo abaixo.
-        <strong>E quando a busca não acha nada, não há resumo nenhum</strong> — a IA não é chamada
-        para preencher vazio.</p>
+      <p style="margin-top:10px;color:var(--ink-2);max-width:66ch">Devolve <strong>apenas o que
+        existe no acervo</strong>, com a fonte de cada informação. Não completa com conhecimento de
+        fora: se não houver, diz que não há.</p>
       <form class="busca-caixa" id="form-busca" role="search">
         <label for="q" class="vis-oculto">Sua pergunta ou termo de busca</label>
         <input type="search" id="q" placeholder="Ex.: o que Marina Silva propõe sobre saúde?"
@@ -1108,10 +1096,10 @@ function responder(q){
   const usados=COLETA||[]; COLETA=null;
   if(D.agente_url && achou && usados.length){
     h+='<div class="ia"><h3>Resumo em texto corrido</h3>'+
-       '<p class="chamada">Um modelo de linguagem pode reescrever em um parágrafo só as '+
-       usados.length+' informação(ões) que aparecem abaixo. Ele recebe apenas essas linhas — '+
-       'não o acervo inteiro, não a internet — e é instruído a não acrescentar nada. '+
-       'É opcional: a resposta com fonte, abaixo, já está completa sem ele.</p>'+
+       '<p class="chamada">Uma IA pode reescrever num parágrafo só as '+usados.length+
+       ' informação(ões) abaixo. Ela recebe apenas essas linhas — não o acervo, não a internet — '+
+       'e o texto é conferido contra as fontes antes de aparecer; se falhar, é descartado. '+
+       'Ainda assim, o que vale é o original com a fonte, abaixo.</p>'+
        '<button type="button" id="btn-ia">Redigir resumo</button>'+
        '<div id="ia-saida" aria-live="polite"></div></div>';
   }
