@@ -121,7 +121,7 @@ def montar_itens():
     return itens
 
 
-def gravar(id_posicao, decisao, nota):
+def gravar(id_posicao, decisao, nota, citacao=""):
     caminho = DADOS / "posicoes.json"
     dados = json.loads(caminho.read_text(encoding="utf-8"))
     alvo = lista(dados, "posicoes")
@@ -131,6 +131,12 @@ def gravar(id_posicao, decisao, nota):
             continue
         achou = True
         r["revisao"] = {"em": date.today().isoformat(), "resultado": decisao, "nota": nota or ""}
+        # A frase colada na revisao vira a citacao literal do acervo: a revisao
+        # nao so aprova, ela preenche a ancora que faltava. Guarda tambem a marca
+        # de que veio da revisao humana, e nao da extracao automatica.
+        if citacao and citacao.strip():
+            r["citacao_literal"] = citacao.strip()
+            r["revisao"]["citacao_conferida_na_fonte"] = True
         # So "confere" marca como revisado por humano. As outras decisoes sao
         # registro de problema: um item com problema conhecido nao esta revisado,
         # esta condenado.
@@ -228,6 +234,16 @@ function desenhar(){
       (it.ressalva?'<span><strong>Ressalva anotada:</strong> '+esc(it.ressalva)+'</span>':'')+
     '</div>'+
     '<p class="confira">'+esc(it.o_que_conferir)+'</p>'+
+    (it.citacao
+      ? '<label for="cit" style="display:block;font-size:.84rem;color:var(--muted);margin-top:14px">'+
+        'Citacao errada? Cole a correta (opcional)</label>'+
+        '<textarea id="cit" rows="2"></textarea>'
+      : '<label for="cit" style="display:block;font-size:.84rem;font-weight:600;margin-top:14px">'+
+        'Cole a frase da fonte que sustenta isto</label>'+
+        '<p style="font-size:.83rem;color:var(--muted);margin:2px 0 6px">Obrigatoria para confirmar. '+
+        'Ela vira a citacao literal desta linha no acervo — e o que impede a parafrase de escorregar '+
+        'depois.</p>'+
+        '<textarea id="cit" rows="3"></textarea>')+
     '<textarea id="nota" rows="2" placeholder="Nota (obrigatoria se houver problema)"></textarea>'+
     '<div class="acoes">'+
       '<button class="ok" data-d="confere">Confere (1)</button>'+
@@ -245,16 +261,25 @@ function decidir(d){
   var it=pend[0];
   if(d==='pular'){ ITENS.splice(ITENS.indexOf(it),1); ITENS.push(it); desenhar(); return; }
   var nota=(document.getElementById('nota')||{}).value||'';
+  var cit=(document.getElementById('cit')||{}).value||'';
   if(d!=='confere' && !nota.trim()){
     alert('Escreva o que esta errado. Problema sem descricao nao da para consertar depois.');
     document.getElementById('nota').focus(); return;
   }
+  /* Confirmar linha sem ancora exige a frase. Nao e burocracia: foi assim que
+     "controle estatal dos precos" virou "congelamento de precos" sem ninguem ver. */
+  if(d==='confere' && !it.citacao && !cit.trim()){
+    alert('Cole a frase da fonte que sustenta esta linha.\n\n'+
+          'Sem trecho citado nao ha como conferir depois se a redacao escorregou.');
+    document.getElementById('cit').focus(); return;
+  }
   fetch('/api/decidir',{method:'POST',headers:{'content-type':'application/json'},
-    body:JSON.stringify({id:it.id,decisao:d,nota:nota})})
+    body:JSON.stringify({id:it.id,decisao:d,nota:nota,citacao:cit})})
     .then(function(r){return r.json();})
     .then(function(r){
       if(r.erro){ alert(r.erro); return; }
       it.revisado=(d==='confere'); it.revisao={resultado:d,nota:nota};
+      if(cit.trim()) it.citacao=cit.trim();
       desenhar();
     });
 }
@@ -302,7 +327,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
             return self._envia(json.dumps({"erro": "pedido malformado"}), status=400)
         if c.get("decisao") not in ("confere", "corrigir", "remover"):
             return self._envia(json.dumps({"erro": "decisao invalida"}), status=400)
-        ok = gravar(c.get("id"), c["decisao"], c.get("nota", ""))
+        ok = gravar(c.get("id"), c["decisao"], c.get("nota", ""), c.get("citacao", ""))
         self._envia(json.dumps({"ok": ok} if ok else {"erro": "posicao nao encontrada"}))
 
     def log_message(self, *a):
