@@ -1,0 +1,275 @@
+#!/usr/bin/env python3
+"""
+Validador do modelo de dados — Comparador de Candidaturas 2026.
+
+Transforma em código as regras que estavam só em prosa nos documentos do
+projeto. A intenção é que uma regra violada apareça aqui, e não numa tela
+publicada.
+
+Uso:  python validar.py
+Saída: relatório no stdout; exit code 1 se houver ERRO.
+"""
+
+import json
+import sys
+from pathlib import Path
+
+DADOS = Path(__file__).parent / "dados"
+
+NIVEIS_FONTE = {
+    "oficial", "verificada", "secundaria",
+    "declaracao_candidato", "registro_legislativo",
+}
+ESTADOS = {"A", "B", "C", "D"}
+NATUREZAS = {"promessa", "resultado_entregue"}
+
+erros: list[str] = []
+avisos: list[str] = []
+
+
+def carregar(nome):
+    caminho = DADOS / nome
+    if not caminho.exists():
+        erros.append(f"[arquivo] {nome} não encontrado em {DADOS}")
+        return None
+    try:
+        return json.loads(caminho.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as e:
+        erros.append(f"[json] {nome} inválido: {e}")
+        return None
+
+
+def main():
+    ref = carregar("referencia.json")
+    cands = carregar("candidaturas.json")
+    docs = carregar("documentos.json")
+    posic = carregar("posicoes.json")
+    regs = carregar("registros_legislativos.json")
+    pesq = carregar("pesquisas.json")
+
+    if erros:
+        relatar()
+        return
+
+    ids_tema = {t["id_tema"] for t in ref["temas"]}
+    ids_partido = {p["id_partido"] for p in ref["partidos"]}
+    ids_colig = {c["id_coligacao"] for c in ref["coligacoes"]}
+    ids_cand = {c["id_candidatura"] for c in cands["candidaturas"]}
+    ids_doc = {d["id_documento"] for d in docs["documentos"]}
+
+    # ---------- candidaturas ----------
+    for c in cands["candidaturas"]:
+        cid = c["id_candidatura"]
+        if c["id_partido"] not in ids_partido:
+            erros.append(f"[fk] {cid}: id_partido '{c['id_partido']}' inexistente")
+        if c.get("id_coligacao") and c["id_coligacao"] not in ids_colig:
+            erros.append(f"[fk] {cid}: id_coligacao '{c['id_coligacao']}' inexistente")
+        if not c.get("sequencial_tse"):
+            avisos.append(f"[chave] {cid}: sem sequencial_tse — chave natural do registro oficial")
+
+        # R7/R10: situação de registro é histórico datado
+        for s in c.get("situacao_registro", []):
+            if not s.get("observado_em"):
+                erros.append(f"[R10] {cid}: situacao_registro sem observado_em")
+
+        # R11: CPF nunca em Silver
+        if "cpf" in json.dumps(c).lower():
+            erros.append(f"[R11] {cid}: aparece 'cpf' — CPF não sai da camada Bronze")
+
+    # ---------- posições ----------
+    vistos = set()
+    for p in posic["posicoes"]:
+        pid = p.get("id_posicao", "<sem id>")
+        if pid in vistos:
+            erros.append(f"[pk] id_posicao duplicado: {pid}")
+        vistos.add(pid)
+
+        if p["id_tema"] not in ids_tema:
+            erros.append(f"[fk] {pid}: id_tema '{p['id_tema']}' inexistente")
+        if p.get("nivel_fonte") not in NIVEIS_FONTE:
+            erros.append(f"[R3] {pid}: nivel_fonte '{p.get('nivel_fonte')}' inválido")
+        if p.get("estado_cobertura") not in ESTADOS:
+            erros.append(f"[R2] {pid}: estado_cobertura '{p.get('estado_cobertura')}' inválido")
+        if p.get("natureza") and p["natureza"] not in NATUREZAS:
+            erros.append(f"[R5] {pid}: natureza '{p['natureza']}' inválida")
+        if not p.get("data_referencia"):
+            erros.append(f"[R10] {pid}: sem data_referencia")
+        if p.get("id_documento") and p["id_documento"] not in ids_doc:
+            erros.append(f"[fk] {pid}: id_documento '{p['id_documento']}' inexistente")
+
+        tipo = p.get("atribuido_a_tipo")
+        alvo = p.get("atribuido_a_id")
+
+        # R1: proposta pertence a candidatura OU a partido
+        if tipo == "candidatura":
+            if alvo not in ids_cand:
+                erros.append(f"[R1] {pid}: atribuido_a_id '{alvo}' não é candidatura conhecida")
+        elif tipo == "partido":
+            if alvo not in ids_partido:
+                erros.append(f"[R1] {pid}: atribuido_a_id '{alvo}' não é partido conhecido")
+            if not p.get("id_candidatura_contexto"):
+                erros.append(f"[R1] {pid}: proposta de partido exige id_candidatura_contexto")
+            elif p["id_candidatura_contexto"] not in ids_cand:
+                erros.append(f"[fk] {pid}: id_candidatura_contexto inexistente")
+        else:
+            erros.append(f"[R1] {pid}: atribuido_a_tipo '{tipo}' inválido")
+
+        # Estado B tem que ser atribuído a partido, e vice-versa
+        if p.get("estado_cobertura") == "B" and tipo != "partido":
+            erros.append(f"[R1] {pid}: estado B exige atribuido_a_tipo='partido'")
+        if tipo == "partido" and p.get("estado_cobertura") != "B":
+            avisos.append(f"[R1] {pid}: atribuído a partido mas estado != B — conferir")
+
+        # ---- A REGRA QUE MAIS IMPORTA ----
+        # R2: estado D é afirmação sobre a NOSSA busca, não sobre o candidato.
+        # Sem data e escopo registrados, vira acusação de silêncio insustentável.
+        if p.get("estado_cobertura") == "D":
+            if not p.get("busca_realizada_em"):
+                erros.append(f"[R2/D] {pid}: estado D sem busca_realizada_em")
+            if not p.get("escopo_da_busca"):
+                erros.append(f"[R2/D] {pid}: estado D sem escopo_da_busca")
+
+        # Curadoria incremental: nada publicável sem revisão humana
+        if not p.get("revisado_por_humano"):
+            avisos.append(f"[curadoria] {pid}: ainda não revisado por humano — não publicar")
+
+    # ---------- registros legislativos ----------
+    for r in regs["registros"]:
+        rid = r["id_registro"]
+        for t in r.get("temas", []):
+            if t not in ids_tema:
+                erros.append(f"[fk] {rid}: tema '{t}' inexistente")
+        if not r.get("autoria"):
+            erros.append(f"[R9] {rid}: sem autoria")
+        for a in r.get("autoria", []):
+            if a["id_candidatura"] not in ids_cand:
+                erros.append(f"[fk] {rid}: autoria aponta candidatura inexistente")
+            # Assinatura de apoio não é iniciativa. PEC no Senado exige 27
+            # assinaturas: sem ordem e total, "autor" mistura as duas coisas.
+            tot = a.get("total_autores")
+            if tot is not None and tot > 1 and a.get("ordem_autoria") is None:
+                erros.append(
+                    f"[autoria] {rid}: total_autores={tot} sem ordem_autoria. "
+                    "Não dá para distinguir iniciativa de assinatura de apoio."
+                )
+            if r.get("casa") == "senado" and r.get("tipo") == "PEC" and tot is None:
+                avisos.append(
+                    f"[autoria] {rid}: PEC do Senado sem total_autores — PEC lá exige "
+                    "27 assinaturas, então 'autor' sem contexto infla o registro."
+                )
+
+    # ---------- votações nominais ----------
+    # Um voto sem a pergunta votada e sem a proposição é ruído: não dá para
+    # traduzir em posição. Aqui isso é erro, não estilo.
+    for v in regs.get("votacoes_nominais", []):
+        vid = v.get("id_votacao", "<sem id>")
+        if not v.get("pergunta"):
+            erros.append(f"[voto] {vid}: sem 'pergunta' — voto sem a pergunta votada não é interpretável")
+        obj = v.get("proposicao_objeto") or {}
+        if not obj.get("rotulo") or not obj.get("ementa"):
+            erros.append(f"[voto] {vid}: sem proposicao_objeto completa (rotulo + ementa)")
+        if not v.get("data"):
+            erros.append(f"[R10] {vid}: votação sem data")
+        for t in v.get("temas", []):
+            if t not in ids_tema:
+                erros.append(f"[fk] {vid}: tema '{t}' inexistente")
+        registros_voto = list(v.get("votos", []))
+        registros_voto += (v.get("voto_adicional") or {}).get("votos", [])
+        if not registros_voto:
+            erros.append(f"[voto] {vid}: nenhum voto registrado")
+        for r in registros_voto:
+            if r.get("id_candidatura") not in ids_cand:
+                erros.append(f"[fk] {vid}: voto aponta candidatura inexistente '{r.get('id_candidatura')}'")
+            if not r.get("voto"):
+                erros.append(f"[voto] {vid}: registro sem valor de voto")
+
+    # A limitação de cobertura tem que estar declarada junto do dado.
+    if regs.get("votacoes_nominais") and not regs.get("_limitacao_votos"):
+        erros.append(
+            "[voto] há votações nominais mas falta _limitacao_votos. A base de "
+            "votações tem lacuna temporal e a maioria das votações é simbólica — "
+            "publicar sem declarar isso induz a ler ausência de voto como ausência de atuação."
+        )
+
+    # R9 + contexto obrigatório: quem tem contagem precisa de situacao_parlamentar
+    sit_parl = {
+        c["id_candidatura"]
+        for c in cands["candidaturas"]
+        if c.get("situacao_parlamentar")
+    }
+    for t in regs.get("totais_por_candidatura", []):
+        if t.get("substantivas_pl_pec_plp_pdl") is not None:
+            if t["id_candidatura"] not in sit_parl:
+                erros.append(
+                    f"[contexto] {t['id_candidatura']}: tem contagem de proposições "
+                    "sem situacao_parlamentar. Contagem sem contexto de licença é "
+                    "correta no número e enganosa no sentido."
+                )
+
+    # ---------- pesquisas ----------
+    for q in pesq["pesquisas"]:
+        if not q.get("registro_tse"):
+            erros.append(f"[R8] pesquisa {q.get('id_pesquisa')}: sem registro_tse")
+        for campo in ("campo_inicio", "campo_fim", "entrevistados", "margem_erro_pp"):
+            if q.get(campo) in (None, ""):
+                erros.append(f"[R8] pesquisa {q.get('id_pesquisa')}: sem {campo}")
+        for r in q.get("resultados", []):
+            if r["id_candidatura"] not in ids_cand:
+                erros.append(f"[fk] pesquisa: resultado aponta candidatura inexistente")
+            # R8: ausência do questionário não é zero
+            if r.get("constava_no_questionario") is False and r.get("percentual") is not None:
+                erros.append(
+                    f"[R8] {r['id_candidatura']}: constava_no_questionario=false "
+                    "mas tem percentual. Ausência do questionário não é 0%."
+                )
+
+    # ---------- regra de neutralidade ----------
+    # Proibido agregado que permita montar contador de completude por candidatura.
+    contagem = {}
+    for p in posic["posicoes"]:
+        alvo = p.get("id_candidatura_contexto") or p.get("atribuido_a_id")
+        if alvo in ids_cand and p.get("estado_cobertura") in ("A", "B"):
+            contagem[alvo] = contagem.get(alvo, 0) + 1
+    if contagem:
+        avisos.append(
+            "[neutralidade] O validador consegue derivar contagem de propostas por "
+            "candidatura. Isso é esperado em Silver — mas a camada Gold NÃO deve "
+            "expor esse agregado: seria ranking implícito, e mediria verba de "
+            "campanha e cobertura de imprensa, não qualidade de candidatura."
+        )
+
+    relatar(len(posic["posicoes"]), len(cands["candidaturas"]), len(regs["registros"]))
+
+
+def relatar(n_pos=0, n_cand=0, n_reg=0):
+    print("=" * 68)
+    print("VALIDAÇÃO DO MODELO DE DADOS — Comparador de Candidaturas 2026")
+    print("=" * 68)
+    if n_cand:
+        print(f"candidaturas: {n_cand} · posições: {n_pos} · registros legislativos: {n_reg}")
+        print("-" * 68)
+
+    if erros:
+        print(f"\n❌ {len(erros)} ERRO(S) — bloqueiam publicação:\n")
+        for e in erros:
+            print(f"   {e}")
+    else:
+        print("\n✅ Nenhum erro de integridade.")
+
+    if avisos:
+        curadoria = [a for a in avisos if a.startswith("[curadoria]")]
+        outros = [a for a in avisos if not a.startswith("[curadoria]")]
+        if outros:
+            print(f"\n⚠️  {len(outros)} aviso(s):\n")
+            for a in outros:
+                print(f"   {a}")
+        if curadoria:
+            print(f"\n📋 {len(curadoria)} posição(ões) aguardando revisão humana "
+                  "(curadoria incremental — nada disso é publicável ainda).")
+
+    print()
+    sys.exit(1 if erros else 0)
+
+
+if __name__ == "__main__":
+    main()

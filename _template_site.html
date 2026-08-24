@@ -1,0 +1,568 @@
+<title>Senado por São Paulo 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap">
+
+<style>
+  /* ---------------------------------------------------------------
+     Tokens. Contraste conferido contra WCAG 2.1 AA (4.5:1 texto
+     normal, 3:1 texto grande e componentes) nos dois temas.
+     --------------------------------------------------------------- */
+  :root{
+    --ground:#F7F8F7; --surface:#FFFFFF; --surface-2:#EDEFED; --surface-3:#E1E5E2;
+    --ink:#171A18;      /* 15.9:1 sobre surface */
+    --ink-2:#3A403C;    /*  9.6:1 */
+    --muted:#5C645F;    /*  6.1:1 */
+    --rule:#D6DBD7; --rule-strong:#A9B1AB;
+    --focus:#1F5FA8;
+
+    --s-oficial:#1F6B41;      /* 5.4:1 */
+    --s-verificada:#7A5600;   /* 5.9:1 */
+    --s-secundaria:#A32C20;   /* 5.9:1 */
+    --s-declaracao:#5F3391;   /* 7.4:1 */
+    --s-registro:#17558F;     /* 6.7:1 */
+    --alert:#A32C20; --alert-bg:#FBEEEC; --alert-line:#D9A9A2;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#0F1210; --surface:#171B18; --surface-2:#212621; --surface-3:#2C322D;
+      --ink:#EDF0EE; --ink-2:#C3CAC5; --muted:#9AA29C;
+      --rule:#2A302C; --rule-strong:#49514B; --focus:#7FB2E8;
+      --s-oficial:#6FC091; --s-verificada:#E0B45E; --s-secundaria:#F0897C;
+      --s-declaracao:#C29BE8; --s-registro:#82B4E8;
+      --alert:#F0897C; --alert-bg:#2B1C1A; --alert-line:#663932;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#0F1210; --surface:#171B18; --surface-2:#212621; --surface-3:#2C322D;
+    --ink:#EDF0EE; --ink-2:#C3CAC5; --muted:#9AA29C;
+    --rule:#2A302C; --rule-strong:#49514B; --focus:#7FB2E8;
+    --s-oficial:#6FC091; --s-verificada:#E0B45E; --s-secundaria:#F0897C;
+    --s-declaracao:#C29BE8; --s-registro:#82B4E8;
+    --alert:#F0897C; --alert-bg:#2B1C1A; --alert-line:#663932;
+  }
+
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+
+  body{margin:0;background:var(--ground);color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px 88px}
+  h1,h2,h3{margin:0;font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
+    font-weight:600;text-wrap:balance;letter-spacing:-.008em}
+  h1{font-size:clamp(1.75rem,4vw,2.5rem);line-height:1.12}
+  h2{font-size:clamp(1.3rem,2.6vw,1.7rem);line-height:1.2}
+  h3{font-size:1.05rem;line-height:1.3;font-weight:700}
+  p{margin:0}
+  ul{margin:0;padding:0}
+  a{color:var(--s-registro)}
+  a:hover{text-decoration-thickness:2px}
+  .mono{font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
+
+  /* foco visivel e generoso, requisito 2.4.7 */
+  :focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:3px}
+
+  .pular{position:absolute;left:-9999px;top:0;background:var(--ink);color:var(--ground);
+    padding:12px 18px;z-index:99;border-radius:0 0 4px 0;font-weight:600}
+  .pular:focus{left:0}
+
+  .lbl{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600}
+
+  /* ---------- cabecalho ---------- */
+  header{padding:30px 0 20px;border-bottom:2px solid var(--ink)}
+  .lede{margin-top:12px;color:var(--ink-2);max-width:60ch;font-size:1.08rem}
+  .atualizado{margin-top:10px;font-size:.85rem;color:var(--muted)}
+
+  /* ---------- aviso ---------- */
+  .aviso{background:var(--alert-bg);border:1px solid var(--alert-line);border-left:4px solid var(--alert);
+    border-radius:0 4px 4px 0;padding:14px 18px;margin:22px 0 0;font-size:.95rem;line-height:1.55;
+    color:var(--ink-2)}
+  .aviso b{color:var(--alert)}
+
+  /* ---------- abas ---------- */
+  [role="tablist"]{display:flex;flex-wrap:wrap;gap:4px;margin:26px 0 0;
+    border-bottom:1px solid var(--rule)}
+  [role="tab"]{font:inherit;font-size:.98rem;font-weight:600;padding:11px 18px;border:0;
+    background:none;color:var(--muted);cursor:pointer;border-bottom:3px solid transparent;
+    margin-bottom:-1px}
+  [role="tab"]:hover{color:var(--ink)}
+  [role="tab"][aria-selected="true"]{color:var(--ink);border-bottom-color:var(--ink)}
+  [role="tabpanel"]{padding-top:28px}
+  [role="tabpanel"]:focus{outline:none}
+
+  /* ---------- seletor de tema ---------- */
+  .campo{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:flex-end;
+    padding:16px 18px;background:var(--surface);border:1px solid var(--rule);border-radius:4px}
+  .campo label{display:block;font-size:.82rem;font-weight:600;color:var(--ink-2);margin-bottom:5px}
+  .campo select{font:inherit;font-size:1rem;padding:9px 12px;border:1px solid var(--rule-strong);
+    border-radius:4px;background:var(--surface);color:var(--ink);min-width:min(340px,100%)}
+  .campo .dica{font-size:.85rem;color:var(--muted);max-width:44ch}
+
+  /* ---------- cartao de candidato ---------- */
+  .lista{list-style:none;display:flex;flex-direction:column;gap:14px;margin-top:22px}
+  .card{background:var(--surface);border:1px solid var(--rule);border-radius:4px}
+  .card-top{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;
+    border-bottom:1px solid var(--rule)}
+  .retrato{flex:0 0 56px;width:56px;height:56px;border-radius:4px;background:var(--surface-3);
+    display:grid;place-items:center;font-weight:700;font-size:1.05rem;color:var(--ink-2);
+    border:1px solid var(--rule-strong)}
+  .retrato img{width:100%;height:100%;object-fit:cover;border-radius:3px}
+  .ident{min-width:0;flex:1}
+  .ident h3{display:flex;flex-wrap:wrap;align-items:baseline;gap:9px}
+  .urna{font-size:.9rem;font-weight:700;color:var(--ink-2);background:var(--surface-3);
+    padding:2px 8px;border-radius:3px;font-variant-numeric:tabular-nums}
+  .sigla{font-size:.85rem;font-weight:600;color:var(--muted);font-family:system-ui,sans-serif}
+  .meta{margin-top:6px;font-size:.87rem;color:var(--muted)}
+  .bio{margin-top:8px;font-size:.94rem;color:var(--ink-2)}
+  .card-body{padding:16px 18px}
+
+  .prop{padding:14px 0;border-top:1px solid var(--rule)}
+  .prop:first-child{border-top:0;padding-top:0}
+  .quem{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin-bottom:7px;font-size:.82rem;
+    font-weight:600}
+  .quem .part{color:var(--s-declaracao)}
+  .quem .nrev{color:var(--muted);font-weight:600;font-size:.72rem;letter-spacing:.08em;
+    text-transform:uppercase}
+  blockquote{margin:0 0 9px;padding:2px 0 2px 14px;border-left:3px solid var(--rule-strong);
+    font-family:"Source Serif 4",Georgia,serif;font-size:1.02rem;color:var(--ink)}
+  .txt{font-size:.96rem;color:var(--ink-2)}
+  .escopo{margin-top:9px;font-size:.85rem;color:var(--ink-2);background:var(--surface-2);
+    border-left:3px solid var(--s-verificada);padding:7px 11px;border-radius:0 3px 3px 0}
+  .fonte{margin-top:11px;font-size:.83rem;color:var(--muted);display:flex;flex-wrap:wrap;
+    gap:6px 14px;align-items:baseline}
+  .selo{display:inline-flex;align-items:center;gap:6px;font-weight:600}
+  .dot{width:9px;height:9px;border-radius:50%;flex:0 0 9px}
+  .d-oficial{background:var(--s-oficial)} .d-verificada{background:var(--s-verificada)}
+  .d-secundaria{background:var(--s-secundaria)} .d-declaracao{background:var(--s-declaracao)}
+  .d-registro{background:var(--s-registro)}
+  .ress{color:var(--s-verificada);font-weight:600}
+
+  .ausente{font-size:.94rem;color:var(--ink-2);padding:2px 0}
+  .ausente b{color:var(--ink)}
+  .ausente.nao-achou{color:var(--ink-2);border-left:3px solid var(--s-secundaria);
+    padding-left:12px;background:var(--surface-2);padding-top:8px;padding-bottom:8px;border-radius:0 3px 3px 0}
+
+  .bloco-leg{margin-top:14px;padding-top:13px;border-top:1px solid var(--rule)}
+  .bloco-leg h4{margin:0 0 9px;font-size:.85rem;font-weight:700;color:var(--s-registro);
+    display:flex;align-items:center;gap:7px;font-family:system-ui,sans-serif}
+  .bloco-leg ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+  .bloco-leg li{font-size:.92rem;color:var(--ink-2);display:grid;
+    grid-template-columns:auto minmax(0,1fr);gap:10px}
+  .bloco-leg .rot{font-weight:700;color:var(--ink);white-space:nowrap;font-variant-numeric:tabular-nums}
+  .aut{color:var(--s-verificada);font-weight:600}
+  .voto{margin-top:11px;padding:11px 13px;background:var(--surface-2);border-radius:3px;font-size:.9rem;
+    color:var(--ink-2)}
+  .voto b{color:var(--ink)}
+
+  /* ---------- comparador ---------- */
+  fieldset{border:1px solid var(--rule);border-radius:4px;padding:14px 18px 16px;margin:0;
+    background:var(--surface)}
+  legend{font-size:.82rem;font-weight:700;padding:0 6px;color:var(--ink-2)}
+  .checks{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:4px 18px;margin-top:6px}
+  .checks label{display:flex;gap:9px;align-items:center;font-size:.93rem;padding:5px 0;cursor:pointer}
+  .checks input{width:19px;height:19px;accent-color:var(--focus);flex:0 0 19px}
+  .checks .n{font-variant-numeric:tabular-nums;color:var(--muted);font-size:.85rem}
+  .comp-grid{display:grid;gap:14px;margin-top:22px;
+    grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+  .comp-col{background:var(--surface);border:1px solid var(--rule);border-radius:4px;overflow:hidden}
+  .comp-col > h3{padding:13px 16px;background:var(--surface-2);border-bottom:1px solid var(--rule);
+    display:flex;flex-wrap:wrap;gap:8px;align-items:baseline;font-size:1rem}
+  .comp-col .card-body{padding:14px 16px}
+
+  /* ---------- pesquisa ---------- */
+  .barra-tab{width:100%;border-collapse:collapse;font-size:.93rem;margin-top:16px}
+  .barra-tab caption{text-align:left;font-size:.85rem;color:var(--muted);padding-bottom:10px}
+  .barra-tab th,.barra-tab td{padding:8px 10px;border-bottom:1px solid var(--rule);text-align:left}
+  .barra-tab th{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+  .barra-tab td.pc{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap;width:1%}
+  .barra{height:9px;background:var(--surface-3);border-radius:5px;overflow:hidden;min-width:90px}
+  .barra span{display:block;height:100%;background:var(--rule-strong)}
+  .ficha-tec{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:8px 20px;margin-top:14px;font-size:.9rem}
+  .ficha-tec b{display:block;font-size:.75rem;letter-spacing:.07em;text-transform:uppercase;
+    color:var(--muted);font-weight:600}
+
+  /* ---------- metodo ---------- */
+  .metodo{margin-top:56px;padding-top:26px;border-top:2px solid var(--ink)}
+  .metodo h3{margin:22px 0 8px}
+  .metodo p{margin-bottom:10px;max-width:74ch;color:var(--ink-2);font-size:.96rem}
+  .metodo ul.txt-list{padding-left:22px;max-width:74ch;margin-bottom:12px}
+  .metodo ul.txt-list li{margin-bottom:7px;color:var(--ink-2);font-size:.96rem}
+  .selos-lista{list-style:none;display:flex;flex-direction:column;gap:10px;margin:14px 0}
+  .selos-lista li{display:grid;grid-template-columns:11px minmax(0,1fr);gap:11px;font-size:.93rem;
+    color:var(--ink-2)}
+  .selos-lista .dot{margin-top:7px}
+  .vis-oculto{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+    clip:rect(0 0 0 0);white-space:nowrap;border:0}
+  @media (max-width:600px){
+    .wrap{padding:0 14px 64px}
+    .card-top{flex-wrap:wrap}
+    [role="tab"]{padding:10px 13px;font-size:.92rem}
+  }
+</style>
+
+<a class="pular" href="#principal">Pular para o conteúdo</a>
+
+<div class="wrap">
+  <header>
+    <p class="lbl">Eleições 2026 · Senado Federal · São Paulo · 2 vagas em disputa</p>
+    <h1>Candidaturas ao Senado por São Paulo</h1>
+    <p class="lede">O que cada uma das 15 candidaturas defende, tema por tema, com a fonte de
+      cada informação e o quanto ela foi verificada.</p>
+    <p class="atualizado">Dados de <strong id="atualizado"></strong>. Cada informação mostra sua
+      própria data de referência.</p>
+    <div class="aviso" role="note" id="aviso"></div>
+  </header>
+
+  <div role="tablist" aria-label="Formas de ver as candidaturas">
+    <button role="tab" id="tab-candidatos" aria-controls="p-candidatos" aria-selected="true">Candidatos</button>
+    <button role="tab" id="tab-temas" aria-controls="p-temas" aria-selected="false" tabindex="-1">Por tema</button>
+    <button role="tab" id="tab-comparar" aria-controls="p-comparar" aria-selected="false" tabindex="-1">Comparar</button>
+    <button role="tab" id="tab-pesquisa" aria-controls="p-pesquisa" aria-selected="false" tabindex="-1">Pesquisa</button>
+  </div>
+
+  <main id="principal">
+    <div role="tabpanel" id="p-candidatos" aria-labelledby="tab-candidatos" tabindex="0">
+      <h2>As 15 candidaturas</h2>
+      <p class="metodo-p" style="margin-top:8px;color:var(--muted);font-size:.93rem;max-width:70ch">
+        Em ordem de número de urna. A ordem não expressa preferência nem posição em pesquisa.</p>
+      <ul class="lista" id="lista-cands"></ul>
+    </div>
+
+    <div role="tabpanel" id="p-temas" aria-labelledby="tab-temas" tabindex="0" hidden>
+      <h2>Comparação por tema</h2>
+      <div class="campo" style="margin-top:16px">
+        <div>
+          <label for="sel-tema">Escolha um tema</label>
+          <select id="sel-tema"></select>
+        </div>
+        <p class="dica">As 15 candidaturas aparecem sempre, mesmo quando não há proposta —
+          com o motivo, que não é o mesmo em todos os casos.</p>
+      </div>
+      <div aria-live="polite" id="saida-tema"></div>
+    </div>
+
+    <div role="tabpanel" id="p-comparar" aria-labelledby="tab-comparar" tabindex="0" hidden>
+      <h2>Comparar candidaturas</h2>
+      <div class="campo" style="margin-top:16px;align-items:flex-start;flex-direction:column">
+        <div style="width:100%">
+          <label for="sel-tema-comp">Tema</label>
+          <select id="sel-tema-comp"></select>
+        </div>
+      </div>
+      <fieldset style="margin-top:14px">
+        <legend>Escolha até 3 candidaturas</legend>
+        <div class="checks" id="checks"></div>
+      </fieldset>
+      <div aria-live="polite" id="saida-comp"></div>
+    </div>
+
+    <div role="tabpanel" id="p-pesquisa" aria-labelledby="tab-pesquisa" tabindex="0" hidden>
+      <h2>Pesquisa de intenção de voto</h2>
+      <p style="margin-top:10px;color:var(--ink-2);max-width:72ch">Esta é a única seção com número de
+        pesquisa. Ela não aparece junto de cada candidatura de propósito: repetir a porcentagem em
+        todo cartão transformaria a lista num ranking.</p>
+      <div id="saida-pesquisa"></div>
+    </div>
+  </main>
+
+  <div class="metodo" id="metodo">
+    <h2>Como esta página foi feita</h2>
+
+    <h3>De onde vem cada informação</h3>
+    <p>Toda afirmação carrega a fonte de onde saiu, com link, e um selo que diz o quanto ela foi
+      verificada. Os selos não formam uma régua única — medem coisas diferentes, e por isso vêm
+      sempre com o nome escrito, nunca só pela cor.</p>
+    <ul class="selos-lista" id="selos-lista"></ul>
+
+    <h3>Quando não há proposta</h3>
+    <p>Célula vazia não é tudo a mesma coisa. A página separa quatro situações:</p>
+    <ul class="txt-list">
+      <li><strong>Proposta própria</strong> — posição documentada e atribuível à candidatura.</li>
+      <li><strong>Proposta do partido</strong> — o conteúdo existe, mas pertence ao programa
+        partidário e não à pessoa. É assim que funciona a maior parte das candidaturas de partido
+        pequeno; aparece sempre rotulado como do partido.</li>
+      <li><strong>Não aborda o tema</strong> — a candidatura tem material publicado e aquele
+        material não trata disto.</li>
+      <li><strong>Não localizamos fonte</strong> — <em>nós</em> procuramos e não encontramos.
+        É afirmação sobre a nossa busca, não sobre a candidatura, e vem com a data e o escopo do
+        que foi procurado.</li>
+    </ul>
+
+    <h3>Por que não há pontuação, nota nem ranking</h3>
+    <p>Não existe contador de temas preenchidos, barra de progresso por candidatura nem ordenação
+      por quantidade de conteúdo. Um placar desses seria um ranking na prática — e o que ele
+      mediria não é qualidade de candidatura, e sim verba de campanha e cobertura de imprensa.
+      Candidatura com assessoria de comunicação ocupa mais espaço que candidatura de sindicalista
+      de partido pequeno, por razões que nada têm a ver com o que o eleitor está avaliando.</p>
+    <p>A ordem é a do número de urna, que não opina. E quando há mais de uma proposta no mesmo
+      tema, elas aparecem com as de citação literal primeiro — regra mecânica, não escolha de
+      quais seriam as “principais”.</p>
+
+    <h3>Fotos</h3>
+    <p id="nota-fotos"></p>
+
+    <h3>Limites conhecidos</h3>
+    <ul class="txt-list">
+      <li>Candidatura ao Senado <strong>não é obrigada</strong> a registrar plano de governo no
+        TSE. O nível oficial, aqui, vem pela via do <strong>programa do partido</strong>, quando
+        ele existe e está registrado.</li>
+      <li>A situação do registro na Justiça Eleitoral <strong>muda</strong> até a eleição. Cada
+        candidatura mostra a situação com a data em que foi observada.</li>
+      <li>O registro legislativo mostra <strong>autoria</strong>. A base pública de votações
+        nominais é muito incompleta no período, e por isso contagem de votos não é usada aqui
+        como medida de atividade parlamentar.</li>
+      <li>Contagem de autoria <strong>não é comparável entre casas legislativas</strong>: no
+        Senado, uma PEC exige 27 assinaturas, então “autor” ali frequentemente significa
+        apoiador. Onde há esse risco, a posição na lista de autores está indicada.</li>
+      <li>Parte das linhas de “não aborda o tema” é <strong>inferência</strong> nossa a partir da
+        ausência de menção, e não da leitura de um documento completo. Onde é o caso, a ressalva
+        está escrita na própria informação.</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+"use strict";
+const D = /*__DADOS__*/;
+const CLS={oficial:'d-oficial',verificada:'d-verificada',secundaria:'d-secundaria',
+  declaracao_candidato:'d-declaracao',registro_legislativo:'d-registro'};
+const esc=s=>{const d=document.createElement('div');d.textContent=s==null?'':String(s);return d.innerHTML;};
+const dataBR=s=>s?s.slice(8,10)+'/'+s.slice(5,7)+'/'+s.slice(0,4):'';
+
+document.getElementById('atualizado').textContent=D.atualizado;
+
+/* ---------- aviso de revisao ---------- */
+(function(){
+  const t=D.totais,el=document.getElementById('aviso');
+  el.innerHTML = t.revisadas===0
+    ? '<b>Rascunho de trabalho.</b> Nenhuma das '+t.posicoes+' informações desta página passou '+
+      'por revisão humana. Todas foram levantadas das fontes citadas e conferidas automaticamente '+
+      'contra elas, mas a curadoria final ainda não foi feita. Não use como referência para decidir voto.'
+    : '<b>'+t.revisadas+' de '+t.posicoes+' informações revisadas.</b> As que ainda não foram '+
+      'aparecem marcadas uma a uma.';
+})();
+
+/* ---------- pedacos reutilizaveis ---------- */
+function retrato(c){
+  if(c.foto) return '<span class="retrato"><img src="'+esc(c.foto)+'" alt="Retrato de '+esc(c.nome)+'"></span>';
+  return '<span class="retrato" role="img" aria-label="Sem foto disponível para '+esc(c.nome)+'">'+esc(c.iniciais)+'</span>';
+}
+function fonteLinha(i){
+  const s=D.selos[i.selo]||{nome:i.selo};
+  let h='<p class="fonte"><span class="selo"><span class="dot '+(CLS[i.selo]||'')+'" aria-hidden="true"></span>'+esc(s.nome)+'</span>';
+  h+= i.url ? '<span>Fonte: <a href="'+esc(i.url)+'" target="_blank" rel="noopener">'+esc(i.fonte)+
+              ' <span class="vis-oculto">(abre em nova aba)</span></a></span>'
+            : '<span>Fonte: '+esc(i.fonte)+'</span>';
+  h+='<span class="mono">Referência: '+esc(dataBR(i.data))+'</span>';
+  if(i.ressalva) h+='<span class="ress">Ressalva: '+esc(i.ressalva)+'</span>';
+  return h+'</p>';
+}
+function proposta(i){
+  let h='<div class="prop"><p class="quem">';
+  h+= i.de_partido ? '<span class="part">Proposta do '+esc(i.partido)+', não da candidatura</span>'
+                   : '<span>Proposta própria</span>';
+  if(!i.revisado) h+='<span class="nrev">não revisado</span>';
+  h+='</p>';
+  if(i.citacao) h+='<blockquote>“'+esc(i.citacao)+'”</blockquote>';
+  if(i.texto)   h+='<p class="txt">'+esc(i.texto)+'</p>';
+  if(i.escopo)  h+='<p class="escopo"><strong>Escopo desta posição:</strong> '+esc(i.escopo)+'</p>';
+  return h+fonteLinha(i)+'</div>';
+}
+function corpoTema(cid,tid){
+  const itens=(D.grade[tid]&&D.grade[tid][cid])||[];
+  const reais=itens.filter(i=>i.estado==='A'||i.estado==='B');
+  const cs=itens.filter(i=>i.estado==='C'), ds=itens.filter(i=>i.estado==='D');
+  let h='';
+  if(reais.length) h+=reais.map(proposta).join('');
+  else if(ds.length) h+='<p class="ausente nao-achou"><b>Não localizamos fonte.</b> Busca feita em '+
+       esc(dataBR(ds[0].busca_em))+'. '+esc(ds[0].busca_escopo)+
+       ' Isto é uma afirmação sobre a nossa busca, não sobre a candidatura.</p>';
+  else if(cs.length){
+    h+='<p class="ausente"><b>Não aborda este tema.</b> '+esc(cs[0].texto)+'</p>';
+    if(cs[0].ressalva) h+='<p class="ausente" style="margin-top:7px;font-size:.86rem;color:var(--s-verificada)"><strong>Ressalva:</strong> '+esc(cs[0].ressalva)+'</p>';
+  }
+  else h+='<p class="ausente">Este cruzamento ainda não foi trabalhado. Diferente de “não aborda” '+
+          'e de “não localizamos”.</p>';
+
+  const ls=(D.leg[tid]||{})[cid]||[];
+  if(ls.length){
+    h+='<div class="bloco-leg"><h4><span class="dot d-registro" aria-hidden="true"></span>'+
+       'Registro legislativo — o que já propôs, não o que promete</h4><ul>';
+    for(const l of ls){
+      let a='';
+      if(l.total_autores&&l.total_autores>1)
+        a='<span class="aut">'+esc(l.ordem_autoria)+'º de '+esc(l.total_autores)+' autores.</span> ';
+      h+='<li><span class="rot">'+esc(l.rotulo)+'</span><span>'+a+esc(l.ementa)+'</span></li>';
+    }
+    h+='</ul></div>';
+  }
+  for(const v of D.votos.filter(v=>v.cand===cid&&v.temas.includes(tid))){
+    h+='<p class="voto"><b>Voto registrado:</b> '+esc(v.voto)+' — '+esc(v.pergunta)+
+       ' ('+esc(v.proposicao)+', '+esc(dataBR(v.data))+').';
+    if(v.cuidado) h+='<br><strong>Atenção:</strong> '+esc(v.cuidado);
+    h+='</p>';
+  }
+  return h;
+}
+
+/* ---------- aba: candidatos ---------- */
+(function(){
+  const ul=document.getElementById('lista-cands');
+  ul.innerHTML=D.ordem.map(cid=>{
+    const c=D.candidatos[cid];
+    let h='<li class="card"><div class="card-top">'+retrato(c)+'<div class="ident">'+
+      '<h3><span class="urna">'+esc(c.numero)+'</span> '+esc(c.nome)+
+      ' <span class="sigla">'+esc(c.partido)+'</span></h3>'+
+      '<p class="meta">'+esc(c.completo)+' · '+esc(c.partido_nome)+
+      (c.coligacao?' · Coligação '+esc(c.coligacao):' · Sem coligação')+'</p>'+
+      '<p class="bio">'+esc(c.bio)+'</p>'+
+      '<p class="meta">Situação do registro: <strong>'+esc(c.situacao)+'</strong>, observada em '+
+      esc(dataBR(c.situacao_em))+'. Suplentes: '+esc(c.suplentes.join(', ')||'não informados')+'.</p>'+
+      '</div></div></li>';
+    return h;
+  }).join('');
+})();
+
+/* ---------- aba: por tema ---------- */
+function preencheSelects(){
+  const opts=D.temas.map(t=>'<option value="'+t.id+'">'+esc(t.nome)+'</option>').join('');
+  document.getElementById('sel-tema').innerHTML=opts;
+  document.getElementById('sel-tema-comp').innerHTML=opts;
+}
+function renderTema(){
+  const tid=document.getElementById('sel-tema').value;
+  const nome=D.temas.find(t=>t.id===tid).nome;
+  const comConteudo=D.ordem.filter(cid=>{
+    const its=(D.grade[tid][cid]||[]);
+    return its.some(i=>i.estado==='A'||i.estado==='B')||((D.leg[tid]||{})[cid]);
+  }).length;
+  let h='<p style="margin-top:20px;color:var(--muted);font-size:.93rem">'+comConteudo+
+        ' das 15 candidaturas têm posição registrada em <strong>'+esc(nome)+'</strong>.</p>';
+  h+='<ul class="lista">'+D.ordem.map(cid=>{
+    const c=D.candidatos[cid];
+    return '<li class="card"><div class="card-top" style="padding-bottom:13px">'+retrato(c)+
+      '<div class="ident"><h3><span class="urna">'+esc(c.numero)+'</span> '+esc(c.nome)+
+      ' <span class="sigla">'+esc(c.partido)+'</span></h3></div></div>'+
+      '<div class="card-body">'+corpoTema(cid,tid)+'</div></li>';
+  }).join('')+'</ul>';
+  document.getElementById('saida-tema').innerHTML=h;
+}
+
+/* ---------- aba: comparar ---------- */
+function renderChecks(){
+  document.getElementById('checks').innerHTML=D.ordem.map(cid=>{
+    const c=D.candidatos[cid];
+    return '<label><input type="checkbox" value="'+cid+'"> <span>'+esc(c.nome)+
+           ' <span class="n">'+esc(c.numero)+' · '+esc(c.partido)+'</span></span></label>';
+  }).join('');
+}
+function renderComp(){
+  const tid=document.getElementById('sel-tema-comp').value;
+  const sel=[...document.querySelectorAll('#checks input:checked')].map(i=>i.value);
+  const cx=document.querySelectorAll('#checks input');
+  cx.forEach(i=>{ i.disabled = !i.checked && sel.length>=3; });
+  const out=document.getElementById('saida-comp');
+  if(sel.length<2){
+    out.innerHTML='<p style="margin-top:22px;color:var(--muted)">Escolha ao menos duas '+
+      'candidaturas para comparar. Até três por vez.</p>';
+    return;
+  }
+  const nome=D.temas.find(t=>t.id===tid).nome;
+  out.innerHTML='<h3 style="margin-top:24px">'+esc(nome)+'</h3><div class="comp-grid">'+
+    sel.map(cid=>{const c=D.candidatos[cid];
+      return '<div class="comp-col"><h3><span class="urna">'+esc(c.numero)+'</span> '+esc(c.nome)+
+        ' <span class="sigla">'+esc(c.partido)+'</span></h3>'+
+        '<div class="card-body">'+corpoTema(cid,tid)+'</div></div>';}).join('')+'</div>';
+}
+
+/* ---------- aba: pesquisa ---------- */
+(function(){
+  const p=D.pesquisa, res=D.ordem.map(cid=>[cid,p.resultados[cid]]).filter(([,r])=>r);
+  const comN=res.filter(([,r])=>r.percentual!=null).sort((a,b)=>b[1].percentual-a[1].percentual);
+  const semN=res.filter(([,r])=>r.percentual==null);
+  const max=comN.length?comN[0][1].percentual:1;
+  let h='<table class="barra-tab"><caption>Cenário estimulado. A soma passa de 100% porque cada '+
+        'eleitor escolhe dois nomes — não é erro de arredondamento.</caption><thead><tr>'+
+        '<th scope="col">Candidatura</th><th scope="col">Intenção de voto</th>'+
+        '<th scope="col"><span class="vis-oculto">Representação visual</span></th></tr></thead><tbody>';
+  for(const [cid,r] of comN){const c=D.candidatos[cid];
+    h+='<tr><th scope="row" style="font-weight:600">'+esc(c.nome)+' <span class="sigla">'+esc(c.partido)+
+       '</span></th><td class="pc">'+esc(String(r.percentual).replace('.',','))+'%</td>'+
+       '<td><span class="barra" aria-hidden="true"><span style="width:'+(r.percentual/max*100)+'%"></span></span></td></tr>';}
+  for(const o of p.outros)
+    h+='<tr><th scope="row" style="color:var(--muted);font-weight:600">'+esc(o.rotulo)+
+       '</th><td class="pc">'+esc(String(o.percentual).replace('.',','))+'%</td><td></td></tr>';
+  h+='</tbody></table>';
+  if(semN.length){
+    h+='<p style="margin-top:16px;color:var(--ink-2);max-width:72ch"><strong>'+
+       semN.map(([cid])=>esc(D.candidatos[cid].nome)).join(' e ')+
+       (semN.length>1?' não constavam':' não constava')+' do questionário deste instituto.</strong> '+
+       'Isso não é 0% — é ausência da pesquisa. O campo foi feito antes de a candidatura entrar '+
+       'nas listas divulgadas.</p>';
+  }
+  h+='<ul class="ficha-tec">'+
+     [['Instituto',p.instituto],['Registro no TSE',p.registro],
+      ['Período de campo',dataBR(p.ini)+' a '+dataBR(p.fim)],
+      ['Entrevistados',p.n.toLocaleString('pt-BR')],
+      ['Margem de erro',p.erro.toString().replace('.',',')+' pontos percentuais'],
+      ['Nível de confiança',p.conf+'%']]
+     .map(([k,v])=>'<li><b>'+esc(k)+'</b>'+esc(v)+'</li>').join('')+'</ul>'+
+     '<p style="margin-top:14px;color:var(--muted);font-size:.9rem;max-width:72ch">Nenhum número de '+
+     'pesquisa entra aqui sem ficha técnica completa. Pesquisa sem registro no TSE não é publicada.</p>';
+  document.getElementById('saida-pesquisa').innerHTML=h;
+})();
+
+/* ---------- selos e nota de fotos ---------- */
+(function(){
+  const ordem=['oficial','registro_legislativo','declaracao_candidato','verificada','secundaria'];
+  document.getElementById('selos-lista').innerHTML=ordem.map(k=>{const s=D.selos[k];
+    return s?'<li><span class="dot '+CLS[k]+'" aria-hidden="true"></span><span><strong>'+esc(s.nome)+
+      '</strong> — '+esc(s.def)+'</span></li>':'';}).join('');
+  const semFoto=D.ordem.filter(c=>!D.candidatos[c].foto).length;
+  document.getElementById('nota-fotos').textContent = semFoto===0
+    ? 'Todas as fotos vêm do dataset oficial de fotos de candidatos do TSE.'
+    : 'Nenhuma das '+D.ordem.length+' candidaturas tem foto nesta versão. As fotos oficiais estão '+
+      'no dataset de fotos de candidatos do TSE, que bloqueia acesso automatizado. Enquanto não '+
+      'forem obtidas de lá, cada candidatura aparece com as iniciais do nome de urna — e não com '+
+      'imagem de outra origem, para não haver risco de trocar o retrato de alguém.';
+})();
+
+/* ---------- abas: teclado e ARIA (padrao WAI-ARIA) ---------- */
+(function(){
+  const tabs=[...document.querySelectorAll('[role="tab"]')];
+  function ativa(i,foco){
+    tabs.forEach((t,j)=>{
+      const on=i===j;
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex=on?0:-1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden=!on;
+    });
+    if(foco) tabs[i].focus();
+    try{localStorage.setItem('aba',tabs[i].id);}catch(e){}
+  }
+  tabs.forEach((t,i)=>{
+    t.addEventListener('click',()=>ativa(i,false));
+    t.addEventListener('keydown',e=>{
+      const k=e.key;let n=null;
+      if(k==='ArrowRight') n=(i+1)%tabs.length;
+      else if(k==='ArrowLeft') n=(i-1+tabs.length)%tabs.length;
+      else if(k==='Home') n=0; else if(k==='End') n=tabs.length-1;
+      if(n!==null){e.preventDefault();ativa(n,true);}
+    });
+  });
+  let ini=0;
+  try{const s=localStorage.getItem('aba');const k=tabs.findIndex(t=>t.id===s);if(k>=0)ini=k;}catch(e){}
+  ativa(ini,false);
+})();
+
+preencheSelects();
+renderChecks();
+renderTema();
+renderComp();
+document.getElementById('sel-tema').addEventListener('change',renderTema);
+document.getElementById('sel-tema-comp').addEventListener('change',renderComp);
+document.getElementById('checks').addEventListener('change',renderComp);
+</script>

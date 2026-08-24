@@ -1,0 +1,313 @@
+{
+  "_nota": "Selo 🔵. N:N com candidatura (autoria/coautoria) e com tema, expressos como arrays. PEC 8/2026 e PEC 9/2026 são o caso que exigiu N:N: coautoria de Derrite E Salles.",
+  "_regra": "A Gold NÃO monta card de produção legislativa sem exibir situacao_parlamentar ao lado. Marina Silva em exercício desde 01/04/2026 e Derrite desde 02/12/2025 — contagem sem esse contexto é correta no número e enganosa no sentido.",
+  "_cobertura": "AUTORIA (completa no que a API expõe) + VOTAÇÕES NOMINAIS (parcial — ver _limitacao_votos).",
+  "_limitacao_votos": {
+    "resumo": "A colheita de votação nominal é magra, e o motivo precisa aparecer ao lado do dado.",
+    "extraido_em": "2026-08-24",
+    "janela_consultada": "2025-12-01 a 2026-08-24 (API limita 3 meses por consulta; feito em 3 janelas)",
+    "votacoes_totais_na_janela": 300,
+    "votacoes_de_plenario": 60,
+    "votacoes_de_plenario_com_voto_individual": 8,
+    "motivos": [
+      "A maioria das votações de plenário é simbólica — não há voto individual registrado, só o resultado.",
+      "Marina Silva esteve licenciada até 01/04/2026 e Derrite até 02/12/2025: a janela em que podiam votar é curta.",
+      "Cobertura temporal irregular na base: votações de plenário aparecem só em março (24) e junho (36) de 2026. Nada em dez/jan/fev/abr/mai/jul/ago. Isso sugere defasagem ou lacuna do próprio dataset, não ausência de sessões."
+    ],
+    "regra": "NÃO apresentar contagem de votos como medida de atividade parlamentar. A base não sustenta isso. Usar voto apenas como evidência pontual de posição, sempre com a pergunta votada ao lado."
+  },
+  "totais_por_candidatura": [
+    { "id_candidatura": "sen-sp-2026-derrite", "substantivas_pl_pec_plp_pdl": 91, "fonte": "doc-camara-api", "extraido_em": "2026-08-24" },
+    { "id_candidatura": "sen-sp-2026-salles", "substantivas_pl_pec_plp_pdl": 96, "fonte": "doc-camara-api", "extraido_em": "2026-08-24" },
+    { "id_candidatura": "sen-sp-2026-tebet", "casa": "senado", "periodo": "2015-2022",
+      "materias_com_nome_dela_na_autoria": 148,
+      "das_quais_pec": 113,
+      "iniciativa_propria_estimada": "~34 (PL/PLS/PLP)",
+      "fonte": "doc-senado-api", "extraido_em": "2026-08-24",
+      "_alerta": "NÃO usar o número 148. Ver _regra_autoria_nao_comparavel: 113 são PECs em que ela é, na maioria, assinatura de apoio (amostra de 10: primeira autora em 1). Número comparável e honesto é a autoria de iniciativa em PL/PLS.",
+      "_amostragem": "10 PECs verificadas uma a uma no endpoint de autoria do Senado: média 33,8 autores, ordem dela entre 27 e 32 em 9 delas. 6 PLs verificados: média 5 autores, primeira autora em 5." },
+
+    { "id_candidatura": "sen-sp-2026-marina", "substantivas_pl_pec_plp_pdl": 2, "total_incluindo_requerimentos": 6, "fonte": "doc-camara-api", "extraido_em": "2026-08-24",
+      "_contexto_obrigatorio": "Em exercício desde 01/04/2026. Volume compatível com menos de 5 meses de mandato exercido." },
+    { "id_candidatura": "sen-sp-2026-andre-do-prado", "substantivas_pl_pec_plp_pdl": null,
+      "documentos_com_andamento_2023_em_diante": 1250,
+      "documentos_de_autoria_todas_as_legislaturas": 5358,
+      "fonte": "doc-alesp-dados", "extraido_em": "2026-08-24",
+      "_status": "BLOQUEADO, não inconclusivo. A atividade está confirmada; a classificação temática é que não é possível com o dado publicado.",
+      "_apuracao": {
+        "confirmado": "1.250 documentos de autoria dele com andamento em 2023 ou depois, apurado por varredura de 7.513.996 registros de documento_andamento.xml, usando DATA real e não inferência de faixa de ID. Passaram por etapas legislativas reais: 124 em Distribuição, 70 com entrada na CCJR (Comissão de Constituição, Justiça e Redação), 203 em Pauta, 126 arquivados.",
+        "bloqueio": "documento_andamento.xml traz apenas etapas de workflow (Publicação, Pauta, Autuação, Distribuição, Comissão, Arquivo) — NENHUMA ementa e NENHUM tipo de documento. E proposituras.xml, que tem as ementas, contém só 1 dos 1.250. Ou seja: a ALESP publica a tramitação desses documentos, mas não o conteúdo deles.",
+        "descartado": "Hipótese de dataset defasado: proposituras.xml tem 14.489 registros em 2023, 13.541 em 2024, 35.091 em 2025 e 16.753 em 2026. O arquivo é atual; simplesmente não cobre esses documentos.",
+        "tambem_tentado": [
+          "Portal público da ALESP (al.sp.gov.br/propositura/?id=...) — HTML é shell renderizado por JavaScript, sem ementa no conteúdo estático.",
+          "documento_andamento.xml via parser XML — o arquivo de 2,66 GB é MALFORMADO (token inválido, linha 194). Contornado com varredura em bytes.",
+          "Nomes alternativos de dataset na ALESP: documento.zip, proposicoes.zip, requerimentos.zip, indicacoes.zip, mocoes.zip, naturezas.zip — todos 404.",
+          "Portal CKAN novo (ckan.al.sp.gov.br) — falha de certificado TLS."
+        ],
+        "caminhos_para_resolver": [
+          "Sessão de navegador real no portal da ALESP (conteúdo é carregado por JS).",
+          "Aguardar a migração para ckan.al.sp.gov.br/alesp-dados-abertos, que pode publicar os tipos que faltam.",
+          "Pedido direto à ALESP pela Lei de Acesso à Informação."
+        ]
+      },
+      "_regra": "NÃO publicar classificação temática do registro legislativo deste candidato. Publicar apenas o que está confirmado: presidência da ALESP, áreas de atuação declaradas por ele, e o volume de 1.250 documentos com a ressalva de que o conteúdo não é público."
+    }
+  ],
+  "_regra_autoria_nao_comparavel": {
+    "resumo": "Contagem de autoria NÃO é comparável entre casas legislativas. Regras de iniciativa diferentes produzem números que parecem a mesma métrica e não são.",
+    "descoberto_em": "2026-08-24",
+    "caso": "Simone Tebet aparece como autora de 148 matérias no Senado (2015-2022), das quais 113 são PECs. Mas PEC no Senado exige 27 assinaturas para ser apresentada. Amostragem de 10 PECs: média de 33,8 autores, e ela é PRIMEIRA autora em apenas 1 (PEC 6/2016). Nas outras 9 aparece na posição 27 a 32 — assinatura de apoio, não iniciativa. Já nos PLs: média de 5 autores e primeira autora em 5 de 6.",
+    "consequencia": "Publicar '148 matérias (Tebet)' ao lado de '91 proposições (Derrite, Câmara)' seria errado duas vezes: casas diferentes e papéis de autoria diferentes. A autoria de iniciativa dela é da ordem de 34 PL/PLS, não 148.",
+    "requisito_de_modelo": "Todo registro de autoria precisa de 'papel', 'ordem_autoria' e 'total_autores'. Sem esses campos não é possível distinguir iniciativa de assinatura de apoio.",
+    "regra_gold": "Nunca exibir contagem de autoria comparando candidatos de casas diferentes. Se exibir número, exibir só 'primeiro autor' e sempre com a casa nomeada."
+  },
+  "registros": [
+    { "id_registro": "sf-pec-6-2016", "casa": "senado", "tipo": "PEC", "numero": "6", "ano": 2016,
+      "id_externo_senado": "121203-ref",
+      "ementa": "Altera o inciso II do § 2º do art. 177 da Constituição Federal para determinar o regime de partilha na exploração de petróleo e acrescenta o art. 251 às Disposições Constitucionais Gerais.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-tebet", "papel": "autor", "ordem_autoria": 1, "total_autores": 49 } ],
+      "temas": ["t4", "t6"], "id_documento": "doc-senado-api",
+      "_nota": "A ÚNICA PEC, entre as 10 amostradas, em que ela é primeira autora. Iniciativa própria." },
+
+    { "id_registro": "sf-pls-244-2016", "casa": "senado", "tipo": "PLS", "numero": "244", "ano": 2016,
+      "ementa": "Altera a Lei nº 12.681/2012 para incluir a coleta de dados específicos de violência contra a mulher entre as finalidades do Sistema Nacional de Informações de Segurança Pública.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-tebet", "papel": "autor", "ordem_autoria": 1, "total_autores": 1 } ],
+      "temas": ["t1", "t9"], "id_documento": "doc-senado-api",
+      "_corroboracao": "Coerente com o eixo de campanha dela (proteção à mulher e combate ao feminicídio) — e mostra que a posição não é nova: é de 2016." },
+
+    { "id_registro": "sf-pls-346-2015", "casa": "senado", "tipo": "PLS", "numero": "346", "ano": 2015,
+      "ementa": "Altera a Lei Complementar nº 87/1996 para permitir o abatimento do saldo da dívida dos Estados, Distrito Federal e Municípios junto à União.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-tebet", "papel": "autor", "ordem_autoria": 1, "total_autores": 1 } ],
+      "temas": ["t4"], "id_documento": "doc-senado-api",
+      "_corroboracao": "Pacto federativo e dívida dos entes — um dos eixos que ela declara na campanha de 2026. Há também PLS 486/2015 e PLS 724/2015 na mesma linha." },
+
+    { "id_registro": "sf-pls-454-2015", "casa": "senado", "tipo": "PLS", "numero": "454", "ano": 2015,
+      "ementa": "Altera a Lei nº 8.036/1990 (FGTS) para permitir a utilização do FGTS para pagamento de mensalidade escolar.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-tebet", "papel": "autor", "ordem_autoria": 1, "total_autores": 1 } ],
+      "temas": ["t2"], "id_documento": "doc-senado-api" },
+
+    { "id_registro": "sf-pls-37-2017", "casa": "senado", "tipo": "PLS", "numero": "37", "ano": 2017,
+      "ementa": "Altera a Lei de Execução Penal para prever a possibilidade de o juiz aplicar multa à pessoa jurídica que administra o estabelecimento penal em caso de desvio ou excesso da execução penal.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-tebet", "papel": "autor", "ordem_autoria": 1, "total_autores": 1 } ],
+      "temas": ["t1"], "id_documento": "doc-senado-api",
+      "_nota": "Amplia o Tema 1 dela além do recorte de gênero: trata de execução penal e de responsabilização de presídio administrado por privado." },
+
+    { "id_registro": "pec-8-2026", "casa": "camara", "tipo": "PEC", "numero": "8", "ano": 2026,
+      "ementa": "Altera o art. 228 da Constituição Federal para admitir, em caráter excepcional, a redução da maioridade penal em casos de crimes hediondos e de crueldade extrema contra pessoas e animais.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-derrite", "papel": "autor" }, { "id_candidatura": "sen-sp-2026-salles", "papel": "coautor" } ],
+      "temas": ["t1"], "id_documento": "doc-camara-api" },
+
+    { "id_registro": "pec-9-2026", "casa": "camara", "tipo": "PEC", "numero": "9", "ano": 2026,
+      "ementa": "Altera o art. 228 da Constituição Federal, para reduzir a idade mínima de imputabilidade penal, nas condições que estabelece.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-derrite", "papel": "autor" }, { "id_candidatura": "sen-sp-2026-salles", "papel": "coautor" } ],
+      "temas": ["t1"], "id_documento": "doc-camara-api" },
+
+    { "id_registro": "pl-2301-2026", "casa": "camara", "tipo": "PL", "numero": "2301", "ano": 2026,
+      "ementa": "Inclui no rol dos crimes hediondos as figuras agravadas de homicídio doloso, latrocínio e extorsão praticadas por integrantes de organização criminosa ultraviolenta, grupo paramilitar ou milícia privada.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-derrite", "papel": "autor" } ],
+      "temas": ["t1"], "id_documento": "doc-camara-api" },
+
+    { "id_registro": "pl-5389-2020", "casa": "camara", "tipo": "PL", "numero": "5389", "ano": 2020,
+      "ementa": "Promove alterações na Lei nº 13.260/2016 a fim de modificar o conceito de terrorismo e tipificar novas condutas como terroristas.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-derrite", "papel": "autor" } ],
+      "temas": ["t1"], "id_documento": "doc-camara-api" },
+
+    { "id_registro": "pl-4086-2019", "casa": "camara", "tipo": "PL", "numero": "4086", "ano": 2019,
+      "ementa": "Altera a Lei de Execução Penal para retirar do ordenamento o instituto da saída temporária de condenados em regime semiaberto.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-derrite", "papel": "autor" } ],
+      "temas": ["t1"], "id_documento": "doc-camara-api" },
+
+    { "id_registro": "pl-88-2020", "casa": "camara", "tipo": "PL", "numero": "88", "ano": 2020,
+      "ementa": "Altera a Lei de Execução Penal para retirar do ordenamento jurídico brasileiro o instituto da visita íntima como direito de presos definitivos ou provisórios.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-derrite", "papel": "autor" } ],
+      "temas": ["t1"], "id_documento": "doc-camara-api" },
+
+    { "id_registro": "pl-421-2020", "casa": "camara", "tipo": "PL", "numero": "421", "ano": 2020,
+      "ementa": "Altera o Código de Processo Penal para revogar as regras que determinam a obrigatoriedade da realização de audiência de custódia.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-derrite", "papel": "autor" } ],
+      "temas": ["t1"], "id_documento": "doc-camara-api" },
+
+    { "id_registro": "pec-17-2025", "casa": "camara", "tipo": "PEC", "numero": "17", "ano": 2025,
+      "ementa": "Acrescenta parágrafos ao art. 144 da Constituição Federal para instituir o piso salarial dos servidores policiais civis e militares e bombeiros militares.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-derrite", "papel": "autor" } ],
+      "temas": ["t1", "t4"], "id_documento": "doc-camara-api" },
+
+    { "id_registro": "pl-2366-2026", "casa": "camara", "tipo": "PL", "numero": "2366", "ano": 2026,
+      "ementa": "Dispõe sobre procedimentos de investigação digital e interação entre órgãos públicos e empresas privadas na repressão a crimes.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-derrite", "papel": "autor" } ],
+      "temas": ["t1", "t8"], "id_documento": "doc-camara-api" },
+
+    { "id_registro": "pl-1670-2021", "casa": "camara", "tipo": "PL", "numero": "1670", "ano": 2021,
+      "ementa": "Cria a Lei da Justa Competição no Esporte, estabelecendo o sexo biológico como critério exclusivo para definição de gênero em competições esportivas oficiais, amadoras ou profissionais.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-derrite", "papel": "autor" } ],
+      "temas": ["t9"], "id_documento": "doc-camara-api" },
+
+    { "id_registro": "pl-2434-2021", "casa": "camara", "tipo": "PL", "numero": "2434", "ano": 2021,
+      "ementa": "Dispõe sobre a proibição de publicidade que se refira a orientação sexual ou movimentos de diversidade sexual, que contem com a participação de crianças e adolescentes, ou sejam a elas direcionadas.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-derrite", "papel": "autor" } ],
+      "temas": ["t9"], "id_documento": "doc-camara-api" },
+
+    { "id_registro": "pl-3851-2021", "casa": "camara", "tipo": "PL", "numero": "3851", "ano": 2021,
+      "ementa": "Altera a LDB para incluir o empreendedorismo como tema transversal nos currículos da educação infantil, do ensino fundamental e do ensino médio.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-derrite", "papel": "autor" } ],
+      "temas": ["t2"], "id_documento": "doc-camara-api" },
+
+    { "id_registro": "pl-387-2026", "casa": "camara", "tipo": "PL", "numero": "387", "ano": 2026,
+      "ementa": "Veda os supersalários em âmbito nacional, regulando a aplicação do limite máximo remuneratório mensal de agentes políticos e públicos.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-salles", "papel": "autor" } ],
+      "temas": ["t4"], "id_documento": "doc-camara-api",
+      "_destaque": "Convergência entre adversários: Simone Tebet defende combate a supersalários no discurso de campanha; Salles apresentou o projeto." },
+
+    { "id_registro": "pec-38-2025", "casa": "camara", "tipo": "PEC", "numero": "38", "ano": 2025,
+      "ementa": "Altera normas sobre a Administração Pública para aperfeiçoar governança e gestão, promover a transformação digital, impulsionar a profissionalização e extinguir privilégios no serviço público.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-salles", "papel": "autor" } ],
+      "temas": ["t4"], "id_documento": "doc-camara-api" },
+
+    { "id_registro": "plp-42-2026", "casa": "camara", "tipo": "PLP", "numero": "42", "ano": 2026,
+      "ementa": "Altera a Lei Complementar nº 214/2025 para dispor sobre os limites de alíquotas do Imposto Seletivo.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-salles", "papel": "autor" } ],
+      "temas": ["t4"], "id_documento": "doc-camara-api" },
+
+    { "id_registro": "pdl-220-2025", "casa": "camara", "tipo": "PDL", "numero": "220", "ano": 2025,
+      "ementa": "Susta o Decreto nº 12.466/2025, que aumentou o IOF sem observar a natureza extrafiscal desse tributo.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-salles", "papel": "autor" } ],
+      "temas": ["t4"], "id_documento": "doc-camara-api" },
+
+    { "id_registro": "pdl-23-2026", "casa": "camara", "tipo": "PDL", "numero": "23", "ano": 2026,
+      "ementa": "Susta os efeitos dos Decretos nºs 12.827 a 12.833, de 26 de janeiro de 2026, que declaram de interesse social, para fins de desapropriação, diversos imóveis rurais.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-salles", "papel": "autor" } ],
+      "temas": ["t6"], "id_documento": "doc-camara-api" },
+
+    { "id_registro": "pdl-396-2026", "casa": "camara", "tipo": "PDL", "numero": "396", "ano": 2026,
+      "ementa": "Susta os Decretos nºs 12.975/2026 e 12.976/2026, que dispõem sobre a regulamentação do Marco Civil da Internet e sobre deveres das plataformas digitais em matéria de proteção das mulheres no ambiente digital.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-salles", "papel": "autor" } ],
+      "temas": ["t8"], "id_documento": "doc-camara-api" },
+
+    { "id_registro": "pl-2324-2026", "casa": "camara", "tipo": "PL", "numero": "2324", "ano": 2026,
+      "ementa": "Institui o Estatuto da Liberdade dos Ativos Virtuais, dispõe sobre a validade de cláusulas contratuais que estipulem pagamento, liquidação ou indexação de obrigações em ativos virtuais.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-salles", "papel": "autor" } ],
+      "temas": ["t8"], "id_documento": "doc-camara-api" },
+
+    { "id_registro": "plp-118-2025", "casa": "camara", "tipo": "PLP", "numero": "118", "ano": 2025,
+      "ementa": "Admite a educação domiciliar na educação básica e autoriza sua regulamentação, em lei, pelos Estados e pelo Distrito Federal.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-salles", "papel": "autor" } ],
+      "temas": ["t2"], "id_documento": "doc-camara-api" },
+
+    { "id_registro": "pl-4940-2025", "casa": "camara", "tipo": "PL", "numero": "4940", "ano": 2025,
+      "ementa": "Institui a Política Nacional de Combate à Intolerância Ideológica nas Instituições de Ensino Superior e dispõe sobre sanções administrativas.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-salles", "papel": "autor" } ],
+      "temas": ["t2"], "id_documento": "doc-camara-api" },
+
+    { "id_registro": "pl-157-2025", "casa": "camara", "tipo": "PL", "numero": "157", "ano": 2025,
+      "ementa": "Altera a Lei nº 14.902/2024 para incluir diretriz para a mitigação das emissões poluentes causadas por veículos automotores.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-salles", "papel": "autor" } ],
+      "temas": ["t6"], "id_documento": "doc-camara-api" },
+
+    { "id_registro": "pl-2663-2025", "casa": "camara", "tipo": "PL", "numero": "2663", "ano": 2025,
+      "ementa": "Revoga a Lei nº 14.790/2023 e artigos da Lei nº 13.756/2018, que dispõem sobre a exploração da modalidade lotérica denominada apostas de quota fixa.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-salles", "papel": "autor" } ],
+      "temas": ["t3"], "id_documento": "doc-camara-api",
+      "_destaque": "Marina Silva e Ricardo Salles legislam sobre a MESMA lei (14.790/2023) em direções opostas: ele revoga (pl-2663-2025), ela restringe e cria proteção (pl-2478-2026)." },
+
+    { "id_registro": "pl-2478-2026", "casa": "camara", "tipo": "PL", "numero": "2478", "ano": 2026,
+      "ementa": "Altera a Lei nº 14.790/2023 para dispor sobre a proteção da saúde mental, do consumidor e da economia familiar no ambiente de apostas de quota fixa e jogos online, com ênfase na prevenção e redução de danos.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-marina", "papel": "autor" } ],
+      "temas": ["t3"], "id_documento": "doc-camara-api" },
+
+    { "id_registro": "pl-5721-2025", "casa": "camara", "tipo": "PL", "numero": "5721", "ano": 2025,
+      "id_externo_camara": "2582450",
+      "ementa": "Altera a Lei nº 13.260/2016, a Lei nº 12.850/2013, a Lei nº 10.826/2003, o Código Penal, o Código de Processo Penal, a Lei de Execução Penal e a Lei de Crimes Hediondos, para reprimir a prática de crimes por facções criminosas e milícias privadas em território nacional, estabelece rol de facções criminosas como organizações terroristas e dá outras providências.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-salles", "papel": "autor" } ],
+      "temas": ["t1"], "id_documento": "doc-camara-api",
+      "_ementa_completa_obtida_em": "2026-08-24",
+      "_destaque": "Classificar facções como organizações terroristas é exatamente a linha que Caiado, Flávio Bolsonaro e Zema defendem nos planos presidenciais (Tema 1 da pesquisa de Presidente). Aqui aparece como projeto apresentado, não promessa — e por um candidato ao Senado." },
+
+    { "id_registro": "pl-243-2025", "casa": "camara", "tipo": "PL", "numero": "243", "ano": 2025,
+      "id_externo_camara": "2482843",
+      "ementa": "Altera a Lei de Licitações (14.133/2021), o ECA (8.069/1990) e a Lei Rouanet/Pronac (8.313/1991) para estabelecer medidas de combate ao incentivo e à apologia ao consumo de drogas, ao crime organizado e à prática de condutas criminosas em eventos de qualquer natureza contratados ou incentivados pelos Governos Federal, Estadual e Municipal, bem como estabelecer o crime de exposição de crianças e adolescentes a esses tipos de conteúdos.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-salles", "papel": "autor" } ],
+      "temas": ["t9", "t1"], "id_documento": "doc-camara-api",
+      "_ementa_completa_obtida_em": "2026-08-24",
+      "_nota": "Atinge financiamento cultural: condiciona contratação e incentivo público (inclusive via Pronac/Lei Rouanet) ao conteúdo do evento. Tema 9 e Tema 1 ao mesmo tempo." },
+
+    { "id_registro": "pec-13-2026", "casa": "camara", "tipo": "PEC", "numero": "13", "ano": 2026,
+      "ementa": "Altera o art. 9º da Emenda Constitucional nº 132/2023 para permitir a concessão de créditos do Imposto sobre Bens e Serviços através de fomento indireto a doadores e patrocinadores de projetos culturais e esportivos.",
+      "autoria": [ { "id_candidatura": "sen-sp-2026-marina", "papel": "autor" } ],
+      "temas": ["t9"], "id_documento": "doc-camara-api",
+      "_nota": "Única proposta de fomento à cultura entre os 6 candidatos com material próprio." }
+  ],
+  "votacoes_nominais": [
+    {
+      "id_votacao": "2629954-x",
+      "data": "2026-06-03",
+      "casa": "camara",
+      "pergunta": "Requerimento de Urgência (Art. 155 do RICD) para o PL 957/2024",
+      "proposicao_objeto": { "rotulo": "PL 957/2024", "id": "2423263",
+        "ementa": "Altera dispositivos do Decreto-Lei nº 227/1967 (Código de Mineração), da Lei nº 6.567/1978 e da Lei nº 7.805/1989." },
+      "resultado": "Aprovado", "placar": { "sim": 311, "nao": 135, "abstencao": 2, "total": 448 },
+      "temas": ["t6"],
+      "votos": [
+        { "id_candidatura": "sen-sp-2026-marina", "voto": "Não" },
+        { "id_candidatura": "sen-sp-2026-salles", "voto": "Sim" }
+      ],
+      "id_documento": "doc-camara-api",
+      "_destaque": "Contraste direto no Tema 6: Marina Silva contra a urgência para alterar o Código de Mineração, Salles a favor. É o único voto nominal da Marina na janela — ela reassumiu a cadeira em abril/2026.",
+      "_cuidado": "O voto é sobre URGÊNCIA na tramitação, não sobre o mérito do Código de Mineração. Não apresentar como voto de mérito."
+    },
+    {
+      "id_votacao": "589982-x",
+      "data": "2026-03-02",
+      "casa": "camara",
+      "pergunta": "Manutenção do texto (contra destaque) — duas votações na mesma sessão",
+      "proposicao_objeto": { "rotulo": "PL 6240/2013", "id": "589982",
+        "ementa": "Acrescenta art. 149-A ao Código Penal para tipificar o crime de desaparecimento forçado de pessoa, e o inclui no rol dos crimes hediondos." },
+      "resultado": "Texto mantido nas duas",
+      "placar": [ { "sim": 258, "nao": 119, "abstencao": 1, "total": 378 }, { "sim": 235, "nao": 121, "abstencao": 2, "total": 358 } ],
+      "temas": ["t1", "t9"],
+      "votos": [
+        { "id_candidatura": "sen-sp-2026-derrite", "voto": "Não", "ocorrencias": 2 },
+        { "id_candidatura": "sen-sp-2026-salles", "voto": "Obstrução", "ocorrencias": 2 }
+      ],
+      "voto_adicional": { "pergunta": "Emenda de Plenário ao Substitutivo (rejeitada — 194 a 207)",
+        "votos": [ { "id_candidatura": "sen-sp-2026-derrite", "voto": "Sim" }, { "id_candidatura": "sen-sp-2026-salles", "voto": "Sim" } ] },
+      "id_documento": "doc-camara-api",
+      "_cuidado": "LER COM RIGOR. A pergunta votada foi 'manter o texto' contra um destaque; votar Não significa querer alterar o texto, não necessariamente ser contra tipificar desaparecimento forçado. Sem ler o destaque, NÃO é possível afirmar a posição de mérito. Registrar o voto e a pergunta; não concluir a posição."
+    },
+    {
+      "id_votacao": "2543171-x",
+      "data": "2026-03-02",
+      "casa": "camara",
+      "pergunta": "Aprovação do Projeto de Lei nº 6.139/2023, ressalvado o destaque",
+      "proposicao_objeto": { "rotulo": "PL 6139/2023", "id": "2543171",
+        "ementa": "Estabelece o sistema brasileiro de apoio oficial ao crédito à exportação e altera as Leis nº 12.712/2012, 9.818/1999 e 10.184/2001." },
+      "resultado": "Aprovado", "placar": { "sim": 340, "nao": 108, "abstencao": 1, "total": 449 },
+      "temas": ["t4"],
+      "votos": [
+        { "id_candidatura": "sen-sp-2026-derrite", "voto": "Não" },
+        { "id_candidatura": "sen-sp-2026-salles", "voto": "Não" }
+      ],
+      "id_documento": "doc-camara-api",
+      "_nota": "Voto de mérito, e aqui a leitura é direta: os dois votaram contra a aprovação do projeto de crédito à exportação, que foi aprovado por 340 a 108."
+    },
+    {
+      "id_votacao": "2572994-x",
+      "data": "2026-03-02",
+      "casa": "camara",
+      "pergunta": "Requerimento de Urgência (Art. 155 do RICD) para o PL 2158/2023",
+      "proposicao_objeto": { "rotulo": "REQ 4307/2025 → PL 2158/2023", "id": "2572994",
+        "ementa": "Urgência para o PL 2158/23, do senador Efraim Filho, que altera a Lei nº 5.991/1973 (Controle Sanitário do Comércio de Drogas, Medicamentos, Insumos Farmacêuticos e Correlatos)." },
+      "resultado": "Aprovado", "placar": { "sim": 315, "nao": 38, "abstencao": 1, "total": 354 },
+      "temas": ["t3"],
+      "votos": [ { "id_candidatura": "sen-sp-2026-salles", "voto": "Sim" } ],
+      "id_documento": "doc-camara-api",
+      "_corroboracao": "Coerente com a autoria dele: Salles apresentou o PL 1384/2026, que também altera a Lei 5.991/1973 para ampliar a oferta de medicamentos ao consumidor. Autoria e voto apontam na mesma direção — é o tipo de convergência que dá solidez ao selo 🔵."
+    }
+  ],
+  "pendencias": [
+    "Ementas truncadas em 230 caracteres na extração original. Reextrair antes de publicar, em especial PL 243/2025 e PL 5721/2025 (Salles).",
+    "PL 6240/2013: ler o DESTAQUE votado para saber o que 'manter o texto' significava. Sem isso o voto de Derrite e a obstrução de Salles não podem ser traduzidos em posição de mérito.",
+    "Cobertura de votações da API tem lacuna temporal (só março e junho/2026). Reconsultar mais perto do pleito.",
+    "Registro legislativo de Simone Tebet (Senado, 2015-2023) e Soninha Francine (Câmara Municipal de SP) — não extraídos.",
+    "André do Prado (ALESP) — extração inconclusiva, ver totais_por_candidatura."
+  ]
+}

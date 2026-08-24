@@ -1,0 +1,195 @@
+{
+  "_nota": "Documentos-fonte. `acessivel: false` + url preservada é estado válido e registrável, não erro — é o caso dos PDFs no TSE, que dão HTTP 403 desta rede mas abrem no navegador.",
+  "documentos": [
+    {
+      "id_documento": "doc-nexo-base-2026",
+      "titulo": "Base de candidaturas 2026 — SP (espelho do registro TSE)",
+      "tipo": "reportagem",
+      "veiculo": "Nexo Jornal",
+      "url": "https://candidatos.nexojornal.com.br/2026/sp/",
+      "nivel_fonte": "verificada",
+      "acessivel": true,
+      "capturado_em": "2026-08-24"
+    },
+    {
+      "id_documento": "doc-site-tebet",
+      "titulo": "Site oficial de campanha — Simone Tebet 400",
+      "tipo": "site_oficial",
+      "url": "https://simone400.com.br/",
+      "nivel_fonte": "declaracao_candidato",
+      "acessivel": true,
+      "capturado_em": "2026-08-24"
+    },
+    {
+      "id_documento": "doc-site-marina",
+      "titulo": "Site oficial de campanha — Marina Silva 180",
+      "tipo": "site_oficial",
+      "url": "https://marinasilva.org.br/",
+      "nivel_fonte": "declaracao_candidato",
+      "acessivel": true,
+      "capturado_em": "2026-08-24"
+    },
+    {
+      "id_documento": "doc-programa-missao",
+      "titulo": "Programa do Partido Missão — versão condensada do \"Livro Amarelo\"",
+      "tipo": "programa_partidario",
+      "url": "https://renansantospropostas.com.br/",
+      "nivel_fonte": "declaracao_candidato",
+      "acessivel": true,
+      "capturado_em": "2026-08-24",
+      "_nota": "Programa da candidatura presidencial de Renan Santos. NÃO é documento da candidatura ao Senado — cobre Guto Schiavetto por atribuição partidária."
+    },
+    {
+      "id_documento": "doc-programa-pcb",
+      "titulo": "O PCB nas eleições de 2026 — plataforma",
+      "tipo": "programa_partidario",
+      "url": "https://pcb.org.br/portal2/34156",
+      "nivel_fonte": "declaracao_candidato",
+      "acessivel": true,
+      "data_publicacao": "2026-08-16",
+      "capturado_em": "2026-08-24"
+    },
+    {
+      "id_documento": "doc-programa-pstu-tse",
+      "titulo": "Programa PSTU Eleições 2026 (PDF registrado no TSE)",
+      "tipo": "plano_tse",
+      "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016998007",
+      "nivel_fonte": "oficial",
+      "acessivel": true,
+      "motivo_inacessivel": null,
+      "capturado_em": "2026-08-24",
+      "paginas": 32,
+      "arquivo_local": "fontes/programa-pstu-2026.pdf",
+      "_nota": "Baixado manualmente pela usuaria no navegador (TSE bloqueia acesso automatizado desta rede). Extracao por tema arquivada em fontes/programa-pstu-2026.md. Programa NACIONAL do partido: atribuir ao PSTU, nunca aos candidatos individualmente.",
+      "bytes": 738999,
+      "sha256_16": "1868565fb0d5de77",
+      "extracao_local": "fontes/programa-pstu-2026--extracao.md"
+    },
+    {
+      "id_documento": "doc-programa-up-tse",
+      "titulo": "Programa Unidade Popular / Samara Martins 80 (PDF registrado no TSE)",
+      "tipo": "plano_tse",
+      "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016998025",
+      "nivel_fonte": "oficial",
+      "acessivel": true,
+      "motivo_inacessivel": null,
+      "capturado_em": "2026-08-24",
+      "_nota": "Baixado manualmente em 24/ago/2026. 2 paginas, 16 propostas de uma linha cada (numeracao salta do 3 para o 5). Fato verificavel sobre a extensao: registrar o fato, nao o deboche, e medir de todos se medir de um. Comparacao: PSTU tem 32 paginas na mesma eleicao.",
+      "paginas": 2,
+      "arquivo_local": "fontes/programa-up-2026-nacional.pdf",
+      "bytes": 102070,
+      "sha256_16": "2caad1effa29c6a8",
+      "extracao_local": "fontes/programa-up-2026--extracao.md"
+    },
+    {
+      "id_documento": "doc-programa-up-tse-2",
+      "titulo": "Programa da Unidade Popular (UP) para o ESTADO DO ESPIRITO SANTO",
+      "tipo": "plano_tse",
+      "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/80017092488",
+      "nivel_fonte": "oficial",
+      "acessivel": true,
+      "motivo_inacessivel": null,
+      "capturado_em": "2026-08-24",
+      "paginas": 23,
+      "aplicavel_a_sp": false,
+      "_correcao": "ERRO DE PROVENIENCIA CORRIGIDO em 24/ago/2026. Estava registrado como 'outra versao registrada' do programa da UP. NAO E: e o programa ESTADUAL do Espirito Santo (Vitoria, ago/2026), com propostas especificas capixabas (salario-minimo de R$ 3.242, Banestes, Cesan, Escelsa, Transcol, po preto, Rio Doce). NAO USAR para candidato de SP. Nota de metodo: o programa estadual do ES tem 23 paginas contra 2 do nacional. Se houver programa estadual da UP para SP, seria a fonte certa para os candidatos paulistas — vale procurar.",
+      "arquivo_local": "fontes/programa-up-2026-ESPIRITO-SANTO--NAO-USAR-PARA-SP.pdf",
+      "bytes": 261883,
+      "sha256_16": "fdb7dcc3ff7e4308"
+    },
+    {
+      "id_documento": "doc-pstu-cobertura",
+      "titulo": "Programa eleitoral do PSTU — cobertura",
+      "tipo": "reportagem",
+      "veiculo": "Opinião Socialista",
+      "url": "https://opiniaosocialista.com.br/com-a-classe-trabalhadora-contra-o-sistema-confira-o-programa-de-hertz-e-vanessa-a-presidencia-pelo-pstu/",
+      "nivel_fonte": "secundaria",
+      "acessivel": true,
+      "data_publicacao": "2026-08-16",
+      "capturado_em": "2026-08-24",
+      "_nota": "A página traz só resumo. O programa completo está no PDF do TSE, ainda não lido."
+    },
+    {
+      "id_documento": "doc-pco-cobertura",
+      "titulo": "Programa do PCO para 2026 — cobertura",
+      "tipo": "reportagem",
+      "veiculo": "Diário Causa Operária",
+      "url": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
+      "nivel_fonte": "secundaria",
+      "acessivel": true,
+      "capturado_em": "2026-08-24"
+    },
+    {
+      "id_documento": "doc-cesaretti-entrevista",
+      "titulo": "\"A candidatura do PCO é a candidatura de esquerda\", afirma Cesaretti",
+      "tipo": "entrevista",
+      "veiculo": "Diário Causa Operária",
+      "url": "https://causaoperaria.org.br/2026/a-candidatura-do-pco-e-a-candidatura-de-esquerda-afirma-cesaretti/",
+      "nivel_fonte": "declaracao_candidato",
+      "acessivel": false,
+      "motivo_inacessivel": "HTTP 403 na leitura direta. Conteúdo atual veio de resumo de busca — reler antes de publicar.",
+      "capturado_em": null
+    },
+    {
+      "id_documento": "doc-rufino-cobertura",
+      "titulo": "Geraldo Rufino leva trajetória de superação à disputa pelo Senado",
+      "tipo": "reportagem",
+      "veiculo": "São Paulo TV Broadcasting",
+      "url": "https://saopaulotvbroadcasting.com.br/geraldo-rufino-leva-trajetoria-de-superacao-a-disputa-pelo-senado-e-reforca-apoio-a-tarcisio-em-sao-paulo/",
+      "nivel_fonte": "secundaria",
+      "acessivel": true,
+      "data_publicacao": "2026-08-17",
+      "capturado_em": "2026-08-24"
+    },
+    {
+      "id_documento": "doc-tmc-soninha",
+      "titulo": "Soninha Francine sabatinada pela TMC",
+      "tipo": "entrevista",
+      "veiculo": "TMC",
+      "url": "https://tmc.com.br/politica/soninha-francine-e-a-primeira-candidata-ao-senado-por-sao-paulo-sabatinada-pela-tmc/",
+      "nivel_fonte": "declaracao_candidato",
+      "acessivel": true,
+      "capturado_em": null,
+      "_pendencia": "Sabatina longa identificada mas ainda não lida. Deve render posição em mais temas."
+    },
+    {
+      "id_documento": "doc-camara-api",
+      "titulo": "Câmara dos Deputados — dados abertos, API v2",
+      "tipo": "api_dados_abertos",
+      "url": "https://dadosabertos.camara.leg.br/api/v2",
+      "nivel_fonte": "registro_legislativo",
+      "acessivel": true,
+      "capturado_em": "2026-08-24"
+    },
+    {
+      "id_documento": "doc-alesp-dados",
+      "titulo": "ALESP — dados abertos",
+      "tipo": "api_dados_abertos",
+      "url": "https://www.al.sp.gov.br/repositorioDados/",
+      "nivel_fonte": "registro_legislativo",
+      "acessivel": true,
+      "capturado_em": "2026-08-24",
+      "_nota": "proposituras.xml não cobre todos os tipos de documento. ALESP migrando para ckan.al.sp.gov.br."
+    },
+    {
+      "id_documento": "doc-parana-pesquisas",
+      "titulo": "Paraná Pesquisas — Senado SP, agosto 2026",
+      "tipo": "reportagem",
+      "veiculo": "Gazeta do Povo",
+      "url": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/parana-pesquisas-senador-sao-paulo-agosto-2026/",
+      "nivel_fonte": "verificada",
+      "acessivel": true,
+      "capturado_em": "2026-08-24"
+    },
+    {
+      "id_documento": "doc-senado-api",
+      "titulo": "Senado Federal — dados abertos (legis.senado.leg.br/dadosabertos)",
+      "tipo": "api_dados_abertos",
+      "url": "https://legis.senado.leg.br/dadosabertos",
+      "nivel_fonte": "registro_legislativo",
+      "acessivel": true,
+      "capturado_em": "2026-08-24",
+      "_nota": "Busca de matérias exige sigla+ano (nomeAutor sozinho não filtra). O endpoint /materia/autoria/{cod} traz ordem de autoria e total de autores — indispensável para distinguir iniciativa de assinatura de apoio. Atenção: a própria API sinaliza descontinuação (DataDepreciacao 2025-03-18), com substituto em /processo/{idProcesso}."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "_regra": "Nenhuma pesquisa entra sem registro_tse preenchido. Pesquisa sem registro é questão legal, não só editorial.",
+  "_regra_2": "constava_no_questionario=false NÃO é 0%. É ausência do questionário. A camada Gold deve renderizar 'não constava', nunca zero.",
+  "pesquisas": [
+    {
+      "id_pesquisa": "parana-sp-senado-ago2026",
+      "instituto": "Paraná Pesquisas",
+      "contratante": "Paraná Pesquisas (o próprio instituto)",
+      "registro_tse": "SP-08913/2026",
+      "campo_inicio": "2026-08-16",
+      "campo_fim": "2026-08-18",
+      "entrevistados": 1680,
+      "margem_erro_pp": 2.4,
+      "nivel_confianca": 95,
+      "cargo": "senador", "uf": "SP",
+      "cenario": "estimulado",
+      "id_documento": "doc-parana-pesquisas",
+      "_nota_soma": "A soma passa de 100% porque o eleitor escolhe dois nomes. A Gold não deve normalizar para 100.",
+      "resultados": [
+        { "id_candidatura": "sen-sp-2026-tebet", "percentual": 31.1, "constava_no_questionario": true },
+        { "id_candidatura": "sen-sp-2026-marina", "percentual": 30.1, "constava_no_questionario": true },
+        { "id_candidatura": "sen-sp-2026-derrite", "percentual": 28.2, "constava_no_questionario": true },
+        { "id_candidatura": "sen-sp-2026-salles", "percentual": 19.7, "constava_no_questionario": true },
+        { "id_candidatura": "sen-sp-2026-andre-do-prado", "percentual": 16.8, "constava_no_questionario": true },
+        { "id_candidatura": "sen-sp-2026-soninha", "percentual": 5.8, "constava_no_questionario": true },
+        { "id_candidatura": "sen-sp-2026-rufino", "percentual": 2.8, "constava_no_questionario": true },
+        { "id_candidatura": "sen-sp-2026-maira", "percentual": 1.6, "constava_no_questionario": true },
+        { "id_candidatura": "sen-sp-2026-marcio-alves", "percentual": 1.4, "constava_no_questionario": true },
+        { "id_candidatura": "sen-sp-2026-eliana-ferreira", "percentual": 1.2, "constava_no_questionario": true },
+        { "id_candidatura": "sen-sp-2026-petter-maahs", "percentual": 1.2, "constava_no_questionario": true },
+        { "id_candidatura": "sen-sp-2026-cesaretti", "percentual": 1.1, "constava_no_questionario": true },
+        { "id_candidatura": "sen-sp-2026-weller", "percentual": 1.1, "constava_no_questionario": true },
+        { "id_candidatura": "sen-sp-2026-schiavetto", "percentual": null, "constava_no_questionario": false,
+          "motivo_ausencia": "Campo realizado de 16 a 18/ago; candidatura lançada e divulgada depois." },
+        { "id_candidatura": "sen-sp-2026-william-teixeira", "percentual": null, "constava_no_questionario": false,
+          "motivo_ausencia": "Não constava no questionário do instituto." }
+      ],
+      "outros": [
+        { "rotulo": "Nenhum / Branco / Nulo", "percentual": 9.3 },
+        { "rotulo": "Não sabe / Não opinou", "percentual": 6.3 }
+      ]
+    }
+  ],
+  "pesquisas_rejeitadas": [
+    {
+      "instituto": "Ideia / ACSP",
+      "motivo_rejeicao": "Ficha técnica não localizada — sem registro TSE, período de campo, amostra nem margem de erro.",
+      "dado_citado": "Geraldo Rufino 2,8%",
+      "_nota": "Registrado aqui para não ser reintroduzido por engano. Não usar até obter a ficha."
+    },
+    {
+      "instituto": "não identificado",
+      "motivo_rejeicao": "Números soltos (Tebet 27%, Marina 23%) sem origem identificável.",
+      "_nota": "Descartado em 24/ago/2026. Substituído pela Paraná Pesquisas."
+    }
+  ]
+}

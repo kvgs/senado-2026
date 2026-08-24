@@ -1,0 +1,23 @@
+# ---------------------------------------------------------------
+# Este repositório é público. O que está aqui NÃO vai para ele.
+# ---------------------------------------------------------------
+
+# Documento de contexto do projeto — a seção 1 descreve a autora
+# profissionalmente. Uso interno.
+CONTEXTO-COMPLETO-DO-PROJETO.md
+
+# Notas de trabalho em primeira pessoa: raciocínios, erros cometidos
+# e corrigidos, pendências. Uso interno.
+senadores-sp-2026.md
+senadores-sp-2026-temas.md
+pesquisa-presidente-2026.md
+
+# Derivados que o gerador recria
+dados/_matriz_derivada.json
+
+# Lixo de sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+__pycache__/
+*.pyc

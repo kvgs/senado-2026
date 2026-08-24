@@ -1,0 +1,74 @@
+{
+  "_nota": "Tabelas de lookup agrupadas num arquivo por serem pequenas e estáveis. Ver dados/README.md.",
+  "temas": [
+    { "id_tema": "t1", "nome": "Segurança Pública", "ordem": 1, "aplicavel_a_cargos": ["presidente", "governador", "senador"] },
+    { "id_tema": "t2", "nome": "Educação", "ordem": 2, "aplicavel_a_cargos": ["presidente", "governador", "senador"] },
+    { "id_tema": "t3", "nome": "Saúde", "ordem": 3, "aplicavel_a_cargos": ["presidente", "governador", "senador"] },
+    { "id_tema": "t4", "nome": "Economia e Emprego", "ordem": 4, "aplicavel_a_cargos": ["presidente", "governador", "senador"] },
+    { "id_tema": "t5", "nome": "Infraestrutura e Mobilidade Urbana", "ordem": 5, "aplicavel_a_cargos": ["presidente", "governador", "senador"] },
+    { "id_tema": "t6", "nome": "Meio Ambiente e Mudança Climática", "ordem": 6, "aplicavel_a_cargos": ["presidente", "governador", "senador"] },
+    { "id_tema": "t7", "nome": "Habitação", "ordem": 7, "aplicavel_a_cargos": ["presidente", "governador", "senador"] },
+    { "id_tema": "t8", "nome": "Tecnologia e Inteligência Artificial", "ordem": 8, "aplicavel_a_cargos": ["presidente", "governador", "senador"] },
+    { "id_tema": "t9", "nome": "Cultura e Direitos Humanos", "ordem": 9, "aplicavel_a_cargos": ["presidente", "governador", "senador"] },
+    { "id_tema": "t10", "nome": "Organização do Estado e Prioridades Legislativas", "ordem": 10, "aplicavel_a_cargos": ["senador"],
+      "_nota": "Eixo próprio de cargo legislativo, decidido em 24/ago/2026. Senador não administra orçamento: legisla, emenda, fiscaliza e vota indicações." }
+  ],
+  "partidos": [
+    { "id_partido": "pl", "sigla": "PL", "nome": "Partido Liberal" },
+    { "id_partido": "pstu", "sigla": "PSTU", "nome": "Partido Socialista dos Trabalhadores Unificado" },
+    { "id_partido": "pco", "sigla": "PCO", "nome": "Partido da Causa Operária" },
+    { "id_partido": "pode", "sigla": "PODE", "nome": "Podemos" },
+    { "id_partido": "pp", "sigla": "PP", "nome": "Progressistas" },
+    { "id_partido": "missao", "sigla": "MISSÃO", "nome": "Partido Missão" },
+    { "id_partido": "up", "sigla": "UP", "nome": "Unidade Popular pelo Socialismo" },
+    { "id_partido": "rede", "sigla": "REDE", "nome": "Rede Sustentabilidade" },
+    { "id_partido": "pcb", "sigla": "PCB", "nome": "Partido Comunista Brasileiro" },
+    { "id_partido": "novo", "sigla": "NOVO", "nome": "Partido Novo" },
+    { "id_partido": "psb", "sigla": "PSB", "nome": "Partido Socialista Brasileiro" },
+    { "id_partido": "cidadania", "sigla": "CIDADANIA", "nome": "Cidadania" },
+    { "id_partido": "agir", "sigla": "AGIR", "nome": "Agir" },
+    { "id_partido": "pt", "sigla": "PT", "nome": "Partido dos Trabalhadores" },
+    { "id_partido": "psd", "sigla": "PSD", "nome": "Partido Social Democrático" }
+  ],
+  "coligacoes": [
+    {
+      "id_coligacao": "desperta-sp",
+      "nome": "Desperta São Paulo",
+      "ano": 2026, "uf": "SP", "cargo": "senador",
+      "composicao": "PDT / PSB / FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL (PT/PCdoB/PV) / FEDERAÇÃO PSOL REDE",
+      "_nota": "Lança duas candidaturas ao Senado: Simone Tebet e Marina Silva. Cada eleitor vota em dois nomes."
+    },
+    {
+      "id_coligacao": "coragem-avancando",
+      "nome": "Coragem Para Seguir Avançando",
+      "ano": 2026, "uf": "SP", "cargo": "senador",
+      "composicao": "FEDERAÇÃO UNIÃO PROGRESSISTA (UNIÃO/PP) / Republicanos / PL / MDB / Democrata / PSD / PRD-Solidariedade / Avante",
+      "_nota": "Lança duas candidaturas ao Senado: Guilherme Derrite e André do Prado."
+    },
+    {
+      "id_coligacao": "fed-psdb-cidadania",
+      "nome": "Federação PSDB Cidadania",
+      "ano": 2026, "uf": "SP", "cargo": "senador",
+      "composicao": "PSDB / CIDADANIA"
+    }
+  ],
+  "niveis_fonte": [
+    { "id": "oficial", "selo": "🟢", "nome": "Oficial", "eixo": "verificacao_por_terceiro",
+      "definicao": "Extraído direto do documento oficial registrado no TSE." },
+    { "id": "verificada", "selo": "🟡", "nome": "Verificada", "eixo": "verificacao_por_terceiro",
+      "definicao": "Reportagem que coletou e conferiu o texto contra o documento oficial." },
+    { "id": "secundaria", "selo": "🔴", "nome": "Secundária", "eixo": "verificacao_por_terceiro",
+      "definicao": "Terceiro resumindo, não conferido contra o documento original. Provisória." },
+    { "id": "declaracao_candidato", "selo": "🟣", "nome": "Declaração do candidato", "eixo": "fora_da_escala",
+      "definicao": "O que o próprio candidato ou partido publica ou diz: site oficial, entrevista, discurso, programa partidário. Fonte direta; ninguém conferiu." },
+    { "id": "registro_legislativo", "selo": "🔵", "nome": "Registro legislativo", "eixo": "fora_da_escala",
+      "definicao": "Voto, autoria ou relatoria, vindos de dados abertos da Câmara, do Senado ou da ALESP. Comportamento registrado, não promessa." }
+  ],
+  "estados_cobertura": [
+    { "id": "A", "nome": "Proposta própria do candidato" },
+    { "id": "B", "nome": "Proposta do partido ou da chapa" },
+    { "id": "C", "nome": "Tem material publicado e não aborda o tema" },
+    { "id": "D", "nome": "Fonte não localizada",
+      "_regra": "Afirmação sobre a nossa busca, não sobre o candidato. Exige busca_realizada_em e escopo_da_busca." }
+  ]
+}
