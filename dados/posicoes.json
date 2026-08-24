@@ -83,7 +83,7 @@
       "atribuido_a_tipo": "candidatura",
       "atribuido_a_id": "sen-sp-2026-marina",
       "estado_cobertura": "A",
-      "escopo": "apenas enfrentamento à violência doméstica; sem posição localizada sobre segurança pública em sentido amplo",
+      "escopo": "apenas enfrentamento a violencia domestica. Releitura integral do site em 24/08/2026 confirmou que nao ha posicao sobre seguranca publica em sentido amplo.",
       "natureza": "promessa",
       "nivel_fonte": "declaracao_candidato",
       "id_documento": "doc-site-marina",
@@ -92,9 +92,8 @@
       "revisado_por_humano": false,
       "conferido_por_ia": {
         "data": "2026-08-24",
-        "forca": "media",
-        "base": "site oficial de campanha, lido em 2026-08-24",
-        "ressalva": "Sem citacao literal: e parafrase minha do site, nao trecho."
+        "forca": "alta",
+        "base": "Site oficial relido integralmente em 24/08/2026, com pergunta explicita por tema. A ausencia foi CONSTATADA no documento, nao inferida da falta de mencao."
       }
     },
     {
@@ -105,14 +104,13 @@
       "estado_cobertura": "C",
       "nivel_fonte": "declaracao_candidato",
       "id_documento": "doc-site-marina",
-      "texto": "O site oficial não apresenta propostas de infraestrutura ou mobilidade.",
+      "texto": "O site oficial nao apresenta propostas de infraestrutura ou mobilidade urbana. Verificado na releitura integral.",
       "data_referencia": "2026-08-24",
       "revisado_por_humano": false,
       "conferido_por_ia": {
         "data": "2026-08-24",
-        "forca": "media",
-        "base": "site oficial de campanha, lido em 2026-08-24",
-        "ressalva": "Sem citacao literal: e parafrase minha do site, nao trecho."
+        "forca": "alta",
+        "base": "Site oficial relido integralmente em 24/08/2026, com pergunta explicita por tema. A ausencia foi CONSTATADA no documento, nao inferida da falta de mencao."
       }
     },
     {
@@ -197,19 +195,20 @@
       "atribuido_a_tipo": "candidatura",
       "atribuido_a_id": "sen-sp-2026-tebet",
       "estado_cobertura": "A",
-      "escopo": "apenas proteção à mulher e combate ao feminicídio; sem posição localizada sobre policiamento, sistema prisional ou facções",
+      "escopo": "proteção à mulher e combate ao feminicídio; e há conteúdo de campanha sobre redução da maioridade penal, cuja POSIÇÃO não foi determinada",
       "natureza": "promessa",
       "nivel_fonte": "declaracao_candidato",
       "id_documento": "doc-site-tebet",
-      "texto": "Ampliação de investimentos federais em redes de proteção às mulheres e combate ao feminicídio.",
+      "texto": "Ampliação de investimentos federais em redes de proteção às mulheres e combate ao feminicídio. O site traz também conteúdo de campanha sobre redução da maioridade penal.",
       "data_referencia": "2026-08-24",
       "revisado_por_humano": false,
       "conferido_por_ia": {
         "data": "2026-08-24",
         "forca": "media",
-        "base": "site oficial de campanha, lido em 2026-08-24",
-        "ressalva": "Sem citacao literal: e parafrase minha do site, nao trecho."
-      }
+        "base": "Site oficial relido integralmente em 24/08/2026, com pergunta explicita por tema. A ausencia foi CONSTATADA no documento, nao inferida da falta de mencao.",
+        "ressalva": "Tema identificado, posição não determinada."
+      },
+      "_pendencia": "A releitura do site em 24/08/2026 encontrou um vídeo de campanha intitulado 'Redução da maioridade penal'. O TÍTULO não revela se ela é a favor ou contra — e este é o tema em que Derrite e Salles são coautores das PEC 8/2026 e 9/2026. NÃO publicar posição sobre isso antes de assistir ao vídeo. Registrado apenas que a campanha aborda o tema."
     },
     {
       "id_posicao": "p012",
@@ -236,16 +235,15 @@
       "atribuido_a_tipo": "candidatura",
       "atribuido_a_id": "sen-sp-2026-tebet",
       "estado_cobertura": "C",
-      "nivel_fonte": "secundaria",
-      "id_documento": "doc-nexo-base-2026",
-      "texto": "Só a expressão 'desenvolvimento econômico sustentável', sem proposta ambiental identificável. Tratar como menção, não como posição.",
+      "nivel_fonte": "declaracao_candidato",
+      "id_documento": "doc-site-tebet",
+      "texto": "O site oficial nao trata de meio ambiente nem de clima. Verificado na releitura integral. A expressao 'desenvolvimento economico sustentavel' que constava antes veio de cobertura da convencao, nao do site.",
       "data_referencia": "2026-08-24",
       "revisado_por_humano": false,
       "conferido_por_ia": {
         "data": "2026-08-24",
-        "forca": "baixa",
-        "base": "inferencia de ausencia a partir de cobertura",
-        "ressalva": "Estado C aqui e INFERENCIA: concluí que nao aborda o tema porque nao achei mencao. Nao e o mesmo que ter lido um documento completo e constatado a ausencia."
+        "forca": "alta",
+        "base": "Site oficial relido integralmente em 24/08/2026, com pergunta explicita por tema. A ausencia foi CONSTATADA no documento, nao inferida da falta de mencao."
       }
     },
     {
@@ -1104,14 +1102,13 @@
       "estado_cobertura": "C",
       "nivel_fonte": "declaracao_candidato",
       "id_documento": "doc-site-tebet",
-      "texto": "Tem material de campanha publicado e não trata de habitação.",
+      "texto": "O site oficial nao apresenta propostas de habitacao. Verificado na releitura integral.",
       "data_referencia": "2026-08-24",
       "revisado_por_humano": false,
       "conferido_por_ia": {
         "data": "2026-08-24",
-        "forca": "media",
-        "base": "site oficial de campanha, lido em 2026-08-24",
-        "ressalva": "Sem citacao literal: e parafrase minha do site, nao trecho."
+        "forca": "alta",
+        "base": "Site oficial relido integralmente em 24/08/2026, com pergunta explicita por tema. A ausencia foi CONSTATADA no documento, nao inferida da falta de mencao."
       }
     },
     {
@@ -1607,15 +1604,14 @@
       "estado_cobertura": "C",
       "nivel_fonte": "declaracao_candidato",
       "id_documento": "doc-site-marina",
-      "texto": "O site oficial nao apresenta propostas de habitacao.",
+      "texto": "O site oficial nao apresenta propostas de habitacao. Verificado na releitura integral.",
       "data_referencia": "2026-08-24",
       "revisado_por_humano": false,
       "id_posicao": "p083",
       "conferido_por_ia": {
         "data": "2026-08-24",
-        "forca": "media",
-        "base": "site oficial de campanha, lido em 2026-08-24",
-        "ressalva": "Sem citacao literal: e parafrase minha do site, nao trecho."
+        "forca": "alta",
+        "base": "Site oficial relido integralmente em 24/08/2026, com pergunta explicita por tema. A ausencia foi CONSTATADA no documento, nao inferida da falta de mencao."
       }
     },
     {
@@ -2327,6 +2323,28 @@
         "forca": "alta",
         "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
       }
+    },
+    {
+      "id_posicao": "p120",
+      "id_tema": "t3",
+      "atribuido_a_tipo": "candidatura",
+      "atribuido_a_id": "sen-sp-2026-tebet",
+      "estado_cobertura": "A",
+      "natureza": "promessa",
+      "nivel_fonte": "declaracao_candidato",
+      "id_documento": "doc-site-tebet",
+      "texto": "O site de campanha trata da regulação de apostas de quota fixa, com ênfase no impacto sobre mulheres.",
+      "citacao_literal": "Mais de 40% das mulheres já apostaram em BETs",
+      "escopo": "regulação de apostas pelo recorte de impacto sobre mulheres e economia familiar",
+      "data_referencia": "2026-08-24",
+      "revisado_por_humano": false,
+      "conferido_por_ia": {
+        "data": "2026-08-24",
+        "forca": "alta",
+        "base": "Site oficial relido integralmente em 24/08/2026; citação literal."
+      },
+      "_destaque": "TERCEIRA candidatura a tratar das BETs, e o ponto vira comparação de três: Marina Silva restringe a Lei 14.790/2023 (PL 2478/2026), Ricardo Salles a revoga (PL 2663/2025), e Simone Tebet aborda pelo recorte de impacto sobre mulheres. Mesmo objeto, três posições.",
+      "_encontrado_em": "Releitura integral do site em 24/08/2026 — não constava do levantamento anterior."
     }
   ],
   "_conferencia_por_ia": {
@@ -2338,5 +2356,12 @@
       "baixa": 22
     },
     "como_auditar": "Auditar por amostragem as linhas com forca 'media' e 'baixa'. As de forca 'alta' tem documento primario ou ementa verbatim como base e sao as de menor risco."
+  },
+  "_releitura_sites_oficiais": {
+    "data": "2026-08-24",
+    "o_que_foi_feito": "Sites oficiais de Simone Tebet e Marina Silva relidos por inteiro, com pergunta explicita tema a tema, para converter inferencia de ausencia em ausencia verificada.",
+    "ausencias_confirmadas": 6,
+    "omissoes_encontradas": 2,
+    "detalhe": "No site da Tebet apareceram dois temas que nao constavam do levantamento: reducao da maioridade penal (posicao NAO determinada, so o tema) e regulacao de BETs (com citacao literal). Isso mostra que a inferencia de ausencia a partir de cobertura de imprensa erra: cobertura nao esgota o que esta no site do proprio candidato."
   }
 }
