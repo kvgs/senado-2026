@@ -197,13 +197,16 @@
       "tipo": "plano_tse",
       "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017002789",
       "nivel_fonte": "oficial",
-      "acessivel": false,
-      "motivo_inacessivel": "HTTP 403 a acesso automatizado. Abre no navegador — pendente de download manual.",
-      "capturado_em": null,
+      "acessivel": true,
+      "motivo_inacessivel": null,
+      "capturado_em": "2026-08-24",
       "_nota": "Versao condensada de 51 paginas do Livro Amarelo (o original tem ~500; uma versao de 360 nao pode ser protocolada por limite do TSE). Estrutura: 3 partes e 14 temas — Estado Novo, Reformas de Base, Pais do Futuro. Substitui doc-programa-missao (pagina web) como fonte de Guto Schiavetto: eleva de declaracao_candidato para oficial.",
       "_cobre": [
         "sen-sp-2026-schiavetto"
-      ]
+      ],
+      "arquivo_local": "fontes/programa-missao-2026.pdf",
+      "bytes": 1691345,
+      "sha256_16": "cdece60b71117c78"
     },
     {
       "id_documento": "doc-programa-pcb-tse",
@@ -211,33 +214,21 @@
       "tipo": "plano_tse",
       "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017107286",
       "nivel_fonte": "oficial",
-      "acessivel": false,
-      "motivo_inacessivel": "HTTP 403 a acesso automatizado. Abre no navegador — pendente de download manual.",
-      "capturado_em": null,
+      "acessivel": true,
+      "motivo_inacessivel": null,
+      "capturado_em": "2026-08-24",
       "_nota": "Substitui doc-programa-pcb (pagina web pcb.org.br) como fonte de Petter Maahs: eleva de declaracao_candidato para oficial.",
       "_cobre": [
         "sen-sp-2026-petter-maahs"
-      ]
+      ],
+      "arquivo_local": "fontes/programa-pcb-2026.pdf",
+      "bytes": 314957,
+      "sha256_16": "52f765533f93409a"
     }
   ],
   "_pendencias_de_download": {
     "atualizado_em": "2026-08-24",
-    "pendentes": [
-      {
-        "id": "doc-programa-missao-tse",
-        "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017002789",
-        "cobre": [
-          "sen-sp-2026-schiavetto"
-        ]
-      },
-      {
-        "id": "doc-programa-pcb-tse",
-        "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017107286",
-        "cobre": [
-          "sen-sp-2026-petter-maahs"
-        ]
-      }
-    ],
+    "pendentes": [],
     "ainda_nao_localizados": [
       {
         "o_que": "Programa estadual do PSTU para SAO PAULO",

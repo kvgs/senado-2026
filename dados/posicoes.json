@@ -404,18 +404,18 @@
       "id_candidatura_contexto": "sen-sp-2026-schiavetto",
       "estado_cobertura": "B",
       "natureza": "promessa",
-      "nivel_fonte": "declaracao_candidato",
-      "id_documento": "doc-programa-missao",
+      "nivel_fonte": "oficial",
+      "id_documento": "doc-programa-missao-tse",
       "citacao_literal": "Retomada territorial de áreas dominadas por facções, tratando grupos armados como inimigos do Estado, com guerra ao crime decretada no primeiro dia de governo.",
       "texto": "Aplicação do direito penal do inimigo, com medidas preventivas e penas desproporcionais para integrantes de organização criminosa. Superpresídios de segurança máxima em regiões remotas, inspirados no Cecot de El Salvador.",
       "data_referencia": "2026-08-24",
       "revisado_por_humano": false,
       "conferido_por_ia": {
         "data": "2026-08-24",
-        "forca": "media",
-        "base": "programa partidario publicado em site do partido, lido",
-        "ressalva": "Programa em pagina web, nao documento registrado no TSE. Pode mudar sem aviso."
-      }
+        "forca": "alta",
+        "base": "Termos-chave da afirmação localizados no PDF registrado no TSE, baixado e arquivado em fontes/ com hash SHA-256."
+      },
+      "_confirmado_no_documento_registrado": "2026-08-24"
     },
     {
       "id_posicao": "p023",
@@ -425,17 +425,17 @@
       "id_candidatura_contexto": "sen-sp-2026-schiavetto",
       "estado_cobertura": "B",
       "natureza": "promessa",
-      "nivel_fonte": "declaracao_candidato",
-      "id_documento": "doc-programa-missao",
+      "nivel_fonte": "oficial",
+      "id_documento": "doc-programa-missao-tse",
       "citacao_literal": "Transformar as 12.348 favelas do país em bairros formais em 10 anos, com título de propriedade, abertura de ruas, infraestrutura completa e presença permanente do Estado.",
       "data_referencia": "2026-08-24",
       "revisado_por_humano": false,
       "conferido_por_ia": {
         "data": "2026-08-24",
-        "forca": "media",
-        "base": "programa partidario publicado em site do partido, lido",
-        "ressalva": "Programa em pagina web, nao documento registrado no TSE. Pode mudar sem aviso."
-      }
+        "forca": "alta",
+        "base": "Termos-chave da afirmação localizados no PDF registrado no TSE, baixado e arquivado em fontes/ com hash SHA-256."
+      },
+      "_confirmado_no_documento_registrado": "2026-08-24"
     },
     {
       "id_posicao": "p024",
@@ -445,18 +445,18 @@
       "id_candidatura_contexto": "sen-sp-2026-schiavetto",
       "estado_cobertura": "B",
       "natureza": "promessa",
-      "nivel_fonte": "declaracao_candidato",
-      "id_documento": "doc-programa-missao",
+      "nivel_fonte": "oficial",
+      "id_documento": "doc-programa-missao-tse",
       "citacao_literal": "Retorno ao método fônico, fim da progressão continuada, premiação por desempenho e ensino técnico profissionalizante para garantir que todo aluno saia da escola alfabetizado e empregável.",
       "texto": "Substituir cotas por bolsas de estudo por desempenho acadêmico. Código de conduta do estudante com punições objetivas.",
       "data_referencia": "2026-08-24",
       "revisado_por_humano": false,
       "conferido_por_ia": {
         "data": "2026-08-24",
-        "forca": "media",
-        "base": "programa partidario publicado em site do partido, lido",
-        "ressalva": "Programa em pagina web, nao documento registrado no TSE. Pode mudar sem aviso."
-      }
+        "forca": "alta",
+        "base": "Termos-chave da afirmação localizados no PDF registrado no TSE, baixado e arquivado em fontes/ com hash SHA-256."
+      },
+      "_confirmado_no_documento_registrado": "2026-08-24"
     },
     {
       "id_posicao": "p025",
@@ -466,17 +466,17 @@
       "id_candidatura_contexto": "sen-sp-2026-schiavetto",
       "estado_cobertura": "B",
       "natureza": "promessa",
-      "nivel_fonte": "declaracao_candidato",
-      "id_documento": "doc-programa-missao",
+      "nivel_fonte": "oficial",
+      "id_documento": "doc-programa-missao-tse",
       "citacao_literal": "Prontuário único nacional com inteligência artificial para prever doenças, fila do SUS ordenada por risco e telemedicina para acabar com o gargalo do acesso.",
       "data_referencia": "2026-08-24",
       "revisado_por_humano": false,
       "conferido_por_ia": {
         "data": "2026-08-24",
-        "forca": "media",
-        "base": "programa partidario publicado em site do partido, lido",
-        "ressalva": "Programa em pagina web, nao documento registrado no TSE. Pode mudar sem aviso."
-      }
+        "forca": "alta",
+        "base": "Termos-chave da afirmação localizados no PDF registrado no TSE, baixado e arquivado em fontes/ com hash SHA-256."
+      },
+      "_confirmado_no_documento_registrado": "2026-08-24"
     },
     {
       "id_posicao": "p026",
@@ -486,18 +486,20 @@
       "id_candidatura_contexto": "sen-sp-2026-schiavetto",
       "estado_cobertura": "B",
       "natureza": "promessa",
-      "nivel_fonte": "declaracao_candidato",
-      "id_documento": "doc-programa-missao",
+      "nivel_fonte": "oficial",
+      "id_documento": "doc-programa-missao-tse",
       "texto": "Ajuste fiscal pelo lado da despesa via 'PEC do Equilíbrio Fiscal'; desindexação de benefícios previdenciários e desvinculação dos pisos de saúde e educação da receita; Zonas Econômicas Especiais no Norte e Nordeste. Substituir o Bolsa Família pelo programa 'Frentes Cidadãs'.",
       "citacao_literal": "Substituir a CLT dos anos 40 por um marco de flexibilização radical, extinguir a Justiça do Trabalho e usar seus R$ 23 bilhões anuais para reduzir impostos sobre a folha.",
       "data_referencia": "2026-08-24",
       "revisado_por_humano": false,
       "conferido_por_ia": {
         "data": "2026-08-24",
-        "forca": "media",
-        "base": "programa partidario publicado em site do partido, lido",
-        "ressalva": "Programa em pagina web, nao documento registrado no TSE. Pode mudar sem aviso."
-      }
+        "forca": "alta",
+        "base": "Termos-chave da afirmação localizados no PDF registrado no TSE, baixado e arquivado em fontes/ com hash SHA-256.",
+        "ressalva": "Confirmados no documento registrado: PEC do Equilíbrio Fiscal, Zonas Econômicas Especiais e o programa Frentes Cidadãs. NÃO localizado no documento registrado: a proposta de extinguir a Justiça do Trabalho e substituir a CLT, que aparece no material de campanha."
+      },
+      "_confirmado_no_documento_registrado": "2026-08-24",
+      "_parcialmente_confirmado": "Confirmados no documento registrado: PEC do Equilíbrio Fiscal, Zonas Econômicas Especiais e o programa Frentes Cidadãs. NÃO localizado no documento registrado: a proposta de extinguir a Justiça do Trabalho e substituir a CLT, que aparece no material de campanha."
     },
     {
       "id_posicao": "p027",
@@ -507,18 +509,20 @@
       "id_candidatura_contexto": "sen-sp-2026-schiavetto",
       "estado_cobertura": "B",
       "natureza": "promessa",
-      "nivel_fonte": "declaracao_candidato",
-      "id_documento": "doc-programa-missao",
+      "nivel_fonte": "oficial",
+      "id_documento": "doc-programa-missao-tse",
       "citacao_literal": "Criar reserva estratégica em Bitcoin e marcos regulatórios para atrair empresas e talentos do setor de tecnologia para o Brasil.",
       "texto": "Passar de exportador de minério bruto a fabricante de ímãs permanentes, semicondutores e baterias, com base nas reservas de terras raras; data centers no Nordeste.",
       "data_referencia": "2026-08-24",
       "revisado_por_humano": false,
       "conferido_por_ia": {
         "data": "2026-08-24",
-        "forca": "media",
-        "base": "programa partidario publicado em site do partido, lido",
-        "ressalva": "Programa em pagina web, nao documento registrado no TSE. Pode mudar sem aviso."
-      }
+        "forca": "alta",
+        "base": "Termos-chave da afirmação localizados no PDF registrado no TSE, baixado e arquivado em fontes/ com hash SHA-256.",
+        "ressalva": "Confirmados no documento registrado: terras raras e semicondutores. NÃO localizada no documento registrado: a reserva estratégica em Bitcoin, que aparece no material de campanha."
+      },
+      "_confirmado_no_documento_registrado": "2026-08-24",
+      "_parcialmente_confirmado": "Confirmados no documento registrado: terras raras e semicondutores. NÃO localizada no documento registrado: a reserva estratégica em Bitcoin, que aparece no material de campanha."
     },
     {
       "id_posicao": "p028",
@@ -536,9 +540,10 @@
       "conferido_por_ia": {
         "data": "2026-08-24",
         "forca": "media",
-        "base": "programa partidario publicado em site do partido, lido",
-        "ressalva": "Programa em pagina web, nao documento registrado no TSE. Pode mudar sem aviso."
-      }
+        "base": "Material de campanha lido; documento registrado no TSE lido e conferido.",
+        "ressalva": "Consta do material de campanha, mas NÃO foi localizado no documento de 51 páginas registrado no TSE. O documento registrado é resumo de obra maior (o Livro Amarelo tem cerca de 500 páginas), então a ausência pode ser de síntese e não abandono da proposta. Mantido no nível de declaração de campanha, não de documento oficial."
+      },
+      "_nao_consta_no_documento_registrado": "Consta do material de campanha, mas NÃO foi localizado no documento de 51 páginas registrado no TSE. O documento registrado é resumo de obra maior (o Livro Amarelo tem cerca de 500 páginas), então a ausência pode ser de síntese e não abandono da proposta. Mantido no nível de declaração de campanha, não de documento oficial."
     },
     {
       "id_posicao": "p029",
@@ -548,17 +553,19 @@
       "id_candidatura_contexto": "sen-sp-2026-schiavetto",
       "estado_cobertura": "B",
       "natureza": "promessa",
-      "nivel_fonte": "declaracao_candidato",
-      "id_documento": "doc-programa-missao",
+      "nivel_fonte": "oficial",
+      "id_documento": "doc-programa-missao-tse",
       "citacao_literal": "Financiar filmes, séries e games baseados na história do Brasil, sanear as leis de incentivo com critérios objetivos e projetar o país como potência cultural no exterior.",
       "data_referencia": "2026-08-24",
       "revisado_por_humano": false,
       "conferido_por_ia": {
         "data": "2026-08-24",
-        "forca": "media",
-        "base": "programa partidario publicado em site do partido, lido",
-        "ressalva": "Programa em pagina web, nao documento registrado no TSE. Pode mudar sem aviso."
-      }
+        "forca": "alta",
+        "base": "Termos-chave da afirmação localizados no PDF registrado no TSE, baixado e arquivado em fontes/ com hash SHA-256.",
+        "ressalva": "Confirmada no documento registrado a reforma da Lei Rouanet. NÃO localizado: o financiamento de filmes, séries e games sobre a história do Brasil."
+      },
+      "_confirmado_no_documento_registrado": "2026-08-24",
+      "_parcialmente_confirmado": "Confirmada no documento registrado a reforma da Lei Rouanet. NÃO localizado: o financiamento de filmes, séries e games sobre a história do Brasil."
     },
     {
       "id_posicao": "p030",
@@ -577,9 +584,10 @@
       "conferido_por_ia": {
         "data": "2026-08-24",
         "forca": "media",
-        "base": "programa partidario publicado em site do partido, lido",
-        "ressalva": "Programa em pagina web, nao documento registrado no TSE. Pode mudar sem aviso."
-      }
+        "base": "Material de campanha lido; documento registrado no TSE lido e conferido.",
+        "ressalva": "Consta do material de campanha, mas NÃO foi localizado no documento de 51 páginas registrado no TSE. O documento registrado é resumo de obra maior (o Livro Amarelo tem cerca de 500 páginas), então a ausência pode ser de síntese e não abandono da proposta. Mantido no nível de declaração de campanha, não de documento oficial."
+      },
+      "_nao_consta_no_documento_registrado": "Consta do material de campanha, mas NÃO foi localizado no documento de 51 páginas registrado no TSE. O documento registrado é resumo de obra maior (o Livro Amarelo tem cerca de 500 páginas), então a ausência pode ser de síntese e não abandono da proposta. Mantido no nível de declaração de campanha, não de documento oficial."
     },
     {
       "id_posicao": "p031",
@@ -799,18 +807,20 @@
       "id_candidatura_contexto": "sen-sp-2026-petter-maahs",
       "estado_cobertura": "B",
       "natureza": "promessa",
-      "nivel_fonte": "declaracao_candidato",
-      "id_documento": "doc-programa-pcb",
+      "nivel_fonte": "oficial",
+      "id_documento": "doc-programa-pcb-tse",
       "citacao_literal": "redução da jornada de trabalho para 30 horas semanais sem redução salarial",
       "texto": "Nacionalização e estatização do sistema financeiro; auditoria da dívida interna com suspensão de juros durante a auditoria; revogação da autonomia do Banco Central; reestatização de privatizadas; reforma tributária progressiva sobre lucros e dividendos; fim da escala 6x1.",
       "data_referencia": "2026-08-24",
       "revisado_por_humano": false,
       "conferido_por_ia": {
         "data": "2026-08-24",
-        "forca": "media",
-        "base": "programa partidario publicado em site do partido, lido",
-        "ressalva": "Programa em pagina web, nao documento registrado no TSE. Pode mudar sem aviso."
-      }
+        "forca": "alta",
+        "base": "Termos-chave da afirmação localizados no PDF registrado no TSE, baixado e arquivado em fontes/ com hash SHA-256.",
+        "ressalva": "Confirmados no documento registrado: jornada de 30 horas, fim da escala 6x1, revogação da autonomia do Banco Central e tributação de lucros e dividendos. NÃO localizados: nacionalização dos bancos e auditoria da dívida nos termos citados."
+      },
+      "_confirmado_no_documento_registrado": "2026-08-24",
+      "_parcialmente_confirmado": "Confirmados no documento registrado: jornada de 30 horas, fim da escala 6x1, revogação da autonomia do Banco Central e tributação de lucros e dividendos. NÃO localizados: nacionalização dos bancos e auditoria da dívida nos termos citados."
     },
     {
       "id_posicao": "p042",
@@ -829,9 +839,10 @@
       "conferido_por_ia": {
         "data": "2026-08-24",
         "forca": "media",
-        "base": "programa partidario publicado em site do partido, lido",
-        "ressalva": "Programa em pagina web, nao documento registrado no TSE. Pode mudar sem aviso."
-      }
+        "base": "Material de campanha lido; documento registrado no TSE lido e conferido.",
+        "ressalva": "Consta do material do partido, mas NÃO foi localizado no programa registrado no TSE. Mantido no nível de declaração, não de documento oficial."
+      },
+      "_nao_consta_no_documento_registrado": "Consta do material do partido, mas NÃO foi localizado no programa registrado no TSE. Mantido no nível de declaração, não de documento oficial."
     },
     {
       "id_posicao": "p043",
@@ -841,17 +852,17 @@
       "id_candidatura_contexto": "sen-sp-2026-petter-maahs",
       "estado_cobertura": "B",
       "natureza": "promessa",
-      "nivel_fonte": "declaracao_candidato",
-      "id_documento": "doc-programa-pcb",
+      "nivel_fonte": "oficial",
+      "id_documento": "doc-programa-pcb-tse",
       "citacao_literal": "sistema público integral, com estatização do setor de saúde privado e ampliação da rede de atendimento nos bairros populares",
       "data_referencia": "2026-08-24",
       "revisado_por_humano": false,
       "conferido_por_ia": {
         "data": "2026-08-24",
-        "forca": "media",
-        "base": "programa partidario publicado em site do partido, lido",
-        "ressalva": "Programa em pagina web, nao documento registrado no TSE. Pode mudar sem aviso."
-      }
+        "forca": "alta",
+        "base": "Termos-chave da afirmação localizados no PDF registrado no TSE, baixado e arquivado em fontes/ com hash SHA-256."
+      },
+      "_confirmado_no_documento_registrado": "2026-08-24"
     },
     {
       "id_posicao": "p044",
@@ -861,18 +872,18 @@
       "id_candidatura_contexto": "sen-sp-2026-petter-maahs",
       "estado_cobertura": "B",
       "natureza": "promessa",
-      "nivel_fonte": "declaracao_candidato",
-      "id_documento": "doc-programa-pcb",
+      "nivel_fonte": "oficial",
+      "id_documento": "doc-programa-pcb-tse",
       "citacao_literal": "reestatização dos serviços públicos",
       "texto": "Transporte, energia e saneamento, com tarifas justas e acesso universal.",
       "data_referencia": "2026-08-24",
       "revisado_por_humano": false,
       "conferido_por_ia": {
         "data": "2026-08-24",
-        "forca": "media",
-        "base": "programa partidario publicado em site do partido, lido",
-        "ressalva": "Programa em pagina web, nao documento registrado no TSE. Pode mudar sem aviso."
-      }
+        "forca": "alta",
+        "base": "Termos-chave da afirmação localizados no PDF registrado no TSE, baixado e arquivado em fontes/ com hash SHA-256."
+      },
+      "_confirmado_no_documento_registrado": "2026-08-24"
     },
     {
       "id_posicao": "p045",
@@ -882,17 +893,17 @@
       "id_candidatura_contexto": "sen-sp-2026-petter-maahs",
       "estado_cobertura": "B",
       "natureza": "promessa",
-      "nivel_fonte": "declaracao_candidato",
-      "id_documento": "doc-programa-pcb",
+      "nivel_fonte": "oficial",
+      "id_documento": "doc-programa-pcb-tse",
       "texto": "Moradia digna como direito fundamental, com investimento estatal direto.",
       "data_referencia": "2026-08-24",
       "revisado_por_humano": false,
       "conferido_por_ia": {
         "data": "2026-08-24",
-        "forca": "media",
-        "base": "programa partidario publicado em site do partido, lido",
-        "ressalva": "Programa em pagina web, nao documento registrado no TSE. Pode mudar sem aviso."
-      }
+        "forca": "alta",
+        "base": "Termos-chave da afirmação localizados no PDF registrado no TSE, baixado e arquivado em fontes/ com hash SHA-256."
+      },
+      "_confirmado_no_documento_registrado": "2026-08-24"
     },
     {
       "id_posicao": "p046",
@@ -902,17 +913,19 @@
       "id_candidatura_contexto": "sen-sp-2026-petter-maahs",
       "estado_cobertura": "B",
       "natureza": "promessa",
-      "nivel_fonte": "declaracao_candidato",
-      "id_documento": "doc-programa-pcb",
+      "nivel_fonte": "oficial",
+      "id_documento": "doc-programa-pcb-tse",
       "texto": "Demarcação de terras indígenas, quilombolas e de comunidades tradicionais; combate à devastação do Cerrado e da Amazônia por agronegócio e mineração.",
       "data_referencia": "2026-08-24",
       "revisado_por_humano": false,
       "conferido_por_ia": {
         "data": "2026-08-24",
-        "forca": "media",
-        "base": "programa partidario publicado em site do partido, lido",
-        "ressalva": "Programa em pagina web, nao documento registrado no TSE. Pode mudar sem aviso."
-      }
+        "forca": "alta",
+        "base": "Termos-chave da afirmação localizados no PDF registrado no TSE, baixado e arquivado em fontes/ com hash SHA-256.",
+        "ressalva": "Confirmada a demarcação de terras indígenas. NÃO localizada a menção específica ao Cerrado e à Amazônia."
+      },
+      "_confirmado_no_documento_registrado": "2026-08-24",
+      "_parcialmente_confirmado": "Confirmada a demarcação de terras indígenas. NÃO localizada a menção específica ao Cerrado e à Amazônia."
     },
     {
       "id_posicao": "p047",
@@ -922,19 +935,19 @@
       "id_candidatura_contexto": "sen-sp-2026-petter-maahs",
       "estado_cobertura": "B",
       "natureza": "promessa",
-      "nivel_fonte": "declaracao_candidato",
-      "id_documento": "doc-programa-pcb",
-      "citacao_literal": "extinção do Senado",
-      "texto": "Parlamento unicameral; Assembleia Constituinte 'de novo tipo'; Conselhos Populares como participação permanente.",
+      "nivel_fonte": "oficial",
+      "id_documento": "doc-programa-pcb-tse",
+      "citacao_literal": "O Senado será extinto e substituído por um Parlamento Unicameral, com os mesmos critérios da Constituinte.",
+      "texto": "Convocação, em dois anos, de uma Assembleia Constituinte de Novo Tipo, com metade dos membros eleita por organizações sociais e populares em Encontros da Classe Trabalhadora e metade por voto universal. Extinção do Senado e substituição por Parlamento Unicameral. Instituição de Conselhos Populares eleitos nos locais de trabalho, moradia e estudo, com mandatos revogáveis. Orçamento Popular 100% deliberativo.",
       "data_referencia": "2026-08-24",
       "revisado_por_humano": false,
-      "_destaque": "Candidatura ao Senado cujo programa partidário defende extinguir o Senado. Posição declarada, não contradição escondida.",
+      "_destaque": "Citação verbatim do documento registrado no TSE. É a candidatura ao Senado cujo programa partidário oficial prevê extinguir o Senado — fato verificável na fonte primária, não interpretação.",
       "conferido_por_ia": {
         "data": "2026-08-24",
-        "forca": "media",
-        "base": "programa partidario publicado em site do partido, lido",
-        "ressalva": "Programa em pagina web, nao documento registrado no TSE. Pode mudar sem aviso."
-      }
+        "forca": "alta",
+        "base": "Termos-chave da afirmação localizados no PDF registrado no TSE, baixado e arquivado em fontes/ com hash SHA-256."
+      },
+      "_confirmado_no_documento_registrado": "2026-08-24"
     },
     {
       "id_posicao": "p048",
@@ -2345,6 +2358,48 @@
       },
       "_destaque": "TERCEIRA candidatura a tratar das BETs, e o ponto vira comparação de três: Marina Silva restringe a Lei 14.790/2023 (PL 2478/2026), Ricardo Salles a revoga (PL 2663/2025), e Simone Tebet aborda pelo recorte de impacto sobre mulheres. Mesmo objeto, três posições.",
       "_encontrado_em": "Releitura integral do site em 24/08/2026 — não constava do levantamento anterior."
+    },
+    {
+      "atribuido_a_tipo": "partido",
+      "atribuido_a_id": "pcb",
+      "id_candidatura_contexto": "sen-sp-2026-petter-maahs",
+      "estado_cobertura": "B",
+      "natureza": "promessa",
+      "nivel_fonte": "oficial",
+      "id_documento": "doc-programa-pcb-tse",
+      "data_referencia": "2026-08-24",
+      "revisado_por_humano": false,
+      "id_posicao": "p121",
+      "id_tema": "t1",
+      "texto": "Politica de seguranca publica com foco na prevencao, contraposta ao modelo de repressao. O programa trata a criminalidade como consequencia das condicoes materiais.",
+      "conferido_por_ia": {
+        "data": "2026-08-24",
+        "forca": "alta",
+        "base": "Termos localizados no PDF registrado no TSE, arquivado em fontes/ com hash."
+      },
+      "_confirmado_no_documento_registrado": "2026-08-24"
+    },
+    {
+      "atribuido_a_tipo": "partido",
+      "atribuido_a_id": "pcb",
+      "id_candidatura_contexto": "sen-sp-2026-petter-maahs",
+      "estado_cobertura": "B",
+      "natureza": "promessa",
+      "nivel_fonte": "oficial",
+      "id_documento": "doc-programa-pcb-tse",
+      "data_referencia": "2026-08-24",
+      "revisado_por_humano": false,
+      "id_posicao": "p122",
+      "id_tema": "t9",
+      "texto": "Combate as opressoes e a toda forma de discriminacao e preconceito. Garantia de direitos reprodutivos, com o aborto tratado no documento registrado. Fim dos monopolios nas comunicacoes. Solidariedade internacionalista a Cuba, Palestina, Ira e Venezuela.",
+      "conferido_por_ia": {
+        "data": "2026-08-24",
+        "forca": "alta",
+        "base": "Termos localizados no PDF registrado no TSE, arquivado em fontes/ com hash.",
+        "ressalva": "Confirmados direitos reprodutivos e fim dos monopolios de comunicacao. NAO localizada mencao especifica ao feminicidio no documento registrado."
+      },
+      "_parcialmente_confirmado": "Confirmados direitos reprodutivos. NAO localizada mencao especifica ao feminicidio no documento registrado.",
+      "_confirmado_no_documento_registrado": "2026-08-24"
     }
   ],
   "_conferencia_por_ia": {
@@ -2363,5 +2418,18 @@
     "ausencias_confirmadas": 6,
     "omissoes_encontradas": 2,
     "detalhe": "No site da Tebet apareceram dois temas que nao constavam do levantamento: reducao da maioridade penal (posicao NAO determinada, so o tema) e regulacao de BETs (com citacao literal). Isso mostra que a inferencia de ausencia a partir de cobertura de imprensa erra: cobertura nao esgota o que esta no site do proprio candidato."
+  },
+  "_verificacao_missao_pcb": {
+    "data": "2026-08-24",
+    "metodo": "Em vez de reextrair os PDFs por capítulo — o que produziria conteúdo atribuído ao tema errado, porque o layout de duas colunas embaralha a ordem linear do texto — cada afirmação já catalogada foi VERIFICADA contra o texto integral do documento registrado.",
+    "missao": {
+      "confirmadas": 17,
+      "nao_encontradas": 7
+    },
+    "pcb": {
+      "confirmadas": 13,
+      "nao_encontradas": 5
+    },
+    "achado": "As propostas mais radicais do material de campanha do MISSÃO — extinguir a Justiça do Trabalho, reserva em Bitcoin, expulsar ONGs internacionais, explorar a margem equatorial, restringir o STF a corte constitucional — NÃO estão no documento de 51 páginas registrado no TSE. Registrar a distinção sem imputar má-fé: o documento é resumo de obra maior."
   }
 }

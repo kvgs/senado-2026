@@ -21,3 +21,6 @@ desktop.ini
 .DS_Store
 __pycache__/
 *.pyc
+
+# textos extraidos dos PDFs (recriaveis com pdftotext)
+fontes/*.txt
