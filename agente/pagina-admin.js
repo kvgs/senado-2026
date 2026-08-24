@@ -200,6 +200,18 @@ export const PAGINA_ADMIN = `<!doctype html>
         var porTema = {};
         itens.forEach(function(p){ (porTema[p.id_tema || ""] = porTema[p.id_tema || ""] || []).push(p); });
 
+        /* Instagram e atalho manual, nao envio. A API so deixa responder quem
+           escreveu nas ultimas 24h; automatizar conta pessoal por fora viola os
+           termos. Entao o maximo honesto e abrir a conversa com o texto copiado. */
+        var ig = c.instagram
+          ? '<p style="font-size:.86rem;color:var(--muted);margin:0 0 12px">Instagram: ' +
+            '<a href="https://ig.me/m/' + esc(c.instagram.replace(/^@/, "")) + '" ' +
+            'target="_blank" rel="noopener">abrir conversa com @' +
+            esc(c.instagram.replace(/^@/, "")) + '</a> — abre a DM; o texto você cola. ' +
+            'Não dá para enviar automaticamente: a API do Instagram só permite responder ' +
+            'quem escreveu nas últimas 24h.</p>'
+          : "";
+
         var aviso = c.email ? "" :
           '<div class="sem-contato"><b>Sem contato oficial registrado.</b> ' +
           'Dá para moderar e agrupar, mas ainda não dá para enviar: só temos e-mail ' +
@@ -220,7 +232,7 @@ export const PAGINA_ADMIN = `<!doctype html>
         return '<section class="grupo"><h2>' + esc(c.nome) +
           ' <span class="num">' + esc(c.partido) + " · " + esc(c.numero) + "</span>" +
           '<span class="num">' + itens.length + " pergunta(s) na fila</span></h2>" +
-          '<div class="corpo">' + aviso + blocos +
+          '<div class="corpo">' + aviso + ig + blocos +
           '<div class="barra">' +
             '<button type="button" data-montar="' + esc(cid) + '"' + (c.email ? "" : " disabled") +
               ">Montar mensagem</button>" +

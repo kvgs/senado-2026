@@ -220,6 +220,11 @@ ag.mkdir(exist_ok=True)
         "email": (cand_por_id[cid].get("contato") or {}).get("email"),
         "email_fonte": (cand_por_id[cid].get("contato") or {}).get("email_fonte"),
         "email_tipo": (cand_por_id[cid].get("contato") or {}).get("email_tipo"),
+        # Instagram entra como ATALHO manual, nunca como envio automatico: a API
+        # so permite responder quem escreveu nas ultimas 24h, e automatizar conta
+        # pessoal por fora viola os termos e derruba a conta.
+        "instagram": (cand_por_id[cid].get("contato") or {}).get("instagram"),
+        "instagram_fonte": (cand_por_id[cid].get("contato") or {}).get("instagram_fonte"),
     } for cid in ordem],
 }, ensure_ascii=False, indent=1), encoding="utf-8")
 

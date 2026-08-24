@@ -49,7 +49,9 @@
    "numero": "111",
    "email": "dep.guilhermederrite@camara.leg.br",
    "email_fonte": "Câmara dos Deputados (dados abertos)",
-   "email_tipo": "institucional"
+   "email_tipo": "institucional",
+   "instagram": null,
+   "instagram_fonte": null
   },
   {
    "id": "sen-sp-2026-schiavetto",
@@ -58,7 +60,9 @@
    "numero": "144",
    "email": null,
    "email_fonte": null,
-   "email_tipo": null
+   "email_tipo": null,
+   "instagram": null,
+   "instagram_fonte": null
   },
   {
    "id": "sen-sp-2026-weller",
@@ -67,7 +71,9 @@
    "numero": "160",
    "email": null,
    "email_fonte": null,
-   "email_tipo": null
+   "email_tipo": null,
+   "instagram": null,
+   "instagram_fonte": null
   },
   {
    "id": "sen-sp-2026-eliana-ferreira",
@@ -76,7 +82,9 @@
    "numero": "161",
    "email": null,
    "email_fonte": null,
-   "email_tipo": null
+   "email_tipo": null,
+   "instagram": null,
+   "instagram_fonte": null
   },
   {
    "id": "sen-sp-2026-marina",
@@ -85,7 +93,9 @@
    "numero": "180",
    "email": "dep.marinasilva@camara.leg.br",
    "email_fonte": "Câmara dos Deputados (dados abertos)",
-   "email_tipo": "institucional"
+   "email_tipo": "institucional",
+   "instagram": null,
+   "instagram_fonte": null
   },
   {
    "id": "sen-sp-2026-rufino",
@@ -94,7 +104,9 @@
    "numero": "200",
    "email": null,
    "email_fonte": null,
-   "email_tipo": null
+   "email_tipo": null,
+   "instagram": null,
+   "instagram_fonte": null
   },
   {
    "id": "sen-sp-2026-petter-maahs",
@@ -103,7 +115,9 @@
    "numero": "211",
    "email": null,
    "email_fonte": null,
-   "email_tipo": null
+   "email_tipo": null,
+   "instagram": null,
+   "instagram_fonte": null
   },
   {
    "id": "sen-sp-2026-andre-do-prado",
@@ -112,7 +126,9 @@
    "numero": "222",
    "email": "andredoprado@al.sp.gov.br",
    "email_fonte": "ALESP (dados abertos)",
-   "email_tipo": "institucional"
+   "email_tipo": "institucional",
+   "instagram": null,
+   "instagram_fonte": null
   },
   {
    "id": "sen-sp-2026-soninha",
@@ -121,7 +137,9 @@
    "numero": "232",
    "email": null,
    "email_fonte": null,
-   "email_tipo": null
+   "email_tipo": null,
+   "instagram": null,
+   "instagram_fonte": null
   },
   {
    "id": "sen-sp-2026-cesaretti",
@@ -130,7 +148,9 @@
    "numero": "290",
    "email": null,
    "email_fonte": null,
-   "email_tipo": null
+   "email_tipo": null,
+   "instagram": null,
+   "instagram_fonte": null
   },
   {
    "id": "sen-sp-2026-salles",
@@ -139,7 +159,9 @@
    "numero": "300",
    "email": "dep.ricardosalles@camara.leg.br",
    "email_fonte": "Câmara dos Deputados (dados abertos)",
-   "email_tipo": "institucional"
+   "email_tipo": "institucional",
+   "instagram": null,
+   "instagram_fonte": null
   },
   {
    "id": "sen-sp-2026-william-teixeira",
@@ -148,7 +170,9 @@
    "numero": "360",
    "email": null,
    "email_fonte": null,
-   "email_tipo": null
+   "email_tipo": null,
+   "instagram": null,
+   "instagram_fonte": null
   },
   {
    "id": "sen-sp-2026-tebet",
@@ -157,7 +181,9 @@
    "numero": "400",
    "email": null,
    "email_fonte": null,
-   "email_tipo": null
+   "email_tipo": null,
+   "instagram": null,
+   "instagram_fonte": null
   },
   {
    "id": "sen-sp-2026-marcio-alves",
@@ -166,7 +192,9 @@
    "numero": "800",
    "email": null,
    "email_fonte": null,
-   "email_tipo": null
+   "email_tipo": null,
+   "instagram": null,
+   "instagram_fonte": null
   },
   {
    "id": "sen-sp-2026-maira",
@@ -175,7 +203,9 @@
    "numero": "808",
    "email": null,
    "email_fonte": null,
-   "email_tipo": null
+   "email_tipo": null,
+   "instagram": null,
+   "instagram_fonte": null
   }
  ]
 }

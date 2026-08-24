@@ -157,6 +157,64 @@ Para olhar a fila pela linha de comando, sem a página:
 npx wrangler d1 execute perguntas-senado-sp --remote   --command "SELECT criada_em, id_candidatura, pergunta FROM perguntas WHERE estado='pendente'"
 ```
 
+### Enviar do seu próprio e-mail
+
+A página de moderação abre o cliente de e-mail (`mailto:`). Se você preferir
+enviar por comando, sem clicar em nada, use `enviar.py` — ele roda **na sua
+máquina** e manda pelo seu Gmail:
+
+```
+cd agente
+python enviar.py --listar
+python enviar.py --simular sen-sp-2026-marina
+python enviar.py --enviar  sen-sp-2026-marina
+```
+
+O `--simular` monta a mensagem e mostra na tela sem enviar nada. O `--enviar`
+mostra a mensagem, pede que você digite `ENVIAR` para confirmar, manda, e marca
+as perguntas como enviadas na fila. Não existe modo "manda tudo sem olhar", de
+propósito.
+
+Credenciais por variável de ambiente — o que faltar, ele pergunta sem ecoar:
+
+| Variável | O que é |
+|---|---|
+| `AGENTE_TOKEN` | o mesmo `TOKEN_ADMIN` da Cloudflare |
+| `GMAIL_USUARIO` | seu endereço |
+| `GMAIL_SENHA` | **senha de app** do Gmail, não a senha da conta |
+
+A senha de app sai de `myaccount.google.com/apppasswords` e exige verificação em
+duas etapas ligada. A senha normal da conta não funciona em SMTP e o Gmail
+devolve erro de autenticação.
+
+Para conferir a montagem da mensagem sem rede e sem credenciais:
+
+```
+python enviar.py --autoteste
+```
+
+**Por que não pelo worker:** a Cloudflare não abre SMTP com facilidade, e todo
+serviço de envio por HTTP exige domínio próprio verificado — o e-mail sairia de
+um domínio novo, com cara de robô, e não do seu endereço. Rodando na sua máquina
+ele sai da sua conta de verdade: fica na sua caixa de Enviados, e a resposta do
+gabinete cai na sua caixa de entrada.
+
+**Vale pensar antes:** o endereço que você usar fica conhecido pelas assessorias
+de campanha. Uma conta dedicada ao projeto separa isso do seu e-mail pessoal.
+
+### Instagram
+
+Não dá para enviar automaticamente, e não é limitação nossa: a API do Instagram
+só permite mandar mensagem para quem escreveu para a sua conta nas últimas 24h.
+Não existe caminho oficial para abrir uma DM fria com um candidato, nem pela sua
+própria conta. O que existe é automação de navegador fingindo ser você, que
+viola os termos e derruba a conta — não está implementado e não deve estar.
+
+O que a página de moderação faz é o máximo honesto: quando há @ registrado, ela
+mostra um link `ig.me` que **abre a conversa** com aquela conta, e você cola o
+texto. Hoje nenhuma das 15 candidaturas tem Instagram no acervo — depende do
+mesmo dataset do TSE que está pendente.
+
 ## Rotas do worker
 
 | Rota | Método | O que faz | Protegida por |
