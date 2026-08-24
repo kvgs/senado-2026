@@ -634,7 +634,14 @@ function corpoTema(cid,tid){
       let a='';
       if(l.total_autores&&l.total_autores>1)
         a='<span class="aut">'+esc(l.ordem_autoria)+'º de '+esc(l.total_autores)+' autores.</span> ';
-      h+='<li><span class="rot">'+esc(l.rotulo)+'</span><span>'+a+esc(l.ementa)+'</span></li>';
+      /* O rotulo vira link para a ficha da propria proposicao. Sem link quando a
+         ementa nao conferiu com a da casa legislativa: apontar para a proposicao
+         errada seria pior que nao apontar. */
+      const rot = l.url
+        ? '<a class="rot" href="'+esc(l.url)+'" target="_blank" rel="noopener">'+esc(l.rotulo)+
+          ' <span class="vis-oculto">(abre a ficha de tramitação em nova aba)</span></a>'
+        : '<span class="rot">'+esc(l.rotulo)+'</span>';
+      h+='<li>'+rot+'<span>'+a+esc(l.ementa)+'</span></li>';
     }
     h+='</ul></div>';
   }

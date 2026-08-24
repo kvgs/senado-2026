@@ -140,7 +140,9 @@ for r in pos_publicaveis:
         "de_partido": r.get("atribuido_a_tipo") == "partido",
         "partido": partidos.get(r.get("atribuido_a_id"), {}).get("sigla",""),
         "fonte": doc.get("titulo","fonte não registrada"),
-        "url": doc.get("url",""),
+        # Link proprio da posicao vence o do documento: quando a fonte e uma API,
+        # o endereco util e o da proposicao especifica, nao a raiz do servico.
+        "url": r.get("url_especifica") or doc.get("url",""),
         "data": r.get("data_referencia"),
         "busca_em": r.get("busca_realizada_em",""),
         "busca_escopo": r.get("escopo_da_busca",""),
@@ -163,6 +165,9 @@ for rg in regs["registros"]:
             leg[t].setdefault(a["id_candidatura"], []).append({
                 "rotulo": f'{rg["tipo"]} {rg["numero"]}/{rg["ano"]}',
                 "casa": rg["casa"], "ementa": rg["ementa"],
+                # link da propria proposicao, conferido pela ementa contra a casa
+                # legislativa. Registro sem link e registro cuja ementa nao bateu.
+                "url": rg.get("url", ""),
                 "ordem_autoria": a.get("ordem_autoria"), "total_autores": a.get("total_autores"),
             })
 
