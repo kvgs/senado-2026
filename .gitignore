@@ -24,3 +24,10 @@ __pycache__/
 
 # textos extraidos dos PDFs (recriaveis com pdftotext)
 fontes/*.txt
+
+# Dataset consulta_cand do TSE: contem CPF e titulo eleitoral de todos os
+# candidatos do pais. Publico na origem NAO autoriza republicacao — e a
+# agregacao num repositorio publico e justamente o que facilita o mau uso.
+# Fica so na maquina; documentos.json guarda URL, bytes e sha256 para quem
+# quiser reproduzir. O de redes sociais nao tem coluna sensivel e pode ficar.
+fontes/consulta-candidatos-2026.zip

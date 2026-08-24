@@ -238,6 +238,24 @@
    "bytes": 2358987,
    "sha256_16": "c5bc5d274a100218",
    "_nota": "Baixado manualmente pela usuaria: o TSE devolve 403 a acesso automatizado, inclusive com identificacao de navegador. Conteudo autodeclarado pelo candidato no registro. NAO contem e-mail — e-mail fica no dataset consulta_cand, campo DS_EMAIL."
+  },
+  {
+   "id_documento": "doc-tse-consulta-cand-2026",
+   "titulo": "TSE — Consulta de candidatos 2026 (SP)",
+   "tipo": "dataset_oficial",
+   "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+   "nivel_fonte": "oficial",
+   "acessivel": true,
+   "motivo_inacessivel": null,
+   "capturado_em": "2026-08-24",
+   "arquivo_local": "fontes/consulta-candidatos-2026.zip",
+   "bytes": 3129443,
+   "sha256_16": "c755e17504469427",
+   "gerado_pelo_tse_em": "23/08/2026 19:30:42",
+   "_achado_email": "O TSE NAO divulga e-mail de candidato: DS_EMAIL vem 'NAO DIVULGAVEL' em 2610 de 2610 candidaturas de SP, sem excecao. Portanto a ausencia de e-mail no acervo nao e falha da nossa busca — e uma propriedade da fonte oficial. Os 4 e-mails que temos vem de dados abertos das casas legislativas e so existem porque a candidatura tem mandato.",
+   "_achado_situacao": "DS_SITUACAO_CANDIDATURA vem vazia (#NE) nesta geracao: o julgamento dos registros ainda nao foi lancado no dataset. Nao serve para atualizar a situacao; reconsultar mais perto de 04/10/2026.",
+   "_privacidade": "O arquivo contem CPF e titulo eleitoral. Nenhum dos dois foi copiado para qualquer arquivo do projeto. Publico na origem nao autoriza republicacao: a agregacao e o que facilita o mau uso.",
+   "_nota": "Baixado manualmente pela usuaria — o TSE devolve 403 a acesso automatizado, inclusive com identificacao de navegador."
   }
  ],
  "_pendencias_de_download": {
