@@ -31,3 +31,10 @@ fontes/*.txt
 # Fica so na maquina; documentos.json guarda URL, bytes e sha256 para quem
 # quiser reproduzir. O de redes sociais nao tem coluna sensivel e pode ficar.
 fontes/consulta-candidatos-2026.zip
+
+# Prestacao de contas do TSE: CPF e nome de doador pessoa fisica em milhares de
+# linhas, alem de CPF de candidato. Mesma regra do consulta_cand — publico na
+# origem nao autoriza republicacao, e agregar doador individual num repositorio
+# publico e o que facilita o mau uso. Fica local; documentos.json guarda URL e
+# sha256 para reproduzir.
+fontes/prestacao-contas-2026.zip
