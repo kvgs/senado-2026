@@ -1313,12 +1313,30 @@ function blocoContatos(q){
          '</div>'+
          '<p class="sem-contato" style="margin-top:8px">'+esc(ct.email)+' — '+esc(ct.email_fonte)+
          '. E-mail institucional do gabinete, não de campanha.</p>';
-    } else {
-      h+='<p class="sem-contato">Contato oficial ainda não disponível. O dataset de redes sociais de '+
-         'candidatos do TSE, autodeclarado no registro, está pendente. Não usamos contato de outra '+
-         'origem para não haver risco de escrever para a pessoa errada.</p>'+
+    }
+    if(ct.instagram){
+      const arroba=ct.instagram.replace(/^@/,'');
+      h+='<div class="acoes" style="margin-top:8px">'+
+         '<a href="https://ig.me/m/'+esc(arroba)+'" target="_blank" rel="noopener">'+
+         'Abrir conversa no Instagram <span class="vis-oculto">(abre em nova aba)</span></a>'+
+         '<button type="button" data-copiar="'+esc(textoDM(c,q))+
+         '">Copiar texto para mensagem</button></div>'+
+         '<p class="sem-contato" style="margin-top:8px">'+esc(ct.instagram)+' — '+
+         esc(ct.instagram_fonte||'fonte não registrada')+'. O link abre a conversa; '+
+         'o texto você cola. Nada é enviado sozinho.</p>';
+    }
+    if(!ct.email && !ct.instagram){
+      /* Ausencia tem tipos, aqui tambem: nao declarar nada no registro e uma
+         coisa, declarar so canais que nao servem de conversa e outra. */
+      h+='<p class="sem-contato">'+
+         (ct.redes && ct.redes.length
+           ? 'Esta candidatura declarou '+ct.redes.length+' endereço(s) no registro do TSE, mas '+
+             'nenhum que sirva de canal direto de mensagem. '
+           : 'Esta candidatura não declarou nenhuma rede social no registro do TSE. ')+
+         'Não usamos contato de outra origem: um endereço achado em busca pode ser de outra '+
+         'pessoa, e o erro cairia em cima de quem escreveu.</p>'+
          '<div class="acoes"><button type="button" data-copiar="'+esc(textoDM(c,q))+
-         '">Copiar texto para mensagem</button></div>';
+         '">Copiar texto para guardar</button></div>';
     }
     h+='</li>';
   }
@@ -1327,8 +1345,11 @@ function blocoContatos(q){
     'mas não manda nada em nome de ninguém. A API do Instagram não permite mensagem não solicitada, e '+
     'um botão de envio automático num site público viraria um canal de disparo em massa — com mensagem '+
     'assinada por terceiros. Assim você lê antes, envia do seu endereço e responde pelo que escreveu. '+
-    'Dos '+D.ordem.length+' contatos, '+D.ordem.filter(function(k){return (D.candidatos[k].contato||{}).email;}).length+
-    ' têm e-mail oficial hoje — e só porque têm mandato, o que favorece quem já foi eleito.</p>';
+    'Dos '+D.ordem.length+', '+
+    D.ordem.filter(function(k){return (D.candidatos[k].contato||{}).email;}).length+
+    ' têm e-mail oficial — e só porque têm mandato, o que favorece quem já foi eleito — e '+
+    D.ordem.filter(function(k){return (D.candidatos[k].contato||{}).instagram;}).length+
+    ' têm Instagram declarado no registro do TSE, que não depende de mandato nenhum.</p>';
 }
 
 function renderGuardadas(){
