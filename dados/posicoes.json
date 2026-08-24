@@ -20,6 +20,11 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "site oficial de campanha, lido em 2026-08-24"
+   },
+   "revisao": {
+    "em": "2026-08-24",
+    "resultado": "remover",
+    "nota": "Não deveria estar aqui"
    }
   },
   {
@@ -38,6 +43,11 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "site oficial de campanha, lido em 2026-08-24"
+   },
+   "revisao": {
+    "em": "2026-08-24",
+    "resultado": "remover",
+    "nota": "Não deveria estar aqui"
    }
   },
   {
@@ -56,6 +66,11 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "site oficial de campanha, lido em 2026-08-24"
+   },
+   "revisao": {
+    "em": "2026-08-24",
+    "resultado": "remover",
+    "nota": "Não deveria estar aqui"
    }
   },
   {
@@ -75,6 +90,11 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "site oficial de campanha, lido em 2026-08-24"
+   },
+   "revisao": {
+    "em": "2026-08-24",
+    "resultado": "remover",
+    "nota": "Não deveria estar aqui"
    }
   },
   {
@@ -94,6 +114,11 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "Site oficial relido integralmente em 24/08/2026, com pergunta explicita por tema. A ausencia foi CONSTATADA no documento, nao inferida da falta de mencao."
+   },
+   "revisao": {
+    "em": "2026-08-24",
+    "resultado": "remover",
+    "nota": "Não deveria estar aqui"
    }
   },
   {
@@ -111,6 +136,11 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "Site oficial relido integralmente em 24/08/2026, com pergunta explicita por tema. A ausencia foi CONSTATADA no documento, nao inferida da falta de mencao."
+   },
+   "revisao": {
+    "em": "2026-08-24",
+    "resultado": "remover",
+    "nota": "Não deveria estar aqui"
    }
   },
   {
@@ -149,11 +179,16 @@
    "citacao_literal": "Vacinas salvam vidas!",
    "texto": "Vacinação e imunização como eixo explícito, incluindo resposta a surtos — sarampo citado nominalmente.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-24",
     "forca": "alta",
     "base": "site oficial de campanha, lido em 2026-08-24"
+   },
+   "revisao": {
+    "em": "2026-08-24",
+    "resultado": "confere",
+    "nota": ""
    }
   },
   {
@@ -173,6 +208,11 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "site oficial de campanha, lido em 2026-08-24"
+   },
+   "revisao": {
+    "em": "2026-08-24",
+    "resultado": "remover",
+    "nota": "Não deveria estar aqui"
    }
   },
   {
@@ -218,7 +258,12 @@
     "base": "Site oficial relido integralmente em 24/08/2026, com pergunta explicita por tema. A ausencia foi CONSTATADA no documento, nao inferida da falta de mencao.",
     "ressalva": "Tema identificado, posição não determinada."
    },
-   "_pendencia": "A releitura do site em 24/08/2026 encontrou um vídeo de campanha intitulado 'Redução da maioridade penal'. O TÍTULO não revela se ela é a favor ou contra — e este é o tema em que Derrite e Salles são coautores das PEC 8/2026 e 9/2026. NÃO publicar posição sobre isso antes de assistir ao vídeo. Registrado apenas que a campanha aborda o tema."
+   "_pendencia": "A releitura do site em 24/08/2026 encontrou um vídeo de campanha intitulado 'Redução da maioridade penal'. O TÍTULO não revela se ela é a favor ou contra — e este é o tema em que Derrite e Salles são coautores das PEC 8/2026 e 9/2026. NÃO publicar posição sobre isso antes de assistir ao vídeo. Registrado apenas que a campanha aborda o tema.",
+   "revisao": {
+    "em": "2026-08-24",
+    "resultado": "remover",
+    "nota": "Não está no site"
+   }
   },
   {
    "id_posicao": "p012",
@@ -272,6 +317,11 @@
     "data": "2026-08-24",
     "forca": "media",
     "base": "declaracao do candidato em fonte lida"
+   },
+   "revisao": {
+    "em": "2026-08-24",
+    "resultado": "remover",
+    "nota": "Não deveria estar aqui"
    }
   },
   {
@@ -311,11 +361,16 @@
    "id_documento": "doc-tmc-soninha",
    "texto": "Declara querer levar direitos humanos ao Senado. Lastro em trajetória executiva verificável: Secretária Municipal de Direitos Humanos e Cidadania de SP (2022-2025), Coordenadora de Políticas para a Diversidade Sexual do Estado (2015), Secretária de Assistência Social (2017).",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-24",
     "forca": "media",
     "base": "declaracao do candidato em fonte lida"
+   },
+   "revisao": {
+    "em": "2026-08-24",
+    "resultado": "confere",
+    "nota": ""
    }
   },
   {
@@ -406,6 +461,11 @@
     "data": "2026-08-24",
     "forca": "media",
     "base": "declaracao do candidato em fonte lida"
+   },
+   "revisao": {
+    "em": "2026-08-24",
+    "resultado": "remover",
+    "nota": "Não deveria estar aqui"
    }
   },
   {
@@ -571,14 +631,19 @@
    "id_documento": "doc-programa-missao",
    "citacao_literal": "Expulsar ONGs internacionais que atuem contra o desenvolvimento nacional e defender a exploração soberana do petróleo da margem equatorial.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-24",
     "forca": "media",
     "base": "Material de campanha lido; documento registrado no TSE lido e conferido.",
     "ressalva": "Consta do material de campanha, mas NÃO foi localizado no documento de 51 páginas registrado no TSE. O documento registrado é resumo de obra maior (o Livro Amarelo tem cerca de 500 páginas), então a ausência pode ser de síntese e não abandono da proposta. Mantido no nível de declaração de campanha, não de documento oficial."
    },
-   "_nao_consta_no_documento_registrado": "Consta do material de campanha, mas NÃO foi localizado no documento de 51 páginas registrado no TSE. O documento registrado é resumo de obra maior (o Livro Amarelo tem cerca de 500 páginas), então a ausência pode ser de síntese e não abandono da proposta. Mantido no nível de declaração de campanha, não de documento oficial."
+   "_nao_consta_no_documento_registrado": "Consta do material de campanha, mas NÃO foi localizado no documento de 51 páginas registrado no TSE. O documento registrado é resumo de obra maior (o Livro Amarelo tem cerca de 500 páginas), então a ausência pode ser de síntese e não abandono da proposta. Mantido no nível de declaração de campanha, não de documento oficial.",
+   "revisao": {
+    "em": "2026-08-24",
+    "resultado": "confere",
+    "nota": ""
+   }
   },
   {
    "id_posicao": "p029",
@@ -615,14 +680,19 @@
    "citacao_literal": "Restringir o STF ao papel de Corte Constitucional, acabar com decisões monocráticas e criar corte específica de desembargadores para julgar foro privilegiado.",
    "texto": "Vincular a reeleição de prefeitos e o repasse dos fundos partidário e eleitoral ao cumprimento de metas objetivas.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-24",
     "forca": "media",
     "base": "Material de campanha lido; documento registrado no TSE lido e conferido.",
     "ressalva": "Consta do material de campanha, mas NÃO foi localizado no documento de 51 páginas registrado no TSE. O documento registrado é resumo de obra maior (o Livro Amarelo tem cerca de 500 páginas), então a ausência pode ser de síntese e não abandono da proposta. Mantido no nível de declaração de campanha, não de documento oficial."
    },
-   "_nao_consta_no_documento_registrado": "Consta do material de campanha, mas NÃO foi localizado no documento de 51 páginas registrado no TSE. O documento registrado é resumo de obra maior (o Livro Amarelo tem cerca de 500 páginas), então a ausência pode ser de síntese e não abandono da proposta. Mantido no nível de declaração de campanha, não de documento oficial."
+   "_nao_consta_no_documento_registrado": "Consta do material de campanha, mas NÃO foi localizado no documento de 51 páginas registrado no TSE. O documento registrado é resumo de obra maior (o Livro Amarelo tem cerca de 500 páginas), então a ausência pode ser de síntese e não abandono da proposta. Mantido no nível de declaração de campanha, não de documento oficial.",
+   "revisao": {
+    "em": "2026-08-24",
+    "resultado": "confere",
+    "nota": ""
+   }
   },
   {
    "id_posicao": "p031",
@@ -870,14 +940,19 @@
    "citacao_literal": "estatização das universidades privadas",
    "texto": "Universalização do acesso à educação pública, gratuita e de qualidade.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-24",
     "forca": "media",
     "base": "Material de campanha lido; documento registrado no TSE lido e conferido.",
     "ressalva": "Consta do material do partido, mas NÃO foi localizado no programa registrado no TSE. Mantido no nível de declaração, não de documento oficial."
    },
-   "_nao_consta_no_documento_registrado": "Consta do material do partido, mas NÃO foi localizado no programa registrado no TSE. Mantido no nível de declaração, não de documento oficial."
+   "_nao_consta_no_documento_registrado": "Consta do material do partido, mas NÃO foi localizado no programa registrado no TSE. Mantido no nível de declaração, não de documento oficial.",
+   "revisao": {
+    "em": "2026-08-24",
+    "resultado": "confere",
+    "nota": ""
+   }
   },
   {
    "id_posicao": "p043",
@@ -952,7 +1027,7 @@
    "id_documento": "doc-programa-pcb-tse",
    "texto": "Demarcação de terras indígenas, quilombolas e de comunidades tradicionais; combate à devastação do Cerrado e da Amazônia por agronegócio e mineração.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-24",
     "forca": "alta",
@@ -960,7 +1035,12 @@
     "ressalva": "Confirmada a demarcação de terras indígenas. NÃO localizada a menção específica ao Cerrado e à Amazônia."
    },
    "_confirmado_no_documento_registrado": "2026-08-24",
-   "_parcialmente_confirmado": "Confirmada a demarcação de terras indígenas. NÃO localizada a menção específica ao Cerrado e à Amazônia."
+   "_parcialmente_confirmado": "Confirmada a demarcação de terras indígenas. NÃO localizada a menção específica ao Cerrado e à Amazônia.",
+   "revisao": {
+    "em": "2026-08-24",
+    "resultado": "confere",
+    "nota": ""
+   }
   },
   {
    "id_posicao": "p047",
@@ -975,14 +1055,19 @@
    "citacao_literal": "O Senado será extinto e substituído por um Parlamento Unicameral, com os mesmos critérios da Constituinte.",
    "texto": "Convocação, em dois anos, de uma Assembleia Constituinte de Novo Tipo, com metade dos membros eleita por organizações sociais e populares em Encontros da Classe Trabalhadora e metade por voto universal. Extinção do Senado e substituição por Parlamento Unicameral. Instituição de Conselhos Populares eleitos nos locais de trabalho, moradia e estudo, com mandatos revogáveis. Orçamento Popular 100% deliberativo.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "_destaque": "Citação verbatim do documento registrado no TSE. É a candidatura ao Senado cujo programa partidário oficial prevê extinguir o Senado — fato verificável na fonte primária, não interpretação.",
    "conferido_por_ia": {
     "data": "2026-08-24",
     "forca": "alta",
     "base": "Termos-chave da afirmação localizados no PDF registrado no TSE, baixado e arquivado em fontes/ com hash SHA-256."
    },
-   "_confirmado_no_documento_registrado": "2026-08-24"
+   "_confirmado_no_documento_registrado": "2026-08-24",
+   "revisao": {
+    "em": "2026-08-24",
+    "resultado": "confere",
+    "nota": ""
+   }
   },
   {
    "id_posicao": "p048",
@@ -1753,6 +1838,11 @@
     "forca": "media",
     "base": "site oficial de campanha, lido em 2026-08-24",
     "ressalva": "Sem citacao literal: e parafrase minha do site, nao trecho."
+   },
+   "revisao": {
+    "em": "2026-08-24",
+    "resultado": "remover",
+    "nota": "Não deveria estar aqui"
    }
   },
   {
