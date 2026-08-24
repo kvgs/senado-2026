@@ -243,6 +243,22 @@
     font-size:.88rem;color:var(--ink-2);background:var(--surface)}
   .aviso-rev b{color:var(--alert)}
 
+  /* ---------- resposta recebida do gabinete ---------- */
+  .resposta{margin-top:14px;padding:14px 16px;background:var(--surface-2);
+    border-left:4px solid var(--s-declaracao);border-radius:0 4px 4px 0}
+  .resposta h4{margin:0 0 3px;font-size:.92rem;font-family:system-ui,sans-serif;
+    display:flex;flex-wrap:wrap;gap:8px;align-items:baseline}
+  .resposta .quando{font-weight:400;color:var(--muted);font-size:.82rem;
+    font-variant-numeric:tabular-nums}
+  .resposta .motivo{margin:8px 0 0;font-size:.86rem;color:var(--muted)}
+  .resposta .motivo li{margin-top:3px}
+  .resposta .motivo ul{margin:4px 0 0;padding-left:20px}
+  .resposta .integra{margin-top:11px;white-space:pre-wrap;font-size:.94rem;line-height:1.62}
+  .resposta .proc{margin-top:11px;font-size:.83rem;color:var(--muted);
+    display:flex;flex-wrap:wrap;gap:5px 14px}
+  .resposta .alerta-proc{margin-top:9px;padding:9px 12px;background:var(--alert-bg);
+    border:1px solid var(--alert-line);border-radius:4px;font-size:.85rem;color:var(--ink-2)}
+
   /* ---------- pedir que a gente pergunte ao gabinete ---------- */
   .pedir{margin-top:18px;padding:16px 18px;background:var(--surface);
     border:1px solid var(--rule-strong);border-radius:4px}
@@ -525,6 +541,51 @@ function proposta(i){
   if(i.escopo)  h+='<p class="escopo"><strong>Escopo desta posição:</strong> '+esc(i.escopo)+'</p>';
   return h+fonteLinha(i)+'</div>';
 }
+/* Indice das respostas por candidatura, e por candidatura+tema. Resposta sem
+   tema classificado NAO some: aparece no perfil, que e o lugar onde ninguem
+   precisa adivinhar a gaveta certa. */
+const RESPOSTAS=(D.respostas||[]);
+const RESP_CAND={}, RESP_TEMA={};
+for(const r of RESPOSTAS){
+  (RESP_CAND[r.id_candidatura]=RESP_CAND[r.id_candidatura]||[]).push(r);
+  if(r.id_tema){
+    const k=r.id_candidatura+'|'+r.id_tema;
+    (RESP_TEMA[k]=RESP_TEMA[k]||[]).push(r);
+  }
+}
+
+function blocoResposta(r){
+  const c=D.candidatos[r.id_candidatura]||{};
+  const canal={email:'por e-mail', instagram:'por mensagem no Instagram', outro:'por outro canal'}[r.canal]
+              || 'por outro canal';
+  let h='<div class="resposta"><h4>'+
+    '<span class="selo"><span class="dot d-declaracao" aria-hidden="true"></span>'+
+    'Resposta da candidatura ao nosso projeto</span>'+
+    '<span class="quando">recebida '+esc(canal)+' em '+esc(dataBR(r.recebida_em))+'</span></h4>';
+
+  if(r.perguntas_que_responde && r.perguntas_que_responde.length){
+    h+='<div class="motivo">Perguntamos porque leitores do site pediram:<ul>'+
+       r.perguntas_que_responde.map(function(x){
+         return '<li>“'+esc(x.pergunta)+'”</li>';}).join('')+'</ul></div>';
+  }
+
+  h+='<div class="integra">'+esc(r.texto)+'</div>';
+
+  h+='<p class="proc"><span>Texto publicado na íntegra, sem edição nem resumo.</span>'+
+     '<span>Origem: '+esc(r.remetente || r.remetente_dominio || 'não registrada')+'</span>';
+  if(!r.revisado_por_humano) h+='<span class="nrev">não revisado</span>';
+  h+='</p>';
+
+  if(!r.confere_com_contato_oficial){
+    h+='<p class="alerta-proc"><strong>Sobre a origem.</strong> Este endereço não é o contato '+
+       'oficial que temos registrado para '+esc(c.nome||'esta candidatura')+'. Assessorias '+
+       'costumam responder do próprio e-mail, então isso não indica problema — mas quem lê tem '+
+       'direito de saber a diferença entre uma resposta vinda do endereço registrado e uma vinda '+
+       'de outro.</p>';
+  }
+  return h+'</div>';
+}
+
 function corpoTema(cid,tid){
   const itens=(D.grade[tid]&&D.grade[tid][cid])||[];
   const reais=itens.filter(i=>i.estado==='A'||i.estado==='B');
@@ -559,6 +620,9 @@ function corpoTema(cid,tid){
     if(v.cuidado) h+='<br><strong>Atenção:</strong> '+esc(v.cuidado);
     h+='</p>';
   }
+  /* Resposta vem por ultimo na celula: e a informacao mais recente e a mais
+     direta da candidatura, mas nao substitui o que ja estava documentado. */
+  for(const r of (RESP_TEMA[cid+'|'+tid]||[])) h+=blocoResposta(r);
   return h;
 }
 

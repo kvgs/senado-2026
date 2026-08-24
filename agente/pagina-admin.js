@@ -83,6 +83,14 @@ export const PAGINA_ADMIN = `<!doctype html>
   summary{cursor:pointer;font-weight:600;font-size:.92rem}
   .hist{font-size:.86rem;color:var(--muted);margin-top:10px}
   .hist li{margin-top:5px}
+  .form-resp{margin-top:16px;padding:14px 16px;background:var(--surface-2);
+    border:1px solid var(--rule-forte);border-radius:5px}
+  .form-resp h3{margin:0 0 4px;font-size:.96rem}
+  .form-resp .dica{font-size:.84rem;color:var(--muted);margin:0 0 12px}
+  .form-resp .campo{margin-top:10px}
+  .form-resp select,.form-resp input[type=date]{width:100%;font:inherit;padding:9px 11px;
+    border:1px solid var(--rule-forte);border-radius:4px;background:var(--surface);color:var(--ink)}
+  .form-resp .par{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
 </style>
 </head>
 <body>
@@ -238,6 +246,7 @@ export const PAGINA_ADMIN = `<!doctype html>
               ">Montar mensagem</button>" +
             '<button type="button" class="sec" data-marcar="enviada" data-cand="' + esc(cid) + '">Marcar como enviadas</button>' +
             '<button type="button" class="sec" data-marcar="descartada" data-cand="' + esc(cid) + '">Descartar</button>' +
+            '<button type="button" class="sec" data-resposta="' + esc(cid) + '">Registrar resposta recebida</button>' +
           "</div>" +
           '<div data-saida="' + esc(cid) + '"></div>' +
           "</div></section>";
@@ -331,6 +340,81 @@ export const PAGINA_ADMIN = `<!doctype html>
       var ta = document.getElementById("msg-" + cid);
       ta.value = "Assunto: " + m.assunto + "\\n\\n" + m.corpo;
       ta.focus(); ta.select();
+      return;
+    }
+
+    if (b.dataset.resposta){
+      var cidR = b.dataset.resposta;
+      var cR = nomeCand(cidR);
+      var selR = selecionadas(cidR);
+      var saidaR = document.querySelector('[data-saida="' + cidR + '"]');
+      var hoje = new Date().toISOString().slice(0, 10);
+
+      var temas = DADOS.catalogo.temas.map(function(x){
+        return '<option value="' + esc(x.id) + '">' + esc(x.nome) + "</option>";
+      }).join("");
+
+      saidaR.innerHTML =
+        '<div class="form-resp"><h3>Resposta de ' + esc(cR.nome) + "</h3>" +
+        '<p class="dica">Cole o texto exatamente como veio, sem editar nem resumir — ' +
+        'prometemos publicar na íntegra. Não inclua telefone nem dado pessoal de assessor: ' +
+        'isso não vai para o site.</p>' +
+        '<div class="par">' +
+          '<div><label for="r-data-' + esc(cidR) + '">Data que consta no e-mail</label>' +
+          '<input type="date" id="r-data-' + esc(cidR) + '" value="' + hoje + '"></div>' +
+          '<div><label for="r-canal-' + esc(cidR) + '">Chegou por onde</label>' +
+          '<select id="r-canal-' + esc(cidR) + '"><option value="email">E-mail</option>' +
+          '<option value="instagram">Instagram</option><option value="outro">Outro</option></select></div>' +
+        "</div>" +
+        '<div class="campo"><label for="r-de-' + esc(cidR) + '">De qual endereço veio</label>' +
+        '<input type="text" id="r-de-' + esc(cidR) + '" placeholder="assessoria@exemplo.leg.br"></div>' +
+        '<div class="campo"><label for="r-tema-' + esc(cidR) + '">Tema (opcional)</label>' +
+        '<select id="r-tema-' + esc(cidR) + '"><option value="">Não classificar agora</option>' +
+        temas + "</select></div>" +
+        '<div class="campo"><label for="r-txt-' + esc(cidR) + '">Texto da resposta, na íntegra</label>' +
+        '<textarea id="r-txt-' + esc(cidR) + '" rows="10"></textarea></div>' +
+        '<p class="dica" style="margin:10px 0 0">' +
+        (selR.length
+          ? "As " + selR.length + " pergunta(s) marcadas acima serão registradas como respondidas."
+          : "Nenhuma pergunta marcada acima: a resposta fica registrada sem ligar a nenhuma pergunta da fila.") +
+        "</p>" +
+        '<div class="barra"><button type="button" data-salvar-resp="' + esc(cidR) + '">Registrar resposta</button>' +
+        '<button type="button" class="sec" data-cancelar-resp="' + esc(cidR) + '">Cancelar</button></div>' +
+        '<div data-msg-resp="' + esc(cidR) + '"></div></div>';
+      document.getElementById("r-de-" + cidR).focus();
+      return;
+    }
+
+    if (b.dataset.cancelarResp){
+      document.querySelector('[data-saida="' + b.dataset.cancelarResp + '"]').innerHTML = "";
+      return;
+    }
+
+    if (b.dataset.salvarResp){
+      var cidS = b.dataset.salvarResp;
+      var msg = document.querySelector('[data-msg-resp="' + cidS + '"]');
+      var corpo = {
+        id_candidatura: cidS,
+        recebida_em: document.getElementById("r-data-" + cidS).value,
+        canal: document.getElementById("r-canal-" + cidS).value,
+        remetente: document.getElementById("r-de-" + cidS).value.trim(),
+        id_tema: document.getElementById("r-tema-" + cidS).value,
+        texto: document.getElementById("r-txt-" + cidS).value,
+        perguntas_ids: selecionadas(cidS)
+      };
+      b.disabled = true;
+      api("/responder", {
+        method: "POST",
+        headers: {"content-type": "application/json"},
+        body: JSON.stringify(corpo)
+      }).then(function(r){
+        b.disabled = false;
+        if (r.erro){ msg.innerHTML = '<div class="erro">' + esc(r.erro) + "</div>"; return; }
+        msg.innerHTML = '<div class="erro" style="background:var(--surface);border-color:var(--acento)">' +
+          "Resposta registrada. " + r.perguntas_marcadas + " pergunta(s) marcadas como respondidas. " +
+          "Para publicar no site, rode <code>python promover.py</code> na pasta agente." + "</div>";
+        setTimeout(carregar, 1800);
+      });
       return;
     }
 

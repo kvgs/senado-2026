@@ -167,6 +167,11 @@ for v in regs.get("votacoes_nominais", []):
                           "proposicao": v["proposicao_objeto"]["rotulo"],
                           "temas": v.get("temas", []), "cuidado": v.get("_cuidado","")})
 
+# Respostas recebidas dos gabinetes. Arquivo pode nao existir ainda — nenhuma
+# resposta e um estado legitimo, nao um erro de configuracao.
+_rp = HERE/"dados"/"respostas.json"
+respostas = json.loads(_rp.read_text(encoding="utf-8"))["respostas"] if _rp.exists() else []
+
 q = pesq["pesquisas"][0]
 pesquisa = {"instituto": q["instituto"], "registro": q["registro_tse"],
             "ini": q["campo_inicio"], "fim": q["campo_fim"], "n": q["entrevistados"],
@@ -184,7 +189,7 @@ dados = {
     "agente_url": agente_url,
     "temas": [{"id": t["id_tema"], "nome": t["nome"]} for t in temas],
     "ordem": ordem, "candidatos": cand_por_id, "grade": grade, "leg": leg,
-    "votos": votos, "pesquisa": pesquisa,
+    "votos": votos, "pesquisa": pesquisa, "respostas": respostas,
     "selos": {k: {"nome": v["nome"], "def": v["definicao"], "eixo": v["eixo"]}
               for k, v in selos.items()},
     "totais": {"posicoes": len(pos),

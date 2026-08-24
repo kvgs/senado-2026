@@ -22,12 +22,19 @@ export async function carregarWorker() {
 
   fs.writeFileSync(path.join(TMP, "stub-anthropic.mjs"), `
 export const ENVIADO = [];
+
+/* O worker faz DUAS chamadas: uma escreve o resumo, outra audita o resumo
+   escrito. O dublê precisa distinguir as duas pelo prompt de sistema — devolver
+   o mesmo texto nas duas faz a auditoria reprovar o proprio resumo e o teste
+   acusa falha onde nao ha. */
 export default class Anthropic {
   constructor(o){ this.o = o; }
   messages = { create: async (p) => {
     ENVIADO.push(p);
+    const ehAuditoria = typeof p.system === "string" && p.system.startsWith("Você audita");
     return { model: p.model, stop_reason: "end_turn",
-             content: [{ type: "text", text: "Resumo simulado para o teste [1]." }] };
+             content: [{ type: "text",
+                         text: ehAuditoria ? "APROVADO" : "Resumo simulado para o teste [1]." }] };
   }};
 }
 `, "utf8");
