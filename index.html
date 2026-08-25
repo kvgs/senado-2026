@@ -702,6 +702,7 @@
       </form>
       <div class="sugestoes" id="sugestoes"></div>
       <div aria-live="polite" id="saida-consulta"></div>
+      <div id="pedir-fixo"></div>
     </div>
     <div role="tabpanel" id="p-metodo" aria-labelledby="tab-metodo" tabindex="0" hidden>
       <h2>Como isto é feito</h2>
@@ -1630,8 +1631,7 @@ function responder(q){
        '<button type="button" data-abrir="box-contatos" aria-expanded="false" '+
        'aria-controls="box-contatos">Ver contatos e textos prontos</button></div>'+
        '</div>'+
-       '<div id="box-contatos" hidden>'+blocoContatos(q)+'</div>'+
-       blocoPedir(q, cands[0]||'', temas[0]||'', false);
+       '<div id="box-contatos" hidden>'+blocoContatos(q)+'</div>';
   } else {
     h+='<p style="margin-top:20px;font-size:.9rem;color:var(--muted)">'+achou+
        ' resultado(s), em ordem de número de urna. A ordem não expressa relevância nem preferência.</p>'+corpo;
@@ -1640,21 +1640,19 @@ function responder(q){
        'para responder à sua pergunta. As que ainda não passaram por revisão humana estão marcadas '+
        'como <em>não revisado</em> — o que numa resposta corrida é fácil esquecer, porque texto '+
        'fluente soa mais seguro do que é.</div>';
-    /* Sempre, e nao so quando a busca volta vazia: um acervo pequeno devolve
-       resultado tangente com facilidade, e resultado tangente e resposta nao
-       dada. Quem sabe se serviu e quem perguntou. */
-    h+=blocoPedir(q, cands[0]||'', temas[0]||'', usados.length>0);
   }
 
   out.innerHTML=h;
   const bi=document.getElementById('btn-ia');
   if(bi) bi.addEventListener('click',function(){ pedirResumo(q, usados, bi); });
-  ligarPedir();
+  /* O bloco ja existe: a busca so o reenquadra e preenche. Criar outro
+     duplicaria os ids e faria o botao de baixo ler os campos de cima. */
+  montarPedir(q, cands[0]||'', temas[0]||'', usados.length>0);
 }
 
 /* ---------- pedir que a gente pergunte ao gabinete ---------- */
 
-function blocoPedir(q, candSugerida, temaSugerido, houveResposta){
+function blocoPedir(q, candSugerida, temaSugerido, estado){
   if(!D.agente_url) return '';
   const cands=D.ordem.map(function(cid){
     const c=D.candidatos[cid];
@@ -1668,10 +1666,15 @@ function blocoPedir(q, candSugerida, temaSugerido, houveResposta){
 
   /* Quem decide se a resposta serviu e quem perguntou, nao o motor de busca.
      Por isso o convite existe nos dois casos, so muda o enquadramento. */
-  const titulo = houveResposta
-    ? 'Não era isso que você procurava?'
-    : 'Peça para a gente perguntar';
-  const abertura = houveResposta
+  /* Tres estados: antes de qualquer busca, depois de busca vazia, e depois de
+     busca que trouxe algo. O convite e o mesmo; muda o enquadramento. */
+  const titulo = estado==='inicial' ? 'Não achou o que procurava?'
+               : estado             ? 'Não era isso que você procurava?'
+               :                      'Peça para a gente perguntar';
+  const abertura = estado==='inicial'
+    ? 'O acervo é pequeno, e nem toda candidatura registrou proposta sobre tudo. Se o que você '+
+      'quer saber não estiver aqui, não precisa buscar primeiro para pedir. '
+    : estado
     ? 'O acervo devolveu o que tinha, mas pode não ser o que você queria saber — e às vezes '+
       'o assunto exato simplesmente não está registrado em lugar nenhum. Se for o caso, '+
       'pergunte direto à candidatura. '
@@ -1697,6 +1700,15 @@ function blocoPedir(q, candSugerida, temaSugerido, houveResposta){
     'Se a candidatura responder, publicamos a resposta na íntegra; se não responder, registramos '+
     'apenas que a pergunta foi feita — silêncio não vira posição.</p>'+
     '<div id="pd-saida" aria-live="polite"></div></div>';
+}
+
+/* Desenha o bloco unico e religa o ouvinte. Chamado no arranque da aba e a cada
+   busca — a segunda vez troca o conteudo, entao o ouvinte precisa voltar. */
+function montarPedir(q, cand, tema, estado){
+  const alvo=document.getElementById('pedir-fixo');
+  if(!alvo) return;
+  alvo.innerHTML=blocoPedir(q||'', cand||'', tema||'', estado);
+  ligarPedir();
 }
 
 function ligarPedir(){
@@ -1805,14 +1817,17 @@ async function pedirResumo(pergunta, usados, botao){
 }
 
 (function(){
-  const SUG=['O que Marina Silva propõe sobre saúde?',
+  /* Conferidas contra o acervo ATUAL. Duas sugestoes antigas apontavam para
+     candidaturas cujas posicoes a revisao removeu: clicar trazia so ausencia, e
+     sugestao que nao entrega o que promete ensina a pessoa a nao clicar mais. */
+  const SUG=['O que Simone Tebet propõe sobre educação?',
              'Quem defende extinguir o Senado?',
              'Quem não tem proposta sobre habitação?',
              'Propostas sobre inteligência artificial',
-             'O que Guilherme Derrite propõe sobre segurança?',
+             'O que Guto Schiavetto propõe sobre habitação?',
              'Quem fala sobre apostas e BETs?',
              'Desmilitarização da polícia',
-             'Quem não tem proposta sobre tecnologia?'];
+             'Propostas sobre meio ambiente'];
   document.getElementById('sugestoes').innerHTML=SUG.map(function(s){
     return '<button type="button" data-q="'+esc(s)+'">'+esc(s)+'</button>';}).join('');
   document.getElementById('sugestoes').addEventListener('click',function(e){
@@ -1822,6 +1837,9 @@ async function pedirResumo(pergunta, usados, botao){
   document.getElementById('form-busca').addEventListener('submit',function(e){
     e.preventDefault(); responder(document.getElementById('q').value);
   });
+  /* Visivel desde o inicio: quem ja sabe que o assunto nao esta no acervo nao
+     precisa buscar primeiro para descobrir que pode perguntar. */
+  montarPedir('', '', '', 'inicial');
 })();
 
 /* ---------- modo assistido: ajudar a perguntar, sem enviar por ninguem ---------- */
