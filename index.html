@@ -438,13 +438,20 @@
     border:1px solid var(--rule);border-radius:5px}
   .canais h3{font-size:1.02rem}
   .canais .de-onde{margin-top:5px;font-size:.86rem;color:var(--muted)}
-  .canais ul{list-style:none;margin-top:14px;display:grid;gap:9px;
-    grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
-  .canais li{display:flex;gap:10px;align-items:baseline;font-size:.93rem;min-width:0}
-  .canais .plat{flex:0 0 auto;font-family:"PlexMono",monospace;font-size:.7rem;
-    letter-spacing:.07em;text-transform:uppercase;color:var(--muted);
-    border:1px solid var(--rule-strong);border-radius:3px;padding:2px 6px}
-  .canais li a{word-break:break-all}
+  /* Principais: alvo grande, ordem fixa em toda candidatura. */
+  .canais .destaque{list-style:none;margin-top:14px;display:flex;flex-wrap:wrap;gap:9px}
+  .canais .destaque a{display:inline-flex;align-items:center;gap:9px;text-decoration:none;
+    padding:10px 15px;border:1px solid var(--rule-strong);border-radius:99px;
+    background:var(--surface-2);color:var(--ink);font-weight:600;font-size:.94rem}
+  .canais .destaque a:hover{border-color:var(--acento);color:var(--acento)}
+  .canais .destaque .plat{font-family:"PlexMono",monospace;font-size:.73rem;letter-spacing:.02em;
+    color:var(--muted)}
+  /* As demais: linha discreta, mas presentes — declarar 14 canais e declarar 3
+     sao coisas diferentes sobre uma campanha. */
+  .canais .outras{margin-top:13px;font-size:.86rem;color:var(--muted);line-height:1.9}
+  .canais .outras a{color:var(--ink-2)}
+  .canais .outras .rot{display:block;font-family:"PlexMono",monospace;font-size:.75rem;
+    letter-spacing:.01em;margin-bottom:3px}
   .canais .nada{margin-top:12px;padding:11px 14px;background:var(--surface-2);
     border-left:3px solid var(--rule-strong);border-radius:0 3px 3px 0;
     font-size:.9rem;color:var(--ink-2)}
@@ -1207,7 +1214,12 @@ const CARGO = {deputado_federal:'Deputado federal',deputado_estadual:'Deputado e
    "site" — nunca e escondido. */
 const PLATAFORMAS=[
   [/instagram\.com/i,'Instagram'], [/facebook\.com|fb\.com/i,'Facebook'],
-  [/(^|\W)(x|twitter)\.com/i,'X'], [/tiktok\.com/i,'TikTok'],
+  [/(^|\W)(x|twitter)\.com/i,'X'],
+  /* Pagina de HASHTAG do TikTok nao e canal da candidatura: e uma busca, com
+     conteudo de qualquer pessoa. Fica listada, porque foi declarada no registro,
+     mas rotulada pelo que e — e fora do destaque, que e para canal proprio. */
+  [/tiktok\.com\/tag\//i,'TikTok · busca por hashtag'],
+  [/tiktok\.com/i,'TikTok'],
   [/youtube\.com|youtu\.be/i,'YouTube'], [/threads\.(com|net)/i,'Threads'],
   [/linkedin\.com/i,'LinkedIn'], [/kwai\.com/i,'Kwai'], [/flickr\.com/i,'Flickr'],
   [/soundcloud\.com/i,'SoundCloud'], [/linktr\.ee/i,'Linktree'],
@@ -1230,12 +1242,39 @@ function blocoCanais(c){
        (ct.redes_consultado_em?', consultados em '+esc(dataBR(ct.redes_consultado_em)):'')+
        '. N\u00e3o usamos endere\u00e7o encontrado em busca: contato errado manda o eleitor '+
        'escrever para outra pessoa.</p>';
-    h+='<ul>'+redes.map(function(u){
-      const url=/^https?:\/\//i.test(u)?u:'https://'+u;
-      return '<li><span class="plat">'+esc(plataformaDe(u))+'</span>'+
-             '<a href="'+esc(url)+'" target="_blank" rel="noopener">'+esc(u.replace(/^https?:\/\//i,''))+
-             ' <span class="vis-oculto">(abre em nova aba)</span></a></li>';
-    }).join('')+'</ul>';
+
+    const url=function(u){ return /^https?:\/\//i.test(u)?u:'https://'+u; };
+    /* O TSE grava os enderecos em CAIXA ALTA. Exibir assim grita na tela e nao
+       e como a pessoa escreveu o proprio perfil. O href continua exatamente como
+       declarado — so o texto exibido e normalizado. */
+    const limpo=function(u){
+      return u.replace(/^https?:\/\//i,'').replace(/\/$/,'').toLowerCase(); };
+
+    /* Ordem FIXA, e nao por ordem de declaracao: ordem que muda de perfil para
+       perfil faz o olho reprocessar cada candidatura. */
+    const PRINCIPAIS=['Instagram','TikTok','Site'];
+    const destaque=[], outras=[];
+    for(const u of redes){
+      const plat=plataformaDe(u);
+      (PRINCIPAIS.indexOf(plat)>=0 ? destaque : outras).push({u:u, plat:plat});
+    }
+    destaque.sort(function(a,b){ return PRINCIPAIS.indexOf(a.plat)-PRINCIPAIS.indexOf(b.plat); });
+
+    if(destaque.length){
+      h+='<ul class="destaque">'+destaque.map(function(x){
+        return '<li><a href="'+esc(url(x.u))+'" target="_blank" rel="noopener">'+
+               '<span class="plat">'+esc(x.plat)+'</span>'+esc(limpo(x.u))+
+               ' <span class="vis-oculto">(abre em nova aba)</span></a></li>';
+      }).join('')+'</ul>';
+    }
+    if(outras.length){
+      h+='<div class="outras"><span class="rot">Tamb\u00e9m declarou '+outras.length+
+         ' outro(s) canal(is)</span>'+
+         outras.map(function(x){
+           return '<a href="'+esc(url(x.u))+'" target="_blank" rel="noopener">'+esc(x.plat)+
+                  '<span class="vis-oculto"> — '+esc(limpo(x.u))+' (abre em nova aba)</span></a>';
+         }).join(' · ')+'</div>';
+    }
   } else {
     /* Ausencia e informacao aqui tambem: "nao declarou" nao e "nao encontramos". */
     h+='<p class="nada">Esta candidatura <strong>n\u00e3o declarou nenhuma rede social nem site</strong> '+
@@ -1280,6 +1319,8 @@ function renderPerfil(cid){
     linhas.push(['Base eleitoral que declarou',c.base_eleitoral.join(', ')]);
   h+='<ul class="ficha-dl">'+linhas.map(function(par){
       return '<li><b>'+esc(par[0])+'</b><span>'+esc(par[1])+'</span></li>';}).join('')+'</ul>';
+
+  h+=blocoCanais(c);
 
   let obs=(c.obs_registro||[]).slice();
   (c.concorrentes||[]).forEach(function(x){
@@ -1336,7 +1377,6 @@ function renderPerfil(cid){
        corpoTema(cid,tm.id)+'</div></div>';});
   h+='</div>';
 
-  h+=blocoCanais(c);
 
   h+='<p style="margin-top:26px;font-size:.9rem;color:var(--muted)">A posi\u00e7\u00e3o desta '+
      'candidatura na pesquisa de inten\u00e7\u00e3o de voto est\u00e1 na aba <strong>Pesquisa</strong>, '+
