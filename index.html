@@ -78,7 +78,20 @@
   body{margin:0;background:var(--ground);color:var(--ink);
     font-family:"PublicSans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
     font-size:1.05rem;line-height:1.62;-webkit-font-smoothing:antialiased}
-  .wrap{max-width:1140px;margin:0 auto;padding:0 22px 110px}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 22px 110px;position:relative}
+
+  /* ---------- controle de tema ---------- */
+  .tema{position:absolute;top:16px;right:22px;display:flex;gap:2px;z-index:5;
+    background:var(--surface-2);border:1px solid var(--rule);border-radius:99px;padding:3px}
+  .tema button{font:inherit;font-family:"PlexMono",monospace;font-size:.72rem;font-weight:500;
+    letter-spacing:.06em;text-transform:uppercase;padding:6px 11px;border:0;border-radius:99px;
+    background:none;color:var(--muted);cursor:pointer}
+  .tema button:hover{color:var(--ink)}
+  .tema button[aria-pressed="true"]{background:var(--surface);color:var(--acento);
+    box-shadow:0 1px 2px rgba(0,0,0,.12)}
+  @media (max-width:560px){
+    .tema{position:static;margin:16px 0 0;justify-content:flex-start;width:max-content}
+  }
 
   /* Salto de escala de verdade: manchete que chega a 4rem contra corpo em 1.05.
      E essa distancia que faz a pagina ter voz — cor nao substitui hierarquia. */
@@ -456,10 +469,26 @@
     [role="tab"]{padding:10px 13px;font-size:.92rem}
   }
 </style>
+<script>
+/* Aplica o tema ANTES da primeira pintura. Se isso rodasse depois, quem escolheu
+   escuro veria um lampejo branco em cada carregamento. */
+(function(){
+  try{
+    var e = localStorage.getItem('tema');
+    if(e === 'dark' || e === 'light') document.documentElement.setAttribute('data-theme', e);
+  }catch(x){}
+})();
+</script>
 
 <a class="pular" href="#principal">Pular para o conteúdo</a>
 
 <div class="wrap">
+  <div class="tema" role="group" aria-label="Aparência do site">
+    <button type="button" data-tema="auto" aria-pressed="true">Sistema</button>
+    <button type="button" data-tema="light" aria-pressed="false">Claro</button>
+    <button type="button" data-tema="dark" aria-pressed="false">Escuro</button>
+  </div>
+
   <header>
     <p class="lbl">Eleições 2026 · Senado Federal · São Paulo · 2 vagas em disputa</p>
     <h1>Candidaturas ao Senado por São Paulo</h1>
@@ -661,6 +690,39 @@ document.getElementById('atualizado').textContent=D.atualizado;
   }
   if(falta) h+=' Enquanto a revisão não termina, confira na fonte antes de usar como referência.';
   el.innerHTML=h;
+})();
+
+/* ---------- controle de tema ---------- */
+(function(){
+  const caixa = document.querySelector('.tema');
+  if(!caixa) return;
+
+  /* "auto" nao e um terceiro tema: e a AUSENCIA de escolha, que devolve o
+     controle ao sistema operacional de quem visita. Por isso remove o atributo
+     em vez de escrever um valor. */
+  function aplicar(v){
+    if(v === 'auto') document.documentElement.removeAttribute('data-theme');
+    else document.documentElement.setAttribute('data-theme', v);
+    caixa.querySelectorAll('button').forEach(function(b){
+      b.setAttribute('aria-pressed', b.dataset.tema === v ? 'true' : 'false');
+    });
+    try{
+      if(v === 'auto') localStorage.removeItem('tema');
+      else localStorage.setItem('tema', v);
+    }catch(x){ /* armazenamento bloqueado: vale para a sessao e pronto */ }
+  }
+
+  let atual = 'auto';
+  try{
+    const g = localStorage.getItem('tema');
+    if(g === 'dark' || g === 'light') atual = g;
+  }catch(x){}
+  aplicar(atual);
+
+  caixa.addEventListener('click', function(e){
+    const b = e.target.closest('button[data-tema]');
+    if(b) aplicar(b.dataset.tema);
+  });
 })();
 
 /* ---------- pedacos reutilizaveis ---------- */
