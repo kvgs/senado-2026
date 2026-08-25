@@ -171,12 +171,23 @@
   .grade-cands{list-style:none;display:grid;gap:16px;margin-top:26px;
     grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
   .grade-cands .card{display:flex;flex-direction:column}
-  .grade-cands .card-top{flex:1;flex-direction:column;gap:12px;border-bottom:0;padding:18px}
-  .grade-cands .retrato{flex:0 0 52px;width:52px;height:52px}
-  .grade-cands .ident{display:flex;flex-direction:column;flex:1}
-  /* Botao no fim do cartao: cartoes de alturas diferentes ficam com o botao na
-     mesma linha, que e o que faz a grade parecer montada. */
-  .grade-cands .link-perfil{margin-top:auto;padding-top:14px}
+
+  /* Cabecalho: foto a esquerda, identificacao em tres niveis a direita.
+     Empilhar foto sobre numero grande fazia o olho ler sobreposicao. */
+  .cabeca-cand{display:flex;gap:16px;align-items:center;padding:18px 18px 14px}
+  .cabeca-cand .retrato{flex:0 0 72px;width:72px;height:72px;border-radius:5px;font-size:1.2rem}
+  .cabeca-cand .quem-id{min-width:0}
+  .cabeca-cand .urna{display:block;font-size:1.45rem;line-height:1}
+  .cabeca-cand h3{margin-top:3px;font-size:1.12rem;line-height:1.2}
+  .cabeca-cand .part{display:block;margin-top:4px;font-size:.8rem;letter-spacing:.05em;
+    text-transform:uppercase;color:var(--muted);font-family:"PlexMono",monospace}
+
+  .corpo-cand{display:flex;flex-direction:column;flex:1;gap:9px;
+    padding:0 18px 18px;border-top:1px solid var(--rule);margin-top:2px;padding-top:14px}
+  .corpo-cand .meta,.corpo-cand .bio{margin:0}
+  /* Botao no fim: cartoes de alturas diferentes ficam com o botao na mesma
+     linha, que e o que faz a grade parecer montada em vez de desalinhada. */
+  .corpo-cand .link-perfil{margin-top:auto;padding-top:10px;text-align:left}
   .card{background:var(--surface);border:1px solid var(--rule);border-radius:4px}
   .card-top{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;
     border-bottom:1px solid var(--rule)}
@@ -766,18 +777,25 @@ function corpoTema(cid,tid){
   const ul=document.getElementById('lista-cands');
   ul.innerHTML=D.ordem.map(cid=>{
     const c=D.candidatos[cid];
-    let h='<li class="card"><div class="card-top">'+retrato(c)+'<div class="ident">'+
-      '<h3><span class="urna">'+esc(c.numero)+'</span> '+esc(c.nome)+
-      ' <span class="sigla">'+esc(c.partido)+'</span></h3>'+
-      '<p class="meta">'+esc(c.completo)+' · '+esc(c.partido_nome)+
-      (c.coligacao?' · Coligação '+esc(c.coligacao):' · Sem coligação')+'</p>'+
-      '<p class="bio">'+esc(c.bio)+'</p>'+
-      '<p class="meta">Situação do registro: <strong>'+esc(c.situacao)+'</strong>, observada em '+
-      esc(dataBR(c.situacao_em))+'. Suplentes: '+esc(c.suplentes.join(', ')||'não informados')+'.</p>'+
-      '<button class="link-perfil" data-perfil="'+cid+'" type="button">Ver perfil completo de '+
-      esc(c.nome)+' &rarr;</button>'+
-      '</div></div></li>';
-    return h;
+    /* Cabecalho e corpo em blocos separados: layout nao consegue separar o que a
+       marcacao juntou, e era isso que colava o numero na foto. */
+    return '<li class="card">'+
+      '<div class="cabeca-cand">'+retrato(c)+
+        '<div class="quem-id">'+
+          '<span class="urna">'+esc(c.numero)+'</span>'+
+          '<h3>'+esc(c.nome)+'</h3>'+
+          '<span class="part">'+esc(c.partido)+'</span>'+
+        '</div>'+
+      '</div>'+
+      '<div class="corpo-cand">'+
+        '<p class="meta">'+esc(c.completo)+' · '+esc(c.partido_nome)+
+        (c.coligacao?' · Coligação '+esc(c.coligacao):' · Sem coligação')+'</p>'+
+        '<p class="bio">'+esc(c.bio)+'</p>'+
+        '<p class="meta">Situação do registro: <strong>'+esc(c.situacao)+'</strong>, observada em '+
+        esc(dataBR(c.situacao_em))+'. Suplentes: '+esc(c.suplentes.join(', ')||'não informados')+'.</p>'+
+        '<button class="link-perfil" data-perfil="'+cid+'" type="button">Ver perfil completo de '+
+        esc(c.nome)+' &rarr;</button>'+
+      '</div></li>';
   }).join('');
 })();
 
