@@ -979,6 +979,18 @@ function blocoSemProposta(cid){
        (nLeg&&nVoto?' e ':'')+
        (nVoto?nVoto+' voto'+(nVoto>1?'s':'')+' em plenário':'')+
        '. É o que já fez, não o que promete — e informa mais que promessa de campanha.</p>';
+    /* A licenca vem JUNTO da contagem, e nao numa secao adiante. E regra gravada
+       no proprio dado (_regra em parlamentar): numero de proposicoes lido sem ela
+       vira comparacao de volume entre quem esteve no plenario e quem estava num
+       ministerio — que mede presenca, e nao trabalho. */
+    const m=(c.parlamentar||{}).motivo_afastamento_anterior;
+    if(m){
+      h+='<p><strong>Leia esse número com esta ressalva:</strong> '+
+         esc(m.charAt(0).toLowerCase()+m.slice(1))+
+         ', e voltou ao exercício em '+esc(dataBR(c.parlamentar.desde))+'. '+
+         'Produção legislativa menor no período reflete ausência formal do parlamento, '+
+         'não inatividade — e não é comparável com a de quem esteve em exercício o mandato inteiro.</p>';
+    }
   } else if((c.parlamentar||{}).casa==='alesp'){
     /* Andre do Prado preside a ALESP e tem registro legislativo farto — que nos
        nao coletamos. Dizer "nao ha registro" seria afirmar sobre ele o que e
