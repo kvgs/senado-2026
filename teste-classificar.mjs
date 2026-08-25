@@ -137,7 +137,7 @@ async function main() {
   ok(alvo.includes('class="minha"'), "mostra o que o modelo classificou");
 
   // -------- o clique tem de sair do botao e virar POST. Foi aqui que passou o
-  //           defeito que a Kelli achou usando a tela.
+  //           defeito que apareceu no uso real da tela.
   const postsJS = [];
   ctx.fetch = async (u, opc) => {
     if (String(u).endsWith("/api/itens")) return { status: 200, json: async () => dados };

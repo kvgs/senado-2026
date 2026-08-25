@@ -402,7 +402,7 @@ async function rotaDecidir(request, env, origem) {
 const CANAIS = ["email", "instagram", "outro"];
 const MAX_TEXTO_RESPOSTA = 20000;
 
-/** Registra uma resposta de gabinete. So a autora chama isto.
+/** Registra uma resposta de gabinete. So a curadoria chama isto.
  *
  *  O texto entra INTEGRAL. A mensagem que enviamos promete publicacao na
  *  integra; cortar aqui quebraria a promessa antes de qualquer tela existir.
@@ -564,7 +564,7 @@ function analisaFontes(saida) {
   return { nada: false, nota: "", fontes };
 }
 
-/** Ferramenta de bancada da autora: busca fontes para ela conferir. */
+/** Ferramenta de bancada da curadoria: busca fontes para conferencia humana. */
 async function rotaPesquisar(request, env, origem) {
   if (!tokenOk(request, env)) return json({ erro: "Não autorizado." }, 401, origem);
 

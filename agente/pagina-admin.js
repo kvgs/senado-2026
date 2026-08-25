@@ -6,7 +6,7 @@
  *
  * O que ela faz: mostra as perguntas que os visitantes deixaram sem resposta,
  * agrupadas por candidatura e tema, e monta UMA mensagem formal representando
- * todas as perguntas selecionadas. Quem envia é a autora, do próprio e-mail.
+ * todas as perguntas selecionadas. Quem envia é a curadoria, do próprio e-mail.
  * Nada sai daqui sozinho.
  *
  * O JavaScript de dentro da página usa concatenação e evita template literals

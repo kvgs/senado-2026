@@ -250,7 +250,7 @@ VAZIO = {
 # ---------------------------------------------------------------------------
 # DISCURSO SO ENTRA SE ESTIVER PRESO A UMA PROPOSICAO NOMEADA.
 #
-# A Kelli olhou os BREVES COMUNICACOES e disse que nao servem: "nao falam
+# A revisao olhou os BREVES COMUNICACOES e concluiu que nao servem: nao falam
 # exatamente de propostas de forma objetiva e clara". Os dados dao razao a ela —
 # o que ha ali e critica ao governo, e nao proposta:
 #
@@ -296,7 +296,7 @@ def filtrar_discursos():
             # 'nota' e nao 'precisa_de_olho': a regra e dela e e mecanica, entao
             # o motivo fica registrado sem virar item de fila.
             cl["nota"] = ("Breves Comunicacoes: comentario livre, e nao proposta. "
-                          "Regra da Kelli, 25 de agosto de 2026.")
+                          "Regra da curadoria, 25 de agosto de 2026.")
             cl.pop("precisa_de_olho", None)
             tirados["tipo"] += 1
         elif not ANCORA.search(texto):

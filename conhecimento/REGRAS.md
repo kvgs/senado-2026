@@ -224,7 +224,7 @@ Todo resumo passa por conferencia mecanica (citacoes existem, nenhum nome fora d
 
 **R-IA-03 — Pesquisa na internet e para curadoria, nunca para o leitor**
 
-A busca web devolve FONTES COM LINK para a autora conferir, e nunca texto redigido para o visitante.
+A busca web devolve FONTES COM LINK para conferencia humana, e nunca texto redigido para o visitante.
 
 *Por quê:* Contra vinte reportagens onde cinco candidatos aparecem no mesmo paragrafo, trocar de quem e a proposta deixa de ser risco e vira o modo normal de falhar. E a auditoria, que funciona comparando com linhas limpas, fica sem contra o que comparar.
 
@@ -232,7 +232,7 @@ A busca web devolve FONTES COM LINK para a autora conferir, e nunca texto redigi
 
 **R-REVISAO-01 — So pessoa marca revisado**
 
-O campo revisado_por_humano so e escrito pela autora, na tela de revisao, ao confirmar contra a fonte. Conferencia automatica vive em campo separado.
+O campo revisado_por_humano so e escrito na tela de revisao, por quem faz a curadoria, ao confirmar contra a fonte. Conferencia automatica vive em campo separado.
 
 *Por quê:* Marcar como revisado o que a IA conferiu faria o dado mentir sobre si mesmo.
 
@@ -258,7 +258,7 @@ Autoria de proposicao vive em registros_legislativos, um registro por proposicao
 
 Posicao derivada de documento cujo cargo_registrado e diferente do cargo da candidatura precisa ter o campo escopo preenchido, dizendo de qual candidatura o documento e.
 
-*Por quê:* A autora marcou 11 posicoes com 'diz ser da candidata Samara Martins, nao sei se serve para Maira'. Estava certa. Tres dos quatro programas registrados no TSE sao de candidatura PRESIDENCIAL — UP, PCB e MISSAO, 35 posicoes ao todo — exibidos no contexto de candidaturas ao Senado. A atribuicao ao partido estava certa; o que faltava era dizer isso ao leitor, que ao clicar encontra um plano de governo de outra candidatura e nao entende. O campo escopo ja existia no modelo e estava vazio nas 35: nao faltava estrutura, faltava preencher.
+*Por quê:* A revisao humana reprovou 11 posicoes por apontarem um programa assinado por outra candidatura. Estava certa. Tres dos quatro programas registrados no TSE sao de candidatura PRESIDENCIAL — UP, PCB e MISSAO, 35 posicoes ao todo — exibidos no contexto de candidaturas ao Senado. A atribuicao ao partido estava certa; o que faltava era dizer isso ao leitor, que ao clicar encontra um plano de governo de outra candidatura e nao entende. O campo escopo ja existia no modelo e estava vazio nas 35: nao faltava estrutura, faltava preencher.
 
 *Onde é cobrada:* `validar.py`
 
@@ -266,7 +266,7 @@ Posicao derivada de documento cujo cargo_registrado e diferente do cargo da cand
 
 Documento com assinatura 'candidatura' so sustenta posicoes daquela candidatura. Para as demais do mesmo partido, nao serve — nem com escopo declarado. Programa com assinatura 'partido' cobre as candidaturas da sigla, no estado B.
 
-*Por quê:* Criterio estabelecido pela revisao humana. A autora aprovou 7 de 9 posicoes do programa do MISSAO e 6 de 8 do PCB, ambos registrados para a candidatura presidencial, e reprovou 20 de 20 do programa da UP. Nao rejeitou a categoria: rejeitou um documento cujo titulo nomeia a candidatura no lugar do partido ('Programa Unidade Popular / Samara Martins 80') e cujo texto e personalizado do inicio ao fim. Programa do partido e o partido falando; programa de uma candidatura fala por ela e por mais ninguem.
+*Por quê:* Criterio estabelecido pela revisao humana, que aprovou 7 de 9 posicoes do programa do MISSAO e 6 de 8 do PCB, ambos registrados para a candidatura presidencial, e reprovou 20 de 20 do programa da UP. Nao rejeitou a categoria: rejeitou um documento cujo titulo nomeia a candidatura no lugar do partido ('Programa Unidade Popular / Samara Martins 80') e cujo texto e personalizado do inicio ao fim. Programa do partido e o partido falando; programa de uma candidatura fala por ela e por mais ninguem.
 
 *Onde é cobrada:* `validar.py`
 

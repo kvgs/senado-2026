@@ -1,3 +1,4 @@
+import urllib.parse
 # -*- coding: utf-8 -*-
 """Gera o site de comparacao a partir de dados/*.json.
 
@@ -310,6 +311,15 @@ ag.mkdir(exist_ok=True)
 }, ensure_ascii=False, indent=1), encoding="utf-8")
 
 tpl = (HERE/"_template_site.html").read_text(encoding="utf-8")
+# O endereco de contato vem dos dados, e o texto visivel sai do MESMO campo do
+# href: assim os dois nao podem divergir. urlencode so no assunto, que e a parte
+# que precisa dele.
+_email = ((ref.get("contato") or {}).get("email") or "").strip()
+if not _email:
+    raise SystemExit("dados/referencia.json nao tem contato.email — o site ficaria sem contato")
+_assunto = urllib.parse.quote("Senado SP 2026 \u2014 feedback")
+tpl = tpl.replace("{{MAILTO}}", f"mailto:{_email}?subject={_assunto}").replace("{{EMAIL}}", _email)
+
 OUT.write_text(tpl.replace("/*__DADOS__*/", json.dumps(dados, ensure_ascii=False)), encoding="utf-8")
 print(f"gerado: {OUT.name}  ({OUT.stat().st_size/1024:.0f} KB)")
 print(f"  temas {len(temas)} · candidaturas {len(ordem)} · publicadas {len(pos_publicaveis)}"

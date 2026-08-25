@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS perguntas (
   pergunta      TEXT NOT NULL,
   id_candidatura TEXT NOT NULL,
   id_tema       TEXT,
-  -- pendente: esperando moderacao | enviada: a autora perguntou ao gabinete
+  -- pendente: esperando moderacao | enviada: a curadoria perguntou ao gabinete
   -- descartada: fora de escopo, ofensiva, ou duplicada
   estado        TEXT NOT NULL DEFAULT 'pendente',
   decidida_em   TEXT,

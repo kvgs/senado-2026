@@ -10,7 +10,7 @@
 
 CREATE TABLE IF NOT EXISTS respostas (
   id             TEXT PRIMARY KEY,
-  registrada_em  TEXT NOT NULL,        -- quando a autora registrou
+  registrada_em  TEXT NOT NULL,        -- quando a curadoria registrou
   recebida_em    TEXT NOT NULL,        -- data que consta no e-mail recebido
   id_candidatura TEXT NOT NULL,
   id_tema        TEXT,

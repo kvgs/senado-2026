@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Tela local para CONFERIR a classificacao dos 304 itens coletados.
 
-MUDOU O QUE ESTA TELA FAZ. Ela nascia pedindo que a Kelli classificasse os 304
+MUDOU O QUE ESTA TELA FAZ. Ela nascia pedindo que a curadoria classificasse os 304
 um a um, e ela perguntou por que — se eu nao conseguia fazer isso. Consigo, e o
 desenho estava errado: eu tinha aplicado a disciplina que existe para AFIRMACAO
 a uma tarefa de ARQUIVAMENTO.
@@ -365,7 +365,7 @@ function desenhar(){
 /* O erro TEM de aparecer. Antes, se a gravacao falhasse, a tela avancava do
    mesmo jeito e nao dizia nada: a decisao sumia e o item voltava no proximo
    carregamento. Da tela, isso e indistinguivel de "o botao nao funciona" — e foi
-   assim que a Kelli viu. fetch nao lanca excecao em resposta 400, entao engolir
+   assim que apareceu no uso. fetch nao lanca excecao em resposta 400, entao engolir
    o resultado era engolir a falha. */
 function decidir(temas, motivo){
   var pend=pendentes(); var x=pend[i];
