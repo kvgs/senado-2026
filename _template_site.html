@@ -174,21 +174,27 @@
 
   /* Cabecalho: foto a esquerda, identificacao em tres niveis a direita.
      Empilhar foto sobre numero grande fazia o olho ler sobreposicao. */
-  .cabeca-cand{display:flex;gap:16px;align-items:center;padding:18px 18px 14px}
+  /* A linha divisoria e a borda DE BAIXO DO CABECALHO, e nao a borda de cima do
+     corpo. Um contêiner flex nunca e mais curto que seu item mais alto, entao a
+     linha fica sempre embaixo da foto — antes ela era irma do cabecalho e podia
+     cruzar a imagem. Corrigir a medida resolveria hoje; mudar de quem e a borda
+     resolve sempre. */
+  .cabeca-cand{display:flex;gap:16px;align-items:flex-start;padding:18px;
+    border-bottom:1px solid var(--rule)}
   .cabeca-cand .retrato{flex:0 0 72px;width:72px;height:72px;border-radius:5px;font-size:1.2rem}
   .cabeca-cand .quem-id{min-width:0}
-  .cabeca-cand .urna{display:block;font-size:1.45rem;line-height:1}
-  .cabeca-cand h3{margin-top:3px;font-size:1.12rem;line-height:1.2}
-  .cabeca-cand .part{display:block;margin-top:4px;font-size:.8rem;letter-spacing:.05em;
+  .cabeca-cand .quem-id{padding-top:2px}
+  .cabeca-cand .urna{display:block;font-size:1.5rem;line-height:1}
+  .cabeca-cand h3{margin-top:7px;font-size:1.12rem;line-height:1.22}
+  .cabeca-cand .part{display:block;margin-top:7px;font-size:.8rem;letter-spacing:.05em;
     text-transform:uppercase;color:var(--muted);font-family:"PlexMono",monospace}
 
-  .corpo-cand{display:flex;flex-direction:column;flex:1;gap:9px;
-    padding:0 18px 18px;border-top:1px solid var(--rule);margin-top:2px;padding-top:14px}
+  .corpo-cand{display:flex;flex-direction:column;flex:1;gap:9px;padding:16px 18px 18px}
   .corpo-cand .meta,.corpo-cand .bio{margin:0}
   /* Botao no fim: cartoes de alturas diferentes ficam com o botao na mesma
      linha, que e o que faz a grade parecer montada em vez de desalinhada. */
   .corpo-cand .link-perfil{margin-top:auto;padding-top:10px;text-align:left}
-  .card{background:var(--surface);border:1px solid var(--rule);border-radius:4px}
+  .card{background:var(--surface);border:1px solid var(--rule);border-radius:4px;overflow:hidden}
   .card-top{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;
     border-bottom:1px solid var(--rule)}
   .retrato{flex:0 0 56px;width:56px;height:56px;border-radius:4px;background:var(--surface-3);
