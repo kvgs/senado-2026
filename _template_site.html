@@ -159,6 +159,25 @@
   .chamada-topo .pedido strong{color:var(--ink)}
   .chamada-topo a{font-weight:600}
 
+  /* ---------- o que faz um senador ---------- */
+  .cargo{margin-top:16px;background:var(--surface);border:1px solid var(--rule);border-radius:6px}
+  .cargo > summary{cursor:pointer;padding:16px 20px;font-family:"Bricolage",system-ui,sans-serif;
+    font-size:1.08rem;font-weight:700;letter-spacing:-.015em;color:var(--ink);
+    list-style:none;display:flex;align-items:center;gap:11px}
+  .cargo > summary::-webkit-details-marker{display:none}
+  .cargo > summary::before{content:"+";font-family:"PlexMono",monospace;font-size:1.2rem;
+    font-weight:500;color:var(--acento);line-height:1}
+  .cargo[open] > summary::before{content:"–"}
+  .cargo > summary:hover{color:var(--acento)}
+  .cargo .dentro{padding:0 20px 20px}
+  .cargo h4{margin:18px 0 0;font-size:.76rem;letter-spacing:.11em;text-transform:uppercase;
+    color:var(--muted);font-family:"PlexMono",monospace;font-weight:500}
+  .cargo p{margin-top:7px;color:var(--ink-2);max-width:66ch}
+  .cargo ul{margin:8px 0 0;padding-left:20px;color:var(--ink-2)}
+  .cargo li{margin-top:5px}
+  .cargo .base{margin-top:20px;padding-top:13px;border-top:1px solid var(--rule);
+    font-size:.86rem;color:var(--muted)}
+
   /* ---------- aviso ---------- */
   .aviso{background:var(--alert-bg);border:1px solid var(--alert-line);border-left:4px solid var(--alert);
     border-radius:0 4px 4px 0;padding:14px 18px;margin:22px 0 0;font-size:.95rem;line-height:1.55;
@@ -544,6 +563,44 @@
         falta, ou tem uma dúvida? Escreva para
         <a href="mailto:kelli.vgs@gmail.com?subject=Senado%20SP%202026%20%E2%80%94%20feedback">kelli.vgs@gmail.com</a>.</p>
     </div>
+
+    <details class="cargo">
+      <summary>O que faz um senador?</summary>
+      <div class="dentro">
+        <h4>Quanto tempo, e por que duas vagas</h4>
+        <p>Cada estado elege <strong>três senadores</strong>, com mandato de <strong>oito
+          anos</strong> — o dobro de um deputado ou de um presidente. Cada um entra com
+          <strong>dois suplentes</strong>, que assumem se o titular deixar o cargo.</p>
+        <p>A renovação é alternada: a cada quatro anos troca-se um terço do Senado numa
+          eleição e dois terços na seguinte. Em 2022 São Paulo elegeu um senador; por isso
+          <strong>em 2026 elege dois</strong>. Quem for eleito agora fica até 2035.</p>
+
+        <h4>O que só o Senado faz</h4>
+        <p>Estas decisões não passam pela Câmara dos Deputados. É onde o voto de um senador
+          pesa diferente do voto de um deputado:</p>
+        <ul>
+          <li><strong>Aprovar ou rejeitar nomeações</strong> para ministro do Supremo Tribunal
+            Federal, presidente e diretores do Banco Central, procurador-geral da República e
+            chefes de missão diplomática. Sem o aval do Senado, a nomeação não vale.</li>
+          <li><strong>Julgar o presidente da República</strong> e o vice em crime de
+            responsabilidade — o processo de impeachment — e também ministros do STF, o
+            procurador-geral e o advogado-geral da União.</li>
+          <li><strong>Autorizar empréstimos externos</strong> da União, dos estados e dos
+            municípios, e <strong>fixar os limites da dívida pública</strong>.</li>
+        </ul>
+
+        <h4>O que faz junto com a Câmara</h4>
+        <p>Todo projeto de lei federal precisa passar pelas duas Casas. Um senador propõe,
+          emenda, relata e vota leis sobre qualquer assunto de competência da União — impostos,
+          segurança, saúde, educação, meio ambiente — e participa da votação de emendas à
+          Constituição.</p>
+
+        <p class="base">Base: <a href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+          target="_blank" rel="noopener">Constituição Federal de 1988<span class="vis-oculto">
+          (abre em nova aba)</span></a>, artigos 46 (composição e mandato), 48 (competência
+          conjunta com a Câmara) e 52 (competências privativas do Senado).</p>
+      </div>
+    </details>
 
     <div class="aviso" role="note" id="aviso"></div>
   </header>
