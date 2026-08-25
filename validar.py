@@ -39,6 +39,68 @@ def carregar(nome):
         return None
 
 
+CONHECIMENTO = Path(__file__).parent / "conhecimento" / "regras.json"
+
+
+def carregar_conhecimento():
+    """Ausente e ERRO, nao aviso: sem a base, o validador deixa de cobrar as
+    regras que custaram 51 posicoes para serem aprendidas, e ninguem percebe."""
+    if not CONHECIMENTO.exists():
+        erros.append("[kb] conhecimento/regras.json nao encontrado — as regras de fonte "
+                     "nao podem ser cobradas sem ele")
+        return None
+    try:
+        return json.loads(CONHECIMENTO.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as e:
+        erros.append(f"[kb] conhecimento/regras.json invalido: {e}")
+        return None
+
+
+def cobrar_regras_de_fonte(kb, posicoes, documentos):
+    if not kb:
+        return
+    tipos = kb["tipos_de_fonte"]
+    docs_por_id = {d["id_documento"]: d for d in documentos}
+
+    for pos in posicoes:
+        pid = pos["id_posicao"]
+        # Posicao ja reprovada na revisao esta fora da publicacao e fica no acervo
+        # como memoria do erro. O validador bloqueia o que E PUBLICAVEL; relembrar
+        # erro ja registrado transformaria o validador em ruido permanente.
+        if (pos.get("revisao") or {}).get("resultado") in ("remover", "corrigir"):
+            continue
+        doc = docs_por_id.get(pos.get("id_documento"))
+        if not doc:
+            continue
+        tipo = doc.get("tipo")
+        estado = pos.get("estado_cobertura")
+
+        # R-ESCOPO-01 — documento de outro estado nao sustenta nada.
+        if doc.get("aplicavel_a_sp") is False:
+            erros.append(f"[R-ESCOPO-01] {pid}: usa '{doc['id_documento']}', marcado como "
+                         "nao aplicavel a SP")
+
+        regra = tipos.get(tipo)
+        if not regra:
+            avisos.append(f"[kb] {pid}: tipo de fonte '{tipo}' nao esta na base de "
+                          "conhecimento — sem regra, nada pode ser cobrado dele")
+            continue
+
+        # R-FONTE-01 e R-FONTE-02 — o que cada tipo de fonte pode sustentar.
+        permitidos = regra.get("estados_permitidos")
+        if permitidos is not None and estado in ("A", "B") and estado not in permitidos:
+            id_regra = "R-FONTE-01" if not permitidos else "R-FONTE-02"
+            erros.append(f"[{id_regra}] {pid}: estado {estado} com fonte de tipo "
+                         f"'{tipo}' ({regra['nome']}) — {regra['porque'][:110]}")
+
+        # R-REDACAO-01 — parafrase de fonte oficial sem ancora precisa de olho humano.
+        if (pos.get("nivel_fonte") == "oficial"
+                and not (pos.get("citacao_literal") or "").strip()
+                and not pos.get("revisado_por_humano")):
+            avisos.append(f"[curadoria] {pid}: fonte oficial sem citacao literal — "
+                          "parafrase sem ancora, conferir palavra a palavra")
+
+
 def main():
     ref = carregar("referencia.json")
     cands = carregar("candidaturas.json")
@@ -205,6 +267,13 @@ def main():
                     "sem situacao_parlamentar. Contagem sem contexto de licença é "
                     "correta no número e enganosa no sentido."
                 )
+
+    # ---------- regras da base de conhecimento ----------
+    cobrar_regras_de_fonte(
+        carregar_conhecimento(),
+        posic["posicoes"],
+        docs["documentos"],
+    )
 
     # ---------- pesquisas ----------
     for q in pesq["pesquisas"]:

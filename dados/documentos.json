@@ -4,12 +4,14 @@
   {
    "id_documento": "doc-nexo-base-2026",
    "titulo": "Base de candidaturas 2026 — SP (espelho do registro TSE)",
-   "tipo": "reportagem",
+   "tipo": "cadastro",
    "veiculo": "Nexo Jornal",
    "url": "https://candidatos.nexojornal.com.br/2026/sp/",
    "nivel_fonte": "verificada",
    "acessivel": true,
-   "capturado_em": "2026-08-24"
+   "capturado_em": "2026-08-24",
+   "_reclassificado_em": "2026-08-25",
+   "_porque_reclassificado": "Estava como reportagem. E um CADASTRO de candidaturas: lista nome, partido, numero, bens, escolaridade e suplentes, e nao contem proposta. A classificacao errada permitiu que 15 posicoes de politica publica fossem atribuidas a ela, todas reprovadas na revisao de 24/08/2026. Reportagem e cadastro nao sustentam as mesmas afirmacoes, e o modelo nao distinguia os dois."
   },
   {
    "id_documento": "doc-site-tebet",
