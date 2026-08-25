@@ -449,6 +449,8 @@
         documento único onde procurar.</p>
       <p class="depois">Este site existe para ajudar nisso — reunir o que há, com a fonte de cada
         informação, e dizer com clareza o que não foi encontrado.</p>
+      <p class="pedido" style="border-top:0;padding-top:0;margin-top:12px;font-size:.86rem;
+        color:var(--muted)">Fotos: <strong>TSE</strong> — foto de registro de candidatura.</p>
       <p class="pedido"><strong>Ajude a construir.</strong> Achou um erro, conhece uma fonte que
         falta, ou tem uma dúvida? Escreva para
         <a href="mailto:kelli.vgs@gmail.com?subject=Senado%20SP%202026%20%E2%80%94%20feedback">kelli.vgs@gmail.com</a>.</p>
@@ -632,7 +634,11 @@ document.getElementById('atualizado').textContent=D.atualizado;
 
 /* ---------- pedacos reutilizaveis ---------- */
 function retrato(c){
-  if(c.foto) return '<span class="retrato"><img src="'+esc(c.foto)+'" alt="Retrato de '+esc(c.nome)+'"></span>';
+  /* Alt descreve o que a imagem E, nao so quem aparece: e foto de registro
+     eleitoral, nao retrato de campanha, e a diferenca importa para quem le por
+     leitor de tela tanto quanto para quem ve. */
+  if(c.foto) return '<span class="retrato"><img src="'+esc(c.foto)+'" loading="lazy" '+
+    'alt="Foto de registro da candidatura de '+esc(c.nome)+'"></span>';
   return '<span class="retrato" role="img" aria-label="Sem foto disponível para '+esc(c.nome)+'">'+esc(c.iniciais)+'</span>';
 }
 function fonteLinha(i){

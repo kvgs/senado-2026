@@ -100,7 +100,10 @@ for c in cands:
         "situacao_em": c["situacao_registro"][0]["observado_em"],
         "sequencial": c.get("sequencial_tse"),
         "suplentes": c.get("suplentes", []),
-        "foto": None,   # encaixe: preenchido quando o dataset de fotos do TSE for baixado
+        # Foto de registro de candidatura. O credito e do TSE; o caminho tecnico
+        # de obtencao fica em candidaturas.json, nao no site.
+        "foto": (c.get("foto") or {}).get("arquivo"),
+        "foto_credito": (c.get("foto") or {}).get("credito"),
         # --- Fase 6: ficha completa para a pagina de perfil ---
         "nascimento": c["pessoa"].get("data_nascimento"),
         "escolaridade": c["pessoa"].get("escolaridade"),
@@ -258,4 +261,5 @@ OUT.write_text(tpl.replace("/*__DADOS__*/", json.dumps(dados, ensure_ascii=False
 print(f"gerado: {OUT.name}  ({OUT.stat().st_size/1024:.0f} KB)")
 print(f"  temas {len(temas)} · candidaturas {len(ordem)} · publicadas {len(pos_publicaveis)}"
       f" · revisadas {dados['totais']['revisadas']} · reprovadas e retiradas {pos_reprovadas}")
-print(f"  fotos: 0 de {len(ordem)} (dataset do TSE bloqueado — encaixe pronto)")
+com_foto = sum(1 for cid in ordem if cand_por_id[cid].get("foto"))
+print(f"  fotos: {com_foto} de {len(ordem)} (credito TSE — registro de candidatura)")
