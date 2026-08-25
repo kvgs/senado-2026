@@ -310,6 +310,14 @@
    "porque": "Doze posicoes empacotavam de 2 a 4 proposicoes num paragrafo e apontavam para a raiz da API da Camara, porque nao existe URL que abra quatro fichas. Onze foram reprovadas na revisao de 25/08/2026, todas com a mesma nota: 'o link da fonte nao procede'. Nao era link errado, era modelo que nao podia funcionar — e o registro legislativo ja estava modelado certo em outro lugar, com uma ficha por proposicao.",
    "verificacao": "mecanica",
    "onde": "validar.py"
+  },
+  {
+   "id": "R-ESCOPO-02",
+   "titulo": "Programa registrado para outro cargo exige escopo declarado",
+   "regra": "Posicao derivada de documento cujo cargo_registrado e diferente do cargo da candidatura precisa ter o campo escopo preenchido, dizendo de qual candidatura o documento e.",
+   "porque": "A autora marcou 11 posicoes com 'diz ser da candidata Samara Martins, nao sei se serve para Maira'. Estava certa. Tres dos quatro programas registrados no TSE sao de candidatura PRESIDENCIAL — UP, PCB e MISSAO, 35 posicoes ao todo — exibidos no contexto de candidaturas ao Senado. A atribuicao ao partido estava certa; o que faltava era dizer isso ao leitor, que ao clicar encontra um plano de governo de outra candidatura e nao entende. O campo escopo ja existia no modelo e estava vazio nas 35: nao faltava estrutura, faltava preencher.",
+   "verificacao": "mecanica",
+   "onde": "validar.py"
   }
  ]
 }

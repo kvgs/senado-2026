@@ -121,7 +121,7 @@ Arquivo de dados abertos publicado pela Justica Eleitoral.
 
 ## Regras
 
-16 regras têm código que as impede, 4 dependem de julgamento na revisão, e 1 ainda não têm cobrança nenhuma.
+17 regras têm código que as impede, 4 dependem de julgamento na revisão, e 1 ainda não têm cobrança nenhuma.
 Cada uma existe porque foi violada uma vez — o campo *por quê* guarda o caso real.
 
 ### Impedidas por código
@@ -251,6 +251,14 @@ Posicao reprovada na revisao e excluida da publicacao e mantida em posicoes.json
 Autoria de proposicao vive em registros_legislativos, um registro por proposicao, cada um com o link da propria ficha. Nao entra como posicao que empacota varias proposicoes num texto so.
 
 *Por quê:* Doze posicoes empacotavam de 2 a 4 proposicoes num paragrafo e apontavam para a raiz da API da Camara, porque nao existe URL que abra quatro fichas. Onze foram reprovadas na revisao de 25/08/2026, todas com a mesma nota: 'o link da fonte nao procede'. Nao era link errado, era modelo que nao podia funcionar — e o registro legislativo ja estava modelado certo em outro lugar, com uma ficha por proposicao.
+
+*Onde é cobrada:* `validar.py`
+
+**R-ESCOPO-02 — Programa registrado para outro cargo exige escopo declarado**
+
+Posicao derivada de documento cujo cargo_registrado e diferente do cargo da candidatura precisa ter o campo escopo preenchido, dizendo de qual candidatura o documento e.
+
+*Por quê:* A autora marcou 11 posicoes com 'diz ser da candidata Samara Martins, nao sei se serve para Maira'. Estava certa. Tres dos quatro programas registrados no TSE sao de candidatura PRESIDENCIAL — UP, PCB e MISSAO, 35 posicoes ao todo — exibidos no contexto de candidaturas ao Senado. A atribuicao ao partido estava certa; o que faltava era dizer isso ao leitor, que ao clicar encontra um plano de governo de outra candidatura e nao entende. O campo escopo ja existia no modelo e estava vazio nas 35: nao faltava estrutura, faltava preencher.
 
 *Onde é cobrada:* `validar.py`
 

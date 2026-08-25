@@ -93,6 +93,15 @@ def cobrar_regras_de_fonte(kb, posicoes, documentos):
             erros.append(f"[{id_regra}] {pid}: estado {estado} com fonte de tipo "
                          f"'{tipo}' ({regra['nome']}) — {regra['porque'][:110]}")
 
+        # R-ESCOPO-02 — documento de outro cargo exige escopo dito ao leitor.
+        if doc.get("cargo_registrado") and doc["cargo_registrado"] != "senador":
+            if not (pos.get("escopo") or "").strip():
+                erros.append(
+                    f"[R-ESCOPO-02] {pid}: usa documento registrado para o cargo de "
+                    f"{doc['cargo_registrado']} sem escopo declarado. Quem clica encontra "
+                    "o plano de outra candidatura e nao tem como saber por que ele aparece aqui."
+                )
+
         # R-FONTE-05 — autoria legislativa em prosa, com link generico, nao se sustenta.
         if pos.get("nivel_fonte") == "registro_legislativo":
             url = (doc.get("url") or "").rstrip("/")

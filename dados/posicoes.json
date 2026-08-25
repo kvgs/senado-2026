@@ -525,7 +525,8 @@
     "em": "2026-08-25",
     "resultado": "confere",
     "nota": ""
-   }
+   },
+   "escopo": "Vem do programa que o partido registrou no TSE para a candidatura do MISSÃO à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra."
   },
   {
    "id_posicao": "p023",
@@ -550,7 +551,8 @@
     "em": "2026-08-25",
     "resultado": "confere",
     "nota": ""
-   }
+   },
+   "escopo": "Vem do programa que o partido registrou no TSE para a candidatura do MISSÃO à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra."
   },
   {
    "id_posicao": "p024",
@@ -576,7 +578,8 @@
     "em": "2026-08-25",
     "resultado": "confere",
     "nota": ""
-   }
+   },
+   "escopo": "Vem do programa que o partido registrou no TSE para a candidatura do MISSÃO à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra."
   },
   {
    "id_posicao": "p025",
@@ -601,7 +604,8 @@
     "em": "2026-08-25",
     "resultado": "confere",
     "nota": ""
-   }
+   },
+   "escopo": "Vem do programa que o partido registrou no TSE para a candidatura do MISSÃO à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra."
   },
   {
    "id_posicao": "p026",
@@ -629,7 +633,8 @@
     "em": "2026-08-25",
     "resultado": "corrigir",
     "nota": "Não achei a parte sobre CLT"
-   }
+   },
+   "escopo": "Vem do programa que o partido registrou no TSE para a candidatura do MISSÃO à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra."
   },
   {
    "id_posicao": "p027",
@@ -657,7 +662,8 @@
     "em": "2026-08-25",
     "resultado": "confere",
     "nota": "Não achei a palavra bitcoin"
-   }
+   },
+   "escopo": "Vem do programa que o partido registrou no TSE para a candidatura do MISSÃO à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra."
   },
   {
    "id_posicao": "p028",
@@ -683,7 +689,8 @@
     "em": "2026-08-24",
     "resultado": "confere",
     "nota": ""
-   }
+   },
+   "escopo": "Vem do programa que o partido registrou no TSE para a candidatura do MISSÃO à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra."
   },
   {
    "id_posicao": "p029",
@@ -710,7 +717,8 @@
     "em": "2026-08-25",
     "resultado": "corrigir",
     "nota": "Não achei essa informação"
-   }
+   },
+   "escopo": "Vem do programa que o partido registrou no TSE para a candidatura do MISSÃO à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra."
   },
   {
    "id_posicao": "p030",
@@ -737,7 +745,8 @@
     "em": "2026-08-24",
     "resultado": "confere",
     "nota": ""
-   }
+   },
+   "escopo": "Vem do programa que o partido registrou no TSE para a candidatura do MISSÃO à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra."
   },
   {
    "id_posicao": "p031",
@@ -867,6 +876,11 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-pstu-2026.pdf, sha 1868565fb0d5de77)"
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "corrigir",
+    "nota": "Não achei essa informação"
    }
   },
   {
@@ -917,7 +931,8 @@
     "em": "2026-08-25",
     "resultado": "corrigir",
     "nota": "Não achei as informações descritas"
-   }
+   },
+   "escopo": "Vem do programa que o partido registrou no TSE para Samara Martins, candidata à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra."
   },
   {
    "id_tema": "t2",
@@ -938,6 +953,16 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
+   },
+   "escopo": "Vem do programa que o partido registrou no TSE para Samara Martins, candidata à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra.",
+   "_devolvida_para_revisao": {
+    "em": "2026-08-25",
+    "decisao_anterior": {
+     "em": "2026-08-25",
+     "resultado": "corrigir",
+     "nota": "Diz ser sobre a candidata Samara Martins, não sei se serve para Maíra"
+    },
+    "porque": "Voce marcou que o documento diz ser da Samara Martins. Estava certa: e o programa registrado para a candidatura a Presidencia. A atribuicao ao PARTIDO estava correta, mas o site nao dizia isso ao leitor. O campo escopo foi preenchido declarando a origem. Volta para voce decidir com a ressalva no lugar."
    }
   },
   {
@@ -959,6 +984,16 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
+   },
+   "escopo": "Vem do programa que o partido registrou no TSE para Samara Martins, candidata à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra.",
+   "_devolvida_para_revisao": {
+    "em": "2026-08-25",
+    "decisao_anterior": {
+     "em": "2026-08-25",
+     "resultado": "corrigir",
+     "nota": "Diz ser sobre a candidata Samara Martins, não sei se serve para Maíra"
+    },
+    "porque": "Voce marcou que o documento diz ser da Samara Martins. Estava certa: e o programa registrado para a candidatura a Presidencia. A atribuicao ao PARTIDO estava correta, mas o site nao dizia isso ao leitor. O campo escopo foi preenchido declarando a origem. Volta para voce decidir com a ressalva no lugar."
    }
   },
   {
@@ -984,7 +1019,8 @@
     "em": "2026-08-25",
     "resultado": "remover",
     "nota": "Programa do candidato errado"
-   }
+   },
+   "escopo": "Vem do programa que o partido registrou no TSE para Samara Martins, candidata à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra."
   },
   {
    "id_posicao": "p041",
@@ -999,7 +1035,7 @@
    "citacao_literal": "redução da jornada de trabalho para 30 horas semanais sem redução salarial",
    "texto": "Nacionalização e estatização do sistema financeiro; auditoria da dívida interna com suspensão de juros durante a auditoria; revogação da autonomia do Banco Central; reestatização de privatizadas; reforma tributária progressiva sobre lucros e dividendos; fim da escala 6x1.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-24",
     "forca": "alta",
@@ -1007,7 +1043,13 @@
     "ressalva": "Confirmados no documento registrado: jornada de 30 horas, fim da escala 6x1, revogação da autonomia do Banco Central e tributação de lucros e dividendos. NÃO localizados: nacionalização dos bancos e auditoria da dívida nos termos citados."
    },
    "_confirmado_no_documento_registrado": "2026-08-24",
-   "_parcialmente_confirmado": "Confirmados no documento registrado: jornada de 30 horas, fim da escala 6x1, revogação da autonomia do Banco Central e tributação de lucros e dividendos. NÃO localizados: nacionalização dos bancos e auditoria da dívida nos termos citados."
+   "_parcialmente_confirmado": "Confirmados no documento registrado: jornada de 30 horas, fim da escala 6x1, revogação da autonomia do Banco Central e tributação de lucros e dividendos. NÃO localizados: nacionalização dos bancos e auditoria da dívida nos termos citados.",
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "confere",
+    "nota": ""
+   },
+   "escopo": "Vem do programa que o partido registrou no TSE para Edmilson Costa, candidato à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra."
   },
   {
    "id_posicao": "p042",
@@ -1048,13 +1090,19 @@
    "id_documento": "doc-programa-pcb-tse",
    "citacao_literal": "sistema público integral, com estatização do setor de saúde privado e ampliação da rede de atendimento nos bairros populares",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-24",
     "forca": "alta",
     "base": "Termos-chave da afirmação localizados no PDF registrado no TSE, baixado e arquivado em fontes/ com hash SHA-256."
    },
-   "_confirmado_no_documento_registrado": "2026-08-24"
+   "_confirmado_no_documento_registrado": "2026-08-24",
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "confere",
+    "nota": ""
+   },
+   "escopo": "Vem do programa que o partido registrou no TSE para Edmilson Costa, candidato à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra."
   },
   {
    "id_posicao": "p044",
@@ -1069,13 +1117,19 @@
    "citacao_literal": "reestatização dos serviços públicos",
    "texto": "Transporte, energia e saneamento, com tarifas justas e acesso universal.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-24",
     "forca": "alta",
     "base": "Termos-chave da afirmação localizados no PDF registrado no TSE, baixado e arquivado em fontes/ com hash SHA-256."
    },
-   "_confirmado_no_documento_registrado": "2026-08-24"
+   "_confirmado_no_documento_registrado": "2026-08-24",
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "confere",
+    "nota": ""
+   },
+   "escopo": "Vem do programa que o partido registrou no TSE para Edmilson Costa, candidato à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra."
   },
   {
    "id_posicao": "p045",
@@ -1102,7 +1156,8 @@
     "nota": "Não diz que é com investimento estatal, mas está implícito",
     "citacao_conferida_na_fonte": true
    },
-   "citacao_literal": "(...) um amplo programa de moradia popular digna;"
+   "citacao_literal": "(...) um amplo programa de moradia popular digna;",
+   "escopo": "Vem do programa que o partido registrou no TSE para Edmilson Costa, candidato à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra."
   },
   {
    "id_posicao": "p046",
@@ -1129,7 +1184,8 @@
     "em": "2026-08-24",
     "resultado": "confere",
     "nota": ""
-   }
+   },
+   "escopo": "Vem do programa que o partido registrou no TSE para Edmilson Costa, candidato à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra."
   },
   {
    "id_posicao": "p047",
@@ -1156,7 +1212,8 @@
     "em": "2026-08-24",
     "resultado": "confere",
     "nota": ""
-   }
+   },
+   "escopo": "Vem do programa que o partido registrou no TSE para Edmilson Costa, candidato à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra."
   },
   {
    "id_posicao": "p048",
@@ -2201,13 +2258,18 @@
    "id_documento": "doc-programa-pstu-tse",
    "texto": "SUS publico, universal, gratuito e 100% estatal; fim da privatizacao e da gestao privada (OS, Fundacoes, PPP); proibicao de transferir leitos publicos a planos privados; producao publica de medicamentos; ampliacao de CAPS e nenhum investimento publico em Comunidades Terapeuticas; aborto legal, seguro e gratuito pelo SUS.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "citacao_literal": "Defesa do SUS publico, universal, gratuito e 100% estatal.",
    "id_posicao": "p091",
    "conferido_por_ia": {
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-pstu-2026.pdf, sha 1868565fb0d5de77)"
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "confere",
+    "nota": ""
    }
   },
   {
@@ -2221,14 +2283,20 @@
    "id_documento": "doc-programa-pstu-tse",
    "texto": "Tarifa zero no transporte publico, mas condicionada a estatizacao: o documento critica a tarifa zero defendida por setores empresariais como forma de ampliar subsidio estatal mantendo o servico sob controle privado. Tambem: estatizacao dos sistemas urbanos e reversao de concessoes, contra a privatizacao de metros, estradas e ferrovias, fim dos subsidios publicos as empresas privadas de transporte.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
-   "citacao_literal": "setores empresariais passam a defender a tarifa zero como forma de ampliar subsidios estatais, garantindo lucros sem assegurar qualidade... o Estado paga mais caro por um servico que permanece sob controle privado",
+   "revisado_por_humano": true,
+   "citacao_literal": "\"N",
    "escopo": "tarifa zero com estatizacao; o documento e explicitamente contra tarifa zero sem estatizacao",
    "id_posicao": "p092",
    "conferido_por_ia": {
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-pstu-2026.pdf, sha 1868565fb0d5de77)"
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "confere",
+    "nota": "",
+    "citacao_conferida_na_fonte": true
    }
   },
   {
@@ -2269,13 +2337,18 @@
    "id_documento": "doc-programa-pstu-tse",
    "texto": "Fim dos despejos de familias sem alternativa habitacional; construcao massiva de moradia popular por empresa publica de obras; urbanizacao de periferias; expropriacao de imoveis urbanos abandonados, ociosos ou destinados a especulacao; IPTU progressivo com isencao para baixa renda; participacao popular no planejamento urbano.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "citacao_literal": "Casa para morar, nao para especular! Enquanto morar for um privilegio, ocupar e um direito!",
    "id_posicao": "p094",
    "conferido_por_ia": {
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-pstu-2026.pdf, sha 1868565fb0d5de77)"
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "confere",
+    "nota": ""
    }
   },
   {
@@ -2289,7 +2362,7 @@
    "id_documento": "doc-programa-pstu-tse",
    "texto": "O documento declara explicitamente que nao e um conjunto de promessas eleitorais e que a acao institucional deve ser subordinada a mobilizacao direta: 'Nao somos cretinos antiparlamentares. A disputa eleitoral e institucional pode ter importancia tatica... Mas deve estar subordinada a mobilizacao, a acao direta, a auto-organizacao'. Defende um Estado operario revolucionario fundado em democracia operaria, com representantes eleitos e revogaveis sob controle da base. Faz critica nominal ao PT, ao PSOL e ao stalinismo.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "citacao_literal": "este programa nao e um conjunto de promessas eleitorais para que outros governem por nos. E um guia para a acao, para a luta.",
    "_destaque": "Relevante para cargo legislativo: o proprio programa relativiza o valor do mandato parlamentar, subordinando-o a mobilizacao. E declaracao sobre como pretendem usar a cadeira que disputam.",
    "id_posicao": "p095",
@@ -2297,6 +2370,11 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-pstu-2026.pdf, sha 1868565fb0d5de77)"
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "confere",
+    "nota": ""
    }
   },
   {
@@ -2310,7 +2388,7 @@
    "id_documento": "doc-programa-pstu-tse",
    "texto": "Define como objetivo estrategico a dissolucao da PM. Medidas: desmilitarizacao e unificacao das policias em instituicao civil unica com eleicao de comandantes e delegados pela populacao e mandatos revogaveis; descriminalizacao das drogas e revogacao da Lei Antidrogas; camaras corporais com gravacao ininterrupta sob controle de orgao civil; fim da Justica Militar; combate ao crime organizado por investigacao e asfixia financeira em vez de operacao militar; dissolucao de batalhoes milicianizados; desencarceramento em massa; fim da privatizacao de presidios. CONTRA a reducao da maioridade penal.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "citacao_literal": "Combater o crime organizado... por meio da investigacao, inteligencia e desarticulacao de seus negocios, atingindo seu patrimonio, suas fontes de financiamento e suas relacoes com agentes publicos, politicos, empresarios e, em especial, com o sistema financeiro, em vez de realizar operacoes militares que vitimam principalmente a populacao trabalhadora.",
    "_destaque": "Oposicao direta e verificavel: o PSTU e CONTRA a reducao da maioridade penal, que Derrite e Salles propoem em coautoria nas PEC 8/2026 e PEC 9/2026. E defende desmilitarizar a PM, corporacao da qual Derrite foi capitao e cuja secretaria ele chefiou em SP.",
    "id_posicao": "p096",
@@ -2318,6 +2396,11 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-pstu-2026.pdf, sha 1868565fb0d5de77)"
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "confere",
+    "nota": ""
    }
   },
   {
@@ -2358,13 +2441,18 @@
    "id_documento": "doc-programa-pstu-tse",
    "texto": "SUS publico, universal, gratuito e 100% estatal; fim da privatizacao e da gestao privada (OS, Fundacoes, PPP); proibicao de transferir leitos publicos a planos privados; producao publica de medicamentos; ampliacao de CAPS e nenhum investimento publico em Comunidades Terapeuticas; aborto legal, seguro e gratuito pelo SUS.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "citacao_literal": "Defesa do SUS publico, universal, gratuito e 100% estatal.",
    "id_posicao": "p098",
    "conferido_por_ia": {
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-pstu-2026.pdf, sha 1868565fb0d5de77)"
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "confere",
+    "nota": ""
    }
   },
   {
@@ -2405,13 +2493,18 @@
    "id_documento": "doc-programa-pstu-tse",
    "texto": "Fim dos despejos de familias sem alternativa habitacional; construcao massiva de moradia popular por empresa publica de obras; urbanizacao de periferias; expropriacao de imoveis urbanos abandonados, ociosos ou destinados a especulacao; IPTU progressivo com isencao para baixa renda; participacao popular no planejamento urbano.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "citacao_literal": "Casa para morar, nao para especular! Enquanto morar for um privilegio, ocupar e um direito!",
    "id_posicao": "p100",
    "conferido_por_ia": {
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-pstu-2026.pdf, sha 1868565fb0d5de77)"
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "confere",
+    "nota": ""
    }
   },
   {
@@ -2425,7 +2518,7 @@
    "id_documento": "doc-programa-pstu-tse",
    "texto": "Capitulo proprio de Soberania Digital, a proposta de IA mais desenvolvida de todo o levantamento do Senado por SP: IA publica nacional financiada por excedentes de empresas expropriadas, com uso obrigatorio na gestao publica e oferta subsidiada a trabalhadores de plataforma; proibicao de hospedar dados governamentais sensiveis em nuvem estrangeira; software livre como prioridade nacional; remuneracao continuada a quem produziu o conhecimento usado no treinamento de IA estatal; conselhos com poder de auditoria sobre algoritmos; reducao automatica da jornada na proporcao dos ganhos de produtividade obtidos com IA; direito a desconexao; proibicao de vigilancia digital opaca; plataformas publicas de transporte, entrega e e-commerce geridas por conselhos de trabalhadores.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "citacao_literal": "Desenvolvimento de uma inteligencia artificial publica nacional, financiada por excedentes de empresas estrategicas expropriadas, com uso obrigatorio na gestao e em empresas publicas e como opcao subsidiada as diversas modalidades de trabalho por plataformas e aos consumidores em geral.",
    "_destaque": "Reducao de jornada proporcional ao ganho de produtividade com IA e remuneracao a quem produziu os dados de treinamento sao propostas que nenhum outro candidato ao Senado por SP apresenta.",
    "id_posicao": "p101",
@@ -2433,6 +2526,11 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-pstu-2026.pdf, sha 1868565fb0d5de77)"
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "confere",
+    "nota": ""
    }
   },
   {
@@ -2454,6 +2552,11 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-pstu-2026.pdf, sha 1868565fb0d5de77)"
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "corrigir",
+    "nota": "Não achei essa informação"
    }
   },
   {
@@ -2467,7 +2570,7 @@
    "id_documento": "doc-programa-pstu-tse",
    "texto": "O documento declara explicitamente que nao e um conjunto de promessas eleitorais e que a acao institucional deve ser subordinada a mobilizacao direta: 'Nao somos cretinos antiparlamentares. A disputa eleitoral e institucional pode ter importancia tatica... Mas deve estar subordinada a mobilizacao, a acao direta, a auto-organizacao'. Defende um Estado operario revolucionario fundado em democracia operaria, com representantes eleitos e revogaveis sob controle da base. Faz critica nominal ao PT, ao PSOL e ao stalinismo.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "citacao_literal": "este programa nao e um conjunto de promessas eleitorais para que outros governem por nos. E um guia para a acao, para a luta.",
    "_destaque": "Relevante para cargo legislativo: o proprio programa relativiza o valor do mandato parlamentar, subordinando-o a mobilizacao. E declaracao sobre como pretendem usar a cadeira que disputam.",
    "id_posicao": "p103",
@@ -2475,6 +2578,11 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-pstu-2026.pdf, sha 1868565fb0d5de77)"
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "confere",
+    "nota": ""
    }
   },
   {
@@ -2495,6 +2603,16 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
+   },
+   "escopo": "Vem do programa que o partido registrou no TSE para Samara Martins, candidata à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra.",
+   "_devolvida_para_revisao": {
+    "em": "2026-08-25",
+    "decisao_anterior": {
+     "em": "2026-08-25",
+     "resultado": "corrigir",
+     "nota": "Programa vinculado à Samara, não sei se serve para esse candidato"
+    },
+    "porque": "Voce marcou que o documento diz ser da Samara Martins. Estava certa: e o programa registrado para a candidatura a Presidencia. A atribuicao ao PARTIDO estava correta, mas o site nao dizia isso ao leitor. O campo escopo foi preenchido declarando a origem. Volta para voce decidir com a ressalva no lugar."
    }
   },
   {
@@ -2516,7 +2634,8 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
-   }
+   },
+   "escopo": "Vem do programa que o partido registrou no TSE para Samara Martins, candidata à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra."
   },
   {
    "id_tema": "t5",
@@ -2536,7 +2655,8 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
-   }
+   },
+   "escopo": "Vem do programa que o partido registrou no TSE para Samara Martins, candidata à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra."
   },
   {
    "id_tema": "t6",
@@ -2556,10 +2676,15 @@
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
    },
-   "revisao": {
+   "escopo": "Vem do programa que o partido registrou no TSE para Samara Martins, candidata à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra.",
+   "_devolvida_para_revisao": {
     "em": "2026-08-25",
-    "resultado": "corrigir",
-    "nota": "Esse pdf parece ser apenas da Samara Martins, não sei se serve para esse candidato"
+    "decisao_anterior": {
+     "em": "2026-08-25",
+     "resultado": "corrigir",
+     "nota": "Esse pdf parece ser apenas da Samara Martins, não sei se serve para esse candidato"
+    },
+    "porque": "Voce marcou que o documento diz ser da Samara Martins. Estava certa: e o programa registrado para a candidatura a Presidencia. A atribuicao ao PARTIDO estava correta, mas o site nao dizia isso ao leitor. O campo escopo foi preenchido declarando a origem. Volta para voce decidir com a ressalva no lugar."
    }
   },
   {
@@ -2580,7 +2705,8 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
-   }
+   },
+   "escopo": "Vem do programa que o partido registrou no TSE para Samara Martins, candidata à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra."
   },
   {
    "id_tema": "t1",
@@ -2601,10 +2727,14 @@
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
    },
-   "revisao": {
+   "_devolvida_para_revisao": {
     "em": "2026-08-25",
-    "resultado": "corrigir",
-    "nota": "Esse pdf parace ser para Samara Martins, não sei se também serve para o candidato Marcio"
+    "decisao_anterior": {
+     "em": "2026-08-25",
+     "resultado": "corrigir",
+     "nota": "Esse pdf parace ser para Samara Martins, não sei se também serve para o candidato Marcio"
+    },
+    "porque": "Voce marcou que o documento diz ser da Samara Martins. Estava certa: e o programa registrado para a candidatura a Presidencia. A atribuicao ao PARTIDO estava correta, mas o site nao dizia isso ao leitor. O campo escopo foi preenchido declarando a origem. Volta para voce decidir com a ressalva no lugar."
    }
   },
   {
@@ -2625,10 +2755,15 @@
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
    },
-   "revisao": {
+   "escopo": "Vem do programa que o partido registrou no TSE para Samara Martins, candidata à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra.",
+   "_devolvida_para_revisao": {
     "em": "2026-08-25",
-    "resultado": "corrigir",
-    "nota": "Diz ser da candidata Saara martins, mesmo sendo o mesmo partido. não sei se é válido"
+    "decisao_anterior": {
+     "em": "2026-08-25",
+     "resultado": "corrigir",
+     "nota": "Diz ser da candidata Saara martins, mesmo sendo o mesmo partido. não sei se é válido"
+    },
+    "porque": "Voce marcou que o documento diz ser da Samara Martins. Estava certa: e o programa registrado para a candidatura a Presidencia. A atribuicao ao PARTIDO estava correta, mas o site nao dizia isso ao leitor. O campo escopo foi preenchido declarando a origem. Volta para voce decidir com a ressalva no lugar."
    }
   },
   {
@@ -2649,10 +2784,15 @@
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
    },
-   "revisao": {
+   "escopo": "Vem do programa que o partido registrou no TSE para Samara Martins, candidata à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra.",
+   "_devolvida_para_revisao": {
     "em": "2026-08-25",
-    "resultado": "corrigir",
-    "nota": "Diz ser da candidata Samara Martins, mesmo sendo o mesmo partido"
+    "decisao_anterior": {
+     "em": "2026-08-25",
+     "resultado": "corrigir",
+     "nota": "Diz ser da candidata Samara Martins, mesmo sendo o mesmo partido"
+    },
+    "porque": "Voce marcou que o documento diz ser da Samara Martins. Estava certa: e o programa registrado para a candidatura a Presidencia. A atribuicao ao PARTIDO estava correta, mas o site nao dizia isso ao leitor. O campo escopo foi preenchido declarando a origem. Volta para voce decidir com a ressalva no lugar."
    }
   },
   {
@@ -2673,10 +2813,15 @@
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
    },
-   "revisao": {
+   "escopo": "Vem do programa que o partido registrou no TSE para Samara Martins, candidata à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra.",
+   "_devolvida_para_revisao": {
     "em": "2026-08-25",
-    "resultado": "corrigir",
-    "nota": "Diz ser da candidata Samara Martins, mesmo sendo o mesmo partido"
+    "decisao_anterior": {
+     "em": "2026-08-25",
+     "resultado": "corrigir",
+     "nota": "Diz ser da candidata Samara Martins, mesmo sendo o mesmo partido"
+    },
+    "porque": "Voce marcou que o documento diz ser da Samara Martins. Estava certa: e o programa registrado para a candidatura a Presidencia. A atribuicao ao PARTIDO estava correta, mas o site nao dizia isso ao leitor. O campo escopo foi preenchido declarando a origem. Volta para voce decidir com a ressalva no lugar."
    }
   },
   {
@@ -2698,7 +2843,8 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
-   }
+   },
+   "escopo": "Vem do programa que o partido registrou no TSE para Samara Martins, candidata à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra."
   },
   {
    "id_tema": "t5",
@@ -2718,7 +2864,8 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
-   }
+   },
+   "escopo": "Vem do programa que o partido registrou no TSE para Samara Martins, candidata à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra."
   },
   {
    "id_tema": "t6",
@@ -2738,10 +2885,15 @@
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
    },
-   "revisao": {
+   "escopo": "Vem do programa que o partido registrou no TSE para Samara Martins, candidata à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra.",
+   "_devolvida_para_revisao": {
     "em": "2026-08-25",
-    "resultado": "corrigir",
-    "nota": "Diz ser da candidata Samara Martins, mesmo sendo o mesmo partido"
+    "decisao_anterior": {
+     "em": "2026-08-25",
+     "resultado": "corrigir",
+     "nota": "Diz ser da candidata Samara Martins, mesmo sendo o mesmo partido"
+    },
+    "porque": "Voce marcou que o documento diz ser da Samara Martins. Estava certa: e o programa registrado para a candidatura a Presidencia. A atribuicao ao PARTIDO estava correta, mas o site nao dizia isso ao leitor. O campo escopo foi preenchido declarando a origem. Volta para voce decidir com a ressalva no lugar."
    }
   },
   {
@@ -2763,10 +2915,14 @@
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
    },
-   "revisao": {
+   "_devolvida_para_revisao": {
     "em": "2026-08-25",
-    "resultado": "corrigir",
-    "nota": "Diz ser da candidata Samara Martins, mesmo sendo o mesmo partido"
+    "decisao_anterior": {
+     "em": "2026-08-25",
+     "resultado": "corrigir",
+     "nota": "Diz ser da candidata Samara Martins, mesmo sendo o mesmo partido"
+    },
+    "porque": "Voce marcou que o documento diz ser da Samara Martins. Estava certa: e o programa registrado para a candidatura a Presidencia. A atribuicao ao PARTIDO estava correta, mas o site nao dizia isso ao leitor. O campo escopo foi preenchido declarando a origem. Volta para voce decidir com a ressalva no lugar."
    }
   },
   {
@@ -2787,10 +2943,15 @@
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
    },
-   "revisao": {
+   "escopo": "Vem do programa que o partido registrou no TSE para Samara Martins, candidata à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra.",
+   "_devolvida_para_revisao": {
     "em": "2026-08-25",
-    "resultado": "corrigir",
-    "nota": "Diz ser da candidata Samara Martins, mesmo sendo o mesmo partido"
+    "decisao_anterior": {
+     "em": "2026-08-25",
+     "resultado": "corrigir",
+     "nota": "Diz ser da candidata Samara Martins, mesmo sendo o mesmo partido"
+    },
+    "porque": "Voce marcou que o documento diz ser da Samara Martins. Estava certa: e o programa registrado para a candidatura a Presidencia. A atribuicao ao PARTIDO estava correta, mas o site nao dizia isso ao leitor. O campo escopo foi preenchido declarando a origem. Volta para voce decidir com a ressalva no lugar."
    }
   },
   {
@@ -2811,10 +2972,15 @@
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
    },
-   "revisao": {
+   "escopo": "Vem do programa que o partido registrou no TSE para Samara Martins, candidata à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra.",
+   "_devolvida_para_revisao": {
     "em": "2026-08-25",
-    "resultado": "corrigir",
-    "nota": "Diz ser da candidata Samara Martins, mesmo sendo o mesmo partido"
+    "decisao_anterior": {
+     "em": "2026-08-25",
+     "resultado": "corrigir",
+     "nota": "Diz ser da candidata Samara Martins, mesmo sendo o mesmo partido"
+    },
+    "porque": "Voce marcou que o documento diz ser da Samara Martins. Estava certa: e o programa registrado para a candidatura a Presidencia. A atribuicao ao PARTIDO estava correta, mas o site nao dizia isso ao leitor. O campo escopo foi preenchido declarando a origem. Volta para voce decidir com a ressalva no lugar."
    }
   },
   {
@@ -2835,10 +3001,15 @@
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
    },
-   "revisao": {
+   "escopo": "Vem do programa que o partido registrou no TSE para Samara Martins, candidata à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra.",
+   "_devolvida_para_revisao": {
     "em": "2026-08-25",
-    "resultado": "corrigir",
-    "nota": "Diz ser da candidata Samara Martins, mesmo sendo o mesmo partido"
+    "decisao_anterior": {
+     "em": "2026-08-25",
+     "resultado": "corrigir",
+     "nota": "Diz ser da candidata Samara Martins, mesmo sendo o mesmo partido"
+    },
+    "porque": "Voce marcou que o documento diz ser da Samara Martins. Estava certa: e o programa registrado para a candidatura a Presidencia. A atribuicao ao PARTIDO estava correta, mas o site nao dizia isso ao leitor. O campo escopo foi preenchido declarando a origem. Volta para voce decidir com a ressalva no lugar."
    }
   },
   {
@@ -2891,7 +3062,8 @@
     "em": "2026-08-25",
     "resultado": "corrigir",
     "nota": "Não achei citação direta \"Politica de seguranca publica com foco na prevencao\", mas parece implícito"
-   }
+   },
+   "escopo": "Vem do programa que o partido registrou no TSE para Edmilson Costa, candidato à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra."
   },
   {
    "atribuido_a_tipo": "partido",
@@ -2920,7 +3092,8 @@
     "nota": "",
     "citacao_conferida_na_fonte": true
    },
-   "citacao_literal": "\"Dentre eles, desenvolvemos a luta permanente contra o imperialismo e a solidariedade militanteaCuba, à Palestina, ao povo do Irã, da Venezuela e todos os povos que enfrentama velhaordem imperial e defendem sua soberania e autodeterminação.\", \"Legalizaçãodoaborto, com garantia de atendimento na rede pública de saúde, bemcomo políticaspúblicas que possibilitem a emancipação da mulher dos trabalhos domésticos, zerandoas filas de creches, ampliando a educação integral e efetuando a construção massivaderestaurantes e lavanderias populares.\""
+   "citacao_literal": "\"Dentre eles, desenvolvemos a luta permanente contra o imperialismo e a solidariedade militanteaCuba, à Palestina, ao povo do Irã, da Venezuela e todos os povos que enfrentama velhaordem imperial e defendem sua soberania e autodeterminação.\", \"Legalizaçãodoaborto, com garantia de atendimento na rede pública de saúde, bemcomo políticaspúblicas que possibilitem a emancipação da mulher dos trabalhos domésticos, zerandoas filas de creches, ampliando a educação integral e efetuando a construção massivaderestaurantes e lavanderias populares.\"",
+   "escopo": "Vem do programa que o partido registrou no TSE para Edmilson Costa, candidato à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra."
   }
  ],
  "_conferencia_por_ia": {

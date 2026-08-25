@@ -39,7 +39,9 @@
    "nivel_fonte": "declaracao_candidato",
    "acessivel": true,
    "capturado_em": "2026-08-24",
-   "_nota": "Programa da candidatura presidencial de Renan Santos. NÃO é documento da candidatura ao Senado — cobre Guto Schiavetto por atribuição partidária."
+   "_nota": "Programa da candidatura presidencial de Renan Santos. NÃO é documento da candidatura ao Senado — cobre Guto Schiavetto por atribuição partidária.",
+   "cargo_registrado": "presidente",
+   "_escopo_do_registro": "Documento registrado no TSE pela candidatura a PRESIDENTE. Cobre as demais candidaturas do partido por atribuicao partidaria (estado B), e nunca como proposta propria de candidatura ao Senado. Toda posicao derivada dele exige escopo declarado."
   },
   {
    "id_documento": "doc-programa-pcb",
@@ -81,7 +83,9 @@
    "arquivo_local": "fontes/programa-up-2026-nacional.pdf",
    "bytes": 102070,
    "sha256_16": "2caad1effa29c6a8",
-   "extracao_local": "fontes/programa-up-2026--extracao.md"
+   "extracao_local": "fontes/programa-up-2026--extracao.md",
+   "cargo_registrado": "presidente",
+   "_escopo_do_registro": "Documento registrado no TSE pela candidatura a PRESIDENTE. Cobre as demais candidaturas do partido por atribuicao partidaria (estado B), e nunca como proposta propria de candidatura ao Senado. Toda posicao derivada dele exige escopo declarado."
   },
   {
    "id_documento": "doc-programa-up-tse-2",
@@ -208,7 +212,9 @@
    ],
    "arquivo_local": "fontes/programa-missao-2026.pdf",
    "bytes": 1691345,
-   "sha256_16": "cdece60b71117c78"
+   "sha256_16": "cdece60b71117c78",
+   "cargo_registrado": "presidente",
+   "_escopo_do_registro": "Documento registrado no TSE pela candidatura a PRESIDENTE. Cobre as demais candidaturas do partido por atribuicao partidaria (estado B), e nunca como proposta propria de candidatura ao Senado. Toda posicao derivada dele exige escopo declarado."
   },
   {
    "id_documento": "doc-programa-pcb-tse",
@@ -225,7 +231,9 @@
    ],
    "arquivo_local": "fontes/programa-pcb-2026.pdf",
    "bytes": 314957,
-   "sha256_16": "52f765533f93409a"
+   "sha256_16": "52f765533f93409a",
+   "cargo_registrado": "presidente",
+   "_escopo_do_registro": "Documento registrado no TSE pela candidatura a PRESIDENTE. Cobre as demais candidaturas do partido por atribuicao partidaria (estado B), e nunca como proposta propria de candidatura ao Senado. Toda posicao derivada dele exige escopo declarado."
   },
   {
    "id_documento": "doc-tse-redes-sociais-2026",
