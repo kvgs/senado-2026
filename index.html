@@ -12,7 +12,8 @@
     --ink:#141110;      /* 17.5:1 sobre surface */
     --ink-2:#3E3833;    /*  9.6:1 */
     --muted:#6A6259;    /*  5.6:1 */
-    --acento-vivo:#CFE4FA;   /* faixa clara, texto --ink em cima: 14.1:1 */
+    --acento-vivo:#2FB4E4;   /* ciano vivo. Vive nas FORMAS: nesta luminosidade
+                                da 2.4:1 sobre branco e nao serve para texto. */
     /* rule-strong desenha borda de campo e de botao, entao precisa de 3:1
        (WCAG 1.4.11). O valor anterior, #A9B1AB, dava 2.2:1. */
     --rule:#E5E0DA; --rule-strong:#7E756B;
@@ -28,9 +29,9 @@
     /* fundos das etiquetas: a mesma cor, lavada, para a etiqueta ter corpo */
     --f-oficial:#DFF3E7; --f-verificada:#FBEFD2; --f-secundaria:#FBE3E0;
     --f-declaracao:#EEE4FB; --f-registro:#DCE6F2;
-    --acento:#0A56B4;         /* azul vivo: link, aba ativa, numero de urna.
-                                 Separado do selo de registro por TOM: aquele
-                                 desceu para azul-marinho. */
+    --acento:#0C6C8F;         /* ciano fundo: link, aba, numero. 5.9:1 sobre
+                                 branco. E o irmao legivel do ciano da faixa —
+                                 mesma identidade, papeis diferentes. */
     --alert:#A32C20; --alert-bg:#FBEEEC; --alert-line:#D9A9A2;
   }
   @media (prefers-color-scheme: dark){
@@ -42,7 +43,7 @@
       --s-declaracao:#CDA5F5; --s-registro:#5E97D9;
       --f-oficial:#12291D; --f-verificada:#2B2311; --f-secundaria:#301A17;
       --f-declaracao:#241A33; --f-registro:#111D2E;
-      --acento:#7CB8F7; --acento-vivo:#16283D;
+      --acento:#5AC8F0; --acento-vivo:#0E2A36;
       --alert:#F0897C; --alert-bg:#2B1C1A; --alert-line:#663932;
     }
   }
@@ -54,7 +55,7 @@
     --s-declaracao:#CDA5F5; --s-registro:#5E97D9;
     --f-oficial:#12291D; --f-verificada:#2B2311; --f-secundaria:#301A17;
     --f-declaracao:#241A33; --f-registro:#111D2E;
-    --acento:#7CB8F7; --acento-vivo:#16283D;
+    --acento:#5AC8F0; --acento-vivo:#0E2A36;
     --alert:#F0897C; --alert-bg:#2B1C1A; --alert-line:#663932;
   }
 
@@ -120,7 +121,7 @@
   /* Texto escuro sobre faixa clara: destaque, nao bloco de aviso. */
   .placa li{color:var(--ink)}
   .placa .n{display:block;font-family:"PlexMono",monospace;font-size:2.1rem;line-height:1;
-    font-weight:500;font-variant-numeric:tabular-nums;color:var(--acento)}
+    font-weight:500;font-variant-numeric:tabular-nums;color:var(--ink)}
   .placa .r{display:block;margin-top:5px;font-size:.74rem;letter-spacing:.1em;
     text-transform:uppercase;color:var(--ink-2)}
 
