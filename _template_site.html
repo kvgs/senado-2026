@@ -280,6 +280,13 @@
     background:none;padding:0;color:inherit}
   .ress{color:var(--s-verificada);font-weight:600}
 
+  .sem-proposta{margin:22px 0 4px;padding:17px 19px;border:1px solid var(--rule);
+    border-left:4px solid var(--acento-vivo);border-radius:5px;background:var(--surface-2)}
+  .sem-proposta h3{font-family:"Bricolage",sans-serif;font-size:1.02rem;margin-bottom:8px}
+  .sem-proposta p{font-size:.9rem;color:var(--ink-2);line-height:1.62;margin-top:8px}
+  .sem-proposta a{color:var(--acento)}
+  .porque-vazio{margin-top:9px;font-size:.88rem;color:var(--muted);line-height:1.55}
+  .porque-vazio a{color:var(--acento)}
   .ausente{font-size:.94rem;color:var(--ink-2);padding:2px 0}
   .ausente b{color:var(--ink)}
   .ausente.nao-achou{color:var(--ink-2);border-left:3px solid var(--s-secundaria);
@@ -929,6 +936,66 @@ function blocoResposta(r){
   return h+'</div>';
 }
 
+/* Por que nao ha proposta. Tres casos reais, escolhidos pelos dados — a frase
+   generica "o partido nao registrou programa" seria FALSA para as duas
+   candidaturas da UP, cujo partido registrou um programa assinado pela
+   candidatura da Samara Martins a Presidencia. */
+/* Uma vez no perfil, e so para as candidaturas sem NENHUMA proposta no acervo.
+   Diz duas coisas na mesma respiracao: por que falta, e o que existe no lugar —
+   porque a assimetria e inversa, e nao um buraco. Quem nao tem proposta tende a
+   ter historico legislativo; quem tem programa registrado tende a nao ter
+   mandato. Mostrar so a metade que falta seria retrato torto. */
+function blocoSemProposta(cid){
+  const c=D.candidatos[cid]||{}, pp=c.programa_partido||{tipo:'nenhum'};
+  const temProposta=D.temas.some(function(t){
+    return ((D.grade[t.id]||{})[cid]||[]).some(function(i){return i.estado==='A'||i.estado==='B';});
+  });
+  if(temProposta) return '';
+
+  const nLeg=D.temas.filter(function(t){ return ((D.leg[t.id]||{})[cid]||[]).length>0; }).length;
+  const nVoto=D.votos.filter(function(v){ return v.cand===cid; }).length;
+
+  let h='<div class="sem-proposta"><h3>Não há proposta de campanha nesta candidatura</h3>'+
+        '<p>Candidaturas ao Senado <strong>não precisam registrar plano de governo no TSE</strong> — '+
+        'a lei exige isso só de Presidente, Governador e Prefeito. Quando há proposta aqui, '+
+        'ela veio de programa partidário registrado ou de material próprio que passou na revisão. ';
+  if(pp.tipo==='de_outra_candidatura'){
+    h+='O '+esc(c.partido)+' registrou programa no TSE, mas assinado por '+
+       esc(pp.assinado_por||'outra candidatura')+
+       (pp.url?' (<a href="'+esc(pp.url)+'" target="_blank" rel="noopener">ver o documento'+
+               '<span class="vis-oculto"> (abre em nova aba)</span></a>)':'')+
+       ' — ele fala por aquela candidatura, e não por esta.';
+  } else if(pp.tipo==='do_partido'){
+    h+='O material localizado para esta candidatura não passou na revisão: a fonte não '+
+       'sustentava o que estava escrito.';
+  } else {
+    h+='O '+esc(c.partido)+' não registrou programa partidário nesta eleição.';
+  }
+  h+='</p>';
+
+  if(nLeg||nVoto){
+    h+='<p><strong>O que esta candidatura tem no acervo é registro legislativo.</strong> '+
+       (nLeg?'Proposições apresentadas em '+nLeg+' tema'+(nLeg>1?'s':''):'')+
+       (nLeg&&nVoto?' e ':'')+
+       (nVoto?nVoto+' voto'+(nVoto>1?'s':'')+' em plenário':'')+
+       '. É o que já fez, não o que promete — e informa mais que promessa de campanha.</p>';
+  } else if((c.parlamentar||{}).casa==='alesp'){
+    /* Andre do Prado preside a ALESP e tem registro legislativo farto — que nos
+       nao coletamos. Dizer "nao ha registro" seria afirmar sobre ele o que e
+       verdade sobre a nossa coleta. */
+    h+='<p><strong>Há registro legislativo, mas fora do nosso alcance.</strong> '+
+       'Esta candidatura exerce mandato na Assembleia Legislativa de São Paulo, e a nossa '+
+       'coleta de proposições e votos cobre apenas a Câmara dos Deputados e o Senado. '+
+       'A ausência aqui é da nossa busca, não do trabalho legislativo dela.</p>';
+  } else {
+    h+='<p><strong>Também não localizamos registro legislativo.</strong> Buscamos '+
+       'proposições e votos na Câmara dos Deputados e no Senado, que é o que nossa coleta '+
+       'cobre — mandato em câmara municipal ou assembleia estadual não entra. '+
+       'Ficha, bens e coligação abaixo são o que o registro no TSE fornece.</p>';
+  }
+  return h+'</div>';
+}
+
 function corpoTema(cid,tid){
   const itens=(D.grade[tid]&&D.grade[tid][cid])||[];
   const reais=itens.filter(i=>i.estado==='A'||i.estado==='B');
@@ -944,6 +1011,17 @@ function corpoTema(cid,tid){
   }
   else h+='<p class="ausente">Este cruzamento ainda não foi trabalhado. Diferente de “não aborda” '+
           'e de “não localizamos”.</p>';
+
+  /* Se nao houve proposta mas HA registro legislativo ou voto, a celula nao pode
+     ler como vazia: o que existe vale tanto quanto o que falta, e comportamento
+     registrado informa mais que promessa. */
+  const temLeg=((D.leg[tid]||{})[cid]||[]).length>0;
+  const temVoto=D.votos.some(function(v){ return v.cand===cid&&v.temas.indexOf(tid)>=0; });
+  if(!reais.length&&(temLeg||temVoto)){
+    h+='<p class="porque-vazio">O que esta candidatura tem neste tema é '+
+       '<strong>registro legislativo, logo abaixo</strong> — o que já propôs ou votou. '+
+       'É comportamento registrado, e não promessa de campanha.</p>';
+  }
 
   const ls=(D.leg[tid]||{})[cid]||[];
   if(ls.length){
@@ -1094,8 +1172,19 @@ function renderTema(){
     const its=(D.grade[tid][cid]||[]);
     return its.some(i=>i.estado==='A'||i.estado==='B')||((D.leg[tid]||{})[cid]);
   }).length;
-  let h='<p style="margin-top:20px;color:var(--muted);font-size:.93rem">'+comConteudo+
-        ' das 15 candidaturas têm posição registrada em <strong>'+esc(nome)+'</strong>.</p>';
+  /* Duas contagens, e nao uma: contar so proposta apagava as candidaturas que
+     tem registro legislativo e nenhuma proposta — que sao justamente as maiores. */
+  const comProp=D.ordem.filter(function(cid){
+    return (D.grade[tid][cid]||[]).some(function(i){return i.estado==='A'||i.estado==='B';});
+  }).length;
+  const comLeg=D.ordem.filter(function(cid){
+    return (((D.leg[tid]||{})[cid]||[]).length>0) ||
+           D.votos.some(function(v){ return v.cand===cid&&v.temas.indexOf(tid)>=0; });
+  }).length;
+  let h='<p style="margin-top:20px;color:var(--muted);font-size:.93rem">Em <strong>'+esc(nome)+
+        '</strong>: '+comProp+' das 15 candidaturas têm proposta registrada e '+comLeg+
+        ' têm registro legislativo — projeto apresentado ou voto em plenário. '+
+        'São coisas diferentes, e uma não substitui a outra.</p>';
   h+='<ul class="lista">'+D.ordem.map(cid=>{
     const c=D.candidatos[cid];
     return '<li class="card"><div class="card-top" style="padding-bottom:13px">'+retrato(c)+
@@ -1332,6 +1421,8 @@ function renderPerfil(cid){
     linhas.push(['Base eleitoral que declarou',c.base_eleitoral.join(', ')]);
   h+='<ul class="ficha-dl">'+linhas.map(function(par){
       return '<li><b>'+esc(par[0])+'</b><span>'+esc(par[1])+'</span></li>';}).join('')+'</ul>';
+
+  h+=blocoSemProposta(cid);
 
   h+=blocoCanais(c);
 

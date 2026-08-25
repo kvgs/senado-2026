@@ -121,6 +121,34 @@ for c in cands:
         "contato": c.get("contato") or {},
     }
 
+# Situacao do programa do PARTIDO de cada candidatura. Serve para o site dizer
+# a verdade certa quando nao ha proposta — sao tres casos diferentes, e a frase
+# generica "o partido nao registrou programa" seria FALSA para a UP, que
+# registrou um programa assinado pela candidatura da Samara Martins.
+_docs_por_partido = {}
+for _r in pos:
+    _d = docs.get(_r.get("id_documento")) or {}
+    if _d.get("tipo") in ("plano_tse", "programa_partidario"):
+        _dono = _r.get("atribuido_a_id")
+        if _dono in partidos:
+            _docs_por_partido.setdefault(_dono, {})[_d["id_documento"]] = _d
+
+for _cid, _c in cand_por_id.items():
+    _pid = next((c["id_partido"] for c in cands if c["id_candidatura"] == _cid), None)
+    _ds = list((_docs_por_partido.get(_pid) or {}).values())
+    _de_outra = [d for d in _ds if d.get("assinatura") == "candidatura"]
+    if not _ds:
+        _c["programa_partido"] = {"tipo": "nenhum"}
+    elif _de_outra and len(_de_outra) == len(_ds):
+        _c["programa_partido"] = {
+            "tipo": "de_outra_candidatura",
+            "assinado_por": _de_outra[0].get("assinado_por", ""),
+            "titulo": _de_outra[0].get("titulo", ""),
+            "url": _de_outra[0].get("url", ""),
+        }
+    else:
+        _c["programa_partido"] = {"tipo": "do_partido"}
+
 ordem = sorted(cand_por_id, key=lambda k: int(cand_por_id[k]["numero"]))
 
 # Posicao reprovada na revisao humana NAO vai para o site. Continua em
