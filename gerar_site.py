@@ -188,6 +188,12 @@ for v in regs.get("votacoes_nominais", []):
 _rp = HERE/"dados"/"respostas.json"
 respostas = json.loads(_rp.read_text(encoding="utf-8"))["respostas"] if _rp.exists() else []
 
+# Base de conhecimento da curadoria, publicada na aba "Como e feito". Vem do
+# mesmo arquivo que o validador cobra: pagina de metodologia escrita a mao
+# envelhece em silencio e passa a descrever um processo que nao existe mais.
+_kb = HERE/"conhecimento"/"regras.json"
+conhecimento = json.loads(_kb.read_text(encoding="utf-8")) if _kb.exists() else None
+
 q = pesq["pesquisas"][0]
 pesquisa = {"instituto": q["instituto"], "registro": q["registro_tse"],
             "ini": q["campo_inicio"], "fim": q["campo_fim"], "n": q["entrevistados"],
@@ -206,6 +212,7 @@ dados = {
     "temas": [{"id": t["id_tema"], "nome": t["nome"]} for t in temas],
     "ordem": ordem, "candidatos": cand_por_id, "grade": grade, "leg": leg,
     "votos": votos, "pesquisa": pesquisa, "respostas": respostas,
+    "conhecimento": conhecimento,
     "selos": {k: {"nome": v["nome"], "def": v["definicao"], "eixo": v["eixo"]}
               for k, v in selos.items()},
     "totais": {

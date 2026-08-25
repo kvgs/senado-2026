@@ -425,6 +425,35 @@
   .ia .falha{margin-top:14px;padding:12px 15px;background:var(--alert-bg);
     border:1px solid var(--alert-line);border-radius:4px;font-size:.9rem;color:var(--ink-2)}
 
+  /* ---------- aba: como e feito ---------- */
+  .met-intro{margin-top:14px;color:var(--ink-2);max-width:66ch;font-size:1.05rem}
+  .met-tipos{list-style:none;display:grid;gap:14px;margin-top:26px;
+    grid-template-columns:repeat(auto-fill,minmax(320px,1fr))}
+  .met-tipos li{background:var(--surface);border:1px solid var(--rule);border-radius:5px;
+    padding:16px 18px}
+  .met-tipos h3{font-size:1.02rem}
+  .met-tipos .chave{display:block;margin-top:3px;font-family:"PlexMono",monospace;
+    font-size:.74rem;letter-spacing:.06em;color:var(--muted)}
+  .met-tipos .oq{margin-top:9px;font-size:.92rem;color:var(--ink-2)}
+  .met-tipos dl{margin:12px 0 0;font-size:.88rem}
+  .met-tipos dt{font-weight:700;font-size:.74rem;letter-spacing:.07em;text-transform:uppercase;
+    color:var(--muted);margin-top:9px}
+  .met-tipos dt.nao{color:var(--s-secundaria)}
+  .met-tipos dd{margin:3px 0 0;color:var(--ink-2)}
+  .met-tipos .cuidado{margin-top:11px;padding:9px 12px;background:var(--surface-2);
+    border-left:3px solid var(--s-verificada);border-radius:0 3px 3px 0;font-size:.86rem;
+    color:var(--ink-2)}
+  .met-regras{margin-top:16px}
+  .met-regras li{list-style:none;padding:15px 0;border-top:1px solid var(--rule)}
+  .met-regras .rid{font-family:"PlexMono",monospace;font-size:.74rem;letter-spacing:.06em;
+    color:var(--acento)}
+  .met-regras h4{margin:3px 0 0;font-size:1rem;font-family:"Bricolage",system-ui,sans-serif}
+  .met-regras .oq{margin-top:7px;color:var(--ink-2);font-size:.95rem}
+  .met-regras .pq{margin-top:8px;font-size:.9rem;color:var(--muted)}
+  .met-regras .pq strong{color:var(--ink-2)}
+  .met-nota{margin-top:14px;padding:12px 15px;border:1px dashed var(--rule-strong);
+    border-radius:4px;font-size:.9rem;color:var(--ink-2)}
+
   /* ---------- perfil (Fase 6) ---------- */
   .voltar{display:inline-flex;align-items:center;gap:7px;font:inherit;font-size:.92rem;
     font-weight:600;background:none;border:0;color:var(--s-registro);cursor:pointer;padding:8px 0;
@@ -525,6 +554,7 @@
     <button role="tab" id="tab-comparar" aria-controls="p-comparar" aria-selected="false" tabindex="-1">Comparar</button>
     <button role="tab" id="tab-consulta" aria-controls="p-consulta" aria-selected="false" tabindex="-1">Perguntar</button>
     <button role="tab" id="tab-pesquisa" aria-controls="p-pesquisa" aria-selected="false" tabindex="-1">Pesquisa</button>
+    <button role="tab" id="tab-metodo" aria-controls="p-metodo" aria-selected="false" tabindex="-1">Como é feito</button>
     <button role="tab" id="tab-perfil" aria-controls="p-perfil" aria-selected="false" tabindex="-1" hidden>Perfil</button>
   </div>
 
@@ -584,6 +614,10 @@
       </form>
       <div class="sugestoes" id="sugestoes"></div>
       <div aria-live="polite" id="saida-consulta"></div>
+    </div>
+    <div role="tabpanel" id="p-metodo" aria-labelledby="tab-metodo" tabindex="0" hidden>
+      <h2>Como isto é feito</h2>
+      <div id="saida-metodo"></div>
     </div>
     <div role="tabpanel" id="p-perfil" aria-labelledby="tab-perfil" tabindex="0" hidden>
       <button class="voltar" id="btn-voltar" type="button">&larr; Voltar para a lista de candidaturas</button>
@@ -853,6 +887,71 @@ function corpoTema(cid,tid){
   for(const r of (RESP_TEMA[cid+'|'+tid]||[])) h+=blocoResposta(r);
   return h;
 }
+
+/* ---------- aba: como e feito ---------- */
+(function(){
+  const alvo=document.getElementById('saida-metodo');
+  const kb=D.conhecimento;
+  if(!alvo) return;
+  if(!kb){ alvo.innerHTML='<p class="met-intro">Base de regras indisponível.</p>'; return; }
+
+  const lista=function(a){ return (a||[]).join(' · ').replace(/_/g,' '); };
+
+  let h='<p class="met-intro">Toda informação deste site vem de uma fonte, e nem toda fonte '+
+        'sustenta qualquer tipo de afirmação. Um cadastro de candidaturas serve para saber o '+
+        'partido de alguém e é imprestável para saber o que essa pessoa propõe. Esta página '+
+        'publica as regras que decidem o que entra — e o caso real que obrigou cada uma delas.</p>';
+
+  h+='<h3 style="margin-top:34px">O que cada tipo de fonte sustenta</h3>';
+  h+='<ul class="met-tipos">';
+  for(const chave of Object.keys(kb.tipos_de_fonte)){
+    const f=kb.tipos_de_fonte[chave];
+    h+='<li><h3>'+esc(f.nome)+'<span class="chave">'+esc(chave)+'</span></h3>'+
+       '<p class="oq">'+esc(f.o_que_e)+'</p><dl>'+
+       '<dt>Sustenta</dt><dd>'+esc(lista(f.sustenta))+'</dd>'+
+       '<dt class="nao">Não sustenta</dt><dd>'+esc(lista(f.nao_sustenta))+'</dd>'+
+       '</dl>'+
+       (f.cuidado?'<p class="cuidado"><strong>Cuidado:</strong> '+esc(f.cuidado)+'</p>':'')+
+       '</li>';
+  }
+  h+='</ul>';
+
+  /* Agrupa pelo que importa ao leitor: existe algo impedindo a violacao, ou nao. */
+  const cobradas=kb.regras.filter(function(r){
+    return r.onde && r.onde!=='revisao humana' && r.onde!=='AINDA NAO COBRADA'; });
+  const humanas=kb.regras.filter(function(r){ return r.onde==='revisao humana'; });
+  const sem=kb.regras.filter(function(r){ return r.onde==='AINDA NAO COBRADA'; });
+
+  const grupo=function(titulo,nota,regras){
+    if(!regras.length) return '';
+    let g='<h3 style="margin-top:34px">'+esc(titulo)+' <span class="chave">'+regras.length+'</span></h3>';
+    if(nota) g+='<p class="met-nota">'+nota+'</p>';
+    g+='<ul class="met-regras">';
+    for(const r of regras){
+      g+='<li><span class="rid">'+esc(r.id)+'</span><h4>'+esc(r.titulo)+'</h4>'+
+         '<p class="oq">'+esc(r.regra)+'</p>'+
+         '<p class="pq"><strong>Por que esta regra existe:</strong> '+esc(r.porque)+'</p></li>';
+    }
+    return g+'</ul>';
+  };
+
+  h+=grupo('Regras que o código impede',
+    'Estas não dependem de ninguém lembrar: o programa que monta o site recusa os dados '+
+    'em vez de avisar.', cobradas);
+  h+=grupo('Regras que dependem de julgamento',
+    'Não dá para cobrar em código sem produzir erro falso, e um verificador que grita errado '+
+    'acaba desligado. Estas são conferidas na revisão, informação por informação.', humanas);
+  h+=grupo('Regras ainda sem cobrança',
+    'Estão publicadas aqui justamente por não terem verificação automática. Regra sem '+
+    'cobrança é lembrete — e lembrete é o que falhou antes.', sem);
+
+  h+='<p class="met-nota" style="margin-top:30px">Esta página é <strong>gerada</strong> a partir '+
+     'do mesmo arquivo de regras que o verificador do projeto usa. Não existe versão “para '+
+     'mostrar” diferente da versão que roda: página de metodologia escrita à mão envelhece em '+
+     'silêncio e passa a descrever um processo que já não existe.</p>';
+
+  alvo.innerHTML=h;
+})();
 
 /* ---------- aba: candidatos ---------- */
 (function(){
