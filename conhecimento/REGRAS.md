@@ -121,7 +121,7 @@ Arquivo de dados abertos publicado pela Justica Eleitoral.
 
 ## Regras
 
-17 regras têm código que as impede, 4 dependem de julgamento na revisão, e 1 ainda não têm cobrança nenhuma.
+18 regras têm código que as impede, 4 dependem de julgamento na revisão, e 1 ainda não têm cobrança nenhuma.
 Cada uma existe porque foi violada uma vez — o campo *por quê* guarda o caso real.
 
 ### Impedidas por código
@@ -259,6 +259,14 @@ Autoria de proposicao vive em registros_legislativos, um registro por proposicao
 Posicao derivada de documento cujo cargo_registrado e diferente do cargo da candidatura precisa ter o campo escopo preenchido, dizendo de qual candidatura o documento e.
 
 *Por quê:* A autora marcou 11 posicoes com 'diz ser da candidata Samara Martins, nao sei se serve para Maira'. Estava certa. Tres dos quatro programas registrados no TSE sao de candidatura PRESIDENCIAL — UP, PCB e MISSAO, 35 posicoes ao todo — exibidos no contexto de candidaturas ao Senado. A atribuicao ao partido estava certa; o que faltava era dizer isso ao leitor, que ao clicar encontra um plano de governo de outra candidatura e nao entende. O campo escopo ja existia no modelo e estava vazio nas 35: nao faltava estrutura, faltava preencher.
+
+*Onde é cobrada:* `validar.py`
+
+**R-ESCOPO-03 — Programa de uma candidatura nao cobre outra**
+
+Documento com assinatura 'candidatura' so sustenta posicoes daquela candidatura. Para as demais do mesmo partido, nao serve — nem com escopo declarado. Programa com assinatura 'partido' cobre as candidaturas da sigla, no estado B.
+
+*Por quê:* Criterio estabelecido pela revisao humana. A autora aprovou 7 de 9 posicoes do programa do MISSAO e 6 de 8 do PCB, ambos registrados para a candidatura presidencial, e reprovou 20 de 20 do programa da UP. Nao rejeitou a categoria: rejeitou um documento cujo titulo nomeia a candidatura no lugar do partido ('Programa Unidade Popular / Samara Martins 80') e cujo texto e personalizado do inicio ao fim. Programa do partido e o partido falando; programa de uma candidatura fala por ela e por mais ninguem.
 
 *Onde é cobrada:* `validar.py`
 

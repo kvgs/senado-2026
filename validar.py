@@ -93,6 +93,15 @@ def cobrar_regras_de_fonte(kb, posicoes, documentos):
             erros.append(f"[{id_regra}] {pid}: estado {estado} com fonte de tipo "
                          f"'{tipo}' ({regra['nome']}) — {regra['porque'][:110]}")
 
+        # R-ESCOPO-03 — programa de uma candidatura nao fala pelas outras.
+        if doc.get("assinatura") == "candidatura":
+            dono = doc.get("assinado_por", "outra candidatura")
+            erros.append(
+                f"[R-ESCOPO-03] {pid}: usa documento assinado por {dono}. Programa de uma "
+                "candidatura fala por ela e por mais ninguem — sob outro candidato, poe na "
+                "boca dele o que outra pessoa disse."
+            )
+
         # R-ESCOPO-02 — documento de outro cargo exige escopo dito ao leitor.
         if doc.get("cargo_registrado") and doc["cargo_registrado"] != "senador":
             if not (pos.get("escopo") or "").strip():

@@ -41,7 +41,8 @@
    "capturado_em": "2026-08-24",
    "_nota": "Programa da candidatura presidencial de Renan Santos. NÃO é documento da candidatura ao Senado — cobre Guto Schiavetto por atribuição partidária.",
    "cargo_registrado": "presidente",
-   "_escopo_do_registro": "Documento registrado no TSE pela candidatura a PRESIDENTE. Cobre as demais candidaturas do partido por atribuicao partidaria (estado B), e nunca como proposta propria de candidatura ao Senado. Toda posicao derivada dele exige escopo declarado."
+   "_escopo_do_registro": "Documento registrado no TSE pela candidatura a PRESIDENTE. Cobre as demais candidaturas do partido por atribuicao partidaria (estado B), e nunca como proposta propria de candidatura ao Senado. Toda posicao derivada dele exige escopo declarado.",
+   "assinatura": "partido"
   },
   {
    "id_documento": "doc-programa-pcb",
@@ -51,7 +52,8 @@
    "nivel_fonte": "declaracao_candidato",
    "acessivel": true,
    "data_publicacao": "2026-08-16",
-   "capturado_em": "2026-08-24"
+   "capturado_em": "2026-08-24",
+   "assinatura": "partido"
   },
   {
    "id_documento": "doc-programa-pstu-tse",
@@ -67,7 +69,8 @@
    "_nota": "Baixado manualmente pela usuaria no navegador (TSE bloqueia acesso automatizado desta rede). Extracao por tema arquivada em fontes/programa-pstu-2026.md. Programa NACIONAL do partido: atribuir ao PSTU, nunca aos candidatos individualmente.",
    "bytes": 738999,
    "sha256_16": "1868565fb0d5de77",
-   "extracao_local": "fontes/programa-pstu-2026--extracao.md"
+   "extracao_local": "fontes/programa-pstu-2026--extracao.md",
+   "assinatura": "partido"
   },
   {
    "id_documento": "doc-programa-up-tse",
@@ -85,7 +88,10 @@
    "sha256_16": "2caad1effa29c6a8",
    "extracao_local": "fontes/programa-up-2026--extracao.md",
    "cargo_registrado": "presidente",
-   "_escopo_do_registro": "Documento registrado no TSE pela candidatura a PRESIDENTE. Cobre as demais candidaturas do partido por atribuicao partidaria (estado B), e nunca como proposta propria de candidatura ao Senado. Toda posicao derivada dele exige escopo declarado."
+   "_escopo_do_registro": "Documento registrado no TSE pela candidatura a PRESIDENTE. Cobre as demais candidaturas do partido por atribuicao partidaria (estado B), e nunca como proposta propria de candidatura ao Senado. Toda posicao derivada dele exige escopo declarado.",
+   "assinatura": "candidatura",
+   "assinado_por": "Samara Martins, candidatura à Presidência da República",
+   "_porque_assinatura": "O titulo nomeia a candidatura, nao o partido, e o texto e personalizado do inicio ao fim ('Samara defende:'). Documento assinado por uma candidatura fala por ela e por mais ninguem: usa-lo sob outro candidato poria na boca dele o que outra pessoa disse. Criterio estabelecido pela revisao humana em 25/08/2026, que aprovou programas assinados pelo partido e reprovou os 20 itens deste."
   },
   {
    "id_documento": "doc-programa-up-tse-2",
@@ -101,7 +107,8 @@
    "_correcao": "ERRO DE PROVENIENCIA CORRIGIDO em 24/ago/2026. Estava registrado como 'outra versao registrada' do programa da UP. NAO E: e o programa ESTADUAL do Espirito Santo (Vitoria, ago/2026), com propostas especificas capixabas (salario-minimo de R$ 3.242, Banestes, Cesan, Escelsa, Transcol, po preto, Rio Doce). NAO USAR para candidato de SP. Nota de metodo: o programa estadual do ES tem 23 paginas contra 2 do nacional. Se houver programa estadual da UP para SP, seria a fonte certa para os candidatos paulistas — vale procurar.",
    "arquivo_local": "fontes/programa-up-2026-ESPIRITO-SANTO--NAO-USAR-PARA-SP.pdf",
    "bytes": 261883,
-   "sha256_16": "fdb7dcc3ff7e4308"
+   "sha256_16": "fdb7dcc3ff7e4308",
+   "assinatura": "partido"
   },
   {
    "id_documento": "doc-pstu-cobertura",
@@ -214,7 +221,8 @@
    "bytes": 1691345,
    "sha256_16": "cdece60b71117c78",
    "cargo_registrado": "presidente",
-   "_escopo_do_registro": "Documento registrado no TSE pela candidatura a PRESIDENTE. Cobre as demais candidaturas do partido por atribuicao partidaria (estado B), e nunca como proposta propria de candidatura ao Senado. Toda posicao derivada dele exige escopo declarado."
+   "_escopo_do_registro": "Documento registrado no TSE pela candidatura a PRESIDENTE. Cobre as demais candidaturas do partido por atribuicao partidaria (estado B), e nunca como proposta propria de candidatura ao Senado. Toda posicao derivada dele exige escopo declarado.",
+   "assinatura": "partido"
   },
   {
    "id_documento": "doc-programa-pcb-tse",
@@ -233,7 +241,8 @@
    "bytes": 314957,
    "sha256_16": "52f765533f93409a",
    "cargo_registrado": "presidente",
-   "_escopo_do_registro": "Documento registrado no TSE pela candidatura a PRESIDENTE. Cobre as demais candidaturas do partido por atribuicao partidaria (estado B), e nunca como proposta propria de candidatura ao Senado. Toda posicao derivada dele exige escopo declarado."
+   "_escopo_do_registro": "Documento registrado no TSE pela candidatura a PRESIDENTE. Cobre as demais candidaturas do partido por atribuicao partidaria (estado B), e nunca como proposta propria de candidatura ao Senado. Toda posicao derivada dele exige escopo declarado.",
+   "assinatura": "partido"
   },
   {
    "id_documento": "doc-tse-redes-sociais-2026",
