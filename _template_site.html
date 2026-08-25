@@ -125,6 +125,18 @@
   .placa .r{display:block;margin-top:5px;font-size:.74rem;letter-spacing:.1em;
     text-transform:uppercase;color:var(--ink-2)}
 
+  /* ---------- chamada: por que o site existe ---------- */
+  .chamada-topo{margin:30px 0 0;padding:24px 26px;background:var(--surface-2);
+    border-left:5px solid var(--acento-vivo);border-radius:0 6px 6px 0}
+  .chamada-topo p{max-width:64ch}
+  .chamada-topo .forte{font-family:"Bricolage",system-ui,sans-serif;font-size:1.32rem;
+    line-height:1.24;font-weight:700;letter-spacing:-.02em;color:var(--ink)}
+  .chamada-topo .depois{margin-top:12px;color:var(--ink-2);font-size:1.02rem}
+  .chamada-topo .pedido{margin-top:16px;padding-top:15px;border-top:1px solid var(--rule);
+    font-size:1rem;color:var(--ink-2)}
+  .chamada-topo .pedido strong{color:var(--ink)}
+  .chamada-topo a{font-weight:600}
+
   /* ---------- aviso ---------- */
   .aviso{background:var(--alert-bg);border:1px solid var(--alert-line);border-left:4px solid var(--alert);
     border-radius:0 4px 4px 0;padding:14px 18px;margin:22px 0 0;font-size:.95rem;line-height:1.55;
@@ -414,6 +426,22 @@
     <p class="atualizado">Dados de <strong id="atualizado"></strong>. Cada informação mostra sua
       própria data de referência.</p>
     <div class="placa" id="placa"></div>
+
+    <div class="chamada-topo">
+      <p class="forte">Candidaturas ao Senado não precisam registrar plano de governo no TSE.</p>
+      <p class="depois">A lei exige proposta de governo apenas de quem concorre a Presidente,
+        Governador e Prefeito — senador não está na lista
+        (<a href="https://www.planalto.gov.br/ccivil_03/leis/l9504.htm" target="_blank"
+        rel="noopener">Lei 9.504/1997, art. 11, §1º, IX <span class="vis-oculto">(abre em nova
+        aba)</span></a>). Por isso é difícil saber o que cada candidatura defende: não existe um
+        documento único onde procurar.</p>
+      <p class="depois">Este site existe para ajudar nisso — reunir o que há, com a fonte de cada
+        informação, e dizer com clareza o que não foi encontrado.</p>
+      <p class="pedido"><strong>Ajude a construir.</strong> Achou um erro, conhece uma fonte que
+        falta, ou tem uma dúvida? Escreva para
+        <a href="mailto:kelli.vgs@gmail.com?subject=Senado%20SP%202026%20%E2%80%94%20feedback">kelli.vgs@gmail.com</a>.</p>
+    </div>
+
     <div class="aviso" role="note" id="aviso"></div>
   </header>
 
