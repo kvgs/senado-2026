@@ -262,6 +262,9 @@ export const PAGINA_ADMIN = `<!doctype html>
               ">Montar mensagem</button>" +
             '<button type="button" class="sec" data-marcar="enviada" data-cand="' + esc(cid) + '">Marcar como enviadas</button>' +
             '<button type="button" class="sec" data-marcar="descartada" data-cand="' + esc(cid) + '">Descartar</button>' +
+            (c.instagram
+              ? '<button type="button" class="sec" data-dm="' + esc(cid) + '">Montar mensagem para Instagram</button>'
+              : "") +
             '<button type="button" class="sec" data-resposta="' + esc(cid) + '">Registrar resposta recebida</button>' +
           "</div>" +
           '<div data-saida="' + esc(cid) + '"></div>' +
@@ -269,12 +272,22 @@ export const PAGINA_ADMIN = `<!doctype html>
       }).join("");
     }
 
+    /* Sempre visivel, com contagem no proprio titulo: secao que aparece e
+       desaparece deixa a pessoa sem saber se existe. */
+    var ROTULO = { enviada: "enviada ao gabinete", descartada: "descartada",
+                   respondida: "respondida", pendente: "pendente" };
     var hist = document.getElementById("historico");
-    hist.hidden = !feitas.length;
-    document.getElementById("lista-hist").innerHTML = feitas.slice(0, 200).map(function(p){
-      return "<li><strong>" + esc(p.estado) + "</strong> · " + esc(nomeCand(p.id_candidatura).nome) +
-        " · " + esc(p.pergunta) + "</li>";
-    }).join("");
+    hist.hidden = false;
+    hist.querySelector("summary").textContent =
+      feitas.length ? "Já decididas (" + feitas.length + ")" : "Já decididas (nenhuma ainda)";
+    document.getElementById("lista-hist").innerHTML = feitas.length
+      ? feitas.slice(0, 300).map(function(p){
+          return "<li><strong>" + esc(ROTULO[p.estado] || p.estado) + "</strong> · " +
+            esc(nomeCand(p.id_candidatura).nome) + " · " + esc(p.pergunta) +
+            (p.decidida_em ? ' <span class="num">em ' + esc(quando(p.decidida_em)) + "</span>" : "") +
+            (p.nota ? "<br><em>" + esc(p.nota) + "</em>" : "") + "</li>";
+        }).join("")
+      : "<li>Nenhuma pergunta foi enviada, descartada ou respondida até agora.</li>";
   }
 
   function selecionadas(cid){
@@ -326,6 +339,30 @@ export const PAGINA_ADMIN = `<!doctype html>
     return { para: c.email, assunto: assunto, corpo: corpo, ids: ids, cand: c };
   }
 
+  /* Versao curta, para mensagem direta. Nao e o e-mail encurtado: DM com tom de
+     oficio nao e lida. Mantem o unico compromisso que nao pode sair — publicar
+     a resposta na integra e nao interpretar silencio. */
+  function montarDM(cid){
+    var c = nomeCand(cid);
+    var ids = selecionadas(cid);
+    var itens = DADOS.perguntas.filter(function(p){ return ids.indexOf(p.id) >= 0; });
+    if (!itens.length) return null;
+
+    var n = itens.length;
+    var txt = "Olá! Escrevo do projeto Senado por São Paulo 2026 " +
+      "(kvgs.github.io/senado-sp-2026), um site independente e sem fins lucrativos que reúne " +
+      "as propostas das candidaturas ao Senado por SP, sempre com a fonte de cada informação.\\n\\n" +
+      "Procuramos nas fontes públicas e não localizamos posição registrada sobre " +
+      (n === 1 ? "este ponto:" : "estes pontos:") + "\\n\\n";
+    itens.forEach(function(p){ txt += "• " + p.pergunta + "\\n"; });
+    txt += "\\n" + (n === 1 ? "Um eleitor perguntou" : n + " eleitores perguntaram") +
+      " isso pelo site. Se puderem responder, publicamos na íntegra, identificado como " +
+      "declaração da candidatura e com a data. Se preferirem indicar um documento público " +
+      "que já trate do assunto, melhor ainda.\\n\\nObrigada!";
+
+    return { arroba: c.instagram.replace(/^@/, ""), texto: txt, ids: ids, cand: c };
+  }
+
   document.addEventListener("click", function(e){
     var b = e.target.closest ? e.target.closest("button") : null;
     if (!b) return;
@@ -356,6 +393,31 @@ export const PAGINA_ADMIN = `<!doctype html>
       var ta = document.getElementById("msg-" + cid);
       ta.value = "Assunto: " + m.assunto + "\\n\\n" + m.corpo;
       ta.focus(); ta.select();
+      return;
+    }
+
+    if (b.dataset.dm){
+      var cidD = b.dataset.dm;
+      var m = montarDM(cidD);
+      var saidaD = document.querySelector('[data-saida="' + cidD + '"]');
+      if (!m){ saidaD.innerHTML = '<div class="erro">Nenhuma pergunta selecionada.</div>'; return; }
+
+      saidaD.innerHTML =
+        '<div class="form-resp"><h3>Mensagem para @' + esc(m.arroba) + "</h3>" +
+        '<p class="dica">O Instagram não permite enviar por fora do aplicativo: o link abre a ' +
+        'conversa, e o texto você cola. Não é limitação nossa — a API só deixa responder quem ' +
+        'escreveu nas últimas 24h.</p>' +
+        '<label for="dm-' + esc(cidD) + '">Texto (' + m.ids.length + " pergunta(s)) · " +
+        m.texto.length + " caracteres</label>" +
+        '<textarea id="dm-' + esc(cidD) + '" rows="12" readonly></textarea>' +
+        '<div class="barra">' +
+          '<button type="button" data-copiar="dm-' + esc(cidD) + '">Copiar texto</button>' +
+          '<a href="https://ig.me/m/' + esc(m.arroba) + '" target="_blank" rel="noopener">' +
+          '<button type="button" class="sec">Abrir conversa no Instagram</button></a>' +
+        "</div></div>";
+
+      var ta = document.getElementById("dm-" + cidD);
+      ta.value = m.texto; ta.focus(); ta.select();
       return;
     }
 
@@ -482,7 +544,9 @@ export const PAGINA_ADMIN = `<!doctype html>
     }
 
     if (b.dataset.copiar){
-      var ta2 = document.getElementById("msg-" + b.dataset.copiar);
+      /* Aceita tanto "msg-<cid>" (e-mail) quanto "dm-<cid>" (Instagram). */
+      var alvoId = b.dataset.copiar;
+      var ta2 = document.getElementById(alvoId) || document.getElementById("msg-" + alvoId);
       ta2.focus(); ta2.select();
       try { document.execCommand("copy"); b.textContent = "Copiada"; } catch(err){}
       if (navigator.clipboard) navigator.clipboard.writeText(ta2.value).catch(function(){});
