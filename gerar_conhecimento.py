@@ -31,9 +31,9 @@ L.append("")
 L.append("## O que cada tipo de fonte pode sustentar")
 L.append("")
 L.append("A pergunta não é se a fonte é boa. É se ela é do **tipo** que sustenta")
-L.append("aquela **espécie** de afirmação. Um cadastro de candidaturas é fonte")
-L.append("excelente para saber o partido de alguém, e imprestável para saber o que")
-L.append("essa pessoa propõe.")
+L.append("aquela **espécie** de afirmação. Um cadastro de candidaturas registra com")
+L.append("precisão o partido de alguém, e simplesmente não contém o que essa pessoa")
+L.append("propõe.")
 L.append("")
 
 for chave, f in kb["tipos_de_fonte"].items():

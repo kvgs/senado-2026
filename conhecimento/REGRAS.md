@@ -11,9 +11,9 @@ Base de conhecimento do projeto: o que cada tipo de fonte pode e nao pode susten
 ## O que cada tipo de fonte pode sustentar
 
 A pergunta não é se a fonte é boa. É se ela é do **tipo** que sustenta
-aquela **espécie** de afirmação. Um cadastro de candidaturas é fonte
-excelente para saber o partido de alguém, e imprestável para saber o que
-essa pessoa propõe.
+aquela **espécie** de afirmação. Um cadastro de candidaturas registra com
+precisão o partido de alguém, e simplesmente não contém o que essa pessoa
+propõe.
 
 ### `cadastro` — Cadastro de candidaturas
 

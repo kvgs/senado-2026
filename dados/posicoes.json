@@ -2281,14 +2281,21 @@
    "id_documento": "doc-programa-pstu-tse",
    "texto": "Nenhuma verba publica para grandes empresarios da educacao; fim das PPP e terceirizacoes nas redes publicas; revogacao da BNCC e do Novo Ensino Medio; contra a militarizacao das escolas e contra projetos tipo Escola Sem Partido; contra a plataformizacao do ensino; ampliacao de vagas em creches, escolas e universidades; permanencia estudantil.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "_destaque": "Contraste direto com o MISSAO, que propoe substituir cotas por bolsas por desempenho e criar codigo de conduta com punicoes, e com Salles, que propoe educacao domiciliar (PLP 118/2025).",
    "id_posicao": "p097",
    "conferido_por_ia": {
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-pstu-2026.pdf, sha 1868565fb0d5de77)"
-   }
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "confere",
+    "nota": "",
+    "citacao_conferida_na_fonte": true
+   },
+   "citacao_literal": "Todas as frases foram validadas no pdf"
   },
   {
    "id_tema": "t3",
@@ -2321,14 +2328,21 @@
    "id_documento": "doc-programa-pstu-tse",
    "texto": "Fim dos creditos e subsidios publicos ao grande agronegocio; recuperacao de areas desmatadas; demarcacao de terras indigenas e titulacao quilombola; CONTRA a exploracao do petroleo da Margem Equatorial; contra a privatizacao dos rios da Amazonia; planos de prevencao a enchentes e deslizamentos; reflorestamento urbano. Diagnostico: o agronegocio responde por cerca de 75% das emissoes nacionais de gases de efeito estufa.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "_destaque": "Contraste direto com o MISSAO, que defende a exploracao soberana do petroleo da margem equatorial, e com Salles, que susta decretos de desapropriacao de imoveis rurais.",
    "id_posicao": "p099",
    "conferido_por_ia": {
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-pstu-2026.pdf, sha 1868565fb0d5de77)"
-   }
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "confere",
+    "nota": "",
+    "citacao_conferida_na_fonte": true
+   },
+   "citacao_literal": "Todas as informações foram confirmadas na leitura do pdf"
   },
   {
    "id_tema": "t7",
@@ -2491,6 +2505,11 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "corrigir",
+    "nota": "Esse pdf parece ser apenas da Samara Martins, não sei se serve para esse candidato"
    }
   },
   {
@@ -2531,6 +2550,11 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "corrigir",
+    "nota": "Esse pdf parace ser para Samara Martins, não sei se também serve para o candidato Marcio"
    }
   },
   {
