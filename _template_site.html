@@ -1233,8 +1233,10 @@ function renderComp(){
         '<th scope="col">Candidatura</th><th scope="col">Intenção de voto</th>'+
         '<th scope="col"><span class="vis-oculto">Representação visual</span></th></tr></thead><tbody>';
   for(const [cid,r] of comN){const c=D.candidatos[cid];
-    h+='<tr><th scope="row" style="font-weight:600">'+esc(c.nome)+' <span class="sigla">'+esc(c.partido)+
-       '</span></th><td class="pc">'+esc(String(r.percentual).replace('.',','))+'%</td>'+
+    /* Parenteses em volta da sigla: sem eles "SIMONE TEBET PSB" le como um nome
+       so, porque a linha inteira e caixa alta e o partido tem o mesmo peso. */
+    h+='<tr><th scope="row" style="font-weight:600">'+esc(c.nome)+' <span class="sigla">('+esc(c.partido)+
+       ')</span></th><td class="pc">'+esc(String(r.percentual).replace('.',','))+'%</td>'+
        '<td><span class="barra" aria-hidden="true"><span style="width:'+(r.percentual/max*100)+'%"></span></span></td></tr>';}
   for(const o of p.outros)
     h+='<tr><th scope="row" style="color:var(--muted);font-weight:600">'+esc(o.rotulo)+
