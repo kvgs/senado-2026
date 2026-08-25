@@ -514,13 +514,18 @@
    "citacao_literal": "Retomada territorial de áreas dominadas por facções, tratando grupos armados como inimigos do Estado, com guerra ao crime decretada no primeiro dia de governo.",
    "texto": "Aplicação do direito penal do inimigo, com medidas preventivas e penas desproporcionais para integrantes de organização criminosa. Superpresídios de segurança máxima em regiões remotas, inspirados no Cecot de El Salvador.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-24",
     "forca": "alta",
     "base": "Termos-chave da afirmação localizados no PDF registrado no TSE, baixado e arquivado em fontes/ com hash SHA-256."
    },
-   "_confirmado_no_documento_registrado": "2026-08-24"
+   "_confirmado_no_documento_registrado": "2026-08-24",
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "confere",
+    "nota": ""
+   }
   },
   {
    "id_posicao": "p023",
@@ -534,13 +539,18 @@
    "id_documento": "doc-programa-missao-tse",
    "citacao_literal": "Transformar as 12.348 favelas do país em bairros formais em 10 anos, com título de propriedade, abertura de ruas, infraestrutura completa e presença permanente do Estado.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-24",
     "forca": "alta",
     "base": "Termos-chave da afirmação localizados no PDF registrado no TSE, baixado e arquivado em fontes/ com hash SHA-256."
    },
-   "_confirmado_no_documento_registrado": "2026-08-24"
+   "_confirmado_no_documento_registrado": "2026-08-24",
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "confere",
+    "nota": ""
+   }
   },
   {
    "id_posicao": "p024",
@@ -555,13 +565,18 @@
    "citacao_literal": "Retorno ao método fônico, fim da progressão continuada, premiação por desempenho e ensino técnico profissionalizante para garantir que todo aluno saia da escola alfabetizado e empregável.",
    "texto": "Substituir cotas por bolsas de estudo por desempenho acadêmico. Código de conduta do estudante com punições objetivas.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-24",
     "forca": "alta",
     "base": "Termos-chave da afirmação localizados no PDF registrado no TSE, baixado e arquivado em fontes/ com hash SHA-256."
    },
-   "_confirmado_no_documento_registrado": "2026-08-24"
+   "_confirmado_no_documento_registrado": "2026-08-24",
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "confere",
+    "nota": ""
+   }
   },
   {
    "id_posicao": "p025",
@@ -575,13 +590,18 @@
    "id_documento": "doc-programa-missao-tse",
    "citacao_literal": "Prontuário único nacional com inteligência artificial para prever doenças, fila do SUS ordenada por risco e telemedicina para acabar com o gargalo do acesso.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-24",
     "forca": "alta",
     "base": "Termos-chave da afirmação localizados no PDF registrado no TSE, baixado e arquivado em fontes/ com hash SHA-256."
    },
-   "_confirmado_no_documento_registrado": "2026-08-24"
+   "_confirmado_no_documento_registrado": "2026-08-24",
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "confere",
+    "nota": ""
+   }
   },
   {
    "id_posicao": "p026",
@@ -604,7 +624,12 @@
     "ressalva": "Confirmados no documento registrado: PEC do Equilíbrio Fiscal, Zonas Econômicas Especiais e o programa Frentes Cidadãs. NÃO localizado no documento registrado: a proposta de extinguir a Justiça do Trabalho e substituir a CLT, que aparece no material de campanha."
    },
    "_confirmado_no_documento_registrado": "2026-08-24",
-   "_parcialmente_confirmado": "Confirmados no documento registrado: PEC do Equilíbrio Fiscal, Zonas Econômicas Especiais e o programa Frentes Cidadãs. NÃO localizado no documento registrado: a proposta de extinguir a Justiça do Trabalho e substituir a CLT, que aparece no material de campanha."
+   "_parcialmente_confirmado": "Confirmados no documento registrado: PEC do Equilíbrio Fiscal, Zonas Econômicas Especiais e o programa Frentes Cidadãs. NÃO localizado no documento registrado: a proposta de extinguir a Justiça do Trabalho e substituir a CLT, que aparece no material de campanha.",
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "corrigir",
+    "nota": "Não achei a parte sobre CLT"
+   }
   },
   {
    "id_posicao": "p027",
@@ -619,7 +644,7 @@
    "citacao_literal": "Criar reserva estratégica em Bitcoin e marcos regulatórios para atrair empresas e talentos do setor de tecnologia para o Brasil.",
    "texto": "Passar de exportador de minério bruto a fabricante de ímãs permanentes, semicondutores e baterias, com base nas reservas de terras raras; data centers no Nordeste.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-24",
     "forca": "alta",
@@ -627,7 +652,12 @@
     "ressalva": "Confirmados no documento registrado: terras raras e semicondutores. NÃO localizada no documento registrado: a reserva estratégica em Bitcoin, que aparece no material de campanha."
    },
    "_confirmado_no_documento_registrado": "2026-08-24",
-   "_parcialmente_confirmado": "Confirmados no documento registrado: terras raras e semicondutores. NÃO localizada no documento registrado: a reserva estratégica em Bitcoin, que aparece no material de campanha."
+   "_parcialmente_confirmado": "Confirmados no documento registrado: terras raras e semicondutores. NÃO localizada no documento registrado: a reserva estratégica em Bitcoin, que aparece no material de campanha.",
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "confere",
+    "nota": "Não achei a palavra bitcoin"
+   }
   },
   {
    "id_posicao": "p028",
@@ -2712,6 +2742,11 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "corrigir",
+    "nota": "Diz ser da candidata Samara Martins, mesmo sendo o mesmo partido"
    }
   },
   {
@@ -2731,6 +2766,11 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "corrigir",
+    "nota": "Diz ser da candidata Samara Martins, mesmo sendo o mesmo partido"
    }
   },
   {
@@ -2750,6 +2790,11 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "corrigir",
+    "nota": "Diz ser da candidata Samara Martins, mesmo sendo o mesmo partido"
    }
   },
   {
@@ -2769,6 +2814,11 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "corrigir",
+    "nota": "Diz ser da candidata Samara Martins, mesmo sendo o mesmo partido"
    }
   },
   {
@@ -2816,7 +2866,12 @@
     "forca": "alta",
     "base": "Termos localizados no PDF registrado no TSE, arquivado em fontes/ com hash."
    },
-   "_confirmado_no_documento_registrado": "2026-08-24"
+   "_confirmado_no_documento_registrado": "2026-08-24",
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "corrigir",
+    "nota": "Não achei citação direta \"Politica de seguranca publica com foco na prevencao\", mas parece implícito"
+   }
   },
   {
    "atribuido_a_tipo": "partido",
@@ -2827,7 +2882,7 @@
    "nivel_fonte": "oficial",
    "id_documento": "doc-programa-pcb-tse",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "id_posicao": "p122",
    "id_tema": "t9",
    "texto": "Combate as opressoes e a toda forma de discriminacao e preconceito. Garantia de direitos reprodutivos, com o aborto tratado no documento registrado. Fim dos monopolios nas comunicacoes. Solidariedade internacionalista a Cuba, Palestina, Ira e Venezuela.",
@@ -2838,7 +2893,14 @@
     "ressalva": "Confirmados direitos reprodutivos e fim dos monopolios de comunicacao. NAO localizada mencao especifica ao feminicidio no documento registrado."
    },
    "_parcialmente_confirmado": "Confirmados direitos reprodutivos. NAO localizada mencao especifica ao feminicidio no documento registrado.",
-   "_confirmado_no_documento_registrado": "2026-08-24"
+   "_confirmado_no_documento_registrado": "2026-08-24",
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "confere",
+    "nota": "",
+    "citacao_conferida_na_fonte": true
+   },
+   "citacao_literal": "\"Dentre eles, desenvolvemos a luta permanente contra o imperialismo e a solidariedade militanteaCuba, à Palestina, ao povo do Irã, da Venezuela e todos os povos que enfrentama velhaordem imperial e defendem sua soberania e autodeterminação.\", \"Legalizaçãodoaborto, com garantia de atendimento na rede pública de saúde, bemcomo políticaspúblicas que possibilitem a emancipação da mulher dos trabalhos domésticos, zerandoas filas de creches, ampliando a educação integral e efetuando a construção massivaderestaurantes e lavanderias populares.\""
   }
  ],
  "_conferencia_por_ia": {
