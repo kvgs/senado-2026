@@ -12,7 +12,7 @@
     --ink:#141110;      /* 17.5:1 sobre surface */
     --ink-2:#3E3833;    /*  9.6:1 */
     --muted:#6A6259;    /*  5.6:1 */
-    --acento-vivo:#B8331A;   /* faixa: texto branco em cima, 5.9:1 */
+    --acento-vivo:#CFE4FA;   /* faixa clara, texto --ink em cima: 14.1:1 */
     /* rule-strong desenha borda de campo e de botao, entao precisa de 3:1
        (WCAG 1.4.11). O valor anterior, #A9B1AB, dava 2.2:1. */
     --rule:#E5E0DA; --rule-strong:#7E756B;
@@ -22,12 +22,15 @@
     --s-verificada:#7A5200;   /* 6.2:1 */
     --s-secundaria:#B02418;   /* 5.6:1 */
     --s-declaracao:#6B2FA8;   /* 6.9:1 */
-    --s-registro:#0F5AA8;     /* 6.0:1 */
+    --s-registro:#122A45;     /* azul-noite, 11.5:1 sobre o chip. Separado da cor
+                                 de marca por luminancia (2.1:1), para selo e
+                                 marca nao se confundirem sendo os dois azuis. */
     /* fundos das etiquetas: a mesma cor, lavada, para a etiqueta ter corpo */
     --f-oficial:#DFF3E7; --f-verificada:#FBEFD2; --f-secundaria:#FBE3E0;
-    --f-declaracao:#EEE4FB; --f-registro:#DEEBFB;
-    --acento:#B8331A;         /* coral: link, aba ativa, faixa. Nao colide com
-                                 nenhum dos cinco selos de procedencia. */
+    --f-declaracao:#EEE4FB; --f-registro:#DCE6F2;
+    --acento:#0A56B4;         /* azul vivo: link, aba ativa, numero de urna.
+                                 Separado do selo de registro por TOM: aquele
+                                 desceu para azul-marinho. */
     --alert:#A32C20; --alert-bg:#FBEEEC; --alert-line:#D9A9A2;
   }
   @media (prefers-color-scheme: dark){
@@ -36,10 +39,10 @@
       --ink:#F4F0EB; --ink-2:#CFC7BF; --muted:#A39A90;
       --rule:#2B2B30; --rule-strong:#70707A; --focus:#7FB2E8;
       --s-oficial:#6FD09B; --s-verificada:#EFC169; --s-secundaria:#FF9184;
-      --s-declaracao:#CDA5F5; --s-registro:#8CBEF5;
+      --s-declaracao:#CDA5F5; --s-registro:#5E97D9;
       --f-oficial:#12291D; --f-verificada:#2B2311; --f-secundaria:#301A17;
-      --f-declaracao:#241A33; --f-registro:#15243A;
-      --acento:#FF9576; --acento-vivo:#FF9576;
+      --f-declaracao:#241A33; --f-registro:#111D2E;
+      --acento:#7CB8F7; --acento-vivo:#16283D;
       --alert:#F0897C; --alert-bg:#2B1C1A; --alert-line:#663932;
     }
   }
@@ -48,10 +51,10 @@
     --ink:#F4F0EB; --ink-2:#CFC7BF; --muted:#A39A90;
     --rule:#2B2B30; --rule-strong:#70707A; --focus:#7FB2E8;
     --s-oficial:#6FD09B; --s-verificada:#EFC169; --s-secundaria:#FF9184;
-    --s-declaracao:#CDA5F5; --s-registro:#8CBEF5;
+    --s-declaracao:#CDA5F5; --s-registro:#5E97D9;
     --f-oficial:#12291D; --f-verificada:#2B2311; --f-secundaria:#301A17;
-    --f-declaracao:#241A33; --f-registro:#15243A;
-    --acento:#FF9576; --acento-vivo:#FF9576;
+    --f-declaracao:#241A33; --f-registro:#111D2E;
+    --acento:#7CB8F7; --acento-vivo:#16283D;
     --alert:#F0897C; --alert-bg:#2B1C1A; --alert-line:#663932;
   }
 
@@ -114,11 +117,12 @@
   .placa{position:relative;margin:34px 0 0;padding:22px 0}
   .placa::before{content:"";position:absolute;inset:0 -50vw;background:var(--acento-vivo)}
   .placa ul{position:relative;display:flex;flex-wrap:wrap;gap:8px 44px;list-style:none}
-  .placa li{color:#fff}
-  .placa .n{display:block;font-family:"PlexMono",monospace;font-size:2rem;line-height:1;
-    font-weight:500;font-variant-numeric:tabular-nums}
+  /* Texto escuro sobre faixa clara: destaque, nao bloco de aviso. */
+  .placa li{color:var(--ink)}
+  .placa .n{display:block;font-family:"PlexMono",monospace;font-size:2.1rem;line-height:1;
+    font-weight:500;font-variant-numeric:tabular-nums;color:var(--acento)}
   .placa .r{display:block;margin-top:5px;font-size:.74rem;letter-spacing:.1em;
-    text-transform:uppercase;opacity:.9}
+    text-transform:uppercase;color:var(--ink-2)}
 
   /* ---------- aviso ---------- */
   .aviso{background:var(--alert-bg);border:1px solid var(--alert-line);border-left:4px solid var(--alert);
