@@ -104,6 +104,12 @@ export const PAGINA_ADMIN = `<!doctype html>
   .fontes .porque{display:block;margin-top:4px;font-size:.83rem;color:var(--muted)}
   .fontes .tipo{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.05em;
     text-transform:uppercase;padding:1px 6px;border-radius:3px;border:1px solid var(--rule-forte)}
+  /* Fonte cujo TIPO nao sustenta o que foi perguntado tem de PARECER insuficiente:
+     era esse o erro original — cadastro apresentado como se fosse fonte de proposta. */
+  .fontes li.insuf{opacity:.72}
+  .fontes .insuf .tipo{border-color:var(--erro);color:var(--erro)}
+  .fontes .aviso-tipo{display:block;margin-top:4px;font-size:.82rem;color:var(--erro);
+    font-weight:600}
 </style>
 </head>
 <body>
@@ -452,12 +458,17 @@ export const PAGINA_ADMIN = `<!doctype html>
           'Nada disto entrou no acervo. Abra cada link e decida — o modelo achou as páginas, ' +
           'mas quem lê e julga é você.</p><ol>' +
           r.fontes.map(function(f){
-            return '<li><a href="' + esc(f.url) + '" target="_blank" rel="noopener">' +
+            return '<li' + (f.suficiente === false ? ' class="insuf"' : '') + '>' +
+              '<a href="' + esc(f.url) + '" target="_blank" rel="noopener">' +
               esc(f.titulo || f.url) + "</a>" +
               '<span class="meta">' + (f.tipo ? '<span class="tipo">' + esc(f.tipo) + "</span> " : "") +
               esc(f.veiculo || "veículo não identificado") + " · " +
               esc(f.data || "data não identificada") + "</span>" +
               (f.trecho ? '<span class="trecho">' + esc(f.trecho) + "</span>" : "") +
+              (f.suficiente === false
+                ? '<span class="aviso-tipo">Este tipo de fonte não sustenta o que foi ' +
+                  'perguntado — serve de pista, não de fonte.</span>'
+                : "") +
               (f.porque ? '<span class="porque">' + esc(f.porque) + "</span>" : "") +
               "</li>";
           }).join("") + "</ol></div>";

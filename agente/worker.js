@@ -20,6 +20,7 @@
 import Anthropic from "@anthropic-ai/sdk";
 import ACERVO from "./acervo-hashes.json";
 import CATALOGO from "./catalogo.json";
+import CONHECIMENTO from "./regras.json";
 import { PAGINA_ADMIN } from "./pagina-admin.js";
 
 const CHAVES = new Set(ACERVO.chaves);
@@ -481,32 +482,54 @@ async function rotaPromovidas(request, env, origem) {
   return json({ ok: true, marcadas: ids.length }, 200, origem);
 }
 
+/* A secao de tipos de fonte e MONTADA da base de conhecimento, nao escrita aqui.
+   Duas copias da mesma regra divergem, e a divergencia apareceria como fonte que
+   a pesquisa recomenda e o validador recusa na hora de gravar. */
+const TIPOS_PARA_PROMPT = Object.entries(CONHECIMENTO.tipos_de_fonte)
+  .map(([chave, f]) => {
+    const linhas = [`- ${chave} (${f.nome}): ${f.o_que_e}`];
+    linhas.push(`  SUSTENTA: ${f.sustenta.join(", ")}`);
+    linhas.push(`  NAO SUSTENTA: ${f.nao_sustenta.join(", ")}`);
+    if (f.cuidado) linhas.push(`  CUIDADO: ${f.cuidado}`);
+    return linhas.join("\n");
+  })
+  .join("\n");
+
 const REGRAS_PESQUISA = `Você ajuda a curadoria de um acervo sobre as candidaturas ao Senado por São Paulo em 2026. Sua função é ENCONTRAR FONTES para uma pessoa conferir — nunca responder a pergunta.
 
 O QUE VOCÊ DEVOLVE
-Uma lista de documentos e páginas que podem tratar do assunto perguntado, com link. Para cada um, diga o que ele parece conter e por que pode servir. Não afirme qual é a posição da candidatura: você não sabe, e quem vai ler a fonte e decidir é uma pessoa.
+Uma lista de documentos e páginas que podem tratar do assunto, com link. Para cada um, diga o que ele parece conter, de que TIPO de fonte se trata, e se esse tipo sustenta a espécie de afirmação que a pergunta pede.
 
 Escreva "a página X diz que...", nunca "a candidatura defende...". A diferença não é estilo: a primeira é verificável no link, a segunda é uma afirmação sua sobre uma pessoa real em ano eleitoral.
 
-PRIORIDADE DE FONTES, nesta ordem
-1. Documento registrado no TSE (programa de partido, plano de governo)
+TIPOS DE FONTE DESTE ACERVO — e o que cada um pode sustentar
+Esta é a regra que mais importa. A pergunta não é se a fonte é boa: é se ela é do TIPO que sustenta aquela ESPÉCIE de afirmação. Um cadastro de candidaturas é fonte excelente para saber o partido de alguém, e imprestável para saber o que essa pessoa propõe.
+
+${TIPOS_PARA_PROMPT}
+
+Se a melhor fonte que você encontrar for de um tipo que NÃO sustenta o que a pergunta pede, diga isso explicitamente no campo "porque", e marque o campo "suficiente" como nao. Fonte insuficiente relatada com honestidade vale mais que fonte forçada.
+
+PRIORIDADE, quando houver mais de uma
+1. Documento registrado no TSE
 2. Site oficial da candidatura ou do partido, e redes declaradas no registro
-3. Registro legislativo: projeto, voto, relatoria em câmara, assembleia ou senado
-4. Entrevista ou declaração publicada em veículo jornalístico identificado
+3. Registro legislativo: projeto, voto, relatoria
+4. Entrevista ou declaração em veículo identificado
 5. Qualquer outra coisa — sinalize como frágil
 
-Uma entrevista NÃO é equivalente a um documento registrado, e a diferença tem de aparecer no que você escreve. Material de campanha de outro estado, ou de outra eleição, não serve para São Paulo: se encontrar, diga isso explicitamente.
+ESCOPO
+Material de outro estado, ou de outra eleição, NÃO serve para São Paulo em 2026. Programas partidários são registrados por UF. Se encontrar, diga isso e marque "suficiente" como nao.
 
-FORMATO — repita este bloco para cada fonte, e não escreva mais nada fora deles:
+FORMATO — repita este bloco para cada fonte, e não escreva nada fora deles:
 
 FONTE
 titulo: <título da página ou documento>
 url: <endereço completo>
 veiculo: <quem publica>
 data: <data da publicação, ou "não identificada">
-tipo: <oficial | verificada | secundaria | declaracao_candidato | registro_legislativo>
+tipo: <uma das chaves de tipo listadas acima>
+suficiente: <sim | nao>
 trecho: <o que a página efetivamente diz sobre o assunto, em uma ou duas frases>
-porque: <por que isso serve, e qual a ressalva>
+porque: <por que serve, ou por que não serve, e qual a ressalva>
 FIM
 
 Se não encontrar nada que trate do assunto, responda apenas:
@@ -514,7 +537,7 @@ Se não encontrar nada que trate do assunto, responda apenas:
 NADA ENCONTRADO
 <uma frase dizendo o que você procurou e onde>
 
-Não preencha a lista com fontes que não tratam do assunto perguntado. Lista curta e certa vale mais que lista longa: quem vai abrir cada link é uma pessoa, e link que não serve custa o tempo dela.`;
+Lista curta e certa vale mais que lista longa: quem vai abrir cada link é uma pessoa, e link que não serve custa o tempo dela.`;
 
 function analisaFontes(saida) {
   if (/^\s*NADA ENCONTRADO/i.test(saida)) {
@@ -533,6 +556,9 @@ function analisaFontes(saida) {
     fontes.push({
       titulo: campo("titulo"), url, veiculo: campo("veiculo"), data: campo("data"),
       tipo: campo("tipo"), trecho: campo("trecho"), porque: campo("porque"),
+      /* "suficiente" e o campo que a base de conhecimento tornou possivel:
+         diz se o TIPO da fonte sustenta a especie de afirmacao pedida. */
+      suficiente: /^s/i.test(campo("suficiente")),
     });
   }
   return { nada: false, nota: "", fontes };

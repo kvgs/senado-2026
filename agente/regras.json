@@ -1,0 +1,106 @@
+{
+ "_gerado_de": "conhecimento/regras.json",
+ "tipos_de_fonte": {
+  "cadastro": {
+   "nome": "Cadastro de candidaturas",
+   "o_que_e": "Base que lista quem se registrou: nome, partido, numero, bens declarados, escolaridade, suplentes. Espelho do registro eleitoral.",
+   "sustenta": [
+    "dados_cadastrais",
+    "situacao_de_registro",
+    "coligacao",
+    "bens_declarados"
+   ],
+   "nao_sustenta": [
+    "proposta",
+    "posicao_tematica",
+    "enfase_de_campanha",
+    "cargo_executivo_anterior"
+   ]
+  },
+  "plano_tse": {
+   "nome": "Plano ou programa registrado no TSE",
+   "o_que_e": "Documento que o partido ou a candidatura protocolou na Justica Eleitoral.",
+   "sustenta": [
+    "proposta_do_partido",
+    "posicao_tematica"
+   ],
+   "nao_sustenta": [
+    "proposta_propria_da_candidatura"
+   ],
+   "cuidado": "Candidatura ao Senado NAO precisa registrar plano de governo: a Lei 9.504/1997, art. 11, §1º, IX exige proposta so de Presidente, Governador e Prefeito. Todo plano no acervo e do partido, nao do candidato a senador."
+  },
+  "programa_partidario": {
+   "nome": "Programa partidario nao registrado",
+   "o_que_e": "Material programatico publicado pelo partido fora do protocolo eleitoral.",
+   "sustenta": [
+    "proposta_do_partido"
+   ],
+   "nao_sustenta": [
+    "proposta_propria_da_candidatura"
+   ]
+  },
+  "site_oficial": {
+   "nome": "Site oficial da candidatura",
+   "o_que_e": "Pagina publicada pela propria campanha.",
+   "sustenta": [
+    "declaracao_da_candidatura",
+    "posicao_tematica"
+   ],
+   "nao_sustenta": [
+    "fato_verificado_por_terceiro"
+   ]
+  },
+  "api_dados_abertos": {
+   "nome": "Dados abertos de casa legislativa",
+   "o_que_e": "API da Camara, do Senado ou da Assembleia, com proposicoes, autorias, ementas e votos.",
+   "sustenta": [
+    "autoria_legislativa",
+    "ementa",
+    "voto_nominal",
+    "mandato"
+   ],
+   "nao_sustenta": [
+    "proposta_de_campanha",
+    "enfase_de_campanha",
+    "cargo_executivo_anterior"
+   ],
+   "cuidado": "O link tem de ser da PROPOSICAO, nunca a raiz da API. Apontar para a raiz de um servico parece procedencia sem ser."
+  },
+  "reportagem": {
+   "nome": "Materia jornalistica",
+   "o_que_e": "Texto de veiculo de imprensa sobre a candidatura.",
+   "sustenta": [
+    "declaracao_relatada",
+    "fato_com_ressalva"
+   ],
+   "nao_sustenta": [
+    "proposta_registrada",
+    "citacao_literal_de_documento"
+   ]
+  },
+  "entrevista": {
+   "nome": "Entrevista ou sabatina",
+   "o_que_e": "Declaracao falada, publicada por terceiro.",
+   "sustenta": [
+    "declaracao_da_candidatura"
+   ],
+   "nao_sustenta": [
+    "proposta_registrada"
+   ]
+  },
+  "dataset_oficial": {
+   "nome": "Dataset oficial do TSE",
+   "o_que_e": "Arquivo de dados abertos publicado pela Justica Eleitoral.",
+   "sustenta": [
+    "dados_cadastrais",
+    "contato_declarado",
+    "rede_social_declarada",
+    "prestacao_de_contas"
+   ],
+   "nao_sustenta": [
+    "proposta",
+    "posicao_tematica"
+   ]
+  }
+ }
+}

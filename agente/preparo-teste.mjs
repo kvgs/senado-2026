@@ -16,7 +16,7 @@ export const ENVIADO = [];
 
 export async function carregarWorker() {
   fs.mkdirSync(TMP, { recursive: true });
-  for (const f of ["acervo-hashes.json", "catalogo.json", "pagina-admin.js"]) {
+  for (const f of ["acervo-hashes.json", "catalogo.json", "regras.json", "pagina-admin.js"]) {
     fs.copyFileSync(path.join(AQUI, f), path.join(TMP, f));
   }
 
@@ -44,7 +44,9 @@ export default class Anthropic {
     .replace('import ACERVO from "./acervo-hashes.json";',
              'import ACERVO from "./acervo-hashes.json" with { type: "json" };')
     .replace('import CATALOGO from "./catalogo.json";',
-             'import CATALOGO from "./catalogo.json" with { type: "json" };');
+             'import CATALOGO from "./catalogo.json" with { type: "json" };')
+    .replace('import CONHECIMENTO from "./regras.json";',
+             'import CONHECIMENTO from "./regras.json" with { type: "json" };');
   fs.writeFileSync(path.join(TMP, "worker.mjs"), src, "utf8");
 
   /* No Windows, import() so aceita URL file:// — caminho absoluto vira erro de esquema. */

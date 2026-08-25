@@ -99,6 +99,21 @@ for titulo, grupo, nota in (
         L.append("")
 
 SAIDA.write_text("\n".join(L) + "\n", encoding="utf-8")
+# Recorte da base para o backend do agente. Vai embutido no worker pela mesma
+# razao que os hashes do acervo vao: se a pesquisa usasse uma copia propria das
+# regras, ela divergiria do validador — e a divergencia apareceria como fonte
+# aceita na pesquisa e recusada na hora de gravar.
+CAMPOS = ("nome", "o_que_e", "sustenta", "nao_sustenta", "cuidado")
+recorte = {
+    "_gerado_de": "conhecimento/regras.json",
+    "tipos_de_fonte": {
+        k: {c: v[c] for c in CAMPOS if v.get(c)}
+        for k, v in kb["tipos_de_fonte"].items()
+    },
+}
+(RAIZ / "agente" / "regras.json").write_text(
+    json.dumps(recorte, ensure_ascii=False, indent=1), encoding="utf-8")
+
 n_tipos = len(kb["tipos_de_fonte"])
 print(f"conhecimento/REGRAS.md gerado: {n_tipos} tipos de fonte · "
       f"{len(cobradas)} impedidas por codigo · {len(humanas)} humanas · "
