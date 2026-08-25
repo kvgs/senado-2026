@@ -705,7 +705,12 @@
     "ressalva": "Confirmada no documento registrado a reforma da Lei Rouanet. NÃO localizado: o financiamento de filmes, séries e games sobre a história do Brasil."
    },
    "_confirmado_no_documento_registrado": "2026-08-24",
-   "_parcialmente_confirmado": "Confirmada no documento registrado a reforma da Lei Rouanet. NÃO localizado: o financiamento de filmes, séries e games sobre a história do Brasil."
+   "_parcialmente_confirmado": "Confirmada no documento registrado a reforma da Lei Rouanet. NÃO localizado: o financiamento de filmes, séries e games sobre a história do Brasil.",
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "corrigir",
+    "nota": "Não achei essa informação"
+   }
   },
   {
    "id_posicao": "p030",
@@ -772,7 +777,7 @@
    "id_documento": "doc-programa-pstu-tse",
    "texto": "Capitulo proprio de Soberania Digital, a proposta de IA mais desenvolvida de todo o levantamento do Senado por SP: IA publica nacional financiada por excedentes de empresas expropriadas, com uso obrigatorio na gestao publica e oferta subsidiada a trabalhadores de plataforma; proibicao de hospedar dados governamentais sensiveis em nuvem estrangeira; software livre como prioridade nacional; remuneracao continuada a quem produziu o conhecimento usado no treinamento de IA estatal; conselhos com poder de auditoria sobre algoritmos; reducao automatica da jornada na proporcao dos ganhos de produtividade obtidos com IA; direito a desconexao; proibicao de vigilancia digital opaca; plataformas publicas de transporte, entrega e e-commerce geridas por conselhos de trabalhadores.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "citacao_literal": "Desenvolvimento de uma inteligencia artificial publica nacional, financiada por excedentes de empresas estrategicas expropriadas, com uso obrigatorio na gestao e em empresas publicas e como opcao subsidiada as diversas modalidades de trabalho por plataformas e aos consumidores em geral.",
    "_destaque": "Reducao de jornada proporcional ao ganho de produtividade com IA e remuneracao a quem produziu os dados de treinamento sao propostas que nenhum outro candidato ao Senado por SP apresenta.",
    "id_posicao": "p032",
@@ -781,6 +786,11 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-pstu-2026.pdf, sha 1868565fb0d5de77)"
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "confere",
+    "nota": ""
    }
   },
   {
@@ -794,7 +804,7 @@
    "id_documento": "doc-programa-pstu-tse",
    "texto": "Define como objetivo estrategico a dissolucao da PM. Medidas: desmilitarizacao e unificacao das policias em instituicao civil unica com eleicao de comandantes e delegados pela populacao e mandatos revogaveis; descriminalizacao das drogas e revogacao da Lei Antidrogas; camaras corporais com gravacao ininterrupta sob controle de orgao civil; fim da Justica Militar; combate ao crime organizado por investigacao e asfixia financeira em vez de operacao militar; dissolucao de batalhoes milicianizados; desencarceramento em massa; fim da privatizacao de presidios. CONTRA a reducao da maioridade penal.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "citacao_literal": "Combater o crime organizado... por meio da investigacao, inteligencia e desarticulacao de seus negocios, atingindo seu patrimonio, suas fontes de financiamento e suas relacoes com agentes publicos, politicos, empresarios e, em especial, com o sistema financeiro, em vez de realizar operacoes militares que vitimam principalmente a populacao trabalhadora.",
    "_destaque": "Oposicao direta e verificavel: o PSTU e CONTRA a reducao da maioridade penal, que Derrite e Salles propoem em coautoria nas PEC 8/2026 e PEC 9/2026. E defende desmilitarizar a PM, corporacao da qual Derrite foi capitao e cuja secretaria ele chefiou em SP.",
    "id_posicao": "p033",
@@ -803,6 +813,11 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-pstu-2026.pdf, sha 1868565fb0d5de77)"
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "confere",
+    "nota": ""
    }
   },
   {
@@ -825,6 +840,11 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-pstu-2026.pdf, sha 1868565fb0d5de77)"
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "corrigir",
+    "nota": "Não achei essa informação"
    }
   },
   {
