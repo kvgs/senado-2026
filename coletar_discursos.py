@@ -95,9 +95,14 @@ def coletar_camara(id_dep: str, id_cand: str, desde: str) -> list[dict]:
             t2, c2 = sugerir_temas(kw + " " + sumario)
             if c2 in ("boa", "ambigua"):
                 temas, conf = t2, c2
-        quando = (x.get("dataHoraInicio") or "")[:10]
+        inicio = (x.get("dataHoraInicio") or "")
+        quando = inicio[:10]
+        # A HORA entra no id. Sem ela, tres falas do mesmo deputado no mesmo dia
+        # e do mesmo tipo viram o mesmo id — e a tela de classificacao decidiria
+        # uma achando que decidiu as tres. Eram 7 ids colidindo, 18 registros.
+        hora = inicio[11:16].replace(":", "")
         saida.append({
-            "id_registro": f"disc-cam-{id_dep}-{quando}-{(x.get('tipoDiscurso') or '')[:3].lower()}",
+            "id_registro": f"disc-cam-{id_dep}-{quando}-{hora}-{(x.get('tipoDiscurso') or '')[:3].lower()}",
             "casa": "camara",
             "id_candidatura": id_cand,
             "data": quando,

@@ -7,6 +7,8 @@
    Aqui o HTML vem do servidor rodando, que e o mesmo que o navegador recebe. */
 import { spawn } from "node:child_process";
 import vm from "node:vm";
+import net from "node:net";
+import fs from "node:fs";
 
 const PORTA = 8766;
 let falhas = 0;
@@ -19,11 +21,35 @@ py.stderr.on("data", d => saidaPy += d);
 
 const esperar = ms => new Promise(r => setTimeout(r, ms));
 
+const portaOcupada = () => new Promise(resolve => {
+  const s = net.connect(PORTA, "127.0.0.1");
+  const fim = (v) => { s.destroy(); resolve(v); };
+  s.on("connect", () => fim(true));
+  s.on("error", () => fim(false));
+  setTimeout(() => fim(false), 1500);
+});
+
 async function main() {
-  for (let n = 0; n < 25; n++) {
-    await esperar(400);
-    try { await fetch(`http://localhost:${PORTA}/api/itens`); break; } catch {}
+  // Recusa falar com servidor que nao e o nosso. Ja aconteceu: um classificar.py
+  // de execucao anterior ficou segurando a porta, o teste conversou com o codigo
+  // ANTIGO e reprovou mudanca que estava certa.
+  // Conexao TCP crua, e nao fetch: fetch abortado deixa o undici estourando
+  // uma assercao interna e derruba o processo antes de qualquer conferencia.
+  if (await portaOcupada()) {
+    console.log(`FALHA  ja havia algo escutando na porta ${PORTA} antes do teste subir.`);
+    console.log(`       mate o processo antigo — o teste falaria com o codigo dele.`);
+    py.kill(); process.exit(1);
   }
+
+  // Espera por conexao TCP, e nao por fetch. fetch recusado (ECONNREFUSED)
+  // estoura uma assercao interna do undici no Node 24 e derruba o processo
+  // inteiro antes de qualquer conferencia rodar — o teste morria sem dizer nada.
+  let subiu = false;
+  for (let n = 0; n < 30; n++) {
+    await esperar(400);
+    if (await portaOcupada()) { subiu = true; break; }
+  }
+  if (!subiu) { console.log("FALHA  o servidor nao subiu"); console.log(saidaPy); py.kill(); process.exit(1); }
 
   const html = await (await fetch(`http://localhost:${PORTA}/`)).text();
   const dados = await (await fetch(`http://localhost:${PORTA}/api/itens`)).json();
@@ -31,14 +57,18 @@ async function main() {
   ok(html.includes("<script>"), "a pagina traz o bloco de script");
   ok(!/\n/.test(html.match(/textContent=s==null[^\n]*/)?.[0] ?? "x"),
      "nenhum literal JS foi quebrado por escape do Python");
-  ok(dados.itens.length > 0, `a API devolve itens (${dados.itens.length})`);
+  ok(dados.itens.length > 0 && dados.itens.length < 100,
+     `a API devolve so o que precisa do olho humano (${dados.itens.length} de 304)`);
+  ok(dados.itens.every(x => x.minha !== null),
+     "todo item da fila ja traz a classificacao que o modelo propos");
+  ok(dados.itens.some(x => x.precisa_de_olho),
+     "a fila inclui as escolhas editoriais");
   ok(dados.temas.length === 10, `a API devolve os 10 temas (${dados.temas.length})`);
 
   // -------- ordem: as candidaturas hoje vazias tem de vir primeiro
-  const primeiros = dados.itens.slice(0, 40).map(x => x.id_candidatura);
-  const vazias = ["sen-sp-2026-salles", "sen-sp-2026-derrite", "sen-sp-2026-tebet", "sen-sp-2026-marina"];
-  ok(primeiros.every(c => vazias.includes(c)),
-     "os 40 primeiros sao das candidaturas hoje vazias");
+  const comOlho = dados.itens.filter(x => x.precisa_de_olho).length;
+  ok(dados.itens.slice(0, comOlho).every(x => x.precisa_de_olho),
+     `os editoriais vem primeiro (${comOlho} deles)`);
 
   // -------- roda o JS num DOM de mentira
   const els = new Map();
@@ -88,9 +118,10 @@ async function main() {
   ok((alvo.match(/data-t="/g) || []).length === 10, "oferece os 10 temas como botao");
   ok(alvo.includes("data-x=\"nenhum\""), 'oferece "nao se aplica"');
   ok(alvo.includes("abrir a peça na fonte oficial"), "mostra o link da fonte");
+  ok(alvo.includes('class="minha"'), "mostra o que o modelo classificou");
 
   const sub = doc.getElementById("sub").textContent;
-  ok(/\d+ de \d+ classificados/.test(sub), `mostra progresso: "${sub}"`);
+  ok(/\d+ de \d+ conferidos/.test(sub), `mostra progresso: "${sub}"`);
 
   // -------- nao pode existir botao de confirmar em lote
   ok(!/confirmar todos|aceitar todos|em lote/i.test(html),
@@ -105,12 +136,21 @@ async function main() {
   const jr = await r.json();
   ok(jr.ok === true, `grava a decisao de um item (${alvoId})`);
 
+  // O item DECIDIDO sai da fila — e o comportamento certo, entao nao da para
+  // confirmar a gravacao pela API. Confere no arquivo, que e onde ela mora.
   const depois = await (await fetch(`http://localhost:${PORTA}/api/itens`)).json();
-  const gravado = depois.itens.find(x => x.id === alvoId);
-  // decisao vem como {} quando nao ha decisao, e {} e truthy — por isso o
-  // encadeamento opcional, e nao um "&& gravado.decisao".
-  ok(gravado?.decisao?.temas?.[0] === "t1",
-     "a decisao volta gravada na proxima leitura");
+  ok(!depois.itens.find(x => x.id === alvoId),
+     "o item decidido sai da fila");
+
+  const disco = JSON.parse(fs.readFileSync("dados/_coleta_discursos.json", "utf8"))
+    .registros.concat(JSON.parse(fs.readFileSync("dados/_coleta_legislativa.json", "utf8")).registros)
+    .find(r => r.id_registro === alvoId);
+  ok(disco?._classificacao?.temas?.[0] === "t1", "a decisao fica gravada no arquivo");
+  ok(disco?._classificacao?.por === "humano", "a decisao gravada fica marcada como humana");
+  ok(typeof disco?._classificacao?.concordou === "boolean",
+     "a gravacao registra se a pessoa concordou com o modelo");
+  ok(Array.isArray(disco?._classificacao?.modelo_propos),
+     "a gravacao guarda o que o modelo tinha proposto");
 
   // -------- recusa decisao vazia sem motivo
   const r2 = await fetch(`http://localhost:${PORTA}/api/classificar`, {
@@ -126,10 +166,11 @@ async function main() {
     method: "POST", headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ id: alvoId }),
   }).catch(() => {});
-  const limpo = await (await fetch(`http://localhost:${PORTA}/api/itens`)).json();
-  const restou = limpo.itens.find(x => x.id === alvoId);
-  ok(!(restou && restou.decisao && restou.decisao.temas),
-     "o teste desfaz a propria gravacao");
+  const volta = JSON.parse(fs.readFileSync("dados/_coleta_discursos.json", "utf8"))
+    .registros.concat(JSON.parse(fs.readFileSync("dados/_coleta_legislativa.json", "utf8")).registros)
+    .find(r => r.id_registro === alvoId);
+  ok(volta?._classificacao?.por === "modelo",
+     "o teste desfaz a propria gravacao E devolve a classificacao do modelo");
 
   console.log(falhas ? `\n=== ${falhas} falha(s) ===` : "\n=== a tela funciona ===");
   py.kill();

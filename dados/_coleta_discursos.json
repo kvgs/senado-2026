@@ -20,7 +20,15 @@
    ],
    "_confianca_tema": "ambigua",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t5"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-494820",
@@ -39,7 +47,15 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t5"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-494302",
@@ -58,7 +74,15 @@
    ],
    "_confianca_tema": "fraca",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t5"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-493090",
@@ -77,7 +101,16 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t5",
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-492723",
@@ -96,7 +129,16 @@
    ],
    "_confianca_tema": "fraca",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t10",
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-492711",
@@ -115,7 +157,16 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t9",
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-492682",
@@ -135,7 +186,16 @@
    ],
    "_confianca_tema": "ambigua",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t9",
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-492677",
@@ -154,7 +214,15 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t9"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-492404",
@@ -173,7 +241,16 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t4",
+     "t5"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-492291",
@@ -193,7 +270,15 @@
    ],
    "_confianca_tema": "ambigua",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t9"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-491371",
@@ -212,7 +297,15 @@
    ],
    "_confianca_tema": "fraca",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t9"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-491366",
@@ -231,7 +324,16 @@
    ],
    "_confianca_tema": "fraca",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t6"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25",
+    "precisa_de_olho": "solidariedade por mortes em enchente + critica ao governo, misturados"
+   }
   },
   {
    "id_registro": "disc-sf-490741",
@@ -251,7 +353,15 @@
    ],
    "_confianca_tema": "ambigua",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-490713",
@@ -271,7 +381,15 @@
    ],
    "_confianca_tema": "ambigua",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-490402",
@@ -291,7 +409,15 @@
    ],
    "_confianca_tema": "ambigua",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t3"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-490221",
@@ -310,7 +436,16 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t4",
+     "t5"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-490123",
@@ -329,7 +464,15 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t2"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-489972",
@@ -348,7 +491,15 @@
    ],
    "_confianca_tema": "fraca",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-489223",
@@ -365,7 +516,15 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-489221",
@@ -386,7 +545,15 @@
    ],
    "_confianca_tema": "ambigua",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-489216",
@@ -405,7 +572,15 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t9"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-489200",
@@ -425,7 +600,16 @@
    ],
    "_confianca_tema": "ambigua",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t9",
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-489282",
@@ -444,7 +628,15 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-488981",
@@ -463,7 +655,16 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t9",
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-489093",
@@ -482,7 +683,16 @@
    ],
    "_confianca_tema": "fraca",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t4",
+     "t5"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-489086",
@@ -501,7 +711,15 @@
    ],
    "_confianca_tema": "fraca",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-489077",
@@ -520,7 +738,16 @@
    ],
    "_confianca_tema": "fraca",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t4",
+     "t5"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-489057",
@@ -539,7 +766,16 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t3",
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-488910",
@@ -558,7 +794,15 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-488588",
@@ -577,7 +821,15 @@
    ],
    "_confianca_tema": "fraca",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-488562",
@@ -598,7 +850,15 @@
    ],
    "_confianca_tema": "ambigua",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t2"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-488561",
@@ -617,7 +877,16 @@
    ],
    "_confianca_tema": "fraca",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t9",
+     "t6"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-488404",
@@ -636,7 +905,16 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t9",
+     "t5"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "disc-sf-488313",
@@ -655,10 +933,18 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
-   "id_documento": "doc-senado-api"
+   "id_documento": "doc-senado-api",
+   "_classificacao": {
+    "temas": [
+     "t9"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2026-02-25-bre",
+   "id_registro": "disc-cam-220633-2026-02-25-1456-bre",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2026-02-25",
@@ -673,10 +959,18 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2025-12-10-pel",
+   "id_registro": "disc-cam-220633-2025-12-10-2108-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2025-12-10",
@@ -689,10 +983,16 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2025-08-20-bre",
+   "id_registro": "disc-cam-220633-2025-08-20-1828-bre",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2025-08-20",
@@ -707,10 +1007,19 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t8",
+     "t9"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2025-06-10-bre",
+   "id_registro": "disc-cam-220633-2025-06-10-1452-bre",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2025-06-10",
@@ -725,10 +1034,18 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2025-05-28-bre",
+   "id_registro": "disc-cam-220633-2025-05-28-1624-bre",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2025-05-28",
@@ -745,10 +1062,18 @@
    ],
    "_confianca_tema": "ambigua",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2025-05-27-pel",
+   "id_registro": "disc-cam-220633-2025-05-27-2052-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2025-05-27",
@@ -763,10 +1088,18 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t6"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2025-05-27-pel",
+   "id_registro": "disc-cam-220633-2025-05-27-2048-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2025-05-27",
@@ -779,10 +1112,16 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2025-05-27-pel",
+   "id_registro": "disc-cam-220633-2025-05-27-2032-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2025-05-27",
@@ -797,10 +1136,18 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t6"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2025-05-06-bre",
+   "id_registro": "disc-cam-220633-2025-05-06-1800-bre",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2025-05-06",
@@ -813,10 +1160,18 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2025-04-23-dis",
+   "id_registro": "disc-cam-220633-2025-04-23-2020-dis",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2025-04-23",
@@ -829,10 +1184,16 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2025-02-25-pel",
+   "id_registro": "disc-cam-220633-2025-02-25-1924-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2025-02-25",
@@ -847,10 +1208,19 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t4",
+     "t3"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2025-02-12-enc",
+   "id_registro": "disc-cam-220633-2025-02-12-1920-enc",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2025-02-12",
@@ -865,10 +1235,18 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t6"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2024-12-18-pel",
+   "id_registro": "disc-cam-220633-2024-12-18-2316-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2024-12-18",
@@ -883,10 +1261,16 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2024-12-17-pel",
+   "id_registro": "disc-cam-220633-2024-12-17-2040-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2024-12-17",
@@ -899,10 +1283,16 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2024-12-17-pel",
+   "id_registro": "disc-cam-220633-2024-12-17-1944-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2024-12-17",
@@ -915,10 +1305,16 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2024-12-17-pel",
+   "id_registro": "disc-cam-220633-2024-12-17-1920-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2024-12-17",
@@ -931,10 +1327,16 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2024-12-04-bre",
+   "id_registro": "disc-cam-220633-2024-12-04-1600-bre",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2024-12-04",
@@ -949,10 +1351,18 @@
    ],
    "_confianca_tema": "fraca",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2024-12-03-bre",
+   "id_registro": "disc-cam-220633-2024-12-03-1604-bre",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2024-12-03",
@@ -965,10 +1375,16 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2024-10-30-dis",
+   "id_registro": "disc-cam-220633-2024-10-30-1940-dis",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2024-10-30",
@@ -981,10 +1397,16 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2024-10-29-bre",
+   "id_registro": "disc-cam-220633-2024-10-29-1752-bre",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2024-10-29",
@@ -999,10 +1421,18 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2024-10-08-bre",
+   "id_registro": "disc-cam-220633-2024-10-08-1652-bre",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2024-10-08",
@@ -1015,10 +1445,18 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2024-08-13-bre",
+   "id_registro": "disc-cam-220633-2024-08-13-1704-bre",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2024-08-13",
@@ -1033,10 +1471,19 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t4",
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2024-07-10-enc",
+   "id_registro": "disc-cam-220633-2024-07-10-1956-enc",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2024-07-10",
@@ -1051,10 +1498,16 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2024-07-10-pel",
+   "id_registro": "disc-cam-220633-2024-07-10-1908-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2024-07-10",
@@ -1069,10 +1522,16 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2024-07-10-dis",
+   "id_registro": "disc-cam-220633-2024-07-10-1656-dis",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2024-07-10",
@@ -1088,10 +1547,18 @@
    ],
    "_confianca_tema": "ambigua",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t5"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2024-06-19-bre",
+   "id_registro": "disc-cam-220633-2024-06-19-1840-bre",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2024-06-19",
@@ -1104,10 +1571,18 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2024-05-21-com",
+   "id_registro": "disc-cam-220633-2024-05-21-2148-com",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2024-05-21",
@@ -1120,10 +1595,16 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2024-05-21-pel",
+   "id_registro": "disc-cam-220633-2024-05-21-2020-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2024-05-21",
@@ -1136,10 +1617,16 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2024-05-08-pel",
+   "id_registro": "disc-cam-220633-2024-05-08-1816-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2024-05-08",
@@ -1152,10 +1639,16 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2024-04-16-bre",
+   "id_registro": "disc-cam-220633-2024-04-16-1748-bre",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2024-04-16",
@@ -1170,10 +1663,18 @@
    ],
    "_confianca_tema": "fraca",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2024-03-19-pel",
+   "id_registro": "disc-cam-220633-2024-03-19-2016-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2024-03-19",
@@ -1186,10 +1687,16 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2024-03-13-pel",
+   "id_registro": "disc-cam-220633-2024-03-13-1932-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2024-03-13",
@@ -1205,10 +1712,16 @@
    ],
    "_confianca_tema": "ambigua",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2024-03-13-dis",
+   "id_registro": "disc-cam-220633-2024-03-13-1828-dis",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2024-03-13",
@@ -1224,10 +1737,16 @@
    ],
    "_confianca_tema": "ambigua",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2024-03-12-pel",
+   "id_registro": "disc-cam-220633-2024-03-12-2012-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2024-03-12",
@@ -1242,10 +1761,16 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2024-02-20-bre",
+   "id_registro": "disc-cam-220633-2024-02-20-1840-bre",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2024-02-20",
@@ -1258,10 +1783,18 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2023-11-29-dis",
+   "id_registro": "disc-cam-220633-2023-11-29-1732-dis",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2023-11-29",
@@ -1274,10 +1807,16 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2023-10-25-pel",
+   "id_registro": "disc-cam-220633-2023-10-25-1808-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2023-10-25",
@@ -1292,10 +1831,18 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2023-09-12-pel",
+   "id_registro": "disc-cam-220633-2023-09-12-1528-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2023-09-12",
@@ -1308,10 +1855,19 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25",
+    "precisa_de_olho": "CPI do MST — enquadrei como Seguranca porque e o enquadramento do orador"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2023-09-12-bre",
+   "id_registro": "disc-cam-220633-2023-09-12-1520-bre",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2023-09-12",
@@ -1326,10 +1882,19 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t1",
+     "t2"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2023-08-30-bre",
+   "id_registro": "disc-cam-220633-2023-08-30-1548-bre",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2023-08-30",
@@ -1345,10 +1910,19 @@
    ],
    "_confianca_tema": "ambigua",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25",
+    "precisa_de_olho": "CPI do MST — idem"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2023-08-23-bre",
+   "id_registro": "disc-cam-220633-2023-08-23-1904-bre",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2023-08-23",
@@ -1363,10 +1937,19 @@
    ],
    "_confianca_tema": "fraca",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25",
+    "precisa_de_olho": "CPI do MST — idem"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2023-07-05-bre",
+   "id_registro": "disc-cam-220633-2023-07-05-1528-bre",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2023-07-05",
@@ -1381,10 +1964,18 @@
    ],
    "_confianca_tema": "fraca",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2023-05-31-bre",
+   "id_registro": "disc-cam-220633-2023-05-31-1816-bre",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2023-05-31",
@@ -1397,10 +1988,19 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25",
+    "precisa_de_olho": "CPI do MST — idem"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2023-05-02-bre",
+   "id_registro": "disc-cam-220633-2023-05-02-1920-bre",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2023-05-02",
@@ -1415,10 +2015,18 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t8"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2023-04-12-bre",
+   "id_registro": "disc-cam-220633-2023-04-12-1736-bre",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2023-04-12",
@@ -1431,10 +2039,20 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t9",
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25",
+    "precisa_de_olho": "violencia de genero e depredacao urbana no mesmo pronunciamento"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2023-03-30-dis",
+   "id_registro": "disc-cam-220633-2023-03-30-1640-dis",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2023-03-30",
@@ -1449,10 +2067,16 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2023-03-30-dis",
+   "id_registro": "disc-cam-220633-2023-03-30-1528-dis",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2023-03-30",
@@ -1465,10 +2089,16 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2023-03-22-bre",
+   "id_registro": "disc-cam-220633-2023-03-22-1456-bre",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2023-03-22",
@@ -1483,10 +2113,19 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25",
+    "precisa_de_olho": "MST e atos de 8 de janeiro no mesmo pronunciamento"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2023-02-28-bre",
+   "id_registro": "disc-cam-220633-2023-02-28-2016-bre",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2023-02-28",
@@ -1499,10 +2138,19 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t4",
+     "t5"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220633-2023-02-08-bre",
+   "id_registro": "disc-cam-220633-2023-02-08-1740-bre",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-salles",
    "data": "2023-02-08",
@@ -1518,10 +2166,19 @@
    ],
    "_confianca_tema": "ambigua",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t6",
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220637-2026-07-07-pel",
+   "id_registro": "disc-cam-220637-2026-07-07-2040-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-marina",
    "data": "2026-07-07",
@@ -1538,10 +2195,16 @@
    ],
    "_confianca_tema": "ambigua",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220637-2026-05-20-pel",
+   "id_registro": "disc-cam-220637-2026-05-20-1948-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-marina",
    "data": "2026-05-20",
@@ -1556,10 +2219,18 @@
    ],
    "_confianca_tema": "fraca",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t6"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220637-2026-05-20-pel",
+   "id_registro": "disc-cam-220637-2026-05-20-1940-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-marina",
    "data": "2026-05-20",
@@ -1572,10 +2243,16 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220637-2026-05-20-dis",
+   "id_registro": "disc-cam-220637-2026-05-20-1932-dis",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-marina",
    "data": "2026-05-20",
@@ -1588,10 +2265,16 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220637-2026-05-20-pel",
+   "id_registro": "disc-cam-220637-2026-05-20-1900-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-marina",
    "data": "2026-05-20",
@@ -1607,10 +2290,19 @@
    ],
    "_confianca_tema": "ambigua",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t9",
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220637-2026-05-20-enc",
+   "id_registro": "disc-cam-220637-2026-05-20-1824-enc",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-marina",
    "data": "2026-05-20",
@@ -1625,10 +2317,16 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220637-2026-05-20-com",
+   "id_registro": "disc-cam-220637-2026-05-20-1624-com",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-marina",
    "data": "2026-05-20",
@@ -1643,10 +2341,18 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t6"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220637-2026-05-06-pel",
+   "id_registro": "disc-cam-220637-2026-05-06-2056-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-marina",
    "data": "2026-05-06",
@@ -1661,10 +2367,19 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t6",
+     "t9"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220637-2026-05-06-com",
+   "id_registro": "disc-cam-220637-2026-05-06-2032-com",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-marina",
    "data": "2026-05-06",
@@ -1679,10 +2394,19 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t6",
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220637-2026-05-05-bre",
+   "id_registro": "disc-cam-220637-2026-05-05-1620-bre",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-marina",
    "data": "2026-05-05",
@@ -1697,10 +2421,18 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t6"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220637-2026-04-29-pel",
+   "id_registro": "disc-cam-220637-2026-04-29-1956-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-marina",
    "data": "2026-04-29",
@@ -1716,10 +2448,19 @@
    ],
    "_confianca_tema": "ambigua",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t6",
+     "t2"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220637-2026-04-29-enc",
+   "id_registro": "disc-cam-220637-2026-04-29-1952-enc",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-marina",
    "data": "2026-04-29",
@@ -1732,10 +2473,16 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220637-2026-04-29-enc",
+   "id_registro": "disc-cam-220637-2026-04-29-1852-enc",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-marina",
    "data": "2026-04-29",
@@ -1748,10 +2495,16 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220637-2026-04-29-enc",
+   "id_registro": "disc-cam-220637-2026-04-29-1656-enc",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-marina",
    "data": "2026-04-29",
@@ -1764,10 +2517,16 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220637-2026-04-29-bre",
+   "id_registro": "disc-cam-220637-2026-04-29-1632-bre",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-marina",
    "data": "2026-04-29",
@@ -1782,10 +2541,18 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t5"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220637-2026-04-15-com",
+   "id_registro": "disc-cam-220637-2026-04-15-1528-com",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-marina",
    "data": "2026-04-15",
@@ -1800,10 +2567,18 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t6"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-220637-2026-04-08-com",
+   "id_registro": "disc-cam-220637-2026-04-08-1228-com",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-marina",
    "data": "2026-04-08",
@@ -1818,10 +2593,19 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t9",
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-204531-2026-04-30-out",
+   "id_registro": "disc-cam-204531-2026-04-30-1228-out",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-derrite",
    "data": "2026-04-30",
@@ -1836,10 +2620,18 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-204531-2026-02-24-par",
+   "id_registro": "disc-cam-204531-2026-02-24-2128-par",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-derrite",
    "data": "2026-02-24",
@@ -1854,10 +2646,18 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-204531-2025-11-18-pel",
+   "id_registro": "disc-cam-204531-2025-11-18-2152-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-derrite",
    "data": "2025-11-18",
@@ -1872,10 +2672,18 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-204531-2025-11-18-par",
+   "id_registro": "disc-cam-204531-2025-11-18-2016-par",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-derrite",
    "data": "2025-11-18",
@@ -1890,10 +2698,18 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-204531-2025-11-18-par",
+   "id_registro": "disc-cam-204531-2025-11-18-1812-par",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-derrite",
    "data": "2025-11-18",
@@ -1908,10 +2724,18 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-204531-2025-11-12-pel",
+   "id_registro": "disc-cam-204531-2025-11-12-2040-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-derrite",
    "data": "2025-11-12",
@@ -1924,10 +2748,16 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-204531-2025-11-12-pel",
+   "id_registro": "disc-cam-204531-2025-11-12-2008-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-derrite",
    "data": "2025-11-12",
@@ -1942,10 +2772,18 @@
    ],
    "_confianca_tema": "boa",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-204531-2024-03-20-pel",
+   "id_registro": "disc-cam-204531-2024-03-20-1848-pel",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-derrite",
    "data": "2024-03-20",
@@ -1961,10 +2799,18 @@
    ],
    "_confianca_tema": "ambigua",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
-   "id_registro": "disc-cam-204531-2024-03-20-par",
+   "id_registro": "disc-cam-204531-2024-03-20-1732-par",
    "casa": "camara",
    "id_candidatura": "sen-sp-2026-derrite",
    "data": "2024-03-20",
@@ -1977,7 +2823,15 @@
    "temas": [],
    "_confianca_tema": "nenhuma",
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
-   "id_documento": "doc-camara-api"
+   "id_documento": "doc-camara-api",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   }
  ]
 }

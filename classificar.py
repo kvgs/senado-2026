@@ -1,5 +1,27 @@
 # -*- coding: utf-8 -*-
-"""Tela local para dar tema aos 304 itens coletados, um a um.
+"""Tela local para CONFERIR a classificacao dos 304 itens coletados.
+
+MUDOU O QUE ESTA TELA FAZ. Ela nascia pedindo que a Kelli classificasse os 304
+um a um, e ela perguntou por que — se eu nao conseguia fazer isso. Consigo, e o
+desenho estava errado: eu tinha aplicado a disciplina que existe para AFIRMACAO
+a uma tarefa de ARQUIVAMENTO.
+
+A diferenca importa. Na revisao das 122 posicoes a maquina afirmava "este
+candidato propoe X" a partir de um documento, e errou em 66% — fonte que nao
+sustentava, candidato trocado, parafrase escorregando. Aqui a ementa ja e
+literal, ja veio da API e ja esta atribuida a quem assinou. Nao se afirma nada
+sobre ninguem: a pergunta e so em qual das 10 gavetas o item aparece.
+
+Entao eu classifiquei os 304, lendo cada ementa e cada indexacao oficial. Esta
+tela mostra so o que sobra para o olho dela:
+
+  - os 22 em que a escolha foi EDITORIAL e nao leitura (assunto que nao cabe em
+    nenhum dos 10 temas, ou ementa que nao diz do que trata);
+  - uma AMOSTRA sorteada do resto, para medir se eu acertei — sorteio fixo, pelo
+    id, para a amostra nao mudar a cada abertura da tela.
+
+Quem decide continua sendo ela: cada item guarda quem decidiu, e por="modelo"
+nunca vira por="humano" sozinho.
 
 E IRMA DO revisar.py, MAS A PERGUNTA E OUTRA
 No revisar.py a pergunta e "a fonte sustenta o que esta escrito?" — e uma
@@ -10,15 +32,9 @@ escolha nossa de organizacao, e nao afirmacao sobre a candidatura.
 Por isso esta tela nao escreve revisado_por_humano em lugar nenhum. Ela decide
 onde o item aparece, e nao se ele e verdade.
 
-A ORDEM E POR IMPACTO
-Primeiro as candidaturas que hoje aparecem vazias no site — Salles, Derrite,
-Tebet, Marina. Dentro de cada uma, primeiro os de sugestao confiante, que sao
-os rapidos. Se voce parar no meio, terá preenchido os perfis que estao vazios.
-
-NAO EXISTE "CONFIRMAR TODOS"
-Seria o botao mais tentador da tela e o mais caro: a revisao das 122 posicoes
-achou 34% de acerto na maquina. Cada item leva um olhar. O que da para acelerar
-e o teclado, e nao o lote.
+A ORDEM
+Primeiro os marcados como editoriais, que sao onde eu menos confio em mim.
+Depois a amostra de auditoria. Parar no meio deixa conferido o que mais precisa.
 
 TECLADO
   Enter    aceita o tema sugerido
@@ -58,6 +74,17 @@ PRIORIDADE = ["sen-sp-2026-salles", "sen-sp-2026-derrite",
 
 ORDEM_CONF = {"boa": 0, "ambigua": 1, "fraca": 2, "nenhuma": 3}
 
+# Um em cada QUANTOS entra na amostra de auditoria. Com 282 itens nao marcados,
+# 1 em 9 da ~31 — o bastante para uma taxa de acerto significar alguma coisa, e
+# pouco o bastante para caber numa sentada.
+AMOSTRA = 9
+
+
+def na_amostra(id_item: str) -> bool:
+    """Sorteio ESTAVEL: depende so do id, entao a amostra e a mesma toda vez que
+    a tela abre. Amostra que muda a cada abertura nao mede nada."""
+    return sum(ord(c) for c in id_item) % AMOSTRA == 0
+
 
 def carregar():
     ref = json.loads((DADOS / "referencia.json").read_text(encoding="utf-8"))
@@ -77,6 +104,14 @@ def montar_itens():
         for r in dados["registros"]:
             cid = r.get("id_candidatura") or (r.get("autoria") or [{}])[0].get("id_candidatura", "")
             a = (r.get("autoria") or [{}])[0]
+            cl = r.get("_classificacao") or {}
+            # Ja conferido por gente sai da fila. O que eu classifiquei so
+            # aparece se for editorial ou se caiu na amostra de auditoria.
+            if cl.get("por") == "humano":
+                continue
+            if cl.get("por") == "modelo" and not (cl.get("precisa_de_olho")
+                                                  or na_amostra(r["id_registro"])):
+                continue
             itens.append({
                 "id": r["id_registro"],
                 "especie": especie,
@@ -95,12 +130,14 @@ def montar_itens():
                 "sugestao": r.get("temas") or [],
                 "confianca": r.get("_confianca_tema") or "nenhuma",
                 "decisao": r.get("_classificacao") or {},
+                "minha": cl.get("temas") if cl.get("por") == "modelo" else None,
+                "precisa_de_olho": cl.get("precisa_de_olho") or "",
             })
 
+    # Editorial primeiro: e onde eu menos confio em mim.
     itens.sort(key=lambda x: (
-        bool(x["decisao"]),
+        not bool(x["precisa_de_olho"]),
         PRIORIDADE.index(x["id_candidatura"]) if x["id_candidatura"] in PRIORIDADE else 9,
-        ORDEM_CONF.get(x["confianca"], 9),
         x["id"],
     ))
     return itens, temas
@@ -115,23 +152,49 @@ def gravar(id_item, temas, motivo):
         for r in dados["registros"]:
             if r["id_registro"] != id_item:
                 continue
-            r["_classificacao"] = {"temas": temas, "motivo": motivo, "decidido_em": HOJE}
+            antes = (r.get("_classificacao") or {})
+            r["_classificacao"] = {
+                "temas": temas, "motivo": motivo, "por": "humano", "decidido_em": HOJE,
+            }
+            # Guarda se ela concordou comigo. E a unica forma honesta de saber se
+            # a minha classificacao presta: medida, e nao afirmada.
+            if antes.get("por") == "modelo":
+                r["_classificacao"]["modelo_propos"] = antes.get("temas")
+                r["_classificacao"]["concordou"] = sorted(antes.get("temas") or []) == sorted(temas)
+                if antes.get("precisa_de_olho"):
+                    r["_classificacao"]["precisa_de_olho"] = antes["precisa_de_olho"]
             caminho.write_text(json.dumps(dados, ensure_ascii=False, indent=1), encoding="utf-8")
             return True
     return False
 
 
 def esquecer(id_item):
-    """Apaga a classificacao de um item. So o teste usa."""
+    """Desfaz a decisao HUMANA de um item e devolve a do modelo. So o teste usa.
+
+    Apagar _classificacao inteiro era o obvio e estava errado: levava junto a
+    classificacao do modelo, e o teste comia trabalho de verdade — aconteceu em
+    dois itens. Por isso gravar() guarda modelo_propos: e o que permite voltar."""
     for caminho in ARQUIVOS.values():
         if not caminho.exists():
             continue
         dados = json.loads(caminho.read_text(encoding="utf-8"))
         for r in dados["registros"]:
-            if r["id_registro"] == id_item and "_classificacao" in r:
+            if r["id_registro"] != id_item or "_classificacao" not in r:
+                continue
+            antes = r["_classificacao"]
+            if "modelo_propos" in antes:
+                r["_classificacao"] = {
+                    "temas": antes["modelo_propos"],
+                    "motivo": "" if antes["modelo_propos"] else "nenhum",
+                    "por": "modelo",
+                    "decidido_em": antes.get("decidido_em", HOJE),
+                }
+                if antes.get("precisa_de_olho"):
+                    r["_classificacao"]["precisa_de_olho"] = antes["precisa_de_olho"]
+            else:
                 del r["_classificacao"]
-                caminho.write_text(json.dumps(dados, ensure_ascii=False, indent=1), encoding="utf-8")
-                return True
+            caminho.write_text(json.dumps(dados, ensure_ascii=False, indent=1), encoding="utf-8")
+            return True
     return False
 
 
@@ -172,6 +235,13 @@ a.fonte{display:inline-block;font-size:.89rem;color:#0C6C8F;margin-bottom:16px}
   font:inherit;font-size:.87rem;cursor:pointer}
 .outros button:hover{border-color:#7E756B}
 .dica{font-size:.8rem;color:#6A6259;margin-top:15px}
+.olho{font-size:.87rem;background:#FBEFD2;border-left:3px solid #7A5200;color:#3E3833;
+  padding:11px 14px;margin-bottom:13px;border-radius:0 5px 5px 0}
+.olho b{display:block;font-size:.72rem;letter-spacing:.06em;color:#7A5200;margin-bottom:3px}
+.minha{font-size:.87rem;background:#F0F6FA;border-left:3px solid #0C6C8F;color:#3E3833;
+  padding:11px 14px;margin:14px 0 4px;border-radius:0 5px 5px 0}
+.minha b{color:#0C6C8F}
+.tipo{font-size:.72rem;letter-spacing:.05em;color:#7A5200;font-weight:700}
 .fim{background:#fff;border:1px solid #E5E0DA;border-radius:9px;padding:30px;text-align:center}
 </style></head><body><div class="env">
 <h1>Classificar por tema</h1>
@@ -184,21 +254,34 @@ var ITENS=[], TEMAS=[], i=0;
 
 function esc(s){var d=document.createElement('div');d.textContent=s==null?'':String(s);return d.innerHTML;}
 
-function pendentes(){return ITENS.filter(function(x){return !x.decisao||!x.decisao.temas;});}
+/* Pendente = ainda nao conferido POR GENTE. Antes era "sem tema", o que parou de
+   funcionar quando eu classifiquei os 304: a tela achava que estava tudo feito. */
+function pendentes(){return ITENS.filter(function(x){
+  return !x.decisao || x.decisao.por!=='humano';});}
 
 function desenhar(){
   var pend=pendentes();
   var feitos=ITENS.length-pend.length;
+  var concordou=0, discordou=0;
+  for(var q=0;q<ITENS.length;q++){
+    var d=ITENS[q].decisao||{};
+    if(d.por==='humano'&&typeof d.concordou==='boolean'){ d.concordou?concordou++:discordou++; }
+  }
   document.getElementById('sub').textContent=
-    feitos+' de '+ITENS.length+' classificados · restam '+pend.length;
+    feitos+' de '+ITENS.length+' conferidos · restam '+pend.length+
+    (concordou+discordou ? ' · você concordou comigo em '+concordou+
+       ' de '+(concordou+discordou) : '');
   document.getElementById('prog').style.width=(ITENS.length?feitos/ITENS.length*100:0)+'%';
 
   if(i>=pend.length) i=0;
   var x=pend[i];
   var alvo=document.getElementById('alvo');
   if(!x){
-    alvo.innerHTML='<div class="fim"><h2>Acabou.</h2><p>Todos os '+ITENS.length+
-      ' itens tem tema decidido. Os arquivos de coleta ja estao gravados.</p></div>';
+    alvo.innerHTML='<div class="fim"><h2>Acabou.</h2><p>Os '+ITENS.length+
+      ' itens que precisavam do seu olho estão conferidos'+
+      (concordou+discordou ? ': você concordou comigo em <strong>'+concordou+' de '+
+        (concordou+discordou)+'</strong>' : '')+
+      '. Os outros '+(304-ITENS.length)+' seguem marcados como classificados por mim.</p></div>';
     return;
   }
 
@@ -224,13 +307,24 @@ function desenhar(){
   if(x.url) h+='<a class="fonte" href="'+esc(x.url)+'" target="_blank" rel="noopener">'+
     'abrir a peça na fonte oficial &rarr;</a>';
 
-  h+='<div class="pergunta">De que assunto isto trata? '+
-     '<em>É escolha de organização, não afirmação sobre a candidatura.</em></div>';
+  var nomeT=function(id){for(var q=0;q<TEMAS.length;q++)if(TEMAS[q].id===id)return TEMAS[q].nome;return id;};
+
+  if(x.precisa_de_olho)
+    h+='<div class="olho"><b>Marquei para você olhar</b>'+esc(x.precisa_de_olho)+'</div>';
+
+  h+='<div class="minha"><b>Eu classifiquei como:</b> '+
+     (x.minha&&x.minha.length ? esc(x.minha.map(nomeT).join(' + '))
+                              : '<em>nenhum tema — procedimental ou sem objeto declarado</em>')+
+     '</div>';
+
+  h+='<div class="pergunta">Confere? <strong>Enter</strong> aceita. '+
+     'Se eu errei, escolha o tema certo — é escolha de organização, '+
+     'não afirmação sobre a candidatura.</div>';
 
   h+='<div class="temas">';
   for(var n=0;n<TEMAS.length;n++){
     var t=TEMAS[n];
-    var sug=x.sugestao.indexOf(t.id)>=0;
+    var sug=(x.minha||x.sugestao).indexOf(t.id)>=0;
     h+='<button data-t="'+esc(t.id)+'"'+(sug?' class="sug"':'')+'>'+
        '<kbd>'+((n+1)%10)+'</kbd>'+esc(t.nome)+'</button>';
   }
@@ -242,9 +336,12 @@ function desenhar(){
      '<button data-x="pular">Pular &rarr;</button>'+
      '</div>';
 
-  h+='<p class="dica">Sugestão do coletor: <strong>'+
-     (x.sugestao.length?esc(x.sugestao.join(', ')):'nenhuma')+
-     '</strong> (confiança '+esc(x.confianca)+'). Enter aceita.</p>';
+  h+='<p class="dica">'+
+     (x.precisa_de_olho ? '<span class="tipo">ESCOLHA EDITORIAL</span> — eu escolhi a gaveta '+
+                          'menos ruim, e a sua leitura vale mais que a minha aqui.'
+                        : '<span class="tipo">AMOSTRA DE AUDITORIA</span> — sorteada para medir '+
+                          'se a minha classificação presta. Discordar aqui é o ponto.')+
+     '</p>';
 
   h+='</div>';
   alvo.innerHTML=h;
@@ -268,7 +365,9 @@ function decidir(temas, motivo){
     body:JSON.stringify({id:x.id,temas:temas,motivo:motivo})})
    .then(function(r){return r.json();})
    .then(function(){
-     x.decisao={temas:temas,motivo:motivo};
+     x.decisao={temas:temas,motivo:motivo,por:'humano',
+                concordou: x.minha ? String(x.minha.slice().sort())===String(temas.slice().sort())
+                                   : undefined};
      desenhar();
    });
 }
@@ -277,7 +376,12 @@ document.addEventListener('keydown',function(e){
   if(e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA') return;
   var pend=pendentes(); var x=pend[i];
   if(!x) return;
-  if(e.key==='Enter'){ if(x.sugestao.length){e.preventDefault();decidir(x.sugestao,'');} return; }
+  if(e.key==='Enter'){
+    e.preventDefault();
+    var m=x.minha||x.sugestao;
+    decidir(m, m.length?'':'nenhum');
+    return;
+  }
   if(e.key==='x'||e.key==='X'){ e.preventDefault(); decidir([],'nenhum'); return; }
   if(e.key==='l'||e.key==='L'){ e.preventDefault(); decidir([],'link'); return; }
   if(e.key==='ArrowRight'){ e.preventDefault(); i++; desenhar(); return; }
@@ -350,7 +454,7 @@ def conferir_pagina():
     if partidas:
         raise SystemExit("JavaScript quebrado nas linhas " + ", ".join(map(str, partidas[:5])) +
                          '.\nConfira se PAGINA continua sendo string CRUA (r""").')
-    for marca in ("/api/classificar", "data-x=\"nenhum\"", "function decidir"):
+    for marca in ("/api/classificar", "data-x=\"nenhum\"", "function decidir", "class=\"minha\""):
         if marca not in PAGINA:
             raise SystemExit(f"A pagina perdeu um elemento essencial: {marca}")
 
@@ -363,9 +467,11 @@ def main():
                          "\nrode coletar_legislativo.py e coletar_discursos.py antes.")
 
     itens, _ = montar_itens()
-    pend = [x for x in itens if not x["decisao"]]
-    print(f"{len(itens)} itens coletados · {len(pend)} ainda sem tema")
-    print("ordem: candidaturas hoje vazias primeiro (Salles, Derrite, Tebet, Marina)")
+    ed = [x for x in itens if x["precisa_de_olho"]]
+    print(f"304 itens coletados, ja classificados por mim.")
+    print(f"{len(itens)} precisam do seu olho: {len(ed)} escolhas editoriais "
+          f"+ {len(itens) - len(ed)} sorteados para auditoria.")
+    print("ordem: os editoriais primeiro, que e onde eu menos confio em mim")
     print(f"\nabra http://localhost:{PORTA}  (ctrl+c aqui para parar)\n")
 
     socketserver.TCPServer.allow_reuse_address = True

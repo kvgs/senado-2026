@@ -26,7 +26,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2026-02-24",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pdl-136-2026",
@@ -52,7 +60,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2026-03-16",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pdl-464-2026",
@@ -78,7 +94,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2026-05-22",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pdl-919-2026",
@@ -102,7 +126,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2026-07-17",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-3-2026",
@@ -128,7 +160,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2026-02-24",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-15-2026",
@@ -160,7 +200,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2026-06-17",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25",
+    "precisa_de_olho": "imunidade tributaria para entidades esportivas: tributo (t4) ou esporte (t9)"
+   }
   },
   {
    "id_registro": "pl-1187-2026",
@@ -186,7 +235,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2026-03-16",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t5"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-1384-2026",
@@ -212,7 +269,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2026-03-25",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t3"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-3449-2026",
@@ -236,7 +301,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2026-07-03",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "plp-19-2026",
@@ -260,7 +333,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2026-02-09",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t4",
+     "t8"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "plp-75-2026",
@@ -286,7 +368,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2026-03-23",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pdl-24-2025",
@@ -312,7 +402,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-02-03",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pdl-85-2025",
@@ -336,7 +434,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-02-17",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pdl-112-2025",
@@ -360,7 +466,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-03-06",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t5"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pdl-124-2025",
@@ -386,7 +500,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-03-14",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t6"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pdl-166-2025",
@@ -412,7 +534,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-04-25",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pdl-201-2025",
@@ -438,7 +568,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-05-09",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pdl-334-2025",
@@ -462,7 +600,14 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-06-13",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "vazio",
+    "por": "modelo",
+    "decidido_em": "2026-08-25",
+    "precisa_de_olho": "'Susta o Decreto no 12.499, de 11 de junho de 2025.' — so isso"
+   }
   },
   {
    "id_registro": "pdl-1012-2025",
@@ -486,7 +631,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-11-17",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t4",
+     "t8"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pdl-1022-2025",
@@ -512,7 +666,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-11-27",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-9-2025",
@@ -539,7 +701,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-02-27",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t3"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-10-2025",
@@ -565,7 +735,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-03-17",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-11-2025",
@@ -592,7 +770,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-03-18",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-30-2025",
@@ -619,7 +805,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-08-12",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-32-2025",
@@ -645,7 +839,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-08-20",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-35-2025",
@@ -672,7 +874,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-09-23",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t8",
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-40-2025",
@@ -698,7 +909,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-10-29",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-158-2025",
@@ -724,7 +943,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-02-03",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t5"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-159-2025",
@@ -748,7 +975,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-02-03",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-160-2025",
@@ -772,7 +1007,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-02-03",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25",
+    "precisa_de_olho": "cisternas: licitacao (t10) ou infraestrutura hidrica (t5)"
+   }
   },
   {
    "id_registro": "pl-161-2025",
@@ -796,7 +1040,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-02-03",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t9"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-162-2025",
@@ -822,7 +1074,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-02-03",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-163-2025",
@@ -848,7 +1108,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-02-03",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t2"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-1890-2025",
@@ -874,7 +1142,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-04-28",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-1891-2025",
@@ -900,7 +1176,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-04-28",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-2675-2025",
@@ -924,7 +1208,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-06-02",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-2841-2025",
@@ -950,7 +1242,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-06-11",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t9"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-3112-2025",
@@ -976,7 +1276,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-06-27",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t5",
+     "t6"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-3371-2025",
@@ -1000,7 +1309,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-07-14",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-5764-2025",
@@ -1024,7 +1341,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-11-10",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "plp-16-2025",
@@ -1050,7 +1375,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-02-06",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "plp-190-2025",
@@ -1076,7 +1409,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-09-11",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "plp-198-2025",
@@ -1102,7 +1443,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-09-23",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "plp-225-2025",
@@ -1128,7 +1477,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2025-10-29",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pdl-223-2024",
@@ -1152,7 +1509,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2024-04-26",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t3"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-28-2024",
@@ -1178,7 +1543,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2024-07-10",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-29-2024",
@@ -1204,7 +1577,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2024-07-10",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t9"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-42-2024",
@@ -1231,7 +1612,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2024-11-11",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-48-2024",
@@ -1258,7 +1647,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2024-12-11",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-51-2024",
@@ -1284,7 +1681,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2024-12-12",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t4",
+     "t5"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-854-2024",
@@ -1311,7 +1717,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2024-03-19",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-855-2024",
@@ -1338,7 +1752,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2024-03-19",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-1116-2024",
@@ -1364,7 +1786,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2024-04-08",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-3070-2024",
@@ -1388,7 +1818,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2024-08-07",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t2"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25",
+    "precisa_de_olho": "acervos bibliograficos: escola (t2) ou cultura (t9)"
+   }
   },
   {
    "id_registro": "pl-3654-2024",
@@ -1412,7 +1851,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2024-09-20",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-3697-2024",
@@ -1438,7 +1885,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2024-09-25",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-3941-2024",
@@ -1464,7 +1919,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2024-10-15",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t6"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-3942-2024",
@@ -1490,7 +1953,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2024-10-15",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t6"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-3943-2024",
@@ -1517,7 +1988,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2024-10-15",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t6",
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-4018-2024",
@@ -1543,7 +2023,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2024-10-21",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "plp-30-2024",
@@ -1570,7 +2058,17 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2024-03-19",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t4",
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25",
+    "precisa_de_olho": "aposentadoria de policial: previdencia (t4) ou carreira policial (t1)"
+   }
   },
   {
    "id_registro": "plp-161-2024",
@@ -1596,7 +2094,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2024-10-17",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "plp-177-2024",
@@ -1620,7 +2126,14 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2024-10-31",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "vazio",
+    "por": "modelo",
+    "decidido_em": "2026-08-25",
+    "precisa_de_olho": "'Revoga a Lei Complementar no 207, de 17 de maio de 2024.' — so isso"
+   }
   },
   {
    "id_registro": "pdl-3-2023",
@@ -1644,7 +2157,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2023-02-02",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pdl-102-2023",
@@ -1671,7 +2192,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2023-04-06",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t5"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pdl-188-2023",
@@ -1695,7 +2224,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2023-07-21",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pdl-195-2023",
@@ -1719,7 +2256,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2023-07-27",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pdl-200-2023",
@@ -1743,7 +2288,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2023-07-30",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t7"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25",
+    "precisa_de_olho": "conflito agrario/reintegracao de posse — nossos temas nao tem questao agraria"
+   }
   },
   {
    "id_registro": "pdl-209-2023",
@@ -1769,7 +2323,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2023-08-03",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t7"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25",
+    "precisa_de_olho": "conflito agrario — comissao de solucoes fundiarias do CNJ"
+   }
   },
   {
    "id_registro": "pdl-313-2023",
@@ -1793,7 +2356,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2023-09-06",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t7"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25",
+    "precisa_de_olho": "reforma agraria (Lei 8.629) — pus em Habitacao por falta de gaveta melhor"
+   }
   },
   {
    "id_registro": "pec-3-2023",
@@ -1819,7 +2391,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2023-03-08",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t4",
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-5-2023",
@@ -1846,7 +2427,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2023-03-15",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-6-2023",
@@ -1873,7 +2462,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2023-03-16",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t4",
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-7-2023",
@@ -1899,7 +2497,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2023-03-16",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-26-2023",
@@ -1925,7 +2531,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2023-05-17",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-27-2023",
@@ -1951,7 +2565,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2023-05-18",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t4",
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-34-2023",
@@ -1978,7 +2601,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2023-08-09",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-44-2023",
@@ -2006,7 +2637,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2023-09-14",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-50-2023",
@@ -2032,7 +2671,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2023-09-27",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-64-2023",
@@ -2058,7 +2705,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2023-11-24",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-2501-2023",
@@ -2084,7 +2739,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2023-05-10",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t9",
+     "t8"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-3763-2023",
@@ -2110,7 +2774,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2023-08-07",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-4370-2023",
@@ -2136,7 +2808,17 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2023-09-06",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t1",
+     "t7"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25",
+    "precisa_de_olho": "esbulho possessorio: crime (t1) e terra (t7) ao mesmo tempo"
+   }
   },
   {
    "id_registro": "plp-141-2023",
@@ -2160,7 +2842,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2023-07-04",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-17-2022",
@@ -2188,7 +2878,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2022-06-15",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25",
+    "precisa_de_olho": "Forcas Armadas e defesa, nao seguranca publica — pus em Organizacao do Estado"
+   }
   },
   {
    "id_registro": "pl-259-2022",
@@ -2214,7 +2913,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2022-02-14",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-1102-2022",
@@ -2238,7 +2945,14 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2022-05-03",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "vazio",
+    "por": "modelo",
+    "decidido_em": "2026-08-25",
+    "precisa_de_olho": "'Concede anistia aos fatos que especifica.' — quais fatos?"
+   }
   },
   {
    "id_registro": "pl-1622-2022",
@@ -2264,7 +2978,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2022-06-13",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t3"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-1623-2022",
@@ -2288,7 +3010,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2022-06-13",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t3"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-2310-2022",
@@ -2314,7 +3044,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2022-08-16",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-3-2021",
@@ -2340,7 +3078,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2021-02-24",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-5-2021",
@@ -2366,7 +3112,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2021-03-25",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pec-32-2021",
@@ -2393,7 +3147,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2021-09-30",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-222-2021",
@@ -2419,7 +3181,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2021-02-04",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t3"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-915-2021",
@@ -2445,7 +3215,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2021-03-16",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t3",
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-1119-2021",
@@ -2471,7 +3250,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2021-03-30",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-1148-2021",
@@ -2497,7 +3284,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2021-03-30",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-1696-2021",
@@ -2521,7 +3316,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2021-05-04",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t3"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-4061-2021",
@@ -2547,7 +3350,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2021-11-17",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t1",
+     "t2"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-4184-2021",
@@ -2573,7 +3385,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2021-11-26",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-4498-2021",
@@ -2600,7 +3420,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2021-12-16",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "plp-18-2021",
@@ -2626,7 +3454,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2021-02-17",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t3",
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-12-2020",
@@ -2653,7 +3490,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-02-03",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-15-2020",
@@ -2679,7 +3524,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-02-03",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-82-2020",
@@ -2705,7 +3558,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-02-04",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t3"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-83-2020",
@@ -2732,7 +3593,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-02-04",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-84-2020",
@@ -2760,7 +3629,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-02-04",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-85-2020",
@@ -2786,7 +3663,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-02-04",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-86-2020",
@@ -2812,7 +3697,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-02-04",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-87-2020",
@@ -2838,7 +3731,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-02-04",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-422-2020",
@@ -2865,7 +3766,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-02-27",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-1468-2020",
@@ -2891,7 +3800,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-04-02",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t2",
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-1469-2020",
@@ -2917,7 +3835,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-04-02",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-1735-2020",
@@ -2943,7 +3869,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-04-08",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-2680-2020",
@@ -2967,7 +3901,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-05-14",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-2681-2020",
@@ -2993,7 +3935,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-05-14",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t4",
+     "t9"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-2682-2020",
@@ -3019,7 +3970,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-05-14",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t1",
+     "t3"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-2683-2020",
@@ -3045,7 +4005,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-05-14",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-2684-2020",
@@ -3072,7 +4040,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-05-14",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-2915-2020",
@@ -3098,7 +4074,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-05-26",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t3"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-2916-2020",
@@ -3124,7 +4108,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-05-26",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t3"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-2917-2020",
@@ -3150,7 +4142,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-05-26",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-3113-2020",
@@ -3176,7 +4176,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-06-03",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-3731-2020",
@@ -3202,7 +4210,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-07-09",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-4037-2020",
@@ -3226,7 +4242,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-08-03",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-4038-2020",
@@ -3250,7 +4274,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-08-03",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-4563-2020",
@@ -3276,7 +4308,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-09-14",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-4564-2020",
@@ -3302,7 +4342,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-09-14",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-4752-2020",
@@ -3329,7 +4377,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-09-29",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-4994-2020",
@@ -3356,7 +4412,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-10-21",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-5246-2020",
@@ -3380,7 +4444,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-11-24",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t9"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25",
+    "precisa_de_olho": "esporte nao tem tema proprio; pus em Cultura e Direitos Humanos"
+   }
   },
   {
    "id_registro": "pl-5247-2020",
@@ -3406,7 +4479,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-11-24",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t9"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25",
+    "precisa_de_olho": "esporte nao tem tema proprio; pus em Cultura e Direitos Humanos"
+   }
   },
   {
    "id_registro": "pl-5248-2020",
@@ -3432,7 +4514,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-11-24",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t2"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-5390-2020",
@@ -3458,7 +4548,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-12-04",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "plp-148-2020",
@@ -3484,7 +4582,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-06-01",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "plp-150-2020",
@@ -3510,7 +4616,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2020-06-02",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-889-2019",
@@ -3536,7 +4650,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2019-02-19",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-1090-2019",
@@ -3562,7 +4684,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2019-02-25",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-1137-2019",
@@ -3588,7 +4718,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2019-02-26",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t1",
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-2217-2019",
@@ -3614,7 +4753,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2019-04-10",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t9",
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-2218-2019",
@@ -3640,7 +4788,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2019-04-10",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-2582-2019",
@@ -3667,7 +4823,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2019-04-29",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-2593-2019",
@@ -3691,7 +4855,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2019-04-30",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-2882-2019",
@@ -3717,7 +4889,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2019-05-14",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-2909-2019",
@@ -3745,7 +4925,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2019-05-15",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t5",
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-3510-2019",
@@ -3769,7 +4958,14 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2019-06-12",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "vazio",
+    "por": "modelo",
+    "decidido_em": "2026-08-25",
+    "precisa_de_olho": "'Altera a Lei 12.101 e da outras providencias' — sem objeto declarado"
+   }
   },
   {
    "id_registro": "pl-3702-2019",
@@ -3795,7 +4991,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2019-06-25",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-4085-2019",
@@ -3821,7 +5025,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2019-07-12",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-4464-2019",
@@ -3847,7 +5059,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2019-08-14",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t1",
+     "t2"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-4745-2019",
@@ -3873,7 +5094,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2019-08-28",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-4929-2019",
@@ -3899,7 +5128,13 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2019-09-10",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-4930-2019",
@@ -3925,7 +5160,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2019-09-10",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-5483-2019",
@@ -3952,7 +5195,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2019-10-10",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-5677-2019",
@@ -3978,7 +5229,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2019-10-24",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t1",
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-6257-2019",
@@ -4005,7 +5265,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2019-12-03",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-6381-2019",
@@ -4031,7 +5299,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2019-12-10",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-6430-2019",
@@ -4057,7 +5333,15 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2019-12-12",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "pl-6601-2019",
@@ -4083,7 +5367,13 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2019-12-19",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "plp-146-2019",
@@ -4109,7 +5399,16 @@
    "url_conferida_em": null,
    "url_base": "API da Camara, ementa literal da API",
    "_apresentada_em": "2019-05-29",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t4",
+     "t8"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pec-19-2022",
@@ -4136,7 +5435,15 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2022-07-12",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t9"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pl-192-2022",
@@ -4162,7 +5469,16 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2022-02-09",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t9",
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pl-1604-2022",
@@ -4186,7 +5502,16 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2022-06-13",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t9",
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pl-1882-2022",
@@ -4212,7 +5537,15 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2022-07-04",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t9"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pl-2016-2022",
@@ -4238,7 +5571,16 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2022-07-13",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t1",
+     "t9"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pec-47-2021",
@@ -4265,7 +5607,16 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2021-12-09",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t8",
+     "t9"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pl-910-2021",
@@ -4289,7 +5640,15 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2021-03-16",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pl-1888-2021",
@@ -4315,7 +5674,16 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2021-05-19",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t1",
+     "t9"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pl-1903-2021",
@@ -4341,7 +5709,15 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2021-05-20",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pl-2010-2021",
@@ -4365,7 +5741,15 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2021-05-31",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pl-2040-2021",
@@ -4389,7 +5773,15 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2021-06-02",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pl-2320-2021",
@@ -4415,7 +5807,15 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2021-06-24",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t9"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pl-2666-2021",
@@ -4443,7 +5843,15 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2021-08-03",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pl-4152-2021",
@@ -4469,7 +5877,13 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2021-11-24",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pl-4438-2021",
@@ -4495,7 +5909,15 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2021-12-14",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t9"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pl-62-2020",
@@ -4521,7 +5943,15 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2020-01-30",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pl-3949-2020",
@@ -4545,7 +5975,15 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2020-07-27",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pl-4078-2020",
@@ -4569,7 +6007,15 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2020-08-04",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pl-4079-2020",
@@ -4595,7 +6041,16 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2020-08-04",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t4",
+     "t7"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pl-4391-2020",
@@ -4619,7 +6074,16 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2020-08-28",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t10",
+     "t9"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pec-109-2019",
@@ -4645,7 +6109,15 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2019-07-09",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pec-133-2019",
@@ -4672,7 +6144,15 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2019-09-05",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pl-3841-2019",
@@ -4698,7 +6178,15 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2019-07-02",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pl-3943-2019",
@@ -4722,7 +6210,15 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2019-07-04",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-plp-172-2019",
@@ -4748,7 +6244,16 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2019-07-02",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t3",
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pls-64-2018",
@@ -4774,7 +6279,16 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2018-02-28",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t1",
+     "t9"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pls-142-2018",
@@ -4800,7 +6314,15 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2018-03-28",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t9"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pec-43-2017",
@@ -4826,7 +6348,15 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2017-11-29",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pls-182-2017",
@@ -4852,7 +6382,16 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2017-06-07",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t1",
+     "t5"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pls-178-2016",
@@ -4876,7 +6415,13 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2016-04-26",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pls-486-2015",
@@ -4900,7 +6445,15 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2015-07-15",
-   "_confianca_tema": "nenhuma"
+   "_confianca_tema": "nenhuma",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pls-494-2015",
@@ -4926,7 +6479,15 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2015-07-16",
-   "_confianca_tema": "fraca"
+   "_confianca_tema": "fraca",
+   "_classificacao": {
+    "temas": [
+     "t9"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pls-579-2015",
@@ -4952,7 +6513,16 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2015-09-02",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t2",
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pls-582-2015",
@@ -4978,7 +6548,15 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2015-09-08",
-   "_confianca_tema": "boa"
+   "_confianca_tema": "boa",
+   "_classificacao": {
+    "temas": [
+     "t10"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   },
   {
    "id_registro": "sf-pls-724-2015",
@@ -5006,7 +6584,15 @@
    "url_conferida_em": null,
    "url_base": "API do Senado, ementa literal da API",
    "_apresentada_em": "2015-11-10",
-   "_confianca_tema": "ambigua"
+   "_confianca_tema": "ambigua",
+   "_classificacao": {
+    "temas": [
+     "t4"
+    ],
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-25"
+   }
   }
  ]
 }
