@@ -2192,14 +2192,21 @@
    "id_documento": "doc-programa-pstu-tse",
    "texto": "Fim dos creditos e subsidios publicos ao grande agronegocio; recuperacao de areas desmatadas; demarcacao de terras indigenas e titulacao quilombola; CONTRA a exploracao do petroleo da Margem Equatorial; contra a privatizacao dos rios da Amazonia; planos de prevencao a enchentes e deslizamentos; reflorestamento urbano. Diagnostico: o agronegocio responde por cerca de 75% das emissoes nacionais de gases de efeito estufa.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "_destaque": "Contraste direto com o MISSAO, que defende a exploracao soberana do petroleo da margem equatorial, e com Salles, que susta decretos de desapropriacao de imoveis rurais.",
    "id_posicao": "p093",
    "conferido_por_ia": {
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-pstu-2026.pdf, sha 1868565fb0d5de77)"
-   }
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "confere",
+    "nota": "",
+    "citacao_conferida_na_fonte": true
+   },
+   "citacao_literal": "\"Fim dos créditos públicos e dos subsídios estatais ao grande agronegócio\", \"Recuperação das áreas desmatadas e dos biomas devastados pelo agronegócio\", \"Reparação e demarcação imediata das terras indígenas, titulação dos territórios quilombolas e proteção das comunidades tradicionais\", \"Não à exploração do petróleo da Margem Equatorial!\", \"Não à privatização dos rios da Amazônia das hidrovias!\", 'Planos de prevenção contra os efeitos do aquecimento global, tais como: prevenção contra enchentes; prevenção contra deslizamentos de áreas de risco, que atingem as moradias mais precárias.\""
   },
   {
    "id_tema": "t7",

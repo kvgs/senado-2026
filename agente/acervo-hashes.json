@@ -1,22 +1,19 @@
 {
  "gerado_de": "dados/posicoes.json",
- "n": 53,
+ "n": 50,
  "chaves": [
-  "00411706c13bef4b",
   "0617d996dd1f06d8",
   "072da53a000b5056",
   "0ae5d79ca5e1be24",
-  "0b519dcdc072d13f",
   "0dd41e42c7a327dc",
   "12ae5f3a595cbe67",
   "1f3070a811a965cc",
   "2875ceecb79b0fcf",
   "2c4c2b3fe1e6a830",
   "3074e60f5a6dad71",
-  "360bf174bfcc2670",
   "3759ef08f34e1b43",
   "434335f3a1d5a14e",
-  "45bfeafb0fe1f475",
+  "4733fc60b6429a26",
   "49a5a4f2a23b60bb",
   "4cdafa717069da16",
   "5109162cb11fcbdd",
@@ -39,7 +36,6 @@
   "add9ecc97a86ac84",
   "b14aa68985b50499",
   "b15b3584d6373da0",
-  "bb2a47376d1aeba0",
   "bbc73f34671efe36",
   "bd0e4a956ca652d0",
   "bf2a370992cffe9c",
@@ -49,11 +45,12 @@
   "d89284ecde68e16b",
   "d8a4d14970bfbfe7",
   "e3448db32635471e",
-  "ec384177c3ddb4b4",
   "ee54a01285cd1182",
+  "f1e2442eb36680ac",
   "f6b871c5954f102e",
   "f7da8d9afe0c5d04",
   "fc518b6d111f7d44",
-  "fdc182564c706293"
+  "fdc182564c706293",
+  "ff9719fafcbd1e16"
  ]
 }
