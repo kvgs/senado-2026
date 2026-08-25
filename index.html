@@ -220,6 +220,8 @@
   .cabeca-cand .quem-id{padding-top:2px}
   .cabeca-cand .urna{display:block;font-size:1.5rem;line-height:1}
   .cabeca-cand h3{margin-top:7px;font-size:1.12rem;line-height:1.22}
+  .cabeca-cand .completo{display:block;margin-top:5px;font-size:.84rem;line-height:1.35;
+    color:var(--muted)}
   .cabeca-cand .part{display:block;margin-top:7px;font-size:.8rem;letter-spacing:.05em;
     text-transform:uppercase;color:var(--muted);font-family:"PlexMono",monospace}
 
@@ -1054,11 +1056,21 @@ function corpoTema(cid,tid){
         '<div class="quem-id">'+
           '<span class="urna">'+esc(c.numero)+'</span>'+
           '<h3>'+esc(c.nome)+'</h3>'+
+          /* Nome de urna e o titulo, porque e o que aparece na urna quando o
+             eleitor digita o numero. O completo entra embaixo quando difere —
+             "Salles" sozinho e o nome registrado, mas nao e reconhecivel. */
+          /* Comparacao direta: os dois campos vem do mesmo registro do TSE, entao
+             ou sao identicos ou sao diferentes de verdade. (nrm() ainda nao
+             existe neste ponto do arquivo — e const declarada mais abaixo.) */
+          (c.completo && c.completo!==c.nome
+            ? '<span class="completo">'+esc(c.completo)+'</span>' : '')+
           '<span class="part">'+esc(c.partido)+'</span>'+
         '</div>'+
       '</div>'+
       '<div class="corpo-cand">'+
-        '<p class="meta">'+esc(c.completo)+' · '+esc(c.partido_nome)+
+        /* O nome completo ja aparece no cabecalho quando difere; repetir aqui
+           gastaria uma linha dizendo o que a pessoa acabou de ler. */
+        '<p class="meta">'+esc(c.partido_nome)+
         (c.coligacao?' · Coligação '+esc(c.coligacao):' · Sem coligação')+'</p>'+
         '<p class="bio">'+esc(c.bio)+'</p>'+
         '<p class="meta">Situação do registro: <strong>'+esc(c.situacao)+'</strong>, observada em '+
