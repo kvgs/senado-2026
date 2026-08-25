@@ -65,27 +65,54 @@ const checa = (ok, rotulo) => {
   console.log(`${ok ? "OK   " : "FALHA"} ${rotulo}`);
 };
 
-console.log("=== a tela desenhou? ===");
-checa(alvo.length > 400, `cartao renderizado (${alvo.length} chars, nao em branco)`);
-checa(progresso.includes("de"), `barra de progresso: "${progresso}"`);
-checa(alvo.includes('data-d="confere"'), "botao Confere presente");
-checa(alvo.includes('id="cit"'), "campo de citacao presente");
-checa(alvo.includes("Cole a frase da fonte"), "pede a frase (item sem citacao)");
-checa(alvo.includes("o_que_conferir") === false, "sem placeholder cru vazando");
+/* A tela tem DOIS estados legitimos: com item pendente e com a revisao
+   concluida. O teste antigo presumia o primeiro e acusou sete falhas no dia em
+   que a revisao acabou — teste que so vale num estado do mundo mede o estado,
+   nao o programa, e acusa falha no momento de sucesso. */
+const pendentes = itens.filter((x) => !(x.revisado || (x.revisao && x.revisao.resultado)));
 
-console.log("\n=== a trava da citacao funciona? ===");
-ctx.decidir("confere");
-await new Promise((r) => setTimeout(r, 20));
-checa(typeof pedido === "string" && pedido.includes("Cole a frase"),
-      "confirmar sem a frase e recusado");
+console.log(`=== ${pendentes.length} pendente(s) de ${itens.length} ===`);
 
-doc.getElementById("cit").value = "10% do PIB para educacao! Livre acesso a universidade.";
-pedido = null;
-ctx.decidir("confere");
-await new Promise((r) => setTimeout(r, 40));
-checa(pedido && pedido.citacao && pedido.citacao.startsWith("10% do PIB"),
-      "com a frase, envia citacao para o servidor");
-checa(pedido && pedido.decisao === "confere", "decisao enviada corretamente");
+if (!pendentes.length) {
+  console.log("=== revisao concluida: a tela avisa? ===");
+  checa(alvo.length > 40, `mensagem de conclusao renderizada (${alvo.length} chars)`);
+  checa(/Tudo decidido|Nenhuma pergunta pendente|validar/.test(alvo),
+        "diz o que fazer em seguida");
+  checa(!alvo.includes(String.fromCharCode(100) + 'ata-d="confere"'),
+        "nao oferece botao de decisao sem item para decidir");
+  checa(progresso.includes("restam 0"), `progresso confere: "${progresso}"`);
+} else {
+  console.log("=== a tela desenhou? ===");
+  checa(alvo.length > 400, `cartao renderizado (${alvo.length} chars)`);
+  checa(progresso.includes("de"), `barra de progresso: "${progresso}"`);
+  checa(alvo.includes('data-d="confere"'), "botao Confere presente");
+  checa(alvo.includes('id="cit"'), "campo de citacao presente");
+  checa(alvo.includes("o_que_conferir") === false, "sem placeholder cru vazando");
+
+  if (!pendentes[0].citacao.trim()) {
+    checa(alvo.includes("Cole a frase da fonte"), "pede a frase (item sem citacao)");
+    console.log("");
+    console.log("=== a trava da citacao funciona? ===");
+    ctx.decidir("confere");
+    await new Promise((r) => setTimeout(r, 20));
+    checa(typeof pedido === "string" && pedido.includes("Cole a frase"),
+          "confirmar sem a frase e recusado");
+    doc.getElementById("cit").value = "Trecho colado da fonte para o teste.";
+    pedido = null;
+    ctx.decidir("confere");
+    await new Promise((r) => setTimeout(r, 40));
+    checa(pedido && pedido.citacao && pedido.citacao.startsWith("Trecho colado"),
+          "com a frase, envia citacao para o servidor");
+    checa(pedido && pedido.decisao === "confere", "decisao enviada corretamente");
+  } else {
+    console.log("");
+    console.log("=== item ja tem citacao: campo e opcional ===");
+    pedido = null;
+    ctx.decidir("confere");
+    await new Promise((r) => setTimeout(r, 40));
+    checa(pedido && pedido.decisao === "confere", "confirma sem exigir frase nova");
+  }
+}
 
 console.log(`\n=== ${falhas ? falhas + " FALHA(S)" : "a tela funciona"} ===`);
 process.exit(falhas ? 1 : 0);
