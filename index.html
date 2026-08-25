@@ -165,6 +165,18 @@
 
   /* ---------- cartao de candidato ---------- */
   .lista{list-style:none;display:flex;flex-direction:column;gap:14px;margin-top:22px}
+
+  /* Grade da primeira pagina. auto-fill em vez de 3 colunas fixas: tres no
+     desktop, duas no tablet, uma no telefone, sem media query nenhuma. */
+  .grade-cands{list-style:none;display:grid;gap:16px;margin-top:26px;
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+  .grade-cands .card{display:flex;flex-direction:column}
+  .grade-cands .card-top{flex:1;flex-direction:column;gap:12px;border-bottom:0;padding:18px}
+  .grade-cands .retrato{flex:0 0 52px;width:52px;height:52px}
+  .grade-cands .ident{display:flex;flex-direction:column;flex:1}
+  /* Botao no fim do cartao: cartoes de alturas diferentes ficam com o botao na
+     mesma linha, que e o que faz a grade parecer montada. */
+  .grade-cands .link-perfil{margin-top:auto;padding-top:14px}
   .card{background:var(--surface);border:1px solid var(--rule);border-radius:4px}
   .card-top{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;
     border-bottom:1px solid var(--rule)}
@@ -459,7 +471,7 @@
       <h2>As 15 candidaturas</h2>
       <p class="metodo-p" style="margin-top:8px;color:var(--muted);font-size:.93rem;max-width:70ch">
         Em ordem de número de urna. A ordem não expressa preferência nem posição em pesquisa.</p>
-      <ul class="lista" id="lista-cands"></ul>
+      <ul class="grade-cands" id="lista-cands"></ul>
     </div>
 
     <div role="tabpanel" id="p-temas" aria-labelledby="tab-temas" tabindex="0" hidden>
