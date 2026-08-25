@@ -76,12 +76,11 @@
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
    "id_documento": "doc-senado-api",
    "_classificacao": {
-    "temas": [
-     "t5"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "sem_ancora",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Nao cita proposicao com numero e ano — sem ancora para o leitor conferir do que se trata."
    }
   },
   {
@@ -131,13 +130,11 @@
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
    "id_documento": "doc-senado-api",
    "_classificacao": {
-    "temas": [
-     "t10",
-     "t4"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "sem_ancora",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Nao cita proposicao com numero e ano — sem ancora para o leitor conferir do que se trata."
    }
   },
   {
@@ -188,13 +185,11 @@
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
    "id_documento": "doc-senado-api",
    "_classificacao": {
-    "temas": [
-     "t9",
-     "t1"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "sem_ancora",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Nao cita proposicao com numero e ano — sem ancora para o leitor conferir do que se trata."
    }
   },
   {
@@ -216,12 +211,11 @@
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
    "id_documento": "doc-senado-api",
    "_classificacao": {
-    "temas": [
-     "t9"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "sem_ancora",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Nao cita proposicao com numero e ano — sem ancora para o leitor conferir do que se trata."
    }
   },
   {
@@ -272,12 +266,11 @@
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
    "id_documento": "doc-senado-api",
    "_classificacao": {
-    "temas": [
-     "t9"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "sem_ancora",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Nao cita proposicao com numero e ano — sem ancora para o leitor conferir do que se trata."
    }
   },
   {
@@ -299,12 +292,11 @@
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
    "id_documento": "doc-senado-api",
    "_classificacao": {
-    "temas": [
-     "t9"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "sem_ancora",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Nao cita proposicao com numero e ano — sem ancora para o leitor conferir do que se trata."
    }
   },
   {
@@ -326,13 +318,11 @@
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
    "id_documento": "doc-senado-api",
    "_classificacao": {
-    "temas": [
-     "t6"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "sem_ancora",
     "por": "modelo",
     "decidido_em": "2026-08-25",
-    "precisa_de_olho": "solidariedade por mortes em enchente + critica ao governo, misturados"
+    "nota": "Nao cita proposicao com numero e ano — sem ancora para o leitor conferir do que se trata."
    }
   },
   {
@@ -438,13 +428,11 @@
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
    "id_documento": "doc-senado-api",
    "_classificacao": {
-    "temas": [
-     "t4",
-     "t5"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "sem_ancora",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Nao cita proposicao com numero e ano — sem ancora para o leitor conferir do que se trata."
    }
   },
   {
@@ -493,12 +481,11 @@
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
    "id_documento": "doc-senado-api",
    "_classificacao": {
-    "temas": [
-     "t10"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "sem_ancora",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Nao cita proposicao com numero e ano — sem ancora para o leitor conferir do que se trata."
    }
   },
   {
@@ -518,12 +505,11 @@
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
    "id_documento": "doc-senado-api",
    "_classificacao": {
-    "temas": [
-     "t4"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "sem_ancora",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Nao cita proposicao com numero e ano — sem ancora para o leitor conferir do que se trata."
    }
   },
   {
@@ -547,12 +533,11 @@
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
    "id_documento": "doc-senado-api",
    "_classificacao": {
-    "temas": [
-     "t4"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "sem_ancora",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Nao cita proposicao com numero e ano — sem ancora para o leitor conferir do que se trata."
    }
   },
   {
@@ -796,12 +781,11 @@
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
    "id_documento": "doc-senado-api",
    "_classificacao": {
-    "temas": [
-     "t4"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "sem_ancora",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Nao cita proposicao com numero e ano — sem ancora para o leitor conferir do que se trata."
    }
   },
   {
@@ -852,12 +836,11 @@
    "_ressalva": "Resumo e indexacao sao da taquigrafia do Senado; o texto integral esta no link.",
    "id_documento": "doc-senado-api",
    "_classificacao": {
-    "temas": [
-     "t2"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "sem_ancora",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Nao cita proposicao com numero e ano — sem ancora para o leitor conferir do que se trata."
    }
   },
   {
@@ -961,12 +944,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t4"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "tipo_de_sessao",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Breves Comunicacoes: comentario livre, e nao proposta. Regra da Kelli, 25 de agosto de 2026."
    }
   },
   {
@@ -1009,13 +991,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t8",
-     "t9"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "tipo_de_sessao",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Breves Comunicacoes: comentario livre, e nao proposta. Regra da Kelli, 25 de agosto de 2026."
    }
   },
   {
@@ -1036,12 +1016,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t1"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "tipo_de_sessao",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Breves Comunicacoes: comentario livre, e nao proposta. Regra da Kelli, 25 de agosto de 2026."
    }
   },
   {
@@ -1064,12 +1043,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t1"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "tipo_de_sessao",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Breves Comunicacoes: comentario livre, e nao proposta. Regra da Kelli, 25 de agosto de 2026."
    }
   },
   {
@@ -1162,12 +1140,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t10"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "tipo_de_sessao",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Breves Comunicacoes: comentario livre, e nao proposta. Regra da Kelli, 25 de agosto de 2026."
    }
   },
   {
@@ -1210,13 +1187,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t4",
-     "t3"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "sem_ancora",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Nao cita proposicao com numero e ano — sem ancora para o leitor conferir do que se trata."
    }
   },
   {
@@ -1353,12 +1328,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t4"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "tipo_de_sessao",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Breves Comunicacoes: comentario livre, e nao proposta. Regra da Kelli, 25 de agosto de 2026."
    }
   },
   {
@@ -1423,12 +1397,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t1"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "tipo_de_sessao",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Breves Comunicacoes: comentario livre, e nao proposta. Regra da Kelli, 25 de agosto de 2026."
    }
   },
   {
@@ -1447,12 +1420,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t10"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "tipo_de_sessao",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Breves Comunicacoes: comentario livre, e nao proposta. Regra da Kelli, 25 de agosto de 2026."
    }
   },
   {
@@ -1473,13 +1445,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t4",
-     "t10"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "tipo_de_sessao",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Breves Comunicacoes: comentario livre, e nao proposta. Regra da Kelli, 25 de agosto de 2026."
    }
   },
   {
@@ -1549,12 +1519,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t5"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "sem_ancora",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Nao cita proposicao com numero e ano — sem ancora para o leitor conferir do que se trata."
    }
   },
   {
@@ -1573,12 +1542,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t10"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "tipo_de_sessao",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Breves Comunicacoes: comentario livre, e nao proposta. Regra da Kelli, 25 de agosto de 2026."
    }
   },
   {
@@ -1665,12 +1633,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t4"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "tipo_de_sessao",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Breves Comunicacoes: comentario livre, e nao proposta. Regra da Kelli, 25 de agosto de 2026."
    }
   },
   {
@@ -1785,12 +1752,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t10"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "tipo_de_sessao",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Breves Comunicacoes: comentario livre, e nao proposta. Regra da Kelli, 25 de agosto de 2026."
    }
   },
   {
@@ -1833,12 +1799,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t4"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "sem_ancora",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Nao cita proposicao com numero e ano — sem ancora para o leitor conferir do que se trata."
    }
   },
   {
@@ -1857,13 +1822,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t1"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "sem_ancora",
     "por": "modelo",
     "decidido_em": "2026-08-25",
-    "precisa_de_olho": "CPI do MST — enquadrei como Seguranca porque e o enquadramento do orador"
+    "nota": "Nao cita proposicao com numero e ano — sem ancora para o leitor conferir do que se trata."
    }
   },
   {
@@ -1884,13 +1847,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t1",
-     "t2"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "tipo_de_sessao",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Breves Comunicacoes: comentario livre, e nao proposta. Regra da Kelli, 25 de agosto de 2026."
    }
   },
   {
@@ -1912,13 +1873,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t1"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "tipo_de_sessao",
     "por": "modelo",
     "decidido_em": "2026-08-25",
-    "precisa_de_olho": "CPI do MST — idem"
+    "nota": "Breves Comunicacoes: comentario livre, e nao proposta. Regra da Kelli, 25 de agosto de 2026."
    }
   },
   {
@@ -1939,13 +1898,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t1"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "tipo_de_sessao",
     "por": "modelo",
     "decidido_em": "2026-08-25",
-    "precisa_de_olho": "CPI do MST — idem"
+    "nota": "Breves Comunicacoes: comentario livre, e nao proposta. Regra da Kelli, 25 de agosto de 2026."
    }
   },
   {
@@ -1966,12 +1923,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t4"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "tipo_de_sessao",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Breves Comunicacoes: comentario livre, e nao proposta. Regra da Kelli, 25 de agosto de 2026."
    }
   },
   {
@@ -1990,13 +1946,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t1"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "tipo_de_sessao",
     "por": "modelo",
     "decidido_em": "2026-08-25",
-    "precisa_de_olho": "CPI do MST — idem"
+    "nota": "Breves Comunicacoes: comentario livre, e nao proposta. Regra da Kelli, 25 de agosto de 2026."
    }
   },
   {
@@ -2017,12 +1971,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t8"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "tipo_de_sessao",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Breves Comunicacoes: comentario livre, e nao proposta. Regra da Kelli, 25 de agosto de 2026."
    }
   },
   {
@@ -2041,14 +1994,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t9",
-     "t1"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "tipo_de_sessao",
     "por": "modelo",
     "decidido_em": "2026-08-25",
-    "precisa_de_olho": "violencia de genero e depredacao urbana no mesmo pronunciamento"
+    "nota": "Breves Comunicacoes: comentario livre, e nao proposta. Regra da Kelli, 25 de agosto de 2026."
    }
   },
   {
@@ -2115,13 +2065,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t1"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "tipo_de_sessao",
     "por": "modelo",
     "decidido_em": "2026-08-25",
-    "precisa_de_olho": "MST e atos de 8 de janeiro no mesmo pronunciamento"
+    "nota": "Breves Comunicacoes: comentario livre, e nao proposta. Regra da Kelli, 25 de agosto de 2026."
    }
   },
   {
@@ -2140,13 +2088,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t4",
-     "t5"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "tipo_de_sessao",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Breves Comunicacoes: comentario livre, e nao proposta. Regra da Kelli, 25 de agosto de 2026."
    }
   },
   {
@@ -2168,13 +2114,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t6",
-     "t4"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "tipo_de_sessao",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Breves Comunicacoes: comentario livre, e nao proposta. Regra da Kelli, 25 de agosto de 2026."
    }
   },
   {
@@ -2369,13 +2313,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t6",
-     "t9"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "sem_ancora",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Nao cita proposicao com numero e ano — sem ancora para o leitor conferir do que se trata."
    }
   },
   {
@@ -2423,12 +2365,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t6"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "tipo_de_sessao",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Breves Comunicacoes: comentario livre, e nao proposta. Regra da Kelli, 25 de agosto de 2026."
    }
   },
   {
@@ -2543,12 +2484,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t5"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "tipo_de_sessao",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Breves Comunicacoes: comentario livre, e nao proposta. Regra da Kelli, 25 de agosto de 2026."
    }
   },
   {
@@ -2569,12 +2509,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t6"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "sem_ancora",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Nao cita proposicao com numero e ano — sem ancora para o leitor conferir do que se trata."
    }
   },
   {
@@ -2595,13 +2534,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t9",
-     "t1"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "sem_ancora",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Nao cita proposicao com numero e ano — sem ancora para o leitor conferir do que se trata."
    }
   },
   {
@@ -2774,12 +2711,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t1"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "sem_ancora",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Nao cita proposicao com numero e ano — sem ancora para o leitor conferir do que se trata."
    }
   },
   {
@@ -2825,12 +2761,11 @@
    "_ressalva": "Transcricao sem revisao do orador (Diario da Camara).",
    "id_documento": "doc-camara-api",
    "_classificacao": {
-    "temas": [
-     "t1"
-    ],
-    "motivo": "",
+    "temas": [],
+    "motivo": "sem_ancora",
     "por": "modelo",
-    "decidido_em": "2026-08-25"
+    "decidido_em": "2026-08-25",
+    "nota": "Nao cita proposicao com numero e ano — sem ancora para o leitor conferir do que se trata."
    }
   }
  ]

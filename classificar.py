@@ -243,10 +243,14 @@ a.fonte{display:inline-block;font-size:.89rem;color:#0C6C8F;margin-bottom:16px}
 .minha b{color:#0C6C8F}
 .tipo{font-size:.72rem;letter-spacing:.05em;color:#7A5200;font-weight:700}
 .fim{background:#fff;border:1px solid #E5E0DA;border-radius:9px;padding:30px;text-align:center}
+#aviso{background:#FBE3E0;border:1px solid #B02418;color:#7a1a12;border-radius:7px;
+  padding:13px 16px;margin-bottom:16px;font-size:.9rem;line-height:1.55}
+#aviso code{background:#fff;padding:1px 5px;border-radius:3px}
 </style></head><body><div class="env">
 <h1>Classificar por tema</h1>
 <div class="sub" id="sub"></div>
 <div class="barra"><i id="prog" style="width:0%"></i></div>
+<div id="aviso" hidden></div>
 <div id="alvo"></div>
 </div>
 <script>
@@ -358,18 +362,38 @@ function desenhar(){
     });
 }
 
+/* O erro TEM de aparecer. Antes, se a gravacao falhasse, a tela avancava do
+   mesmo jeito e nao dizia nada: a decisao sumia e o item voltava no proximo
+   carregamento. Da tela, isso e indistinguivel de "o botao nao funciona" — e foi
+   assim que a Kelli viu. fetch nao lanca excecao em resposta 400, entao engolir
+   o resultado era engolir a falha. */
 function decidir(temas, motivo){
   var pend=pendentes(); var x=pend[i];
   if(!x) return;
   fetch('/api/classificar',{method:'POST',headers:{'Content-Type':'application/json'},
     body:JSON.stringify({id:x.id,temas:temas,motivo:motivo})})
-   .then(function(r){return r.json();})
-   .then(function(){
+   .then(function(r){return r.json().then(function(j){return {http:r.status,corpo:j};});})
+   .then(function(res){
+     if(res.http!==200||res.corpo.erro||res.corpo.ok!==true){
+       falhou((res.corpo&&res.corpo.erro)||('o servidor respondeu '+res.http));
+       return;
+     }
      x.decisao={temas:temas,motivo:motivo,por:'humano',
                 concordou: x.minha ? String(x.minha.slice().sort())===String(temas.slice().sort())
                                    : undefined};
+     var b=document.getElementById('aviso'); if(b){b.hidden=true;b.innerHTML='';}
      desenhar();
-   });
+   })
+   .catch(function(e){ falhou('não consegui falar com o servidor: '+e.message); });
+}
+
+function falhou(msg){
+  var b=document.getElementById('aviso');
+  if(!b) return;
+  b.innerHTML='<strong>A decisão NÃO foi gravada.</strong> '+esc(msg)+
+    '<br>Se o servidor foi iniciado antes da última atualização, pare o '+
+    '<code>classificar.py</code> no terminal (ctrl+c) e rode de novo.';
+  b.hidden=false;
 }
 
 document.addEventListener('keydown',function(e){
@@ -436,7 +460,14 @@ class Handler(http.server.BaseHTTPRequestHandler):
         if not temas and motivo not in ("nenhum", "link"):
             return self._envia(json.dumps({"erro": "sem tema e sem motivo"}), status=400)
         ok = gravar(c.get("id"), temas, motivo)
-        self._envia(json.dumps({"ok": ok} if ok else {"erro": "item nao encontrado"}))
+        if not ok:
+            # Acontece quando a pagina no navegador e mais velha que os dados:
+            # os ids de discurso mudaram quando a hora entrou neles, e uma aba
+            # aberta antes disso manda ids que nao existem mais.
+            return self._envia(json.dumps({
+                "erro": f'nao existe item com id "{c.get("id")}" — a página aberta '
+                        'no navegador é mais antiga que os dados'}), status=409)
+        self._envia(json.dumps({"ok": True}))
 
     def log_message(self, *a):
         pass
@@ -454,7 +485,8 @@ def conferir_pagina():
     if partidas:
         raise SystemExit("JavaScript quebrado nas linhas " + ", ".join(map(str, partidas[:5])) +
                          '.\nConfira se PAGINA continua sendo string CRUA (r""").')
-    for marca in ("/api/classificar", "data-x=\"nenhum\"", "function decidir", "class=\"minha\""):
+    for marca in ("/api/classificar", "data-x=\"nenhum\"", "function decidir",
+                  "class=\"minha\"", "function falhou", 'id="aviso"'):
         if marca not in PAGINA:
             raise SystemExit(f"A pagina perdeu um elemento essencial: {marca}")
 

@@ -75,14 +75,30 @@ async function main() {
   const novo = (id) => {
     const el = {
       id, _html: "", style: {}, tagName: "DIV",
-      addEventListener() {}, querySelectorAll: (s) => el._achar(s),
+      // addEventListener GUARDA o ouvinte, e querySelectorAll devolve SEMPRE o
+      // mesmo objeto para o mesmo DOM. Com stub vazio e elemento descartavel,
+      // os botoes nunca eram exercidos — e um botao quebrado passava no teste.
+      _ouvintes: {},
+      addEventListener(ev, fn) { (el._ouvintes[ev] = el._ouvintes[ev] || []).push(fn); },
+      disparar(ev) { for (const fn of (el._ouvintes[ev] || [])) fn.call(el, { preventDefault() {} }); },
+      querySelectorAll(s) {
+        el._cache = el._cache || {};
+        const k = s + "|" + el._html.length;
+        if (!el._cache[k]) el._cache[k] = el._achar(s);
+        return el._cache[k];
+      },
       _achar(sel) {
         // basta reconhecer os seletores que a pagina usa
         const m = [...el._html.matchAll(/<button([^>]*)>/g)];
         return m.filter(x => sel.includes(".temas") ? x[1].includes("data-t")
                           : sel.includes(".outros") ? x[1].includes("data-x") : true)
-                .map(x => ({ getAttribute: (a) => (x[1].match(new RegExp(a + '="([^"]*)"')) || [])[1],
-                             addEventListener() {} }));
+                .map(x => {
+                  const b = { _ouvintes: {},
+                    getAttribute: (a) => (x[1].match(new RegExp(a + '="([^"]*)"')) || [])[1] ?? null,
+                    addEventListener(ev, fn) { (b._ouvintes[ev] = b._ouvintes[ev] || []).push(fn); },
+                    disparar(ev) { for (const fn of (b._ouvintes[ev] || [])) fn.call(b, { preventDefault() {} }); } };
+                  return b;
+                });
       },
       setAttribute() {}, getAttribute() { return null; },
     };
@@ -119,6 +135,24 @@ async function main() {
   ok(alvo.includes("data-x=\"nenhum\""), 'oferece "nao se aplica"');
   ok(alvo.includes("abrir a peça na fonte oficial"), "mostra o link da fonte");
   ok(alvo.includes('class="minha"'), "mostra o que o modelo classificou");
+
+  // -------- o clique tem de sair do botao e virar POST. Foi aqui que passou o
+  //           defeito que a Kelli achou usando a tela.
+  const postsJS = [];
+  ctx.fetch = async (u, opc) => {
+    if (String(u).endsWith("/api/itens")) return { status: 200, json: async () => dados };
+    postsJS.push(JSON.parse(opc.body));
+    return { status: 200, json: async () => ({ ok: true }) };
+  };
+  const outros = doc.getElementById("alvo").querySelectorAll(".outros button");
+  const semTema = outros.find(b => b.getAttribute("data-x") === "nenhum");
+  ok(!!semTema, 'existe o botao "nao se aplica"');
+  ok((semTema?._ouvintes?.click || []).length === 1,
+     "o botao tem ouvinte de clique ligado");
+  semTema?.disparar("click");
+  await esperar(80);
+  ok(postsJS.length === 1 && postsJS[0].motivo === "nenhum" && postsJS[0].temas.length === 0,
+     `clicar em "nao se aplica" manda a decisao (${JSON.stringify(postsJS[0] || null)})`);
 
   const sub = doc.getElementById("sub").textContent;
   ok(/\d+ de \d+ conferidos/.test(sub), `mostra progresso: "${sub}"`);

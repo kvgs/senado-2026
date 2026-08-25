@@ -247,6 +247,71 @@ VAZIO = {
 }
 
 
+# ---------------------------------------------------------------------------
+# DISCURSO SO ENTRA SE ESTIVER PRESO A UMA PROPOSICAO NOMEADA.
+#
+# A Kelli olhou os BREVES COMUNICACOES e disse que nao servem: "nao falam
+# exatamente de propostas de forma objetiva e clara". Os dados dao razao a ela —
+# o que ha ali e critica ao governo, e nao proposta:
+#
+#   "criticou a conducao economica do Governo Federal"
+#   "criticou o que chamou de promiscuidade institucional"
+#   "afirmou que o crime organizado se espalhou... crise moral"
+#
+# Contra:
+#
+#   "Discussao sobre a MPV n 1133, de 2022, que 'Dispoe sobre as Industrias
+#    Nucleares do Brasil S.A. e sobre a pesquisa, a lavra e a comercializacao...'"
+#
+# O que separa os dois nao e o tipo de sessao: e estar ANCORADO numa proposicao
+# com numero e ano. Com ancora da para o leitor conferir do que se trata; sem
+# ancora, sobra opiniao sobre o noticiario, que nao e o que este site mostra.
+#
+# Aplico as duas coisas: a regra dela (BREVES fora, explicita) e a generalizacao
+# (exigir ancora), que e o raciocinio dela virado mecanica.
+#
+# Os excluidos NAO somem do arquivo. Ficam com o motivo, porque acervo que apaga
+# o que descartou nao deixa ninguem conferir o descarte.
+import re
+
+ANCORA = re.compile(
+    r"\b(PL|PEC|PLP|PDL|PLS|PLC|MPV|PDS|PLN|PLV"
+    r"|Projeto de Lei|Medida Provis[oó]ria|Proposta de Emenda)\b.{0,16}?\d",
+    re.I | re.S)
+
+TIPO_FORA = {"BREVES COMUNICAÇÕES"}
+
+
+def filtrar_discursos():
+    caminho = DADOS / "_coleta_discursos.json"
+    dados = json.loads(caminho.read_text(encoding="utf-8"))
+    tirados = {"tipo": 0, "sem_ancora": 0}
+    for r in dados["registros"]:
+        cl = r["_classificacao"]
+        if not cl["temas"]:
+            continue
+        texto = (r.get("sumario_oficial") or "") + " " + (r.get("indexacao_oficial") or "")
+        if r.get("tipo_sessao") in TIPO_FORA:
+            cl["temas"], cl["motivo"] = [], "tipo_de_sessao"
+            # 'nota' e nao 'precisa_de_olho': a regra e dela e e mecanica, entao
+            # o motivo fica registrado sem virar item de fila.
+            cl["nota"] = ("Breves Comunicacoes: comentario livre, e nao proposta. "
+                          "Regra da Kelli, 25 de agosto de 2026.")
+            cl.pop("precisa_de_olho", None)
+            tirados["tipo"] += 1
+        elif not ANCORA.search(texto):
+            cl["temas"], cl["motivo"] = [], "sem_ancora"
+            cl["nota"] = ("Nao cita proposicao com numero e ano — sem ancora para o leitor "
+                          "conferir do que se trata.")
+            cl.pop("precisa_de_olho", None)
+            tirados["sem_ancora"] += 1
+    caminho.write_text(json.dumps(dados, ensure_ascii=False, indent=1), encoding="utf-8")
+    restam = sum(1 for r in dados["registros"] if r["_classificacao"]["temas"])
+    print(f'discursos fora por tipo de sessao: {tirados["tipo"]}')
+    print(f'discursos fora por falta de ancora: {tirados["sem_ancora"]}')
+    print(f'discursos que seguem para o site: {restam}')
+
+
 def aplicar():
     total = por_arquivo = 0
     for nome, mapa in (("_coleta_legislativa.json", P), ("_coleta_discursos.json", D)):
@@ -279,3 +344,4 @@ def aplicar():
 
 if __name__ == "__main__":
     aplicar()
+    filtrar_discursos()
