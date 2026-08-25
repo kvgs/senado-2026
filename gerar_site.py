@@ -174,14 +174,32 @@ for rg in regs["registros"]:
                 "ordem_autoria": a.get("ordem_autoria"), "total_autores": a.get("total_autores"),
             })
 
+# Cada voto carrega A PERGUNTA QUE FOI VOTADA, e nao a do registro. Antes as duas
+# listas eram achatadas e a pergunta principal era carimbada nas duas: na tela
+# apareciam "Nao" e "Sim" para a mesma pergunta, o que le como contradicao — e
+# publicava um voto sob uma pergunta que nao foi aquela.
 votos = []
 for v in regs.get("votacoes_nominais", []):
-    for x in v.get("votos", []) + (v.get("voto_adicional") or {}).get("votos", []):
-        if x["id_candidatura"] in cand_por_id:
+    adicional = v.get("voto_adicional") or {}
+    # A ressalva do registro descreve A PERGUNTA PRINCIPAL. Copiar para o voto
+    # adicional grudava nele um texto sobre outra pergunta — o mesmo erro de
+    # atribuicao, uma camada abaixo.
+    grupos = [(v.get("pergunta"), v.get("votos", []), v.get("_cuidado", ""))]
+    if adicional.get("votos"):
+        grupos.append((adicional.get("pergunta") or v.get("pergunta"),
+                       adicional["votos"],
+                       adicional.get("_cuidado", "")))
+    for pergunta, lista, cuidado in grupos:
+        for x in lista:
+            if x["id_candidatura"] not in cand_por_id:
+                continue
             votos.append({"cand": x["id_candidatura"], "voto": x["voto"],
-                          "pergunta": v["pergunta"], "data": v["data"],
+                          "pergunta": pergunta, "data": v["data"],
+                          # Quantas vezes a mesma pergunta foi votada na sessao com
+                          # esse mesmo voto. Sem isso, "votou Nao duas vezes" some.
+                          "ocorrencias": x.get("ocorrencias"),
                           "proposicao": v["proposicao_objeto"]["rotulo"],
-                          "temas": v.get("temas", []), "cuidado": v.get("_cuidado","")})
+                          "temas": v.get("temas", []), "cuidado": cuidado})
 
 # Respostas recebidas dos gabinetes. Arquivo pode nao existir ainda — nenhuma
 # resposta e um estado legitimo, nao um erro de configuracao.
