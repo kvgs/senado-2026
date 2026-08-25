@@ -716,13 +716,20 @@
    "id_documento": "doc-programa-pstu-tse",
    "texto": "Expropriação de empresas estratégicas (Petrobras e Vale citadas); revogação das reformas trabalhista e da Previdência; fim da escala 6x1; jornada de 36 horas semanais; bolsa de um salário mínimo a desempregados enquanto não houver pleno emprego; vínculo empregatício e direitos plenos para trabalhadores de aplicativo.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "_confirmado_no_documento": "2026-08-24",
    "conferido_por_ia": {
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-pstu-2026.pdf, sha 1868565fb0d5de77)"
-   }
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "confere",
+    "nota": "",
+    "citacao_conferida_na_fonte": true
+   },
+   "citacao_literal": "São empresas como a Petrobras e a Vale, que distribuíram respectivamente uma média\nde R$ 100 bilhões e R$ 30 bilhões em dividendos nos últimos quatro anos. É necessário\nexpropriar, ainda, setores estratégicos antes estatais, como a siderurgia e o de derivados\ndo petróleo. Revogação da reforma trabalhista: Revogação da lei das terceirizações. Fim da terceirização, salário igual para trabalho igual e direitos para todos os trabalhadores. Incorporação dos trabalhadores terceirizados no quadro efetivo do serviço público e realização de concurso público para novas contratações. Revogação da reforma da Previdência: Correção anual e atualização integral da tabela do Imposto de Renda para os assalariados. (...) acabar com a escala 6×1 que rouba o tempo de vida de grande parte dos\ntrabalhadores; ter saúde, educação e serviços públicos de qualidade, é necessário\nromper com as engrenagens de um sistema de exploração e opressão. Redução da jornada de trabalho para 36 horas, sem redução dos salários e sem flexibilização de direitos, rumo à escala móvel de horas de trabalho (pleno emprego). Trabalhar menos para que todos trabalhem! Bolsa equivalente a um salário mínimo para trabalhadores desempregados enquanto não houver pleno emprego. Reconhecimento do vínculo empregatício: Garantia de todos os direitos: previdência, férias, 13º, descanso remunerado, seguro contra acidentes, licença-maternidade e proteção social efetiva"
   },
   {
    "id_tema": "t8",
@@ -830,6 +837,11 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-pstu-2026.pdf, sha 1868565fb0d5de77)"
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "corrigir",
+    "nota": "Não achei essa informação"
    }
   },
   {
@@ -850,6 +862,11 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "corrigir",
+    "nota": "Não achei as informações descritas"
    }
   },
   {
@@ -912,6 +929,11 @@
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-up-2026-nacional.pdf, sha 2caad1effa29c6a8)"
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "remover",
+    "nota": "Programa do candidato errado"
    }
   },
   {
@@ -1023,7 +1045,14 @@
     "forca": "alta",
     "base": "Termos-chave da afirmação localizados no PDF registrado no TSE, baixado e arquivado em fontes/ com hash SHA-256."
    },
-   "_confirmado_no_documento_registrado": "2026-08-24"
+   "_confirmado_no_documento_registrado": "2026-08-24",
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "corrigir",
+    "nota": "Não diz que é com investimento estatal, mas está implícito",
+    "citacao_conferida_na_fonte": true
+   },
+   "citacao_literal": "(...) um amplo programa de moradia popular digna;"
   },
   {
    "id_posicao": "p046",
@@ -1782,7 +1811,7 @@
    "id_documento": "doc-camara-api",
    "texto": "Ex-ministro do Meio Ambiente. Campanha enfatiza fortalecimento do agronegocio e defesa da propriedade privada. Autoria: PDL 23/2026 susta decretos de desapropriacao de imoveis rurais por interesse social; PDL 201/2025 susta competencia do Departamento de Mediacao de Conflitos Agrarios; PL 157/2025 inclui diretriz de mitigacao de emissoes de veiculos; PL 158/2025 dispoe sobre recarga de veiculos eletricos em condominios. Votou a favor da urgencia para alterar o Codigo de Mineracao.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": true,
+   "revisado_por_humano": false,
    "_pendencia": "Datas e atos da passagem dele pelo Ministerio do Meio Ambiente ainda NAO levantados. Nao publicar comparacao de trajetoria com Marina Silva antes disso.",
    "id_posicao": "p077",
    "conferido_por_ia": {
@@ -1791,12 +1820,16 @@
     "base": "fonte com pendencia registrada",
     "ressalva": "Datas e atos da passagem dele pelo Ministerio do Meio Ambiente ainda NAO levantados. Nao publicar comparacao de trajetoria com Marina Silva antes disso."
    },
-   "revisao": {
-    "em": "2026-08-24",
-    "resultado": "confere",
-    "nota": ""
-   },
-   "_pendencia_fonte": "A fonte registrada e a API da Camara dos Deputados, que traz atividade legislativa. Ela nao sustenta afirmacao sobre enfase de campanha nem sobre cargo ministerial. Fonte provavelmente errada — conferir na revisao."
+   "_pendencia_fonte": "A fonte registrada e a API da Camara dos Deputados, que traz atividade legislativa. Ela nao sustenta afirmacao sobre enfase de campanha nem sobre cargo ministerial. Fonte provavelmente errada — conferir na revisao.",
+   "_devolvida_para_revisao": {
+    "em": "2026-08-25",
+    "decisao_anterior": {
+     "em": "2026-08-24",
+     "resultado": "confere",
+     "nota": ""
+    },
+    "porque": "Aprovada em 25/08/2026, mas tem o MESMO defeito das outras 11 de registro legislativo que voce reprovou: empacota 4 proposicoes num texto so e aponta para a raiz da API da Camara. Nao existe URL que abra quatro fichas. Devolvida para voce decidir com essa informacao — a decisao e sua, nao minha."
+   }
   },
   {
    "id_tema": "t8",
@@ -1886,7 +1919,12 @@
     "base": "ementa obtida da API de dados abertos da casa legislativa, texto verbatim"
    },
    "url_especifica": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2631190",
-   "_nota_link": "Apontava para a raiz da API da Camara. Agora aponta para a ficha de tramitacao da propria PEC 13/2026, que e o que a linha descreve."
+   "_nota_link": "Apontava para a raiz da API da Camara. Agora aponta para a ficha de tramitacao da propria PEC 13/2026, que e o que a linha descreve.",
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "corrigir",
+    "nota": "Link da fonte errado"
+   }
   },
   {
    "id_tema": "t8",
@@ -2086,14 +2124,21 @@
    "id_documento": "doc-programa-pstu-tse",
    "texto": "Nenhuma verba publica para grandes empresarios da educacao; fim das PPP e terceirizacoes nas redes publicas; revogacao da BNCC e do Novo Ensino Medio; contra a militarizacao das escolas e contra projetos tipo Escola Sem Partido; contra a plataformizacao do ensino; ampliacao de vagas em creches, escolas e universidades; permanencia estudantil.",
    "data_referencia": "2026-08-24",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "_destaque": "Contraste direto com o MISSAO, que propoe substituir cotas por bolsas por desempenho e criar codigo de conduta com punicoes, e com Salles, que propoe educacao domiciliar (PLP 118/2025).",
    "id_posicao": "p090",
    "conferido_por_ia": {
     "data": "2026-08-24",
     "forca": "alta",
     "base": "documento primario lido integralmente (fontes/programa-pstu-2026.pdf, sha 1868565fb0d5de77)"
-   }
+   },
+   "revisao": {
+    "em": "2026-08-25",
+    "resultado": "confere",
+    "nota": "",
+    "citacao_conferida_na_fonte": true
+   },
+   "citacao_literal": "\"Nenhuma verba pública para os grandes empresários da educação!\", \"Fim da privatização e da gestão privada da saúde (OS, Fundações e PPP)\", \"Revogação das propostas curriculares elaboradas pelos grandes empresários da educação e fundações privadas (BNCC e Novo Ensino Médio)\", \"Ampliação de vagas em creches, escolas e universidades públicas\"."
   },
   {
    "id_tema": "t3",

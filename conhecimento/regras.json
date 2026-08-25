@@ -302,6 +302,14 @@
    "porque": "Erro apagado e erro que volta. Sai a publicacao, nao o registro.",
    "verificacao": "mecanica",
    "onde": "gerar_site.py"
+  },
+  {
+   "id": "R-FONTE-05",
+   "titulo": "Autoria legislativa nao vira posicao em prosa",
+   "regra": "Autoria de proposicao vive em registros_legislativos, um registro por proposicao, cada um com o link da propria ficha. Nao entra como posicao que empacota varias proposicoes num texto so.",
+   "porque": "Doze posicoes empacotavam de 2 a 4 proposicoes num paragrafo e apontavam para a raiz da API da Camara, porque nao existe URL que abra quatro fichas. Onze foram reprovadas na revisao de 25/08/2026, todas com a mesma nota: 'o link da fonte nao procede'. Nao era link errado, era modelo que nao podia funcionar — e o registro legislativo ja estava modelado certo em outro lugar, com uma ficha por proposicao.",
+   "verificacao": "mecanica",
+   "onde": "validar.py"
   }
  ]
 }

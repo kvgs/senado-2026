@@ -121,7 +121,7 @@ Arquivo de dados abertos publicado pela Justica Eleitoral.
 
 ## Regras
 
-15 regras têm código que as impede, 4 dependem de julgamento na revisão, e 1 ainda não têm cobrança nenhuma.
+16 regras têm código que as impede, 4 dependem de julgamento na revisão, e 1 ainda não têm cobrança nenhuma.
 Cada uma existe porque foi violada uma vez — o campo *por quê* guarda o caso real.
 
 ### Impedidas por código
@@ -245,6 +245,14 @@ Posicao reprovada na revisao e excluida da publicacao e mantida em posicoes.json
 *Por quê:* Erro apagado e erro que volta. Sai a publicacao, nao o registro.
 
 *Onde é cobrada:* `gerar_site.py`
+
+**R-FONTE-05 — Autoria legislativa nao vira posicao em prosa**
+
+Autoria de proposicao vive em registros_legislativos, um registro por proposicao, cada um com o link da propria ficha. Nao entra como posicao que empacota varias proposicoes num texto so.
+
+*Por quê:* Doze posicoes empacotavam de 2 a 4 proposicoes num paragrafo e apontavam para a raiz da API da Camara, porque nao existe URL que abra quatro fichas. Onze foram reprovadas na revisao de 25/08/2026, todas com a mesma nota: 'o link da fonte nao procede'. Nao era link errado, era modelo que nao podia funcionar — e o registro legislativo ja estava modelado certo em outro lugar, com uma ficha por proposicao.
+
+*Onde é cobrada:* `validar.py`
 
 ### Dependem de julgamento humano
 

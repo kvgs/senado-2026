@@ -93,6 +93,17 @@ def cobrar_regras_de_fonte(kb, posicoes, documentos):
             erros.append(f"[{id_regra}] {pid}: estado {estado} com fonte de tipo "
                          f"'{tipo}' ({regra['nome']}) — {regra['porque'][:110]}")
 
+        # R-FONTE-05 — autoria legislativa em prosa, com link generico, nao se sustenta.
+        if pos.get("nivel_fonte") == "registro_legislativo":
+            url = (doc.get("url") or "").rstrip("/")
+            if url.endswith(("/api/v2", "/dadosabertos", "/repositorioDados")):
+                erros.append(
+                    f"[R-FONTE-05] {pid}: registro legislativo apontando para endereco "
+                    f"generico ({url}). Autoria de proposicao vive em "
+                    "registros_legislativos, uma ficha por proposicao — texto que "
+                    "empacota varias nao tem um link possivel."
+                )
+
         # R-REDACAO-01 — parafrase de fonte oficial sem ancora precisa de olho humano.
         if (pos.get("nivel_fonte") == "oficial"
                 and not (pos.get("citacao_literal") or "").strip()
