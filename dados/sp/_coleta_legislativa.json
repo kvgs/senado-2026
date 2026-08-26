@@ -602,10 +602,14 @@
    "_apresentada_em": "2025-06-13",
    "_confianca_tema": "nenhuma",
    "_classificacao": {
-    "temas": [],
-    "motivo": "vazio",
-    "por": "modelo",
-    "decidido_em": "2026-08-25",
+    "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "humano",
+    "decidido_em": "2026-08-26",
+    "modelo_propos": [],
+    "concordou": false,
     "precisa_de_olho": "'Susta o Decreto no 12.499, de 11 de junho de 2025.' — so isso"
    }
   },
@@ -1010,11 +1014,15 @@
    "_confianca_tema": "nenhuma",
    "_classificacao": {
     "temas": [
-     "t10"
+     "t1"
     ],
     "motivo": "",
-    "por": "modelo",
-    "decidido_em": "2026-08-25",
+    "por": "humano",
+    "decidido_em": "2026-08-26",
+    "modelo_propos": [
+     "t10"
+    ],
+    "concordou": false,
     "precisa_de_olho": "cisternas: licitacao (t10) ou infraestrutura hidrica (t5)"
    }
   },
@@ -1821,11 +1829,15 @@
    "_confianca_tema": "nenhuma",
    "_classificacao": {
     "temas": [
-     "t2"
+     "t1"
     ],
     "motivo": "",
-    "por": "modelo",
-    "decidido_em": "2026-08-25",
+    "por": "humano",
+    "decidido_em": "2026-08-26",
+    "modelo_propos": [
+     "t2"
+    ],
+    "concordou": false,
     "precisa_de_olho": "acervos bibliograficos: escola (t2) ou cultura (t9)"
    }
   },
@@ -2129,9 +2141,9 @@
    "_confianca_tema": "nenhuma",
    "_classificacao": {
     "temas": [],
-    "motivo": "vazio",
+    "motivo": "nenhum",
     "por": "modelo",
-    "decidido_em": "2026-08-25",
+    "decidido_em": "2026-08-26",
     "precisa_de_olho": "'Revoga a Lei Complementar no 207, de 17 de maio de 2024.' — so isso"
    }
   },
@@ -2367,11 +2379,15 @@
    "_confianca_tema": "nenhuma",
    "_classificacao": {
     "temas": [
-     "t7"
+     "t1"
     ],
     "motivo": "",
-    "por": "modelo",
-    "decidido_em": "2026-08-25",
+    "por": "humano",
+    "decidido_em": "2026-08-26",
+    "modelo_propos": [
+     "t7"
+    ],
+    "concordou": false,
     "precisa_de_olho": "reforma agraria (Lei 8.629) — pus em Habitacao por falta de gaveta melhor"
    }
   },
@@ -2819,12 +2835,16 @@
    "_confianca_tema": "boa",
    "_classificacao": {
     "temas": [
+     "t1"
+    ],
+    "motivo": "",
+    "por": "humano",
+    "decidido_em": "2026-08-26",
+    "modelo_propos": [
      "t1",
      "t7"
     ],
-    "motivo": "",
-    "por": "modelo",
-    "decidido_em": "2026-08-25",
+    "concordou": false,
     "precisa_de_olho": "esbulho possessorio: crime (t1) e terra (t7) ao mesmo tempo"
    }
   },

@@ -176,8 +176,8 @@ async function main() {
   ok(!depois.itens.find(x => x.id === alvoId),
      "o item decidido sai da fila");
 
-  const disco = JSON.parse(fs.readFileSync("dados/_coleta_discursos.json", "utf8"))
-    .registros.concat(JSON.parse(fs.readFileSync("dados/_coleta_legislativa.json", "utf8")).registros)
+  const disco = JSON.parse(fs.readFileSync("dados/sp/_coleta_discursos.json", "utf8"))
+    .registros.concat(JSON.parse(fs.readFileSync("dados/sp/_coleta_legislativa.json", "utf8")).registros)
     .find(r => r.id_registro === alvoId);
   ok(disco?._classificacao?.temas?.[0] === "t1", "a decisao fica gravada no arquivo");
   ok(disco?._classificacao?.por === "humano", "a decisao gravada fica marcada como humana");
@@ -200,15 +200,40 @@ async function main() {
     method: "POST", headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ id: alvoId }),
   }).catch(() => {});
-  const volta = JSON.parse(fs.readFileSync("dados/_coleta_discursos.json", "utf8"))
-    .registros.concat(JSON.parse(fs.readFileSync("dados/_coleta_legislativa.json", "utf8")).registros)
+  const volta = JSON.parse(fs.readFileSync("dados/sp/_coleta_discursos.json", "utf8"))
+    .registros.concat(JSON.parse(fs.readFileSync("dados/sp/_coleta_legislativa.json", "utf8")).registros)
     .find(r => r.id_registro === alvoId);
   ok(volta?._classificacao?.por === "modelo",
      "o teste desfaz a propria gravacao E devolve a classificacao do modelo");
 
   console.log(falhas ? `\n=== ${falhas} falha(s) ===` : "\n=== a tela funciona ===");
-  py.kill();
+  await encerrar();
   process.exit(falhas ? 1 : 0);
 }
 
-main().catch(e => { console.error(e); console.error(saidaPy); py.kill(); process.exit(1); });
+/* Encerramento em duas etapas. process.exit() logo depois de py.kill() estoura
+   uma assercao interna do libuv no Windows (UV_HANDLE_CLOSING): o processo sai
+   enquanto o descritor do filho ainda esta fechando.
+
+   Isso nao era so feio: ESCONDIA O ERRO DE VERDADE. Quando a migracao para
+   dados/sp/ quebrou os caminhos deste teste, o ENOENT caiu aqui, o exit(1)
+   estourou o libuv, e a saida mostrava so a assercao — nada sobre arquivo nao
+   encontrado. Passei vinte minutos tratando como teste intermitente uma falha
+   reproduzivel que a propria saida escondia. */
+async function encerrar() {
+  if (py.exitCode !== null || py.signalCode !== null) return;
+  await new Promise(resolve => {
+    py.once("close", resolve);
+    py.kill();
+    setTimeout(resolve, 2000);   // nao pendura se o filho travar
+  });
+  await esperar(60);
+}
+
+main().catch(async (e) => {
+  console.error("ERRO NO TESTE:", e && e.message ? e.message : e);
+  if (e && e.stack) console.error(e.stack.split("\n").slice(1, 4).join("\n"));
+  if (saidaPy.trim()) console.error("--- saida do classificar.py ---\n" + saidaPy);
+  await encerrar();
+  process.exit(1);
+});
