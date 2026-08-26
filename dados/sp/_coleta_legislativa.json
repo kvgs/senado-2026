@@ -2291,11 +2291,15 @@
    "_confianca_tema": "nenhuma",
    "_classificacao": {
     "temas": [
-     "t7"
+     "t1"
     ],
     "motivo": "",
-    "por": "modelo",
+    "por": "humano",
     "decidido_em": "2026-08-26",
+    "modelo_propos": [
+     "t7"
+    ],
+    "concordou": false,
     "precisa_de_olho": "conflito agrario/reintegracao de posse — nossos temas nao tem questao agraria"
    }
   },
@@ -2326,11 +2330,15 @@
    "_confianca_tema": "fraca",
    "_classificacao": {
     "temas": [
-     "t7"
+     "t1"
     ],
     "motivo": "",
-    "por": "modelo",
-    "decidido_em": "2026-08-25",
+    "por": "humano",
+    "decidido_em": "2026-08-26",
+    "modelo_propos": [
+     "t7"
+    ],
+    "concordou": false,
     "precisa_de_olho": "conflito agrario — comissao de solucoes fundiarias do CNJ"
    }
   },

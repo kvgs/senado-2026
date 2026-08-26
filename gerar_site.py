@@ -14,18 +14,29 @@ Regras respeitadas (secao 4 do contexto):
 """
 import hashlib, json, pathlib
 
+import argparse as _argparse
+
+import acervo
+
+# --uf escolhe o estado a gerar. Sem isso, gerar Pernambuco exigiria editar
+# referencia.json, e esquecer de voltar geraria SP com o rotulo de PE.
+_ap = _argparse.ArgumentParser(add_help=False)
+_ap.add_argument("--uf", default=None)
+_UF = (_ap.parse_known_args()[0].uf or acervo.uf_padrao()).upper()
+
 BASE = pathlib.Path(__file__).parent
+DADOS_UF = acervo.exige(_UF)
 HERE = BASE
 # A pagina do estado mora em <uf>/index.html. A raiz e a escolha do estado,
 # gerada por gerar_inicio.py. OUT e resolvido depois de ler qual UF e esta.
 OUT = None   # definido abaixo, quando site.uf for conhecido
 
 ref = json.loads((BASE/"dados"/"referencia.json").read_text(encoding="utf-8"))
-cands = json.loads((BASE/"dados"/"candidaturas.json").read_text(encoding="utf-8"))["candidaturas"]
-pos = json.loads((BASE/"dados"/"posicoes.json").read_text(encoding="utf-8"))["posicoes"]
-docs = {d["id_documento"]: d for d in json.loads((BASE/"dados"/"documentos.json").read_text(encoding="utf-8"))["documentos"]}
-pesq = json.loads((BASE/"dados"/"pesquisas.json").read_text(encoding="utf-8"))
-regs = json.loads((BASE/"dados"/"registros_legislativos.json").read_text(encoding="utf-8"))
+cands = json.loads((DADOS_UF/"candidaturas.json").read_text(encoding="utf-8"))["candidaturas"]
+pos = json.loads((DADOS_UF/"posicoes.json").read_text(encoding="utf-8"))["posicoes"]
+docs = {d["id_documento"]: d for d in json.loads((DADOS_UF/"documentos.json").read_text(encoding="utf-8"))["documentos"]}
+pesq = json.loads((DADOS_UF/"pesquisas.json").read_text(encoding="utf-8"))
+regs = json.loads((DADOS_UF/"registros_legislativos.json").read_text(encoding="utf-8"))
 
 partidos = {p["id_partido"]: p for p in ref["partidos"]}
 coligs = {c["id_coligacao"]: c for c in ref["coligacoes"]}
@@ -234,7 +245,7 @@ for v in regs.get("votacoes_nominais", []):
 
 # Respostas recebidas dos gabinetes. Arquivo pode nao existir ainda — nenhuma
 # resposta e um estado legitimo, nao um erro de configuracao.
-_rp = HERE/"dados"/"respostas.json"
+_rp = DADOS_UF/"respostas.json"
 respostas = json.loads(_rp.read_text(encoding="utf-8"))["respostas"] if _rp.exists() else []
 
 # Base de conhecimento da curadoria, publicada na aba "Como e feito". Vem do
@@ -297,11 +308,9 @@ ag.mkdir(exist_ok=True)
 # A UF viaja no catalogo porque o worker precisa dela para montar prompt e nao
 # pode adivinhar: os textos que ele gera dizem de que estado se trata.
 _sitecfg = ref.get("site") or {}
-_uf = _sitecfg.get("uf")
-_est = next((e for e in json.loads((BASE/"dados"/"estados.json")
-             .read_text(encoding="utf-8"))["estados"] if e["uf"] == _uf), None)
-if not _est:
-    raise SystemExit(f"dados/referencia.json aponta site.uf={_uf!r}, que nao esta em estados.json")
+# A UF vem de _UF (--uf, ou o padrao de referencia.json), e nao de site.uf direto:
+# senao --uf pe leria o acervo de PE e rotularia a pagina como SP.
+_est = acervo.estado(_UF)
 
 # Agora que a UF e conhecida, o destino e a profundidade dos assets seguem dela.
 OUT = BASE / _est["uf"].lower() / "index.html"

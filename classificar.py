@@ -58,7 +58,19 @@ from datetime import date
 from urllib.parse import urlparse
 
 RAIZ = pathlib.Path(__file__).resolve().parent
-DADOS = RAIZ / "dados"
+import argparse as _argparse
+
+import acervo
+
+# Qual estado esta ferramenta trabalha. --uf existe para nao ser preciso editar
+# referencia.json e lembrar de voltar: esquecer de voltar escreveria no acervo
+# errado achando que era o certo.
+_ap = _argparse.ArgumentParser(add_help=False)
+_ap.add_argument("--uf", default=None)
+_UF = (_ap.parse_known_args()[0].uf or acervo.uf_padrao()).upper()
+
+DADOS = acervo.exige(_UF)          # dados/<uf>/ — acervo daquele estado
+NACIONAL = acervo.NACIONAL         # dados/ — referencia, estados, mapa
 PORTA = 8766
 HOJE = date.today().isoformat()
 
@@ -87,7 +99,7 @@ def na_amostra(id_item: str) -> bool:
 
 
 def carregar():
-    ref = json.loads((DADOS / "referencia.json").read_text(encoding="utf-8"))
+    ref = json.loads((NACIONAL / "referencia.json").read_text(encoding="utf-8"))
     cand = json.loads((DADOS / "candidaturas.json").read_text(encoding="utf-8"))["candidaturas"]
     nomes = {c["id_candidatura"]: c["pessoa"]["nome_urna"] for c in cand}
     temas = [{"id": t["id_tema"], "nome": t["nome"]} for t in sorted(ref["temas"], key=lambda t: t["ordem"])]

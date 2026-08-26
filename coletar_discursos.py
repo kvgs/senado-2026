@@ -46,7 +46,19 @@ from datetime import date
 from coletar_legislativo import buscar, sem_acento, sugerir_temas
 
 RAIZ = pathlib.Path(__file__).resolve().parent
-DADOS = RAIZ / "dados"
+import argparse as _argparse
+
+import acervo
+
+# Qual estado esta ferramenta trabalha. --uf existe para nao ser preciso editar
+# referencia.json e lembrar de voltar: esquecer de voltar escreveria no acervo
+# errado achando que era o certo.
+_ap = _argparse.ArgumentParser(add_help=False)
+_ap.add_argument("--uf", default=None)
+_UF = (_ap.parse_known_args()[0].uf or acervo.uf_padrao()).upper()
+
+DADOS = acervo.exige(_UF)          # dados/<uf>/ — acervo daquele estado
+NACIONAL = acervo.NACIONAL         # dados/ — referencia, estados, mapa
 SAIDA = DADOS / "_coleta_discursos.json"
 HOJE = date.today().isoformat()
 

@@ -53,7 +53,19 @@ from datetime import date, datetime
 from coletar_legislativo import sem_acento
 
 RAIZ = pathlib.Path(__file__).resolve().parent
-DADOS = RAIZ / "dados"
+import argparse as _argparse
+
+import acervo
+
+# Qual estado esta ferramenta trabalha. --uf existe para nao ser preciso editar
+# referencia.json e lembrar de voltar: esquecer de voltar escreveria no acervo
+# errado achando que era o certo.
+_ap = _argparse.ArgumentParser(add_help=False)
+_ap.add_argument("--uf", default=None)
+_UF = (_ap.parse_known_args()[0].uf or acervo.uf_padrao()).upper()
+
+DADOS = acervo.exige(_UF)          # dados/<uf>/ — acervo daquele estado
+NACIONAL = acervo.NACIONAL         # dados/ — referencia, estados, mapa
 SAIDA = DADOS / "_coleta_imprensa.json"
 HOJE = date.today().isoformat()
 UA = "Mozilla/5.0 (compativel; senado-2026/1.0; projeto civico)"
@@ -147,7 +159,7 @@ def quem_fala(titulo: str, nomes_alvo: list[str], outros: list[str]) -> tuple[bo
 def main() -> int:
     so_resumo = "--resumo" in sys.argv
     cands = json.loads((DADOS / "candidaturas.json").read_text(encoding="utf-8"))["candidaturas"]
-    ref = json.loads((DADOS / "referencia.json").read_text(encoding="utf-8"))
+    ref = json.loads((NACIONAL / "referencia.json").read_text(encoding="utf-8"))
     nome_tema = {t["id_tema"] if "id_tema" in t else t.get("id"): t.get("nome") for t in ref["temas"]}
 
     todos_nomes = {}

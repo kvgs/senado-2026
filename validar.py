@@ -14,7 +14,18 @@ import json
 import sys
 from pathlib import Path
 
-DADOS = Path(__file__).parent / "dados"
+import argparse as _argparse
+
+import acervo
+
+# --uf para validar o acervo de um estado sem editar referencia.json. Validar o
+# estado errado nao da erro: da "tudo certo" sobre outra coisa.
+_ap = _argparse.ArgumentParser(add_help=False)
+_ap.add_argument("--uf", default=None)
+_UF = (_ap.parse_known_args()[0].uf or acervo.uf_padrao()).upper()
+
+DADOS = acervo.exige(_UF)
+NACIONAL = acervo.NACIONAL
 
 NIVEIS_FONTE = {
     "oficial", "verificada", "secundaria",
@@ -28,7 +39,7 @@ avisos: list[str] = []
 
 
 def carregar(nome):
-    caminho = DADOS / nome
+    caminho = (NACIONAL if nome in acervo.DE_TODOS else DADOS) / nome
     if not caminho.exists():
         erros.append(f"[arquivo] {nome} não encontrado em {DADOS}")
         return None

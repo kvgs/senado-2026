@@ -38,7 +38,17 @@ RAIZ = pathlib.Path(__file__).resolve().parent.parent
 PADRAO_URL = "https://agente-senado-sp-2026.senado-2026.workers.dev"
 AGENTE_HTTP = "senado-2026-promover/1.0 (+https://kvgs.github.io/senado-2026/)"
 QUEBRA = chr(10)
-DESTINO = RAIZ / "dados" / "respostas.json"
+import argparse as _argparse
+import sys as _sys
+_sys.path.insert(0, str(RAIZ))
+import acervo  # noqa: E402
+
+# A resposta de um gabinete pertence ao acervo do estado daquela candidatura.
+_ap = _argparse.ArgumentParser(add_help=False)
+_ap.add_argument("--uf", default=None)
+_UF = (_ap.parse_known_args()[0].uf or acervo.uf_padrao()).upper()
+DADOS = acervo.exige(_UF)
+DESTINO = DADOS / "respostas.json"
 
 
 def chamar(url, token, caminho, corpo=None):
@@ -65,7 +75,7 @@ def chamar(url, token, caminho, corpo=None):
 
 
 def carrega_acervo():
-    d = json.loads((RAIZ / "dados" / "candidaturas.json").read_text(encoding="utf-8"))
+    d = json.loads((DADOS / "candidaturas.json").read_text(encoding="utf-8"))
     lst = d["candidaturas"] if isinstance(d, dict) else d
     return {c["id_candidatura"]: c for c in lst}
 

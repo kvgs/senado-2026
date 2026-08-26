@@ -27,6 +27,18 @@ import urllib.error
 import urllib.request
 
 RAIZ = pathlib.Path(__file__).resolve().parent
+
+import argparse as _argparse
+
+import acervo
+
+# --uf escolhe o acervo. Trabalhar no estado errado nao da erro: da resultado
+# plausivel sobre outra coisa.
+_ap = _argparse.ArgumentParser(add_help=False)
+_ap.add_argument("--uf", default=None)
+_UF = (_ap.parse_known_args()[0].uf or acervo.uf_padrao()).upper()
+DADOS = acervo.exige(_UF)
+
 DESTINO = RAIZ / "fotos-candidatos"
 ESPELHO = "https://candidatos.nexojornal.com.br/fotos/{}.jpg"
 NAVEGADOR = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -48,7 +60,7 @@ def baixar(url):
 
 def main():
     DESTINO.mkdir(exist_ok=True)
-    cp = RAIZ / "dados" / "candidaturas.json"
+    cp = DADOS / "candidaturas.json"
     dados = json.loads(cp.read_text(encoding="utf-8"))
     lista = dados["candidaturas"] if isinstance(dados, dict) else dados
 

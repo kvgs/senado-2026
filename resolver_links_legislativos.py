@@ -34,7 +34,19 @@ import urllib.request
 from datetime import date
 
 RAIZ = pathlib.Path(__file__).resolve().parent
-ARQ = RAIZ / "dados" / "registros_legislativos.json"
+
+import argparse as _argparse
+
+import acervo
+
+# --uf escolhe o acervo. Trabalhar no estado errado nao da erro: da resultado
+# plausivel sobre outra coisa.
+_ap = _argparse.ArgumentParser(add_help=False)
+_ap.add_argument("--uf", default=None)
+_UF = (_ap.parse_known_args()[0].uf or acervo.uf_padrao()).upper()
+DADOS = acervo.exige(_UF)
+
+ARQ = DADOS / "registros_legislativos.json"
 AGENTE = "senado-2026/1.0 (+https://kvgs.github.io/senado-2026/)"
 FICHA = "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao={}"
 MATERIA = "https://www25.senado.leg.br/web/atividade/materias/-/materia/{}"
@@ -186,7 +198,7 @@ def main():
         "proposicao errada seria pior que nao apontar."
     )
     ARQ.write_text(json.dumps(dados, ensure_ascii=False, indent=1), encoding="utf-8")
-    print("gravado em dados/registros_legislativos.json")
+    print("gravado em dados/<uf>/registros_legislativos.json")
     print("agora rode: python gerar_site.py")
     return 0
 

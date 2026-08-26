@@ -27,7 +27,15 @@ TRES COISAS QUE EU MARQUEI PARA ELA OLHAR:
 """
 import json, pathlib
 
-DADOS = pathlib.Path(r"c:\Users\BOC277 - Usuario\Documents\politica\dados")
+import argparse as _argparse
+import sys as _sys
+_sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import acervo  # noqa: E402
+
+_ap = _argparse.ArgumentParser(add_help=False)
+_ap.add_argument("--uf", default=None)
+_UF = (_ap.parse_known_args()[0].uf or acervo.uf_padrao()).upper()
+DADOS = acervo.exige(_UF)
 
 # ---------------------------------------------------------------- proposicoes
 P = {
