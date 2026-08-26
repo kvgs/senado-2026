@@ -78,6 +78,51 @@ def lista_estados(estados: list[dict]) -> str:
     return "\n  ".join(partes)
 
 
+def mapa(estados: list[dict]) -> str:
+    """Monta o SVG do mapa a partir de dados/mapa-uf.json.
+
+    Reproduz o viewBox e o transform do IBGE em vez de refazer a aritmetica: as
+    coordenadas do path sao latitude*10000 e o transform nega o y. Recalcular
+    isso a mao e uma chance de espelhar o pais e nao notar.
+
+    So o que e clicavel entra na arvore de acessibilidade. Estado com acervo vira
+    <a> com nome acessivel; os outros ficam fora, porque 27 formas anunciadas uma
+    a uma seriam ruido e a lista abaixo diz tudo, melhor.
+    """
+    m = json.loads((DADOS / "mapa-uf.json").read_text(encoding="utf-8"))
+    faltam = sorted({e["uf"] for e in estados} - set(m["paths"]))
+    if faltam:
+        raise SystemExit(f"mapa-uf.json nao tem os estados: {faltam}")
+
+    formas = []
+    for e in sorted(estados, key=lambda x: x["uf"]):
+        d = m["paths"][e["uf"]]
+        forma = f'<path class="uf-forma" d="{d}"/>'
+        if e["acervo"] == "nao_comecamos":
+            formas.append(forma)
+        else:
+            rotulo = f'{e["nome"]} — {e["candidaturas_tse"]} candidaturas'
+            formas.append(
+                f'<a href="{e["uf"].lower()}/" aria-label="{rotulo}">'
+                f'<title>{rotulo}</title>{forma}</a>')
+
+    com = [e for e in estados if e["acervo"] != "nao_comecamos"]
+    resumo = (f'Mapa do Brasil. {len(com)} de {len(estados)} unidades da federação '
+              f'têm acervo publicado: {", ".join(e["nome"] for e in com)}. '
+              'A lista abaixo traz todas, com o estado de cada uma.')
+
+    return (
+        f'<div class="mapa">'
+        f'<svg viewBox="{m["viewBox"]}" role="group" aria-label="{resumo}">'
+        f'<g transform="{m["transform"]}">{"".join(formas)}</g>'
+        f'</svg>'
+        f'<p class="mapa-leg" aria-hidden="true">'
+        f'<span><i class="tem"></i>com acervo publicado</span>'
+        f'<span><i class="nao"></i>ainda não começamos</span>'
+        f'</p></div>'
+    )
+
+
 def main() -> int:
     est = json.loads((DADOS / "estados.json").read_text(encoding="utf-8"))
     estados = est["estados"]
@@ -91,13 +136,14 @@ def main() -> int:
     # Cada marcador tem de aparecer UMA vez. Mencionar o nome do marcador num
     # comentario do template fez o replace trocar as duas ocorrencias, e o
     # comentario recebeu o CSS inteiro. Barato de conferir, silencioso se nao.
-    for marca in ("{{ESTILO_BASE}}", "{{ESTADOS}}", "{{TOTAL_CANDIDATURAS}}"):
+    for marca in ("{{ESTILO_BASE}}", "{{ESTADOS}}", "{{TOTAL_CANDIDATURAS}}", "{{MAPA}}"):
         n = tpl.count(marca)
         if n != 1:
             raise SystemExit(f"{marca} aparece {n} vezes no template; esperado 1")
     assunto = urllib.parse.quote("Senado 2026 — feedback")
     html = (tpl
             .replace("{{ESTILO_BASE}}", estilo_base())
+            .replace("{{MAPA}}", mapa(estados))
             .replace("{{ESTADOS}}", lista_estados(estados))
             .replace("{{TOTAL_CANDIDATURAS}}",
                      str(sum(e["candidaturas_tse"] for e in estados)))

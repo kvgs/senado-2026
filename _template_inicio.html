@@ -35,8 +35,42 @@
   h2{font-family:"Bricolage",system-ui,sans-serif;font-size:1.34rem;margin:44px 0 6px}
   .sub{color:var(--muted);font-size:.94rem;max-width:64ch;margin-bottom:20px}
 
-  /* Lista de estados. Lista, e nao mapa: mapa SVG custa caro para tornar
-     navegavel por teclado e leitor de tela, e a lista diz a mesma coisa. */
+  /* ---------------------------------------------------------------
+     Mapa. Fica ACIMA da lista, e nao em lugar dela: estado pequeno e
+     dificil de tocar no celular, e leitor de tela usa a lista.
+     --------------------------------------------------------------- */
+  /* O Brasil e quase quadrado (viewBox 44,7 x 39,0), entao limitar a LARGURA do
+     recipiente basta: com height:auto a altura sai da propria proporcao. Limitar
+     a altura junto com width:100% poria as duas regras a brigar. */
+  .mapa{margin:6px auto 30px;max-width:600px}
+  .mapa svg{display:block;width:100%;height:auto}
+  /* stroke-width com non-scaling-stroke vale em PIXEL DE TELA. Aqui era 1200, o
+     que pintaria a pagina inteira de borda. 1px e o fio que separa os estados em
+     qualquer tamanho, sem depender da conta do viewBox. */
+  .mapa .uf-forma{fill:var(--surface-3);stroke:var(--ground);stroke-width:1;
+    vector-effect:non-scaling-stroke;transition:fill .12s ease}
+  /* Com acervo: preenchido em --acento, que e o unico token que passa 3:1 contra
+     --surface-3 nos DOIS temas (4,81 no claro, 7,16 no escuro). O --acento-vivo
+     parece a escolha obvia e nao serve: no tema escuro ele e cor de SUPERFICIE, e
+     dava 1,09:1 — o mapa nao distinguia nada. A cor tambem nao e o unico sinal:
+     o mesmo estado e link na lista abaixo. */
+  .mapa a .uf-forma{fill:var(--acento);cursor:pointer}
+  .mapa a:hover .uf-forma{fill:var(--ink-2)}
+  .mapa a:focus{outline:none}
+  /* O foco troca o PREENCHIMENTO, e nao desenha anel: --focus sobre --acento da
+     1,1:1 nos dois temas, porque sao os dois azuis. --ink contra os vizinhos da
+     15:1 no claro e 12:1 no escuro. Forma pequena se ve melhor cheia que
+     contornada. */
+  .mapa a:focus-visible .uf-forma{fill:var(--ink);stroke:var(--ground);stroke-width:2}
+  .mapa-leg{display:flex;flex-wrap:wrap;gap:16px;margin-top:10px;
+    font-size:.82rem;color:var(--muted)}
+  .mapa-leg span{display:inline-flex;align-items:center;gap:7px}
+  .mapa-leg i{width:13px;height:13px;border-radius:3px;display:inline-block}
+  .mapa-leg .tem{background:var(--acento)}
+  .mapa-leg .nao{background:var(--surface-3);border:1px solid var(--rule-strong)}
+
+  /* Lista de estados. Fica abaixo do mapa e e a navegacao de verdade: e nela
+     que cabe "ainda nao comecamos", e e ela que o teclado percorre. */
   .regiao{margin-bottom:26px}
   .regiao h3{font-family:"PlexMono",ui-monospace,monospace;font-size:.74rem;
     letter-spacing:.09em;color:var(--muted);margin-bottom:9px}
@@ -120,6 +154,8 @@
   <p class="sub">São <strong>{{TOTAL_CANDIDATURAS}} candidaturas</strong> ao Senado no país,
     e cada estado elege duas — é a renovação de dois terços da Casa, 54 das 81 cadeiras.
     A contagem de cada estado vem do registro no TSE.</p>
+
+  {{MAPA}}
 
   {{ESTADOS}}
 

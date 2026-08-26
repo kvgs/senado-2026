@@ -68,6 +68,28 @@ for nome, pal in (("CLARO", claro), ("ESCURO", escuro)):
             if r < 3:
                 falhas.append(f"{nome}: --{regra} sobre superficies = {r:.2f}:1")
 
+# --------------------------------------------------------------------- o mapa
+# O mapa da pagina inicial usa COR PARA DISTINGUIR estado com acervo de estado
+# sem. Isso e objeto grafico: minimo 3:1 (WCAG 1.4.11). O checador nao olhava
+# aqui, e por isso passou um mapa que no tema escuro dava 1,09:1 e nao
+# distinguia nada — o --acento-vivo, que parece a escolha obvia, e cor de
+# SUPERFICIE no escuro.
+print("=== mapa da pagina inicial (objeto grafico, minimo 3:1) ===")
+MAPA = [
+    ("com acervo x sem acervo", "acento", "surface-3"),
+    ("foco x vizinhos", "ink", "surface-3"),
+    ("passagem do mouse x vizinhos", "ink-2", "surface-3"),
+]
+for nome, pal in (("CLARO", claro), ("ESCURO", escuro)):
+    for rot, a, b in MAPA:
+        if a not in pal or b not in pal:
+            continue
+        r = razao(pal[a], pal[b])
+        estado = "ok" if r >= 3 else "ABAIXO DE 3:1"
+        print(f"  {nome:6} {rot:30} {r:5.2f}:1  {estado}")
+        if r < 3:
+            falhas.append(f"{nome}: mapa, {rot} = {r:.2f}:1")
+
 print()
 if falhas:
     print(f"{len(falhas)} par(es) abaixo do minimo:")
