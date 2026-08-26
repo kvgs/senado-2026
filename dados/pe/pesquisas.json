@@ -1,0 +1,5 @@
+{
+ "_nota": "Pesquisa de intencao de voto so entra com ficha tecnica completa e numero de registro no TSE. Nenhuma pesquisa de Pernambuco levantada ainda. Publicar numero sem ficha seria pior que nao publicar.",
+ "_regra": "Instituto, registro no TSE, periodo de campo, numero de entrevistados, margem de erro e nivel de confianca. Faltando um, nao publica.",
+ "pesquisas": []
+}

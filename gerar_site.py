@@ -110,8 +110,12 @@ for c in cands:
         "numero": c["numero_urna"],
         "iniciais": iniciais,
         "bio": bio(c),
-        "situacao": c["situacao_registro"][0]["situacao"],
-        "situacao_em": c["situacao_registro"][0]["observado_em"],
+        # A situacao do registro pode nao existir: a base de candidatos do TSE traz
+        # "#NE" em alguns extratos. Ausencia vira None e o site DIZ que nao sabe,
+        # em vez de a pagina quebrar ou, pior, mostrar campo vazio sem explicar.
+        "situacao": (c["situacao_registro"] or [{}])[0].get("situacao"),
+        "situacao_em": (c["situacao_registro"] or [{}])[0].get("observado_em"),
+        "situacao_ausente": c.get("_situacao_ausente") if not c["situacao_registro"] else None,
         "sequencial": c.get("sequencial_tse"),
         "suplentes": c.get("suplentes", []),
         # Foto de registro de candidatura. O credito e do TSE; o caminho tecnico
@@ -254,12 +258,19 @@ respostas = json.loads(_rp.read_text(encoding="utf-8"))["respostas"] if _rp.exis
 _kb = HERE/"conhecimento"/"regras.json"
 conhecimento = json.loads(_kb.read_text(encoding="utf-8")) if _kb.exists() else None
 
-q = pesq["pesquisas"][0]
-pesquisa = {"instituto": q["instituto"], "registro": q["registro_tse"],
-            "ini": q["campo_inicio"], "fim": q["campo_fim"], "n": q["entrevistados"],
-            "erro": q["margem_erro_pp"], "conf": q["nivel_confianca"],
-            "resultados": {r["id_candidatura"]: r for r in q["resultados"]},
-            "outros": q.get("outros", [])}
+# Estado sem pesquisa levantada e caso normal, e nao defeito: a regra do projeto
+# e que pesquisa so entra com ficha tecnica completa e registro no TSE. Sem
+# nenhuma, a aba nao aparece — melhor aba ausente que aba vazia, que o leitor le
+# como "ninguem pesquisou este estado".
+q = (pesq["pesquisas"] or [None])[0]
+pesquisa = None if not q else {
+    "instituto": q["instituto"], "registro": q["registro_tse"],
+    "ini": q["campo_inicio"], "fim": q["campo_fim"], "n": q["entrevistados"],
+    "erro": q["margem_erro_pp"], "conf": q["nivel_confianca"],
+    "resultados": {r["id_candidatura"]: r for r in q["resultados"]},
+    "outros": q.get("outros", [])}
+if pesquisa is None:
+    print(f"  sem pesquisa registrada em {_UF}: a aba Pesquisa nao entra nesta pagina")
 
 # Endpoint do backend do agente. Arquivo ausente = recurso desligado e o site
 # se comporta exatamente como antes. Nada de chave nem segredo aqui: so a URL.

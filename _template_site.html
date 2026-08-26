@@ -1236,6 +1236,17 @@ function renderComp(){
 
 /* ---------- aba: pesquisa ---------- */
 (function(){
+  /* Estado sem pesquisa levantada e caso normal: a regra do projeto e que
+     pesquisa so entra com ficha tecnica completa e registro no TSE. A ABA SAI da
+     pagina — aba vazia o leitor le como "ninguem pesquisou este estado", que e
+     afirmacao diferente e falsa. */
+  if(!D.pesquisa){
+    const bt=document.getElementById('tab-pesquisa');
+    const pn=document.getElementById('p-pesquisa');
+    if(bt) bt.hidden=true;
+    if(pn) pn.hidden=true;
+    return;
+  }
   const p=D.pesquisa, res=D.ordem.map(cid=>[cid,p.resultados[cid]]).filter(([,r])=>r);
   const comN=res.filter(([,r])=>r.percentual!=null).sort((a,b)=>b[1].percentual-a[1].percentual);
   const semN=res.filter(([,r])=>r.percentual==null);

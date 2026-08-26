@@ -103,19 +103,49 @@
  ],
  "partidos": [
   {
-   "id_partido": "pl",
-   "sigla": "PL",
-   "nome": "Partido Liberal"
+   "id_partido": "agir",
+   "sigla": "AGIR",
+   "nome": "Agir"
   },
   {
-   "id_partido": "pstu",
-   "sigla": "PSTU",
-   "nome": "Partido Socialista dos Trabalhadores Unificado"
+   "id_partido": "cidadania",
+   "sigla": "CIDADANIA",
+   "nome": "Cidadania"
+  },
+  {
+   "id_partido": "democrata",
+   "sigla": "DEMOCRATA",
+   "nome": "Democrata"
+  },
+  {
+   "id_partido": "missao",
+   "sigla": "MISSÃO",
+   "nome": "Partido Missão"
+  },
+  {
+   "id_partido": "novo",
+   "sigla": "NOVO",
+   "nome": "Partido Novo"
+  },
+  {
+   "id_partido": "pcb",
+   "sigla": "PCB",
+   "nome": "Partido Comunista Brasileiro"
   },
   {
    "id_partido": "pco",
    "sigla": "PCO",
    "nome": "Partido da Causa Operária"
+  },
+  {
+   "id_partido": "pdt",
+   "sigla": "PDT",
+   "nome": "Partido Democrático Trabalhista"
+  },
+  {
+   "id_partido": "pl",
+   "sigla": "PL",
+   "nome": "Partido Liberal"
   },
   {
    "id_partido": "pode",
@@ -128,44 +158,19 @@
    "nome": "Progressistas"
   },
   {
-   "id_partido": "missao",
-   "sigla": "MISSÃO",
-   "nome": "Partido Missão"
-  },
-  {
-   "id_partido": "up",
-   "sigla": "UP",
-   "nome": "Unidade Popular pelo Socialismo"
-  },
-  {
-   "id_partido": "rede",
-   "sigla": "REDE",
-   "nome": "Rede Sustentabilidade"
-  },
-  {
-   "id_partido": "pcb",
-   "sigla": "PCB",
-   "nome": "Partido Comunista Brasileiro"
-  },
-  {
-   "id_partido": "novo",
-   "sigla": "NOVO",
-   "nome": "Partido Novo"
-  },
-  {
    "id_partido": "psb",
    "sigla": "PSB",
    "nome": "Partido Socialista Brasileiro"
   },
   {
-   "id_partido": "cidadania",
-   "sigla": "CIDADANIA",
-   "nome": "Cidadania"
+   "id_partido": "psd",
+   "sigla": "PSD",
+   "nome": "Partido Social Democrático"
   },
   {
-   "id_partido": "agir",
-   "sigla": "AGIR",
-   "nome": "Agir"
+   "id_partido": "pstu",
+   "sigla": "PSTU",
+   "nome": "Partido Socialista dos Trabalhadores Unificado"
   },
   {
    "id_partido": "pt",
@@ -173,9 +178,14 @@
    "nome": "Partido dos Trabalhadores"
   },
   {
-   "id_partido": "psd",
-   "sigla": "PSD",
-   "nome": "Partido Social Democrático"
+   "id_partido": "rede",
+   "sigla": "REDE",
+   "nome": "Rede Sustentabilidade"
+  },
+  {
+   "id_partido": "up",
+   "sigla": "UP",
+   "nome": "Unidade Popular pelo Socialismo"
   }
  ],
  "coligacoes": [
@@ -204,6 +214,30 @@
    "uf": "SP",
    "cargo": "senador",
    "composicao": "PSDB / CIDADANIA"
+  },
+  {
+   "id_coligacao": "pernambuco-de-coracao-pe",
+   "nome": "Pernambuco de Coração",
+   "ano": 2026,
+   "uf": "PE",
+   "cargo": "senador",
+   "composicao": "PODE / PSD / AVANTE / FEDERAÇÃO PSDB CIDADANIA(PSDB/CIDADANIA) / FEDERAÇÃO UNIÃO PROGRESSISTA(UNIÃO/PP)"
+  },
+  {
+   "id_coligacao": "frente-popular-de-pernambuco-pe",
+   "nome": "Frente Popular de Pernambuco",
+   "ano": 2026,
+   "uf": "PE",
+   "cargo": "senador",
+   "composicao": "REPUBLICANOS / PDT / MDB / DC / PSB / FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV) / FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(PRD/SOLIDARIEDADE)"
+  },
+  {
+   "id_coligacao": "frente-pernambuco-de-luta-pe",
+   "nome": "Frente Pernambuco de Luta",
+   "ano": 2026,
+   "uf": "PE",
+   "cargo": "senador",
+   "composicao": "PCB / FEDERAÇÃO PSOL REDE(PSOL/REDE)"
   }
  ],
  "niveis_fonte": [
