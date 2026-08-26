@@ -39,7 +39,18 @@
    },
    "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
    "foto": null,
-   "situacao_parlamentar": []
+   "situacao_parlamentar": [
+    {
+     "casa": "camara",
+     "id_externo": "141421",
+     "situacao": "Exercício",
+     "condicao": "Titular",
+     "desde": "2023-02-01",
+     "motivo_afastamento_anterior": null,
+     "_fonte": "Camara dos Deputados, dados abertos v2",
+     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+    }
+   ]
   },
   {
    "id_candidatura": "sen-pe-2026-marilia-arraes",
@@ -113,7 +124,18 @@
    },
    "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
    "foto": null,
-   "situacao_parlamentar": []
+   "situacao_parlamentar": [
+    {
+     "casa": "senado",
+     "id_externo": "5008",
+     "situacao": "Exercício",
+     "condicao": null,
+     "desde": null,
+     "motivo_afastamento_anterior": null,
+     "_fonte": "Senado Federal, dados abertos",
+     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+    }
+   ]
   },
   {
    "id_candidatura": "sen-pe-2026-mariano-macedo",
@@ -224,7 +246,18 @@
    },
    "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
    "foto": null,
-   "situacao_parlamentar": []
+   "situacao_parlamentar": [
+    {
+     "casa": "camara",
+     "id_externo": "74428",
+     "situacao": "Exercício",
+     "condicao": "Titular",
+     "desde": "2023-02-01",
+     "motivo_afastamento_anterior": null,
+     "_fonte": "Camara dos Deputados, dados abertos v2",
+     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+    }
+   ]
   },
   {
    "id_candidatura": "sen-pe-2026-mailson-da-silva-neto",
@@ -372,7 +405,18 @@
    },
    "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
    "foto": null,
-   "situacao_parlamentar": []
+   "situacao_parlamentar": [
+    {
+     "casa": "camara",
+     "id_externo": "157130",
+     "situacao": "Exercício",
+     "condicao": "Titular",
+     "desde": "2023-02-01",
+     "motivo_afastamento_anterior": null,
+     "_fonte": "Camara dos Deputados, dados abertos v2",
+     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+    }
+   ]
   },
   {
    "id_candidatura": "sen-pe-2026-samuel-timoteo",

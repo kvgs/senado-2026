@@ -280,15 +280,23 @@ def main() -> int:
 
     # Mandato ENCERRADO nao aparece em situacao_parlamentar, que descreve o
     # presente. Mas mandato encerrado tem registro legislativo igual: a Tebet foi
-    # senadora de 2015 a 2022 e o acervo mostra 7 das 40 proposicoes dela.
-    # Enquanto for um caso so, mora aqui e a vista, em vez de virar campo novo no
-    # cadastro que ficaria vazio para as outras catorze.
+    # senadora de 2015 a 2022.
+    #
+    # A CHAVE TEM DE CONFERIR A UF. Escrito sem essa conferencia, este bloco
+    # colheu as 40 proposicoes da Tebet DENTRO do acervo de Pernambuco na primeira
+    # coleta de PE — 40 registros de outro estado num arquivo que existe para
+    # separar estados. Era o erro exato que a divisao por pasta deveria impedir, e
+    # foi um id fixo aqui que furou a divisao.
     ENCERRADOS = {"sen-sp-2026-tebet": {"casa": "senado", "id_externo": "5527",
                                         "_nota": "senadora por MS, 2015-2022"}}
     ja_alvo = {a for a, _ in alvos}
+    prefixo = f"sen-{_UF.lower()}-"
     for cid, pl in ENCERRADOS.items():
-        if cid not in ja_alvo:
-            alvos.append((cid, pl))
+        if cid in ja_alvo:
+            continue
+        if not cid.startswith(prefixo):
+            continue          # candidatura de outro estado: nao e desta coleta
+        alvos.append((cid, pl))
 
     novos: list[dict] = []
     for id_cand, pl in alvos:
@@ -329,6 +337,16 @@ def main() -> int:
     if so_resumo:
         print("\n(--resumo: nada foi escrito)")
         return 0
+
+    # Trava de saida: um registro de outra UF neste arquivo e contaminacao
+    # silenciosa, e foi o que aconteceu na primeira coleta de PE. Melhor recusar
+    # gravar do que gravar misturado.
+    intrusos = sorted({a.get("id_candidatura", "?") for r in novos
+                       for a in (r.get("autoria") or [])
+                       if not str(a.get("id_candidatura", "")).startswith(prefixo)})
+    if intrusos:
+        raise SystemExit(f"coleta de {_UF} produziu registro de outra UF: {intrusos}"
+                         + chr(10) + "nada foi gravado — corrija antes de continuar")
 
     SAIDA.write_text(json.dumps({
         "_nota": ("Coleta bruta das APIs oficiais, AGUARDANDO REVISAO. Nao e lida pelo "
