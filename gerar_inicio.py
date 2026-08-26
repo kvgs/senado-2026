@@ -13,9 +13,8 @@ Se o recorte falhar, este script para em vez de publicar pagina sem estilo.
 ESTADO SEM ACERVO NAO E LINK. Um link que abre pagina vazia promete o que nao
 existe. A lista diz "ainda nao comecamos", que e a verdade e e informacao.
 
-SAIDA: inicio.html, ao lado do index.html de Sao Paulo. Enquanto for so um
-estado, publicar a escolha como index.html esconderia o unico conteudo que
-existe — a troca acontece quando houver um segundo estado.
+SAIDA: index.html na raiz. A pagina de cada estado vive em <uf>/index.html, e os
+assets (fontes, fotos) ficam na raiz, compartilhados — nao copiados 27 vezes.
 """
 import json
 import pathlib
@@ -24,7 +23,7 @@ import urllib.parse
 
 AQUI = pathlib.Path(__file__).resolve().parent
 DADOS = AQUI / "dados"
-SAIDA = AQUI / "inicio.html"
+SAIDA = AQUI / "index.html"
 
 ORDEM_REGIAO = ["Norte", "Nordeste", "Centro-Oeste", "Sudeste", "Sul"]
 
@@ -50,7 +49,10 @@ def estilo_base() -> str:
             "Marcos esperados: '  :root{' e '-webkit-font-smoothing:antialiased}'.\n"
             "Se o template mudou, ajuste estilo_base() — nao publique sem estilo."
         )
-    return t[i:t.index("}", j) + 1]
+    css = t[i:t.index("}", j) + 1]
+    # A pagina inicial mora NA RAIZ, entao o prefixo de asset e vazio. O marcador
+    # vem junto com o CSS recortado do template do estado, que desceu um nivel.
+    return css.replace("{{RAIZ}}", "")
 
 
 def lista_estados(estados: list[dict]) -> str:
@@ -69,9 +71,7 @@ def lista_estados(estados: list[dict]) -> str:
             if e["acervo"] == "nao_comecamos":
                 itens.append(f'<li><div class="uf vazio">{corpo}</div></li>')
             else:
-                # Enquanto Sao Paulo e a unica pagina, ela vive em index.html.
-                # Quando houver o segundo estado, o caminho passa a ser uf/.
-                alvo = "index.html" if e["uf"] == "SP" else f'{e["uf"].lower()}/'
+                alvo = f'{e["uf"].lower()}/'
                 itens.append(f'<li><a class="uf" href="{alvo}">{corpo}</a></li>')
         partes.append(f'<div class="regiao"><h3>{regiao}</h3>'
                       f'<ul class="ufs">{"".join(itens)}</ul></div>')

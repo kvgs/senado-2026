@@ -16,7 +16,9 @@ import hashlib, json, pathlib
 
 BASE = pathlib.Path(__file__).parent
 HERE = BASE
-OUT = BASE / "index.html"
+# A pagina do estado mora em <uf>/index.html. A raiz e a escolha do estado,
+# gerada por gerar_inicio.py. OUT e resolvido depois de ler qual UF e esta.
+OUT = None   # definido abaixo, quando site.uf for conhecido
 
 ref = json.loads((BASE/"dados"/"referencia.json").read_text(encoding="utf-8"))
 cands = json.loads((BASE/"dados"/"candidaturas.json").read_text(encoding="utf-8"))["candidaturas"]
@@ -301,6 +303,13 @@ _est = next((e for e in json.loads((BASE/"dados"/"estados.json")
 if not _est:
     raise SystemExit(f"dados/referencia.json aponta site.uf={_uf!r}, que nao esta em estados.json")
 
+# Agora que a UF e conhecida, o destino e a profundidade dos assets seguem dela.
+OUT = BASE / _est["uf"].lower() / "index.html"
+OUT.parent.mkdir(parents=True, exist_ok=True)
+# "../" porque a pagina desceu um nivel; as fontes e as fotos ficam na raiz,
+# compartilhadas pelos 27 estados em vez de copiadas 27 vezes.
+PREFIXO = "../"
+
 (ag/"catalogo.json").write_text(json.dumps({
     "uf": _est["uf"],
     "uf_nome": _est["nome"],
@@ -329,6 +338,13 @@ if not _est:
 tpl = (HERE/"_template_site.html").read_text(encoding="utf-8")
 # A UF vai para o JS do site: o e-mail que o eleitor abre pronto e o texto de
 # mensagem citam o estado, e sao textos que saem da maquina dele para um gabinete.
+# A foto tambem e caminho relativo, e mora nos dados. Sem o prefixo, o <img>
+# aponta para fora e o site mostra as iniciais — que o leitor le como
+# "candidatura sem foto", uma afirmacao diferente e falsa.
+for _c in dados["candidatos"].values():
+    if _c.get("foto"):
+        _c["foto"] = PREFIXO + _c["foto"]
+
 dados["uf"] = {
     "sigla": _est["uf"], "nome": _est["nome"],
     "preposicao": _est["preposicao"],     # "de" São Paulo, "do" Acre, "da" Bahia
@@ -350,6 +366,10 @@ for _m, _v in (("{{UF_NOME}}", dados["uf"]["nome"]), ("{{UF_POR}}", dados["uf"][
     if _m not in tpl:
         raise SystemExit(f"_template_site.html perdeu o marcador {_m}")
     tpl = tpl.replace(_m, _v)
+
+if "{{RAIZ}}" not in tpl:
+    raise SystemExit("_template_site.html perdeu o marcador {{RAIZ}} das fontes")
+tpl = tpl.replace("{{RAIZ}}", PREFIXO)
 
 tpl = tpl.replace("{{MAILTO}}", f"mailto:{_email}?subject={_assunto}").replace("{{EMAIL}}", _email)
 

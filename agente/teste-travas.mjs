@@ -13,7 +13,9 @@ const ORIGEM = "https://kvgs.github.io";
 const env = { ANTHROPIC_API_KEY: "chave-de-mentira" };
 
 /* Uma linha real, tirada do site publicado, para servir de caso valido. */
-const html = fs.readFileSync(new URL("../index.html", import.meta.url), "utf8");
+// A pagina do estado desceu para sp/: a raiz agora e a escolha do estado, e
+// ler dali daria um arquivo sem acervo — o teste passaria por vacuidade.
+const html = fs.readFileSync(new URL("../sp/index.html", import.meta.url), "utf8");
 const D = JSON.parse((() => {
   const l = html.split("\n").find((x) => x.startsWith("const D = {"));
   return l.slice("const D = ".length, l.lastIndexOf(";"));
