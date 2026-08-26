@@ -1,0 +1,250 @@
+<title>Candidaturas ao Senado 2026</title>
+<!-- Pagina nacional. O bloco da lei mora aqui porque ele vale nos 27 estados:
+     nao e nota de rodape de Sao Paulo, e a tese do site.
+
+     O ESTILO NAO E COPIADO. O gerador extrai os tokens, as fontes e o reset do
+     _template_site.html e injeta no marcador dentro do <style> abaixo. Duas
+     paletas divergem; uma fonte, nao.
+
+     E o nome do marcador nao se escreve aqui de novo: escrito duas vezes, o
+     replace troca as duas, e o comentario virou 4 KB de CSS. -->
+
+<style>
+  :root{
+    --ground:#FFFFFF; --surface:#FFFFFF; --surface-2:#F7F4F1; --surface-3:#EDE7E1;
+    --ink:#141110;      /* 17.5:1 sobre surface */
+    --ink-2:#3E3833;    /*  9.6:1 */
+    --muted:#6A6259;    /*  5.6:1 */
+    --acento-vivo:#2FB4E4;   /* ciano vivo. Vive nas FORMAS: nesta luminosidade
+                                da 2.4:1 sobre branco e nao serve para texto. */
+    --foto-borda:#2FB4E4;    /* moldura da foto. Token proprio porque no tema
+                                escuro o --acento-vivo e superficie, nao traco. */
+    /* rule-strong desenha borda de campo e de botao, entao precisa de 3:1
+       (WCAG 1.4.11). O valor anterior, #A9B1AB, dava 2.2:1. */
+    --rule:#E5E0DA; --rule-strong:#7E756B;
+    --focus:#1F5FA8;
+
+    --s-oficial:#136B3C;      /* 5.6:1 */
+    --s-verificada:#7A5200;   /* 6.2:1 */
+    --s-secundaria:#B02418;   /* 5.6:1 */
+    --s-declaracao:#6B2FA8;   /* 6.9:1 */
+    --s-registro:#122A45;     /* azul-noite, 11.5:1 sobre o chip. Separado da cor
+                                 de marca por luminancia (2.1:1), para selo e
+                                 marca nao se confundirem sendo os dois azuis. */
+    /* fundos das etiquetas: a mesma cor, lavada, para a etiqueta ter corpo */
+    --f-oficial:#DFF3E7; --f-verificada:#FBEFD2; --f-secundaria:#FBE3E0;
+    --f-declaracao:#EEE4FB; --f-registro:#DCE6F2;
+    --acento:#0C6C8F;         /* ciano fundo: link, aba, numero. 5.9:1 sobre
+                                 branco. E o irmao legivel do ciano da faixa —
+                                 mesma identidade, papeis diferentes. */
+    --alert:#A32C20; --alert-bg:#FBEEEC; --alert-line:#D9A9A2;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#141110; --surface:#1C1815; --surface-2:#26211D; --surface-3:#332C27;
+      --ink:#F4F0EB; --ink-2:#CFC7BF; --muted:#A39A90;
+      --rule:#2B2B30; --rule-strong:#70707A; --focus:#7FB2E8;
+      --s-oficial:#6FD09B; --s-verificada:#EFC169; --s-secundaria:#FF9184;
+      --s-declaracao:#CDA5F5; --s-registro:#5E97D9;
+      --f-oficial:#12291D; --f-verificada:#2B2311; --f-secundaria:#301A17;
+      --f-declaracao:#241A33; --f-registro:#111D2E;
+      --acento:#5AC8F0; --acento-vivo:#0E2A36; --foto-borda:#5AC8F0; --foto-borda:#5AC8F0;
+      --alert:#F0897C; --alert-bg:#2B1C1A; --alert-line:#663932;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#141110; --surface:#1C1815; --surface-2:#26211D; --surface-3:#332C27;
+    --ink:#F4F0EB; --ink-2:#CFC7BF; --muted:#A39A90;
+    --rule:#2B2B30; --rule-strong:#70707A; --focus:#7FB2E8;
+    --s-oficial:#6FD09B; --s-verificada:#EFC169; --s-secundaria:#FF9184;
+    --s-declaracao:#CDA5F5; --s-registro:#5E97D9;
+    --f-oficial:#12291D; --f-verificada:#2B2311; --f-secundaria:#301A17;
+    --f-declaracao:#241A33; --f-registro:#111D2E;
+    --acento:#5AC8F0; --acento-vivo:#0E2A36;
+    --alert:#F0897C; --alert-bg:#2B1C1A; --alert-line:#663932;
+  }
+
+  /* Fontes hospedadas aqui, nao no Google. Fonte de terceiro conta a esse
+     terceiro quem abriu a pagina, e num site sobre candidatos isso e informacao
+     sobre quem se informa. Variaveis: um arquivo cobre toda a faixa de peso. */
+  @font-face{font-family:"Bricolage";src:url("fontes-web/bricolage-grotesque.woff2") format("woff2");
+    font-weight:400 800;font-display:swap}
+  @font-face{font-family:"PublicSans";src:url("fontes-web/public-sans.woff2") format("woff2");
+    font-weight:400 700;font-display:swap}
+  @font-face{font-family:"PlexMono";src:url("fontes-web/ibm-plex-mono.woff2") format("woff2");
+    font-weight:500;font-display:swap}
+
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+
+  body{margin:0;background:var(--ground);color:var(--ink);
+    font-family:"PublicSans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    font-size:1.05rem;line-height:1.62;-webkit-font-smoothing:antialiased}
+
+  .env{max-width:900px;margin:0 auto;padding:34px 22px 90px}
+
+  header{margin-bottom:34px}
+  .lbl{font-family:"PlexMono",ui-monospace,monospace;font-size:.76rem;letter-spacing:.07em;
+    color:var(--muted);margin-bottom:12px}
+  h1{font-family:"Bricolage",system-ui,sans-serif;font-size:clamp(1.9rem,5vw,2.9rem);
+    line-height:1.1;font-weight:700;text-wrap:balance;margin-bottom:14px}
+  .lede{font-size:1.12rem;color:var(--ink-2);max-width:62ch}
+
+  /* O bloco da lei. Barra vertical no acento vivo: forma, nao texto — nesta
+     luminosidade o ciano nao passa 4.5:1 e nao serve para ler. */
+  .chamada{margin:30px 0 40px;padding:22px 26px;background:var(--surface-2);
+    border-left:5px solid var(--acento-vivo);border-radius:0 7px 7px 0}
+  .chamada .forte{font-family:"Bricolage",system-ui,sans-serif;font-size:1.16rem;
+    font-weight:700;line-height:1.35;margin-bottom:11px;text-wrap:balance}
+  .chamada p{max-width:66ch;color:var(--ink-2);font-size:.98rem}
+  .chamada p+p{margin-top:11px}
+  .chamada a{color:var(--acento)}
+  .chamada .grifo{font-weight:700;color:var(--ink)}
+
+  h2{font-family:"Bricolage",system-ui,sans-serif;font-size:1.34rem;margin:44px 0 6px}
+  .sub{color:var(--muted);font-size:.94rem;max-width:64ch;margin-bottom:20px}
+
+  /* Lista de estados. Lista, e nao mapa: mapa SVG custa caro para tornar
+     navegavel por teclado e leitor de tela, e a lista diz a mesma coisa. */
+  .regiao{margin-bottom:26px}
+  .regiao h3{font-family:"PlexMono",ui-monospace,monospace;font-size:.74rem;
+    letter-spacing:.09em;color:var(--muted);margin-bottom:9px}
+  .ufs{list-style:none;display:grid;gap:8px;
+    grid-template-columns:repeat(auto-fill,minmax(224px,1fr))}
+
+  .uf{display:flex;gap:13px;align-items:center;padding:12px 15px;
+    border:1px solid var(--rule);border-radius:7px;background:var(--surface);
+    text-decoration:none;color:inherit}
+  a.uf:hover{border-color:var(--acento-vivo);background:var(--surface-2)}
+  a.uf:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+  .uf .sigla{font-family:"PlexMono",ui-monospace,monospace;font-weight:500;
+    font-size:.9rem;color:var(--ink);background:var(--surface-3);
+    border-radius:4px;padding:4px 8px;flex:0 0 auto}
+  .uf .txt{min-width:0}
+  .uf .nome{display:block;font-weight:600;font-size:.97rem}
+  .uf .st{display:block;font-size:.81rem;color:var(--muted)}
+
+  /* Estado sem acervo NAO e link. Um link que abre pagina vazia promete o que
+     nao existe, e aqui ausencia e informacao — a lista diz que nao comecamos. */
+  .uf.vazio{background:var(--surface-2);border-style:dashed;cursor:default}
+  .uf.vazio .sigla{color:var(--muted)}
+  .uf.vazio .nome{font-weight:500;color:var(--ink-2)}
+
+  details.cargo{margin:40px 0 0;border:1px solid var(--rule);border-radius:8px;
+    background:var(--surface);overflow:hidden}
+  details.cargo>summary{cursor:pointer;padding:15px 19px;font-weight:600;
+    font-family:"Bricolage",system-ui,sans-serif;font-size:1.04rem;list-style:none}
+  details.cargo>summary::-webkit-details-marker{display:none}
+  details.cargo>summary::before{content:"+ ";color:var(--acento);font-weight:700}
+  details.cargo[open]>summary::before{content:"– "}
+  details.cargo>summary:focus-visible{outline:3px solid var(--focus);outline-offset:-3px}
+  .dentro{padding:2px 19px 19px;border-top:1px solid var(--rule)}
+  .dentro p{max-width:68ch;color:var(--ink-2);font-size:.96rem;margin-top:12px}
+  .dentro strong{color:var(--ink)}
+
+  .rodape{margin-top:52px;padding-top:24px;border-top:2px solid var(--ink)}
+  .rodape p{max-width:68ch;color:var(--ink-2);font-size:.94rem;margin-bottom:11px}
+  .rodape a{color:var(--acento)}
+
+  .tema{position:absolute;top:14px;right:16px;display:flex;gap:4px}
+  .tema button{font:inherit;font-size:.76rem;padding:5px 9px;cursor:pointer;
+    border:1px solid var(--rule-strong);background:var(--surface);color:var(--ink-2);
+    border-radius:5px}
+  .tema button[aria-pressed="true"]{background:var(--ink);color:var(--ground);
+    border-color:var(--ink)}
+  .tema button:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+
+  .vis-oculto{position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+    overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+</style>
+
+<div class="tema" role="group" aria-label="Aparência do site">
+  <button type="button" data-tema="auto" aria-pressed="true">Sistema</button>
+  <button type="button" data-tema="light" aria-pressed="false">Claro</button>
+  <button type="button" data-tema="dark" aria-pressed="false">Escuro</button>
+</div>
+
+<div class="env">
+  <header>
+    <p class="lbl">Eleições 2026 · Senado Federal · 27 unidades da federação · 2 vagas em cada</p>
+    <h1>Candidaturas ao Senado, estado por estado</h1>
+    <p class="lede">O que cada candidatura defende, tema por tema, com a fonte de cada
+      informação e o quanto ela foi verificada. Escolha o seu estado.</p>
+  </header>
+
+  <div class="chamada">
+    <p class="forte">Candidaturas ao Senado não precisam registrar plano de governo no TSE.</p>
+    <p>A lei exige proposta de governo apenas de quem concorre a Presidente, Governador e
+      Prefeito — senador não está na lista
+      (<a href="https://www.planalto.gov.br/ccivil_03/leis/l9504.htm" target="_blank"
+      rel="noopener">Lei 9.504/1997, art. 11, §1º, IX<span class="vis-oculto"> (abre em nova
+      aba)</span></a>).</p>
+    <p>Por isso é difícil saber o que cada candidatura defende:
+      <span class="grifo">não existe um documento único onde procurar.</span></p>
+    <p>Este site existe para ajudar nisso — reunir o que há, com a fonte de cada informação,
+      e dizer com clareza o que não foi encontrado.</p>
+  </div>
+
+  <h2>Escolha o estado</h2>
+  <p class="sub">São <strong>317 candidaturas</strong> ao Senado no país,
+    e cada estado elege duas — é a renovação de dois terços da Casa, 54 das 81 cadeiras.
+    A contagem de cada estado vem do registro no TSE.</p>
+
+  <div class="regiao"><h3>Norte</h3><ul class="ufs"><li><div class="uf vazio"><span class="sigla">AC</span><span class="txt"><span class="nome">Acre</span><span class="st">8 candidaturas · ainda não começamos</span></span></div></li><li><div class="uf vazio"><span class="sigla">AP</span><span class="txt"><span class="nome">Amapá</span><span class="st">9 candidaturas · ainda não começamos</span></span></div></li><li><div class="uf vazio"><span class="sigla">AM</span><span class="txt"><span class="nome">Amazonas</span><span class="st">9 candidaturas · ainda não começamos</span></span></div></li><li><div class="uf vazio"><span class="sigla">PA</span><span class="txt"><span class="nome">Pará</span><span class="st">12 candidaturas · ainda não começamos</span></span></div></li><li><div class="uf vazio"><span class="sigla">RO</span><span class="txt"><span class="nome">Rondônia</span><span class="st">10 candidaturas · ainda não começamos</span></span></div></li><li><div class="uf vazio"><span class="sigla">RR</span><span class="txt"><span class="nome">Roraima</span><span class="st">13 candidaturas · ainda não começamos</span></span></div></li><li><div class="uf vazio"><span class="sigla">TO</span><span class="txt"><span class="nome">Tocantins</span><span class="st">13 candidaturas · ainda não começamos</span></span></div></li></ul></div>
+  <div class="regiao"><h3>Nordeste</h3><ul class="ufs"><li><div class="uf vazio"><span class="sigla">AL</span><span class="txt"><span class="nome">Alagoas</span><span class="st">7 candidaturas · ainda não começamos</span></span></div></li><li><div class="uf vazio"><span class="sigla">BA</span><span class="txt"><span class="nome">Bahia</span><span class="st">10 candidaturas · ainda não começamos</span></span></div></li><li><div class="uf vazio"><span class="sigla">CE</span><span class="txt"><span class="nome">Ceará</span><span class="st">8 candidaturas · ainda não começamos</span></span></div></li><li><div class="uf vazio"><span class="sigla">MA</span><span class="txt"><span class="nome">Maranhão</span><span class="st">11 candidaturas · ainda não começamos</span></span></div></li><li><div class="uf vazio"><span class="sigla">PB</span><span class="txt"><span class="nome">Paraíba</span><span class="st">10 candidaturas · ainda não começamos</span></span></div></li><li><div class="uf vazio"><span class="sigla">PE</span><span class="txt"><span class="nome">Pernambuco</span><span class="st">12 candidaturas · ainda não começamos</span></span></div></li><li><div class="uf vazio"><span class="sigla">PI</span><span class="txt"><span class="nome">Piauí</span><span class="st">21 candidaturas · ainda não começamos</span></span></div></li><li><div class="uf vazio"><span class="sigla">RN</span><span class="txt"><span class="nome">Rio Grande do Norte</span><span class="st">14 candidaturas · ainda não começamos</span></span></div></li><li><div class="uf vazio"><span class="sigla">SE</span><span class="txt"><span class="nome">Sergipe</span><span class="st">11 candidaturas · ainda não começamos</span></span></div></li></ul></div>
+  <div class="regiao"><h3>Centro-Oeste</h3><ul class="ufs"><li><div class="uf vazio"><span class="sigla">DF</span><span class="txt"><span class="nome">Distrito Federal</span><span class="st">13 candidaturas · ainda não começamos</span></span></div></li><li><div class="uf vazio"><span class="sigla">GO</span><span class="txt"><span class="nome">Goiás</span><span class="st">11 candidaturas · ainda não começamos</span></span></div></li><li><div class="uf vazio"><span class="sigla">MT</span><span class="txt"><span class="nome">Mato Grosso</span><span class="st">10 candidaturas · ainda não começamos</span></span></div></li><li><div class="uf vazio"><span class="sigla">MS</span><span class="txt"><span class="nome">Mato Grosso do Sul</span><span class="st">10 candidaturas · ainda não começamos</span></span></div></li></ul></div>
+  <div class="regiao"><h3>Sudeste</h3><ul class="ufs"><li><div class="uf vazio"><span class="sigla">ES</span><span class="txt"><span class="nome">Espírito Santo</span><span class="st">11 candidaturas · ainda não começamos</span></span></div></li><li><div class="uf vazio"><span class="sigla">MG</span><span class="txt"><span class="nome">Minas Gerais</span><span class="st">17 candidaturas · ainda não começamos</span></span></div></li><li><div class="uf vazio"><span class="sigla">RJ</span><span class="txt"><span class="nome">Rio de Janeiro</span><span class="st">16 candidaturas · ainda não começamos</span></span></div></li><li><a class="uf" href="index.html"><span class="sigla">SP</span><span class="txt"><span class="nome">São Paulo</span><span class="st">16 candidaturas · acervo publicado</span></span></a></li></ul></div>
+  <div class="regiao"><h3>Sul</h3><ul class="ufs"><li><div class="uf vazio"><span class="sigla">PR</span><span class="txt"><span class="nome">Paraná</span><span class="st">9 candidaturas · ainda não começamos</span></span></div></li><li><div class="uf vazio"><span class="sigla">RS</span><span class="txt"><span class="nome">Rio Grande do Sul</span><span class="st">13 candidaturas · ainda não começamos</span></span></div></li><li><div class="uf vazio"><span class="sigla">SC</span><span class="txt"><span class="nome">Santa Catarina</span><span class="st">13 candidaturas · ainda não começamos</span></span></div></li></ul></div>
+
+  <details class="cargo">
+    <summary>O que faz um senador?</summary>
+    <div class="dentro">
+      <p>Cada estado tem <strong>três senadores</strong> — o Acre e São Paulo têm o mesmo
+        peso no Senado, independentemente da população. São <strong>81 no total</strong>,
+        com mandato de <strong>oito anos</strong>.</p>
+      <p><strong>Três senadores, duas vagas: por que os dois números aparecem.</strong>
+        O mandato dura oito anos e o Senado não se renova inteiro de uma vez. A cada quatro
+        anos entra uma parte: em 2022 cada estado elegeu <strong>um</strong>; em 2026 elege
+        <strong>dois</strong>. Daí as duas vagas — o terceiro senador de cada estado só volta
+        a ser eleito em 2030.</p>
+      <p>O Senado <strong>vota as leis</strong> junto com a Câmara. Nenhuma lei federal passa
+        sem os dois. Mas há coisas que <strong>só o Senado faz</strong>: aprovar quem vai para
+        o Supremo Tribunal Federal, para o Banco Central e para as agências reguladoras;
+        aprovar embaixadores; autorizar empréstimos externos dos estados; e julgar o
+        Presidente da República em processo de impeachment.</p>
+      <p>É um mandato longo e com pouca cobertura no dia a dia. Um senador eleito em 2026
+        estará no cargo até <strong>2035</strong>.</p>
+    </div>
+  </details>
+
+  <div class="rodape">
+    <p><strong>Como este site é feito.</strong> Cada informação mostra de onde veio e o quanto
+      foi verificada. Nada é publicado sem alguém conferir contra a fonte original. A página de
+      cada estado tem a seção <em>Como é feito</em>, com os critérios e os selos de procedência.</p>
+    <p>Site independente e sem vínculo com partido, candidatura ou campanha. Não recomenda voto,
+      não ordena candidaturas por preferência e não compara umas com as outras de forma
+      avaliativa. A ordem é sempre a do número de urna.</p>
+    <p><strong>Ajude a construir.</strong> Achou um erro, conhece uma fonte que falta, ou tem
+      uma dúvida? Escreva para <a href="mailto:kelli.vgs@gmail.com?subject=Senado%202026%20%E2%80%94%20feedback">kelli.vgs@gmail.com</a>.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  /* Mesma logica de tema do site do estado: escolha explicita ganha do sistema,
+     e 'auto' apaga a marca para o prefers-color-scheme voltar a valer. */
+  var raiz=document.documentElement, bs=document.querySelectorAll(".tema button");
+  function por(v){
+    if(v==="auto") raiz.removeAttribute("data-theme");
+    else raiz.setAttribute("data-theme",v);
+    for(var i=0;i<bs.length;i++)
+      bs[i].setAttribute("aria-pressed", String(bs[i].dataset.tema===v));
+    try{ localStorage.setItem("tema",v); }catch(e){}
+  }
+  for(var i=0;i<bs.length;i++)
+    bs[i].addEventListener("click",function(){ por(this.dataset.tema); });
+  var g=null; try{ g=localStorage.getItem("tema"); }catch(e){}
+  por(g||"auto");
+})();
+</script>

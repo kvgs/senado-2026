@@ -1,0 +1,250 @@
+{
+ "_nota": "As 27 unidades da federacao. A UF deixa de ser texto escrito a mao no codigo e passa a ser dado: eram 43 pontos com 'Sao Paulo' chumbado, incluindo os prompts do LLM e os e-mails que saem para gabinetes. 'preposicao' existe porque 'eleitor de Sao Paulo' e 'eleitor do Acre' nao seguem a mesma regra, e concordancia errada numa mensagem enviada a um gabinete e erro que sai de casa.",
+ "_vagas_2026": "Em 2026 cada estado elege DOIS senadores: e a renovacao de dois tercos do Senado, 54 das 81 cadeiras. E uniforme, entao nao entra por estado.",
+ "_contagem": "candidaturas_tse vem de consulta_cand_2026_BRASIL.csv, cargo SENADOR.",
+ "estados": [
+  {
+   "uf": "AC",
+   "nome": "Acre",
+   "preposicao": "do",
+   "regiao": "Norte",
+   "candidaturas_tse": 8,
+   "assembleia": "Assembleia Legislativa do Estado do Acre",
+   "acervo": "nao_comecamos"
+  },
+  {
+   "uf": "AL",
+   "nome": "Alagoas",
+   "preposicao": "de",
+   "regiao": "Nordeste",
+   "candidaturas_tse": 7,
+   "assembleia": "Assembleia Legislativa do Estado de Alagoas",
+   "acervo": "nao_comecamos"
+  },
+  {
+   "uf": "AM",
+   "nome": "Amazonas",
+   "preposicao": "do",
+   "regiao": "Norte",
+   "candidaturas_tse": 9,
+   "assembleia": "Assembleia Legislativa do Estado do Amazonas",
+   "acervo": "nao_comecamos"
+  },
+  {
+   "uf": "AP",
+   "nome": "Amapá",
+   "preposicao": "do",
+   "regiao": "Norte",
+   "candidaturas_tse": 9,
+   "assembleia": "Assembleia Legislativa do Estado do Amapá",
+   "acervo": "nao_comecamos"
+  },
+  {
+   "uf": "BA",
+   "nome": "Bahia",
+   "preposicao": "da",
+   "regiao": "Nordeste",
+   "candidaturas_tse": 10,
+   "assembleia": "Assembleia Legislativa do Estado da Bahia",
+   "acervo": "nao_comecamos"
+  },
+  {
+   "uf": "CE",
+   "nome": "Ceará",
+   "preposicao": "do",
+   "regiao": "Nordeste",
+   "candidaturas_tse": 8,
+   "assembleia": "Assembleia Legislativa do Estado do Ceará",
+   "acervo": "nao_comecamos"
+  },
+  {
+   "uf": "DF",
+   "nome": "Distrito Federal",
+   "preposicao": "do",
+   "regiao": "Centro-Oeste",
+   "candidaturas_tse": 13,
+   "assembleia": "Câmara Legislativa do Distrito Federal",
+   "acervo": "nao_comecamos"
+  },
+  {
+   "uf": "ES",
+   "nome": "Espírito Santo",
+   "preposicao": "do",
+   "regiao": "Sudeste",
+   "candidaturas_tse": 11,
+   "assembleia": "Assembleia Legislativa do Estado do Espírito Santo",
+   "acervo": "nao_comecamos"
+  },
+  {
+   "uf": "GO",
+   "nome": "Goiás",
+   "preposicao": "de",
+   "regiao": "Centro-Oeste",
+   "candidaturas_tse": 11,
+   "assembleia": "Assembleia Legislativa do Estado de Goiás",
+   "acervo": "nao_comecamos"
+  },
+  {
+   "uf": "MA",
+   "nome": "Maranhão",
+   "preposicao": "do",
+   "regiao": "Nordeste",
+   "candidaturas_tse": 11,
+   "assembleia": "Assembleia Legislativa do Estado do Maranhão",
+   "acervo": "nao_comecamos"
+  },
+  {
+   "uf": "MG",
+   "nome": "Minas Gerais",
+   "preposicao": "de",
+   "regiao": "Sudeste",
+   "candidaturas_tse": 17,
+   "assembleia": "Assembleia Legislativa do Estado de Minas Gerais",
+   "acervo": "nao_comecamos"
+  },
+  {
+   "uf": "MS",
+   "nome": "Mato Grosso do Sul",
+   "preposicao": "de",
+   "regiao": "Centro-Oeste",
+   "candidaturas_tse": 10,
+   "assembleia": "Assembleia Legislativa do Estado de Mato Grosso do Sul",
+   "acervo": "nao_comecamos"
+  },
+  {
+   "uf": "MT",
+   "nome": "Mato Grosso",
+   "preposicao": "de",
+   "regiao": "Centro-Oeste",
+   "candidaturas_tse": 10,
+   "assembleia": "Assembleia Legislativa do Estado de Mato Grosso",
+   "acervo": "nao_comecamos"
+  },
+  {
+   "uf": "PA",
+   "nome": "Pará",
+   "preposicao": "do",
+   "regiao": "Norte",
+   "candidaturas_tse": 12,
+   "assembleia": "Assembleia Legislativa do Estado do Pará",
+   "acervo": "nao_comecamos"
+  },
+  {
+   "uf": "PB",
+   "nome": "Paraíba",
+   "preposicao": "da",
+   "regiao": "Nordeste",
+   "candidaturas_tse": 10,
+   "assembleia": "Assembleia Legislativa do Estado da Paraíba",
+   "acervo": "nao_comecamos"
+  },
+  {
+   "uf": "PE",
+   "nome": "Pernambuco",
+   "preposicao": "de",
+   "regiao": "Nordeste",
+   "candidaturas_tse": 12,
+   "assembleia": "Assembleia Legislativa do Estado de Pernambuco",
+   "acervo": "nao_comecamos"
+  },
+  {
+   "uf": "PI",
+   "nome": "Piauí",
+   "preposicao": "do",
+   "regiao": "Nordeste",
+   "candidaturas_tse": 21,
+   "assembleia": "Assembleia Legislativa do Estado do Piauí",
+   "acervo": "nao_comecamos"
+  },
+  {
+   "uf": "PR",
+   "nome": "Paraná",
+   "preposicao": "do",
+   "regiao": "Sul",
+   "candidaturas_tse": 9,
+   "assembleia": "Assembleia Legislativa do Estado do Paraná",
+   "acervo": "nao_comecamos"
+  },
+  {
+   "uf": "RJ",
+   "nome": "Rio de Janeiro",
+   "preposicao": "do",
+   "regiao": "Sudeste",
+   "candidaturas_tse": 16,
+   "assembleia": "Assembleia Legislativa do Estado do Rio de Janeiro",
+   "acervo": "nao_comecamos"
+  },
+  {
+   "uf": "RN",
+   "nome": "Rio Grande do Norte",
+   "preposicao": "do",
+   "regiao": "Nordeste",
+   "candidaturas_tse": 14,
+   "assembleia": "Assembleia Legislativa do Estado do Rio Grande do Norte",
+   "acervo": "nao_comecamos"
+  },
+  {
+   "uf": "RO",
+   "nome": "Rondônia",
+   "preposicao": "de",
+   "regiao": "Norte",
+   "candidaturas_tse": 10,
+   "assembleia": "Assembleia Legislativa do Estado de Rondônia",
+   "acervo": "nao_comecamos"
+  },
+  {
+   "uf": "RR",
+   "nome": "Roraima",
+   "preposicao": "de",
+   "regiao": "Norte",
+   "candidaturas_tse": 13,
+   "assembleia": "Assembleia Legislativa do Estado de Roraima",
+   "acervo": "nao_comecamos"
+  },
+  {
+   "uf": "RS",
+   "nome": "Rio Grande do Sul",
+   "preposicao": "do",
+   "regiao": "Sul",
+   "candidaturas_tse": 13,
+   "assembleia": "Assembleia Legislativa do Estado do Rio Grande do Sul",
+   "acervo": "nao_comecamos"
+  },
+  {
+   "uf": "SC",
+   "nome": "Santa Catarina",
+   "preposicao": "de",
+   "regiao": "Sul",
+   "candidaturas_tse": 13,
+   "assembleia": "Assembleia Legislativa do Estado de Santa Catarina",
+   "acervo": "nao_comecamos"
+  },
+  {
+   "uf": "SE",
+   "nome": "Sergipe",
+   "preposicao": "de",
+   "regiao": "Nordeste",
+   "candidaturas_tse": 11,
+   "assembleia": "Assembleia Legislativa do Estado de Sergipe",
+   "acervo": "nao_comecamos"
+  },
+  {
+   "uf": "SP",
+   "nome": "São Paulo",
+   "preposicao": "de",
+   "regiao": "Sudeste",
+   "candidaturas_tse": 16,
+   "assembleia": "Assembleia Legislativa do Estado de São Paulo",
+   "acervo": "publicado"
+  },
+  {
+   "uf": "TO",
+   "nome": "Tocantins",
+   "preposicao": "do",
+   "regiao": "Norte",
+   "candidaturas_tse": 13,
+   "assembleia": "Assembleia Legislativa do Estado do Tocantins",
+   "acervo": "nao_comecamos"
+  }
+ ]
+}
