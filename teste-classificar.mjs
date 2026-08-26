@@ -14,7 +14,12 @@ const PORTA = 8766;
 let falhas = 0;
 const ok = (b, msg) => { console.log((b ? "OK   " : "FALHA") + "  " + msg); if (!b) falhas++; };
 
-const py = spawn("python", ["classificar.py"], { cwd: process.cwd(), env: { ...process.env, PYTHONIOENCODING: "utf-8", BROWSER: "true" } });
+/* --sandbox: a tela trabalha numa COPIA dos arquivos. Antes o teste gravava no
+   arquivo de verdade e limpava no fim — e as execucoes que morriam antes da
+   limpeza deixaram SETE itens de SP marcados como decididos por gente, com tema
+   errado, sem que ninguem os tivesse decidido. Limpeza depende de o teste chegar
+   ao fim; copia nao depende de nada. */
+const py = spawn("python", ["classificar.py", "--sandbox"], { cwd: process.cwd(), env: { ...process.env, PYTHONIOENCODING: "utf-8", BROWSER: "true" } });
 let saidaPy = "";
 py.stdout.on("data", d => saidaPy += d);
 py.stderr.on("data", d => saidaPy += d);
@@ -63,6 +68,10 @@ async function main() {
      "todo item da fila ja traz a classificacao que o modelo propos");
   ok(dados.itens.some(x => x.precisa_de_olho),
      "a fila inclui as escolhas editoriais");
+  // Onde a gravacao acontece de fato. Com --sandbox e uma copia temporaria;
+  // conferir no arquivo de verdade faria o teste passar por coincidencia.
+  const PASTA = dados.pasta;
+  ok(!!PASTA && /sandbox/i.test(PASTA), `a tela grava numa copia (${PASTA})`);
   ok(dados.temas.length === 10, `a API devolve os 10 temas (${dados.temas.length})`);
 
   // -------- ordem: as candidaturas hoje vazias tem de vir primeiro
@@ -176,8 +185,8 @@ async function main() {
   ok(!depois.itens.find(x => x.id === alvoId),
      "o item decidido sai da fila");
 
-  const disco = JSON.parse(fs.readFileSync("dados/sp/_coleta_discursos.json", "utf8"))
-    .registros.concat(JSON.parse(fs.readFileSync("dados/sp/_coleta_legislativa.json", "utf8")).registros)
+  const disco = JSON.parse(fs.readFileSync(PASTA + "/_coleta_discursos.json", "utf8"))
+    .registros.concat(JSON.parse(fs.readFileSync(PASTA + "/_coleta_legislativa.json", "utf8")).registros)
     .find(r => r.id_registro === alvoId);
   ok(disco?._classificacao?.temas?.[0] === "t1", "a decisao fica gravada no arquivo");
   ok(disco?._classificacao?.por === "humano", "a decisao gravada fica marcada como humana");
@@ -200,8 +209,8 @@ async function main() {
     method: "POST", headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ id: alvoId }),
   }).catch(() => {});
-  const volta = JSON.parse(fs.readFileSync("dados/sp/_coleta_discursos.json", "utf8"))
-    .registros.concat(JSON.parse(fs.readFileSync("dados/sp/_coleta_legislativa.json", "utf8")).registros)
+  const volta = JSON.parse(fs.readFileSync(PASTA + "/_coleta_discursos.json", "utf8"))
+    .registros.concat(JSON.parse(fs.readFileSync(PASTA + "/_coleta_legislativa.json", "utf8")).registros)
     .find(r => r.id_registro === alvoId);
   ok(volta?._classificacao?.por === "modelo",
      "o teste desfaz a propria gravacao E devolve a classificacao do modelo");

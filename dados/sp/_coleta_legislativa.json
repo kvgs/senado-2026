@@ -602,14 +602,10 @@
    "_apresentada_em": "2025-06-13",
    "_confianca_tema": "nenhuma",
    "_classificacao": {
-    "temas": [
-     "t1"
-    ],
-    "motivo": "",
-    "por": "humano",
+    "temas": [],
+    "motivo": "nenhum",
+    "por": "modelo",
     "decidido_em": "2026-08-26",
-    "modelo_propos": [],
-    "concordou": false,
     "precisa_de_olho": "'Susta o Decreto no 12.499, de 11 de junho de 2025.' — so isso"
    }
   },
@@ -1014,15 +1010,11 @@
    "_confianca_tema": "nenhuma",
    "_classificacao": {
     "temas": [
-     "t1"
-    ],
-    "motivo": "",
-    "por": "humano",
-    "decidido_em": "2026-08-26",
-    "modelo_propos": [
      "t10"
     ],
-    "concordou": false,
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-26",
     "precisa_de_olho": "cisternas: licitacao (t10) ou infraestrutura hidrica (t5)"
    }
   },
@@ -1829,15 +1821,11 @@
    "_confianca_tema": "nenhuma",
    "_classificacao": {
     "temas": [
-     "t1"
-    ],
-    "motivo": "",
-    "por": "humano",
-    "decidido_em": "2026-08-26",
-    "modelo_propos": [
      "t2"
     ],
-    "concordou": false,
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-26",
     "precisa_de_olho": "acervos bibliograficos: escola (t2) ou cultura (t9)"
    }
   },
@@ -2303,15 +2291,11 @@
    "_confianca_tema": "nenhuma",
    "_classificacao": {
     "temas": [
-     "t1"
-    ],
-    "motivo": "",
-    "por": "humano",
-    "decidido_em": "2026-08-26",
-    "modelo_propos": [
      "t7"
     ],
-    "concordou": false,
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-26",
     "precisa_de_olho": "conflito agrario/reintegracao de posse — nossos temas nao tem questao agraria"
    }
   },
@@ -2342,15 +2326,11 @@
    "_confianca_tema": "fraca",
    "_classificacao": {
     "temas": [
-     "t1"
-    ],
-    "motivo": "",
-    "por": "humano",
-    "decidido_em": "2026-08-26",
-    "modelo_propos": [
      "t7"
     ],
-    "concordou": false,
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-26",
     "precisa_de_olho": "conflito agrario — comissao de solucoes fundiarias do CNJ"
    }
   },
@@ -2379,15 +2359,11 @@
    "_confianca_tema": "nenhuma",
    "_classificacao": {
     "temas": [
-     "t1"
-    ],
-    "motivo": "",
-    "por": "humano",
-    "decidido_em": "2026-08-26",
-    "modelo_propos": [
      "t7"
     ],
-    "concordou": false,
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-26",
     "precisa_de_olho": "reforma agraria (Lei 8.629) — pus em Habitacao por falta de gaveta melhor"
    }
   },
@@ -2835,16 +2811,12 @@
    "_confianca_tema": "boa",
    "_classificacao": {
     "temas": [
-     "t1"
-    ],
-    "motivo": "",
-    "por": "humano",
-    "decidido_em": "2026-08-26",
-    "modelo_propos": [
      "t1",
      "t7"
     ],
-    "concordou": false,
+    "motivo": "",
+    "por": "modelo",
+    "decidido_em": "2026-08-26",
     "precisa_de_olho": "esbulho possessorio: crime (t1) e terra (t7) ao mesmo tempo"
    }
   },

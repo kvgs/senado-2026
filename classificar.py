@@ -48,6 +48,7 @@ USO
     (abre http://localhost:8766 no navegador)
 """
 import http.server
+import sys as _sys
 import json
 import pathlib
 import re
@@ -73,6 +74,27 @@ DADOS = acervo.exige(_UF)          # dados/<uf>/ — acervo daquele estado
 NACIONAL = acervo.NACIONAL         # dados/ — referencia, estados, mapa
 PORTA = 8766
 HOJE = date.today().isoformat()
+
+# --sandbox faz a tela trabalhar numa COPIA dos arquivos, em pasta temporaria.
+#
+# Existe porque o teste automatizado grava uma decisao de verdade para conferir
+# que a gravacao funciona — e as execucoes que morriam antes da limpeza deixavam
+# a decisao para tras. Sete itens de Sao Paulo ficaram marcados como decididos
+# por gente sem que ninguem os tivesse decidido, com tema errado.
+#
+# Limpeza depois do fato depende de o teste chegar ao fim. Copia nao depende de
+# nada: o arquivo de verdade fica fora de alcance.
+_SANDBOX = "--sandbox" in _sys.argv
+if _SANDBOX:
+    import shutil as _shutil
+    import tempfile as _tempfile
+    _tmp = pathlib.Path(_tempfile.mkdtemp(prefix="classificar-sandbox-"))
+    # candidaturas.json entra na copia porque a tela LE dele (o nome de cada
+    # candidatura). Ficou de fora na primeira versao e a tela nem subiu.
+    for _n in ("_coleta_legislativa.json", "_coleta_discursos.json", "candidaturas.json"):
+        if (DADOS / _n).exists():
+            _shutil.copy2(DADOS / _n, _tmp / _n)
+    DADOS = _tmp
 
 ARQUIVOS = {
     "proposicao": DADOS / "_coleta_legislativa.json",
@@ -117,6 +139,12 @@ def montar_itens():
             cid = r.get("id_candidatura") or (r.get("autoria") or [{}])[0].get("id_candidatura", "")
             a = (r.get("autoria") or [{}])[0]
             cl = r.get("_classificacao") or {}
+            # Item SEM classificacao nenhuma nao esta pronto para a conferencia:
+            # falta o passo do modelo, que e trabalho meu e nao dela. Em PE isso
+            # sao 516 itens de duas candidaturas ainda nao lidas — na fila, eles
+            # afogariam os 30 que precisam mesmo de um olhar.
+            if not cl:
+                continue
             # Ja conferido por gente sai da fila. O que eu classifiquei so
             # aparece se for editorial ou se caiu na amostra de auditoria.
             if cl.get("por") == "humano":
@@ -448,7 +476,11 @@ class Handler(http.server.BaseHTTPRequestHandler):
             return self._envia(PAGINA, "text/html; charset=utf-8")
         if rota == "/api/itens":
             itens, temas = montar_itens()
-            return self._envia(json.dumps({"itens": itens, "temas": temas}, ensure_ascii=False))
+            # 'pasta' diz ONDE a gravacao acontece. O teste precisa disso: com
+            # sandbox ligado ele conferia o arquivo de verdade, que nao recebe
+            # mais a escrita — e passava por coincidencia quando o tema batia.
+            return self._envia(json.dumps(
+                {"itens": itens, "temas": temas, "pasta": str(DADOS)}, ensure_ascii=False))
         self._envia(json.dumps({"erro": "rota desconhecida"}), status=404)
 
     def do_POST(self):
@@ -505,6 +537,10 @@ def conferir_pagina():
 
 def main():
     conferir_pagina()
+    if _SANDBOX:
+        print("*** MODO SANDBOX: trabalhando numa copia em " + str(DADOS))
+        print("*** os arquivos de verdade nao serao tocados")
+        print()
     faltando = [c.name for c in ARQUIVOS.values() if not c.exists()]
     if faltando:
         raise SystemExit("faltam arquivos de coleta: " + ", ".join(faltando) +
