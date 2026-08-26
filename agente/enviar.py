@@ -94,7 +94,7 @@ def chamar(url, token, caminho, corpo=None):
 
 # ------------------------------------------------------------------ mensagem
 
-def montar(cand, temas_por_id, perguntas):
+def montar(cand, temas_por_id, perguntas, site):
     """Monta UMA mensagem representando todas as perguntas selecionadas.
 
     A agregacao e o ponto do desenho: um eleitor e ignoravel, quinze nao sao.
@@ -107,9 +107,12 @@ def montar(cand, temas_por_id, perguntas):
     corpo = [
         f"Prezada assessoria de {cand['nome']},",
         "",
-        "Escrevo em nome do projeto Senado por Sao Paulo 2026",
-        "(https://kvgs.github.io/senado-sp-2026/), um site independente e sem fins",
-        "lucrativos que reune as propostas das candidaturas ao Senado por Sao Paulo,",
+        # A UF e a URL vem do catalogo. Chumbadas aqui, uma mensagem para
+        # gabinete de outro estado sairia dizendo o estado errado — e e-mail
+        # enviado nao volta.
+        f"Escrevo em nome do projeto Candidaturas ao Senado 2026",
+        f"({site['url']}), um site independente e sem fins lucrativos que",
+        f"reune as propostas das candidaturas ao Senado {site['por']},",
         "sempre com a fonte oficial de cada informacao.",
         "",
         "Procuramos nas fontes publicas disponiveis e nao localizamos posicao",
@@ -167,7 +170,16 @@ def carregar(url, token):
     cands = {c["id"]: c for c in cat["candidaturas"]}
     temas = {t["id"]: t["nome"] for t in cat["temas"]}
     pend = [p for p in d["perguntas"] if p["estado"] == "pendente"]
-    return cands, temas, pend
+    # O catalogo ja carrega a UF: nao ha chamada nova, so um campo que passou
+    # a ser lido em vez de escrito a mao.
+    site = {"por": cat.get("uf_por", ""), "url": cat.get("site_url", "")}
+    if not site["por"] or not site["url"]:
+        raise SystemExit(
+            "O catalogo do backend nao traz uf_por/site_url.\n"
+            "Rode gerar_site.py e publique o worker antes de enviar: sem isso a\n"
+            "mensagem sairia sem dizer de que estado o projeto fala."
+        )
+    return cands, temas, pend, site
 
 
 def listar(cands, temas, pend):
@@ -189,7 +201,7 @@ def listar(cands, temas, pend):
         print()
 
 
-def preparar(cands, temas, pend, cid):
+def preparar(cands, temas, pend, cid, site):
     c = cands.get(cid)
     if not c:
         raise SystemExit(f"Candidatura desconhecida: {cid}")
@@ -204,7 +216,7 @@ def preparar(cands, temas, pend, cid):
             "Contato so entra aqui vindo de fonte oficial: mandar eleitor escrever\n"
             "para a pessoa errada seria pior que nao mandar."
         )
-    assunto, texto = montar(c, temas, itens)
+    assunto, texto = montar(c, temas, itens, site)
     return c, itens, assunto, texto
 
 
@@ -234,7 +246,7 @@ def main():
 
     url = os.environ.get("AGENTE_URL", PADRAO_URL)
     token = pega("AGENTE_TOKEN", "Token de moderacao", secreto=True)
-    cands, temas, pend = carregar(url, token)
+    cands, temas, pend, site = carregar(url, token)
 
     if a.listar:
         return listar(cands, temas, pend)
@@ -287,10 +299,13 @@ def autoteste():
         {"id": "3", "id_candidatura": "x", "id_tema": "t7", "estado": "pendente",
          "pergunta": "Qual a posicao sobre locacao social?"},
     ]
+    # Contexto de site que o backend normalmente entrega. Usa um estado que NAO
+    # e Sao Paulo de proposito: se a UF voltar a ser chumbada, o teste falha.
+    site = {"por": "pelo Acre", "url": "https://exemplo.invalido/senado-2026/"}
     print(">>> listar\n")
     listar(cands, temas, pend)
     print(">>> mensagem montada\n")
-    c, itens, assunto, texto = preparar(cands, temas, pend, "x")
+    c, itens, assunto, texto = preparar(cands, temas, pend, "x", site)
     mostrar(c, itens, assunto, texto)
 
     # O corpo e quebrado em linhas fixas, entao a checagem tem de olhar o texto
@@ -304,11 +319,22 @@ def autoteste():
     if "sem interpretar o silencio" not in liso: faltas.append("perdeu a clausula do silencio")
     if "(3 perguntas)" not in assunto: faltas.append("assunto sem a contagem")
 
+    # A UF TEM de estar no corpo, e tem de ser a do contexto recebido. O
+    # autoteste usa "pelo Acre" justamente para que uma UF chumbada de volta
+    # apareca como falha, e nao passe porque coincide com Sao Paulo.
+    if site["por"] not in liso:
+        faltas.append(f"corpo nao diz de que estado o projeto fala ({site['por']})")
+    if "Sao Paulo" in liso or "São Paulo" in liso:
+        faltas.append("corpo tem UF chumbada: diz Sao Paulo com contexto do Acre")
+    if site["url"] not in liso:
+        faltas.append("corpo nao traz a URL do site")
+
     print("\n>>> sem contato oficial deve recusar")
     semmail = {"y": {"id": "y", "nome": "Beltrano", "partido": "PYY", "email": None}}
     try:
         preparar(semmail, temas, [{"id": "9", "id_candidatura": "y", "id_tema": None,
-                                   "estado": "pendente", "pergunta": "Qualquer coisa aqui."}], "y")
+                                   "estado": "pendente", "pergunta": "Qualquer coisa aqui."}],
+                 "y", site)
         faltas.append("aceitou candidatura sem e-mail")
     except SystemExit:
         print("    OK  recusou, como deve")

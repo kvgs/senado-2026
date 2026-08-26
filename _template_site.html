@@ -1,4 +1,4 @@
-<title>Senado por São Paulo 2026</title>
+<title>Candidaturas ao Senado {{UF_POR}} 2026</title>
 <!-- Sem fonte externa de proposito: num site sobre candidatos, carregar
      tipografia de terceiro contaria a esse terceiro quem esta lendo. -->
 
@@ -560,8 +560,8 @@
   </div>
 
   <header>
-    <p class="lbl">Eleições 2026 · Senado Federal · São Paulo · 2 vagas em disputa</p>
-    <h1>Candidaturas ao Senado por São Paulo</h1>
+    <p class="lbl">Eleições 2026 · Senado Federal · {{UF_NOME}} · 2 vagas em disputa</p>
+    <h1>Candidaturas ao Senado {{UF_POR}}</h1>
     <p class="lede">O que cada uma das 15 candidaturas defende, tema por tema, com a fonte de
       cada informação e o quanto ela foi verificada.</p>
     <p class="atualizado">Dados de <strong id="atualizado"></strong>. Cada informação mostra sua
@@ -596,9 +596,9 @@
           presidente, e as eleições acontecem de quatro em quatro anos. Por isso a renovação é
           alternada: numa eleição cada estado escolhe <strong>um</strong> senador, na seguinte
           escolhe <strong>dois</strong>.</p>
-        <p>São Paulo elegeu um em 2022. <strong>Em 2026 elege dois</strong> — são as duas vagas
+        <p>{{UF_NOME}} elegeu um em 2022. <strong>Em 2026 elege dois</strong> — são as duas vagas
           em disputa nesta página. Quem for eleito agora fica até 2035, e o terceiro senador
-          paulista continua no cargo sem passar por esta eleição.</p>
+          do estado continua no cargo sem passar por esta eleição.</p>
         <p>Cada candidatura concorre com <strong>dois suplentes</strong>, que assumem se o
           titular deixar o cargo. Você não vota neles separadamente: eles entram junto com o
           nome escolhido.</p>
@@ -996,7 +996,7 @@ function blocoSemProposta(cid){
        nao coletamos. Dizer "nao ha registro" seria afirmar sobre ele o que e
        verdade sobre a nossa coleta. */
     h+='<p><strong>Há registro legislativo, mas fora do nosso alcance.</strong> '+
-       'Esta candidatura exerce mandato na Assembleia Legislativa de São Paulo, e a nossa '+
+       'Esta candidatura exerce mandato na '+esc(D.uf.assembleia)+', e a nossa '+
        'coleta de proposições e votos cobre apenas a Câmara dos Deputados e o Senado. '+
        'A ausência aqui é da nossa busca, não do trabalho legislativo dela.</p>';
   } else {
@@ -1963,21 +1963,27 @@ async function pedirResumo(pergunta, usados, botao){
 
 function corpoEmail(c,q){
   return 'Prezado(a) '+c.nome+',\n\n'+
-    'Escrevo como eleitor(a) de São Paulo. Consultei o site público que reúne as propostas das '+
-    'candidaturas ao Senado Federal por São Paulo nas eleições de 2026, organizadas por tema e com a '+
+    /* A UF vem dos dados. Este texto sai da maquina do eleitor para a caixa de
+       entrada de um gabinete: chumbada, mandaria alguem do Ceara se apresentar
+       como eleitor de Sao Paulo. */
+    'Escrevo como eleitor(a) '+D.uf.preposicao+' '+D.uf.nome+'. Consultei o site público '+
+    'que reúne as propostas das candidaturas ao Senado Federal '+D.uf.por+' nas eleições '+
+    'de 2026, organizadas por tema e com a '+
     'fonte de cada informação, e não encontrei posição registrada da sua candidatura sobre o seguinte:\n\n'+
     '    '+q+'\n\n'+
     'Gostaria de saber qual é a sua posição sobre esse ponto. Se houver documento, programa ou material '+
     'público que trate do assunto, o link já é suficiente — e será incluído no site com a devida '+
     'atribuição à sua candidatura.\n\n'+
-    'O site é https://kvgs.github.io/senado-sp-2026/ e nele consta a fonte de cada informação exibida, '+
+    'O site é '+D.site_url+' e nele consta a fonte de cada informação exibida, '+
     'bem como os casos em que não localizamos fonte, sinalizados como tal.\n\n'+
     'Agradeço a atenção.\n';
 }
 function textoDM(c,q){
-  return 'Olá! Sou eleitor(a) de SP. Não encontrei a posição da sua candidatura sobre: '+q+
-         ' Consegue indicar? Se houver material público, o link basta. (Consulta em '+
-         'kvgs.github.io/senado-sp-2026)';
+  /* Nome inteiro, e nao sigla: "eleitor da BA" soa mal, e a mensagem e curta o
+     bastante para caber o nome. */
+  return 'Olá! Sou eleitor(a) '+D.uf.preposicao+' '+D.uf.nome+'. Não encontrei a posição da sua '+
+         'candidatura sobre: '+q+' Consegue indicar? Se houver material público, o link basta. '+
+         '(Consulta em '+D.site_url.replace(/^https?:\/\//,'').replace(/\/$/,'')+')';
 }
 
 function blocoContatos(q){
@@ -1987,7 +1993,7 @@ function blocoContatos(q){
     h+='<li><div class="quem-c"><span class="urna">'+esc(c.numero)+'</span><strong>'+esc(c.nome)+
        '</strong><span class="sigla">'+esc(c.partido)+'</span></div>';
     if(ct.email){
-      const assunto='Pergunta de eleitor sobre proposta - Senado SP 2026';
+      const assunto='Pergunta de eleitor sobre proposta - Senado '+D.uf.sigla+' 2026';
       const url='mailto:'+encodeURIComponent(ct.email)+'?subject='+encodeURIComponent(assunto)+
                 '&body='+encodeURIComponent(corpoEmail(c,q));
       h+='<div class="acoes">'+

@@ -292,7 +292,23 @@ ag.mkdir(exist_ok=True)
 # esteja aqui, e a pagina de moderacao usa o e-mail para montar a mensagem.
 # Contato so de fonte oficial — nunca raspado de rede social, nunca achado em
 # busca: mandar eleitor escrever para a pessoa errada seria pior que nao mandar.
+# A UF viaja no catalogo porque o worker precisa dela para montar prompt e nao
+# pode adivinhar: os textos que ele gera dizem de que estado se trata.
+_sitecfg = ref.get("site") or {}
+_uf = _sitecfg.get("uf")
+_est = next((e for e in json.loads((BASE/"dados"/"estados.json")
+             .read_text(encoding="utf-8"))["estados"] if e["uf"] == _uf), None)
+if not _est:
+    raise SystemExit(f"dados/referencia.json aponta site.uf={_uf!r}, que nao esta em estados.json")
+
 (ag/"catalogo.json").write_text(json.dumps({
+    "uf": _est["uf"],
+    "uf_nome": _est["nome"],
+    # "por Sao Paulo", "pelo Acre", "pela Bahia" — a preposicao vem do dado
+    # porque concordancia errada em texto que sai de casa parece descuido.
+    "uf_por": {"de": "por", "do": "pelo", "da": "pela"}[_est["preposicao"]] + " " + _est["nome"],
+    "uf_assembleia": _est["assembleia"],
+    "site_url": _sitecfg.get("url", ""),
     "temas": [{"id": t["id_tema"], "nome": t["nome"]} for t in temas],
     "candidaturas": [{
         "id": cid,
@@ -311,6 +327,16 @@ ag.mkdir(exist_ok=True)
 }, ensure_ascii=False, indent=1), encoding="utf-8")
 
 tpl = (HERE/"_template_site.html").read_text(encoding="utf-8")
+# A UF vai para o JS do site: o e-mail que o eleitor abre pronto e o texto de
+# mensagem citam o estado, e sao textos que saem da maquina dele para um gabinete.
+dados["uf"] = {
+    "sigla": _est["uf"], "nome": _est["nome"],
+    "preposicao": _est["preposicao"],     # "de" São Paulo, "do" Acre, "da" Bahia
+    "por": {"de": "por", "do": "pelo", "da": "pela"}[_est["preposicao"]] + " " + _est["nome"],
+    "assembleia": _est["assembleia"],
+}
+dados["site_url"] = _sitecfg.get("url", "")
+
 # O endereco de contato vem dos dados, e o texto visivel sai do MESMO campo do
 # href: assim os dois nao podem divergir. urlencode so no assunto, que e a parte
 # que precisa dele.
@@ -318,6 +344,13 @@ _email = ((ref.get("contato") or {}).get("email") or "").strip()
 if not _email:
     raise SystemExit("dados/referencia.json nao tem contato.email — o site ficaria sem contato")
 _assunto = urllib.parse.quote("Senado SP 2026 \u2014 feedback")
+# Marcadores de UF no HTML estatico (titulo, cabecalho, explicador). Cada um
+# tem de aparecer, senao o site sai dizendo o estado errado ou nenhum.
+for _m, _v in (("{{UF_NOME}}", dados["uf"]["nome"]), ("{{UF_POR}}", dados["uf"]["por"])):
+    if _m not in tpl:
+        raise SystemExit(f"_template_site.html perdeu o marcador {_m}")
+    tpl = tpl.replace(_m, _v)
+
 tpl = tpl.replace("{{MAILTO}}", f"mailto:{_email}?subject={_assunto}").replace("{{EMAIL}}", _email)
 
 OUT.write_text(tpl.replace("/*__DADOS__*/", json.dumps(dados, ensure_ascii=False)), encoding="utf-8")
