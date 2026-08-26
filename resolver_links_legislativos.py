@@ -35,7 +35,7 @@ from datetime import date
 
 RAIZ = pathlib.Path(__file__).resolve().parent
 ARQ = RAIZ / "dados" / "registros_legislativos.json"
-AGENTE = "senado-sp-2026/1.0 (+https://kvgs.github.io/senado-sp-2026/)"
+AGENTE = "senado-2026/1.0 (+https://kvgs.github.io/senado-2026/)"
 FICHA = "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao={}"
 MATERIA = "https://www25.senado.leg.br/web/atividade/materias/-/materia/{}"
 MIN_SEMELHANCA = 0.60

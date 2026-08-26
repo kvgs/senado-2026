@@ -193,6 +193,22 @@ export const PAGINA_ADMIN = `<!doctype html>
   }
 
   function nomeCand(id){
+  /* UF do acervo, lida do catalogo. E funcao porque DADOS chega depois: a
+     pagina desenha antes de a fila responder, e constante de carga estaria vazia.
+     Se o campo faltar, devolve marca visivel em vez de "undefined" no meio de
+     uma mensagem que vai para gabinete. */
+  function UF(){
+    var c = (DADOS && DADOS.catalogo) || {};
+    var falta = "[UF NAO INFORMADA PELO BACKEND]";
+    return {
+      sigla: c.uf || falta,
+      nome:  c.uf_nome || falta,
+      por:   c.uf_por || falta,
+      url:   c.site_url || falta,
+      curta: (c.site_url || falta).replace(/^https?:\\/\\//, "").replace(/\\/$/, "")
+    };
+  }
+
     var c = DADOS.catalogo.candidaturas.filter(function(x){ return x.id === id; })[0];
     return c ? c : { id: id, nome: id, partido: "", numero: "", email: null };
   }
@@ -314,9 +330,11 @@ export const PAGINA_ADMIN = `<!doctype html>
     var n = itens.length;
     var corpo =
       "Prezada assessoria de " + c.nome + ",\\n\\n" +
-      "Escrevo em nome do projeto Senado por São Paulo 2026 " +
-      "(https://kvgs.github.io/senado-sp-2026/), um site independente e sem fins " +
-      "lucrativos que reúne as propostas das candidaturas ao Senado por São Paulo, " +
+      // UF e URL vem do catalogo. Esta mensagem vai para gabinete: chumbada,
+      // sairia dizendo o estado errado, e e-mail enviado nao volta.
+      "Escrevo em nome do projeto Candidaturas ao Senado 2026 " +
+      "(" + UF().url + "), um site independente e sem fins " +
+      "lucrativos que reúne as propostas das candidaturas ao Senado " + UF().por + ", " +
       "sempre com a fonte oficial de cada informação.\\n\\n" +
       "Procuramos nas fontes públicas disponíveis e não localizamos posição registrada " +
       "sobre os pontos abaixo. " +
@@ -339,7 +357,7 @@ export const PAGINA_ADMIN = `<!doctype html>
       "serve — e é a forma que preferimos, porque podemos citar a fonte original.\\n\\n" +
       "Agradeço a atenção.\\n";
 
-    var assunto = "Pergunta de eleitores sobre a candidatura ao Senado por SP" +
+    var assunto = "Pergunta de eleitores sobre a candidatura ao Senado " + UF().sigla +
       (n > 1 ? " (" + n + " perguntas)" : "");
 
     return { para: c.email, assunto: assunto, corpo: corpo, ids: ids, cand: c };
@@ -355,8 +373,8 @@ export const PAGINA_ADMIN = `<!doctype html>
     if (!itens.length) return null;
 
     var n = itens.length;
-    var txt = "Olá! Escrevo do projeto Senado por São Paulo 2026 " +
-      "(kvgs.github.io/senado-sp-2026), um site independente e sem fins lucrativos que reúne " +
+    var txt = "Olá! Escrevo do projeto Candidaturas ao Senado 2026 " +
+      "(" + UF().curta + "), um site independente e sem fins lucrativos que reúne " +
       "as propostas das candidaturas ao Senado por SP, sempre com a fonte de cada informação.\\n\\n" +
       "Procuramos nas fontes públicas e não localizamos posição registrada sobre " +
       (n === 1 ? "este ponto:" : "estes pontos:") + "\\n\\n";

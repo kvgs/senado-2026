@@ -268,8 +268,9 @@
  },
  "site": {
   "uf": "SP",
-  "url": "https://kvgs.github.io/senado-sp-2026/",
+  "url": "https://kvgs.github.io/senado-2026/",
   "nome_projeto": "Candidaturas ao Senado 2026",
-  "_nota": "uf diz qual estado ESTE acervo cobre; o nome e a preposicao saem de dados/estados.json, para nao existirem em dois lugares. url e citada no e-mail que vai para gabinete e no modelo de mensagem do site — trocar aqui troca nos dois."
+  "_nota": "uf diz qual estado ESTE acervo cobre; o nome e a preposicao saem de dados/estados.json, para nao existirem em dois lugares. url e citada no e-mail que vai para gabinete e no modelo de mensagem do site — trocar aqui troca nos dois.",
+  "_url_antiga": "https://kvgs.github.io/senado-sp-2026/ — o repositorio foi renomeado para senado-2026. O GitHub redireciona a URL antiga, mas texto novo usa a nova."
  }
 }

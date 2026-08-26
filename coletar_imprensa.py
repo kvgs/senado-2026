@@ -56,7 +56,7 @@ RAIZ = pathlib.Path(__file__).resolve().parent
 DADOS = RAIZ / "dados"
 SAIDA = DADOS / "_coleta_imprensa.json"
 HOJE = date.today().isoformat()
-UA = "Mozilla/5.0 (compativel; senado-sp-2026/1.0; projeto civico)"
+UA = "Mozilla/5.0 (compativel; senado-2026/1.0; projeto civico)"
 
 # Escolha editorial, sujeita a revisao. Criterio: redacao com ficha tecnica
 # publica, correcao de erro sinalizada e cobertura de politica nacional.

@@ -36,7 +36,7 @@ import urllib.request
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 PADRAO_URL = "https://agente-senado-sp-2026.senado-2026.workers.dev"
-AGENTE_HTTP = "senado-sp-2026-promover/1.0 (+https://kvgs.github.io/senado-sp-2026/)"
+AGENTE_HTTP = "senado-2026-promover/1.0 (+https://kvgs.github.io/senado-2026/)"
 QUEBRA = chr(10)
 DESTINO = RAIZ / "dados" / "respostas.json"
 

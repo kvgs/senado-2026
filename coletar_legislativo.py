@@ -49,7 +49,7 @@ DADOS = RAIZ / "dados"
 SAIDA = DADOS / "_coleta_legislativa.json"
 
 HOJE = date.today().isoformat()
-UA = "senado-sp-2026/1.0 (projeto civico; contato via github.com/kvgs/senado-sp-2026)"
+UA = "senado-2026/1.0 (projeto civico; contato via github.com/kvgs/senado-2026)"
 
 # Proposicao substantiva. Requerimento, emenda e parecer ficam de fora: sao
 # movimento de tramitacao, e nao posicao sobre um assunto.
