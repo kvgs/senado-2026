@@ -58,7 +58,14 @@
         "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
         "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
       },
-      "foto": null,
+      "foto": {
+        "arquivo": "fotos-candidatos/80002553265.jpg",
+        "credito": "TSE — foto de registro de candidatura",
+        "bytes": 5249,
+        "sha256_16": "86ecedb31dfe3eae",
+        "obtida_em": "2026-08-27",
+        "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
+      },
       "situacao_parlamentar": [
         {
           "casa": "camara",
@@ -124,7 +131,14 @@
         "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
         "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
       },
-      "foto": null,
+      "foto": {
+        "arquivo": "fotos-candidatos/80002550187.jpg",
+        "credito": "TSE — foto de registro de candidatura",
+        "bytes": 6104,
+        "sha256_16": "b41414806e0cf2c3",
+        "obtida_em": "2026-08-27",
+        "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
+      },
       "situacao_parlamentar": [
         {
           "casa": "senado",
@@ -180,7 +194,14 @@
         "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
         "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
       },
-      "foto": null,
+      "foto": {
+        "arquivo": "fotos-candidatos/80002551368.jpg",
+        "credito": "TSE — foto de registro de candidatura",
+        "bytes": 6174,
+        "sha256_16": "6ff94d076e049770",
+        "obtida_em": "2026-08-27",
+        "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
+      },
       "situacao_parlamentar": [],
       "_conferir_contato": [
         "\"@rosedefreitas\" — handle como texto, nao entra como contato",
@@ -241,7 +262,14 @@
         "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
         "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
       },
-      "foto": null,
+      "foto": {
+        "arquivo": "fotos-candidatos/80002553269.jpg",
+        "credito": "TSE — foto de registro de candidatura",
+        "bytes": 7870,
+        "sha256_16": "bf4627c96d6b3c6e",
+        "obtida_em": "2026-08-27",
+        "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
+      },
       "situacao_parlamentar": []
     },
     {
@@ -285,7 +313,14 @@
         "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
         "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
       },
-      "foto": null,
+      "foto": {
+        "arquivo": "fotos-candidatos/80002542401.jpg",
+        "credito": "TSE — foto de registro de candidatura",
+        "bytes": 6112,
+        "sha256_16": "a9b68101f4958fb6",
+        "obtida_em": "2026-08-27",
+        "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
+      },
       "situacao_parlamentar": []
     },
     {
@@ -329,7 +364,14 @@
         "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
         "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
       },
-      "foto": null,
+      "foto": {
+        "arquivo": "fotos-candidatos/80002552373.jpg",
+        "credito": "TSE — foto de registro de candidatura",
+        "bytes": 6395,
+        "sha256_16": "2d55a6fcefb560bc",
+        "obtida_em": "2026-08-27",
+        "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
+      },
       "situacao_parlamentar": []
     },
     {
@@ -376,7 +418,14 @@
         "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
         "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
       },
-      "foto": null,
+      "foto": {
+        "arquivo": "fotos-candidatos/80002530022.jpg",
+        "credito": "TSE — foto de registro de candidatura",
+        "bytes": 5879,
+        "sha256_16": "c965fd6d89746cbb",
+        "obtida_em": "2026-08-27",
+        "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
+      },
       "situacao_parlamentar": []
     },
     {
@@ -426,7 +475,14 @@
         "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
         "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
       },
-      "foto": null,
+      "foto": {
+        "arquivo": "fotos-candidatos/80002551370.jpg",
+        "credito": "TSE — foto de registro de candidatura",
+        "bytes": 6395,
+        "sha256_16": "344e1e0fc0bc71e3",
+        "obtida_em": "2026-08-27",
+        "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
+      },
       "situacao_parlamentar": []
     },
     {
@@ -477,7 +533,14 @@
         "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
         "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
       },
-      "foto": null,
+      "foto": {
+        "arquivo": "fotos-candidatos/80002549404.jpg",
+        "credito": "TSE — foto de registro de candidatura",
+        "bytes": 6767,
+        "sha256_16": "d459e71f51e74af8",
+        "obtida_em": "2026-08-27",
+        "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
+      },
       "situacao_parlamentar": []
     },
     {
@@ -522,7 +585,14 @@
         "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
         "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
       },
-      "foto": null,
+      "foto": {
+        "arquivo": "fotos-candidatos/80002552692.jpg",
+        "credito": "TSE — foto de registro de candidatura",
+        "bytes": 5794,
+        "sha256_16": "4ebf7adfd4ebb57d",
+        "obtida_em": "2026-08-27",
+        "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
+      },
       "situacao_parlamentar": []
     },
     {
@@ -581,7 +651,14 @@
         "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
         "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
       },
-      "foto": null,
+      "foto": {
+        "arquivo": "fotos-candidatos/80002538202.jpg",
+        "credito": "TSE — foto de registro de candidatura",
+        "bytes": 5849,
+        "sha256_16": "1f31c3bd5adf709d",
+        "obtida_em": "2026-08-27",
+        "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
+      },
       "situacao_parlamentar": [
         {
           "casa": "senado",

@@ -66,22 +66,39 @@ def main():
 
     ok = falhou = 0
     for c in sorted(lista, key=lambda x: int(x["numero_urna"])):
-        seq = str(c["sequencial_tse"])
+        # REGISTRO DUPLICADO TEM MAIS DE UM SEQUENCIAL, e a foto pode estar so no
+        # segundo. Foi o que aconteceu com a unica candidatura sem foto das 315:
+        # o principal dava 404 e o outro tinha a imagem. Tentar so o primeiro
+        # transformaria um registro duplicado do TSE em "sem foto".
+        seqs = [str(s) for s in ([c["sequencial_tse"]] + (c.get("_sequenciais_duplicados") or []))
+                if s]
         nome = c["pessoa"]["nome_urna"]
-        alvo = DESTINO / f"{seq}.jpg"
         print(f"{c['numero_urna']:>4}  {nome[:24]:24}", end="  ")
 
-        try:
-            bruto, tipo = baixar(ESPELHO.format(seq))
-        except (urllib.error.HTTPError, urllib.error.URLError) as e:
-            print(f"nao obtida ({e})")
-            c.setdefault("foto", {})
-            c["foto"] = {"_pendente": f"Foto nao obtida em {time.strftime('%Y-%m-%d')}: {e}"}
+        bruto = tipo = seq = None
+        erros = []
+        for s in seqs:
+            try:
+                bruto, tipo = baixar(ESPELHO.format(s))
+                seq = s
+                break
+            except (urllib.error.HTTPError, urllib.error.URLError) as e:
+                erros.append(f"{s}: {e}")
+        if seq is None:
+            print(f"nao obtida ({'; '.join(erros)})")
+            c["foto"] = {"_pendente": f"Foto nao obtida em {time.strftime('%Y-%m-%d')}: "
+                                      + "; ".join(erros)}
             falhou += 1
             continue
+        alvo = DESTINO / f"{seq}.jpg"
 
         if not tipo.startswith("image/") or len(bruto) < 800:
             print(f"resposta nao e imagem ({tipo}, {len(bruto)}b)")
+            # Este ramo nao gravava nada: a falha aparecia no terminal e o acervo
+            # ficava sem foto E sem motivo, indistinguivel de nunca ter tentado.
+            c["foto"] = {"_pendente": f"Foto nao obtida em {time.strftime('%Y-%m-%d')}: "
+                                      f"o espelho respondeu {tipo or 'sem tipo'} com "
+                                      f"{len(bruto)} bytes, nao uma imagem."}
             falhou += 1
             continue
 
@@ -98,7 +115,7 @@ def main():
         ok += 1
         time.sleep(0.5)          # cortesia com o servidor de terceiro
 
-    cp.write_text(json.dumps(dados, ensure_ascii=False, indent=1), encoding="utf-8")
+    cp.write_text(json.dumps(dados, ensure_ascii=False, indent=2) + chr(10), encoding="utf-8")
     print(f"\n{ok} foto(s) obtidas, {falhou} sem foto")
     print(f"total em disco: {sum(f.stat().st_size for f in DESTINO.glob('*.jpg'))/1024:.0f} KB")
     print("credito exibido no site: " + CREDITO)
