@@ -1,12 +1,26 @@
-# Candidaturas ao Senado por São Paulo — Eleições 2026
+# Candidaturas ao Senado — Eleições 2026
 
-Site de consulta às 15 candidaturas ao Senado Federal por São Paulo, com as
-propostas organizadas por tema e a fonte de cada informação.
+Site de consulta às candidaturas ao Senado Federal, com as propostas organizadas
+por tema e a fonte de cada informação. A primeira página traz a escolha do
+estado; cada estado tem a sua.
 
-**⚠️ Rascunho de trabalho.** Nenhuma das 119 informações passou por revisão
-humana ainda. O conteúdo foi levantado das fontes citadas e conferido
-automaticamente contra elas, mas a curadoria final não foi feita. Não use como
-referência para decidir voto.
+**https://kvgs.github.io/senado-2026/**
+
+## Onde está cada estado
+
+São **317 candidaturas ao Senado em 27 unidades da federação**. O acervo é
+construído estado a estado, e a página inicial diz de qual já começamos.
+
+| estado | situação |
+|---|---|
+| **São Paulo** | 15 candidaturas · 41 posições publicadas, todas conferidas contra a fonte |
+| **Pernambuco** | 12 candidaturas · cadastro do TSE e 878 registros legislativos aguardando revisão |
+| os outros 25 | ainda não começamos |
+
+**⚠️ Trabalho em curso.** Em São Paulo, das 122 posições levantadas, **41
+passaram na revisão humana** e são as únicas publicadas — as outras 81 ficam nos
+dados abertos, com o motivo da reprovação. Em Pernambuco nenhuma posição foi
+revisada ainda. Não use como referência única para decidir voto.
 
 ---
 
@@ -74,24 +88,44 @@ cartão transformaria a lista num ranking.
 ## Como está organizado
 
 ```
-index.html              o site, arquivo único e autocontido
-gerar_site.py           gera index.html a partir de dados/
-_template_site.html     template do site (o gerador injeta os dados)
-validar.py              valida a integridade dos dados
+index.html              escolha do estado (mapa + lista), página nacional
+sp/index.html           a página de São Paulo
+pe/index.html           a página de Pernambuco
+gerar_inicio.py         gera a página nacional
+gerar_site.py --uf SP   gera a página de um estado
+_template_inicio.html   template da página nacional
+_template_site.html     template da página de estado
+acervo.py               diz onde cada arquivo mora
+validar.py --uf SP      valida a integridade de um acervo estadual
+conhecimento/REGRAS.md  as 23 regras da curadoria, e o erro que gerou cada uma
 modelo-de-dados.md      o desenho do modelo e o caso real que forçou cada decisão
-dados/                  camada Silver — a fonte de verdade
-fontes/                 documentos primários (PDFs do TSE) e extrações
+
+dados/referencia.json   temas, partidos, selos — vale para os 27 estados
+dados/estados.json      as 27 unidades, com a contagem do TSE
+dados/mapa-uf.json      malha do IBGE, simplificada
+dados/sp/  dados/pe/    o acervo de cada estado
+fontes/                 documentos primários e extrações
 ```
+
+Fontes, fotos e o mapa ficam na raiz e são **compartilhados** pelos estados — não
+copiados 27 vezes.
 
 O site é **gerado**, nunca escrito à mão. Isso é deliberado: se a página é
 gerada do modelo, ela não pode divergir dele.
 
 ```bash
-python validar.py      # verifica integridade; exit 1 se houver erro
-python gerar_site.py   # regenera index.html
+python validar.py --uf SP        # verifica integridade; exit 1 se houver erro
+python gerar_site.py --uf SP     # regenera a página do estado
+python gerar_inicio.py           # regenera a página nacional
+python conferir_contraste.py     # WCAG AA medido, nos dois temas
 ```
 
-Sem dependências além da biblioteca padrão do Python 3.
+Toda ferramenta aceita `--uf`; sem ele, usa o estado padrão de
+`dados/referencia.json`. Sem dependências além da biblioteca padrão do Python 3,
+exceto `pypdf` para ler PDF.
+
+**Quer contribuir?** Leia [`CONTRIBUINDO.md`](CONTRIBUINDO.md) — ele explica por
+que uma informação entra ou não entra, que é a parte que importa.
 
 ## Regras que o validador impõe em código
 
@@ -147,13 +181,16 @@ semântica foram conferidos; a experiência de uso, não.
 - Parte das linhas de "não aborda o tema" é **inferência** a partir da ausência
   de menção, não de leitura de documento completo. Onde é o caso, a ressalva
   está escrita na própria informação.
-- **Todos os domínios do TSE respondem HTTP 403** a acesso automatizado. Os
-  documentos em `fontes/` foram baixados manualmente pelo navegador, e cada um
-  tem tamanho e hash SHA-256 registrados em `dados/documentos.json`.
+- **O TSE bloqueia parte do acesso automatizado.** A base de candidatos em
+  massa é baixável e é dela que sai o cadastro de cada estado; já o
+  DivulgaCandContas responde HTTP 403 a script, e os documentos anexados a cada
+  candidatura precisam ser baixados pelo navegador. Cada arquivo em `fontes/`
+  tem tamanho e hash SHA-256 registrados no acervo.
 
 ## Encontrou um erro?
 
-Abra uma issue. Se você é candidato, assessoria de campanha ou partido e
+Abra uma issue — inclusive se o erro estiver no que já foi publicado. Correção é
+contribuição, e o histórico deste repositório está cheio delas. Se você é candidato, assessoria de campanha ou partido e
 identificou informação incorreta ou desatualizada sobre a sua candidatura,
 abra uma issue com a fonte correta — correção de dado factual não depende de
 concordância editorial.
