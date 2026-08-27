@@ -92,17 +92,17 @@
   /* Volta para o mapa. Quem entrava num estado nao tinha como sair dele sem o
      botao do navegador — e quem chega por link direto nunca viu o mapa. Espelha
      o seletor de tema: canto oposto, mesma altura, mesma pilula. */
-  .voltar{position:absolute;top:16px;left:22px;z-index:5;display:inline-flex;align-items:center;
+  .voltar-mapa{position:absolute;top:16px;left:22px;z-index:5;display:inline-flex;align-items:center;
     gap:7px;font-family:"PlexMono",monospace;font-size:.72rem;font-weight:500;letter-spacing:.06em;
     text-transform:uppercase;padding:9px 14px;border:1px solid var(--rule);border-radius:99px;
     background:var(--surface-2);color:var(--muted);text-decoration:none}
-  .voltar:hover{color:var(--ink);border-color:var(--muted)}
-  .voltar:focus-visible{outline:2px solid var(--acento);outline-offset:2px;color:var(--ink)}
-  .voltar .seta{font-size:.9rem;line-height:1}
+  .voltar-mapa:hover{color:var(--ink);border-color:var(--muted)}
+  .voltar-mapa:focus-visible{outline:2px solid var(--acento);outline-offset:2px;color:var(--ink)}
+  .voltar-mapa .seta{font-size:.9rem;line-height:1}
   @media (max-width:560px){
     .tema{position:static;margin:16px 0 0;justify-content:flex-start;width:max-content}
     /* Nas duas o absolute sai: empilhadas, o mapa vem primeiro. */
-    .voltar{position:static;margin:16px 0 0;width:max-content}
+    .voltar-mapa{position:static;margin:16px 0 0;width:max-content}
   }
 
   /* Salto de escala de verdade: manchete que chega a 4rem contra corpo em 1.05.
@@ -565,7 +565,7 @@
 <a class="pular" href="#principal">Pular para o conteúdo</a>
 
 <div class="wrap">
-  <a class="voltar" href="{{RAIZ}}"><span class="seta" aria-hidden="true">←</span>Todos os estados</a>
+  <a class="voltar-mapa" href="{{RAIZ}}"><span class="seta" aria-hidden="true">←</span>Todos os estados</a>
 
   <div class="tema" role="group" aria-label="Aparência do site">
     <button type="button" data-tema="auto" aria-pressed="true">Sistema</button>

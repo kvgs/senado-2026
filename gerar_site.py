@@ -423,9 +423,9 @@ tpl = tpl.replace("{{MAILTO}}", f"mailto:{_email}?subject={_assunto}").replace("
 # Sem o link de volta, quem entra num estado so sai pelo botao do navegador — e
 # quem chega por link direto nunca ve o mapa. E um <a> solto no template: some
 # numa refatoracao sem quebrar nada, do mesmo jeito que o "15" ficou para tras.
-if f'class="voltar" href="{PREFIXO}"' not in tpl:
+if f'class="voltar-mapa" href="{PREFIXO}"' not in tpl:
     raise SystemExit("_template_site.html perdeu o link de volta para a pagina inicial"
-                     + chr(10) + f'  esperado: <a class="voltar" href="{PREFIXO}">')
+                     + chr(10) + f'  esperado: <a class="voltar-mapa" href="{PREFIXO}">')
 
 OUT.write_text(tpl.replace("/*__DADOS__*/", json.dumps(dados, ensure_ascii=False)), encoding="utf-8")
 print(f"gerado: {OUT.name}  ({OUT.stat().st_size/1024:.0f} KB)")
