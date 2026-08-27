@@ -1,0 +1,374 @@
+{
+ "_nota": "Pessoa e candidatura no mesmo arquivo. Nenhum CPF e nenhum titulo eleitoral aqui: por principio, nao saem da base do TSE para o acervo.",
+ "_data_referencia": "2026-08-26",
+ "_fonte_registro": "TSE — Consulta de candidatos 2026, arquivo consulta_cand_2026_BRASIL.csv. Fonte primaria, sem espelho. Nivel: oficial.",
+ "_gerado_por": "cadastrar_uf.py",
+ "candidaturas": [
+  {
+   "id_candidatura": "sen-am-2026-eduardo-braga",
+   "pessoa": {
+    "nome_urna": "Eduardo Braga",
+    "nome_completo": "Carlos Eduardo de Souza Braga",
+    "data_nascimento": "1960-12-06",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Senador"
+   },
+   "id_partido": "mdb",
+   "id_coligacao": "forca-amazonas-am",
+   "cargo": "senador",
+   "uf": "AM",
+   "ano": 2026,
+   "numero_urna": "155",
+   "sequencial_tse": "40002531447",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Sandra Braga",
+    "Miguel Biango"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": [
+    {
+     "casa": "senado",
+     "id_externo": "4994",
+     "situacao": "Exercício",
+     "condicao": null,
+     "desde": null,
+     "motivo_afastamento_anterior": null,
+     "_fonte": "Senado Federal, dados abertos",
+     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+    }
+   ]
+  },
+  {
+   "id_candidatura": "sen-am-2026-evandro-de-oliveira",
+   "pessoa": {
+    "nome_urna": "Evandro de Oliveira",
+    "nome_completo": "José Evandro de Oliveira",
+    "data_nascimento": "1979-02-12",
+    "escolaridade": "Ensino médio completo",
+    "ocupacao_declarada": "Técnico de mecânica"
+   },
+   "id_partido": "pstu",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "AM",
+   "ano": 2026,
+   "numero_urna": "161",
+   "sequencial_tse": "40002535270",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Antonio Neto",
+    "João Rebouças"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-am-2026-ismael-munduruku",
+   "pessoa": {
+    "nome_urna": "Ismael Munduruku",
+    "nome_completo": "Ismael Franklin Goncalves",
+    "data_nascimento": "1982-04-23",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Outros"
+   },
+   "id_partido": "rede",
+   "id_coligacao": "federacao-am",
+   "cargo": "senador",
+   "uf": "AM",
+   "ano": 2026,
+   "numero_urna": "181",
+   "sequencial_tse": "40002551283",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Laynara Prestes",
+    "André Monteiro"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-am-2026-capitao-alberto-neto",
+   "pessoa": {
+    "nome_urna": "Capitão Alberto Neto",
+    "nome_completo": "Alberto Barros Cavalcante Neto",
+    "data_nascimento": "1982-05-05",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Deputado"
+   },
+   "id_partido": "pl",
+   "id_coligacao": "mudar-e-urgente-am",
+   "cargo": "senador",
+   "uf": "AM",
+   "ano": 2026,
+   "numero_urna": "222",
+   "sequencial_tse": "40002542686",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Alessandro Toniza",
+    "Mário Bastos"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": [
+    {
+     "casa": "camara",
+     "id_externo": "204572",
+     "situacao": "Exercício",
+     "condicao": "Titular",
+     "desde": "2023-02-01",
+     "motivo_afastamento_anterior": null,
+     "_fonte": "Camara dos Deputados, dados abertos v2",
+     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+    }
+   ]
+  },
+  {
+   "id_candidatura": "sen-am-2026-dailson-correa",
+   "pessoa": {
+    "nome_urna": "Dailson Corrêa",
+    "nome_completo": "Dailson de Queiroz Corrêa",
+    "data_nascimento": "1966-06-07",
+    "escolaridade": "Lê e escreve",
+    "ocupacao_declarada": "Comerciante"
+   },
+   "id_partido": "dc",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "AM",
+   "ano": 2026,
+   "numero_urna": "277",
+   "sequencial_tse": "40002535391",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Isaías Amazonas",
+    "Capelão Roberto da Silva"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-am-2026-xuxa-do-amazonas",
+   "pessoa": {
+    "nome_urna": "Xuxa do Amazonas",
+    "nome_completo": "Milton Rogério Moreira Pinto",
+    "data_nascimento": "1964-08-26",
+    "escolaridade": "Ensino médio completo",
+    "ocupacao_declarada": "Militar reformado"
+   },
+   "id_partido": "mobiliza",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "AM",
+   "ano": 2026,
+   "numero_urna": "333",
+   "sequencial_tse": "40002550806",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Neida Farias",
+    "Angelo Reis"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-am-2026-wilson-lima",
+   "pessoa": {
+    "nome_urna": "Wilson Lima",
+    "nome_completo": "Wilson Miranda Lima",
+    "data_nascimento": "1976-06-26",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Jornalista e redator"
+   },
+   "id_partido": "uniao",
+   "id_coligacao": "uniao-pelo-amazonas-am",
+   "cargo": "senador",
+   "uf": "AM",
+   "ano": 2026,
+   "numero_urna": "444",
+   "sequencial_tse": "40002541744",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Luís Mário Bonates",
+    "Babá Tupinambá"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-am-2026-plinio-valerio",
+   "pessoa": {
+    "nome_urna": "Plinio Valério",
+    "nome_completo": "Francisco Plinio Valerio Tomaz",
+    "data_nascimento": "1955-01-31",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Jornalista e redator"
+   },
+   "id_partido": "psdb",
+   "id_coligacao": "federacao-am",
+   "cargo": "senador",
+   "uf": "AM",
+   "ano": 2026,
+   "numero_urna": "455",
+   "sequencial_tse": "40002537344",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Kelly Barbosa",
+    "Professora Judite"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": [
+    {
+     "casa": "senado",
+     "id_externo": "5502",
+     "situacao": "Exercício",
+     "condicao": null,
+     "desde": null,
+     "motivo_afastamento_anterior": null,
+     "_fonte": "Senado Federal, dados abertos",
+     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+    }
+   ]
+  },
+  {
+   "id_candidatura": "sen-am-2026-professora-evany",
+   "pessoa": {
+    "nome_urna": "Professora Evany",
+    "nome_completo": "Maria Evany do Nascimento",
+    "data_nascimento": "1974-08-05",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Professora de ensino superior"
+   },
+   "id_partido": "psol",
+   "id_coligacao": "federacao-am",
+   "cargo": "senador",
+   "uf": "AM",
+   "ano": 2026,
+   "numero_urna": "500",
+   "sequencial_tse": "40002551281",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Renan Rotondano",
+    "Jander Muniz"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  }
+ ]
+}

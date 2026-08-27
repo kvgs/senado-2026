@@ -1,0 +1,2081 @@
+<title>Candidaturas ao Senado pelo Ceará 2026</title>
+<!-- Sem fonte externa de proposito: num site sobre candidatos, carregar
+     tipografia de terceiro contaria a esse terceiro quem esta lendo. -->
+
+<style>
+  /* ---------------------------------------------------------------
+     Tokens. Contraste conferido contra WCAG 2.1 AA (4.5:1 texto
+     normal, 3:1 texto grande e componentes) nos dois temas.
+     --------------------------------------------------------------- */
+  :root{
+    --ground:#FFFFFF; --surface:#FFFFFF; --surface-2:#F7F4F1; --surface-3:#EDE7E1;
+    --ink:#141110;      /* 17.5:1 sobre surface */
+    --ink-2:#3E3833;    /*  9.6:1 */
+    --muted:#6A6259;    /*  5.6:1 */
+    --acento-vivo:#2FB4E4;   /* ciano vivo. Vive nas FORMAS: nesta luminosidade
+                                da 2.4:1 sobre branco e nao serve para texto. */
+    --foto-borda:#2FB4E4;    /* moldura da foto. Token proprio porque no tema
+                                escuro o --acento-vivo e superficie, nao traco. */
+    /* rule-strong desenha borda de campo e de botao, entao precisa de 3:1
+       (WCAG 1.4.11). O valor anterior, #A9B1AB, dava 2.2:1. */
+    --rule:#E5E0DA; --rule-strong:#7E756B;
+    --focus:#1F5FA8;
+
+    --s-oficial:#136B3C;      /* 5.6:1 */
+    --s-verificada:#7A5200;   /* 6.2:1 */
+    --s-secundaria:#B02418;   /* 5.6:1 */
+    --s-declaracao:#6B2FA8;   /* 6.9:1 */
+    --s-registro:#122A45;     /* azul-noite, 11.5:1 sobre o chip. Separado da cor
+                                 de marca por luminancia (2.1:1), para selo e
+                                 marca nao se confundirem sendo os dois azuis. */
+    /* fundos das etiquetas: a mesma cor, lavada, para a etiqueta ter corpo */
+    --f-oficial:#DFF3E7; --f-verificada:#FBEFD2; --f-secundaria:#FBE3E0;
+    --f-declaracao:#EEE4FB; --f-registro:#DCE6F2;
+    --acento:#0C6C8F;         /* ciano fundo: link, aba, numero. 5.9:1 sobre
+                                 branco. E o irmao legivel do ciano da faixa —
+                                 mesma identidade, papeis diferentes. */
+    --alert:#A32C20; --alert-bg:#FBEEEC; --alert-line:#D9A9A2;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#141110; --surface:#1C1815; --surface-2:#26211D; --surface-3:#332C27;
+      --ink:#F4F0EB; --ink-2:#CFC7BF; --muted:#A39A90;
+      --rule:#2B2B30; --rule-strong:#70707A; --focus:#7FB2E8;
+      --s-oficial:#6FD09B; --s-verificada:#EFC169; --s-secundaria:#FF9184;
+      --s-declaracao:#CDA5F5; --s-registro:#5E97D9;
+      --f-oficial:#12291D; --f-verificada:#2B2311; --f-secundaria:#301A17;
+      --f-declaracao:#241A33; --f-registro:#111D2E;
+      --acento:#5AC8F0; --acento-vivo:#0E2A36; --foto-borda:#5AC8F0; --foto-borda:#5AC8F0;
+      --alert:#F0897C; --alert-bg:#2B1C1A; --alert-line:#663932;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#141110; --surface:#1C1815; --surface-2:#26211D; --surface-3:#332C27;
+    --ink:#F4F0EB; --ink-2:#CFC7BF; --muted:#A39A90;
+    --rule:#2B2B30; --rule-strong:#70707A; --focus:#7FB2E8;
+    --s-oficial:#6FD09B; --s-verificada:#EFC169; --s-secundaria:#FF9184;
+    --s-declaracao:#CDA5F5; --s-registro:#5E97D9;
+    --f-oficial:#12291D; --f-verificada:#2B2311; --f-secundaria:#301A17;
+    --f-declaracao:#241A33; --f-registro:#111D2E;
+    --acento:#5AC8F0; --acento-vivo:#0E2A36;
+    --alert:#F0897C; --alert-bg:#2B1C1A; --alert-line:#663932;
+  }
+
+  /* Fontes hospedadas aqui, nao no Google. Fonte de terceiro conta a esse
+     terceiro quem abriu a pagina, e num site sobre candidatos isso e informacao
+     sobre quem se informa. Variaveis: um arquivo cobre toda a faixa de peso. */
+  @font-face{font-family:"Bricolage";src:url("../fontes-web/bricolage-grotesque.woff2") format("woff2");
+    font-weight:400 800;font-display:swap}
+  @font-face{font-family:"PublicSans";src:url("../fontes-web/public-sans.woff2") format("woff2");
+    font-weight:400 700;font-display:swap}
+  @font-face{font-family:"PlexMono";src:url("../fontes-web/ibm-plex-mono.woff2") format("woff2");
+    font-weight:500;font-display:swap}
+
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+
+  body{margin:0;background:var(--ground);color:var(--ink);
+    font-family:"PublicSans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    font-size:1.05rem;line-height:1.62;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 22px 110px;position:relative}
+
+  /* ---------- controle de tema ---------- */
+  .tema{position:absolute;top:16px;right:22px;display:flex;gap:2px;z-index:5;
+    background:var(--surface-2);border:1px solid var(--rule);border-radius:99px;padding:3px}
+  .tema button{font:inherit;font-family:"PlexMono",monospace;font-size:.72rem;font-weight:500;
+    letter-spacing:.06em;text-transform:uppercase;padding:6px 11px;border:0;border-radius:99px;
+    background:none;color:var(--muted);cursor:pointer}
+  .tema button:hover{color:var(--ink)}
+  .tema button[aria-pressed="true"]{background:var(--surface);color:var(--acento);
+    box-shadow:0 1px 2px rgba(0,0,0,.12)}
+  @media (max-width:560px){
+    .tema{position:static;margin:16px 0 0;justify-content:flex-start;width:max-content}
+  }
+
+  /* Salto de escala de verdade: manchete que chega a 4rem contra corpo em 1.05.
+     E essa distancia que faz a pagina ter voz — cor nao substitui hierarquia. */
+  h1,h2,h3{margin:0;font-family:"Bricolage",system-ui,sans-serif;text-wrap:balance}
+  h1{font-size:clamp(2.3rem,6.4vw,4.1rem);line-height:.98;font-weight:800;
+    letter-spacing:-.035em}
+  h2{font-size:clamp(1.6rem,3.4vw,2.3rem);line-height:1.08;font-weight:700;
+    letter-spacing:-.025em}
+  h3{font-size:1.14rem;line-height:1.25;font-weight:700;letter-spacing:-.012em}
+  .mono,.urna,[role="tab"],.lbl,.selo{font-family:"PlexMono",ui-monospace,SFMono-Regular,
+    Menlo,monospace}
+  p{margin:0}
+  ul{margin:0;padding:0}
+  a{color:var(--acento)}
+  a:hover{text-decoration-thickness:2px}
+  .mono{font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
+
+  /* foco visivel e generoso, requisito 2.4.7 */
+  :focus-visible{outline:3px solid var(--acento);outline-offset:2px;border-radius:3px}
+
+  .pular{position:absolute;left:-9999px;top:0;background:var(--ink);color:var(--ground);
+    padding:12px 18px;z-index:99;border-radius:0 0 4px 0;font-weight:600}
+  .pular:focus{left:0}
+
+  .lbl{font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);
+    font-weight:500}
+  h2{display:flex;align-items:baseline;gap:16px}
+  h2::after{content:"";flex:1;height:2px;background:var(--rule);align-self:center}
+
+  /* ---------- cabecalho ---------- */
+  header{padding:52px 0 0}
+  header .lbl{color:var(--acento)}
+  header h1{margin-top:16px;max-width:26ch}
+  .lede{margin-top:22px;color:var(--ink-2);max-width:56ch;font-size:1.18rem;line-height:1.5}
+  .atualizado{margin-top:16px;font-size:.84rem;color:var(--muted)}
+
+
+  /* ---------- chamada: por que o site existe ---------- */
+  .chamada-topo{margin:30px 0 0;padding:24px 26px;background:var(--surface-2);
+    border-left:5px solid var(--acento-vivo);border-radius:0 6px 6px 0}
+  .chamada-topo p{max-width:64ch}
+  .chamada-topo .forte{font-family:"Bricolage",system-ui,sans-serif;font-size:1.32rem;
+    line-height:1.24;font-weight:700;letter-spacing:-.02em;color:var(--ink)}
+  .chamada-topo .depois{margin-top:12px;color:var(--ink-2);font-size:1.02rem}
+  /* A frase que liga o fato juridico ao trabalho do site. E a tese da pagina:
+     ganha a face de display, corpo maior e marca ciano — como traco de marcador
+     sobre a linha, nao como caixa, para nao competir com a faixa dos numeros. */
+  .chamada-topo .tese{margin-top:16px;font-family:"Bricolage",system-ui,sans-serif;
+    font-size:1.24rem;line-height:1.34;font-weight:700;letter-spacing:-.018em;color:var(--ink)}
+  .chamada-topo .tese em{font-style:normal;background:var(--acento-vivo);
+    padding:1px 6px;border-radius:3px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+  .chamada-topo .pedido{margin-top:16px;padding-top:15px;border-top:1px solid var(--rule);
+    font-size:1rem;color:var(--ink-2)}
+  .chamada-topo .pedido strong{color:var(--ink)}
+  .chamada-topo a{font-weight:600}
+
+  /* ---------- o que faz um senador ---------- */
+  .cargo{margin-top:16px;background:var(--surface);border:1px solid var(--rule);border-radius:6px}
+  .cargo > summary{cursor:pointer;padding:16px 20px;font-family:"Bricolage",system-ui,sans-serif;
+    font-size:1.08rem;font-weight:700;letter-spacing:-.015em;color:var(--ink);
+    list-style:none;display:flex;align-items:center;gap:11px}
+  .cargo > summary::-webkit-details-marker{display:none}
+  .cargo > summary::before{content:"+";font-family:"PlexMono",monospace;font-size:1.2rem;
+    font-weight:500;color:var(--acento);line-height:1}
+  .cargo[open] > summary::before{content:"–"}
+  .cargo > summary:hover{color:var(--acento)}
+  .cargo .dentro{padding:0 20px 20px}
+  .cargo h4{margin:18px 0 0;font-size:.76rem;letter-spacing:.11em;text-transform:uppercase;
+    color:var(--muted);font-family:"PlexMono",monospace;font-weight:500}
+  .cargo p{margin-top:7px;color:var(--ink-2);max-width:66ch}
+  .cargo ul{margin:8px 0 0;padding-left:20px;color:var(--ink-2)}
+  .cargo li{margin-top:5px}
+  .cargo .base{margin-top:20px;padding-top:13px;border-top:1px solid var(--rule);
+    font-size:.86rem;color:var(--muted)}
+
+  /* ---------- aviso ---------- */
+  .aviso{background:var(--alert-bg);border:1px solid var(--alert-line);border-left:4px solid var(--alert);
+    border-radius:0 4px 4px 0;padding:14px 18px;margin:22px 0 0;font-size:.95rem;line-height:1.55;
+    color:var(--ink-2)}
+  .aviso b{color:var(--alert)}
+
+  /* ---------- abas ---------- */
+  [role="tablist"]{display:flex;flex-wrap:wrap;gap:0 4px;margin:40px 0 0;
+    border-bottom:1px solid var(--rule)}
+  [role="tab"]{font:inherit;font-family:"PlexMono",monospace;font-size:.82rem;font-weight:500;
+    letter-spacing:.06em;text-transform:uppercase;padding:14px 2px;border:0;
+    background:none;color:var(--muted);cursor:pointer;border-bottom:3px solid transparent;
+    margin:0 22px -1px 0}
+  [role="tab"]:hover{color:var(--ink)}
+  [role="tab"][aria-selected="true"]{color:var(--acento);border-bottom-color:var(--acento)}
+  [role="tabpanel"]{padding-top:28px}
+  [role="tabpanel"]:focus{outline:none}
+
+  /* ---------- seletor de tema ---------- */
+  .campo{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:flex-end;
+    padding:16px 18px;background:var(--surface);border:1px solid var(--rule);border-radius:4px}
+  .campo label{display:block;font-size:.82rem;font-weight:600;color:var(--ink-2);margin-bottom:5px}
+  .campo select{font:inherit;font-size:1rem;padding:9px 12px;border:1px solid var(--rule-strong);
+    border-radius:4px;background:var(--surface);color:var(--ink);min-width:min(340px,100%)}
+  .campo .dica{font-size:.85rem;color:var(--muted);max-width:44ch}
+
+  /* ---------- cartao de candidato ---------- */
+  .lista{list-style:none;display:flex;flex-direction:column;gap:14px;margin-top:22px}
+
+  /* Grade da primeira pagina. auto-fill em vez de 3 colunas fixas: tres no
+     desktop, duas no tablet, uma no telefone, sem media query nenhuma. */
+  .grade-cands{list-style:none;display:grid;gap:16px;margin-top:26px;
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+  .grade-cands .card{display:flex;flex-direction:column}
+
+  /* Cabecalho: foto a esquerda, identificacao em tres niveis a direita.
+     Empilhar foto sobre numero grande fazia o olho ler sobreposicao. */
+  /* A linha divisoria e a borda DE BAIXO DO CABECALHO, e nao a borda de cima do
+     corpo. Um contêiner flex nunca e mais curto que seu item mais alto, entao a
+     linha fica sempre embaixo da foto — antes ela era irma do cabecalho e podia
+     cruzar a imagem. Corrigir a medida resolveria hoje; mudar de quem e a borda
+     resolve sempre. */
+  .cabeca-cand{display:flex;gap:16px;align-items:flex-start;padding:18px;
+    border-bottom:1px solid var(--rule)}
+  /* Moldura ciano em volta da foto inteira. Decorativa: a foto ja carrega texto
+     alternativo, entao a borda nao precisa de contraste minimo. */
+  .cabeca-cand .retrato{flex:0 0 76px;width:76px;height:76px;border-radius:7px;font-size:1.2rem;
+    border:3px solid var(--foto-borda);padding:0;overflow:hidden}
+  .cabeca-cand .retrato img{width:100%;height:100%;display:block;border-radius:0}
+  .cabeca-cand .quem-id{min-width:0}
+  .cabeca-cand .quem-id{padding-top:2px}
+  .cabeca-cand .urna{display:block;font-size:1.5rem;line-height:1}
+  .cabeca-cand h3{margin-top:7px;font-size:1.12rem;line-height:1.22}
+  .cabeca-cand .completo{display:block;margin-top:5px;font-size:.84rem;line-height:1.35;
+    color:var(--muted)}
+  .cabeca-cand .part{display:block;margin-top:7px;font-size:.8rem;letter-spacing:.05em;
+    text-transform:uppercase;color:var(--muted);font-family:"PlexMono",monospace}
+
+  .corpo-cand{display:flex;flex-direction:column;flex:1;gap:9px;padding:16px 18px 18px}
+  .corpo-cand .meta,.corpo-cand .bio{margin:0}
+  /* Botao no fim: cartoes de alturas diferentes ficam com o botao na mesma
+     linha, que e o que faz a grade parecer montada em vez de desalinhada. */
+  .corpo-cand .link-perfil{margin-top:auto;padding-top:10px;text-align:left}
+  .card{background:var(--surface);border:1px solid var(--rule);border-radius:4px;overflow:hidden}
+  .card-top{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;
+    border-bottom:1px solid var(--rule)}
+  .retrato{flex:0 0 56px;width:56px;height:56px;border-radius:4px;background:var(--surface-3);
+    display:grid;place-items:center;font-weight:700;font-size:1.05rem;color:var(--ink-2);
+    border:1px solid var(--rule-strong)}
+  .retrato img{width:100%;height:100%;object-fit:cover;border-radius:3px}
+  .ident{min-width:0;flex:1}
+  .ident h3{display:flex;flex-wrap:wrap;align-items:baseline;gap:9px}
+  /* Identificador unico de cada candidatura, e grafico. Ganha corpo e mono. */
+  .urna{display:inline-block;font-size:1.5rem;font-weight:500;line-height:1;
+    color:var(--acento);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+  .sigla{font-size:.85rem;font-weight:600;color:var(--muted);font-family:system-ui,sans-serif}
+  .meta{margin-top:6px;font-size:.87rem;color:var(--muted)}
+  .bio{margin-top:8px;font-size:.94rem;color:var(--ink-2)}
+  .card-body{padding:16px 18px}
+
+  .prop{padding:14px 0;border-top:1px solid var(--rule)}
+  .prop:first-child{border-top:0;padding-top:0}
+  .quem{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin-bottom:7px;font-size:.82rem;
+    font-weight:600}
+  .quem .part{color:var(--s-declaracao)}
+  .quem .nrev{color:var(--muted);font-weight:600;font-size:.72rem;letter-spacing:.08em;
+    text-transform:uppercase}
+  blockquote{margin:0 0 9px;padding:2px 0 2px 14px;border-left:3px solid var(--rule-strong);
+    font-size:1.02rem;color:var(--ink)}
+  .txt{font-size:.96rem;color:var(--ink-2)}
+  .escopo{margin-top:9px;font-size:.85rem;color:var(--ink-2);background:var(--surface-2);
+    border-left:3px solid var(--s-verificada);padding:7px 11px;border-radius:0 3px 3px 0}
+  .fonte{margin-top:11px;font-size:.83rem;color:var(--muted);display:flex;flex-wrap:wrap;
+    gap:6px 14px;align-items:baseline}
+  /* A etiqueta e o unico lugar do site com cor forte, e ela a merece: diz de
+     onde vem a informacao. Da para varrer a pagina e ver a procedencia sem ler. */
+  .selo{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:.76rem;
+    letter-spacing:.04em;text-transform:uppercase;padding:3px 9px 3px 7px;border-radius:99px}
+  .dot{width:7px;height:7px;border-radius:50%;flex:0 0 7px}
+  .d-oficial{background:var(--s-oficial)} .d-verificada{background:var(--s-verificada)}
+  .d-secundaria{background:var(--s-secundaria)} .d-declaracao{background:var(--s-declaracao)}
+  .d-registro{background:var(--s-registro)}
+  .selo:has(.d-oficial){background:var(--f-oficial);color:var(--s-oficial)}
+  .selo:has(.d-verificada){background:var(--f-verificada);color:var(--s-verificada)}
+  .selo:has(.d-secundaria){background:var(--f-secundaria);color:var(--s-secundaria)}
+  .selo:has(.d-declaracao){background:var(--f-declaracao);color:var(--s-declaracao)}
+  .selo:has(.d-registro){background:var(--f-registro);color:var(--s-registro)}
+  /* Navegador sem :has ainda ve o ponto colorido e o rotulo — degrada sem perder
+     informacao, que e a regra para qualquer coisa que carregue significado. */
+  .selos-lista .selo{text-transform:none;font-size:.9rem;letter-spacing:0;
+    background:none;padding:0;color:inherit}
+  .ress{color:var(--s-verificada);font-weight:600}
+
+  .sem-proposta{margin:22px 0 4px;padding:17px 19px;border:1px solid var(--rule);
+    border-left:4px solid var(--acento-vivo);border-radius:5px;background:var(--surface-2)}
+  .sem-proposta h3{font-family:"Bricolage",sans-serif;font-size:1.02rem;margin-bottom:8px}
+  .sem-proposta p{font-size:.9rem;color:var(--ink-2);line-height:1.62;margin-top:8px}
+  .sem-proposta a{color:var(--acento)}
+  .porque-vazio{margin-top:9px;font-size:.88rem;color:var(--muted);line-height:1.55}
+  .porque-vazio a{color:var(--acento)}
+  .ausente{font-size:.94rem;color:var(--ink-2);padding:2px 0}
+  .ausente b{color:var(--ink)}
+  .ausente.nao-achou{color:var(--ink-2);border-left:3px solid var(--s-secundaria);
+    padding-left:12px;background:var(--surface-2);padding-top:8px;padding-bottom:8px;border-radius:0 3px 3px 0}
+
+  .bloco-leg{margin-top:14px;padding-top:13px;border-top:1px solid var(--rule)}
+  .bloco-leg h4{margin:0 0 9px;font-size:.85rem;font-weight:700;color:var(--s-registro);
+    display:flex;align-items:center;gap:7px;font-family:system-ui,sans-serif}
+  .bloco-leg ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+  .bloco-leg li{font-size:.92rem;color:var(--ink-2);display:grid;
+    grid-template-columns:auto minmax(0,1fr);gap:10px}
+  .bloco-leg .rot{font-weight:700;color:var(--ink);white-space:nowrap;font-variant-numeric:tabular-nums}
+  .aut{color:var(--s-verificada);font-weight:600}
+  .voto{margin-top:11px;padding:11px 13px;background:var(--surface-2);border-radius:3px;font-size:.9rem;
+    color:var(--ink-2)}
+  .voto b{color:var(--ink)}
+
+  /* ---------- comparador ---------- */
+  fieldset{border:1px solid var(--rule);border-radius:4px;padding:14px 18px 16px;margin:0;
+    background:var(--surface)}
+  legend{font-size:.82rem;font-weight:700;padding:0 6px;color:var(--ink-2)}
+  .checks{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:4px 18px;margin-top:6px}
+  .checks label{display:flex;gap:9px;align-items:center;font-size:.93rem;padding:5px 0;cursor:pointer}
+  .checks input{width:19px;height:19px;accent-color:var(--focus);flex:0 0 19px}
+  .checks .n{font-variant-numeric:tabular-nums;color:var(--muted);font-size:.85rem}
+  .comp-grid{display:grid;gap:14px;margin-top:22px;
+    grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+  .comp-col{background:var(--surface);border:1px solid var(--rule);border-radius:4px;overflow:hidden}
+  .comp-col > h3{padding:13px 16px;background:var(--surface-2);border-bottom:1px solid var(--rule);
+    display:flex;flex-wrap:wrap;gap:8px;align-items:baseline;font-size:1rem}
+  .comp-col .card-body{padding:14px 16px}
+
+  /* ---------- pesquisa ---------- */
+  .barra-tab{width:100%;border-collapse:collapse;font-size:.93rem;margin-top:16px}
+  .barra-tab caption{text-align:left;font-size:.85rem;color:var(--muted);padding-bottom:10px}
+  .barra-tab th,.barra-tab td{padding:8px 10px;border-bottom:1px solid var(--rule);text-align:left}
+  .barra-tab th{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+  .barra-tab td.pc{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap;width:1%}
+  .barra{height:9px;background:var(--surface-3);border-radius:5px;overflow:hidden;min-width:90px}
+  .barra span{display:block;height:100%;background:var(--rule-strong)}
+  .ficha-tec{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:8px 20px;margin-top:14px;font-size:.9rem}
+  .ficha-tec b{display:block;font-size:.75rem;letter-spacing:.07em;text-transform:uppercase;
+    color:var(--muted);font-weight:600}
+
+  /* ---------- metodo ---------- */
+  .metodo{margin-top:56px;padding-top:26px;border-top:2px solid var(--ink)}
+  .metodo h3{margin:22px 0 8px}
+  .metodo p{margin-bottom:10px;max-width:74ch;color:var(--ink-2);font-size:.96rem}
+  .metodo ul.txt-list{padding-left:22px;max-width:74ch;margin-bottom:12px}
+  .metodo ul.txt-list li{margin-bottom:7px;color:var(--ink-2);font-size:.96rem}
+  .selos-lista{list-style:none;display:flex;flex-direction:column;gap:10px;margin:14px 0}
+  .selos-lista li{display:grid;grid-template-columns:11px minmax(0,1fr);gap:11px;font-size:.93rem;
+    color:var(--ink-2)}
+  .selos-lista .dot{margin-top:7px}
+  /* ---------- modo assistido ---------- */
+  .opcoes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin-top:18px}
+  .opcao{background:var(--surface);border:1px solid var(--rule);border-radius:4px;padding:16px 18px}
+  .opcao h4{margin:0 0 7px;font-size:1rem;font-weight:700;font-family:system-ui,sans-serif}
+  .opcao p{font-size:.9rem;color:var(--ink-2);margin-bottom:11px}
+  .opcao button{font:inherit;font-size:.92rem;font-weight:600;padding:10px 16px;border:1px solid var(--ink);
+    border-radius:4px;background:var(--ink);color:var(--ground);cursor:pointer}
+  .opcao button.sec{background:var(--surface);color:var(--ink)}
+  .contatos-lista{list-style:none;display:flex;flex-direction:column;gap:9px;margin-top:16px}
+  .contatos-lista li{background:var(--surface);border:1px solid var(--rule);border-radius:4px;
+    padding:13px 16px}
+  .contatos-lista .quem-c{display:flex;flex-wrap:wrap;gap:9px;align-items:baseline;margin-bottom:8px}
+  .contatos-lista .acoes{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .contatos-lista .acoes a,.contatos-lista .acoes button{font:inherit;font-size:.87rem;font-weight:600;
+    padding:8px 13px;border:1px solid var(--rule-strong);border-radius:4px;background:var(--surface);
+    color:var(--s-registro);cursor:pointer;text-decoration:none;display:inline-block}
+  .contatos-lista .acoes a:hover,.contatos-lista .acoes button:hover{background:var(--surface-2)}
+  .sem-contato{font-size:.87rem;color:var(--muted)}
+  .nota-envio{margin-top:16px;padding:13px 16px;background:var(--surface-2);border-radius:4px;
+    font-size:.87rem;color:var(--ink-2)}
+
+  /* ---------- consulta (Fase 7) ---------- */
+  .busca-caixa{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px}
+  .busca-caixa input{flex:1 1 320px;font:inherit;font-size:1.02rem;padding:12px 14px;
+    border:1px solid var(--rule-strong);border-radius:4px;background:var(--surface);color:var(--ink)}
+  .busca-caixa button{font:inherit;font-size:.98rem;font-weight:600;padding:12px 22px;border:0;
+    border-radius:4px;background:var(--ink);color:var(--ground);cursor:pointer}
+  .sugestoes{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+  .sugestoes button{font:inherit;font-size:.87rem;padding:7px 13px;border:1px solid var(--rule-strong);
+    border-radius:100px;background:var(--surface);color:var(--ink-2);cursor:pointer;text-align:left}
+  .sugestoes button:hover{background:var(--surface-2);color:var(--ink)}
+  .resp-cabeca{margin-top:26px;padding:14px 18px;background:var(--surface-2);
+    border-left:4px solid var(--ink);border-radius:0 4px 4px 0}
+  .resp-cabeca .q{font-weight:600;font-size:1rem}
+  .resp-cabeca .como{margin-top:7px;font-size:.87rem;color:var(--muted)}
+  .resp-nada{margin-top:22px;padding:16px 18px;background:var(--alert-bg);
+    border:1px solid var(--alert-line);border-left:4px solid var(--alert);border-radius:0 4px 4px 0;
+    font-size:.95rem;color:var(--ink-2)}
+  .resp-nada b{color:var(--alert)}
+  .grupo{margin-top:16px;background:var(--surface);border:1px solid var(--rule);border-radius:4px;
+    overflow:hidden}
+  .grupo > h3{margin:0;padding:12px 17px;background:var(--surface-2);border-bottom:1px solid var(--rule);
+    font-size:.98rem;font-weight:700;font-family:system-ui,sans-serif;display:flex;flex-wrap:wrap;
+    gap:9px;align-items:baseline}
+  .grupo .card-body{padding:15px 17px}
+  .aviso-rev{margin-top:20px;padding:12px 16px;border:1px dashed var(--rule-strong);border-radius:4px;
+    font-size:.88rem;color:var(--ink-2);background:var(--surface)}
+  .aviso-rev b{color:var(--alert)}
+
+  /* ---------- resposta recebida do gabinete ---------- */
+  .resposta{margin-top:14px;padding:14px 16px;background:var(--surface-2);
+    border-left:4px solid var(--s-declaracao);border-radius:0 4px 4px 0}
+  .resposta h4{margin:0 0 3px;font-size:.92rem;font-family:system-ui,sans-serif;
+    display:flex;flex-wrap:wrap;gap:8px;align-items:baseline}
+  .resposta .quando{font-weight:400;color:var(--muted);font-size:.82rem;
+    font-variant-numeric:tabular-nums}
+  .resposta .motivo{margin:8px 0 0;font-size:.86rem;color:var(--muted)}
+  .resposta .motivo li{margin-top:3px}
+  .resposta .motivo ul{margin:4px 0 0;padding-left:20px}
+  .resposta .integra{margin-top:11px;white-space:pre-wrap;font-size:.94rem;line-height:1.62}
+  .resposta .proc{margin-top:11px;font-size:.83rem;color:var(--muted);
+    display:flex;flex-wrap:wrap;gap:5px 14px}
+  .resposta .alerta-proc{margin-top:9px;padding:9px 12px;background:var(--alert-bg);
+    border:1px solid var(--alert-line);border-radius:4px;font-size:.85rem;color:var(--ink-2)}
+
+  /* ---------- pedir que a gente pergunte ao gabinete ---------- */
+  .pedir{margin-top:18px;padding:16px 18px;background:var(--surface);
+    border:1px solid var(--rule-strong);border-radius:4px}
+  .pedir h4{margin:0 0 6px;font-size:1rem;font-family:system-ui,sans-serif}
+  .pedir .chamada{font-size:.88rem;color:var(--muted);margin-bottom:14px}
+  .pedir .campo{margin-top:12px}
+  .pedir label{display:block;font-size:.86rem;font-weight:600;color:var(--ink-2);margin-bottom:5px}
+  .pedir select,.pedir textarea{width:100%;font:inherit;font-size:.94rem;padding:9px 11px;
+    border:1px solid var(--rule-strong);border-radius:4px;background:var(--surface);color:var(--ink)}
+  .pedir textarea{resize:vertical;line-height:1.55}
+  .pedir .aviso{margin-top:12px;padding:10px 13px;border:1px dashed var(--rule-strong);
+    border-radius:4px;font-size:.85rem;color:var(--ink-2)}
+  .pedir .ok{margin-top:14px;padding:12px 15px;background:var(--surface-2);
+    border-left:4px solid var(--s-registro);border-radius:0 4px 4px 0;font-size:.93rem}
+  .pedir .falha{margin-top:14px;padding:12px 15px;background:var(--alert-bg);
+    border:1px solid var(--alert-line);border-radius:4px;font-size:.9rem;color:var(--ink-2)}
+
+  /* ---------- resumo redigido por IA (acessorio, nunca a voz principal) ---------- */
+  .ia{margin-top:18px;padding:16px 18px;background:var(--surface);
+    border:1px solid var(--rule-strong);border-radius:4px}
+  .ia > h3{margin:0 0 6px;font-size:1rem;font-family:system-ui,sans-serif}
+  .ia .chamada{font-size:.88rem;color:var(--muted);margin-bottom:12px}
+  .ia .texto{margin-top:14px;padding:14px 16px;background:var(--surface-2);
+    border-left:4px solid var(--s-registro);border-radius:0 4px 4px 0;
+    font-size:.96rem;line-height:1.65}
+  .ia .texto p+p{margin-top:10px}
+  .ia .legenda{margin-top:12px;font-size:.84rem;color:var(--muted)}
+  .ia .legenda li{margin-top:4px}
+  .ia .legenda ol{margin:6px 0 0;padding-left:22px}
+  .ia .rodape{margin-top:12px;padding:11px 14px;border:1px dashed var(--rule-strong);
+    border-radius:4px;font-size:.86rem;color:var(--ink-2)}
+  .ia .rodape b{color:var(--alert)}
+  .ia .falha{margin-top:14px;padding:12px 15px;background:var(--alert-bg);
+    border:1px solid var(--alert-line);border-radius:4px;font-size:.9rem;color:var(--ink-2)}
+
+  /* ---------- canais oficiais no perfil ---------- */
+  .canais{margin-top:26px;padding:18px 20px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:5px}
+  .canais h3{font-size:1.02rem}
+  .canais .de-onde{margin-top:5px;font-size:.86rem;color:var(--muted)}
+  /* Principais: alvo grande, ordem fixa em toda candidatura. */
+  .canais .destaque{list-style:none;margin-top:14px;display:flex;flex-wrap:wrap;gap:9px}
+  .canais .destaque a{display:inline-flex;align-items:center;gap:9px;text-decoration:none;
+    padding:10px 15px;border:1px solid var(--rule-strong);border-radius:99px;
+    background:var(--surface-2);color:var(--ink);font-weight:600;font-size:.94rem}
+  .canais .destaque a:hover{border-color:var(--acento);color:var(--acento)}
+  .canais .destaque .plat{font-family:"PlexMono",monospace;font-size:.73rem;letter-spacing:.02em;
+    color:var(--muted)}
+  /* As demais: linha discreta, mas presentes — declarar 14 canais e declarar 3
+     sao coisas diferentes sobre uma campanha. */
+  .canais .outras{margin-top:13px;font-size:.86rem;color:var(--muted);line-height:1.9}
+  .canais .outras a{color:var(--ink-2)}
+  .canais .outras .rot{display:block;font-family:"PlexMono",monospace;font-size:.75rem;
+    letter-spacing:.01em;margin-bottom:3px}
+  .canais .nada{margin-top:12px;padding:11px 14px;background:var(--surface-2);
+    border-left:3px solid var(--rule-strong);border-radius:0 3px 3px 0;
+    font-size:.9rem;color:var(--ink-2)}
+  .canais .mandato{margin-top:12px;font-size:.86rem;color:var(--ink-2)}
+
+  /* ---------- aba: como e feito ---------- */
+  .met-intro{margin-top:14px;color:var(--ink-2);max-width:66ch;font-size:1.05rem}
+  .met-tipos{list-style:none;display:grid;gap:14px;margin-top:26px;
+    grid-template-columns:repeat(auto-fill,minmax(320px,1fr))}
+  .met-tipos li{background:var(--surface);border:1px solid var(--rule);border-radius:5px;
+    padding:16px 18px}
+  .met-tipos h3{font-size:1.02rem}
+  .met-tipos .chave{display:block;margin-top:3px;font-family:"PlexMono",monospace;
+    font-size:.74rem;letter-spacing:.06em;color:var(--muted)}
+  .met-tipos .oq{margin-top:9px;font-size:.92rem;color:var(--ink-2)}
+  .met-tipos dl{margin:12px 0 0;font-size:.88rem}
+  .met-tipos dt{font-weight:700;font-size:.74rem;letter-spacing:.07em;text-transform:uppercase;
+    color:var(--muted);margin-top:9px}
+  .met-tipos dt.nao{color:var(--s-secundaria)}
+  .met-tipos dd{margin:3px 0 0;color:var(--ink-2)}
+  .met-tipos .cuidado{margin-top:11px;padding:9px 12px;background:var(--surface-2);
+    border-left:3px solid var(--s-verificada);border-radius:0 3px 3px 0;font-size:.86rem;
+    color:var(--ink-2)}
+  .met-regras{margin-top:16px}
+  .met-regras li{list-style:none;padding:15px 0;border-top:1px solid var(--rule)}
+  .met-regras .rid{font-family:"PlexMono",monospace;font-size:.74rem;letter-spacing:.06em;
+    color:var(--acento)}
+  .met-regras h4{margin:3px 0 0;font-size:1rem;font-family:"Bricolage",system-ui,sans-serif}
+  .met-regras .oq{margin-top:7px;color:var(--ink-2);font-size:.95rem}
+  .met-regras .pq{margin-top:8px;font-size:.9rem;color:var(--muted)}
+  .met-regras .pq strong{color:var(--ink-2)}
+  .met-nota{margin-top:14px;padding:12px 15px;border:1px dashed var(--rule-strong);
+    border-radius:4px;font-size:.9rem;color:var(--ink-2)}
+
+  /* ---------- perfil (Fase 6) ---------- */
+  .voltar{display:inline-flex;align-items:center;gap:7px;font:inherit;font-size:.92rem;
+    font-weight:600;background:none;border:0;color:var(--s-registro);cursor:pointer;padding:8px 0;
+    text-decoration:underline;text-underline-offset:3px}
+  .perfil-topo{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap;margin-top:6px}
+  .perfil-topo .retrato{flex:0 0 84px;width:84px;height:84px;font-size:1.5rem}
+  .perfil-ident{min-width:min(280px,100%);flex:1}
+  .perfil-ident h2{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px}
+  .ficha-dl{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+    gap:12px 22px;margin:20px 0 0;padding:16px 18px;background:var(--surface);
+    border:1px solid var(--rule);border-radius:4px}
+  .ficha-dl li{min-width:0}
+  .ficha-dl b{display:block;font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;
+    color:var(--muted);font-weight:600;margin-bottom:2px}
+  .ficha-dl span{font-size:.95rem}
+  .secao{margin-top:32px}
+  .secao > h3{padding-bottom:9px;border-bottom:1px solid var(--rule);margin-bottom:14px;
+    font-size:1.12rem;font-weight:700}
+  .hist{list-style:none;display:flex;flex-direction:column;gap:7px}
+  .hist li{display:grid;grid-template-columns:4.2rem minmax(0,1fr);gap:12px;font-size:.94rem;
+    color:var(--ink-2)}
+  .hist .ano{font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums}
+  .hist .res-eleito{color:var(--s-oficial);font-weight:600}
+  .hist .res-nao{color:var(--muted)}
+  .tema-bloco{background:var(--surface);border:1px solid var(--rule);border-radius:4px;
+    margin-bottom:12px;overflow:hidden}
+  .tema-bloco > h4{margin:0;padding:12px 17px;background:var(--surface-2);
+    border-bottom:1px solid var(--rule);font-size:.95rem;font-weight:700;
+    font-family:system-ui,sans-serif}
+  .tema-bloco .card-body{padding:15px 17px}
+  .obs{background:var(--surface-2);border-left:3px solid var(--s-verificada);padding:11px 14px;
+    border-radius:0 3px 3px 0;font-size:.9rem;color:var(--ink-2);margin-bottom:9px}
+  .link-perfil{font:inherit;font-size:.88rem;font-weight:600;background:none;border:0;
+    color:var(--s-registro);cursor:pointer;padding:6px 0;text-decoration:underline;
+    text-underline-offset:3px;margin-top:9px;display:inline-block}
+
+  .vis-oculto{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+    clip:rect(0 0 0 0);white-space:nowrap;border:0}
+  @media (max-width:600px){
+    .wrap{padding:0 14px 64px}
+    .card-top{flex-wrap:wrap}
+    [role="tab"]{padding:10px 13px;font-size:.92rem}
+  }
+</style>
+<script>
+/* Aplica o tema ANTES da primeira pintura. Se isso rodasse depois, quem escolheu
+   escuro veria um lampejo branco em cada carregamento. */
+(function(){
+  try{
+    var e = localStorage.getItem('tema');
+    if(e === 'dark' || e === 'light') document.documentElement.setAttribute('data-theme', e);
+  }catch(x){}
+})();
+</script>
+
+<a class="pular" href="#principal">Pular para o conteúdo</a>
+
+<div class="wrap">
+  <div class="tema" role="group" aria-label="Aparência do site">
+    <button type="button" data-tema="auto" aria-pressed="true">Sistema</button>
+    <button type="button" data-tema="light" aria-pressed="false">Claro</button>
+    <button type="button" data-tema="dark" aria-pressed="false">Escuro</button>
+  </div>
+
+  <header>
+    <p class="lbl">Eleições 2026 · Senado Federal · Ceará · 2 vagas em disputa</p>
+    <h1>Candidaturas ao Senado pelo Ceará</h1>
+    <p class="lede">O que cada uma das 15 candidaturas defende, tema por tema, com a fonte de
+      cada informação e o quanto ela foi verificada.</p>
+    <p class="atualizado">Dados de <strong id="atualizado"></strong>. Cada informação mostra sua
+      própria data de referência.</p>
+
+    <div class="chamada-topo">
+      <p class="forte">Candidaturas ao Senado não precisam registrar plano de governo no TSE.</p>
+      <p class="depois">A lei exige proposta de governo apenas de quem concorre a Presidente,
+        Governador e Prefeito — senador não está na lista
+        (<a href="https://www.planalto.gov.br/ccivil_03/leis/l9504.htm" target="_blank"
+        rel="noopener">Lei 9.504/1997, art. 11, §1º, IX <span class="vis-oculto">(abre em nova
+        aba)</span></a>).</p>
+      <p class="tese">Por isso é difícil saber o que cada candidatura defende:
+        <em>não existe um documento único onde procurar.</em></p>
+      <p class="depois">Este site existe para ajudar nisso — reunir o que há, com a fonte de cada
+        informação, e dizer com clareza o que não foi encontrado.</p>
+      <p class="pedido" style="border-top:0;padding-top:0;margin-top:12px;font-size:.86rem;
+        color:var(--muted)">Fotos: <strong>TSE</strong> — foto de registro de candidatura.</p>
+      <p class="pedido"><strong>Ajude a construir.</strong> Achou um erro, conhece uma fonte que
+        falta, ou tem uma dúvida? Escreva para
+        <a href="mailto:kelli.vgs@gmail.com?subject=Senado%20SP%202026%20%E2%80%94%20feedback">kelli.vgs@gmail.com</a>.</p>
+    </div>
+
+    <details class="cargo">
+      <summary>O que faz um senador?</summary>
+      <div class="dentro">
+        <h4>Quanto tempo, e por que duas vagas</h4>
+        <p>Cada estado tem <strong>três senadores</strong> — São Paulo, Roraima e todos os
+          outros, o mesmo número para cada um, independentemente da população. Mas os três
+          <strong>nunca são eleitos juntos</strong>.</p>
+        <p>O mandato é de <strong>oito anos</strong>, o dobro de um deputado ou de um
+          presidente, e as eleições acontecem de quatro em quatro anos. Por isso a renovação é
+          alternada: numa eleição cada estado escolhe <strong>um</strong> senador, na seguinte
+          escolhe <strong>dois</strong>.</p>
+        <p>Ceará elegeu um em 2022. <strong>Em 2026 elege dois</strong> — são as duas vagas
+          em disputa nesta página. Quem for eleito agora fica até 2035, e o terceiro senador
+          do estado continua no cargo sem passar por esta eleição.</p>
+        <p>Cada candidatura concorre com <strong>dois suplentes</strong>, que assumem se o
+          titular deixar o cargo. Você não vota neles separadamente: eles entram junto com o
+          nome escolhido.</p>
+
+        <h4>O que só o Senado faz</h4>
+        <p>Estas decisões não passam pela Câmara dos Deputados. É onde o voto de um senador
+          pesa diferente do voto de um deputado:</p>
+        <ul>
+          <li><strong>Aprovar ou rejeitar nomeações</strong> para ministro do Supremo Tribunal
+            Federal, ministro do Tribunal de Contas da União indicado pelo presidente,
+            presidente e diretores do Banco Central, procurador-geral da República e chefes de
+            missão diplomática. Sem o aval do Senado, a nomeação não vale.</li>
+          <li><strong>Julgar o presidente da República</strong> e o vice em crime de
+            responsabilidade — o processo de impeachment — e também ministros do STF, o
+            procurador-geral e o advogado-geral da União. Condenar exige <strong>dois terços
+            dos votos: 54 dos 81 senadores</strong>. Quem preside esse julgamento é o
+            presidente do Supremo, não o do Senado.</li>
+          <li><strong>Tirar do ar uma lei que o Supremo declarou inconstitucional.</strong>
+            Quando o STF decide um caso concreto, a decisão vale para aquele caso; é o Senado
+            que pode suspender a lei para todo mundo.</li>
+          <li><strong>Autorizar empréstimos externos</strong> da União, dos estados e dos
+            municípios, e <strong>fixar os limites da dívida pública</strong>.</li>
+        </ul>
+
+        <h4>O que faz junto com a Câmara</h4>
+        <p>Todo projeto de lei federal precisa passar pelas duas Casas. Um senador propõe,
+          emenda, relata e vota leis sobre qualquer assunto de competência da União — impostos,
+          segurança, saúde, educação, meio ambiente — e participa da votação de emendas à
+          Constituição.</p>
+        <p>O Senado também pode <strong>abrir uma CPI sozinho</strong>, sem depender da Câmara.
+          Basta o pedido de <strong>um terço dos senadores</strong>, um fato determinado a
+          apurar e um prazo. Comissão de inquérito tem poderes de investigação próprios de um
+          juiz — e, cumpridos esses requisitos, a abertura não depende da vontade da maioria:
+          é um direito da minoria.</p>
+
+        <p class="base">Base: <a href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+          target="_blank" rel="noopener">Constituição Federal de 1988<span class="vis-oculto">
+          (abre em nova aba)</span></a>, artigos 46 (composição e mandato), 48 (competência
+          conjunta com a Câmara), 52 (competências privativas do Senado) e 58, §3º
+          (comissões parlamentares de inquérito).</p>
+      </div>
+    </details>
+
+    <div class="aviso" role="note" id="aviso"></div>
+  </header>
+
+  <div role="tablist" aria-label="Formas de ver as candidaturas">
+    <button role="tab" id="tab-candidatos" aria-controls="p-candidatos" aria-selected="true">Candidatos</button>
+    <button role="tab" id="tab-temas" aria-controls="p-temas" aria-selected="false" tabindex="-1">Por tema</button>
+    <button role="tab" id="tab-comparar" aria-controls="p-comparar" aria-selected="false" tabindex="-1">Comparar</button>
+    <button role="tab" id="tab-consulta" aria-controls="p-consulta" aria-selected="false" tabindex="-1">Perguntar</button>
+    <button role="tab" id="tab-pesquisa" aria-controls="p-pesquisa" aria-selected="false" tabindex="-1">Pesquisa</button>
+    <button role="tab" id="tab-metodo" aria-controls="p-metodo" aria-selected="false" tabindex="-1">Como é feito</button>
+    <button role="tab" id="tab-perfil" aria-controls="p-perfil" aria-selected="false" tabindex="-1" hidden>Perfil</button>
+  </div>
+
+  <main id="principal">
+    <div role="tabpanel" id="p-candidatos" aria-labelledby="tab-candidatos" tabindex="0">
+      <h2>As 15 candidaturas</h2>
+      <p class="metodo-p" style="margin-top:8px;color:var(--muted);font-size:.93rem;max-width:70ch">
+        Em ordem de número de urna. A ordem não expressa preferência nem posição em pesquisa.</p>
+      <ul class="grade-cands" id="lista-cands"></ul>
+    </div>
+
+    <div role="tabpanel" id="p-temas" aria-labelledby="tab-temas" tabindex="0" hidden>
+      <h2>Comparação por tema</h2>
+      <div class="campo" style="margin-top:16px">
+        <div>
+          <label for="sel-tema">Escolha um tema</label>
+          <select id="sel-tema"></select>
+        </div>
+        <p class="dica">As 15 candidaturas aparecem sempre, mesmo quando não há proposta —
+          com o motivo, que não é o mesmo em todos os casos.</p>
+      </div>
+      <div aria-live="polite" id="saida-tema"></div>
+    </div>
+
+    <div role="tabpanel" id="p-comparar" aria-labelledby="tab-comparar" tabindex="0" hidden>
+      <h2>Comparar candidaturas</h2>
+      <div class="campo" style="margin-top:16px;align-items:flex-start;flex-direction:column">
+        <div style="width:100%">
+          <label for="sel-tema-comp">Tema</label>
+          <select id="sel-tema-comp"></select>
+        </div>
+      </div>
+      <fieldset style="margin-top:14px">
+        <legend>Escolha até 3 candidaturas</legend>
+        <div class="checks" id="checks"></div>
+      </fieldset>
+      <div aria-live="polite" id="saida-comp"></div>
+    </div>
+
+    <div role="tabpanel" id="p-pesquisa" aria-labelledby="tab-pesquisa" tabindex="0" hidden>
+      <h2>Pesquisa de intenção de voto</h2>
+      <p style="margin-top:10px;color:var(--ink-2);max-width:72ch">Esta é a única seção com número de
+        pesquisa. Ela não aparece junto de cada candidatura de propósito: repetir a porcentagem em
+        todo cartão transformaria a lista num ranking.</p>
+      <div id="saida-pesquisa"></div>
+    </div>
+    <div role="tabpanel" id="p-consulta" aria-labelledby="tab-consulta" tabindex="0" hidden>
+      <h2>Perguntar ao acervo</h2>
+      <p style="margin-top:10px;color:var(--ink-2);max-width:66ch">Devolve <strong>apenas o que
+        existe no acervo</strong>, com a fonte de cada informação. Não completa com conhecimento de
+        fora: se não houver, diz que não há.</p>
+      <form class="busca-caixa" id="form-busca" role="search">
+        <label for="q" class="vis-oculto">Sua pergunta ou termo de busca</label>
+        <input type="search" id="q" placeholder="Ex.: o que Marina Silva propõe sobre saúde?"
+               autocomplete="off">
+        <button type="submit">Buscar</button>
+      </form>
+      <div class="sugestoes" id="sugestoes"></div>
+      <div aria-live="polite" id="saida-consulta"></div>
+      <div id="pedir-fixo"></div>
+    </div>
+    <div role="tabpanel" id="p-metodo" aria-labelledby="tab-metodo" tabindex="0" hidden>
+      <h2>Como isto é feito</h2>
+      <div id="saida-metodo"></div>
+    </div>
+    <div role="tabpanel" id="p-perfil" aria-labelledby="tab-perfil" tabindex="0" hidden>
+      <button class="voltar" id="btn-voltar" type="button">&larr; Voltar para a lista de candidaturas</button>
+      <div id="saida-perfil" aria-live="polite"></div>
+    </div>
+  </main>
+
+  <div class="metodo" id="metodo">
+    <h2>Como esta página foi feita</h2>
+
+    <h3>De onde vem cada informação</h3>
+    <p>Toda afirmação carrega a fonte de onde saiu, com link, e um selo que diz o quanto ela foi
+      verificada. Os selos não formam uma régua única — medem coisas diferentes, e por isso vêm
+      sempre com o nome escrito, nunca só pela cor.</p>
+    <ul class="selos-lista" id="selos-lista"></ul>
+
+    <h3>Quando não há proposta</h3>
+    <p>Célula vazia não é tudo a mesma coisa. A página separa quatro situações:</p>
+    <ul class="txt-list">
+      <li><strong>Proposta própria</strong> — posição documentada e atribuível à candidatura.</li>
+      <li><strong>Proposta do partido</strong> — o conteúdo existe, mas pertence ao programa
+        partidário e não à pessoa. É assim que funciona a maior parte das candidaturas de partido
+        pequeno; aparece sempre rotulado como do partido.</li>
+      <li><strong>Não aborda o tema</strong> — a candidatura tem material publicado e aquele
+        material não trata disto.</li>
+      <li><strong>Não localizamos fonte</strong> — <em>nós</em> procuramos e não encontramos.
+        É afirmação sobre a nossa busca, não sobre a candidatura, e vem com a data e o escopo do
+        que foi procurado.</li>
+    </ul>
+
+    <h3>Por que não há pontuação, nota nem ranking</h3>
+    <p>Não existe contador de temas preenchidos, barra de progresso por candidatura nem ordenação
+      por quantidade de conteúdo. Um placar desses seria um ranking na prática — e o que ele
+      mediria não é qualidade de candidatura, e sim verba de campanha e cobertura de imprensa.
+      Candidatura com assessoria de comunicação ocupa mais espaço que candidatura de sindicalista
+      de partido pequeno, por razões que nada têm a ver com o que o eleitor está avaliando.</p>
+    <p>A ordem é a do número de urna, que não opina. E quando há mais de uma proposta no mesmo
+      tema, elas aparecem com as de citação literal primeiro — regra mecânica, não escolha de
+      quais seriam as “principais”.</p>
+
+    <h3>Fotos</h3>
+    <p id="nota-fotos"></p>
+
+    <h3>Limites conhecidos</h3>
+    <ul class="txt-list">
+      <li>Candidatura ao Senado <strong>não é obrigada</strong> a registrar plano de governo no
+        TSE. O nível oficial, aqui, vem pela via do <strong>programa do partido</strong>, quando
+        ele existe e está registrado.</li>
+      <li>A situação do registro na Justiça Eleitoral <strong>muda</strong> até a eleição. Cada
+        candidatura mostra a situação com a data em que foi observada.</li>
+      <li>O registro legislativo mostra <strong>autoria</strong>. A base pública de votações
+        nominais é muito incompleta no período, e por isso contagem de votos não é usada aqui
+        como medida de atividade parlamentar.</li>
+      <li>Contagem de autoria <strong>não é comparável entre casas legislativas</strong>: no
+        Senado, uma PEC exige 27 assinaturas, então “autor” ali frequentemente significa
+        apoiador. Onde há esse risco, a posição na lista de autores está indicada.</li>
+      <li>Parte das linhas de “não aborda o tema” é <strong>inferência</strong> nossa a partir da
+        ausência de menção, e não da leitura de um documento completo. Onde é o caso, a ressalva
+        está escrita na própria informação.</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+"use strict";
+const D = {"atualizado": "24 de agosto de 2026", "agente_url": "https://agente-senado-sp-2026.senado-2026.workers.dev", "temas": [{"id": "t1", "nome": "Segurança Pública"}, {"id": "t2", "nome": "Educação"}, {"id": "t3", "nome": "Saúde"}, {"id": "t4", "nome": "Economia e Emprego"}, {"id": "t5", "nome": "Infraestrutura e Mobilidade Urbana"}, {"id": "t6", "nome": "Meio Ambiente e Mudança Climática"}, {"id": "t7", "nome": "Habitação"}, {"id": "t8", "nome": "Tecnologia e Inteligência Artificial"}, {"id": "t9", "nome": "Cultura e Direitos Humanos"}, {"id": "t10", "nome": "Organização do Estado e Prioridades Legislativas"}], "ordem": ["sen-ce-2026-reginaldo", "sen-ce-2026-luizianne", "sen-ce-2026-alcides-fernandes", "sen-ce-2026-lino-alves", "sen-ce-2026-guilherme-theophilo", "sen-ce-2026-cid-gomes", "sen-ce-2026-capitao-wagner", "sen-ce-2026-catarina-matos"], "candidatos": {"sen-ce-2026-reginaldo": {"nome": "Reginaldo", "completo": "Reginaldo Ferreira de Araujo", "partido": "PSTU", "partido_nome": "Partido Socialista dos Trabalhadores Unificado", "coligacao": "", "coligacao_comp": "", "numero": "162", "iniciais": "R", "bio": "Declarou ao TSE a ocupação de servidor público municipal. Primeira candidatura registrada nos dados abertos do TSE.", "situacao": null, "situacao_em": null, "situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.", "sequencial": "60002550748", "suplentes": ["Prof. Félix", "Magela"], "foto": null, "foto_credito": null, "nascimento": "1973-09-01", "escolaridade": "Superior completo", "bens": null, "parlamentar": null, "mandatos": [], "cargos_exec": [], "cargos_repr": [], "areas_declaradas": [], "base_eleitoral": [], "obs_registro": [], "concorrentes": [], "contato": {"email": null, "email_fonte": null, "email_tipo": null, "instagram": null, "redes": []}, "programa_partido": {"tipo": "nenhum"}}, "sen-ce-2026-luizianne": {"nome": "Luizianne", "completo": "Luizianne de Oliveira Lins", "partido": "REDE", "partido_nome": "Rede Sustentabilidade", "coligacao": "Ceará Forte, do Lado Certo", "coligacao_comp": "PDT / PODE / PSB / PSD / FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV) / FEDERAÇÃO PSOL REDE(PSOL/REDE) / FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(PRD/SOLIDARIEDADE) / REPUBLICANOS / MDB / MOBILIZA", "numero": "180", "iniciais": "L", "bio": "Declarou ao TSE a ocupação de deputada. Primeira candidatura registrada nos dados abertos do TSE.", "situacao": null, "situacao_em": null, "situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.", "sequencial": "60002542476", "suplentes": ["Chagas Vieira", "Rodrigo Oliveira"], "foto": null, "foto_credito": null, "nascimento": "1968-11-18", "escolaridade": "Superior completo", "bens": null, "parlamentar": null, "mandatos": [], "cargos_exec": [], "cargos_repr": [], "areas_declaradas": [], "base_eleitoral": [], "obs_registro": [], "concorrentes": [], "contato": {"email": null, "email_fonte": null, "email_tipo": null, "instagram": null, "redes": []}, "programa_partido": {"tipo": "nenhum"}}, "sen-ce-2026-alcides-fernandes": {"nome": "Alcides Fernandes", "completo": "Alcides Fernandes da Silva", "partido": "PL", "partido_nome": "Partido Liberal", "coligacao": "Unir Para Mudar", "coligacao_comp": "PL / DC / AVANTE / FEDERAÇÃO PSDB CIDADANIA(PSDB/CIDADANIA) / FEDERAÇÃO UNIÃO PROGRESSISTA(UNIÃO/PP)", "numero": "222", "iniciais": "AF", "bio": "Declarou ao TSE a ocupação de deputado. Primeira candidatura registrada nos dados abertos do TSE.", "situacao": null, "situacao_em": null, "situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.", "sequencial": "60002540754", "suplentes": ["João Barroso", "Denísio Pinheiro"], "foto": null, "foto_credito": null, "nascimento": "1967-10-01", "escolaridade": "Superior completo", "bens": null, "parlamentar": null, "mandatos": [], "cargos_exec": [], "cargos_repr": [], "areas_declaradas": [], "base_eleitoral": [], "obs_registro": [], "concorrentes": [], "contato": {"email": null, "email_fonte": null, "email_tipo": null, "instagram": null, "redes": []}, "programa_partido": {"tipo": "nenhum"}}, "sen-ce-2026-lino-alves": {"nome": "Lino Alves", "completo": "Lino Alves de Almeida", "partido": "PCO", "partido_nome": "Partido da Causa Operária", "coligacao": "", "coligacao_comp": "", "numero": "290", "iniciais": "LA", "bio": "Declarou ao TSE a ocupação de engenheiro. Primeira candidatura registrada nos dados abertos do TSE.", "situacao": null, "situacao_em": null, "situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.", "sequencial": "60002551397", "suplentes": ["Tiago Ferreira", "Estevam"], "foto": null, "foto_credito": null, "nascimento": "1956-06-28", "escolaridade": "Superior completo", "bens": null, "parlamentar": null, "mandatos": [], "cargos_exec": [], "cargos_repr": [], "areas_declaradas": [], "base_eleitoral": [], "obs_registro": [], "concorrentes": [], "contato": {"email": null, "email_fonte": null, "email_tipo": null, "instagram": null, "redes": []}, "programa_partido": {"tipo": "nenhum"}}, "sen-ce-2026-guilherme-theophilo": {"nome": "Guilherme Theophilo", "completo": "Guilherme Cals Theophilo Gaspar de Oliveira", "partido": "NOVO", "partido_nome": "Partido Novo", "coligacao": "", "coligacao_comp": "", "numero": "300", "iniciais": "GT", "bio": "Declarou ao TSE a ocupação de militar reformado. Primeira candidatura registrada nos dados abertos do TSE.", "situacao": null, "situacao_em": null, "situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.", "sequencial": "60002539687", "suplentes": ["Dra. Verônica Amaral", "Capelli"], "foto": null, "foto_credito": null, "nascimento": "1955-03-13", "escolaridade": "Superior completo", "bens": null, "parlamentar": null, "mandatos": [], "cargos_exec": [], "cargos_repr": [], "areas_declaradas": [], "base_eleitoral": [], "obs_registro": [], "concorrentes": [], "contato": {"email": null, "email_fonte": null, "email_tipo": null, "instagram": null, "redes": []}, "programa_partido": {"tipo": "nenhum"}}, "sen-ce-2026-cid-gomes": {"nome": "Cid Gomes", "completo": "Cid Ferreira Gomes", "partido": "PSB", "partido_nome": "Partido Socialista Brasileiro", "coligacao": "Ceará Forte, do Lado Certo", "coligacao_comp": "PDT / PODE / PSB / PSD / FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV) / FEDERAÇÃO PSOL REDE(PSOL/REDE) / FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(PRD/SOLIDARIEDADE) / REPUBLICANOS / MDB / MOBILIZA", "numero": "400", "iniciais": "CG", "bio": "Declarou ao TSE a ocupação de senador. Primeira candidatura registrada nos dados abertos do TSE.", "situacao": null, "situacao_em": null, "situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.", "sequencial": "60002542479", "suplentes": ["Junior Mano", "Julio Ventura"], "foto": null, "foto_credito": null, "nascimento": "1963-04-27", "escolaridade": "Superior completo", "bens": null, "parlamentar": {"casa": "senado", "id_externo": "5973", "situacao": "Exercício", "condicao": null, "desde": null, "motivo_afastamento_anterior": null, "_fonte": "Senado Federal, dados abertos", "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"}, "mandatos": [], "cargos_exec": [], "cargos_repr": [], "areas_declaradas": [], "base_eleitoral": [], "obs_registro": [], "concorrentes": [], "contato": {"email": null, "email_fonte": null, "email_tipo": null, "instagram": null, "redes": []}, "programa_partido": {"tipo": "nenhum"}}, "sen-ce-2026-capitao-wagner": {"nome": "Capitão Wagner", "completo": "Wagner Sousa Gomes", "partido": "UNIÃO", "partido_nome": "União Brasil", "coligacao": "Unir Para Mudar", "coligacao_comp": "PL / DC / AVANTE / FEDERAÇÃO PSDB CIDADANIA(PSDB/CIDADANIA) / FEDERAÇÃO UNIÃO PROGRESSISTA(UNIÃO/PP)", "numero": "445", "iniciais": "CW", "bio": "Declarou ao TSE a ocupação de policial militar. Primeira candidatura registrada nos dados abertos do TSE.", "situacao": null, "situacao_em": null, "situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.", "sequencial": "60002540753", "suplentes": ["Prisco Bezerra", "Lucio Gomes"], "foto": null, "foto_credito": null, "nascimento": "1979-01-21", "escolaridade": "Superior completo", "bens": null, "parlamentar": null, "mandatos": [], "cargos_exec": [], "cargos_repr": [], "areas_declaradas": [], "base_eleitoral": [], "obs_registro": [], "concorrentes": [], "contato": {"email": null, "email_fonte": null, "email_tipo": null, "instagram": null, "redes": []}, "programa_partido": {"tipo": "nenhum"}}, "sen-ce-2026-catarina-matos": {"nome": "Catarina Matos", "completo": "Catarina da Graca Almeida Matos", "partido": "UP", "partido_nome": "Unidade Popular pelo Socialismo", "coligacao": "", "coligacao_comp": "", "numero": "800", "iniciais": "CM", "bio": "Declarou ao TSE a ocupação de professora de ensino médio. Primeira candidatura registrada nos dados abertos do TSE.", "situacao": null, "situacao_em": null, "situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.", "sequencial": "60002533959", "suplentes": ["Emanuel Menezes", "Carlos Feitosa"], "foto": null, "foto_credito": null, "nascimento": "1988-08-17", "escolaridade": "Superior completo", "bens": null, "parlamentar": null, "mandatos": [], "cargos_exec": [], "cargos_repr": [], "areas_declaradas": [], "base_eleitoral": [], "obs_registro": [], "concorrentes": [], "contato": {"email": null, "email_fonte": null, "email_tipo": null, "instagram": null, "redes": []}, "programa_partido": {"tipo": "nenhum"}}}, "grade": {"t1": {"sen-ce-2026-reginaldo": [], "sen-ce-2026-luizianne": [], "sen-ce-2026-alcides-fernandes": [], "sen-ce-2026-lino-alves": [], "sen-ce-2026-guilherme-theophilo": [], "sen-ce-2026-cid-gomes": [], "sen-ce-2026-capitao-wagner": [], "sen-ce-2026-catarina-matos": []}, "t2": {"sen-ce-2026-reginaldo": [], "sen-ce-2026-luizianne": [], "sen-ce-2026-alcides-fernandes": [], "sen-ce-2026-lino-alves": [], "sen-ce-2026-guilherme-theophilo": [], "sen-ce-2026-cid-gomes": [], "sen-ce-2026-capitao-wagner": [], "sen-ce-2026-catarina-matos": []}, "t3": {"sen-ce-2026-reginaldo": [], "sen-ce-2026-luizianne": [], "sen-ce-2026-alcides-fernandes": [], "sen-ce-2026-lino-alves": [], "sen-ce-2026-guilherme-theophilo": [], "sen-ce-2026-cid-gomes": [], "sen-ce-2026-capitao-wagner": [], "sen-ce-2026-catarina-matos": []}, "t4": {"sen-ce-2026-reginaldo": [], "sen-ce-2026-luizianne": [], "sen-ce-2026-alcides-fernandes": [], "sen-ce-2026-lino-alves": [], "sen-ce-2026-guilherme-theophilo": [], "sen-ce-2026-cid-gomes": [], "sen-ce-2026-capitao-wagner": [], "sen-ce-2026-catarina-matos": []}, "t5": {"sen-ce-2026-reginaldo": [], "sen-ce-2026-luizianne": [], "sen-ce-2026-alcides-fernandes": [], "sen-ce-2026-lino-alves": [], "sen-ce-2026-guilherme-theophilo": [], "sen-ce-2026-cid-gomes": [], "sen-ce-2026-capitao-wagner": [], "sen-ce-2026-catarina-matos": []}, "t6": {"sen-ce-2026-reginaldo": [], "sen-ce-2026-luizianne": [], "sen-ce-2026-alcides-fernandes": [], "sen-ce-2026-lino-alves": [], "sen-ce-2026-guilherme-theophilo": [], "sen-ce-2026-cid-gomes": [], "sen-ce-2026-capitao-wagner": [], "sen-ce-2026-catarina-matos": []}, "t7": {"sen-ce-2026-reginaldo": [], "sen-ce-2026-luizianne": [], "sen-ce-2026-alcides-fernandes": [], "sen-ce-2026-lino-alves": [], "sen-ce-2026-guilherme-theophilo": [], "sen-ce-2026-cid-gomes": [], "sen-ce-2026-capitao-wagner": [], "sen-ce-2026-catarina-matos": []}, "t8": {"sen-ce-2026-reginaldo": [], "sen-ce-2026-luizianne": [], "sen-ce-2026-alcides-fernandes": [], "sen-ce-2026-lino-alves": [], "sen-ce-2026-guilherme-theophilo": [], "sen-ce-2026-cid-gomes": [], "sen-ce-2026-capitao-wagner": [], "sen-ce-2026-catarina-matos": []}, "t9": {"sen-ce-2026-reginaldo": [], "sen-ce-2026-luizianne": [], "sen-ce-2026-alcides-fernandes": [], "sen-ce-2026-lino-alves": [], "sen-ce-2026-guilherme-theophilo": [], "sen-ce-2026-cid-gomes": [], "sen-ce-2026-capitao-wagner": [], "sen-ce-2026-catarina-matos": []}, "t10": {"sen-ce-2026-reginaldo": [], "sen-ce-2026-luizianne": [], "sen-ce-2026-alcides-fernandes": [], "sen-ce-2026-lino-alves": [], "sen-ce-2026-guilherme-theophilo": [], "sen-ce-2026-cid-gomes": [], "sen-ce-2026-capitao-wagner": [], "sen-ce-2026-catarina-matos": []}}, "leg": {"t1": {}, "t2": {}, "t3": {}, "t4": {}, "t5": {}, "t6": {}, "t7": {}, "t8": {}, "t9": {}, "t10": {}}, "votos": [], "pesquisa": null, "respostas": [], "conhecimento": {"_o_que_e_isto": "Base de conhecimento do projeto: o que cada tipo de fonte pode e nao pode sustentar, e as regras de curadoria que ja foram violadas uma vez. Existe porque regra que mora na cabeca de quem pesquisa e violada na proxima sessao. Aqui ela e consultavel antes de escrever, cobravel pelo validador, e publicavel para o leitor conferir.", "_inspiracao": "Ideia tomada do AgentSpec (github.com/luanmorenommaciel/agentspec): raciocinio KB-first, consultar a base local antes de agir, com o porque de cada regra registrado. Adaptado de engenharia de dados para curadoria de acervo civico.", "_gerado_em": "2026-08-25", "tipos_de_fonte": {"cadastro": {"nome": "Cadastro de candidaturas", "o_que_e": "Base que lista quem se registrou: nome, partido, numero, bens declarados, escolaridade, suplentes. Espelho do registro eleitoral.", "sustenta": ["dados_cadastrais", "situacao_de_registro", "coligacao", "bens_declarados"], "nao_sustenta": ["proposta", "posicao_tematica", "enfase_de_campanha", "cargo_executivo_anterior"], "estados_permitidos": [], "porque": "Em 24/08/2026 a revisao humana reprovou 15 posicoes atribuidas a 'Base de candidaturas 2026 — SP'. O documento e um cadastro: nao contem proposta nenhuma. Nao foi erro de leitura, foi erro de ORIGEM — a fonte estruturalmente nao podia sustentar aquelas afirmacoes. O tipo dela no acervo era 'reportagem', e nada distinguia um cadastro de uma materia."}, "plano_tse": {"nome": "Plano ou programa registrado no TSE", "o_que_e": "Documento que o partido ou a candidatura protocolou na Justica Eleitoral.", "sustenta": ["proposta_do_partido", "posicao_tematica"], "nao_sustenta": ["proposta_propria_da_candidatura"], "estados_permitidos": ["B"], "porque": "Programa partidario cobre a candidatura por atribuicao ao PARTIDO, nunca como proposta pessoal — estado B, jamais A. Confundir os dois poe na boca da pessoa o que esta no programa da sigla.", "cuidado": "Candidatura ao Senado NAO precisa registrar plano de governo: a Lei 9.504/1997, art. 11, §1º, IX exige proposta so de Presidente, Governador e Prefeito. Todo plano no acervo e do partido, nao do candidato a senador."}, "programa_partidario": {"nome": "Programa partidario nao registrado", "o_que_e": "Material programatico publicado pelo partido fora do protocolo eleitoral.", "sustenta": ["proposta_do_partido"], "nao_sustenta": ["proposta_propria_da_candidatura"], "estados_permitidos": ["B"], "porque": "Material de campanha e documento protocolado na Justica Eleitoral nao valem o mesmo. As propostas mais radicais do MISSAO — extinguir a Justica do Trabalho, reserva de Bitcoin, expulsar ONGs internacionais — NAO estao no documento de 51 paginas registrado no TSE. Registrar sem essa distincao seria imputar ao registro o que so existe no material."}, "site_oficial": {"nome": "Site oficial da candidatura", "o_que_e": "Pagina publicada pela propria campanha.", "sustenta": ["declaracao_da_candidatura", "posicao_tematica"], "nao_sustenta": ["fato_verificado_por_terceiro"], "estados_permitidos": ["A"], "porque": "E fonte direta e NAO verificada: diz o que a candidatura afirma, nao o que se comprovou. Exige data de acesso, porque site de campanha muda sem aviso — na revisao de 24/08/2026, 12 de 18 posicoes de site oficial foram reprovadas, varias com a nota 'nao esta no site'."}, "api_dados_abertos": {"nome": "Dados abertos de casa legislativa", "o_que_e": "API da Camara, do Senado ou da Assembleia, com proposicoes, autorias, ementas e votos.", "sustenta": ["autoria_legislativa", "ementa", "voto_nominal", "mandato"], "nao_sustenta": ["proposta_de_campanha", "enfase_de_campanha", "cargo_executivo_anterior"], "estados_permitidos": ["A"], "porque": "A posicao p077 afirmava enfase de campanha e cargo ministerial citando a API da Camara, que traz atividade legislativa e nao sustenta nem uma coisa nem outra. Atividade legislativa e comportamento registrado; campanha e outra categoria.", "cuidado": "O link tem de ser da PROPOSICAO, nunca a raiz da API. Apontar para a raiz de um servico parece procedencia sem ser."}, "reportagem": {"nome": "Materia jornalistica", "o_que_e": "Texto de veiculo de imprensa sobre a candidatura.", "sustenta": ["declaracao_relatada", "fato_com_ressalva"], "nao_sustenta": ["proposta_registrada", "citacao_literal_de_documento"], "estados_permitidos": ["A", "B", "C"], "porque": "Foi a classe que mais falhou: 7 de 32 conferem, 22%. O modo de falhar mais grave e a TROCA DE CANDIDATO — as posicoes p058, p060 e p062 atribuiam ao Andre do Prado conteudo de uma materia sobre o Geraldo Rufino. Materia menciona varios candidatos no mesmo paragrafo, e a atribuicao se perde.", "exige": ["citacao_literal", "conferencia_do_nome_do_candidato_na_materia"]}, "entrevista": {"nome": "Entrevista ou sabatina", "o_que_e": "Declaracao falada, publicada por terceiro.", "sustenta": ["declaracao_da_candidatura"], "nao_sustenta": ["proposta_registrada"], "estados_permitidos": ["A"], "porque": "A sabatina da TMC com Soninha Francine teve 0 de 7 posicoes confirmadas. Resumo de cobertura de sabatina nao e a sabatina: a paráfrase do veiculo entra como se fosse fala da candidata.", "exige": ["citacao_literal"]}, "dataset_oficial": {"nome": "Dataset oficial do TSE", "o_que_e": "Arquivo de dados abertos publicado pela Justica Eleitoral.", "sustenta": ["dados_cadastrais", "contato_declarado", "rede_social_declarada", "prestacao_de_contas"], "nao_sustenta": ["proposta", "posicao_tematica"], "estados_permitidos": [], "porque": "Mesma natureza do cadastro: e registro, nao programa. Serve para contato e ficha, nunca para posicao."}}, "regras": [{"id": "R-FONTE-01", "titulo": "Cadastro nao sustenta proposta", "regra": "Posicao com estado A ou B nao pode ter como documento uma fonte de tipo cadastro ou dataset_oficial.", "porque": "15 posicoes reprovadas em 24/08/2026 por atribuir politica publica a um cadastro de candidaturas.", "verificacao": "mecanica", "onde": "validar.py"}, {"id": "R-FONTE-02", "titulo": "Programa de partido e estado B, nunca A", "regra": "Posicao cujo documento e plano_tse ou programa_partidario tem de ter estado B e atribuicao ao partido.", "porque": "Programa da sigla apresentado como proposta pessoal poe na boca da pessoa o que ela nao disse.", "verificacao": "mecanica", "onde": "validar.py"}, {"id": "R-FONTE-03", "titulo": "API legislativa nao sustenta campanha", "regra": "Posicao com documento api_dados_abertos so pode afirmar autoria, ementa, voto ou mandato.", "porque": "p077 afirmava enfase de campanha e cargo ministerial citando a API da Camara.", "verificacao": "humana", "onde": "revisao humana"}, {"id": "R-FONTE-04", "titulo": "Link e da proposicao, nao da raiz da API", "regra": "Posicao ou registro que cita casa legislativa precisa de URL da propria proposicao.", "porque": "12 posicoes apontavam para dadosabertos.camara.leg.br/api/v2 — a raiz do servico. Link que existe e nao leva a fonte parece procedencia sem ser.", "verificacao": "mecanica", "onde": "AINDA NAO COBRADA"}, {"id": "R-ESCOPO-01", "titulo": "Documento de outro estado nao vale para SP", "regra": "Documento com aplicavel_a_sp falso nao pode sustentar posicao nenhuma.", "porque": "O terceiro PDF da UP era do ESPIRITO SANTO, e quase entrou como se fosse de SP. Programas partidarios sao registrados por UF.", "verificacao": "mecanica", "onde": "validar.py"}, {"id": "R-REDACAO-01", "titulo": "Parafrase sem citacao literal deriva", "regra": "Posicao de fonte oficial sem citacao_literal exige conferencia palavra a palavra na revisao.", "porque": "Numa posicao do programa da UP, 'controle estatal dos precos dos alimentos' virou 'congelamento do preco dos alimentos com controle da cadeia produtiva' — outra politica, e 'cadeia produtiva' nao aparece no documento. Era a unica das seis amostradas sem citacao literal.", "verificacao": "mecanica", "onde": "validar.py (aviso) e revisar.py"}, {"id": "R-AUTORIA-01", "titulo": "Ser um dos autores nao e ser o autor", "regra": "Autoria com total_autores maior que 1 exige ordem_autoria registrada.", "porque": "Das 148 materias de Simone Tebet, as PECs tem em media 33,8 autores e ela e primeira em 1. PEC no Senado exige 27 assinaturas: coautoria nao e iniciativa.", "verificacao": "mecanica", "onde": "validar.py"}, {"id": "R-AUSENCIA-01", "titulo": "Ausencia tem quatro tipos e nunca se colapsam", "regra": "A = proposta propria, B = proposta do partido, C = nao aborda o tema, D = nao localizamos fonte. D e afirmacao sobre a NOSSA busca e exige data e escopo.", "porque": "Dizer 'nao tem proposta' quando a verdade e 'nao encontramos' transfere para a candidatura uma falha nossa.", "verificacao": "mecanica", "onde": "validar.py"}, {"id": "R-AUSENCIA-02", "titulo": "Silencio nao vira posicao", "regra": "Pergunta enviada ao gabinete e nao respondida registra-se como pergunta feita, com a data, nunca como posicao ou recusa.", "porque": "A mensagem enviada promete isso ao gabinete. E interpretar silencio e inventar.", "verificacao": "humana", "onde": "revisao humana"}, {"id": "R-AUSENCIA-03", "titulo": "Zero declarado nao e zero arrecadado", "regra": "Valor ausente em janela parcial de prestacao de contas registra-se como nao declarado, jamais como zero.", "porque": "Em 24/08/2026, 9 das 15 candidaturas apareciam com R$ 0,00 porque a janela parcial ainda estava aberta. Publicar zero seria afirmacao falsa com aparencia de dado oficial.", "verificacao": "humana", "onde": "revisao humana"}, {"id": "R-PRIVACIDADE-01", "titulo": "CPF e titulo eleitoral nunca saem", "regra": "Nenhum arquivo do repositorio publico contem CPF ou titulo eleitoral, mesmo sendo dado publico no TSE.", "porque": "Publico na origem nao autoriza republicacao: a agregacao e o que facilita o mau uso. Em 24/08/2026 um zip com 1.188 CPFs de doadores foi commitado por engano e precisou de reescrita de historico.", "verificacao": "mecanica", "onde": "validar.py e .gitignore"}, {"id": "R-PRIVACIDADE-02", "titulo": "Contato so de fonte oficial", "regra": "E-mail e rede social entram apenas de dados abertos oficiais, nunca de busca ou raspagem.", "porque": "Contato errado manda o eleitor escrever para um estranho, e o erro cai sobre quem escreveu.", "verificacao": "humana", "onde": "revisao humana"}, {"id": "R-PRIVACIDADE-03", "titulo": "Remetente de resposta so e publicado se ja era publico", "regra": "Endereco de quem responde publica-se apenas quando coincide com o contato oficial registrado; nos demais casos, so o dominio.", "porque": "Assessor que responde do e-mail proprio nao vira dado publicado por efeito colateral de ter respondido.", "verificacao": "mecanica", "onde": "agente/promover.py"}, {"id": "R-NEUTRALIDADE-01", "titulo": "Sem placar, sem ranking, sem contador de completude", "regra": "A camada publica nao expoe contagem de propostas por candidatura, barra de progresso nem ordenacao por quantidade de conteudo.", "porque": "Mediria verba de campanha e cobertura de imprensa, nao qualidade de candidatura. Candidatura com assessoria ocupa mais espaco por razoes alheias ao que o eleitor avalia. Uma tabela que mostra o que existe e informacao; um numero que ordena candidatos e veredito nosso vestido de medicao.", "verificacao": "mecanica", "onde": "validar.py (aviso) e gerar_site.py"}, {"id": "R-NEUTRALIDADE-02", "titulo": "Ordem sempre por numero de urna", "regra": "Toda listagem de candidaturas sai em ordem de numero de urna, e o site diz que a ordem nao expressa relevancia.", "porque": "Qualquer outra ordem e uma opiniao disfarçada de criterio.", "verificacao": "mecanica", "onde": "gerar_site.py"}, {"id": "R-IA-01", "titulo": "Recuperacao vazia nao chama o modelo", "regra": "Quando a busca no acervo nao retorna nada, o resumo por IA nao e gerado. A resposta e 'nao ha no acervo', escrita pelo site.", "porque": "E onde um chatbot inventaria: modelo de linguagem odeia dizer 'nao sei'.", "verificacao": "mecanica", "onde": "_template_site.html e agente/worker.js"}, {"id": "R-IA-02", "titulo": "Resumo e auditado antes de aparecer", "regra": "Todo resumo passa por conferencia mecanica (citacoes existem, nenhum nome fora do lote) e por auditoria de um segundo modelo contra as linhas de origem. Reprovado nao chega na tela.", "porque": "Proibir no prompt nao e impedir, e trocar de quem e a proposta e erro que o leitor nao tem como perceber.", "verificacao": "mecanica", "onde": "agente/worker.js, testada em agente/teste-travas.mjs"}, {"id": "R-IA-03", "titulo": "Pesquisa na internet e para curadoria, nunca para o leitor", "regra": "A busca web devolve FONTES COM LINK para conferencia humana, e nunca texto redigido para o visitante.", "porque": "Contra vinte reportagens onde cinco candidatos aparecem no mesmo paragrafo, trocar de quem e a proposta deixa de ser risco e vira o modo normal de falhar. E a auditoria, que funciona comparando com linhas limpas, fica sem contra o que comparar.", "verificacao": "humana", "onde": "agente/worker.js (rota protegida por token)"}, {"id": "R-REVISAO-01", "titulo": "So pessoa marca revisado", "regra": "O campo revisado_por_humano so e escrito na tela de revisao, por quem faz a curadoria, ao confirmar contra a fonte. Conferencia automatica vive em campo separado.", "porque": "Marcar como revisado o que a IA conferiu faria o dado mentir sobre si mesmo.", "verificacao": "mecanica", "onde": "revisar.py"}, {"id": "R-REVISAO-02", "titulo": "Reprovado sai do site e fica no acervo", "regra": "Posicao reprovada na revisao e excluida da publicacao e mantida em posicoes.json com a nota de quem reprovou.", "porque": "Erro apagado e erro que volta. Sai a publicacao, nao o registro.", "verificacao": "mecanica", "onde": "gerar_site.py"}, {"id": "R-FONTE-05", "titulo": "Autoria legislativa nao vira posicao em prosa", "regra": "Autoria de proposicao vive em registros_legislativos, um registro por proposicao, cada um com o link da propria ficha. Nao entra como posicao que empacota varias proposicoes num texto so.", "porque": "Doze posicoes empacotavam de 2 a 4 proposicoes num paragrafo e apontavam para a raiz da API da Camara, porque nao existe URL que abra quatro fichas. Onze foram reprovadas na revisao de 25/08/2026, todas com a mesma nota: 'o link da fonte nao procede'. Nao era link errado, era modelo que nao podia funcionar — e o registro legislativo ja estava modelado certo em outro lugar, com uma ficha por proposicao.", "verificacao": "mecanica", "onde": "validar.py"}, {"id": "R-ESCOPO-02", "titulo": "Programa registrado para outro cargo exige escopo declarado", "regra": "Posicao derivada de documento cujo cargo_registrado e diferente do cargo da candidatura precisa ter o campo escopo preenchido, dizendo de qual candidatura o documento e.", "porque": "A revisao humana reprovou 11 posicoes por apontarem um programa assinado por outra candidatura. Estava certa. Tres dos quatro programas registrados no TSE sao de candidatura PRESIDENCIAL — UP, PCB e MISSAO, 35 posicoes ao todo — exibidos no contexto de candidaturas ao Senado. A atribuicao ao partido estava certa; o que faltava era dizer isso ao leitor, que ao clicar encontra um plano de governo de outra candidatura e nao entende. O campo escopo ja existia no modelo e estava vazio nas 35: nao faltava estrutura, faltava preencher.", "verificacao": "mecanica", "onde": "validar.py"}, {"id": "R-ESCOPO-03", "titulo": "Programa de uma candidatura nao cobre outra", "regra": "Documento com assinatura 'candidatura' so sustenta posicoes daquela candidatura. Para as demais do mesmo partido, nao serve — nem com escopo declarado. Programa com assinatura 'partido' cobre as candidaturas da sigla, no estado B.", "porque": "Criterio estabelecido pela revisao humana, que aprovou 7 de 9 posicoes do programa do MISSAO e 6 de 8 do PCB, ambos registrados para a candidatura presidencial, e reprovou 20 de 20 do programa da UP. Nao rejeitou a categoria: rejeitou um documento cujo titulo nomeia a candidatura no lugar do partido ('Programa Unidade Popular / Samara Martins 80') e cujo texto e personalizado do inicio ao fim. Programa do partido e o partido falando; programa de uma candidatura fala por ela e por mais ninguem.", "verificacao": "mecanica", "onde": "validar.py"}]}, "selos": {"oficial": {"nome": "Oficial", "def": "Extraído direto do documento oficial registrado no TSE.", "eixo": "verificacao_por_terceiro"}, "verificada": {"nome": "Verificada", "def": "Reportagem que coletou e conferiu o texto contra o documento oficial.", "eixo": "verificacao_por_terceiro"}, "secundaria": {"nome": "Secundária", "def": "Terceiro resumindo, não conferido contra o documento original. Provisória.", "eixo": "verificacao_por_terceiro"}, "declaracao_candidato": {"nome": "Declaração do candidato", "def": "O que o próprio candidato ou partido publica ou diz: site oficial, entrevista, discurso, programa partidário. Fonte direta; ninguém conferiu.", "eixo": "fora_da_escala"}, "registro_legislativo": {"nome": "Registro legislativo", "def": "Voto, autoria ou relatoria, vindos de dados abertos da Câmara, do Senado ou da ALESP. Comportamento registrado, não promessa.", "eixo": "fora_da_escala"}}, "totais": {"posicoes": 0, "revisadas": 0, "reprovadas": 0, "levantadas": 0}, "uf": {"sigla": "CE", "nome": "Ceará", "preposicao": "do", "por": "pelo Ceará", "assembleia": "Assembleia Legislativa do Estado do Ceará"}, "site_url": "https://kvgs.github.io/senado-2026/"};
+const CLS={oficial:'d-oficial',verificada:'d-verificada',secundaria:'d-secundaria',
+  declaracao_candidato:'d-declaracao',registro_legislativo:'d-registro'};
+const esc=s=>{const d=document.createElement('div');d.textContent=s==null?'':String(s);return d.innerHTML;};
+const dataBR=s=>s?s.slice(8,10)+'/'+s.slice(5,7)+'/'+s.slice(0,4):'';
+
+document.getElementById('atualizado').textContent=D.atualizado;
+
+/* ---------- aviso de revisao ---------- */
+(function(){
+  const t=D.totais,el=document.getElementById('aviso');
+  /* Tres estados, nao dois. Dizer so "N de M revisadas" esconderia o que a
+     revisao encontrou — e o que ela encontrou e a informacao mais util que este
+     site tem sobre a propria confiabilidade. */
+  const falta=t.posicoes-t.revisadas;
+  /* Tres estados, e nao dois. O texto anterior dizia "revisão em andamento"
+     mesmo depois de a revisão ter terminado — um site que cobra procedência de
+     todo mundo não pode descrever errado o próprio estado. */
+  let h;
+  if(!t.revisadas){
+    h='<b>Rascunho de trabalho.</b> Nenhuma das '+t.posicoes+' informações desta página passou '+
+      'por revisão humana ainda. Não use como referência para decidir voto. ';
+  } else if(falta){
+    h='<b>Revisão em andamento.</b> '+t.revisadas+' de '+t.posicoes+' informações desta página '+
+      'já foram conferidas por uma pessoa contra a fonte original; as outras '+falta+
+      ' aparecem marcadas como <em>não revisado</em>, uma a uma. ';
+  } else {
+    h='<b>Tudo nesta página foi conferido.</b> As '+t.posicoes+' informações publicadas foram '+
+      'lidas uma a uma contra a fonte original por uma pessoa. ';
+  }
+  if(t.reprovadas){
+    h+='Outras '+t.reprovadas+' foram levantadas, reprovadas na revisão e <strong>retiradas '+
+       'daqui</strong> — a fonte não sustentava o que estava escrito. Ficam registradas nos '+
+       'dados abertos do projeto, com o motivo, porque erro escondido é erro que volta.';
+  }
+  if(falta) h+=' Enquanto a revisão não termina, confira na fonte antes de usar como referência.';
+  else h+=' Cada informação continua trazendo a fonte e o selo de origem, para você conferir.';
+  el.innerHTML=h;
+})();
+
+/* ---------- controle de tema ---------- */
+(function(){
+  const caixa = document.querySelector('.tema');
+  if(!caixa) return;
+
+  /* "auto" nao e um terceiro tema: e a AUSENCIA de escolha, que devolve o
+     controle ao sistema operacional de quem visita. Por isso remove o atributo
+     em vez de escrever um valor. */
+  function aplicar(v){
+    if(v === 'auto') document.documentElement.removeAttribute('data-theme');
+    else document.documentElement.setAttribute('data-theme', v);
+    caixa.querySelectorAll('button').forEach(function(b){
+      b.setAttribute('aria-pressed', b.dataset.tema === v ? 'true' : 'false');
+    });
+    try{
+      if(v === 'auto') localStorage.removeItem('tema');
+      else localStorage.setItem('tema', v);
+    }catch(x){ /* armazenamento bloqueado: vale para a sessao e pronto */ }
+  }
+
+  let atual = 'auto';
+  try{
+    const g = localStorage.getItem('tema');
+    if(g === 'dark' || g === 'light') atual = g;
+  }catch(x){}
+  aplicar(atual);
+
+  caixa.addEventListener('click', function(e){
+    const b = e.target.closest('button[data-tema]');
+    if(b) aplicar(b.dataset.tema);
+  });
+})();
+
+/* ---------- pedacos reutilizaveis ---------- */
+function retrato(c){
+  /* Alt descreve o que a imagem E, nao so quem aparece: e foto de registro
+     eleitoral, nao retrato de campanha, e a diferenca importa para quem le por
+     leitor de tela tanto quanto para quem ve. */
+  if(c.foto) return '<span class="retrato"><img src="'+esc(c.foto)+'" loading="lazy" '+
+    'alt="Foto de registro da candidatura de '+esc(c.nome)+'"></span>';
+  return '<span class="retrato" role="img" aria-label="Sem foto disponível para '+esc(c.nome)+'">'+esc(c.iniciais)+'</span>';
+}
+function fonteLinha(i){
+  const s=D.selos[i.selo]||{nome:i.selo};
+  let h='<p class="fonte"><span class="selo"><span class="dot '+(CLS[i.selo]||'')+'" aria-hidden="true"></span>'+esc(s.nome)+'</span>';
+  h+= i.url ? '<span>Fonte: <a href="'+esc(i.url)+'" target="_blank" rel="noopener">'+esc(i.fonte)+
+              ' <span class="vis-oculto">(abre em nova aba)</span></a></span>'
+            : '<span>Fonte: '+esc(i.fonte)+'</span>';
+  h+='<span class="mono">Referência: '+esc(dataBR(i.data))+'</span>';
+  if(i.ressalva) h+='<span class="ress">Ressalva: '+esc(i.ressalva)+'</span>';
+  return h+'</p>';
+}
+/* Coletor: enquanto vale um array, toda proposta RENDERIZADA e registrada nele.
+   Assim o que vai para o modelo e exatamente o que esta na tela, sem uma segunda
+   travessia da grade que poderia divergir da primeira. Fora da aba Perguntar
+   vale null e nada acontece. */
+let COLETA=null;
+
+function proposta(i){
+  if(COLETA) COLETA.push(i);
+  let h='<div class="prop"><p class="quem">';
+  h+= i.de_partido ? '<span class="part">Proposta do '+esc(i.partido)+', não da candidatura</span>'
+                   : '<span>Proposta própria</span>';
+  if(!i.revisado) h+='<span class="nrev">não revisado</span>';
+  h+='</p>';
+  if(i.citacao) h+='<blockquote>“'+esc(i.citacao)+'”</blockquote>';
+  if(i.texto)   h+='<p class="txt">'+esc(i.texto)+'</p>';
+  if(i.escopo)  h+='<p class="escopo"><strong>Escopo desta posição:</strong> '+esc(i.escopo)+'</p>';
+  return h+fonteLinha(i)+'</div>';
+}
+/* Indice das respostas por candidatura, e por candidatura+tema. Resposta sem
+   tema classificado NAO some: aparece no perfil, que e o lugar onde ninguem
+   precisa adivinhar a gaveta certa. */
+const RESPOSTAS=(D.respostas||[]);
+const RESP_CAND={}, RESP_TEMA={};
+for(const r of RESPOSTAS){
+  (RESP_CAND[r.id_candidatura]=RESP_CAND[r.id_candidatura]||[]).push(r);
+  if(r.id_tema){
+    const k=r.id_candidatura+'|'+r.id_tema;
+    (RESP_TEMA[k]=RESP_TEMA[k]||[]).push(r);
+  }
+}
+
+function blocoResposta(r){
+  const c=D.candidatos[r.id_candidatura]||{};
+  const canal={email:'por e-mail', instagram:'por mensagem no Instagram', outro:'por outro canal'}[r.canal]
+              || 'por outro canal';
+  let h='<div class="resposta"><h4>'+
+    '<span class="selo"><span class="dot d-declaracao" aria-hidden="true"></span>'+
+    'Resposta da candidatura ao nosso projeto</span>'+
+    '<span class="quando">recebida '+esc(canal)+' em '+esc(dataBR(r.recebida_em))+'</span></h4>';
+
+  if(r.perguntas_que_responde && r.perguntas_que_responde.length){
+    h+='<div class="motivo">Perguntamos porque leitores do site pediram:<ul>'+
+       r.perguntas_que_responde.map(function(x){
+         return '<li>“'+esc(x.pergunta)+'”</li>';}).join('')+'</ul></div>';
+  }
+
+  h+='<div class="integra">'+esc(r.texto)+'</div>';
+
+  h+='<p class="proc"><span>Texto publicado na íntegra, sem edição nem resumo.</span>'+
+     '<span>Origem: '+esc(r.remetente || r.remetente_dominio || 'não registrada')+'</span>';
+  if(!r.revisado_por_humano) h+='<span class="nrev">não revisado</span>';
+  h+='</p>';
+
+  if(!r.confere_com_contato_oficial){
+    h+='<p class="alerta-proc"><strong>Sobre a origem.</strong> Este endereço não é o contato '+
+       'oficial que temos registrado para '+esc(c.nome||'esta candidatura')+'. Assessorias '+
+       'costumam responder do próprio e-mail, então isso não indica problema — mas quem lê tem '+
+       'direito de saber a diferença entre uma resposta vinda do endereço registrado e uma vinda '+
+       'de outro.</p>';
+  }
+  return h+'</div>';
+}
+
+/* Por que nao ha proposta. Tres casos reais, escolhidos pelos dados — a frase
+   generica "o partido nao registrou programa" seria FALSA para as duas
+   candidaturas da UP, cujo partido registrou um programa assinado pela
+   candidatura da Samara Martins a Presidencia. */
+/* Uma vez no perfil, e so para as candidaturas sem NENHUMA proposta no acervo.
+   Diz duas coisas na mesma respiracao: por que falta, e o que existe no lugar —
+   porque a assimetria e inversa, e nao um buraco. Quem nao tem proposta tende a
+   ter historico legislativo; quem tem programa registrado tende a nao ter
+   mandato. Mostrar so a metade que falta seria retrato torto. */
+function blocoSemProposta(cid){
+  const c=D.candidatos[cid]||{}, pp=c.programa_partido||{tipo:'nenhum'};
+  const temProposta=D.temas.some(function(t){
+    return ((D.grade[t.id]||{})[cid]||[]).some(function(i){return i.estado==='A'||i.estado==='B';});
+  });
+  if(temProposta) return '';
+
+  const nLeg=D.temas.filter(function(t){ return ((D.leg[t.id]||{})[cid]||[]).length>0; }).length;
+  const nVoto=D.votos.filter(function(v){ return v.cand===cid; }).length;
+
+  let h='<div class="sem-proposta"><h3>Não há proposta de campanha nesta candidatura</h3>'+
+        '<p>Candidaturas ao Senado <strong>não precisam registrar plano de governo no TSE</strong> — '+
+        'a lei exige isso só de Presidente, Governador e Prefeito. Quando há proposta aqui, '+
+        'ela veio de programa partidário registrado ou de material próprio que passou na revisão. ';
+  if(pp.tipo==='de_outra_candidatura'){
+    h+='O '+esc(c.partido)+' registrou programa no TSE, mas assinado por '+
+       esc(pp.assinado_por||'outra candidatura')+
+       (pp.url?' (<a href="'+esc(pp.url)+'" target="_blank" rel="noopener">ver o documento'+
+               '<span class="vis-oculto"> (abre em nova aba)</span></a>)':'')+
+       ' — ele fala por aquela candidatura, e não por esta.';
+  } else if(pp.tipo==='do_partido'){
+    h+='O material localizado para esta candidatura não passou na revisão: a fonte não '+
+       'sustentava o que estava escrito.';
+  } else {
+    h+='O '+esc(c.partido)+' não registrou programa partidário nesta eleição.';
+  }
+  h+='</p>';
+
+  if(nLeg||nVoto){
+    h+='<p><strong>O que esta candidatura tem no acervo é registro legislativo.</strong> '+
+       (nLeg?'Proposições apresentadas em '+nLeg+' tema'+(nLeg>1?'s':''):'')+
+       (nLeg&&nVoto?' e ':'')+
+       (nVoto?nVoto+' voto'+(nVoto>1?'s':'')+' em plenário':'')+
+       '. É o que já fez, não o que promete — e informa mais que promessa de campanha.</p>';
+    /* A licenca vem JUNTO da contagem, e nao numa secao adiante. E regra gravada
+       no proprio dado (_regra em parlamentar): numero de proposicoes lido sem ela
+       vira comparacao de volume entre quem esteve no plenario e quem estava num
+       ministerio — que mede presenca, e nao trabalho. */
+    const m=(c.parlamentar||{}).motivo_afastamento_anterior;
+    if(m){
+      h+='<p><strong>Leia esse número com esta ressalva:</strong> '+
+         esc(m.charAt(0).toLowerCase()+m.slice(1))+
+         ', e voltou ao exercício em '+esc(dataBR(c.parlamentar.desde))+'. '+
+         'Produção legislativa menor no período reflete ausência formal do parlamento, '+
+         'não inatividade — e não é comparável com a de quem esteve em exercício o mandato inteiro.</p>';
+    }
+  } else if((c.parlamentar||{}).casa==='alesp'){
+    /* Andre do Prado preside a ALESP e tem registro legislativo farto — que nos
+       nao coletamos. Dizer "nao ha registro" seria afirmar sobre ele o que e
+       verdade sobre a nossa coleta. */
+    h+='<p><strong>Há registro legislativo, mas fora do nosso alcance.</strong> '+
+       'Esta candidatura exerce mandato na '+esc(D.uf.assembleia)+', e a nossa '+
+       'coleta de proposições e votos cobre apenas a Câmara dos Deputados e o Senado. '+
+       'A ausência aqui é da nossa busca, não do trabalho legislativo dela.</p>';
+  } else {
+    h+='<p><strong>Também não localizamos registro legislativo.</strong> Buscamos '+
+       'proposições e votos na Câmara dos Deputados e no Senado, que é o que nossa coleta '+
+       'cobre — mandato em câmara municipal ou assembleia estadual não entra. '+
+       'Ficha, bens e coligação abaixo são o que o registro no TSE fornece.</p>';
+  }
+  return h+'</div>';
+}
+
+function corpoTema(cid,tid){
+  const itens=(D.grade[tid]&&D.grade[tid][cid])||[];
+  const reais=itens.filter(i=>i.estado==='A'||i.estado==='B');
+  const cs=itens.filter(i=>i.estado==='C'), ds=itens.filter(i=>i.estado==='D');
+  let h='';
+  if(reais.length) h+=reais.map(proposta).join('');
+  else if(ds.length) h+='<p class="ausente nao-achou"><b>Não localizamos fonte.</b> Busca feita em '+
+       esc(dataBR(ds[0].busca_em))+'. '+esc(ds[0].busca_escopo)+
+       ' Isto é uma afirmação sobre a nossa busca, não sobre a candidatura.</p>';
+  else if(cs.length){
+    h+='<p class="ausente"><b>Não aborda este tema.</b> '+esc(cs[0].texto)+'</p>';
+    if(cs[0].ressalva) h+='<p class="ausente" style="margin-top:7px;font-size:.86rem;color:var(--s-verificada)"><strong>Ressalva:</strong> '+esc(cs[0].ressalva)+'</p>';
+  }
+  else h+='<p class="ausente">Este cruzamento ainda não foi trabalhado. Diferente de “não aborda” '+
+          'e de “não localizamos”.</p>';
+
+  /* Se nao houve proposta mas HA registro legislativo ou voto, a celula nao pode
+     ler como vazia: o que existe vale tanto quanto o que falta, e comportamento
+     registrado informa mais que promessa. */
+  const temLeg=((D.leg[tid]||{})[cid]||[]).length>0;
+  const temVoto=D.votos.some(function(v){ return v.cand===cid&&v.temas.indexOf(tid)>=0; });
+  if(!reais.length&&(temLeg||temVoto)){
+    h+='<p class="porque-vazio">O que esta candidatura tem neste tema é '+
+       '<strong>registro legislativo, logo abaixo</strong> — o que já propôs ou votou. '+
+       'É comportamento registrado, e não promessa de campanha.</p>';
+  }
+
+  const ls=(D.leg[tid]||{})[cid]||[];
+  if(ls.length){
+    h+='<div class="bloco-leg"><h4><span class="dot d-registro" aria-hidden="true"></span>'+
+       'Registro legislativo — o que já propôs, não o que promete</h4><ul>';
+    for(const l of ls){
+      let a='';
+      if(l.total_autores&&l.total_autores>1)
+        a='<span class="aut">'+esc(l.ordem_autoria)+'º de '+esc(l.total_autores)+' autores.</span> ';
+      /* O rotulo vira link para a ficha da propria proposicao. Sem link quando a
+         ementa nao conferiu com a da casa legislativa: apontar para a proposicao
+         errada seria pior que nao apontar. */
+      const rot = l.url
+        ? '<a class="rot" href="'+esc(l.url)+'" target="_blank" rel="noopener">'+esc(l.rotulo)+
+          ' <span class="vis-oculto">(abre a ficha de tramitação em nova aba)</span></a>'
+        : '<span class="rot">'+esc(l.rotulo)+'</span>';
+      h+='<li>'+rot+'<span>'+a+esc(l.ementa)+'</span></li>';
+    }
+    h+='</ul></div>';
+  }
+  for(const v of D.votos.filter(v=>v.cand===cid&&v.temas.includes(tid))){
+    /* Quantas vezes a mesma pergunta foi votada com esse voto. "Votou Nao nas
+       duas" e informacao; achatar em um voto so apagaria a repeticao. */
+    const vezes = v.ocorrencias>1 ? ' <em>(votou assim nas '+esc(v.ocorrencias)+' vezes em que esta pergunta foi votada na sessão)</em>' : '';
+    h+='<p class="voto"><b>Voto registrado:</b> '+esc(v.voto)+' — '+esc(v.pergunta)+vezes+
+       ' ('+esc(v.proposicao)+', '+esc(dataBR(v.data))+').';
+    if(v.cuidado) h+='<br><strong>Atenção:</strong> '+esc(v.cuidado);
+    h+='</p>';
+  }
+  /* Resposta vem por ultimo na celula: e a informacao mais recente e a mais
+     direta da candidatura, mas nao substitui o que ja estava documentado. */
+  for(const r of (RESP_TEMA[cid+'|'+tid]||[])) h+=blocoResposta(r);
+  return h;
+}
+
+/* ---------- aba: como e feito ---------- */
+(function(){
+  const alvo=document.getElementById('saida-metodo');
+  const kb=D.conhecimento;
+  if(!alvo) return;
+  if(!kb){ alvo.innerHTML='<p class="met-intro">Base de regras indisponível.</p>'; return; }
+
+  const lista=function(a){ return (a||[]).join(' · ').replace(/_/g,' '); };
+
+  let h='<p class="met-intro">Toda informação deste site vem de uma fonte, e nem toda fonte '+
+        'sustenta qualquer tipo de afirmação. Um cadastro de candidaturas registra com precisão '+
+        'o partido de alguém, e simplesmente não contém o que essa pessoa propõe. Esta página '+
+        'publica as regras que decidem o que entra — e o caso real que obrigou cada uma delas.</p>';
+
+  h+='<h3 style="margin-top:34px">O que cada tipo de fonte sustenta</h3>';
+  h+='<ul class="met-tipos">';
+  for(const chave of Object.keys(kb.tipos_de_fonte)){
+    const f=kb.tipos_de_fonte[chave];
+    h+='<li><h3>'+esc(f.nome)+'<span class="chave">'+esc(chave)+'</span></h3>'+
+       '<p class="oq">'+esc(f.o_que_e)+'</p><dl>'+
+       '<dt>Sustenta</dt><dd>'+esc(lista(f.sustenta))+'</dd>'+
+       '<dt class="nao">Não sustenta</dt><dd>'+esc(lista(f.nao_sustenta))+'</dd>'+
+       '</dl>'+
+       (f.cuidado?'<p class="cuidado"><strong>Cuidado:</strong> '+esc(f.cuidado)+'</p>':'')+
+       '</li>';
+  }
+  h+='</ul>';
+
+  /* Agrupa pelo que importa ao leitor: existe algo impedindo a violacao, ou nao. */
+  const cobradas=kb.regras.filter(function(r){
+    return r.onde && r.onde!=='revisao humana' && r.onde!=='AINDA NAO COBRADA'; });
+  const humanas=kb.regras.filter(function(r){ return r.onde==='revisao humana'; });
+  const sem=kb.regras.filter(function(r){ return r.onde==='AINDA NAO COBRADA'; });
+
+  const grupo=function(titulo,nota,regras){
+    if(!regras.length) return '';
+    let g='<h3 style="margin-top:34px">'+esc(titulo)+' <span class="chave">'+regras.length+'</span></h3>';
+    if(nota) g+='<p class="met-nota">'+nota+'</p>';
+    g+='<ul class="met-regras">';
+    for(const r of regras){
+      g+='<li><span class="rid">'+esc(r.id)+'</span><h4>'+esc(r.titulo)+'</h4>'+
+         '<p class="oq">'+esc(r.regra)+'</p>'+
+         '<p class="pq"><strong>Por que esta regra existe:</strong> '+esc(r.porque)+'</p></li>';
+    }
+    return g+'</ul>';
+  };
+
+  h+=grupo('Regras que o código impede',
+    'Estas não dependem de ninguém lembrar: o programa que monta o site recusa os dados '+
+    'em vez de avisar.', cobradas);
+  h+=grupo('Regras que dependem de julgamento',
+    'Não dá para cobrar em código sem produzir erro falso, e um verificador que grita errado '+
+    'acaba desligado. Estas são conferidas na revisão, informação por informação.', humanas);
+  h+=grupo('Regras ainda sem cobrança',
+    'Estão publicadas aqui justamente por não terem verificação automática. Regra sem '+
+    'cobrança é lembrete — e lembrete é o que falhou antes.', sem);
+
+  h+='<p class="met-nota" style="margin-top:30px">Esta página é <strong>gerada</strong> a partir '+
+     'do mesmo arquivo de regras que o verificador do projeto usa. Não existe versão “para '+
+     'mostrar” diferente da versão que roda: página de metodologia escrita à mão envelhece em '+
+     'silêncio e passa a descrever um processo que já não existe.</p>';
+
+  alvo.innerHTML=h;
+})();
+
+/* ---------- aba: candidatos ---------- */
+(function(){
+  const ul=document.getElementById('lista-cands');
+  ul.innerHTML=D.ordem.map(cid=>{
+    const c=D.candidatos[cid];
+    /* Cabecalho e corpo em blocos separados: layout nao consegue separar o que a
+       marcacao juntou, e era isso que colava o numero na foto. */
+    return '<li class="card">'+
+      '<div class="cabeca-cand">'+retrato(c)+
+        '<div class="quem-id">'+
+          '<span class="urna">'+esc(c.numero)+'</span>'+
+          '<h3>'+esc(c.nome)+'</h3>'+
+          /* Nome de urna e o titulo, porque e o que aparece na urna quando o
+             eleitor digita o numero. O completo entra embaixo quando difere —
+             "Salles" sozinho e o nome registrado, mas nao e reconhecivel. */
+          /* Comparacao direta: os dois campos vem do mesmo registro do TSE, entao
+             ou sao identicos ou sao diferentes de verdade. (nrm() ainda nao
+             existe neste ponto do arquivo — e const declarada mais abaixo.) */
+          (c.completo && c.completo!==c.nome
+            ? '<span class="completo">'+esc(c.completo)+'</span>' : '')+
+          '<span class="part">'+esc(c.partido)+'</span>'+
+        '</div>'+
+      '</div>'+
+      '<div class="corpo-cand">'+
+        /* O nome completo ja aparece no cabecalho quando difere; repetir aqui
+           gastaria uma linha dizendo o que a pessoa acabou de ler. */
+        '<p class="meta">'+esc(c.partido_nome)+
+        (c.coligacao?' · Coligação '+esc(c.coligacao):' · Sem coligação')+'</p>'+
+        '<p class="bio">'+esc(c.bio)+'</p>'+
+        '<p class="meta">Situação do registro: <strong>'+esc(c.situacao)+'</strong>, observada em '+
+        esc(dataBR(c.situacao_em))+'. Suplentes: '+esc(c.suplentes.join(', ')||'não informados')+'.</p>'+
+        '<button class="link-perfil" data-perfil="'+cid+'" type="button">Ver perfil completo de '+
+        esc(c.nome)+' &rarr;</button>'+
+      '</div></li>';
+  }).join('');
+})();
+
+/* ---------- aba: por tema ---------- */
+function preencheSelects(){
+  const opts=D.temas.map(t=>'<option value="'+t.id+'">'+esc(t.nome)+'</option>').join('');
+  document.getElementById('sel-tema').innerHTML=opts;
+  document.getElementById('sel-tema-comp').innerHTML=opts;
+}
+function renderTema(){
+  const tid=document.getElementById('sel-tema').value;
+  const nome=D.temas.find(t=>t.id===tid).nome;
+  const comConteudo=D.ordem.filter(cid=>{
+    const its=(D.grade[tid][cid]||[]);
+    return its.some(i=>i.estado==='A'||i.estado==='B')||((D.leg[tid]||{})[cid]);
+  }).length;
+  /* Duas contagens, e nao uma: contar so proposta apagava as candidaturas que
+     tem registro legislativo e nenhuma proposta — que sao justamente as maiores. */
+  const comProp=D.ordem.filter(function(cid){
+    return (D.grade[tid][cid]||[]).some(function(i){return i.estado==='A'||i.estado==='B';});
+  }).length;
+  const comLeg=D.ordem.filter(function(cid){
+    return (((D.leg[tid]||{})[cid]||[]).length>0) ||
+           D.votos.some(function(v){ return v.cand===cid&&v.temas.indexOf(tid)>=0; });
+  }).length;
+  let h='<p style="margin-top:20px;color:var(--muted);font-size:.93rem">Em <strong>'+esc(nome)+
+        '</strong>: '+comProp+' das 15 candidaturas têm proposta registrada e '+comLeg+
+        ' têm registro legislativo — projeto apresentado ou voto em plenário. '+
+        'São coisas diferentes, e uma não substitui a outra.</p>';
+  h+='<ul class="lista">'+D.ordem.map(cid=>{
+    const c=D.candidatos[cid];
+    return '<li class="card"><div class="card-top" style="padding-bottom:13px">'+retrato(c)+
+      '<div class="ident"><h3><span class="urna">'+esc(c.numero)+'</span> '+esc(c.nome)+
+      ' <span class="sigla">'+esc(c.partido)+'</span></h3></div></div>'+
+      '<div class="card-body">'+corpoTema(cid,tid)+'</div></li>';
+  }).join('')+'</ul>';
+  document.getElementById('saida-tema').innerHTML=h;
+}
+
+/* ---------- aba: comparar ---------- */
+function renderChecks(){
+  document.getElementById('checks').innerHTML=D.ordem.map(cid=>{
+    const c=D.candidatos[cid];
+    return '<label><input type="checkbox" value="'+cid+'"> <span>'+esc(c.nome)+
+           ' <span class="n">'+esc(c.numero)+' · '+esc(c.partido)+'</span></span></label>';
+  }).join('');
+}
+function renderComp(){
+  const tid=document.getElementById('sel-tema-comp').value;
+  const sel=[...document.querySelectorAll('#checks input:checked')].map(i=>i.value);
+  const cx=document.querySelectorAll('#checks input');
+  cx.forEach(i=>{ i.disabled = !i.checked && sel.length>=3; });
+  const out=document.getElementById('saida-comp');
+  if(sel.length<2){
+    out.innerHTML='<p style="margin-top:22px;color:var(--muted)">Escolha ao menos duas '+
+      'candidaturas para comparar. Até três por vez.</p>';
+    return;
+  }
+  const nome=D.temas.find(t=>t.id===tid).nome;
+  out.innerHTML='<h3 style="margin-top:24px">'+esc(nome)+'</h3><div class="comp-grid">'+
+    sel.map(cid=>{const c=D.candidatos[cid];
+      return '<div class="comp-col"><h3><span class="urna">'+esc(c.numero)+'</span> '+esc(c.nome)+
+        ' <span class="sigla">'+esc(c.partido)+'</span></h3>'+
+        '<div class="card-body">'+corpoTema(cid,tid)+'</div></div>';}).join('')+'</div>';
+}
+
+/* ---------- aba: pesquisa ---------- */
+(function(){
+  /* Estado sem pesquisa levantada e caso normal: a regra do projeto e que
+     pesquisa so entra com ficha tecnica completa e registro no TSE. A ABA SAI da
+     pagina — aba vazia o leitor le como "ninguem pesquisou este estado", que e
+     afirmacao diferente e falsa. */
+  if(!D.pesquisa){
+    const bt=document.getElementById('tab-pesquisa');
+    const pn=document.getElementById('p-pesquisa');
+    if(bt) bt.hidden=true;
+    if(pn) pn.hidden=true;
+    return;
+  }
+  const p=D.pesquisa, res=D.ordem.map(cid=>[cid,p.resultados[cid]]).filter(([,r])=>r);
+  const comN=res.filter(([,r])=>r.percentual!=null).sort((a,b)=>b[1].percentual-a[1].percentual);
+  const semN=res.filter(([,r])=>r.percentual==null);
+  const max=comN.length?comN[0][1].percentual:1;
+  let h='<table class="barra-tab"><caption>Cenário estimulado. A soma passa de 100% porque cada '+
+        'eleitor escolhe dois nomes — não é erro de arredondamento.</caption><thead><tr>'+
+        '<th scope="col">Candidatura</th><th scope="col">Intenção de voto</th>'+
+        '<th scope="col"><span class="vis-oculto">Representação visual</span></th></tr></thead><tbody>';
+  for(const [cid,r] of comN){const c=D.candidatos[cid];
+    /* Parenteses em volta da sigla: sem eles "SIMONE TEBET PSB" le como um nome
+       so, porque a linha inteira e caixa alta e o partido tem o mesmo peso. */
+    h+='<tr><th scope="row" style="font-weight:600">'+esc(c.nome)+' <span class="sigla">('+esc(c.partido)+
+       ')</span></th><td class="pc">'+esc(String(r.percentual).replace('.',','))+'%</td>'+
+       '<td><span class="barra" aria-hidden="true"><span style="width:'+(r.percentual/max*100)+'%"></span></span></td></tr>';}
+  for(const o of p.outros)
+    h+='<tr><th scope="row" style="color:var(--muted);font-weight:600">'+esc(o.rotulo)+
+       '</th><td class="pc">'+esc(String(o.percentual).replace('.',','))+'%</td><td></td></tr>';
+  h+='</tbody></table>';
+  if(semN.length){
+    h+='<p style="margin-top:16px;color:var(--ink-2);max-width:72ch"><strong>'+
+       semN.map(([cid])=>esc(D.candidatos[cid].nome)).join(' e ')+
+       (semN.length>1?' não constavam':' não constava')+' do questionário deste instituto.</strong> '+
+       'Isso não é 0% — é ausência da pesquisa. O campo foi feito antes de a candidatura entrar '+
+       'nas listas divulgadas.</p>';
+  }
+  h+='<ul class="ficha-tec">'+
+     [['Instituto',p.instituto],['Registro no TSE',p.registro],
+      ['Período de campo',dataBR(p.ini)+' a '+dataBR(p.fim)],
+      ['Entrevistados',p.n.toLocaleString('pt-BR')],
+      ['Margem de erro',p.erro.toString().replace('.',',')+' pontos percentuais'],
+      ['Nível de confiança',p.conf+'%']]
+     .map(([k,v])=>'<li><b>'+esc(k)+'</b>'+esc(v)+'</li>').join('')+'</ul>'+
+     '<p style="margin-top:14px;color:var(--muted);font-size:.9rem;max-width:72ch">Nenhum número de '+
+     'pesquisa entra aqui sem ficha técnica completa. Pesquisa sem registro no TSE não é publicada.</p>';
+  document.getElementById('saida-pesquisa').innerHTML=h;
+})();
+
+/* ---------- selos e nota de fotos ---------- */
+(function(){
+  const ordem=['oficial','registro_legislativo','declaracao_candidato','verificada','secundaria'];
+  document.getElementById('selos-lista').innerHTML=ordem.map(k=>{const s=D.selos[k];
+    return s?'<li><span class="dot '+CLS[k]+'" aria-hidden="true"></span><span><strong>'+esc(s.nome)+
+      '</strong> — '+esc(s.def)+'</span></li>':'';}).join('');
+  const semFoto=D.ordem.filter(c=>!D.candidatos[c].foto).length;
+  document.getElementById('nota-fotos').textContent = semFoto===0
+    ? 'Todas as fotos vêm do dataset oficial de fotos de candidatos do TSE.'
+    : 'Nenhuma das '+D.ordem.length+' candidaturas tem foto nesta versão. As fotos oficiais estão '+
+      'no dataset de fotos de candidatos do TSE, que bloqueia acesso automatizado. Enquanto não '+
+      'forem obtidas de lá, cada candidatura aparece com as iniciais do nome de urna — e não com '+
+      'imagem de outra origem, para não haver risco de trocar o retrato de alguém.';
+})();
+
+/* ---------- abas: teclado e ARIA (padrao WAI-ARIA) ---------- */
+(function(){
+  const tabs=[...document.querySelectorAll('[role="tab"]')];
+  function ativa(i,foco){
+    tabs.forEach((t,j)=>{
+      const on=i===j;
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex=on?0:-1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden=!on;
+    });
+    if(foco) tabs[i].focus();
+    try{localStorage.setItem('aba',tabs[i].id);}catch(e){}
+  }
+  tabs.forEach((t,i)=>{
+    t.addEventListener('click',()=>ativa(i,false));
+    t.addEventListener('keydown',e=>{
+      const k=e.key;let n=null;
+      if(k==='ArrowRight') n=(i+1)%tabs.length;
+      else if(k==='ArrowLeft') n=(i-1+tabs.length)%tabs.length;
+      else if(k==='Home') n=0; else if(k==='End') n=tabs.length-1;
+      if(n!==null){e.preventDefault();ativa(n,true);}
+    });
+  });
+  window.__ativaAba=function(id,foco){const k=tabs.findIndex(t=>t.id===id); if(k>=0) ativa(k,foco);};
+  let ini=0;
+  try{const s=localStorage.getItem('aba');const k=tabs.findIndex(t=>t.id===s);
+      if(k>=0 && tabs[k].id!=='tab-perfil') ini=k;}catch(e){}
+  ativa(ini,false);
+})();
+
+/* ---------- Fase 6: perfil por candidatura, enderecavel por link ---------- */
+const BRL = v => v==null ? '\u2014'
+  : 'R$ ' + v.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
+const CARGO = {deputado_federal:'Deputado federal',deputado_estadual:'Deputado estadual',
+  senador:'Senador',vereador:'Vereador',prefeito:'Prefeito',vice_governador:'Vice-governador',
+  presidente:'Presidente',suplente_senador:'Suplente de senador'};
+
+/* Reconhece a plataforma pelo endereco, para o leitor saber o que vai abrir
+   antes de clicar. Endereco que nao casa com nenhuma conhecida aparece como
+   "site" — nunca e escondido. */
+const PLATAFORMAS=[
+  [/instagram\.com/i,'Instagram'], [/facebook\.com|fb\.com/i,'Facebook'],
+  [/(^|\W)(x|twitter)\.com/i,'X'],
+  /* Pagina de HASHTAG do TikTok nao e canal da candidatura: e uma busca, com
+     conteudo de qualquer pessoa. Fica listada, porque foi declarada no registro,
+     mas rotulada pelo que e — e fora do destaque, que e para canal proprio. */
+  [/tiktok\.com\/tag\//i,'TikTok · busca por hashtag'],
+  [/tiktok\.com/i,'TikTok'],
+  [/youtube\.com|youtu\.be/i,'YouTube'], [/threads\.(com|net)/i,'Threads'],
+  [/linkedin\.com/i,'LinkedIn'], [/kwai\.com/i,'Kwai'], [/flickr\.com/i,'Flickr'],
+  [/soundcloud\.com/i,'SoundCloud'], [/linktr\.ee/i,'Linktree'],
+  [/whatsapp\.com/i,'WhatsApp'],
+];
+function plataformaDe(u){
+  for(const [re,nome] of PLATAFORMAS) if(re.test(u)) return nome;
+  return 'Site';
+}
+
+function blocoCanais(c){
+  const ct=c.contato||{};
+  const redes=(ct.redes||[]).slice().sort(function(a,b){
+    return plataformaDe(a).localeCompare(plataformaDe(b)); });
+
+  let h='<div class="canais"><h3>Canais oficiais</h3>';
+
+  if(redes.length){
+    h+='<p class="de-onde">Declarados pela pr\u00f3pria candidatura no registro no TSE'+
+       (ct.redes_consultado_em?', consultados em '+esc(dataBR(ct.redes_consultado_em)):'')+
+       '. N\u00e3o usamos endere\u00e7o encontrado em busca: contato errado manda o eleitor '+
+       'escrever para outra pessoa.</p>';
+
+    const url=function(u){ return /^https?:\/\//i.test(u)?u:'https://'+u; };
+    /* O TSE grava os enderecos em CAIXA ALTA. Exibir assim grita na tela e nao
+       e como a pessoa escreveu o proprio perfil. O href continua exatamente como
+       declarado — so o texto exibido e normalizado. */
+    const limpo=function(u){
+      return u.replace(/^https?:\/\//i,'').replace(/\/$/,'').toLowerCase(); };
+
+    /* Ordem FIXA, e nao por ordem de declaracao: ordem que muda de perfil para
+       perfil faz o olho reprocessar cada candidatura. */
+    const PRINCIPAIS=['Instagram','TikTok','Site'];
+    const destaque=[], outras=[];
+    for(const u of redes){
+      const plat=plataformaDe(u);
+      (PRINCIPAIS.indexOf(plat)>=0 ? destaque : outras).push({u:u, plat:plat});
+    }
+    destaque.sort(function(a,b){ return PRINCIPAIS.indexOf(a.plat)-PRINCIPAIS.indexOf(b.plat); });
+
+    if(destaque.length){
+      h+='<ul class="destaque">'+destaque.map(function(x){
+        return '<li><a href="'+esc(url(x.u))+'" target="_blank" rel="noopener">'+
+               '<span class="plat">'+esc(x.plat)+'</span>'+esc(limpo(x.u))+
+               ' <span class="vis-oculto">(abre em nova aba)</span></a></li>';
+      }).join('')+'</ul>';
+    }
+    if(outras.length){
+      h+='<div class="outras"><span class="rot">Tamb\u00e9m declarou '+outras.length+
+         ' outro(s) canal(is)</span>'+
+         outras.map(function(x){
+           return '<a href="'+esc(url(x.u))+'" target="_blank" rel="noopener">'+esc(x.plat)+
+                  '<span class="vis-oculto"> — '+esc(limpo(x.u))+' (abre em nova aba)</span></a>';
+         }).join(' · ')+'</div>';
+    }
+  } else {
+    /* Ausencia e informacao aqui tambem: "nao declarou" nao e "nao encontramos". */
+    h+='<p class="nada">Esta candidatura <strong>n\u00e3o declarou nenhuma rede social nem site</strong> '+
+       'no registro no TSE. \u00c9 aus\u00eancia no registro, n\u00e3o falha da nossa busca.</p>';
+  }
+
+  if(ct.email){
+    h+='<p class="mandato"><strong>E-mail:</strong> '+esc(ct.email)+' — '+
+       esc(ct.email_fonte||'fonte n\u00e3o registrada')+'. \u00c9 endere\u00e7o '+
+       '<strong>institucional de gabinete</strong>, n\u00e3o de campanha: existe porque esta '+
+       'candidatura tem mandato, e n\u00e3o porque a campanha o divulgou.</p>';
+  } else if(ct._email_indisponivel){
+    h+='<p class="mandato">'+esc(ct._email_indisponivel)+'</p>';
+  }
+
+  return h+'</div>';
+}
+
+function renderPerfil(cid){
+  const c=D.candidatos[cid]; if(!c) return false;
+  let h='<div class="perfil-topo">'+retrato(c)+'<div class="perfil-ident">'+
+    '<h2><span class="urna">'+esc(c.numero)+'</span> '+esc(c.nome)+
+    ' <span class="sigla">'+esc(c.partido)+'</span></h2>'+
+    '<p class="meta" style="margin-top:7px">'+esc(c.completo)+'</p>'+
+    '<p class="bio" style="margin-top:9px;max-width:64ch">'+esc(c.bio)+'</p></div></div>';
+
+  const linhas=[
+    ['N\u00famero de urna',c.numero],['Partido',c.partido+' \u2014 '+c.partido_nome],
+    ['Coliga\u00e7\u00e3o',c.coligacao||'Sem coliga\u00e7\u00e3o'],
+    ['Situa\u00e7\u00e3o do registro',c.situacao+' (observada em '+dataBR(c.situacao_em)+')'],
+    ['Ocupa\u00e7\u00e3o declarada',c.ocupacao||'\u2014'],
+    ['Escolaridade',c.escolaridade||'\u2014'],
+    ['Nascimento',dataBR(c.nascimento)||'\u2014'],
+    ['Bens declarados',BRL(c.bens)],
+    ['Sequencial no TSE',c.sequencial||'\u2014'],
+    ['Suplentes',c.suplentes.length?c.suplentes.join(', '):'n\u00e3o informados']
+  ];
+  if(c.coligacao_comp) linhas.push(['Composi\u00e7\u00e3o da coliga\u00e7\u00e3o',c.coligacao_comp]);
+  if(c.areas_declaradas&&c.areas_declaradas.length)
+    linhas.push(['\u00c1reas de atua\u00e7\u00e3o que declarou',c.areas_declaradas.join(', ')]);
+  if(c.base_eleitoral&&c.base_eleitoral.length)
+    linhas.push(['Base eleitoral que declarou',c.base_eleitoral.join(', ')]);
+  h+='<ul class="ficha-dl">'+linhas.map(function(par){
+      return '<li><b>'+esc(par[0])+'</b><span>'+esc(par[1])+'</span></li>';}).join('')+'</ul>';
+
+  h+=blocoSemProposta(cid);
+
+  h+=blocoCanais(c);
+
+  let obs=(c.obs_registro||[]).slice();
+  (c.concorrentes||[]).forEach(function(x){
+    obs.push('Tamb\u00e9m registrou candidatura a '+(CARGO[x.cargo]||x.cargo).toLowerCase()+
+      ' ('+x.uf+', n\u00famero '+x.numero_urna+'), com situa\u00e7\u00e3o: '+x.situacao+'.');});
+  if(obs.length){
+    h+='<div class="secao"><h3>Observa\u00e7\u00f5es sobre o registro</h3>'+
+       obs.map(function(o){return '<p class="obs">'+esc(o)+'</p>';}).join('')+'</div>';
+  }
+
+  if(c.parlamentar){
+    const pl=c.parlamentar;
+    const casa = pl.casa==='camara' ? 'C\u00e2mara dos Deputados'
+               : pl.casa==='alesp'  ? 'Assembleia Legislativa de S\u00e3o Paulo' : pl.casa;
+    h+='<div class="secao"><h3>Mandato em exerc\u00edcio</h3><p class="txt">Casa: <strong>'+
+      esc(casa)+'</strong>. Situa\u00e7\u00e3o: <strong>'+esc(pl.situacao||'\u2014')+'</strong>'+
+      (pl.desde?', em exerc\u00edcio desde <strong>'+esc(dataBR(pl.desde))+'</strong>':'')+'.'+
+      (pl.cargo_na_casa?' Ocupa o cargo de <strong>'+esc(pl.cargo_na_casa)+'</strong>.':'')+'</p>';
+    if(pl.motivo_afastamento_anterior){
+      const m=pl.motivo_afastamento_anterior;
+      h+='<p class="obs" style="margin-top:10px"><strong>Contexto necess\u00e1rio:</strong> antes dessa '+
+        'data, '+esc(m.charAt(0).toLowerCase()+m.slice(1))+'. Produ\u00e7\u00e3o legislativa menor no '+
+        'per\u00edodo reflete aus\u00eancia formal do parlamento, n\u00e3o inatividade.</p>';
+    }
+    h+='</div>';
+  }
+
+  if(c.mandatos&&c.mandatos.length){
+    h+='<div class="secao"><h3>Hist\u00f3rico eleitoral</h3><ul class="hist">'+
+      c.mandatos.map(function(m){
+        const el=String(m.resultado||'').indexOf('eleit')===0;
+        const onde=m.uf||m.municipio||'';
+        return '<li><span class="ano">'+esc(m.ano)+'</span><span>'+
+          esc(CARGO[m.cargo]||m.cargo)+(onde?' \u2014 '+esc(onde):'')+
+          (m.partido_na_epoca?' (pelo '+esc(String(m.partido_na_epoca).toUpperCase())+')':'')+
+          ' \u00b7 <span class="'+(el?'res-eleito':'res-nao')+'">'+esc(m.resultado)+'</span>'+
+          (m.votos?' \u00b7 '+m.votos.toLocaleString('pt-BR')+' votos':'')+'</span></li>';
+      }).join('')+'</ul></div>';
+  }
+  if(c.cargos_exec&&c.cargos_exec.length){
+    h+='<div class="secao"><h3>Cargos executivos anteriores</h3><ul class="hist">'+
+      c.cargos_exec.map(function(x){return '<li><span class="ano">'+esc(String(x.de||'').slice(0,4))+
+        '</span><span>'+esc(x.cargo)+' \u2014 '+esc(x.ente)+'</span></li>';}).join('')+'</ul></div>';
+  }
+  if(c.cargos_repr&&c.cargos_repr.length){
+    h+='<div class="secao"><h3>Cargos de representa\u00e7\u00e3o</h3><ul class="hist">'+
+      c.cargos_repr.map(function(x){return '<li><span class="ano">atual</span><span>'+
+        esc(x.cargo)+'</span></li>';}).join('')+'</ul></div>';
+  }
+
+  h+='<div class="secao"><h3>Posi\u00e7\u00f5es nos 10 temas</h3>';
+  D.temas.forEach(function(tm){
+    h+='<div class="tema-bloco"><h4>'+esc(tm.nome)+'</h4><div class="card-body">'+
+       corpoTema(cid,tm.id)+'</div></div>';});
+  h+='</div>';
+
+
+  h+='<p style="margin-top:26px;font-size:.9rem;color:var(--muted)">A posi\u00e7\u00e3o desta '+
+     'candidatura na pesquisa de inten\u00e7\u00e3o de voto est\u00e1 na aba <strong>Pesquisa</strong>, '+
+     'com a ficha t\u00e9cnica completa. N\u00e3o aparece aqui para que o perfil n\u00e3o vire placar.</p>';
+
+  document.getElementById('saida-perfil').innerHTML=h;
+  return true;
+}
+
+function abrirPerfil(cid,viaHash){
+  if(!renderPerfil(cid)) return;
+  const tb=document.getElementById('tab-perfil');
+  tb.hidden=false; tb.textContent='Perfil: '+D.candidatos[cid].nome;
+  window.__ativaAba(tb.id,false);
+  if(!viaHash) location.hash='#perfil/'+D.candidatos[cid].numero;
+  const alvo=document.querySelector('#saida-perfil h2');
+  if(alvo){ alvo.setAttribute('tabindex','-1'); alvo.focus(); }
+}
+
+document.addEventListener('click',function(e){
+  const b=e.target.closest('[data-perfil]');
+  if(b){ e.preventDefault(); abrirPerfil(b.dataset.perfil,false); }
+});
+document.getElementById('btn-voltar').addEventListener('click',function(){
+  history.pushState('',document.title,location.pathname+location.search);
+  window.__ativaAba('tab-candidatos',true);
+});
+
+function porHash(){
+  const m=(location.hash||'').match(/^#perfil\/(\d+)$/);
+  if(!m) return false;
+  const cid=D.ordem.find(function(k){return D.candidatos[k].numero===m[1];});
+  if(cid){ abrirPerfil(cid,true); return true; }
+  return false;
+}
+window.addEventListener('hashchange',function(){
+  if(!porHash()) window.__ativaAba('tab-candidatos',false);});
+
+/* ---------- Fase 7: motor de consulta deterministico ---------- */
+const SIN = {
+ t1:['seguranca','policia','policial','crime','criminal','faccao','faccoes','presidio','prisao',
+     'maioridade','penal','violencia','arma','armas','pcc','desmilitarizacao','encarceramento','droga','drogas'],
+ t2:['educacao','escola','escolas','professor','professores','universidade','creche','creches',
+     'alfabetizacao','ensino','aluno','estudante','fundeb','cotas','vestibular','enem'],
+ t3:['saude','sus','hospital','hospitais','medico','vacina','vacinacao','remedio','medicamento',
+     'fila','exame','exames','aposta','apostas','bet','bets','saude mental'],
+ t4:['economia','emprego','trabalho','salario','imposto','impostos','tributo','tributaria','jornada',
+     'clt','previdencia','fiscal','orcamento','banco','bancos','divida','supersalario','supersalarios',
+     'escala 6x1','6x1','36 horas','30 horas','fortuna','fortunas'],
+ t5:['infraestrutura','mobilidade','transporte','metro','onibus','tarifa','saneamento','estrada',
+     'rodovia','ferrovia','trem','cptm','sabesp','pedagio','obra','obras'],
+ t6:['meio ambiente','ambiental','clima','climatica','desmatamento','mineracao','minerio','agrotoxico',
+     'petroleo','indigena','indigenas','quilombola','quilombolas','amazonia','cerrado','agronegocio',
+     'terra','terras','reforma agraria','energia'],
+ t7:['habitacao','moradia','casa','casas','aluguel','favela','favelas','despejo','imovel','imoveis',
+     'especulacao','desfavelizacao','urbanizacao'],
+ t8:['tecnologia','inteligencia artificial','ia','digital','dados','internet','algoritmo','bitcoin',
+     'plataforma','plataformas','aplicativo','aplicativos','semicondutor','terras raras','software',
+     'data center','soberania digital'],
+ t9:['cultura','direitos humanos','racismo','racial','mulher','mulheres','feminicidio','lgbt','lgbtfobia',
+     'genero','arte','cinema','rouanet','games','quilombo','negra','negras','diversidade','anistia','ditadura'],
+ t10:['senado','legislativo','stf','supremo','constituinte','federativo','unicameral','congresso',
+      'parlamento','mandato','judiciario','soberania']
+};
+const NEG = ['nao tem','nao ha','sem proposta','nao propoe','nao fala','quem nao','falta','ausencia',
+             'nao aborda','nada sobre'];
+
+const nrm = s => (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+                  .toLowerCase().replace(/\s+/g,' ').trim();
+
+function detectaTemas(q){
+  /* Fronteira de palavra para TODO termo, nao so para os curtos.
+     A versao anterior so protegia termos de ate 4 letras, e por isso 'cultura'
+     casava dentro de 'apicultura': quem perguntava sobre apicultura recebia o
+     tema Cultura e Direitos Humanos inteiro. Falso positivo e pior que resposta
+     vazia, porque parece resposta.
+     Termo longo ainda aceita ate 3 letras a mais no fim, para plural e flexao
+     ('cultura' casa 'culturas', 'cultural'); termo curto exige palavra exata,
+     senao 'ia' comecaria a casar 'iate'. */
+  const n=' '+nrm(q)+' ', achados=[];
+  const casa=function(alvo){
+    const a=nrm(alvo); if(!a) return false;
+    const lit=a.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const cauda=a.length<=4 ? '' : '[a-z]{0,3}';
+    return new RegExp('(^|[^a-z0-9])'+lit+cauda+'([^a-z0-9]|$)').test(n);
+  };
+  for(const t of D.temas){
+    if([nrm(t.nome)].concat(SIN[t.id]||[]).some(casa)) achados.push(t.id);
+  }
+  return achados;
+}
+function detectaCands(q){
+  const n=' '+nrm(q)+' ', achados=[];
+  for(const cid of D.ordem){
+    const c=D.candidatos[cid];
+    const nome=nrm(c.nome), partes=nome.split(' ').filter(w=>w.length>3);
+    if(n.indexOf(' '+nome+' ')>=0 || n.indexOf(' '+c.numero+' ')>=0 ||
+       partes.some(w=>n.indexOf(' '+w+' ')>=0) ||
+       n.indexOf(' '+nrm(c.partido)+' ')>=0){ achados.push(cid); }
+  }
+  return achados;
+}
+function itensDe(cid,tid){ return (D.grade[tid]&&D.grade[tid][cid])||[]; }
+
+/* Casamento por fronteira de palavra. Substring e armadilha: "para" casa
+   dentro de "preparar" e "comparar", "arma" dentro de "farmacia". Num acervo
+   pequeno isso transforma pergunta qualquer em resposta cheia. */
+const temPalavra=function(txt,w){
+  return new RegExp('(^|[^a-z0-9])'+w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+
+                    '[a-z]{0,3}([^a-z0-9]|$)').test(txt);
+};
+
+/* corpus achatado uma vez, para medir quao comum e cada termo */
+const CORPUS=(function(){
+  const c=[];
+  for(const cid of D.ordem) for(const t of D.temas) for(const i of itensDe(cid,t.id)){
+    if(i.estado!=='A'&&i.estado!=='B') continue;
+    c.push({cid:cid,tid:t.id,item:i,
+            txt:nrm((i.texto||'')+' '+(i.citacao||'')+' '+(i.escopo||''))});
+  }
+  return c;
+})();
+/* Verbos e pronomes de pergunta. Nao dizem nada sobre o assunto, mas casam com
+   muita coisa: 'trata' casa 'tratar', 'tratado', 'tratam', e fazia
+   "alguem trata de X" devolver o acervo meio inteiro para qualquer X. */
+const PARADAS=['sobre','quem','qual','quais','como','onde','propoe','propoem','proposta','propostas',
+  'defende','defendem','candidato','candidatos','candidatura','candidaturas','faz','fazem','dizem',
+  'diz','para','pelo','pela','isso','esse','essa','tem','ha','uma','uns','das','dos','que','posicao',
+  'trata','tratam','tratar','fala','falam','falar','pensa','pensam','acha','acham','acredita',
+  'aborda','abordam','abordar','alguem','alguma','algum','existe','existem','opiniao','opinioes',
+  'posicionamento','posicoes','pretende','pretendem','planeja','planejam','quer','querem'];
+
+function buscaTexto(q){
+  let termos=nrm(q).split(' ').filter(function(w){
+    return w.length>3 && PARADAS.indexOf(w)<0; });
+  if(!termos.length) return {res:[], descartados:[]};
+
+  /* termo que aparece em mais de 25% do acervo nao discrimina nada: "paulista",
+     "nacional", "publico". Deixar entrar faz uma palavra comum arrastar o acervo
+     inteiro como se respondesse a pergunta. */
+  const LIMITE=Math.max(3, Math.floor(CORPUS.length*0.20));
+  const descartados=[];
+  const uteis=termos.filter(function(w){
+    const n=CORPUS.filter(function(c){return temPalavra(c.txt,w);}).length;
+    if(n>LIMITE){ descartados.push(w); return false; }
+    return true;
+  });
+  if(!uteis.length) return {res:[], descartados:descartados};
+
+  const brutos=[];
+  for(const c of CORPUS){
+    const acertos=uteis.filter(function(w){return temPalavra(c.txt,w);});
+    if(acertos.length) brutos.push({cid:c.cid,tid:c.tid,item:c.item,acertos:acertos.length});
+  }
+  if(!brutos.length) return {res:[], descartados:descartados};
+  /* so sobrevive quem casa com o maior numero de termos uteis */
+  const teto=Math.max.apply(null, brutos.map(function(r){return r.acertos;}));
+  return {res:brutos.filter(function(r){return r.acertos===teto;}), descartados:descartados};
+}
+
+function blocoGrupo(cid,titulo,corpoHTML){
+  const c=D.candidatos[cid];
+  return '<div class="grupo"><h3><span class="urna">'+esc(c.numero)+'</span> '+esc(c.nome)+
+    ' <span class="sigla">'+esc(c.partido)+'</span>'+(titulo?' <span style="font-weight:400;color:var(--muted)">'+esc(titulo)+'</span>':'')+
+    '</h3><div class="card-body">'+corpoHTML+'</div></div>';
+}
+
+function responder(q){
+  const out=document.getElementById('saida-consulta');
+  if(!nrm(q)){ out.innerHTML=''; return; }
+  COLETA=[];
+  const temas=detectaTemas(q), cands=detectaCands(q);
+  const negativa=NEG.some(x=>nrm(q).indexOf(nrm(x))>=0);
+  let h='', como='', corpo='', achou=0;
+
+  if(negativa && temas.length){
+    const tid=temas[0], nome=D.temas.find(t=>t.id===tid).nome;
+    como='Procurei, entre as 15 candidaturas, quais NÃO têm proposta registrada em '+nome+
+         ' — e por qual dos motivos, que não é o mesmo em todos os casos.';
+    for(const cid of D.ordem){
+      const its=itensDe(cid,tid);
+      const reais=its.filter(i=>i.estado==='A'||i.estado==='B');
+      if(reais.length) continue;
+      achou++;
+      corpo+=blocoGrupo(cid,nome,corpoTema(cid,tid));
+    }
+  } else if(cands.length && temas.length){
+    const nomes=temas.map(x=>D.temas.find(t=>t.id===x).nome).join(', ');
+    como='Encontrei '+cands.length+' candidatura(s) e '+temas.length+' tema(s) na sua pergunta: '+nomes+'.';
+    for(const cid of cands) for(const tid of temas){ achou++; corpo+=blocoGrupo(cid,D.temas.find(t=>t.id===tid).nome,corpoTema(cid,tid)); }
+  } else if(cands.length){
+    como='Encontrei candidatura na sua pergunta, mas nenhum tema. Mostrando os temas em que ela tem posição registrada.';
+    for(const cid of cands){
+      for(const t of D.temas){
+        const reais=itensDe(cid,t.id).filter(i=>i.estado==='A'||i.estado==='B');
+        if(reais.length){ achou++; corpo+=blocoGrupo(cid,t.nome,reais.map(proposta).join('')); }
+      }
+    }
+  } else if(temas.length){
+    const tid=temas[0], nome=D.temas.find(t=>t.id===tid).nome;
+    como='Encontrei o tema '+nome+'. Mostrando as candidaturas que têm posição registrada nele.';
+    for(const cid of D.ordem){
+      const reais=itensDe(cid,tid).filter(i=>i.estado==='A'||i.estado==='B');
+      if(reais.length){ achou++; corpo+=blocoGrupo(cid,nome,reais.map(proposta).join('')); }
+    }
+  } else {
+    const busca=buscaTexto(q), res=busca.res;
+    como='Não reconheci candidatura nem tema na sua pergunta, então busquei os termos no texto de '+
+         'todas as informações do acervo.';
+    if(busca.descartados.length){
+      como+=' Ignorei '+busca.descartados.map(function(w){return '“'+w+'”';}).join(', ')+
+            ' por aparecer em boa parte do acervo — termo comum demais não distingue nada.';
+    }
+    const porCand={};
+    res.forEach(function(r){ (porCand[r.cid]=porCand[r.cid]||[]).push(r); });
+    for(const cid of D.ordem){
+      if(!porCand[cid]) continue;
+      achou++;
+      corpo+=blocoGrupo(cid,'', porCand[cid].map(function(r){
+        return '<p class="lbl" style="margin-bottom:6px">'+esc(D.temas.find(t=>t.id===r.tid).nome)+'</p>'+
+               proposta(r.item);}).join(''));
+    }
+  }
+
+  h+='<div class="resp-cabeca"><p class="q">'+esc(q)+'</p><p class="como">'+esc(como)+'</p></div>';
+
+  /* Resumo no topo, por decisao de produto: a maioria das pessoas quer a sintese
+     primeiro. Contrapesos, porque sintese no topo desestimula descer ate a fonte:
+     ele NAO aparece sozinho (exige clique), a ressalva vem grudada nele, e os
+     numeros [n] remetem as linhas logo abaixo. */
+  const usados=COLETA||[]; COLETA=null;
+  if(D.agente_url && achou && usados.length){
+    h+='<div class="ia"><h3>Resumo em texto corrido</h3>'+
+       '<p class="chamada">Uma IA pode reescrever num parágrafo só as '+usados.length+
+       ' informação(ões) abaixo. Ela recebe apenas essas linhas — não o acervo, não a internet — '+
+       'e o texto é conferido contra as fontes antes de aparecer; se falhar, é descartado. '+
+       'Ainda assim, o que vale é o original com a fonte, abaixo.</p>'+
+       '<button type="button" id="btn-ia">Redigir resumo</button>'+
+       '<div id="ia-saida" aria-live="polite"></div></div>';
+  }
+
+  if(!achou){
+    h+='<div class="resp-nada"><b>Não encontrei nada no acervo para isso.</b> Isto significa que não '+
+       'há informação catalogada que corresponda à sua pergunta — não que o assunto não exista nem que '+
+       'as candidaturas não tenham posição sobre ele. Tente um termo mais simples, o nome de uma '+
+       'candidatura, ou um dos temas.</div>';
+    h+='<div class="opcoes">'+
+       '<div class="opcao"><h4>Pergunte você mesmo</h4>'+
+       '<p>Abrimos um e-mail já redigido, em tom formal, para o contato oficial da candidatura — e '+
+       'preparamos um texto curto para mensagem direta. Você lê, ajusta se quiser, e envia.</p>'+
+       '<button type="button" data-abrir="box-contatos" aria-expanded="false" '+
+       'aria-controls="box-contatos">Ver contatos e textos prontos</button></div>'+
+       '</div>'+
+       '<div id="box-contatos" hidden>'+blocoContatos(q)+'</div>';
+  } else {
+    h+='<p style="margin-top:20px;font-size:.9rem;color:var(--muted)">'+achou+
+       ' resultado(s), em ordem de número de urna. A ordem não expressa relevância nem preferência.</p>'+corpo;
+    h+='<div class="aviso-rev"><b>Como ler isto.</b> Cada informação acima é exibida exatamente como '+
+       'está no acervo, com a fonte e o selo de origem. Nada foi reescrito, resumido ou interpretado '+
+       'para responder à sua pergunta. As que ainda não passaram por revisão humana estão marcadas '+
+       'como <em>não revisado</em> — o que numa resposta corrida é fácil esquecer, porque texto '+
+       'fluente soa mais seguro do que é.</div>';
+  }
+
+  out.innerHTML=h;
+  const bi=document.getElementById('btn-ia');
+  if(bi) bi.addEventListener('click',function(){ pedirResumo(q, usados, bi); });
+  /* O bloco ja existe: a busca so o reenquadra e preenche. Criar outro
+     duplicaria os ids e faria o botao de baixo ler os campos de cima. */
+  montarPedir(q, cands[0]||'', temas[0]||'', usados.length>0);
+}
+
+/* ---------- pedir que a gente pergunte ao gabinete ---------- */
+
+function blocoPedir(q, candSugerida, temaSugerido, estado){
+  if(!D.agente_url) return '';
+  const cands=D.ordem.map(function(cid){
+    const c=D.candidatos[cid];
+    return '<option value="'+esc(cid)+'"'+(cid===candSugerida?' selected':'')+'>'+
+           esc(c.numero)+' — '+esc(c.nome)+' ('+esc(c.partido)+')</option>';
+  }).join('');
+  const tms=D.temas.map(function(x){
+    return '<option value="'+esc(x.id)+'"'+(x.id===temaSugerido?' selected':'')+'>'+
+           esc(x.nome)+'</option>';
+  }).join('');
+
+  /* Quem decide se a resposta serviu e quem perguntou, nao o motor de busca.
+     Por isso o convite existe nos dois casos, so muda o enquadramento. */
+  /* Tres estados: antes de qualquer busca, depois de busca vazia, e depois de
+     busca que trouxe algo. O convite e o mesmo; muda o enquadramento. */
+  const titulo = estado==='inicial' ? 'Não achou o que procurava?'
+               : estado             ? 'Não era isso que você procurava?'
+               :                      'Peça para a gente perguntar';
+  const abertura = estado==='inicial'
+    ? 'O acervo é pequeno, e nem toda candidatura registrou proposta sobre tudo. Se o que você '+
+      'quer saber não estiver aqui, não precisa buscar primeiro para pedir. '
+    : estado
+    ? 'O acervo devolveu o que tinha, mas pode não ser o que você queria saber — e às vezes '+
+      'o assunto exato simplesmente não está registrado em lugar nenhum. Se for o caso, '+
+      'pergunte direto à candidatura. '
+    : '';
+
+  return '<div class="pedir"><h4>'+esc(titulo)+'</h4>'+
+    '<p class="chamada">'+abertura+
+    'Sua pergunta entra numa fila. Quando várias pessoas perguntam a mesma '+
+    'coisa para a mesma candidatura, escrevemos <strong>uma</strong> mensagem ao contato oficial '+
+    'representando todas — porque um eleitor sozinho é fácil de ignorar, e quinze não são. '+
+    'Nada é enviado automaticamente: uma pessoa lê antes.</p>'+
+    '<div class="campo"><label for="pd-cand">Para qual candidatura?</label>'+
+    '<select id="pd-cand"><option value="">Escolha uma candidatura</option>'+cands+'</select></div>'+
+    '<div class="campo"><label for="pd-tema">Sobre qual tema? (opcional)</label>'+
+    '<select id="pd-tema"><option value="">Não sei dizer</option>'+tms+'</select></div>'+
+    '<div class="campo"><label for="pd-texto">Sua pergunta</label>'+
+    '<textarea id="pd-texto" rows="3" maxlength="400">'+esc(q)+'</textarea></div>'+
+    '<div class="acoes" style="margin-top:14px"><button type="button" id="pd-enviar">'+
+    'Colocar na fila</button></div>'+
+    '<p class="aviso">Não escrevemos em seu nome e não guardamos quem você é: a fila registra a '+
+    'pergunta, a candidatura e a data, e mais nada — sem IP, sem cookie, sem login. '+
+    'A pergunta pode acabar num e-mail para o gabinete, então não escreva dados pessoais nela. '+
+    'Se a candidatura responder, publicamos a resposta na íntegra; se não responder, registramos '+
+    'apenas que a pergunta foi feita — silêncio não vira posição.</p>'+
+    '<div id="pd-saida" aria-live="polite"></div></div>';
+}
+
+/* Desenha o bloco unico e religa o ouvinte. Chamado no arranque da aba e a cada
+   busca — a segunda vez troca o conteudo, entao o ouvinte precisa voltar. */
+function montarPedir(q, cand, tema, estado){
+  const alvo=document.getElementById('pedir-fixo');
+  if(!alvo) return;
+  alvo.innerHTML=blocoPedir(q||'', cand||'', tema||'', estado);
+  ligarPedir();
+}
+
+function ligarPedir(){
+  const b=document.getElementById('pd-enviar');
+  if(!b) return;
+  b.addEventListener('click', async function(){
+    const cid=document.getElementById('pd-cand').value;
+    const tid=document.getElementById('pd-tema').value;
+    const txt=document.getElementById('pd-texto').value.trim();
+    const out=document.getElementById('pd-saida');
+
+    if(!cid){ out.innerHTML='<div class="falha">Escolha para qual candidatura é a pergunta.</div>';
+      document.getElementById('pd-cand').focus(); return; }
+    if(txt.length<8){ out.innerHTML='<div class="falha">Escreva a pergunta com um pouco mais de detalhe.</div>';
+      document.getElementById('pd-texto').focus(); return; }
+
+    b.disabled=true; b.textContent='Enviando…';
+    let d;
+    try{
+      const r=await fetch(D.agente_url.replace(/\/+$/,'')+'/perguntar',{method:'POST',
+        headers:{'content-type':'application/json'},
+        body:JSON.stringify({pergunta:txt, id_candidatura:cid, id_tema:tid})});
+      d=await r.json();
+    }catch(e){ d={erro:'Não consegui falar com o serviço da fila. Tente de novo daqui a pouco.'}; }
+
+    b.disabled=false; b.textContent='Colocar na fila';
+    if(!d||d.erro){ out.innerHTML='<div class="falha">'+esc((d&&d.erro)||'Falha desconhecida.')+'</div>'; return; }
+
+    out.innerHTML='<div class="ok"><strong>Pergunta na fila.</strong> '+
+      (d.na_fila>1 ? 'Com a sua, já são '+d.na_fila+' perguntas aguardando para '+esc(d.candidatura)+'. '
+                   : 'É a primeira pergunta na fila para '+esc(d.candidatura)+'. ')+
+      (d.tem_contato
+        ? 'Temos o contato oficial dessa candidatura, então dá para enviar.'
+        : '<strong>Ainda não temos contato oficial dessa candidatura</strong> — só temos e-mail das '+
+          'que têm mandato. A pergunta fica registrada mesmo assim, e segue para envio assim que '+
+          'houver contato de fonte oficial.')+
+      ' Não prometemos resposta: quem responde é o gabinete.</div>';
+    document.getElementById('pd-texto').value='';
+  });
+}
+
+/* ---------- camada de LLM: redige a partir do que ja foi recuperado ---------- */
+
+const IA_MAX_LINHAS = 24;   /* tem de bater com MAX_LINHAS do worker */
+
+function linhaParaAgente(i){
+  const c=D.candidatos[i.cid]||{}, tm=D.temas.find(function(x){return x.id===i.tid;});
+  return {cand:(c.nome||'')+' ('+(c.partido||'')+')', tema:(tm&&tm.nome)||'',
+          de_partido:!!i.de_partido, partido:i.partido||'',
+          texto:i.texto||'', citacao:i.citacao||'', escopo:i.escopo||'',
+          fonte:i.fonte||'', data:dataBR(i.data)};
+}
+
+function legendaIA(linhas){
+  return '<div class="legenda"><p>De onde veio cada número (o detalhe com fonte '+
+      'e selo está logo abaixo, na mesma ordem):</p><ol>'+
+    linhas.map(function(l){
+      return '<li>'+esc(l.cand)+' — '+esc(l.tema)+
+             (l.de_partido?' — proposta do partido '+esc(l.partido):'')+
+             ' — '+esc(l.fonte)+'</li>';}).join('')+'</ol></div>';
+}
+
+async function pedirResumo(pergunta, usados, botao){
+  const alvo=document.getElementById('ia-saida');
+  if(!alvo) return;
+
+  /* Corte declarado. Truncar em silencio faria o resumo parecer cobrir tudo. */
+  const linhas=usados.slice(0,IA_MAX_LINHAS).map(linhaParaAgente);
+  const cortou=usados.length>IA_MAX_LINHAS;
+
+  botao.disabled=true; botao.textContent='Redigindo…';
+  alvo.setAttribute('aria-busy','true');
+  alvo.innerHTML='<p class="chamada" style="margin-top:12px">Redigindo o resumo…</p>';
+
+  let dados;
+  try{
+    const r=await fetch(D.agente_url,{method:'POST',
+      headers:{'content-type':'application/json'},
+      body:JSON.stringify({pergunta:pergunta.slice(0,300), linhas:linhas})});
+    dados=await r.json();
+  }catch(e){
+    dados={erro:'Não consegui falar com o serviço que redige o resumo. '+
+                'As informações com fonte continuam acima, completas.'};
+  }
+
+  alvo.removeAttribute('aria-busy');
+  botao.disabled=false; botao.textContent='Redigir de novo';
+
+  if(!dados||dados.erro){
+    alvo.innerHTML='<div class="falha">'+esc((dados&&dados.erro)||'Falha desconhecida.')+'</div>';
+    return;
+  }
+
+  const paras=String(dados.texto).split(/\n{2,}/).filter(function(x){return x.trim();});
+  alvo.innerHTML='<div class="texto">'+
+      paras.map(function(x){return '<p>'+esc(x.trim())+'</p>';}).join('')+'</div>'+
+      legendaIA(linhas)+
+      (cortou?'<p class="legenda"><strong>Atenção:</strong> a resposta abaixo tem '+
+              usados.length+' informações e o resumo usou apenas as '+IA_MAX_LINHAS+
+              ' primeiras. Ele não cobre tudo.</p>':'')+
+      '<div class="rodape"><b>Texto gerado por IA.</b> Ele reescreve as informações '+
+      'listadas abaixo e não pode acrescentar outras, mas pode errar ao resumir, '+
+      'perder uma ressalva ou trocar de quem é a proposta. Em caso de dúvida, o que '+
+      'vale é o texto original com a fonte, logo abaixo — e nenhuma dessas informações '+
+      'passou por revisão humana ainda.</div>';
+}
+
+(function(){
+  /* Conferidas contra o acervo ATUAL. Duas sugestoes antigas apontavam para
+     candidaturas cujas posicoes a revisao removeu: clicar trazia so ausencia, e
+     sugestao que nao entrega o que promete ensina a pessoa a nao clicar mais. */
+  const SUG=['O que Simone Tebet propõe sobre educação?',
+             'Quem defende extinguir o Senado?',
+             'Quem não tem proposta sobre habitação?',
+             'Propostas sobre inteligência artificial',
+             'O que Guto Schiavetto propõe sobre habitação?',
+             'Quem fala sobre apostas e BETs?',
+             'Desmilitarização da polícia',
+             'Propostas sobre meio ambiente'];
+  document.getElementById('sugestoes').innerHTML=SUG.map(function(s){
+    return '<button type="button" data-q="'+esc(s)+'">'+esc(s)+'</button>';}).join('');
+  document.getElementById('sugestoes').addEventListener('click',function(e){
+    const b=e.target.closest('button'); if(!b) return;
+    document.getElementById('q').value=b.dataset.q; responder(b.dataset.q);
+  });
+  document.getElementById('form-busca').addEventListener('submit',function(e){
+    e.preventDefault(); responder(document.getElementById('q').value);
+  });
+  /* Visivel desde o inicio: quem ja sabe que o assunto nao esta no acervo nao
+     precisa buscar primeiro para descobrir que pode perguntar. */
+  montarPedir('', '', '', 'inicial');
+})();
+
+/* ---------- modo assistido: ajudar a perguntar, sem enviar por ninguem ---------- */
+
+function corpoEmail(c,q){
+  return 'Prezado(a) '+c.nome+',\n\n'+
+    /* A UF vem dos dados. Este texto sai da maquina do eleitor para a caixa de
+       entrada de um gabinete: chumbada, mandaria alguem do Ceara se apresentar
+       como eleitor de Sao Paulo. */
+    'Escrevo como eleitor(a) '+D.uf.preposicao+' '+D.uf.nome+'. Consultei o site público '+
+    'que reúne as propostas das candidaturas ao Senado Federal '+D.uf.por+' nas eleições '+
+    'de 2026, organizadas por tema e com a '+
+    'fonte de cada informação, e não encontrei posição registrada da sua candidatura sobre o seguinte:\n\n'+
+    '    '+q+'\n\n'+
+    'Gostaria de saber qual é a sua posição sobre esse ponto. Se houver documento, programa ou material '+
+    'público que trate do assunto, o link já é suficiente — e será incluído no site com a devida '+
+    'atribuição à sua candidatura.\n\n'+
+    'O site é '+D.site_url+' e nele consta a fonte de cada informação exibida, '+
+    'bem como os casos em que não localizamos fonte, sinalizados como tal.\n\n'+
+    'Agradeço a atenção.\n';
+}
+function textoDM(c,q){
+  /* Nome inteiro, e nao sigla: "eleitor da BA" soa mal, e a mensagem e curta o
+     bastante para caber o nome. */
+  return 'Olá! Sou eleitor(a) '+D.uf.preposicao+' '+D.uf.nome+'. Não encontrei a posição da sua '+
+         'candidatura sobre: '+q+' Consegue indicar? Se houver material público, o link basta. '+
+         '(Consulta em '+D.site_url.replace(/^https?:\/\//,'').replace(/\/$/,'')+')';
+}
+
+function blocoContatos(q){
+  let h='<ul class="contatos-lista">';
+  for(const cid of D.ordem){
+    const c=D.candidatos[cid], ct=c.contato||{};
+    h+='<li><div class="quem-c"><span class="urna">'+esc(c.numero)+'</span><strong>'+esc(c.nome)+
+       '</strong><span class="sigla">'+esc(c.partido)+'</span></div>';
+    if(ct.email){
+      const assunto='Pergunta de eleitor sobre proposta - Senado '+D.uf.sigla+' 2026';
+      const url='mailto:'+encodeURIComponent(ct.email)+'?subject='+encodeURIComponent(assunto)+
+                '&body='+encodeURIComponent(corpoEmail(c,q));
+      h+='<div class="acoes">'+
+         '<a href="'+url+'">Abrir e-mail já escrito</a>'+
+         '<button type="button" data-copiar="'+esc(textoDM(c,q))+'">Copiar texto para mensagem</button>'+
+         '</div>'+
+         '<p class="sem-contato" style="margin-top:8px">'+esc(ct.email)+' — '+esc(ct.email_fonte)+
+         '. E-mail institucional do gabinete, não de campanha.</p>';
+    }
+    if(ct.instagram){
+      const arroba=ct.instagram.replace(/^@/,'');
+      h+='<div class="acoes" style="margin-top:8px">'+
+         '<a href="https://ig.me/m/'+esc(arroba)+'" target="_blank" rel="noopener">'+
+         'Abrir conversa no Instagram <span class="vis-oculto">(abre em nova aba)</span></a>'+
+         '<button type="button" data-copiar="'+esc(textoDM(c,q))+
+         '">Copiar texto para mensagem</button></div>'+
+         '<p class="sem-contato" style="margin-top:8px">'+esc(ct.instagram)+' — '+
+         esc(ct.instagram_fonte||'fonte não registrada')+'. O link abre a conversa; '+
+         'o texto você cola. Nada é enviado sozinho.</p>';
+    }
+    if(!ct.email && !ct.instagram){
+      /* Ausencia tem tipos, aqui tambem: nao declarar nada no registro e uma
+         coisa, declarar so canais que nao servem de conversa e outra. */
+      h+='<p class="sem-contato">'+
+         (ct.redes && ct.redes.length
+           ? 'Esta candidatura declarou '+ct.redes.length+' endereço(s) no registro do TSE, mas '+
+             'nenhum que sirva de canal direto de mensagem. '
+           : 'Esta candidatura não declarou nenhuma rede social no registro do TSE. ')+
+         'Não usamos contato de outra origem: um endereço achado em busca pode ser de outra '+
+         'pessoa, e o erro cairia em cima de quem escreveu.</p>'+
+         '<div class="acoes"><button type="button" data-copiar="'+esc(textoDM(c,q))+
+         '">Copiar texto para guardar</button></div>';
+    }
+    h+='</li>';
+  }
+  return h+'</ul>'+
+    '<p class="nota-envio"><strong>Quem envia é você, e é de propósito.</strong> O site prepara o texto '+
+    'mas não manda nada em nome de ninguém. A API do Instagram não permite mensagem não solicitada, e '+
+    'um botão de envio automático num site público viraria um canal de disparo em massa — com mensagem '+
+    'assinada por terceiros. Assim você lê antes, envia do seu endereço e responde pelo que escreveu. '+
+    'Dos '+D.ordem.length+', '+
+    D.ordem.filter(function(k){return (D.candidatos[k].contato||{}).email;}).length+
+    ' têm e-mail oficial — e só porque têm mandato, o que favorece quem já foi eleito — e '+
+    D.ordem.filter(function(k){return (D.candidatos[k].contato||{}).instagram;}).length+
+    ' têm Instagram declarado no registro do TSE, que não depende de mandato nenhum.</p>';
+}
+
+document.addEventListener('click',function(e){
+  const cp=e.target.closest('[data-copiar]');
+  if(cp){
+    const txt=cp.dataset.copiar;
+    const antigo=cp.textContent;
+    const feito=function(){ cp.textContent='Copiado'; setTimeout(function(){cp.textContent=antigo;},1600); };
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(txt).then(feito,function(){window.prompt('Copie o texto:',txt);});
+    } else { window.prompt('Copie o texto:',txt); }
+    return;
+  }
+  const op=e.target.closest('[data-abrir]');
+  if(op){
+    const alvo=document.getElementById(op.dataset.abrir);
+    if(alvo){ alvo.hidden=!alvo.hidden; op.setAttribute('aria-expanded', alvo.hidden?'false':'true'); }
+  }
+});
+
+preencheSelects();
+renderChecks();
+renderTema();
+renderComp();
+document.getElementById('sel-tema').addEventListener('change',renderTema);
+document.getElementById('sel-tema-comp').addEventListener('change',renderComp);
+document.getElementById('checks').addEventListener('change',renderComp);
+porHash();   /* link direto para um perfil vence a aba guardada */
+</script>

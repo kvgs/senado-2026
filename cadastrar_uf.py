@@ -56,6 +56,13 @@ FIXAS = {"dr": "Dr.", "dra": "Dra.", "pr": "Pr.", "pastor": "Pastor",
          "jr": "Jr.", "neto": "Neto", "filho": "Filho", "sobrinho": "Sobrinho"}
 
 
+# Numeral romano em forma CANONICA. O teste solto "[ivxlcdm]+" casa com nome de
+# gente: C, I e D sao todas letras romanas, entao "Cid" virava "CID" — e o mesmo
+# valeria para Vivi, Lili, Mimi. A forma canonica so aceita subtracao valida
+# (IV, IX, XL, XC, CD, CM), rejeita "cid" e continua aceitando II e XXIII.
+ROMANO = r"m{0,3}(cm|cd|d?c{0,3})(xc|xl|l?x{0,3})(ix|iv|v?i{0,3})"
+
+
 def sem_acento(s: str) -> str:
     return unicodedata.normalize("NFD", s).encode("ascii", "ignore").decode()
 
@@ -78,10 +85,12 @@ def capitalizar(nome: str) -> tuple[str, bool]:
             saida.append(FIXAS[b.strip(".")])
         elif b in PARTICULAS and i not in (0, len(partes) - 1):
             saida.append(b)
-        elif re.fullmatch(r"[ivxlcdm]+", b):          # numeral romano: Joao XXIII
+        elif i and re.fullmatch(ROMANO, b):           # numeral romano: Joao XXIII
             saida.append(p.upper()); duvida = True
-        elif len(b) <= 2 and "." not in b:            # sigla ou inicial solta
-            saida.append(p.upper()); duvida = True
+        elif len(b) <= 2 and "." not in b and b == sem_acento(b):
+            saida.append(p.upper()); duvida = True    # sigla ou inicial solta
+        elif len(b) <= 2 and "." not in b:            # "Ze", "Jo": sigla nao tem acento
+            saida.append(b.capitalize()); duvida = True
         elif "'" in b or "’" in b or "`" in b:   # D'Avila, Sant'Anna
             saida.append("'".join(x.capitalize() for x in re.split(r"['`]", p)))
             duvida = True
@@ -169,6 +178,9 @@ FEMININO = {
     "operador": "operadora",
     "vendedor": "vendedora",
     "pecuarista": "pecuarista",
+    "pedagogo": "pedagoga",
+    "cientista": "cientista",
+    "eletricista": "eletricista",
     "empreendedor": "empreendedora",
 }
 
@@ -183,21 +195,53 @@ APOSTROFO = (
 )
 
 
+# Adjetivo que acompanha a ocupacao e concorda com ela. Flexionar so a palavra
+# cabeca produzia "Servidora publico civil aposentado" — meio feminino, meio
+# masculino, o que na tela fica pior do que nao flexionar nada.
+MODIFICADOR = {
+    "publico": "pública", "politico": "política", "agropecuario": "agropecuária",
+    "aposentado": "aposentada", "civil": "civil", "federal": "federal",
+    "municipal": "municipal", "estadual": "estadual", "militar": "militar",
+    "autonomo": "autônoma", "rural": "rural", "urbano": "urbana",
+    "domestico": "doméstica", "tecnico": "técnica", "administrativo": "administrativa",
+}
+
+# Onde a concordancia PARA. Depois de preposicao ou parentese comeca complemento,
+# que nao concorda com a pessoa: "professora DE ensino medio" (o ensino e medio,
+# nao a professora), "aposentada (EXCETO servidor publico)".
+CORTA = {"de", "da", "do", "das", "dos", "em", "no", "na", "e", "ou", "exceto", "para"}
+
+
 def ocupacao(bruta: str, genero: str) -> tuple[str, bool]:
     """Devolve (ocupacao apresentavel, precisa_de_conferencia).
 
-    Flexiona so a PRIMEIRA palavra: no vocabulario do TSE e ela que carrega o
-    genero ("professor de ensino medio"). O resto e complemento e nao muda."""
+    Flexiona a palavra cabeca E os adjetivos que concordam com ela, parando na
+    primeira preposicao ou parentese — dali em diante e complemento."""
     texto = frase(bruta)
     if not texto or "FEMIN" not in (genero or "").upper():
         return texto, False
-    partes = texto.split(" ", 1)
+    partes = texto.split()
     chave = sem_acento(partes[0]).lower().strip("(),")
     if chave not in FEMININO:
         return texto, True                       # nao sei flexionar: marca
     nova = FEMININO[chave]
-    nova = nova[:1].upper() + nova[1:] if partes[0][:1].isupper() else nova
-    return (nova + (" " + partes[1] if len(partes) > 1 else "")), False
+    saida = [nova[:1].upper() + nova[1:] if partes[0][:1].isupper() else nova]
+    duvida = False
+    concordando = True
+    for p in partes[1:]:
+        limpa = sem_acento(p).lower().strip("(),.")
+        if not concordando:
+            saida.append(p)
+        elif limpa in CORTA or p.startswith("("):
+            concordando = False; saida.append(p)
+        elif limpa in MODIFICADOR:
+            saida.append(p.replace(p.strip("(),."), MODIFICADOR[limpa]))
+        elif limpa.endswith(("o", "os")):
+            # concorda em masculino e nao esta na tabela: nao chuto, marco.
+            saida.append(p); duvida = True
+        else:
+            saida.append(p)                      # invariavel: "civil", "social"
+    return " ".join(saida), duvida
 
 
 def linhas_tse(uf: str) -> list[dict]:
@@ -253,10 +297,17 @@ def montar(uf: str) -> tuple[list[dict], set, dict, list[str]]:
             continue                      # ja entrou; os sequenciais vao juntos
         vistos.add(chave)
         outros = por_pessoa[chave]
+        # As duvidas iam so para o terminal. Fechado o terminal, a marca sumia —
+        # e o arquivo ficava com o nome normalizado sem dizer que era um palpite.
+        # Agora cada uma tambem entra no registro da candidatura.
+        meus: list[str] = []
         urna, d1 = capitalizar(l["NM_URNA_CANDIDATO"])
         completo, d2 = capitalizar(l["NM_CANDIDATO"])
         if d1 or d2:
             duvidas.append(f'{l["NR_CANDIDATO"]} {urna} / {completo}')
+            meus.append(f'Nome normalizado do registro em caixa alta '
+                        f'("{l["NM_URNA_CANDIDATO"]}" / "{l["NM_CANDIDATO"]}"): '
+                        f'a regra nao resolve sozinha. Conferir a grafia.')
 
         partidos.add((l["SG_PARTIDO"], l["NM_PARTIDO"]))
 
@@ -276,12 +327,16 @@ def montar(uf: str) -> tuple[list[dict], set, dict, list[str]]:
         if _d3:
             duvidas.append(f'{l["NR_CANDIDATO"]} {urna}: nao sei flexionar '
                            f'"{_ocup}" no feminino')
+            meus.append(f'Ocupacao "{_ocup}": nao sei flexionar no feminino, '
+                        f'ficou como o TSE gravou. Conferir.')
         # O TSE grafa alguns nomes sem apostrofo ("SANT ANNA"). Reproduzir o
         # registro e o certo, mas merece um olhar: foi assim que "Salles" sozinho
         # no cartao virou pergunta na revisao de Sao Paulo.
         if re.search(r"\bSant \w", l["NM_CANDIDATO"], re.I) or \
            re.search(r"\bD [A-Z]", l["NM_CANDIDATO"]):
             duvidas.append(f'{l["NR_CANDIDATO"]} {completo}: o TSE grafou sem apostrofo')
+            meus.append(f'O TSE grafou "{l["NM_CANDIDATO"]}" sem apostrofo; '
+                        f'restaurado para "{completo}". Conferir contra o registro.')
 
         sup = [n for _, n in sorted(sup_por_numero.get(l["NR_CANDIDATO"], []))]
         saida.append({
@@ -300,6 +355,9 @@ def montar(uf: str) -> tuple[list[dict], set, dict, list[str]]:
                 "escolaridade": frase(l.get("DS_GRAU_INSTRUCAO")) or None,
                 "ocupacao_declarada": _ocup or None,
             },
+            # A marca de conferencia mora no dado, e nao so no terminal de quem
+            # rodou o script. Some quando alguem confere contra o registro.
+            **({"_conferir_transcricao": meus} if meus else {}),
             "id_partido": slug(l["SG_PARTIDO"]),
             "id_coligacao": id_col,
             "cargo": "senador",

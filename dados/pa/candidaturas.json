@@ -1,0 +1,486 @@
+{
+ "_nota": "Pessoa e candidatura no mesmo arquivo. Nenhum CPF e nenhum titulo eleitoral aqui: por principio, nao saem da base do TSE para o acervo.",
+ "_data_referencia": "2026-08-26",
+ "_fonte_registro": "TSE — Consulta de candidatos 2026, arquivo consulta_cand_2026_BRASIL.csv. Fonte primaria, sem espelho. Nivel: oficial.",
+ "_gerado_por": "cadastrar_uf.py",
+ "candidaturas": [
+  {
+   "id_candidatura": "sen-pa-2026-celso-sabino",
+   "pessoa": {
+    "nome_urna": "Celso Sabino",
+    "nome_completo": "Celso Sabino de Oliveira",
+    "data_nascimento": "1978-08-29",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Servidor público estadual"
+   },
+   "id_partido": "pdt",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "PA",
+   "ano": 2026,
+   "numero_urna": "123",
+   "sequencial_tse": "140002538404",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Italo Mácola",
+    "Nei Teixeira"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": [
+    {
+     "casa": "camara",
+     "id_externo": "204496",
+     "situacao": "Exercício",
+     "condicao": "Titular",
+     "desde": "2025-12-19",
+     "motivo_afastamento_anterior": null,
+     "_fonte": "Camara dos Deputados, dados abertos v2",
+     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+    }
+   ]
+  },
+  {
+   "id_candidatura": "sen-pa-2026-helder",
+   "pessoa": {
+    "nome_urna": "Helder",
+    "nome_completo": "Helder Zahluth Barbalho",
+    "data_nascimento": "1979-05-18",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Empresário"
+   },
+   "id_partido": "mdb",
+   "id_coligacao": "o-para-ta-junto-pa",
+   "cargo": "senador",
+   "uf": "PA",
+   "ano": 2026,
+   "numero_urna": "151",
+   "sequencial_tse": "140002550779",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Jader Barbalho",
+    "Samuel Camara"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-pa-2026-zequinha-marinho",
+   "pessoa": {
+    "nome_urna": "Zequinha Marinho",
+    "nome_completo": "José da Cruz Marinho",
+    "data_nascimento": "1959-09-18",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Senador"
+   },
+   "id_partido": "pode",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "PA",
+   "ano": 2026,
+   "numero_urna": "200",
+   "sequencial_tse": "140002542691",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Burin",
+    "Francy Pará",
+    "Pr. Fenelon"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": [
+    {
+     "casa": "senado",
+     "id_externo": "3806",
+     "situacao": "Exercício",
+     "condicao": null,
+     "desde": null,
+     "motivo_afastamento_anterior": null,
+     "_fonte": "Senado Federal, dados abertos",
+     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+    }
+   ]
+  },
+  {
+   "id_candidatura": "sen-pa-2026-delegado-eder-mauro",
+   "pessoa": {
+    "nome_urna": "Delegado Éder Mauro",
+    "nome_completo": "Eder Mauro Cardoso Barra",
+    "data_nascimento": "1960-12-14",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Servidor público estadual"
+   },
+   "id_partido": "pl",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "PA",
+   "ano": 2026,
+   "numero_urna": "222",
+   "sequencial_tse": "140002544855",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Alex Lima",
+    "Alessandra Sá"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": [
+    {
+     "casa": "camara",
+     "id_externo": "178908",
+     "situacao": "Exercício",
+     "condicao": "Titular",
+     "desde": "2023-02-01",
+     "motivo_afastamento_anterior": null,
+     "_fonte": "Camara dos Deputados, dados abertos v2",
+     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+    }
+   ]
+  },
+  {
+   "id_candidatura": "sen-pa-2026-willem-da-silva",
+   "pessoa": {
+    "nome_urna": "Willem da Silva",
+    "nome_completo": "Willem da Silva",
+    "data_nascimento": "1987-10-30",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Eletricista e assemelhados"
+   },
+   "id_partido": "dc",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "PA",
+   "ano": 2026,
+   "numero_urna": "277",
+   "sequencial_tse": "140002553743",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Sanro Oliveira",
+    "Marcilio Ferreira"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-pa-2026-breno-guimaraes",
+   "pessoa": {
+    "nome_urna": "Breno Guimarães",
+    "nome_completo": "Breno Ramos Guimaraes Martins",
+    "data_nascimento": "1981-07-16",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Servidor público estadual"
+   },
+   "id_partido": "mobiliza",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "PA",
+   "ano": 2026,
+   "numero_urna": "333",
+   "sequencial_tse": "140002553852",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Dr. Telmo Marinho",
+    "Roseli Malcher"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-pa-2026-edlaine-rodrigues",
+   "pessoa": {
+    "nome_urna": "Edlaine Rodrigues",
+    "nome_completo": "Edlaine Guimarães Santos Rodrigues",
+    "data_nascimento": "1982-08-12",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Contadora"
+   },
+   "id_partido": "democrata",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "PA",
+   "ano": 2026,
+   "numero_urna": "355",
+   "sequencial_tse": "140002548150",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Ruth Reis",
+    "Nelson Margalho"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-pa-2026-chicao",
+   "pessoa": {
+    "nome_urna": "Chicão",
+    "nome_completo": "Francisco das Chagas Silva Melo Filho",
+    "data_nascimento": "1961-04-19",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Deputado"
+   },
+   "id_partido": "uniao",
+   "id_coligacao": "o-para-ta-junto-pa",
+   "cargo": "senador",
+   "uf": "PA",
+   "ano": 2026,
+   "numero_urna": "444",
+   "sequencial_tse": "140002550780",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Joel Lobato",
+    "Pastor Ibanês"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-pa-2026-conti",
+   "pessoa": {
+    "nome_urna": "Conti",
+    "nome_completo": "Marcelino Conti de Souza",
+    "data_nascimento": "1964-07-29",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Servidor público federal"
+   },
+   "id_partido": "psol",
+   "id_coligacao": "federacao-pa",
+   "cargo": "senador",
+   "uf": "PA",
+   "ano": 2026,
+   "numero_urna": "500",
+   "sequencial_tse": "140002545674",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Maria Luisa Farias",
+    "Joana da Economia Solidária"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-pa-2026-gizelle-freitas",
+   "pessoa": {
+    "nome_urna": "Gizelle Freitas",
+    "nome_completo": "Gizelle Soares de Freitas",
+    "data_nascimento": "1982-09-23",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Assistente social"
+   },
+   "id_partido": "psol",
+   "id_coligacao": "federacao-pa",
+   "cargo": "senador",
+   "uf": "PA",
+   "ano": 2026,
+   "numero_urna": "505",
+   "sequencial_tse": "140002545671",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Naide Cordeiro Pacheco",
+    "Edna Gouvêa"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-pa-2026-livia-noronha",
+   "pessoa": {
+    "nome_urna": "Livia Noronha",
+    "nome_completo": "Lívia Maria Araújo Noronha de Oliveira",
+    "data_nascimento": "1990-01-24",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Professora de ensino superior"
+   },
+   "id_partido": "solidariedade",
+   "id_coligacao": "federacao-pa",
+   "cargo": "senador",
+   "uf": "PA",
+   "ano": 2026,
+   "numero_urna": "777",
+   "sequencial_tse": "140002553952",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Ian Blois Pinheiro",
+    "Kinzinho"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-pa-2026-fernanda-lopes",
+   "pessoa": {
+    "nome_urna": "Fernanda Lopes",
+    "nome_completo": "Fernanda Maristane Lopes Araujo",
+    "data_nascimento": "1979-04-24",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Professora de ensino médio"
+   },
+   "id_partido": "up",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "PA",
+   "ano": 2026,
+   "numero_urna": "800",
+   "sequencial_tse": "140002548387",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Socorro Bayma",
+    "Lucilene Oliveira"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  }
+ ]
+}

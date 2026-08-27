@@ -1,0 +1,315 @@
+{
+ "_nota": "Pessoa e candidatura no mesmo arquivo. Nenhum CPF e nenhum titulo eleitoral aqui: por principio, nao saem da base do TSE para o acervo.",
+ "_data_referencia": "2026-08-26",
+ "_fonte_registro": "TSE — Consulta de candidatos 2026, arquivo consulta_cand_2026_BRASIL.csv. Fonte primaria, sem espelho. Nivel: oficial.",
+ "_gerado_por": "cadastrar_uf.py",
+ "candidaturas": [
+  {
+   "id_candidatura": "sen-ce-2026-reginaldo",
+   "pessoa": {
+    "nome_urna": "Reginaldo",
+    "nome_completo": "Reginaldo Ferreira de Araujo",
+    "data_nascimento": "1973-09-01",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Servidor público municipal"
+   },
+   "id_partido": "pstu",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "CE",
+   "ano": 2026,
+   "numero_urna": "162",
+   "sequencial_tse": "60002550748",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Prof. Félix",
+    "Magela"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ce-2026-luizianne",
+   "pessoa": {
+    "nome_urna": "Luizianne",
+    "nome_completo": "Luizianne de Oliveira Lins",
+    "data_nascimento": "1968-11-18",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Deputada"
+   },
+   "id_partido": "rede",
+   "id_coligacao": "ceara-forte-do-lado-certo-ce",
+   "cargo": "senador",
+   "uf": "CE",
+   "ano": 2026,
+   "numero_urna": "180",
+   "sequencial_tse": "60002542476",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Chagas Vieira",
+    "Rodrigo Oliveira"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ce-2026-alcides-fernandes",
+   "pessoa": {
+    "nome_urna": "Alcides Fernandes",
+    "nome_completo": "Alcides Fernandes da Silva",
+    "data_nascimento": "1967-10-01",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Deputado"
+   },
+   "id_partido": "pl",
+   "id_coligacao": "unir-para-mudar-ce",
+   "cargo": "senador",
+   "uf": "CE",
+   "ano": 2026,
+   "numero_urna": "222",
+   "sequencial_tse": "60002540754",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "João Barroso",
+    "Denísio Pinheiro"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ce-2026-lino-alves",
+   "pessoa": {
+    "nome_urna": "Lino Alves",
+    "nome_completo": "Lino Alves de Almeida",
+    "data_nascimento": "1956-06-28",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Engenheiro"
+   },
+   "id_partido": "pco",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "CE",
+   "ano": 2026,
+   "numero_urna": "290",
+   "sequencial_tse": "60002551397",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Tiago Ferreira",
+    "Estevam"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ce-2026-guilherme-theophilo",
+   "pessoa": {
+    "nome_urna": "Guilherme Theophilo",
+    "nome_completo": "Guilherme Cals Theophilo Gaspar de Oliveira",
+    "data_nascimento": "1955-03-13",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Militar reformado"
+   },
+   "id_partido": "novo",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "CE",
+   "ano": 2026,
+   "numero_urna": "300",
+   "sequencial_tse": "60002539687",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Dra. Verônica Amaral",
+    "Capelli"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ce-2026-cid-gomes",
+   "pessoa": {
+    "nome_urna": "Cid Gomes",
+    "nome_completo": "Cid Ferreira Gomes",
+    "data_nascimento": "1963-04-27",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Senador"
+   },
+   "id_partido": "psb",
+   "id_coligacao": "ceara-forte-do-lado-certo-ce",
+   "cargo": "senador",
+   "uf": "CE",
+   "ano": 2026,
+   "numero_urna": "400",
+   "sequencial_tse": "60002542479",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Junior Mano",
+    "Julio Ventura"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": [
+    {
+     "casa": "senado",
+     "id_externo": "5973",
+     "situacao": "Exercício",
+     "condicao": null,
+     "desde": null,
+     "motivo_afastamento_anterior": null,
+     "_fonte": "Senado Federal, dados abertos",
+     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+    }
+   ]
+  },
+  {
+   "id_candidatura": "sen-ce-2026-capitao-wagner",
+   "pessoa": {
+    "nome_urna": "Capitão Wagner",
+    "nome_completo": "Wagner Sousa Gomes",
+    "data_nascimento": "1979-01-21",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Policial militar"
+   },
+   "id_partido": "uniao",
+   "id_coligacao": "unir-para-mudar-ce",
+   "cargo": "senador",
+   "uf": "CE",
+   "ano": 2026,
+   "numero_urna": "445",
+   "sequencial_tse": "60002540753",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Prisco Bezerra",
+    "Lucio Gomes"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ce-2026-catarina-matos",
+   "pessoa": {
+    "nome_urna": "Catarina Matos",
+    "nome_completo": "Catarina da Graca Almeida Matos",
+    "data_nascimento": "1988-08-17",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Professora de ensino médio"
+   },
+   "id_partido": "up",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "CE",
+   "ano": 2026,
+   "numero_urna": "800",
+   "sequencial_tse": "60002533959",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Emanuel Menezes",
+    "Carlos Feitosa"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  }
+ ]
+}

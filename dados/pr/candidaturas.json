@@ -1,0 +1,352 @@
+{
+ "_nota": "Pessoa e candidatura no mesmo arquivo. Nenhum CPF e nenhum titulo eleitoral aqui: por principio, nao saem da base do TSE para o acervo.",
+ "_data_referencia": "2026-08-26",
+ "_fonte_registro": "TSE — Consulta de candidatos 2026, arquivo consulta_cand_2026_BRASIL.csv. Fonte primaria, sem espelho. Nivel: oficial.",
+ "_gerado_por": "cadastrar_uf.py",
+ "candidaturas": [
+  {
+   "id_candidatura": "sen-pr-2026-alexandre-curi",
+   "pessoa": {
+    "nome_urna": "Alexandre Curi",
+    "nome_completo": "Alexandre Maranhao Khury",
+    "data_nascimento": "1979-04-09",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Deputado"
+   },
+   "id_partido": "republicanos",
+   "id_coligacao": "coligacao-a-mudanca-continua-pr",
+   "cargo": "senador",
+   "uf": "PR",
+   "ano": 2026,
+   "numero_urna": "100",
+   "sequencial_tse": "160002547963",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Dudu Potencial",
+    "Nelson Padovani"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-pr-2026-gleisi",
+   "pessoa": {
+    "nome_urna": "Gleisi",
+    "nome_completo": "Gleisi Helena Hoffmann",
+    "data_nascimento": "1965-09-06",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Advogada"
+   },
+   "id_partido": "pt",
+   "id_coligacao": "parana-para-todos-pr",
+   "cargo": "senador",
+   "uf": "PR",
+   "ano": 2026,
+   "numero_urna": "131",
+   "sequencial_tse": "160002547656",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Assis Gurgacz Neto",
+    "Prof. Aldair Rizzi"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-pr-2026-dr-rosinha",
+   "pessoa": {
+    "nome_urna": "Dr. Rosinha",
+    "nome_completo": "Florisvaldo Fier",
+    "data_nascimento": "1950-11-12",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Médico"
+   },
+   "id_partido": "pt",
+   "id_coligacao": "parana-para-todos-pr",
+   "cargo": "senador",
+   "uf": "PR",
+   "ano": 2026,
+   "numero_urna": "132",
+   "sequencial_tse": "160002547658",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Cris Wainer",
+    "Tia Celina"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-pr-2026-karen-guerreiro",
+   "pessoa": {
+    "nome_urna": "Karen Guerreiro",
+    "nome_completo": "Karen Correia Guerreiro",
+    "data_nascimento": "1980-10-31",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Gerente"
+   },
+   "id_partido": "missao",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "PR",
+   "ano": 2026,
+   "numero_urna": "144",
+   "sequencial_tse": "160002551121",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Sonni Rezini",
+    "Renato Scarante"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-pr-2026-filipe-barros",
+   "pessoa": {
+    "nome_urna": "Filipe Barros",
+    "nome_completo": "Filipe Barros Baptista de Toledo Ribeiro",
+    "data_nascimento": "1991-05-29",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Advogado"
+   },
+   "id_partido": "pl",
+   "id_coligacao": "fortaleza-do-parana-pr",
+   "cargo": "senador",
+   "uf": "PR",
+   "ano": 2026,
+   "numero_urna": "222",
+   "sequencial_tse": "160002547660",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Paulo Base",
+    "Sergio Domingues"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": [
+    {
+     "casa": "camara",
+     "id_externo": "204411",
+     "situacao": "Exercício",
+     "condicao": "Titular",
+     "desde": "2023-02-01",
+     "motivo_afastamento_anterior": null,
+     "_fonte": "Camara dos Deputados, dados abertos v2",
+     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+    }
+   ]
+  },
+  {
+   "id_candidatura": "sen-pr-2026-marcelo-marcelino",
+   "pessoa": {
+    "nome_urna": "Marcelo Marcelino",
+    "nome_completo": "Marcelo Goncalves Marcelino",
+    "data_nascimento": "1968-03-13",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Pedagogo"
+   },
+   "id_partido": "pco",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "PR",
+   "ano": 2026,
+   "numero_urna": "290",
+   "sequencial_tse": "160002552563",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Zé Paulo",
+    "Alexandre"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-pr-2026-deltan-dallagnol",
+   "pessoa": {
+    "nome_urna": "Deltan Dallagnol",
+    "nome_completo": "Deltan Martinazzo Dallagnol",
+    "data_nascimento": "1980-01-15",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Advogado"
+   },
+   "id_partido": "novo",
+   "id_coligacao": "fortaleza-do-parana-pr",
+   "cargo": "senador",
+   "uf": "PR",
+   "ano": 2026,
+   "numero_urna": "300",
+   "sequencial_tse": "160002547661",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Professor Picler",
+    "Markenson Marques dos Santos"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-pr-2026-cristina-graeml",
+   "pessoa": {
+    "nome_urna": "Cristina Graeml",
+    "nome_completo": "Cristina Reis Graeml",
+    "data_nascimento": "1969-12-07",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Jornalista e redator"
+   },
+   "id_partido": "psd",
+   "id_coligacao": "coligacao-a-mudanca-continua-pr",
+   "cargo": "senador",
+   "uf": "PR",
+   "ano": 2026,
+   "numero_urna": "555",
+   "sequencial_tse": "160002549555",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Marcos Baumgart",
+    "Jackson André dos Santos"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-pr-2026-joaquim-do-mlb",
+   "pessoa": {
+    "nome_urna": "Joaquim do Mlb",
+    "nome_completo": "Joaquim Silva Maciel",
+    "data_nascimento": "1948-02-12",
+    "escolaridade": "Ensino fundamental incompleto",
+    "ocupacao_declarada": "Mecânico de manutenção"
+   },
+   "id_partido": "up",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "PR",
+   "ano": 2026,
+   "numero_urna": "800",
+   "sequencial_tse": "160002551043",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Paty Cota",
+    "Fernando Dornellas"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  }
+ ]
+}

@@ -1,0 +1,448 @@
+{
+ "_nota": "Pessoa e candidatura no mesmo arquivo. Nenhum CPF e nenhum titulo eleitoral aqui: por principio, nao saem da base do TSE para o acervo.",
+ "_data_referencia": "2026-08-26",
+ "_fonte_registro": "TSE — Consulta de candidatos 2026, arquivo consulta_cand_2026_BRASIL.csv. Fonte primaria, sem espelho. Nivel: oficial.",
+ "_gerado_por": "cadastrar_uf.py",
+ "candidaturas": [
+  {
+   "id_candidatura": "sen-ma-2026-fufuca",
+   "pessoa": {
+    "nome_urna": "Fufuca",
+    "nome_completo": "Andre Luiz Carvalho Ribeiro",
+    "data_nascimento": "1989-08-27",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Médico"
+   },
+   "id_partido": "pp",
+   "id_coligacao": "maranhao-de-cara-nova-ma",
+   "cargo": "senador",
+   "uf": "MA",
+   "ano": 2026,
+   "numero_urna": "111",
+   "sequencial_tse": "100002542867",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Fernando Fialho",
+    "Sargento Barbosa"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ma-2026-weverton-rocha",
+   "pessoa": {
+    "nome_urna": "Weverton Rocha",
+    "nome_completo": "Weverton Rocha Marques de Sousa",
+    "data_nascimento": "1979-10-08",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Administrador"
+   },
+   "id_partido": "pdt",
+   "id_coligacao": "por-todo-maranhao-ma",
+   "cargo": "senador",
+   "uf": "MA",
+   "ano": 2026,
+   "numero_urna": "123",
+   "sequencial_tse": "100002537338",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Alderico Campos",
+    "Renan Waynne"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": [
+    {
+     "casa": "senado",
+     "id_externo": "5411",
+     "situacao": "Exercício",
+     "condicao": null,
+     "desde": null,
+     "motivo_afastamento_anterior": null,
+     "_fonte": "Senado Federal, dados abertos",
+     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+    }
+   ]
+  },
+  {
+   "id_candidatura": "sen-ma-2026-eliziane-gama",
+   "pessoa": {
+    "nome_urna": "Eliziane Gama",
+    "nome_completo": "Eliziane Pereira Gama Melo",
+    "data_nascimento": "1977-02-27",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Senadora"
+   },
+   "id_partido": "pt",
+   "id_coligacao": "brasil-justo-maranhao-grande-ma",
+   "cargo": "senador",
+   "uf": "MA",
+   "ano": 2026,
+   "numero_urna": "133",
+   "sequencial_tse": "100002541459",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Lene Rodrigues",
+    "Patrícia Carlos"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": [
+    {
+     "casa": "senado",
+     "id_externo": "5718",
+     "situacao": "Exercício",
+     "condicao": null,
+     "desde": null,
+     "motivo_afastamento_anterior": null,
+     "_fonte": "Senado Federal, dados abertos",
+     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+    }
+   ]
+  },
+  {
+   "id_candidatura": "sen-ma-2026-roseana-sarney",
+   "pessoa": {
+    "nome_urna": "Roseana Sarney",
+    "nome_completo": "Roseana Sarney Murad",
+    "data_nascimento": "1953-06-01",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Deputada"
+   },
+   "id_partido": "mdb",
+   "id_coligacao": "por-todo-maranhao-ma",
+   "cargo": "senador",
+   "uf": "MA",
+   "ano": 2026,
+   "numero_urna": "151",
+   "sequencial_tse": "100002549583",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Valberlene Lopes",
+    "Carol Pereira"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": [
+    {
+     "casa": "camara",
+     "id_externo": "73806",
+     "situacao": "Exercício",
+     "condicao": "Titular",
+     "desde": "2026-07-19",
+     "motivo_afastamento_anterior": null,
+     "_fonte": "Camara dos Deputados, dados abertos v2",
+     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+    }
+   ]
+  },
+  {
+   "id_candidatura": "sen-ma-2026-wilson-leite",
+   "pessoa": {
+    "nome_urna": "Wilson Leite",
+    "nome_completo": "Francisco Wilson Leite da Silva",
+    "data_nascimento": "1977-04-21",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Técnico em informática"
+   },
+   "id_partido": "pstu",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "MA",
+   "ano": 2026,
+   "numero_urna": "160",
+   "sequencial_tse": "100002536212",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Beto Belo",
+    "Osmar Filho"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ma-2026-raimundo-moreira",
+   "pessoa": {
+    "nome_urna": "Raimundo Moreira",
+    "nome_completo": "Raimundo Moreira Correa",
+    "data_nascimento": "1968-08-30",
+    "escolaridade": "Ensino médio incompleto",
+    "ocupacao_declarada": "Pescador"
+   },
+   "id_partido": "pcb",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "MA",
+   "ano": 2026,
+   "numero_urna": "212",
+   "sequencial_tse": "100002549014",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "José JK",
+    "Hivina Brito"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ma-2026-cidonio-goncalves",
+   "pessoa": {
+    "nome_urna": "Cidônio Gonçalves",
+    "nome_completo": "Cidonio Goncalves dos Santos",
+    "data_nascimento": "1961-04-07",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Produtor agropecuário"
+   },
+   "id_partido": "pl",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "MA",
+   "ano": 2026,
+   "numero_urna": "222",
+   "sequencial_tse": "100002537364",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Coronel Daladier",
+    "Zé Gabriel"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ma-2026-simplicio-araujo",
+   "pessoa": {
+    "nome_urna": "Simplício Araújo",
+    "nome_completo": "José Simplício Alves de Araújo",
+    "data_nascimento": "1969-04-18",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Analista de sistemas"
+   },
+   "id_partido": "dc",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "MA",
+   "ano": 2026,
+   "numero_urna": "277",
+   "sequencial_tse": "100002553336",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Fernando Ipiranga",
+    "Célio Rei do Cavalo"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ma-2026-lahesio-bonfim",
+   "pessoa": {
+    "nome_urna": "Lahesio Bonfim",
+    "nome_completo": "Lahesio Rodrigues do Bonfim",
+    "data_nascimento": "1978-07-30",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Médico"
+   },
+   "id_partido": "novo",
+   "id_coligacao": "pra-transformar-o-maranhao-ma",
+   "cargo": "senador",
+   "uf": "MA",
+   "ano": 2026,
+   "numero_urna": "300",
+   "sequencial_tse": "100002548011",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Maurício Rizzi",
+    "Franciscano Soares"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ma-2026-dr-hilton-goncalo",
+   "pessoa": {
+    "nome_urna": "Dr.hilton Gonçalo",
+    "nome_completo": "Hilton Goncalo de Sousa",
+    "data_nascimento": "1965-12-06",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Médico"
+   },
+   "id_partido": "mobiliza",
+   "id_coligacao": "tempo-de-renovacao-ma",
+   "cargo": "senador",
+   "uf": "MA",
+   "ano": 2026,
+   "numero_urna": "333",
+   "sequencial_tse": "100002550418",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Ester Alves",
+    "Fernanda Goncalo"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ma-2026-enilton-rodrigues",
+   "pessoa": {
+    "nome_urna": "Enilton Rodrigues",
+    "nome_completo": "Enilton Silva Rodrigues",
+    "data_nascimento": "1980-03-19",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Engenheiro"
+   },
+   "id_partido": "psol",
+   "id_coligacao": "brasil-justo-maranhao-grande-ma",
+   "cargo": "senador",
+   "uf": "MA",
+   "ano": 2026,
+   "numero_urna": "500",
+   "sequencial_tse": "100002548853",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Valdeny Barros",
+    "Kelly Santos"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  }
+ ]
+}

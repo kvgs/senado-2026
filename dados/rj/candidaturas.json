@@ -268,7 +268,7 @@
    "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
    "suplentes": [
     "Lucimar Ferreira",
-    "ZÉ Augusto Nalin"
+    "Zé Augusto Nalin"
    ],
    "situacao_registro": [],
    "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
@@ -464,6 +464,9 @@
     "escolaridade": "Superior completo",
     "ocupacao_declarada": "Servidor público civil aposentado"
    },
+   "_conferir_transcricao": [
+    "Nome normalizado do registro em caixa alta (\"Ó CLEMENTE\" / \"CLEMENTE SEBASTIÃO DE ALMEIDA CAMPOS\"): a regra nao resolve sozinha. Conferir a grafia."
+   ],
    "id_partido": "democrata",
    "id_coligacao": null,
    "cargo": "senador",

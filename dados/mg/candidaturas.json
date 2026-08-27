@@ -229,11 +229,11 @@
   {
    "id_candidatura": "sen-mg-2026-victoria-mello-vic",
    "pessoa": {
-    "nome_urna": "Victória Mello VIC",
+    "nome_urna": "Victória Mello Vic",
     "nome_completo": "Victoria de Fatima de Mello",
     "data_nascimento": "1956-07-27",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidora público municipal"
+    "ocupacao_declarada": "Servidora pública municipal"
    },
    "id_partido": "pstu",
    "id_coligacao": null,
@@ -466,7 +466,7 @@
     "nome_completo": "Aurea Carolina de Freitas e Silva",
     "data_nascimento": "1983-11-20",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Cientista político"
+    "ocupacao_declarada": "Cientista política"
    },
    "id_partido": "psol",
    "id_coligacao": "pra-minas-gerais-voltar-a-sonhar-mg",

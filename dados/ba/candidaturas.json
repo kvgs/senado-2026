@@ -1,0 +1,401 @@
+{
+ "_nota": "Pessoa e candidatura no mesmo arquivo. Nenhum CPF e nenhum titulo eleitoral aqui: por principio, nao saem da base do TSE para o acervo.",
+ "_data_referencia": "2026-08-26",
+ "_fonte_registro": "TSE — Consulta de candidatos 2026, arquivo consulta_cand_2026_BRASIL.csv. Fonte primaria, sem espelho. Nivel: oficial.",
+ "_gerado_por": "cadastrar_uf.py",
+ "candidaturas": [
+  {
+   "id_candidatura": "sen-ba-2026-angelo-coronel",
+   "pessoa": {
+    "nome_urna": "Angelo Coronel",
+    "nome_completo": "Angelo Mario Coronel de Azevedo Martins",
+    "data_nascimento": "1958-05-03",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Senador"
+   },
+   "id_partido": "republicanos",
+   "id_coligacao": "unidos-para-mudar-a-bahia-ba",
+   "cargo": "senador",
+   "uf": "BA",
+   "ano": 2026,
+   "numero_urna": "100",
+   "sequencial_tse": "50002533124",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Marcelo Guimarães Filho",
+    "Edylene Ferreira"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": [
+    {
+     "casa": "senado",
+     "id_externo": "5967",
+     "situacao": "Exercício",
+     "condicao": null,
+     "desde": null,
+     "motivo_afastamento_anterior": null,
+     "_fonte": "Senado Federal, dados abertos",
+     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+    }
+   ]
+  },
+  {
+   "id_candidatura": "sen-ba-2026-jaques-wagner",
+   "pessoa": {
+    "nome_urna": "Jaques Wagner",
+    "nome_completo": "Jaques Wagner",
+    "data_nascimento": "1951-03-16",
+    "escolaridade": "Superior incompleto",
+    "ocupacao_declarada": "Senador"
+   },
+   "id_partido": "pt",
+   "id_coligacao": "mais-bahia-mais-brasil-ba",
+   "cargo": "senador",
+   "uf": "BA",
+   "ano": 2026,
+   "numero_urna": "130",
+   "sequencial_tse": "50002536317",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Edvaldo Brito",
+    "Aladilce"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": [
+    {
+     "casa": "senado",
+     "id_externo": "581",
+     "situacao": "Exercício",
+     "condicao": null,
+     "desde": null,
+     "motivo_afastamento_anterior": null,
+     "_fonte": "Senado Federal, dados abertos",
+     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+    }
+   ]
+  },
+  {
+   "id_candidatura": "sen-ba-2026-rui-costa",
+   "pessoa": {
+    "nome_urna": "Rui Costa",
+    "nome_completo": "Rui Costa dos Santos",
+    "data_nascimento": "1963-01-18",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Economista"
+   },
+   "id_partido": "pt",
+   "id_coligacao": "mais-bahia-mais-brasil-ba",
+   "cargo": "senador",
+   "uf": "BA",
+   "ano": 2026,
+   "numero_urna": "133",
+   "sequencial_tse": "50002536321",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Ronaldo Carletto",
+    "Jailma"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ba-2026-marcelo-carvalho",
+   "pessoa": {
+    "nome_urna": "Marcelo Carvalho",
+    "nome_completo": "Marcelo Carvalho Lavigne",
+    "data_nascimento": "1980-10-14",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Professor de ensino médio"
+   },
+   "id_partido": "rede",
+   "id_coligacao": "federacao-ba",
+   "cargo": "senador",
+   "uf": "BA",
+   "ano": 2026,
+   "numero_urna": "180",
+   "sequencial_tse": "50002534774",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Zem Costa",
+    "Cris Marques"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ba-2026-joao-roma",
+   "pessoa": {
+    "nome_urna": "João Roma",
+    "nome_completo": "João Inácio Ribeiro Roma Neto",
+    "data_nascimento": "1972-11-17",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Produtor agropecuário"
+   },
+   "id_partido": "pl",
+   "id_coligacao": "unidos-para-mudar-a-bahia-ba",
+   "cargo": "senador",
+   "uf": "BA",
+   "ano": 2026,
+   "numero_urna": "222",
+   "sequencial_tse": "50002533123",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Suzana Ramos",
+    "Rodrigo Hagge"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ba-2026-marcelo-santtana",
+   "pessoa": {
+    "nome_urna": "Marcelo Santtana",
+    "nome_completo": "Marcelino Jose Guimaraes Santana",
+    "data_nascimento": "1958-04-08",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Advogado"
+   },
+   "id_partido": "dc",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "BA",
+   "ano": 2026,
+   "numero_urna": "277",
+   "sequencial_tse": "50002536577",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Cinde Fatima",
+    "Lazaro Leite",
+    "Mauro Leme"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ba-2026-marcelo-millet",
+   "pessoa": {
+    "nome_urna": "Marcelo Millet",
+    "nome_completo": "Marcelo Millet Oliveira",
+    "data_nascimento": "1986-02-04",
+    "escolaridade": "Ensino médio incompleto",
+    "ocupacao_declarada": "Motorista particular"
+   },
+   "id_partido": "pco",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "BA",
+   "ano": 2026,
+   "numero_urna": "290",
+   "sequencial_tse": "50002553643",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Silvano de Souza",
+    "Maria do Carmo"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ba-2026-carlos-sodre",
+   "pessoa": {
+    "nome_urna": "Carlos Sodré",
+    "nome_completo": "Carlos Eduardo Sodré",
+    "data_nascimento": "1946-08-30",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Advogado"
+   },
+   "id_partido": "mobiliza",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "BA",
+   "ano": 2026,
+   "numero_urna": "333",
+   "sequencial_tse": "50002536625",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Marcos Espinheira",
+    "Lilian Cardoso"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ba-2026-professora-delliana",
+   "pessoa": {
+    "nome_urna": "Professora Delliana",
+    "nome_completo": "Delliana Ricelli Ribeiro da Silva",
+    "data_nascimento": "1982-11-23",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Professora de ensino médio"
+   },
+   "id_partido": "psol",
+   "id_coligacao": "federacao-ba",
+   "cargo": "senador",
+   "uf": "BA",
+   "ano": 2026,
+   "numero_urna": "500",
+   "sequencial_tse": "50002534769",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Prof. Nilo Rosa",
+    "Jeovane Marúsia"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ba-2026-gregorio-gould",
+   "pessoa": {
+    "nome_urna": "Gregorio Gould",
+    "nome_completo": "Gregorio Motta Gould",
+    "data_nascimento": "1986-05-30",
+    "escolaridade": "Ensino médio completo",
+    "ocupacao_declarada": "Outros"
+   },
+   "id_partido": "up",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "BA",
+   "ano": 2026,
+   "numero_urna": "800",
+   "sequencial_tse": "50002550314",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Eliene Almeida Silva",
+    "Arlania Gonçalves"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  }
+ ]
+}

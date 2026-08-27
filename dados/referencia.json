@@ -218,6 +218,11 @@
    "nome": "Partido dos Trabalhadores"
   },
   {
+   "id_partido": "pv",
+   "sigla": "PV",
+   "nome": "Partido Verde"
+  },
+  {
    "id_partido": "rede",
    "sigla": "REDE",
    "nome": "Rede Sustentabilidade"
@@ -226,6 +231,11 @@
    "id_partido": "republicanos",
    "sigla": "REPUBLICANOS",
    "nome": "Republicanos"
+  },
+  {
+   "id_partido": "solidariedade",
+   "sigla": "SOLIDARIEDADE",
+   "nome": "Solidariedade"
   },
   {
    "id_partido": "uniao",
@@ -480,6 +490,518 @@
    "uf": "SP",
    "cargo": "senador",
    "composicao": "FEDERAÇÃO PSDB CIDADANIA(PSDB/CIDADANIA)"
+  },
+  {
+   "id_coligacao": "trabalho-da-esperanca-ac",
+   "nome": "Trabalho da Esperança",
+   "ano": 2026,
+   "uf": "AC",
+   "cargo": "senador",
+   "composicao": "REPUBLICANOS / PSD / AVANTE / NOVO"
+  },
+  {
+   "id_coligacao": "avanca-acre-ac",
+   "nome": "Avança Acre",
+   "ano": 2026,
+   "uf": "AC",
+   "cargo": "senador",
+   "composicao": "PDT / MDB / PL / DEMOCRATA / FEDERAÇÃO UNIÃO PROGRESSISTA(UNIÃO/PP)"
+  },
+  {
+   "id_coligacao": "frente-ampla-pelo-acre-ac",
+   "nome": "Frente Ampla Pelo Acre",
+   "ano": 2026,
+   "uf": "AC",
+   "cargo": "senador",
+   "composicao": "PODE / PSB / FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV)"
+  },
+  {
+   "id_coligacao": "federacao-ac",
+   "nome": "Federação",
+   "ano": 2026,
+   "uf": "AC",
+   "cargo": "senador",
+   "composicao": "FEDERAÇÃO PSOL REDE(PSOL/REDE)"
+  },
+  {
+   "id_coligacao": "produzir-para-empregar-ac",
+   "nome": "Produzir Para Empregar",
+   "ano": 2026,
+   "uf": "AC",
+   "cargo": "senador",
+   "composicao": "FEDERAÇÃO PSDB CIDADANIA(PSDB/CIDADANIA) / FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(PRD/SOLIDARIEDADE)"
+  },
+  {
+   "id_coligacao": "alagoas-gigante-ii-al",
+   "nome": "Alagoas Gigante II",
+   "ano": 2026,
+   "uf": "AL",
+   "cargo": "senador",
+   "composicao": "PDT / PODE / PL / DC / AVANTE / FEDERAÇÃO PSDB CIDADANIA(PSDB/CIDADANIA) / FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(PRD/SOLIDARIEDADE) / FEDERAÇÃO UNIÃO PROGRESSISTA(UNIÃO/PP)"
+  },
+  {
+   "id_coligacao": "pra-alagoas-fazer-historia-de-novo-al",
+   "nome": "Pra Alagoas Fazer História de Novo",
+   "ano": 2026,
+   "uf": "AL",
+   "cargo": "senador",
+   "composicao": "MDB / PODE / AGIR / PSB / PSD / AVANTE / FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV) / FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(PRD/SOLIDARIEDADE)"
+  },
+  {
+   "id_coligacao": "forca-amazonas-am",
+   "nome": "Força Amazonas",
+   "ano": 2026,
+   "uf": "AM",
+   "cargo": "senador",
+   "composicao": "REPUBLICANOS / MDB / PSD / FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV)"
+  },
+  {
+   "id_coligacao": "federacao-am",
+   "nome": "Federação",
+   "ano": 2026,
+   "uf": "AM",
+   "cargo": "senador",
+   "composicao": "FEDERAÇÃO PSOL REDE(PSOL/REDE)"
+  },
+  {
+   "id_coligacao": "mudar-e-urgente-am",
+   "nome": "Mudar É Urgente",
+   "ano": 2026,
+   "uf": "AM",
+   "cargo": "senador",
+   "composicao": "PL / NOVO"
+  },
+  {
+   "id_coligacao": "uniao-pelo-amazonas-am",
+   "nome": "União Pelo Amazonas",
+   "ano": 2026,
+   "uf": "AM",
+   "cargo": "senador",
+   "composicao": "PSB / FEDERAÇÃO UNIÃO PROGRESSISTA(UNIÃO/PP) / PODE"
+  },
+  {
+   "id_coligacao": "juntos-por-todo-o-amapa-ap",
+   "nome": "Juntos Por Todo O Amapá",
+   "ano": 2026,
+   "uf": "AP",
+   "cargo": "senador",
+   "composicao": "REPUBLICANOS / PDT / AGIR / FEDERAÇÃO UNIÃO PROGRESSISTA(UNIÃO/PP) / FEDERAÇÃO PSDB CIDADANIA(PSDB/CIDADANIA) / FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV) / FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(PRD/SOLIDARIEDADE)"
+  },
+  {
+   "id_coligacao": "trabalhar-para-transformar-o-amapa-ap",
+   "nome": "Trabalhar Para Transformar O Amapá",
+   "ano": 2026,
+   "uf": "AP",
+   "cargo": "senador",
+   "composicao": "PODE / PL / NOVO / PSD"
+  },
+  {
+   "id_coligacao": "unidos-para-mudar-a-bahia-ba",
+   "nome": "Unidos Para Mudar A Bahia",
+   "ano": 2026,
+   "uf": "BA",
+   "cargo": "senador",
+   "composicao": "REPUBLICANOS / PODE / PL / FEDERAÇÃO PSDB CIDADANIA(PSDB/CIDADANIA) / FEDERAÇÃO UNIÃO PROGRESSISTA(UNIÃO/PP) / FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(PRD/SOLIDARIEDADE) / NOVO"
+  },
+  {
+   "id_coligacao": "mais-bahia-mais-brasil-ba",
+   "nome": "Mais Bahia Mais Brasil",
+   "ano": 2026,
+   "uf": "BA",
+   "cargo": "senador",
+   "composicao": "PDT / MDB / PSB / PSD / AVANTE / FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV)"
+  },
+  {
+   "id_coligacao": "federacao-ba",
+   "nome": "Federação",
+   "ano": 2026,
+   "uf": "BA",
+   "cargo": "senador",
+   "composicao": "FEDERAÇÃO PSOL REDE(PSOL/REDE)"
+  },
+  {
+   "id_coligacao": "ceara-forte-do-lado-certo-ce",
+   "nome": "Ceará Forte, do Lado Certo",
+   "ano": 2026,
+   "uf": "CE",
+   "cargo": "senador",
+   "composicao": "PDT / PODE / PSB / PSD / FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV) / FEDERAÇÃO PSOL REDE(PSOL/REDE) / FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(PRD/SOLIDARIEDADE) / REPUBLICANOS / MDB / MOBILIZA"
+  },
+  {
+   "id_coligacao": "unir-para-mudar-ce",
+   "nome": "Unir Para Mudar",
+   "ano": 2026,
+   "uf": "CE",
+   "cargo": "senador",
+   "composicao": "PL / DC / AVANTE / FEDERAÇÃO PSDB CIDADANIA(PSDB/CIDADANIA) / FEDERAÇÃO UNIÃO PROGRESSISTA(UNIÃO/PP)"
+  },
+  {
+   "id_coligacao": "df-do-povo-df",
+   "nome": "DF do Povo",
+   "ano": 2026,
+   "uf": "DF",
+   "cargo": "senador",
+   "composicao": "PDT / FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV) / FEDERAÇÃO PSOL REDE(PSOL/REDE)"
+  },
+  {
+   "id_coligacao": "proposito-e-acao-df",
+   "nome": "Propósito e Ação",
+   "ano": 2026,
+   "uf": "DF",
+   "cargo": "senador",
+   "composicao": "REPUBLICANOS / MDB / PODE / PL / FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(PRD/SOLIDARIEDADE) / FEDERAÇÃO UNIÃO PROGRESSISTA(UNIÃO/PP) / DC / MOBILIZA / DEMOCRATA"
+  },
+  {
+   "id_coligacao": "federacao-df",
+   "nome": "Federação",
+   "ano": 2026,
+   "uf": "DF",
+   "cargo": "senador",
+   "composicao": "FEDERAÇÃO PSDB CIDADANIA(PSDB/CIDADANIA)"
+  },
+  {
+   "id_coligacao": "paz-pra-viver-um-novo-tempo-es",
+   "nome": "Paz Pra Viver UM Novo Tempo",
+   "ano": 2026,
+   "uf": "ES",
+   "cargo": "senador",
+   "composicao": "REPUBLICANOS / PL / DEMOCRATA"
+  },
+  {
+   "id_coligacao": "federacao-es",
+   "nome": "Federação",
+   "ano": 2026,
+   "uf": "ES",
+   "cargo": "senador",
+   "composicao": "FEDERAÇÃO PSOL REDE(PSOL/REDE)"
+  },
+  {
+   "id_coligacao": "agora-e-o-futuro-es",
+   "nome": "Agora É O Futuro",
+   "ano": 2026,
+   "uf": "ES",
+   "cargo": "senador",
+   "composicao": "PDT / MDB / PODE / AGIR / PSB / FEDERAÇÃO PSDB CIDADANIA(PSDB/CIDADANIA) / FEDERAÇÃO UNIÃO PROGRESSISTA(UNIÃO/PP)"
+  },
+  {
+   "id_coligacao": "senado-forte-es",
+   "nome": "Senado Forte",
+   "ano": 2026,
+   "uf": "ES",
+   "cargo": "senador",
+   "composicao": "DC / FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(PRD/SOLIDARIEDADE)"
+  },
+  {
+   "id_coligacao": "goias-que-cresce-go",
+   "nome": "Goias Que Cresce",
+   "ano": 2026,
+   "uf": "GO",
+   "cargo": "senador",
+   "composicao": "PL / NOVO"
+  },
+  {
+   "id_coligacao": "goias-de-verdade-go",
+   "nome": "Goiás de Verdade",
+   "ano": 2026,
+   "uf": "GO",
+   "cargo": "senador",
+   "composicao": "DC / FEDERAÇÃO PSDB CIDADANIA(PSDB/CIDADANIA)"
+  },
+  {
+   "id_coligacao": "federacao-go",
+   "nome": "Federação",
+   "ano": 2026,
+   "uf": "GO",
+   "cargo": "senador",
+   "composicao": "FEDERAÇÃO UNIÃO PROGRESSISTA(UNIÃO/PP)"
+  },
+  {
+   "id_coligacao": "goias-pode-mais-go",
+   "nome": "Goiás Pode Mais",
+   "ano": 2026,
+   "uf": "GO",
+   "cargo": "senador",
+   "composicao": "PDT / PSB / FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV) / FEDERAÇÃO PSOL REDE(PSOL/REDE)"
+  },
+  {
+   "id_coligacao": "maranhao-de-cara-nova-ma",
+   "nome": "Maranhão de Cara Nova",
+   "ano": 2026,
+   "uf": "MA",
+   "cargo": "senador",
+   "composicao": "FEDERAÇÃO PSDB CIDADANIA(PSDB/CIDADANIA) / FEDERAÇÃO UNIÃO PROGRESSISTA(UNIÃO/PP)"
+  },
+  {
+   "id_coligacao": "por-todo-maranhao-ma",
+   "nome": "Por Todo Maranhão",
+   "ano": 2026,
+   "uf": "MA",
+   "cargo": "senador",
+   "composicao": "REPUBLICANOS / PDT / MDB / PODE / FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(PRD/SOLIDARIEDADE)"
+  },
+  {
+   "id_coligacao": "brasil-justo-maranhao-grande-ma",
+   "nome": "Brasil Justo, Maranhão Grande",
+   "ano": 2026,
+   "uf": "MA",
+   "cargo": "senador",
+   "composicao": "PSB / FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV) / FEDERAÇÃO PSOL REDE(PSOL/REDE)"
+  },
+  {
+   "id_coligacao": "pra-transformar-o-maranhao-ma",
+   "nome": "Pra Transformar O Maranhão",
+   "ano": 2026,
+   "uf": "MA",
+   "cargo": "senador",
+   "composicao": "NOVO / PSD"
+  },
+  {
+   "id_coligacao": "tempo-de-renovacao-ma",
+   "nome": "Tempo de Renovação",
+   "ano": 2026,
+   "uf": "MA",
+   "cargo": "senador",
+   "composicao": "MOBILIZA / AGIR / AVANTE"
+  },
+  {
+   "id_coligacao": "por-um-ms-do-povo-ms",
+   "nome": "Por UM MS do Povo",
+   "ano": 2026,
+   "uf": "MS",
+   "cargo": "senador",
+   "composicao": "PDT / PSB / FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV)"
+  },
+  {
+   "id_coligacao": "fazendo-o-futuro-acontecer-ms",
+   "nome": "Fazendo O Futuro Acontecer",
+   "ano": 2026,
+   "uf": "MS",
+   "cargo": "senador",
+   "composicao": "PL / FEDERAÇÃO UNIÃO PROGRESSISTA(UNIÃO/PP) / REPUBLICANOS / FEDERAÇÃO PSDB CIDADANIA(PSDB/CIDADANIA) / PSD / MDB / PODE / AVANTE"
+  },
+  {
+   "id_coligacao": "federacao-ms",
+   "nome": "Federação",
+   "ano": 2026,
+   "uf": "MS",
+   "cargo": "senador",
+   "composicao": "FEDERAÇÃO PSOL REDE(PSOL/REDE)"
+  },
+  {
+   "id_coligacao": "mato-grosso-nao-pode-parar-i-mt",
+   "nome": "Mato Grosso Nao Pode Parar I",
+   "ano": 2026,
+   "uf": "MT",
+   "cargo": "senador",
+   "composicao": "REPUBLICANOS / PODE / FEDERAÇÃO PSDB CIDADANIA(PSDB/CIDADANIA) / FEDERAÇÃO UNIÃO PROGRESSISTA(UNIÃO/PP)"
+  },
+  {
+   "id_coligacao": "coracao-da-gente-mt",
+   "nome": "Coração da Gente",
+   "ano": 2026,
+   "uf": "MT",
+   "cargo": "senador",
+   "composicao": "MDB / PL / NOVO / FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(PRD/SOLIDARIEDADE)"
+  },
+  {
+   "id_coligacao": "mato-grosso-para-todos-mt",
+   "nome": "Mato Grosso Para Todos",
+   "ano": 2026,
+   "uf": "MT",
+   "cargo": "senador",
+   "composicao": "PDT / PSB / PSD / FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV) / FEDERAÇÃO PSOL REDE(PSOL/REDE)"
+  },
+  {
+   "id_coligacao": "o-para-ta-junto-pa",
+   "nome": "O Pará Tá Junto",
+   "ano": 2026,
+   "uf": "PA",
+   "cargo": "senador",
+   "composicao": "PSD / FEDERAÇÃO UNIÃO PROGRESSISTA(UNIÃO/PP) / PSB / REPUBLICANOS / FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV) / FEDERAÇÃO PSDB CIDADANIA(PSDB/CIDADANIA) / MDB / AVANTE"
+  },
+  {
+   "id_coligacao": "federacao-pa",
+   "nome": "Federação",
+   "ano": 2026,
+   "uf": "PA",
+   "cargo": "senador",
+   "composicao": "FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(PRD/SOLIDARIEDADE)"
+  },
+  {
+   "id_coligacao": "coligacao-daqui-pra-melhor-pb",
+   "nome": "Coligação Daqui Pra Melhor",
+   "ano": 2026,
+   "uf": "PB",
+   "cargo": "senador",
+   "composicao": "REPUBLICANOS / PODE / MOBILIZA / AGIR / PSB / FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV) / FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(PRD/SOLIDARIEDADE) / FEDERAÇÃO UNIÃO PROGRESSISTA(UNIÃO/PP)"
+  },
+  {
+   "id_coligacao": "juntos-para-a-paraiba-dar-o-proximo-passo-pb",
+   "nome": "Juntos Para A Paraíba Dar O Próximo Passo",
+   "ano": 2026,
+   "uf": "PB",
+   "cargo": "senador",
+   "composicao": "MDB / DEMOCRATA / PSD / FEDERAÇÃO PSDB CIDADANIA(PSDB/CIDADANIA) / PDT"
+  },
+  {
+   "id_coligacao": "coligacao-a-mudanca-continua-pr",
+   "nome": "Coligação A Mudança Continua",
+   "ano": 2026,
+   "uf": "PR",
+   "cargo": "senador",
+   "composicao": "REPUBLICANOS / MDB / DEMOCRATA / PSD / AVANTE / FEDERAÇÃO PSDB CIDADANIA(PSDB/CIDADANIA) / FEDERAÇÃO UNIÃO PROGRESSISTA(UNIÃO/PP)"
+  },
+  {
+   "id_coligacao": "parana-para-todos-pr",
+   "nome": "Paraná Para Todos",
+   "ano": 2026,
+   "uf": "PR",
+   "cargo": "senador",
+   "composicao": "PDT / FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV) / FEDERAÇÃO PSOL REDE(PSOL/REDE) / FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(PRD/SOLIDARIEDADE)"
+  },
+  {
+   "id_coligacao": "fortaleza-do-parana-pr",
+   "nome": "Fortaleza do Paraná",
+   "ano": 2026,
+   "uf": "PR",
+   "cargo": "senador",
+   "composicao": "PODE / PL / NOVO"
+  },
+  {
+   "id_coligacao": "rondonia-com-a-forca-do-trabalho-e-da-uniao-ro",
+   "nome": "Rondonia Com A Força do Trabalho e da União",
+   "ano": 2026,
+   "uf": "RO",
+   "cargo": "senador",
+   "composicao": "REPUBLICANOS / FEDERAÇÃO UNIÃO PROGRESSISTA(UNIÃO/PP)"
+  },
+  {
+   "id_coligacao": "experiencia-fe-e-autoridade-rondonia-forte-de-verdade-ro",
+   "nome": "Experiência, Fé e Autoridade: Rondônia Forte de Verdade",
+   "ano": 2026,
+   "uf": "RO",
+   "cargo": "senador",
+   "composicao": "PDT / MDB"
+  },
+  {
+   "id_coligacao": "federacao-ro",
+   "nome": "Federação",
+   "ano": 2026,
+   "uf": "RO",
+   "cargo": "senador",
+   "composicao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV)"
+  },
+  {
+   "id_coligacao": "juntos-por-rondonia-ro",
+   "nome": "Juntos Por Rondonia",
+   "ano": 2026,
+   "uf": "RO",
+   "cargo": "senador",
+   "composicao": "PODE / PL / DC / NOVO / MOBILIZA"
+  },
+  {
+   "id_coligacao": "gente-que-gosta-de-gente-ro",
+   "nome": "Gente Que Gosta de Gente",
+   "ano": 2026,
+   "uf": "RO",
+   "cargo": "senador",
+   "composicao": "PSD / AVANTE / FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(PRD/SOLIDARIEDADE)"
+  },
+  {
+   "id_coligacao": "roraima-em-primeiro-lugar-rr",
+   "nome": "Roraima EM Primeiro Lugar",
+   "ano": 2026,
+   "uf": "RR",
+   "cargo": "senador",
+   "composicao": "PDT / MDB"
+  },
+  {
+   "id_coligacao": "roraima-mais-forte-rr",
+   "nome": "Roraima Mais Forte",
+   "ano": 2026,
+   "uf": "RR",
+   "cargo": "senador",
+   "composicao": "PSB / FEDERAÇÃO PSDB CIDADANIA(PSDB/CIDADANIA)"
+  },
+  {
+   "id_coligacao": "federacao-rr",
+   "nome": "Federação",
+   "ano": 2026,
+   "uf": "RR",
+   "cargo": "senador",
+   "composicao": "FEDERAÇÃO PSOL REDE(PSOL/REDE)"
+  },
+  {
+   "id_coligacao": "roraima-segue-em-frente-rr",
+   "nome": "Roraima Segue EM Frente",
+   "ano": 2026,
+   "uf": "RR",
+   "cargo": "senador",
+   "composicao": "REPUBLICANOS / PODE / AGIR / PSD / FEDERAÇÃO UNIÃO PROGRESSISTA(UNIÃO/PP)"
+  },
+  {
+   "id_coligacao": "endireita-roraima-rr",
+   "nome": "Endireita Roraima",
+   "ano": 2026,
+   "uf": "RR",
+   "cargo": "senador",
+   "composicao": "AVANTE / FEDERAÇÃO RENOVAÇÃO SOLIDÁRIA(PRD/SOLIDARIEDADE)"
+  },
+  {
+   "id_coligacao": "muda-sergipe-com-a-forca-do-povo-se",
+   "nome": "Muda Sergipe Com A Força do Povo",
+   "ano": 2026,
+   "uf": "SE",
+   "cargo": "senador",
+   "composicao": "REPUBLICANOS / AVANTE"
+  },
+  {
+   "id_coligacao": "sergipe-cresce-com-voce-se",
+   "nome": "Sergipe Cresce Com Você",
+   "ano": 2026,
+   "uf": "SE",
+   "cargo": "senador",
+   "composicao": "PSB / PSD / FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV) / FEDERAÇÃO UNIÃO PROGRESSISTA(UNIÃO/PP)"
+  },
+  {
+   "id_coligacao": "fe-e-coragem-pra-mudar-se",
+   "nome": "Fé e Coragem Pra Mudar",
+   "ano": 2026,
+   "uf": "SE",
+   "cargo": "senador",
+   "composicao": "PODE / PL / NOVO"
+  },
+  {
+   "id_coligacao": "federacao-se",
+   "nome": "Federação",
+   "ano": 2026,
+   "uf": "SE",
+   "cargo": "senador",
+   "composicao": "FEDERAÇÃO PSOL REDE(PSOL/REDE)"
+  },
+  {
+   "id_coligacao": "pra-frente-tocantins-to",
+   "nome": "Pra Frente Tocantins",
+   "ano": 2026,
+   "uf": "TO",
+   "cargo": "senador",
+   "composicao": "FEDERAÇÃO BRASIL DA ESPERANÇA - FE BRASIL(PT/PC do B/PV) / PDT / PSB / PSD"
+  },
+  {
+   "id_coligacao": "pra-cima-tocantins-to",
+   "nome": "Pra Cima Tocantins",
+   "ano": 2026,
+   "uf": "TO",
+   "cargo": "senador",
+   "composicao": "MDB / FEDERAÇÃO PSDB CIDADANIA(PSDB/CIDADANIA)"
+  },
+  {
+   "id_coligacao": "federacao-to",
+   "nome": "Federação",
+   "ano": 2026,
+   "uf": "TO",
+   "cargo": "senador",
+   "composicao": "FEDERAÇÃO PSOL REDE(PSOL/REDE)"
   }
  ],
  "niveis_fonte": [

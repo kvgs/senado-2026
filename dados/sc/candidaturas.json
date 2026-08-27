@@ -170,7 +170,7 @@
     "nome_completo": "Joaninha de Oliveira",
     "data_nascimento": "1958-10-04",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidora público civil aposentado"
+    "ocupacao_declarada": "Servidora pública civil aposentada"
    },
    "id_partido": "pstu",
    "id_coligacao": null,
@@ -357,6 +357,10 @@
     "escolaridade": "Superior incompleto",
     "ocupacao_declarada": "Professora de ensino fundamental"
    },
+   "_conferir_transcricao": [
+    "Nome normalizado do registro em caixa alta (\"CAROL\" / \"CAROLINE SANT ANNA\"): a regra nao resolve sozinha. Conferir a grafia.",
+    "O TSE grafou \"CAROLINE SANT ANNA\" sem apostrofo; restaurado para \"Caroline Sant'Anna\". Conferir contra o registro."
+   ],
    "id_partido": "pco",
    "id_coligacao": null,
    "cargo": "senador",

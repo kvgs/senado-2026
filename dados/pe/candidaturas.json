@@ -305,6 +305,10 @@
     "escolaridade": "Superior completo",
     "ocupacao_declarada": "Advogado"
    },
+   "_conferir_transcricao": [
+    "Nome normalizado do registro em caixa alta (\"CARLOS SANT ANNA\" / \"CARLOS SOARES SANT ANNA\"): a regra nao resolve sozinha. Conferir a grafia.",
+    "O TSE grafou \"CARLOS SOARES SANT ANNA\" sem apostrofo; restaurado para \"Carlos Soares Sant'Anna\". Conferir contra o registro."
+   ],
    "id_partido": "novo",
    "id_coligacao": null,
    "cargo": "senador",

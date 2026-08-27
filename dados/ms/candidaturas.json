@@ -1,0 +1,401 @@
+{
+ "_nota": "Pessoa e candidatura no mesmo arquivo. Nenhum CPF e nenhum titulo eleitoral aqui: por principio, nao saem da base do TSE para o acervo.",
+ "_data_referencia": "2026-08-26",
+ "_fonte_registro": "TSE — Consulta de candidatos 2026, arquivo consulta_cand_2026_BRASIL.csv. Fonte primaria, sem espelho. Nivel: oficial.",
+ "_gerado_por": "cadastrar_uf.py",
+ "candidaturas": [
+  {
+   "id_candidatura": "sen-ms-2026-vander-loubet",
+   "pessoa": {
+    "nome_urna": "Vander Loubet",
+    "nome_completo": "Vander Luiz dos Santos Loubet",
+    "data_nascimento": "1964-01-22",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Bancário e economiário"
+   },
+   "id_partido": "pt",
+   "id_coligacao": "por-um-ms-do-povo-ms",
+   "cargo": "senador",
+   "uf": "MS",
+   "ano": 2026,
+   "numero_urna": "133",
+   "sequencial_tse": "120002547435",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Professora Maria Diogo",
+    "Professora Maju"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": [
+    {
+     "casa": "camara",
+     "id_externo": "74376",
+     "situacao": "Exercício",
+     "condicao": "Titular",
+     "desde": "2023-02-01",
+     "motivo_afastamento_anterior": null,
+     "_fonte": "Camara dos Deputados, dados abertos v2",
+     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+    }
+   ]
+  },
+  {
+   "id_candidatura": "sen-ms-2026-capitao-contar",
+   "pessoa": {
+    "nome_urna": "Capitão Contar",
+    "nome_completo": "Renan Barbosa Contar",
+    "data_nascimento": "1983-12-25",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Membro das forças armadas"
+   },
+   "id_partido": "pl",
+   "id_coligacao": "fazendo-o-futuro-acontecer-ms",
+   "cargo": "senador",
+   "uf": "MS",
+   "ano": 2026,
+   "numero_urna": "221",
+   "sequencial_tse": "120002535769",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Claudio Mendonça",
+    "Luciano Barbosa Rodrigues"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ms-2026-reinaldo-azambuja",
+   "pessoa": {
+    "nome_urna": "Reinaldo Azambuja",
+    "nome_completo": "Reinaldo Azambuja Silva",
+    "data_nascimento": "1963-05-13",
+    "escolaridade": "Superior incompleto",
+    "ocupacao_declarada": "Produtor agropecuário"
+   },
+   "id_partido": "pl",
+   "id_coligacao": "fazendo-o-futuro-acontecer-ms",
+   "cargo": "senador",
+   "uf": "MS",
+   "ano": 2026,
+   "numero_urna": "222",
+   "sequencial_tse": "120002535764",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Nelsinho Trad",
+    "Felipe Mattos"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ms-2026-valter-da-comagran",
+   "pessoa": {
+    "nome_urna": "Valter da Comagran",
+    "nome_completo": "Valter Juvenal de Oliveira",
+    "data_nascimento": "1969-03-08",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Empresário"
+   },
+   "id_partido": "prd",
+   "id_coligacao": "federacao-ms",
+   "cargo": "senador",
+   "uf": "MS",
+   "ano": 2026,
+   "numero_urna": "258",
+   "sequencial_tse": "120002552183",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Perroni",
+    "Eng Adamario de Lana"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ms-2026-luiz-lemes",
+   "pessoa": {
+    "nome_urna": "Luiz Lemes",
+    "nome_completo": "Luiz Antonio Lemes de Oliveira",
+    "data_nascimento": "1967-06-17",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Engenheiro"
+   },
+   "id_partido": "dc",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "MS",
+   "ano": 2026,
+   "numero_urna": "277",
+   "sequencial_tse": "120002551909",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Instrutor André Maciel",
+    "Roberto Patzlaff",
+    "Aldeci Teixeira"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ms-2026-valderi-garcia",
+   "pessoa": {
+    "nome_urna": "Valderi Garcia",
+    "nome_completo": "Valderi Garcia",
+    "data_nascimento": "1974-02-04",
+    "escolaridade": "Ensino médio completo",
+    "ocupacao_declarada": "Trabalhador de construção civil"
+   },
+   "id_partido": "pco",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "MS",
+   "ano": 2026,
+   "numero_urna": "290",
+   "sequencial_tse": "120002552196",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Luciano Lemes",
+    "Thiago Assad"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ms-2026-roberto-oshiro",
+   "pessoa": {
+    "nome_urna": "Roberto Oshiro",
+    "nome_completo": "Roberto Tarashigue Oshiro Junior",
+    "data_nascimento": "1977-11-01",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Advogado"
+   },
+   "id_partido": "novo",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "MS",
+   "ano": 2026,
+   "numero_urna": "300",
+   "sequencial_tse": "120002552115",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Augusto da Soldamaq",
+    "Italivio Neto"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ms-2026-daniel-junior",
+   "pessoa": {
+    "nome_urna": "Daniel Junior",
+    "nome_completo": "Daniel Rodrigues Junior",
+    "data_nascimento": "1979-01-27",
+    "escolaridade": "Ensino médio completo",
+    "ocupacao_declarada": "Outros"
+   },
+   "id_partido": "agir",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "MS",
+   "ano": 2026,
+   "numero_urna": "365",
+   "sequencial_tse": "120002534952",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Alessandro Garcia",
+    "Luciene Ramos da Silva"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-ms-2026-soraya",
+   "pessoa": {
+    "nome_urna": "Soraya",
+    "nome_completo": "Soraya Vieira Thronicke",
+    "data_nascimento": "1973-06-01",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Advogada"
+   },
+   "id_partido": "psb",
+   "id_coligacao": "por-um-ms-do-povo-ms",
+   "cargo": "senador",
+   "uf": "MS",
+   "ano": 2026,
+   "numero_urna": "400",
+   "sequencial_tse": "120002547434",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Bruno Migueis",
+    "Geana Mesquita"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": [
+    {
+     "casa": "senado",
+     "id_externo": "5988",
+     "situacao": "Exercício",
+     "condicao": null,
+     "desde": null,
+     "motivo_afastamento_anterior": null,
+     "_fonte": "Senado Federal, dados abertos",
+     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+    }
+   ]
+  },
+  {
+   "id_candidatura": "sen-ms-2026-beto-do-movimento",
+   "pessoa": {
+    "nome_urna": "Beto do Movimento",
+    "nome_completo": "Jonas Carlos da Conceicao",
+    "data_nascimento": "1980-01-22",
+    "escolaridade": "Ensino fundamental completo",
+    "ocupacao_declarada": "Agricultor"
+   },
+   "id_partido": "psol",
+   "id_coligacao": "federacao-ms",
+   "cargo": "senador",
+   "uf": "MS",
+   "ano": 2026,
+   "numero_urna": "500",
+   "sequencial_tse": "120002532721",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Elizangela Tiago",
+    "Kátia Bastos"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  }
+ ]
+}

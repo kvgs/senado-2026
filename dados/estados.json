@@ -10,7 +10,7 @@
    "regiao": "Norte",
    "candidaturas_tse": 8,
    "assembleia": "Assembleia Legislativa do Estado do Acre",
-   "acervo": "nao_comecamos"
+   "acervo": "em_construcao"
   },
   {
    "uf": "AL",
@@ -19,7 +19,7 @@
    "regiao": "Nordeste",
    "candidaturas_tse": 7,
    "assembleia": "Assembleia Legislativa do Estado de Alagoas",
-   "acervo": "nao_comecamos"
+   "acervo": "em_construcao"
   },
   {
    "uf": "AM",
@@ -28,7 +28,7 @@
    "regiao": "Norte",
    "candidaturas_tse": 9,
    "assembleia": "Assembleia Legislativa do Estado do Amazonas",
-   "acervo": "nao_comecamos"
+   "acervo": "em_construcao"
   },
   {
    "uf": "AP",
@@ -37,7 +37,7 @@
    "regiao": "Norte",
    "candidaturas_tse": 9,
    "assembleia": "Assembleia Legislativa do Estado do Amapá",
-   "acervo": "nao_comecamos"
+   "acervo": "em_construcao"
   },
   {
    "uf": "BA",
@@ -46,7 +46,7 @@
    "regiao": "Nordeste",
    "candidaturas_tse": 10,
    "assembleia": "Assembleia Legislativa do Estado da Bahia",
-   "acervo": "nao_comecamos"
+   "acervo": "em_construcao"
   },
   {
    "uf": "CE",
@@ -55,7 +55,7 @@
    "regiao": "Nordeste",
    "candidaturas_tse": 8,
    "assembleia": "Assembleia Legislativa do Estado do Ceará",
-   "acervo": "nao_comecamos"
+   "acervo": "em_construcao"
   },
   {
    "uf": "DF",
@@ -64,7 +64,7 @@
    "regiao": "Centro-Oeste",
    "candidaturas_tse": 13,
    "assembleia": "Câmara Legislativa do Distrito Federal",
-   "acervo": "nao_comecamos"
+   "acervo": "em_construcao"
   },
   {
    "uf": "ES",
@@ -73,7 +73,7 @@
    "regiao": "Sudeste",
    "candidaturas_tse": 11,
    "assembleia": "Assembleia Legislativa do Estado do Espírito Santo",
-   "acervo": "nao_comecamos"
+   "acervo": "em_construcao"
   },
   {
    "uf": "GO",
@@ -82,7 +82,7 @@
    "regiao": "Centro-Oeste",
    "candidaturas_tse": 11,
    "assembleia": "Assembleia Legislativa do Estado de Goiás",
-   "acervo": "nao_comecamos"
+   "acervo": "em_construcao"
   },
   {
    "uf": "MA",
@@ -91,7 +91,7 @@
    "regiao": "Nordeste",
    "candidaturas_tse": 11,
    "assembleia": "Assembleia Legislativa do Estado do Maranhão",
-   "acervo": "nao_comecamos"
+   "acervo": "em_construcao"
   },
   {
    "uf": "MG",
@@ -109,7 +109,7 @@
    "regiao": "Centro-Oeste",
    "candidaturas_tse": 10,
    "assembleia": "Assembleia Legislativa do Estado de Mato Grosso do Sul",
-   "acervo": "nao_comecamos"
+   "acervo": "em_construcao"
   },
   {
    "uf": "MT",
@@ -118,7 +118,7 @@
    "regiao": "Centro-Oeste",
    "candidaturas_tse": 10,
    "assembleia": "Assembleia Legislativa do Estado de Mato Grosso",
-   "acervo": "nao_comecamos"
+   "acervo": "em_construcao"
   },
   {
    "uf": "PA",
@@ -127,7 +127,7 @@
    "regiao": "Norte",
    "candidaturas_tse": 12,
    "assembleia": "Assembleia Legislativa do Estado do Pará",
-   "acervo": "nao_comecamos"
+   "acervo": "em_construcao"
   },
   {
    "uf": "PB",
@@ -136,7 +136,7 @@
    "regiao": "Nordeste",
    "candidaturas_tse": 10,
    "assembleia": "Assembleia Legislativa do Estado da Paraíba",
-   "acervo": "nao_comecamos"
+   "acervo": "em_construcao"
   },
   {
    "uf": "PE",
@@ -163,7 +163,7 @@
    "regiao": "Sul",
    "candidaturas_tse": 9,
    "assembleia": "Assembleia Legislativa do Estado do Paraná",
-   "acervo": "nao_comecamos"
+   "acervo": "em_construcao"
   },
   {
    "uf": "RJ",
@@ -190,7 +190,7 @@
    "regiao": "Norte",
    "candidaturas_tse": 10,
    "assembleia": "Assembleia Legislativa do Estado de Rondônia",
-   "acervo": "nao_comecamos"
+   "acervo": "em_construcao"
   },
   {
    "uf": "RR",
@@ -199,7 +199,7 @@
    "regiao": "Norte",
    "candidaturas_tse": 13,
    "assembleia": "Assembleia Legislativa do Estado de Roraima",
-   "acervo": "nao_comecamos"
+   "acervo": "em_construcao"
   },
   {
    "uf": "RS",
@@ -226,7 +226,7 @@
    "regiao": "Nordeste",
    "candidaturas_tse": 11,
    "assembleia": "Assembleia Legislativa do Estado de Sergipe",
-   "acervo": "nao_comecamos"
+   "acervo": "em_construcao"
   },
   {
    "uf": "SP",
@@ -244,7 +244,7 @@
    "regiao": "Norte",
    "candidaturas_tse": 13,
    "assembleia": "Assembleia Legislativa do Estado do Tocantins",
-   "acervo": "nao_comecamos"
+   "acervo": "em_construcao"
   }
  ]
 }
