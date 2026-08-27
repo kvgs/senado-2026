@@ -5,26 +5,26 @@
  "_gerado_por": "cadastrar_uf.py",
  "candidaturas": [
   {
-   "id_candidatura": "sen-pe-2026-eduardo-da-fonte",
+   "id_candidatura": "sen-rj-2026-marcelo-crivella",
    "pessoa": {
-    "nome_urna": "Eduardo da Fonte",
-    "nome_completo": "Eduardo Henrique da Fonte de Albuquerque Silva",
-    "data_nascimento": "1972-10-17",
-    "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Deputado"
+    "nome_urna": "Marcelo Crivella",
+    "nome_completo": "Marcelo Bezerra Crivella",
+    "data_nascimento": "1957-10-09",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Engenheiro"
    },
-   "id_partido": "pp",
-   "id_coligacao": "pernambuco-de-coracao-pe",
+   "id_partido": "republicanos",
+   "id_coligacao": null,
    "cargo": "senador",
-   "uf": "PE",
+   "uf": "RJ",
    "ano": 2026,
-   "numero_urna": "111",
-   "sequencial_tse": "170002552102",
+   "numero_urna": "100",
+   "sequencial_tse": "190002550184",
    "bens_declarados_brl": null,
    "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
    "suplentes": [
-    "Carlos Andrade de Lima",
-    "Jane Santos"
+    "Vagner Arruda dos Santos",
+    "Francisco Eugenio"
    ],
    "situacao_registro": [],
    "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
@@ -42,7 +42,7 @@
    "situacao_parlamentar": [
     {
      "casa": "camara",
-     "id_externo": "141421",
+     "id_externo": "220599",
      "situacao": "Exercício",
      "condicao": "Titular",
      "desde": "2023-02-01",
@@ -53,26 +53,26 @@
    ]
   },
   {
-   "id_candidatura": "sen-pe-2026-marilia-arraes",
+   "id_candidatura": "sen-rj-2026-waguinho",
    "pessoa": {
-    "nome_urna": "Marília Arraes",
-    "nome_completo": "Marília Valença Rocha Arraes de Alencar",
-    "data_nascimento": "1984-04-12",
+    "nome_urna": "Waguinho",
+    "nome_completo": "Wagner dos Santos Carneiro",
+    "data_nascimento": "1971-10-29",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogada"
+    "ocupacao_declarada": "Advogado"
    },
-   "id_partido": "pdt",
-   "id_coligacao": "frente-popular-de-pernambuco-pe",
+   "id_partido": "republicanos",
+   "id_coligacao": null,
    "cargo": "senador",
-   "uf": "PE",
+   "uf": "RJ",
    "ano": 2026,
-   "numero_urna": "123",
-   "sequencial_tse": "170002547771",
+   "numero_urna": "101",
+   "sequencial_tse": "190002550182",
    "bens_declarados_brl": null,
    "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
    "suplentes": [
-    "Abel Neto",
-    "Edjane Figueiredo"
+    "Andre R.r Soares",
+    "Dra. Renata"
    ],
    "situacao_registro": [],
    "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
@@ -90,26 +90,233 @@
    "situacao_parlamentar": []
   },
   {
-   "id_candidatura": "sen-pe-2026-humberto-costa",
+   "id_candidatura": "sen-rj-2026-benedita-da-silva",
    "pessoa": {
-    "nome_urna": "Humberto Costa",
-    "nome_completo": "Humberto Sergio Costa Lima",
-    "data_nascimento": "1957-07-07",
+    "nome_urna": "Benedita da Silva",
+    "nome_completo": "Benedita Souza da Silva Sampaio",
+    "data_nascimento": "1942-04-26",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Senador"
+    "ocupacao_declarada": "Deputada"
    },
    "id_partido": "pt",
-   "id_coligacao": "frente-popular-de-pernambuco-pe",
+   "id_coligacao": "juntos-para-mudar-coragem-para-reconstruir-rj",
    "cargo": "senador",
-   "uf": "PE",
+   "uf": "RJ",
    "ano": 2026,
-   "numero_urna": "130",
-   "sequencial_tse": "170002547773",
+   "numero_urna": "131",
+   "sequencial_tse": "190002548141",
    "bens_declarados_brl": null,
    "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
    "suplentes": [
-    "Luciano Bivar",
-    "Professor Manoel Moraes"
+    "Manoel Severino",
+    "Kleber Lucas"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": [
+    {
+     "casa": "camara",
+     "id_externo": "73701",
+     "situacao": "Exercício",
+     "condicao": "Titular",
+     "desde": "2023-02-01",
+     "motivo_afastamento_anterior": null,
+     "_fonte": "Camara dos Deputados, dados abertos v2",
+     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+    }
+   ]
+  },
+  {
+   "id_candidatura": "sen-rj-2026-helio-secco",
+   "pessoa": {
+    "nome_urna": "Helio Secco",
+    "nome_completo": "Helio Kinast Cruz Secco",
+    "data_nascimento": "1989-06-15",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Empresário"
+   },
+   "id_partido": "missao",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "RJ",
+   "ano": 2026,
+   "numero_urna": "144",
+   "sequencial_tse": "190002543961",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Moisés Queiroz",
+    "Ramon Batista"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-rj-2026-paula-falcao",
+   "pessoa": {
+    "nome_urna": "Paula Falcão",
+    "nome_completo": "Paula Andreia Almeida Falcao",
+    "data_nascimento": "1989-12-26",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Professora de ensino médio"
+   },
+   "id_partido": "pstu",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "RJ",
+   "ano": 2026,
+   "numero_urna": "160",
+   "sequencial_tse": "190002539827",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Florinda Lombardi",
+    "Carlão Silveira"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-rj-2026-marcos-dias",
+   "pessoa": {
+    "nome_urna": "Marcos Dias",
+    "nome_completo": "Marcos Dias Pereira",
+    "data_nascimento": "1971-12-03",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Vereador"
+   },
+   "id_partido": "pode",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "RJ",
+   "ano": 2026,
+   "numero_urna": "200",
+   "sequencial_tse": "190002545553",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Everaldo Pereira",
+    "Elaine Diniz"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-rj-2026-carlos-jordy",
+   "pessoa": {
+    "nome_urna": "Carlos Jordy",
+    "nome_completo": "Carlos Roberto Coelho de Mattos Júnior",
+    "data_nascimento": "1982-02-08",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Deputado"
+   },
+   "id_partido": "pl",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "RJ",
+   "ano": 2026,
+   "numero_urna": "221",
+   "sequencial_tse": "190002542888",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Lucimar Ferreira",
+    "ZÉ Augusto Nalin"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": [
+    {
+     "casa": "camara",
+     "id_externo": "204460",
+     "situacao": "Exercício",
+     "condicao": "Titular",
+     "desde": "2024-09-04",
+     "motivo_afastamento_anterior": null,
+     "_fonte": "Camara dos Deputados, dados abertos v2",
+     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+    }
+   ]
+  },
+  {
+   "id_candidatura": "sen-rj-2026-carlos-portinho",
+   "pessoa": {
+    "nome_urna": "Carlos Portinho",
+    "nome_completo": "Carlos Francisco Portinho",
+    "data_nascimento": "1973-07-02",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Senador"
+   },
+   "id_partido": "pl",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "RJ",
+   "ano": 2026,
+   "numero_urna": "222",
+   "sequencial_tse": "190002535142",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Samuel Malafaia",
+    "Marcelinho"
    ],
    "situacao_registro": [],
    "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
@@ -127,7 +334,7 @@
    "situacao_parlamentar": [
     {
      "casa": "senado",
-     "id_externo": "5008",
+     "id_externo": "5936",
      "situacao": "Exercício",
      "condicao": null,
      "desde": null,
@@ -138,26 +345,26 @@
    ]
   },
   {
-   "id_candidatura": "sen-pe-2026-mariano-macedo",
+   "id_candidatura": "sen-rj-2026-luciano-mattos",
    "pessoa": {
-    "nome_urna": "Mariano Macedo",
-    "nome_completo": "José Mariano de Macedo",
-    "data_nascimento": "1965-05-01",
+    "nome_urna": "Luciano Mattos",
+    "nome_completo": "Luciano Oliveira Mattos de Souza",
+    "data_nascimento": "1968-12-05",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professor de ensino médio"
+    "ocupacao_declarada": "Advogado"
    },
-   "id_partido": "pstu",
+   "id_partido": "prtb",
    "id_coligacao": null,
    "cargo": "senador",
-   "uf": "PE",
+   "uf": "RJ",
    "ano": 2026,
-   "numero_urna": "161",
-   "sequencial_tse": "170002537418",
+   "numero_urna": "280",
+   "sequencial_tse": "190002552083",
    "bens_declarados_brl": null,
    "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
    "suplentes": [
-    "Jonas Ferreira",
-    "Marcelo"
+    "Murilo Romero",
+    "Ricardo Fernandes"
    ],
    "situacao_registro": [],
    "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
@@ -175,111 +382,26 @@
    "situacao_parlamentar": []
   },
   {
-   "id_candidatura": "sen-pe-2026-paulo-rubem-santiago",
+   "id_candidatura": "sen-rj-2026-luiz-eugenio",
    "pessoa": {
-    "nome_urna": "Paulo Rubem Santiago",
-    "nome_completo": "Paulo Rubem Santiago Ferreira",
-    "data_nascimento": "1955-07-17",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professor de ensino superior"
-   },
-   "id_partido": "rede",
-   "id_coligacao": "frente-pernambuco-de-luta-pe",
-   "cargo": "senador",
-   "uf": "PE",
-   "ano": 2026,
-   "numero_urna": "180",
-   "sequencial_tse": "170002549655",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Cristiano Romão",
-    "Rafaela Ramos"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pe-2026-mendonca-filho",
-   "pessoa": {
-    "nome_urna": "Mendonça Filho",
-    "nome_completo": "José Mendonça Bezerra Filho",
-    "data_nascimento": "1966-07-12",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputado"
-   },
-   "id_partido": "pl",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "PE",
-   "ano": 2026,
-   "numero_urna": "222",
-   "sequencial_tse": "170002539456",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Adriana Ferreira",
-    "Alcides Cardoso"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": [
-    {
-     "casa": "camara",
-     "id_externo": "74428",
-     "situacao": "Exercício",
-     "condicao": "Titular",
-     "desde": "2023-02-01",
-     "motivo_afastamento_anterior": null,
-     "_fonte": "Camara dos Deputados, dados abertos v2",
-     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
-    }
-   ]
-  },
-  {
-   "id_candidatura": "sen-pe-2026-mailson-da-silva-neto",
-   "pessoa": {
-    "nome_urna": "Mailson da Silva Neto",
-    "nome_completo": "Mailson da Silva Neto",
-    "data_nascimento": "1968-08-06",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Engenheiro"
+    "nome_urna": "Luiz Eugenio",
+    "nome_completo": "Luiz Eugenio Honorato",
+    "data_nascimento": "1961-04-29",
+    "escolaridade": "Ensino fundamental completo",
+    "ocupacao_declarada": "Aposentado (exceto servidor público)"
    },
    "id_partido": "pco",
    "id_coligacao": null,
    "cargo": "senador",
-   "uf": "PE",
+   "uf": "RJ",
    "ano": 2026,
    "numero_urna": "290",
-   "sequencial_tse": "170002552943",
+   "sequencial_tse": "190002552521",
    "bens_declarados_brl": null,
    "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
    "suplentes": [
-    "Estelita Medeiros",
-    "Gilberto Silva"
+    "Antônio de Paula",
+    "Guilherme dos Santos"
    ],
    "situacao_registro": [],
    "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
@@ -297,63 +419,26 @@
    "situacao_parlamentar": []
   },
   {
-   "id_candidatura": "sen-pe-2026-carlos-sant-anna",
+   "id_candidatura": "sen-rj-2026-andre-monteiro",
    "pessoa": {
-    "nome_urna": "Carlos Sant'Anna",
-    "nome_completo": "Carlos Soares Sant'Anna",
-    "data_nascimento": "1976-08-21",
+    "nome_urna": "André Monteiro",
+    "nome_completo": "Luiz Andre de Moura Monteiro",
+    "data_nascimento": "1971-04-14",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado"
-   },
-   "id_partido": "novo",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "PE",
-   "ano": 2026,
-   "numero_urna": "300",
-   "sequencial_tse": "170002530097",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Carla Pinheiro",
-    "Hermes Alves"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pe-2026-pastor-gilvan-costa",
-   "pessoa": {
-    "nome_urna": "Pastor Gilvan Costa",
-    "nome_completo": "Gilvan Oliveira Costa",
-    "data_nascimento": "1962-01-24",
-    "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Outros"
+    "ocupacao_declarada": "Militar reformado"
    },
    "id_partido": "democrata",
    "id_coligacao": null,
    "cargo": "senador",
-   "uf": "PE",
+   "uf": "RJ",
    "ano": 2026,
-   "numero_urna": "355",
-   "sequencial_tse": "170002540420",
+   "numero_urna": "350",
+   "sequencial_tse": "190002550192",
    "bens_declarados_brl": null,
    "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
    "suplentes": [
-    "Laelson Costa",
-    "Pastora Simea Carvalho"
+    "Cmt Ribeiro Afonso",
+    "Alexandre Cardoso"
    ],
    "situacao_registro": [],
    "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
@@ -371,26 +456,100 @@
    "situacao_parlamentar": []
   },
   {
-   "id_candidatura": "sen-pe-2026-tulio-gadelha",
+   "id_candidatura": "sen-rj-2026-o-clemente",
    "pessoa": {
-    "nome_urna": "Túlio Gadêlha",
-    "nome_completo": "Tulio Gadelha Sales de Melo",
-    "data_nascimento": "1987-11-12",
+    "nome_urna": "Ó Clemente",
+    "nome_completo": "Clemente Sebastião de Almeida Campos",
+    "data_nascimento": "1947-10-13",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputado"
+    "ocupacao_declarada": "Servidor público civil aposentado"
    },
-   "id_partido": "psd",
-   "id_coligacao": "pernambuco-de-coracao-pe",
+   "id_partido": "democrata",
+   "id_coligacao": null,
    "cargo": "senador",
-   "uf": "PE",
+   "uf": "RJ",
    "ano": 2026,
-   "numero_urna": "555",
-   "sequencial_tse": "170002552097",
+   "numero_urna": "355",
+   "sequencial_tse": "190002550190",
    "bens_declarados_brl": null,
    "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
    "suplentes": [
-    "Dulci Amorim",
-    "Marcelo Pankararu"
+    "Alberto Pró Vida-Betinho",
+    "Jorge Page"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-rj-2026-monica-benicio",
+   "pessoa": {
+    "nome_urna": "Monica Benicio",
+    "nome_completo": "Monica Tereza Azeredo Benicio",
+    "data_nascimento": "1986-02-01",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Vereadora"
+   },
+   "id_partido": "psol",
+   "id_coligacao": "federacao-rj",
+   "cargo": "senador",
+   "uf": "RJ",
+   "ano": 2026,
+   "numero_urna": "500",
+   "sequencial_tse": "190002536164",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Vanderlea Aguiar",
+    "Maria dos Camelôs"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-rj-2026-pedro-paulo",
+   "pessoa": {
+    "nome_urna": "Pedro Paulo",
+    "nome_completo": "Pedro Paulo Carvalho Teixeira",
+    "data_nascimento": "1972-06-29",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Economista"
+   },
+   "id_partido": "psd",
+   "id_coligacao": "juntos-para-mudar-coragem-para-reconstruir-rj",
+   "cargo": "senador",
+   "uf": "RJ",
+   "ano": 2026,
+   "numero_urna": "555",
+   "sequencial_tse": "190002548145",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Miro Teixeira",
+    "Savio Neves"
    ],
    "situacao_registro": [],
    "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
@@ -408,7 +567,7 @@
    "situacao_parlamentar": [
     {
      "casa": "camara",
-     "id_externo": "157130",
+     "id_externo": "122158",
      "situacao": "Exercício",
      "condicao": "Titular",
      "desde": "2023-02-01",
@@ -419,63 +578,63 @@
    ]
   },
   {
-   "id_candidatura": "sen-pe-2026-samuel-timoteo",
+   "id_candidatura": "sen-rj-2026-michelly-xavier",
    "pessoa": {
-    "nome_urna": "Samuel Timoteo",
-    "nome_completo": "Samuel Timoteo da Silva",
-    "data_nascimento": "1975-09-17",
+    "nome_urna": "Michelly Xavier",
+    "nome_completo": "Michelly Xavier de Souza",
+    "data_nascimento": "1980-06-09",
+    "escolaridade": "Superior completo",
+    "ocupacao_declarada": "Advogada"
+   },
+   "id_partido": "up",
+   "id_coligacao": null,
+   "cargo": "senador",
+   "uf": "RJ",
+   "ano": 2026,
+   "numero_urna": "800",
+   "sequencial_tse": "190002548589",
+   "bens_declarados_brl": null,
+   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+   "suplentes": [
+    "Roberto Vasconcellos",
+    "Elza do Mlb"
+   ],
+   "situacao_registro": [],
+   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+   "mandatos_anteriores": [],
+   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+   "contato": {
+    "email": null,
+    "email_fonte": null,
+    "email_tipo": null,
+    "instagram": null,
+    "redes": []
+   },
+   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
+   "foto": null,
+   "situacao_parlamentar": []
+  },
+  {
+   "id_candidatura": "sen-rj-2026-vinicius-benevides",
+   "pessoa": {
+    "nome_urna": "Vinicius Benevides",
+    "nome_completo": "Vinicius Benevides dos Santos Conceicao",
+    "data_nascimento": "1977-10-14",
     "escolaridade": "Ensino médio completo",
     "ocupacao_declarada": "Trabalhador de construção civil"
    },
    "id_partido": "up",
    "id_coligacao": null,
    "cargo": "senador",
-   "uf": "PE",
+   "uf": "RJ",
    "ano": 2026,
-   "numero_urna": "800",
-   "sequencial_tse": "170002537334",
+   "numero_urna": "808",
+   "sequencial_tse": "190002548590",
    "bens_declarados_brl": null,
    "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
    "suplentes": [
-    "Dra. Gau",
-    "Professor Bruno"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pe-2026-gorett-bitu",
-   "pessoa": {
-    "nome_urna": "Gorett Bitu",
-    "nome_completo": "Maria Gorett Bitu",
-    "data_nascimento": "1957-03-02",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Aposentada (exceto servidor público)"
-   },
-   "id_partido": "up",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "PE",
-   "ano": 2026,
-   "numero_urna": "801",
-   "sequencial_tse": "170002537335",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Professor Natanael Sarmento",
-    "Sandra Ramos"
+    "Gabriela Gonçalves",
+    "George Thompson"
    ],
    "situacao_registro": [],
    "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",

@@ -82,14 +82,19 @@ def capitalizar(nome: str) -> tuple[str, bool]:
             saida.append(p.upper()); duvida = True
         elif len(b) <= 2 and "." not in b:            # sigla ou inicial solta
             saida.append(p.upper()); duvida = True
-        elif "'" in b or "`" in b:                    # D'Avila, Sant'Anna
+        elif "'" in b or "’" in b or "`" in b:   # D'Avila, Sant'Anna
             saida.append("'".join(x.capitalize() for x in re.split(r"['`]", p)))
             duvida = True
         elif "-" in b:
             saida.append("-".join(x.capitalize() for x in b.split("-")))
         else:
             saida.append(b.capitalize())
-    return " ".join(saida), duvida
+    texto = " ".join(saida)
+    for padrao, troca in APOSTROFO:
+        novo = re.sub(padrao, troca, texto)
+        if novo != texto:
+            texto, duvida = novo, True     # restaurado, e marcado para conferencia
+    return texto, duvida
 
 
 def frase(s: str) -> str:
@@ -119,7 +124,63 @@ FEMININO = {
     "administrador": "administradora",
     "outros": "outros",
     "estudante": "estudante",
+    # Acrescentados conforme apareceram nos estados novos. Invariantes ficam
+    # iguais de proposito: "assistente social" nao flexiona, e forcar um -a ali
+    # seria inventar palavra.
+    "assistente": "assistente",
+    "jornalista": "jornalista",
+    "odontologo": "odontóloga",
+    "economista": "economista",
+    "agricultor": "agricultora",
+    "bancario": "bancária",
+    "policial": "policial",
+    "militar": "militar",
+    "tecnico": "técnica",
+    "auxiliar": "auxiliar",
+    "analista": "analista",
+    "psicologo": "psicóloga",
+    "sociologo": "socióloga",
+    "historiador": "historiadora",
+    "escritor": "escritora",
+    "produtor": "produtora",
+    "diretor": "diretora",
+    "gerente": "gerente",
+    "corretor": "corretora",
+    "enfermeiro": "enfermeira",
+    "assessor": "assessora",
+    "sindicalista": "sindicalista",
+    "dentista": "dentista",
+    "veterinario": "veterinária",
+    "farmaceutico": "farmacêutica",
+    "arquiteto": "arquiteta",
+    "contador": "contadora",
+    "publicitario": "publicitária",
+    "religioso": "religiosa",
+    "artista": "artista",
+    "atleta": "atleta",
+    "motorista": "motorista",
+    "bombeiro": "bombeira",
+    "delegado": "delegada",
+    "juiz": "juíza",
+    "promotor": "promotora",
+    "procurador": "procuradora",
+    "empregado": "empregada",
+    "funcionario": "funcionária",
+    "operador": "operadora",
+    "vendedor": "vendedora",
+    "pecuarista": "pecuarista",
+    "empreendedor": "empreendedora",
 }
+
+# O TSE grava alguns sobrenomes SEM o apostrofo: "MANUELA D AVILA",
+# "CAROLINE SANT ANNA". Reproduzir isso na tela mostra o nome de uma pessoa
+# grafado errado — e nao e conteudo, e transcricao, da mesma familia do caixa
+# alta que ja normalizamos. Restauro os dois padroes documentados, guardo o
+# original, e o caso continua marcado para conferencia humana.
+APOSTROFO = (
+    (r"\bD ([ÁAÃEIOU]\w*)", "d'" + '\\1'),
+    (r"\bSant (\w+)", "Sant'" + '\\1'),
+)
 
 
 def ocupacao(bruta: str, genero: str) -> tuple[str, bool]:
@@ -170,9 +231,28 @@ def montar(uf: str) -> tuple[list[dict], set, dict, list[str]]:
             n, _ = capitalizar(l["NM_URNA_CANDIDATO"] or l["NM_CANDIDATO"])
             sup_por_numero.setdefault(l["NR_CANDIDATO"], []).append((c, n))
 
+    # Registro duplicado da MESMA pessoa: mesmo numero, mesmo partido e mesma data
+    # de nascimento. Acontece na base do TSE (Piaui tem um), e sem tratar o
+    # segundo sobrescrevia o primeiro em silencio — o cadastro contava 21 e o site
+    # mostrava 20.
+    def pessoa_chave(l):
+        return (l["NR_CANDIDATO"], l["SG_PARTIDO"], l.get("DT_NASCIMENTO"),
+                sem_acento(l["NM_CANDIDATO"]).upper())
+
+    por_pessoa: dict[tuple, list[dict]] = {}
+    for l in titulares:
+        por_pessoa.setdefault(pessoa_chave(l), []).append(l)
+    duplicados = {k: v for k, v in por_pessoa.items() if len(v) > 1}
+
     partidos, coligacoes, duvidas = set(), {}, []
     saida = []
+    vistos: set[tuple] = set()
     for l in sorted(titulares, key=lambda x: x["NR_CANDIDATO"]):
+        chave = pessoa_chave(l)
+        if chave in vistos:
+            continue                      # ja entrou; os sequenciais vao juntos
+        vistos.add(chave)
+        outros = por_pessoa[chave]
         urna, d1 = capitalizar(l["NM_URNA_CANDIDATO"])
         completo, d2 = capitalizar(l["NM_CANDIDATO"])
         if d1 or d2:
@@ -205,7 +285,14 @@ def montar(uf: str) -> tuple[list[dict], set, dict, list[str]]:
 
         sup = [n for _, n in sorted(sup_por_numero.get(l["NR_CANDIDATO"], []))]
         saida.append({
-            "id_candidatura": f'sen-{uf.lower()}-2026-{slug(l["NM_URNA_CANDIDATO"])}',
+            # O numero de urna entra no id quando duas pessoas DIFERENTES tem o
+            # mesmo nome de urna — outro caso, e certo de aparecer em 27 estados.
+            "id_candidatura": (
+                f'sen-{uf.lower()}-2026-{slug(l["NM_URNA_CANDIDATO"])}'
+                if sum(1 for k in por_pessoa
+                       if slug(k[3]) and slug(l["NM_URNA_CANDIDATO"]) ==
+                       slug(por_pessoa[k][0]["NM_URNA_CANDIDATO"])) == 1
+                else f'sen-{uf.lower()}-2026-{slug(l["NM_URNA_CANDIDATO"])}-{l["NR_CANDIDATO"]}'),
             "pessoa": {
                 "nome_urna": urna,
                 "nome_completo": completo,
@@ -220,6 +307,15 @@ def montar(uf: str) -> tuple[list[dict], set, dict, list[str]]:
             "ano": 2026,
             "numero_urna": l["NR_CANDIDATO"],
             "sequencial_tse": l["SQ_CANDIDATO"],
+            # Quando a base traz mais de um registro da mesma pessoa, os outros
+            # sequenciais ficam aqui. Descartar sem dizer seria esconder um fato
+            # do registro eleitoral.
+            **({"_sequenciais_duplicados": [o["SQ_CANDIDATO"] for o in outros[1:]],
+                "_nota_duplicidade": (
+                    f"A base do TSE traz {len(outros)} registros desta candidatura, com o "
+                    "mesmo numero, partido e data de nascimento. Tratados como uma so "
+                    "pessoa; os sequenciais de todos ficam registrados.")}
+               if len(outros) > 1 else {}),
             # Ausencias com o motivo escrito, e nao campos omitidos.
             "bens_declarados_brl": None,
             "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
@@ -242,6 +338,45 @@ def montar(uf: str) -> tuple[list[dict], set, dict, list[str]]:
     return saida, partidos, coligacoes, duvidas
 
 
+# Os quatro arquivos do acervo, vazios e com o motivo escrito. Eu criei os de
+# Pernambuco a mao, e passo feito a mao e passo que o proximo estado esquece.
+#
+# ARQUIVO AUSENTE E DEFEITO DE INSTALACAO; arquivo presente e vazio, dizendo por
+# que, e informacao. E a mesma distincao que o site faz para o leitor entre "nao
+# aborda" e "nao localizamos" — vale para os nossos proprios arquivos.
+def esqueleto(destino: pathlib.Path, est: dict) -> None:
+    onde = acervo.por_extenso(est["uf"])
+    vazios = {
+        "documentos.json": {
+            "_nota": ("Documentos que sustentam posicao: plano registrado no TSE, programa "
+                      "partidario, site oficial, base de dados abertos, reportagem, "
+                      f"entrevista. Vazio porque a coleta {onde} ainda nao comecou."),
+            "documentos": []},
+        "posicoes.json": {
+            "_nota": ("Posicoes por candidatura e tema, cada uma com fonte, selo e estado de "
+                      "cobertura. Vazio NAO significa que as candidaturas nao tem proposta: "
+                      "significa que ainda nao procuramos."),
+            "posicoes": []},
+        "registros_legislativos.json": {
+            "_nota": ("Selo azul: proposicoes e votos de quem tem ou teve mandato. Rode "
+                      "resolver_mandatos.py e depois coletar_legislativo.py para preencher."),
+            "registros": []},
+        "pesquisas.json": {
+            "_nota": ("Pesquisa de intencao de voto so entra com ficha tecnica completa e "
+                      "numero de registro no TSE. Publicar numero sem ficha e pior que nao "
+                      "publicar."),
+            "_regra": ("Instituto, registro no TSE, periodo de campo, entrevistados, margem "
+                       "de erro e nivel de confianca. Faltando um, nao publica."),
+            "pesquisas": []},
+    }
+    for nome, conteudo in vazios.items():
+        alvo = destino / nome
+        if alvo.exists():
+            continue
+        alvo.write_text(json.dumps(conteudo, ensure_ascii=False, indent=1), encoding="utf-8")
+        print(f"  criado dados/{destino.name}/{nome}")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--uf", required=True)
@@ -257,9 +392,20 @@ def main() -> int:
     novos = sorted(p for p in partidos if p[0] not in ja)
 
     print(f"{est['nome']} ({uf}) — {len(cands)} candidaturas ao Senado")
+    # A diferenca so e problema se NAO estiver explicada por registro duplicado.
+    _extra = sum(len(c.get("_sequenciais_duplicados") or []) for c in cands)
+    _bate = len(cands) + _extra == est["candidaturas_tse"]
     print(f"  TSE diz {est['candidaturas_tse']}; montadas {len(cands)}"
-          + ("  OK" if len(cands) == est["candidaturas_tse"] else "  DIVERGE"))
+          + (f" (+{_extra} registro(s) duplicado(s) fundido(s))" if _extra else "")
+          + ("  OK" if _bate else "  DIVERGE — conferir"))
     print(f"  com suplentes: {sum(1 for c in cands if len(c['suplentes']) == 2)} de {len(cands)} com dois")
+    _dup = [c for c in cands if c.get("_sequenciais_duplicados")]
+    if _dup:
+        print(f"  {len(_dup)} candidatura(s) com REGISTRO DUPLICADO na base do TSE "
+              "(mesma pessoa, mais de um registro):")
+        for c in _dup:
+            print(f"     {c['numero_urna']} {c['pessoa']['nome_urna']} — "
+                  f"{1 + len(c['_sequenciais_duplicados'])} registros")
     print(f"  coligacoes: {len(coligacoes)} · partidos novos para a referencia: "
           f"{', '.join(s for s, _ in novos) or 'nenhum'}")
     if duvidas:
@@ -289,6 +435,57 @@ def main() -> int:
 
     destino = acervo.NACIONAL / uf.lower()
     destino.mkdir(exist_ok=True)
+    esqueleto(destino, est)
+
+    # ---------------------------------------------------------------------
+    # RECADASTRAR NAO PODE DESTRUIR ACERVO EXISTENTE.
+    #
+    # Este script reescreve candidaturas.json a partir do TSE. Rodado sobre um
+    # acervo ja trabalhado, ele trocaria ids e apagaria campo curado a mao — e eu
+    # fiz exatamente isso em Sao Paulo, num acervo com 41 posicoes revisadas.
+    # Revertido a tempo, mas so porque conferi o diff.
+    # ---------------------------------------------------------------------
+    anterior = destino / "candidaturas.json"
+    if anterior.exists():
+        velho = {c["id_candidatura"]: c
+                 for c in json.loads(anterior.read_text(encoding="utf-8"))["candidaturas"]}
+
+        # TRAVA 1: id que muda quebra tudo o que aponta para ele. id_candidatura
+        # liga posicoes, registros legislativos e classificacoes, e JSON nao tem
+        # chave estrangeira que reclame — o estrago seria silencioso.
+        novos_ids = {c["id_candidatura"] for c in cands}
+        sumiram = sorted(set(velho) - novos_ids)
+        if sumiram:
+            raise SystemExit(
+                f"PAROU: o cadastro novo nao produz {len(sumiram)} id(s) que ja existem "
+                f"em dados/{uf.lower()}/candidaturas.json:" + chr(10)
+                + chr(10).join("  " + s for s in sumiram[:8])
+                + chr(10) + chr(10)
+                + "id_candidatura e a chave que liga posicoes, registros e classificacoes."
+                + chr(10)
+                + "Trocar id exige migrar os arquivos que apontam para ele — outra operacao."
+                + chr(10)
+                + "Nada foi gravado.")
+
+        # TRAVA 2: tudo o que o cadastro novo NAO produz e preservado. A lista
+        # escrita a mao estava incompleta e perdeu oito campos.
+        repostos = 0
+        for c in cands:
+            v = velho.get(c["id_candidatura"])
+            if not v:
+                continue
+            for k, valor in v.items():
+                if k not in c or c[k] in (None, [], {}, ""):
+                    c[k] = valor
+                    repostos += 1
+            # pessoa tambem: o TSE nao tem bio nem observacao
+            for k, valor in (v.get("pessoa") or {}).items():
+                if k not in c["pessoa"] or not c["pessoa"].get(k):
+                    c["pessoa"][k] = valor
+        if repostos:
+            print(f"  preservados do cadastro anterior: {repostos} campo(s) que o TSE "
+                  "nao fornece")
+
     (destino / "candidaturas.json").write_text(json.dumps({
         "_nota": ("Pessoa e candidatura no mesmo arquivo. Nenhum CPF e nenhum titulo "
                   "eleitoral aqui: por principio, nao saem da base do TSE para o acervo."),
@@ -299,6 +496,17 @@ def main() -> int:
         "_gerado_por": "cadastrar_uf.py",
         "candidaturas": cands,
     }, ensure_ascii=False, indent=1), encoding="utf-8")
+
+    # A pagina inicial le daqui. Estado com cadastro mas sem revisao e "em
+    # construcao": deixar como "nao comecamos" esconde o que ja existe, e marcar
+    # como "publicado" promete o que nao existe.
+    est_p = acervo.NACIONAL / "estados.json"
+    est_d = json.loads(est_p.read_text(encoding="utf-8"))
+    for e in est_d["estados"]:
+        if e["uf"] == uf and e["acervo"] == "nao_comecamos":
+            e["acervo"] = "em_construcao"
+            est_p.write_text(json.dumps(est_d, ensure_ascii=False, indent=1), encoding="utf-8")
+            print(f"  estados.json: {uf} passa a 'em_construcao'")
 
     print(f"\nescrito: dados/{uf.lower()}/candidaturas.json")
     print(f"referencia.json: +{len(novos)} partido(s), +{len(coligacoes)} coligacao(oes)")

@@ -1,8 +1,8 @@
 {
- "uf": "SP",
- "uf_nome": "São Paulo",
- "uf_por": "por São Paulo",
- "uf_assembleia": "Assembleia Legislativa do Estado de São Paulo",
+ "uf": "SC",
+ "uf_nome": "Santa Catarina",
+ "uf_por": "por Santa Catarina",
+ "uf_assembleia": "Assembleia Legislativa do Estado de Santa Catarina",
  "site_url": "https://kvgs.github.io/senado-2026/",
  "temas": [
   {
@@ -48,65 +48,10 @@
  ],
  "candidaturas": [
   {
-   "id": "sen-sp-2026-derrite",
-   "nome": "Guilherme Derrite",
+   "id": "sen-sc-2026-esperidiao-amin",
+   "nome": "Esperidião Amin",
    "partido": "PP",
    "numero": "111",
-   "email": "dep.guilhermederrite@camara.leg.br",
-   "email_fonte": "Câmara dos Deputados (dados abertos)",
-   "email_tipo": "institucional",
-   "instagram": "@guilhermederrite",
-   "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
-  },
-  {
-   "id": "sen-sp-2026-schiavetto",
-   "nome": "Guto Schiavetto",
-   "partido": "MISSÃO",
-   "numero": "144",
-   "email": null,
-   "email_fonte": null,
-   "email_tipo": null,
-   "instagram": "@gutoschiavetto",
-   "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
-  },
-  {
-   "id": "sen-sp-2026-weller",
-   "nome": "Weller Gonçalves",
-   "partido": "PSTU",
-   "numero": "160",
-   "email": null,
-   "email_fonte": null,
-   "email_tipo": null,
-   "instagram": "@weller_goncalves",
-   "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
-  },
-  {
-   "id": "sen-sp-2026-eliana-ferreira",
-   "nome": "Dra Eliana Ferreira",
-   "partido": "PSTU",
-   "numero": "161",
-   "email": null,
-   "email_fonte": null,
-   "email_tipo": null,
-   "instagram": "@dra.elianaferreira.pstu",
-   "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
-  },
-  {
-   "id": "sen-sp-2026-marina",
-   "nome": "Marina Silva",
-   "partido": "REDE",
-   "numero": "180",
-   "email": "dep.marinasilva@camara.leg.br",
-   "email_fonte": "Câmara dos Deputados (dados abertos)",
-   "email_tipo": "institucional",
-   "instagram": "@marinasilvaoficial",
-   "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
-  },
-  {
-   "id": "sen-sp-2026-rufino",
-   "nome": "Geraldo Rufino",
-   "partido": "PODE",
-   "numero": "200",
    "email": null,
    "email_fonte": null,
    "email_tipo": null,
@@ -114,41 +59,96 @@
    "instagram_fonte": null
   },
   {
-   "id": "sen-sp-2026-petter-maahs",
-   "nome": "Petter Maahs",
-   "partido": "PCB",
-   "numero": "211",
+   "id": "sen-sc-2026-decio-lima",
+   "nome": "Décio Lima",
+   "partido": "PT",
+   "numero": "133",
    "email": null,
    "email_fonte": null,
    "email_tipo": null,
-   "instagram": "@petter.maahs",
-   "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
+   "instagram": null,
+   "instagram_fonte": null
   },
   {
-   "id": "sen-sp-2026-andre-do-prado",
-   "nome": "André do Prado",
+   "id": "sen-sc-2026-tulio-de-amorim-pfuetzenreiter",
+   "nome": "Túlio de Amorim Pfuetzenreiter",
+   "partido": "MISSÃO",
+   "numero": "144",
+   "email": null,
+   "email_fonte": null,
+   "email_tipo": null,
+   "instagram": null,
+   "instagram_fonte": null
+  },
+  {
+   "id": "sen-sc-2026-lunelli",
+   "nome": "Lunelli",
+   "partido": "MDB",
+   "numero": "155",
+   "email": null,
+   "email_fonte": null,
+   "email_tipo": null,
+   "instagram": null,
+   "instagram_fonte": null
+  },
+  {
+   "id": "sen-sc-2026-joaninha-de-oliveira",
+   "nome": "Joaninha de Oliveira",
+   "partido": "PSTU",
+   "numero": "160",
+   "email": null,
+   "email_fonte": null,
+   "email_tipo": null,
+   "instagram": null,
+   "instagram_fonte": null
+  },
+  {
+   "id": "sen-sc-2026-marcos-dorval",
+   "nome": "Marcos Dorval",
+   "partido": "PSTU",
+   "numero": "161",
+   "email": null,
+   "email_fonte": null,
+   "email_tipo": null,
+   "instagram": null,
+   "instagram_fonte": null
+  },
+  {
+   "id": "sen-sc-2026-carol-de-toni",
+   "nome": "Carol de Toni",
+   "partido": "PL",
+   "numero": "221",
+   "email": null,
+   "email_fonte": null,
+   "email_tipo": null,
+   "instagram": null,
+   "instagram_fonte": null
+  },
+  {
+   "id": "sen-sc-2026-carlos-bolsonaro",
+   "nome": "Carlos Bolsonaro",
    "partido": "PL",
    "numero": "222",
-   "email": "andredoprado@al.sp.gov.br",
-   "email_fonte": "ALESP (dados abertos)",
-   "email_tipo": "institucional",
-   "instagram": "@andredopradosp",
-   "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
-  },
-  {
-   "id": "sen-sp-2026-soninha",
-   "nome": "Soninha Francine",
-   "partido": "CIDADANIA",
-   "numero": "232",
    "email": null,
    "email_fonte": null,
    "email_tipo": null,
-   "instagram": "@soninhafrancine_oficial",
-   "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
+   "instagram": null,
+   "instagram_fonte": null
   },
   {
-   "id": "sen-sp-2026-cesaretti",
-   "nome": "Ednelson Cesaretti",
+   "id": "sen-sc-2026-jeferson-rocha",
+   "nome": "Jeferson Rocha",
+   "partido": "PRD",
+   "numero": "250",
+   "email": null,
+   "email_fonte": null,
+   "email_tipo": null,
+   "instagram": null,
+   "instagram_fonte": null
+  },
+  {
+   "id": "sen-sc-2026-carol",
+   "nome": "Carol",
    "partido": "PCO",
    "numero": "290",
    "email": null,
@@ -158,21 +158,10 @@
    "instagram_fonte": null
   },
   {
-   "id": "sen-sp-2026-salles",
-   "nome": "Salles",
-   "partido": "NOVO",
-   "numero": "300",
-   "email": "dep.ricardosalles@camara.leg.br",
-   "email_fonte": "Câmara dos Deputados (dados abertos)",
-   "email_tipo": "institucional",
-   "instagram": "@ricardosallesmma",
-   "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
-  },
-  {
-   "id": "sen-sp-2026-william-teixeira",
-   "nome": "William Teixeira",
-   "partido": "AGIR",
-   "numero": "360",
+   "id": "sen-sc-2026-afranio-boppre",
+   "nome": "Afrânio Boppré",
+   "partido": "PSOL",
+   "numero": "500",
    "email": null,
    "email_fonte": null,
    "email_tipo": null,
@@ -180,19 +169,8 @@
    "instagram_fonte": null
   },
   {
-   "id": "sen-sp-2026-tebet",
-   "nome": "Simone Tebet",
-   "partido": "PSB",
-   "numero": "400",
-   "email": null,
-   "email_fonte": null,
-   "email_tipo": null,
-   "instagram": "@simonetebet",
-   "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
-  },
-  {
-   "id": "sen-sp-2026-marcio-alves",
-   "nome": "Marcio Alves",
+   "id": "sen-sc-2026-ana-lucia-da-silveira-machado",
+   "nome": "Ana Lucia da Silveira Machado",
    "partido": "UP",
    "numero": "800",
    "email": null,
@@ -202,8 +180,8 @@
    "instagram_fonte": null
   },
   {
-   "id": "sen-sp-2026-maira",
-   "nome": "Maíra de Souza",
+   "id": "sen-sc-2026-marlene-soccas",
+   "nome": "Marlene Soccas",
    "partido": "UP",
    "numero": "808",
    "email": null,

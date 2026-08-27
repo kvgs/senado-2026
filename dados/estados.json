@@ -100,7 +100,7 @@
    "regiao": "Sudeste",
    "candidaturas_tse": 17,
    "assembleia": "Assembleia Legislativa do Estado de Minas Gerais",
-   "acervo": "nao_comecamos"
+   "acervo": "em_construcao"
   },
   {
    "uf": "MS",
@@ -154,7 +154,7 @@
    "regiao": "Nordeste",
    "candidaturas_tse": 21,
    "assembleia": "Assembleia Legislativa do Estado do Piauí",
-   "acervo": "nao_comecamos"
+   "acervo": "em_construcao"
   },
   {
    "uf": "PR",
@@ -172,7 +172,7 @@
    "regiao": "Sudeste",
    "candidaturas_tse": 16,
    "assembleia": "Assembleia Legislativa do Estado do Rio de Janeiro",
-   "acervo": "nao_comecamos"
+   "acervo": "em_construcao"
   },
   {
    "uf": "RN",
@@ -181,7 +181,7 @@
    "regiao": "Nordeste",
    "candidaturas_tse": 14,
    "assembleia": "Assembleia Legislativa do Estado do Rio Grande do Norte",
-   "acervo": "nao_comecamos"
+   "acervo": "em_construcao"
   },
   {
    "uf": "RO",
@@ -208,7 +208,7 @@
    "regiao": "Sul",
    "candidaturas_tse": 13,
    "assembleia": "Assembleia Legislativa do Estado do Rio Grande do Sul",
-   "acervo": "nao_comecamos"
+   "acervo": "em_construcao"
   },
   {
    "uf": "SC",
@@ -217,7 +217,7 @@
    "regiao": "Sul",
    "candidaturas_tse": 13,
    "assembleia": "Assembleia Legislativa do Estado de Santa Catarina",
-   "acervo": "nao_comecamos"
+   "acervo": "em_construcao"
   },
   {
    "uf": "SE",
