@@ -1,347 +1,386 @@
 {
- "_nota": "Pessoa e candidatura no mesmo arquivo. Nenhum CPF e nenhum titulo eleitoral aqui: por principio, nao saem da base do TSE para o acervo.",
- "_data_referencia": "2026-08-26",
- "_fonte_registro": "TSE — Consulta de candidatos 2026, arquivo consulta_cand_2026_BRASIL.csv. Fonte primaria, sem espelho. Nivel: oficial.",
- "_gerado_por": "cadastrar_uf.py",
- "candidaturas": [
-  {
-   "id_candidatura": "sen-ac-2026-mara-rocha",
-   "pessoa": {
-    "nome_urna": "Mara Rocha",
-    "nome_completo": "Cylmara Fernandes da Rocha Gripp",
-    "data_nascimento": "1973-09-04",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Jornalista e redator",
-    "genero": "Feminino"
-   },
-   "id_partido": "republicanos",
-   "id_coligacao": "trabalho-da-esperanca-ac",
-   "cargo": "senador",
-   "uf": "AC",
-   "ano": 2026,
-   "numero_urna": "100",
-   "sequencial_tse": "10002533895",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Pr. Moreira",
-    "Moreira"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-ac-2026-gladson-cameli",
-   "pessoa": {
-    "nome_urna": "Gladson Camelí",
-    "nome_completo": "Gladson de Lima Camelí",
-    "data_nascimento": "1978-03-26",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Engenheiro",
-    "genero": "Masculino"
-   },
-   "id_partido": "pp",
-   "id_coligacao": "avanca-acre-ac",
-   "cargo": "senador",
-   "uf": "AC",
-   "ano": 2026,
-   "numero_urna": "111",
-   "sequencial_tse": "10002548046",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Beatriz Cameli",
-    "Debora Nunes"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-ac-2026-jorge-viana",
-   "pessoa": {
-    "nome_urna": "Jorge Viana",
-    "nome_completo": "Jorge Ney Viana Macedo Neves",
-    "data_nascimento": "1959-09-20",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Engenheiro",
-    "genero": "Masculino"
-   },
-   "id_partido": "pt",
-   "id_coligacao": "frente-ampla-pelo-acre-ac",
-   "cargo": "senador",
-   "uf": "AC",
-   "ano": 2026,
-   "numero_urna": "131",
-   "sequencial_tse": "10002536441",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Binho Marques",
-    "Bira Vasconcelos",
-    "Delegada Carla Britto"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-ac-2026-marcio-bittar",
-   "pessoa": {
-    "nome_urna": "Marcio Bittar",
-    "nome_completo": "Marcio Miguel Bittar",
-    "data_nascimento": "1963-06-28",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Senador",
-    "genero": "Masculino"
-   },
-   "id_partido": "pl",
-   "id_coligacao": "avanca-acre-ac",
-   "cargo": "senador",
-   "uf": "AC",
-   "ano": 2026,
-   "numero_urna": "222",
-   "sequencial_tse": "10002548050",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Jebert Nascimento",
-    "Livio Veras"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": [
+  "_nota": "Pessoa e candidatura no mesmo arquivo. Nenhum CPF e nenhum titulo eleitoral aqui: por principio, nao saem da base do TSE para o acervo.",
+  "_data_referencia": "2026-08-26",
+  "_fonte_registro": "TSE — Consulta de candidatos 2026, arquivo consulta_cand_2026_BRASIL.csv. Fonte primaria, sem espelho. Nivel: oficial.",
+  "_gerado_por": "cadastrar_uf.py",
+  "candidaturas": [
     {
-     "casa": "senado",
-     "id_externo": "285",
-     "situacao": "Exercício",
-     "condicao": null,
-     "desde": null,
-     "motivo_afastamento_anterior": null,
-     "_fonte": "Senado Federal, dados abertos",
-     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
-    }
-   ]
-  },
-  {
-   "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
-   "pessoa": {
-    "nome_urna": "Dr. Junior Feitosa",
-    "nome_completo": "Ribamar de Sousa Feitoza Júnior",
-    "data_nascimento": "1982-05-09",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado",
-    "genero": "Masculino"
-   },
-   "id_partido": "dc",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "AC",
-   "ano": 2026,
-   "numero_urna": "277",
-   "sequencial_tse": "10002536710",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Walter Damasceno",
-    "Raimundo Moreira"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-ac-2026-professor-inacio-moreira",
-   "pessoa": {
-    "nome_urna": "Professor Inacio Moreira",
-    "nome_completo": "Inacio Alves Moreira Netto",
-    "data_nascimento": "1970-05-14",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professor de ensino fundamental",
-    "genero": "Masculino"
-   },
-   "id_partido": "psol",
-   "id_coligacao": "federacao-ac",
-   "cargo": "senador",
-   "uf": "AC",
-   "ano": 2026,
-   "numero_urna": "500",
-   "sequencial_tse": "10002544110",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Soleane Manchineri",
-    "Janaina Queiroz"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-ac-2026-petecao",
-   "pessoa": {
-    "nome_urna": "Petecão",
-    "nome_completo": "Sergio de Oliveira Cunha",
-    "data_nascimento": "1960-04-20",
-    "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Empresário",
-    "genero": "Masculino"
-   },
-   "id_partido": "psd",
-   "id_coligacao": "trabalho-da-esperanca-ac",
-   "cargo": "senador",
-   "uf": "AC",
-   "ano": 2026,
-   "numero_urna": "555",
-   "sequencial_tse": "10002535804",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Marfisa Galvão",
-    "Solino Matos"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": [
+      "id_candidatura": "sen-ac-2026-mara-rocha",
+      "pessoa": {
+        "nome_urna": "Mara Rocha",
+        "nome_completo": "Cylmara Fernandes da Rocha Gripp",
+        "data_nascimento": "1973-09-04",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Jornalista e redator",
+        "genero": "Feminino"
+      },
+      "id_partido": "republicanos",
+      "id_coligacao": "trabalho-da-esperanca-ac",
+      "cargo": "senador",
+      "uf": "AC",
+      "ano": 2026,
+      "numero_urna": "100",
+      "sequencial_tse": "10002533895",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Pr. Moreira",
+        "Moreira"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@mararochaacre",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/SOUMARAROCHA?LOCALE=PT_BR",
+          "HTTPS://WWW.INSTAGRAM.COM/MARAROCHAACRE"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
     {
-     "casa": "senado",
-     "id_externo": "4560",
-     "situacao": "Exercício",
-     "condicao": null,
-     "desde": null,
-     "motivo_afastamento_anterior": null,
-     "_fonte": "Senado Federal, dados abertos",
-     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
-    }
-   ]
-  },
-  {
-   "id_candidatura": "sen-ac-2026-eduardo-velloso",
-   "pessoa": {
-    "nome_urna": "Eduardo Velloso",
-    "nome_completo": "Eduardo Ovidio Borges de Velloso Vianna",
-    "data_nascimento": "1976-07-08",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Médico",
-    "genero": "Masculino"
-   },
-   "id_partido": "solidariedade",
-   "id_coligacao": "produzir-para-empregar-ac",
-   "cargo": "senador",
-   "uf": "AC",
-   "ano": 2026,
-   "numero_urna": "777",
-   "sequencial_tse": "10002544274",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Rejane Velloso",
-    "Marcos Vitorino",
-    "Vando Torquato"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": [
+      "id_candidatura": "sen-ac-2026-gladson-cameli",
+      "pessoa": {
+        "nome_urna": "Gladson Camelí",
+        "nome_completo": "Gladson de Lima Camelí",
+        "data_nascimento": "1978-03-26",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Engenheiro",
+        "genero": "Masculino"
+      },
+      "id_partido": "pp",
+      "id_coligacao": "avanca-acre-ac",
+      "cargo": "senador",
+      "uf": "AC",
+      "ano": 2026,
+      "numero_urna": "111",
+      "sequencial_tse": "10002548046",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Beatriz Cameli",
+        "Debora Nunes"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@gladsoncameli",
+        "redes": [
+          "HTTPS://WWW.INSTAGRAM.COM/GLADSONCAMELI?IGSH=MXA3BXG2Y2JJYTBTMW=="
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
     {
-     "casa": "camara",
-     "id_externo": "220589",
-     "situacao": "Exercício",
-     "condicao": "Titular",
-     "desde": "2024-04-12",
-     "motivo_afastamento_anterior": null,
-     "_fonte": "Camara dos Deputados, dados abertos v2",
-     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+      "id_candidatura": "sen-ac-2026-jorge-viana",
+      "pessoa": {
+        "nome_urna": "Jorge Viana",
+        "nome_completo": "Jorge Ney Viana Macedo Neves",
+        "data_nascimento": "1959-09-20",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Engenheiro",
+        "genero": "Masculino"
+      },
+      "id_partido": "pt",
+      "id_coligacao": "frente-ampla-pelo-acre-ac",
+      "cargo": "senador",
+      "uf": "AC",
+      "ano": 2026,
+      "numero_urna": "131",
+      "sequencial_tse": "10002536441",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Binho Marques",
+        "Bira Vasconcelos",
+        "Delegada Carla Britto"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@jorgevianaacre",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/JORGEVIANAACRE",
+          "HTTPS://WWW.INSTAGRAM.COM/JORGEVIANAACRE/",
+          "HTTPS://WWW.TIKTOK.COM/@JORGE.VIANAACRE",
+          "HTTPS://WWW.YOUTUBE.COM/@JORGEVIANAACRE",
+          "HTTPS://X.COM/JORGEVIANA",
+          "WWW.JORGEVIANA.COM.BR"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "site": "WWW.JORGEVIANA.COM.BR",
+        "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-ac-2026-marcio-bittar",
+      "pessoa": {
+        "nome_urna": "Marcio Bittar",
+        "nome_completo": "Marcio Miguel Bittar",
+        "data_nascimento": "1963-06-28",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Senador",
+        "genero": "Masculino"
+      },
+      "id_partido": "pl",
+      "id_coligacao": "avanca-acre-ac",
+      "cargo": "senador",
+      "uf": "AC",
+      "ano": 2026,
+      "numero_urna": "222",
+      "sequencial_tse": "10002548050",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Jebert Nascimento",
+        "Livio Veras"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@marciobittar_",
+        "redes": [
+          "HTTPS://WWW.INSTAGRAM.COM/MARCIOBITTAR_?IGSH=MWI4Z2FXBTZKAZCZOQ=="
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [
+        {
+          "casa": "senado",
+          "id_externo": "285",
+          "situacao": "Exercício",
+          "condicao": null,
+          "desde": null,
+          "motivo_afastamento_anterior": null,
+          "_fonte": "Senado Federal, dados abertos",
+          "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+        }
+      ]
+    },
+    {
+      "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+      "pessoa": {
+        "nome_urna": "Dr. Junior Feitosa",
+        "nome_completo": "Ribamar de Sousa Feitoza Júnior",
+        "data_nascimento": "1982-05-09",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Advogado",
+        "genero": "Masculino"
+      },
+      "id_partido": "dc",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "AC",
+      "ano": 2026,
+      "numero_urna": "277",
+      "sequencial_tse": "10002536710",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Walter Damasceno",
+        "Raimundo Moreira"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@dr.junior_feitosa",
+        "redes": [
+          "HTTPS://WWW.INSTAGRAM.COM/DR.JUNIOR_FEITOSA?IGSH=BZHRYMWZBXVXMMZH"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-ac-2026-professor-inacio-moreira",
+      "pessoa": {
+        "nome_urna": "Professor Inacio Moreira",
+        "nome_completo": "Inacio Alves Moreira Netto",
+        "data_nascimento": "1970-05-14",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Professor de ensino fundamental",
+        "genero": "Masculino"
+      },
+      "id_partido": "psol",
+      "id_coligacao": "federacao-ac",
+      "cargo": "senador",
+      "uf": "AC",
+      "ano": 2026,
+      "numero_urna": "500",
+      "sequencial_tse": "10002544110",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Soleane Manchineri",
+        "Janaina Queiroz"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [],
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-ac-2026-petecao",
+      "pessoa": {
+        "nome_urna": "Petecão",
+        "nome_completo": "Sergio de Oliveira Cunha",
+        "data_nascimento": "1960-04-20",
+        "escolaridade": "Ensino médio completo",
+        "ocupacao_declarada": "Empresário",
+        "genero": "Masculino"
+      },
+      "id_partido": "psd",
+      "id_coligacao": "trabalho-da-esperanca-ac",
+      "cargo": "senador",
+      "uf": "AC",
+      "ano": 2026,
+      "numero_urna": "555",
+      "sequencial_tse": "10002535804",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Marfisa Galvão",
+        "Solino Matos"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@senadorpetecao",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/SENADORPETECAO?LOCALE=PT_BR",
+          "HTTPS://WWW.INSTAGRAM.COM/SENADORPETECAO/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [
+        {
+          "casa": "senado",
+          "id_externo": "4560",
+          "situacao": "Exercício",
+          "condicao": null,
+          "desde": null,
+          "motivo_afastamento_anterior": null,
+          "_fonte": "Senado Federal, dados abertos",
+          "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+        }
+      ]
+    },
+    {
+      "id_candidatura": "sen-ac-2026-eduardo-velloso",
+      "pessoa": {
+        "nome_urna": "Eduardo Velloso",
+        "nome_completo": "Eduardo Ovidio Borges de Velloso Vianna",
+        "data_nascimento": "1976-07-08",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Médico",
+        "genero": "Masculino"
+      },
+      "id_partido": "solidariedade",
+      "id_coligacao": "produzir-para-empregar-ac",
+      "cargo": "senador",
+      "uf": "AC",
+      "ano": 2026,
+      "numero_urna": "777",
+      "sequencial_tse": "10002544274",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Rejane Velloso",
+        "Marcos Vitorino",
+        "Vando Torquato"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [],
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [
+        {
+          "casa": "camara",
+          "id_externo": "220589",
+          "situacao": "Exercício",
+          "condicao": "Titular",
+          "desde": "2024-04-12",
+          "motivo_afastamento_anterior": null,
+          "_fonte": "Camara dos Deputados, dados abertos v2",
+          "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+        }
+      ]
     }
-   ]
-  }
- ]
+  ]
 }

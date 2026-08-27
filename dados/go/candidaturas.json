@@ -1,459 +1,539 @@
 {
- "_nota": "Pessoa e candidatura no mesmo arquivo. Nenhum CPF e nenhum titulo eleitoral aqui: por principio, nao saem da base do TSE para o acervo.",
- "_data_referencia": "2026-08-26",
- "_fonte_registro": "TSE — Consulta de candidatos 2026, arquivo consulta_cand_2026_BRASIL.csv. Fonte primaria, sem espelho. Nivel: oficial.",
- "_gerado_por": "cadastrar_uf.py",
- "candidaturas": [
-  {
-   "id_candidatura": "sen-go-2026-dr-zacharias-calil",
-   "pessoa": {
-    "nome_urna": "Dr. Zacharias Calil",
-    "nome_completo": "Zacarias Calil Hamu",
-    "data_nascimento": "1953-11-05",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Médico",
-    "genero": "Masculino"
-   },
-   "id_partido": "mdb",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "GO",
-   "ano": 2026,
-   "numero_urna": "155",
-   "sequencial_tse": "90002546974",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Thales Jayme",
-    "Conceição Alves"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": [
+  "_nota": "Pessoa e candidatura no mesmo arquivo. Nenhum CPF e nenhum titulo eleitoral aqui: por principio, nao saem da base do TSE para o acervo.",
+  "_data_referencia": "2026-08-26",
+  "_fonte_registro": "TSE — Consulta de candidatos 2026, arquivo consulta_cand_2026_BRASIL.csv. Fonte primaria, sem espelho. Nivel: oficial.",
+  "_gerado_por": "cadastrar_uf.py",
+  "candidaturas": [
     {
-     "casa": "camara",
-     "id_externo": "204412",
-     "situacao": "Exercício",
-     "condicao": "Titular",
-     "desde": "2023-02-01",
-     "motivo_afastamento_anterior": null,
-     "_fonte": "Camara dos Deputados, dados abertos v2",
-     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
-    }
-   ]
-  },
-  {
-   "id_candidatura": "sen-go-2026-gustavo-gayer",
-   "pessoa": {
-    "nome_urna": "Gustavo Gayer",
-    "nome_completo": "Gustavo Gayer Machado de Araujo",
-    "data_nascimento": "1981-04-13",
-    "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Empresário",
-    "genero": "Masculino"
-   },
-   "id_partido": "pl",
-   "id_coligacao": "goias-que-cresce-go",
-   "cargo": "senador",
-   "uf": "GO",
-   "ano": 2026,
-   "numero_urna": "222",
-   "sequencial_tse": "90002543556",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Leonardo Rizzo",
-    "Emerson Lima"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": [
+      "id_candidatura": "sen-go-2026-dr-zacharias-calil",
+      "pessoa": {
+        "nome_urna": "Dr. Zacharias Calil",
+        "nome_completo": "Zacarias Calil Hamu",
+        "data_nascimento": "1953-11-05",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Médico",
+        "genero": "Masculino"
+      },
+      "id_partido": "mdb",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "GO",
+      "ano": 2026,
+      "numero_urna": "155",
+      "sequencial_tse": "90002546974",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Thales Jayme",
+        "Conceição Alves"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@drzachariascalil",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/DRZACHARIASCALIL/?LOCALE=PT_BR",
+          "HTTPS://WWW.INSTAGRAM.COM/DRZACHARIASCALIL/?HL=PT",
+          "HTTPS://WWW.TIKTOK.COM/@DEPDRZACHARIASCALIL",
+          "HTTPS://DRZACHARIASCALIL.COM.BR/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "site": "HTTPS://DRZACHARIASCALIL.COM.BR/",
+        "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [
+        {
+          "casa": "camara",
+          "id_externo": "204412",
+          "situacao": "Exercício",
+          "condicao": "Titular",
+          "desde": "2023-02-01",
+          "motivo_afastamento_anterior": null,
+          "_fonte": "Camara dos Deputados, dados abertos v2",
+          "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+        }
+      ]
+    },
     {
-     "casa": "camara",
-     "id_externo": "220568",
-     "situacao": "Exercício",
-     "condicao": "Titular",
-     "desde": "2023-02-01",
-     "motivo_afastamento_anterior": null,
-     "_fonte": "Camara dos Deputados, dados abertos v2",
-     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
-    }
-   ]
-  },
-  {
-   "id_candidatura": "sen-go-2026-oseias-varao",
-   "pessoa": {
-    "nome_urna": "Oséias Varão",
-    "nome_completo": "Oseias Mendes Pereira Varão",
-    "data_nascimento": "1977-01-25",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado",
-    "genero": "Masculino"
-   },
-   "id_partido": "pl",
-   "id_coligacao": "goias-que-cresce-go",
-   "cargo": "senador",
-   "uf": "GO",
-   "ano": 2026,
-   "numero_urna": "227",
-   "sequencial_tse": "90002543560",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Telemaco Brandão",
-    "Téo Gomes"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-go-2026-iure-castro",
-   "pessoa": {
-    "nome_urna": "Iure Castro",
-    "nome_completo": "Iure de Castro Silva",
-    "data_nascimento": "1984-04-21",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado",
-    "genero": "Masculino"
-   },
-   "id_partido": "cidadania",
-   "id_coligacao": "goias-de-verdade-go",
-   "cargo": "senador",
-   "uf": "GO",
-   "ano": 2026,
-   "numero_urna": "234",
-   "sequencial_tse": "90002545244",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Darlene Azevedo",
-    "Luiz Otavio"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-go-2026-gustavo-mendanha",
-   "pessoa": {
-    "nome_urna": "Gustavo Mendanha",
-    "nome_completo": "Gustavo Mendanha Melo",
-    "data_nascimento": "1982-10-07",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Empresário",
-    "genero": "Masculino"
-   },
-   "id_partido": "prd",
-   "id_coligacao": "federacao-go",
-   "cargo": "senador",
-   "uf": "GO",
-   "ano": 2026,
-   "numero_urna": "251",
-   "sequencial_tse": "90002540998",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Carlos Filho",
-    "Coronel Cardoso"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-go-2026-isaura-lemos",
-   "pessoa": {
-    "nome_urna": "Isaura Lemos",
-    "nome_completo": "Maria Isaura Lemos",
-    "data_nascimento": "1954-05-22",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Outros",
-    "genero": "Feminino"
-   },
-   "id_partido": "psb",
-   "id_coligacao": "goias-pode-mais-go",
-   "cargo": "senador",
-   "uf": "GO",
-   "ano": 2026,
-   "numero_urna": "400",
-   "sequencial_tse": "90002541455",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Victor Dutra",
-    "Patrick de Noronha"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-go-2026-gracinha-caiado",
-   "pessoa": {
-    "nome_urna": "Gracinha Caiado",
-    "nome_completo": "Maria das Graças Landim de Carvalho Caiado",
-    "data_nascimento": "1959-04-30",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogada",
-    "genero": "Feminino"
-   },
-   "id_partido": "uniao",
-   "id_coligacao": "federacao-go",
-   "cargo": "senador",
-   "uf": "GO",
-   "ano": 2026,
-   "numero_urna": "444",
-   "sequencial_tse": "90002540997",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Alexandre Baldy",
-    "Fião"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-go-2026-ernesto-roller",
-   "pessoa": {
-    "nome_urna": "Ernesto Roller",
-    "nome_completo": "Ernesto Guimarães Roller",
-    "data_nascimento": "1969-11-11",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado",
-    "genero": "Masculino"
-   },
-   "id_partido": "psdb",
-   "id_coligacao": "goias-de-verdade-go",
-   "cargo": "senador",
-   "uf": "GO",
-   "ano": 2026,
-   "numero_urna": "456",
-   "sequencial_tse": "90002545243",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Milton Mercez",
-    "Hermes Traldi"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-go-2026-cintia-dias",
-   "pessoa": {
-    "nome_urna": "Cintia Dias",
-    "nome_completo": "Cintia Aparecida Dias",
-    "data_nascimento": "1977-05-25",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Outros",
-    "genero": "Feminino"
-   },
-   "id_partido": "psol",
-   "id_coligacao": "goias-pode-mais-go",
-   "cargo": "senador",
-   "uf": "GO",
-   "ano": 2026,
-   "numero_urna": "500",
-   "sequencial_tse": "90002541454",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Fernando Isaac",
-    "Paulo Rochifild"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-go-2026-vanderlan-cardoso",
-   "pessoa": {
-    "nome_urna": "Vanderlan Cardoso",
-    "nome_completo": "Vanderlan Vieira Cardoso",
-    "data_nascimento": "1962-11-15",
-    "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Empresário",
-    "genero": "Masculino"
-   },
-   "id_partido": "psd",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "GO",
-   "ano": 2026,
-   "numero_urna": "555",
-   "sequencial_tse": "90002543215",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Pedro Chaves",
-    "Samir Hajjar"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": [
+      "id_candidatura": "sen-go-2026-gustavo-gayer",
+      "pessoa": {
+        "nome_urna": "Gustavo Gayer",
+        "nome_completo": "Gustavo Gayer Machado de Araujo",
+        "data_nascimento": "1981-04-13",
+        "escolaridade": "Superior incompleto",
+        "ocupacao_declarada": "Empresário",
+        "genero": "Masculino"
+      },
+      "id_partido": "pl",
+      "id_coligacao": "goias-que-cresce-go",
+      "cargo": "senador",
+      "uf": "GO",
+      "ano": 2026,
+      "numero_urna": "222",
+      "sequencial_tse": "90002543556",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Leonardo Rizzo",
+        "Emerson Lima"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@gusgayer",
+        "redes": [
+          "HTTPS://COS.TV/CHANNEL/27714561543414784/",
+          "HTTPS://GETTR.COM/USER/GUSTAVOGAYER",
+          "HTTPS://T.ME/GUSGAYER",
+          "HTTPS://WWW.KWAI.COM/@GUSTAVOGAYER",
+          "WWW.FACEBOOK.COM/SHARE/1NOFUNOTJ9/?MIBEXTID=WWXIFR",
+          "WWW.INSTAGRAM.COM/GUSGAYER",
+          "WWW.INSTAGRAM.COM/GUSTAVO.GAYER",
+          "WWW.TIKTOK.COM/@GUSGAYER",
+          "X.COM/GAYERGUS",
+          "YOUTUBE.COM/@GUSTAVOGAYER"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [
+        {
+          "casa": "camara",
+          "id_externo": "220568",
+          "situacao": "Exercício",
+          "condicao": "Titular",
+          "desde": "2023-02-01",
+          "motivo_afastamento_anterior": null,
+          "_fonte": "Camara dos Deputados, dados abertos v2",
+          "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+        }
+      ]
+    },
     {
-     "casa": "senado",
-     "id_externo": "5899",
-     "situacao": "Exercício",
-     "condicao": null,
-     "desde": null,
-     "motivo_afastamento_anterior": null,
-     "_fonte": "Senado Federal, dados abertos",
-     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+      "id_candidatura": "sen-go-2026-oseias-varao",
+      "pessoa": {
+        "nome_urna": "Oséias Varão",
+        "nome_completo": "Oseias Mendes Pereira Varão",
+        "data_nascimento": "1977-01-25",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Advogado",
+        "genero": "Masculino"
+      },
+      "id_partido": "pl",
+      "id_coligacao": "goias-que-cresce-go",
+      "cargo": "senador",
+      "uf": "GO",
+      "ano": 2026,
+      "numero_urna": "227",
+      "sequencial_tse": "90002543560",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Telemaco Brandão",
+        "Téo Gomes"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@oseiasvarao",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/OSEIASVARAO",
+          "HTTPS://WWW.INSTAGRAM.COM/OSEIASVARAO",
+          "HTTPS://WWW.YOUTUBE.COM/@OSEIASVARAO"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-go-2026-iure-castro",
+      "pessoa": {
+        "nome_urna": "Iure Castro",
+        "nome_completo": "Iure de Castro Silva",
+        "data_nascimento": "1984-04-21",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Advogado",
+        "genero": "Masculino"
+      },
+      "id_partido": "cidadania",
+      "id_coligacao": "goias-de-verdade-go",
+      "cargo": "senador",
+      "uf": "GO",
+      "ano": 2026,
+      "numero_urna": "234",
+      "sequencial_tse": "90002545244",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Darlene Azevedo",
+        "Luiz Otavio"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [],
+      "_conferir_contato": [
+        "\"@OIURECASTRO\" — handle como texto, nao entra como contato"
+      ]
+    },
+    {
+      "id_candidatura": "sen-go-2026-gustavo-mendanha",
+      "pessoa": {
+        "nome_urna": "Gustavo Mendanha",
+        "nome_completo": "Gustavo Mendanha Melo",
+        "data_nascimento": "1982-10-07",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Empresário",
+        "genero": "Masculino"
+      },
+      "id_partido": "prd",
+      "id_coligacao": "federacao-go",
+      "cargo": "senador",
+      "uf": "GO",
+      "ano": 2026,
+      "numero_urna": "251",
+      "sequencial_tse": "90002540998",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Carlos Filho",
+        "Coronel Cardoso"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@gustavommendanha",
+        "redes": [
+          "HTTPS://TWITTER.COM/MENDANHAGUSTAVO",
+          "HTTPS://WWW.FACEBOOK.COM/GUSTAVOMENDANHA/",
+          "HTTPS://WWW.INSTAGRAM.COM/GUSTAVOMMENDANHA?IGSH=NJIZA2DMZZBNDJV0",
+          "HTTPS://WWW.TIKTOK.COM/@GUSTAVOMMENDANHA",
+          "HTTPS://WWW.YOUTUBE.COM/GUSTAVOMENDANHAGO",
+          "HTTPS://GUSTAVOMENDANHA.COM.BR/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "site": "HTTPS://GUSTAVOMENDANHA.COM.BR/",
+        "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-go-2026-isaura-lemos",
+      "pessoa": {
+        "nome_urna": "Isaura Lemos",
+        "nome_completo": "Maria Isaura Lemos",
+        "data_nascimento": "1954-05-22",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Outros",
+        "genero": "Feminino"
+      },
+      "id_partido": "psb",
+      "id_coligacao": "goias-pode-mais-go",
+      "cargo": "senador",
+      "uf": "GO",
+      "ano": 2026,
+      "numero_urna": "400",
+      "sequencial_tse": "90002541455",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Victor Dutra",
+        "Patrick de Noronha"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [],
+      "_conferir_contato": [
+        "\"FACEBOOK/ISAURALEMOS\" — dominio improvavel, nao entra como contato",
+        "\"INSTAGRAM/@ISAURALEMOSOFICIAL\" — dominio improvavel, nao entra como contato"
+      ]
+    },
+    {
+      "id_candidatura": "sen-go-2026-gracinha-caiado",
+      "pessoa": {
+        "nome_urna": "Gracinha Caiado",
+        "nome_completo": "Maria das Graças Landim de Carvalho Caiado",
+        "data_nascimento": "1959-04-30",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Advogada",
+        "genero": "Feminino"
+      },
+      "id_partido": "uniao",
+      "id_coligacao": "federacao-go",
+      "cargo": "senador",
+      "uf": "GO",
+      "ano": 2026,
+      "numero_urna": "444",
+      "sequencial_tse": "90002540997",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Alexandre Baldy",
+        "Fião"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@gracinhacaiado",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/GRACINHACARVALHOCAIADO",
+          "HTTPS://WWW.INSTAGRAM.COM/GRACINHACAIADO",
+          "HTTPS://WWW.TIKTOK.COM/@GRACINHACAIADO"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-go-2026-ernesto-roller",
+      "pessoa": {
+        "nome_urna": "Ernesto Roller",
+        "nome_completo": "Ernesto Guimarães Roller",
+        "data_nascimento": "1969-11-11",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Advogado",
+        "genero": "Masculino"
+      },
+      "id_partido": "psdb",
+      "id_coligacao": "goias-de-verdade-go",
+      "cargo": "senador",
+      "uf": "GO",
+      "ano": 2026,
+      "numero_urna": "456",
+      "sequencial_tse": "90002545243",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Milton Mercez",
+        "Hermes Traldi"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [],
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-go-2026-cintia-dias",
+      "pessoa": {
+        "nome_urna": "Cintia Dias",
+        "nome_completo": "Cintia Aparecida Dias",
+        "data_nascimento": "1977-05-25",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Outros",
+        "genero": "Feminino"
+      },
+      "id_partido": "psol",
+      "id_coligacao": "goias-pode-mais-go",
+      "cargo": "senador",
+      "uf": "GO",
+      "ano": 2026,
+      "numero_urna": "500",
+      "sequencial_tse": "90002541454",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Fernando Isaac",
+        "Paulo Rochifild"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [],
+      "_conferir_contato": [
+        "\"EMAIL: CADYGO@GMAIL.COM CINTIADIASPSOL@GMAIL.COM - SITE: CINTIADIASPSOL.COM.BR -\" — email no campo de url, nao entra como contato"
+      ]
+    },
+    {
+      "id_candidatura": "sen-go-2026-vanderlan-cardoso",
+      "pessoa": {
+        "nome_urna": "Vanderlan Cardoso",
+        "nome_completo": "Vanderlan Vieira Cardoso",
+        "data_nascimento": "1962-11-15",
+        "escolaridade": "Ensino médio completo",
+        "ocupacao_declarada": "Empresário",
+        "genero": "Masculino"
+      },
+      "id_partido": "psd",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "GO",
+      "ano": 2026,
+      "numero_urna": "555",
+      "sequencial_tse": "90002543215",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Pedro Chaves",
+        "Samir Hajjar"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@vanderlancardosooficial",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/VANDERLANCARDOSOOFICIAL",
+          "HTTPS://WWW.INSTAGRAM.COM/VANDERLANCARDOSOOFICIAL/",
+          "HTTPS://WWW.TIKTOK.COM/@VANDERLANCARDOSOOFICIAL",
+          "HTTPS://WWW.YOUTUBE.COM/@VANDERLANCARDOSOOFICIAL",
+          "HTTPS://X.COM/VANDERLAN_VC"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [
+        {
+          "casa": "senado",
+          "id_externo": "5899",
+          "situacao": "Exercício",
+          "condicao": null,
+          "desde": null,
+          "motivo_afastamento_anterior": null,
+          "_fonte": "Senado Federal, dados abertos",
+          "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+        }
+      ]
+    },
+    {
+      "id_candidatura": "sen-go-2026-guilherme-darques",
+      "pessoa": {
+        "nome_urna": "Guilherme Darques",
+        "nome_completo": "Guilherme Darques Alves de Paula",
+        "data_nascimento": "1990-08-07",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Estudante, bolsista, estagiário e assemelhados",
+        "genero": "Masculino"
+      },
+      "id_partido": "up",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "GO",
+      "ano": 2026,
+      "numero_urna": "800",
+      "sequencial_tse": "90002551198",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Augusto Cardoso",
+        "Victor Barbo"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@guilhermedarques",
+        "redes": [
+          "HTTPS://WWW.INSTAGRAM.COM/GUILHERMEDARQUES"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
     }
-   ]
-  },
-  {
-   "id_candidatura": "sen-go-2026-guilherme-darques",
-   "pessoa": {
-    "nome_urna": "Guilherme Darques",
-    "nome_completo": "Guilherme Darques Alves de Paula",
-    "data_nascimento": "1990-08-07",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Estudante, bolsista, estagiário e assemelhados",
-    "genero": "Masculino"
-   },
-   "id_partido": "up",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "GO",
-   "ano": 2026,
-   "numero_urna": "800",
-   "sequencial_tse": "90002551198",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Augusto Cardoso",
-    "Victor Barbo"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  }
- ]
+  ]
 }

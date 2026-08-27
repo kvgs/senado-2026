@@ -1,676 +1,787 @@
 {
- "_nota": "Pessoa e candidatura no mesmo arquivo. Nenhum CPF e nenhum titulo eleitoral aqui: por principio, nao saem da base do TSE para o acervo.",
- "_data_referencia": "2026-08-26",
- "_fonte_registro": "TSE — Consulta de candidatos 2026, arquivo consulta_cand_2026_BRASIL.csv. Fonte primaria, sem espelho. Nivel: oficial.",
- "_gerado_por": "cadastrar_uf.py",
- "candidaturas": [
-  {
-   "id_candidatura": "sen-mg-2026-marcelo-aro",
-   "pessoa": {
-    "nome_urna": "Marcelo Aro",
-    "nome_completo": "Marcelo Guilherme de Aro Ferreira",
-    "data_nascimento": "1987-06-12",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado",
-    "genero": "Masculino"
-   },
-   "id_partido": "pp",
-   "id_coligacao": "federacao-mg",
-   "cargo": "senador",
-   "uf": "MG",
-   "ano": 2026,
-   "numero_urna": "111",
-   "sequencial_tse": "130002548381",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Professora Marli",
-    "Tileléo"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-mg-2026-marcelo-heringer",
-   "pessoa": {
-    "nome_urna": "Marcelo Heringer",
-    "nome_completo": "Marcelo Heringer",
-    "data_nascimento": "1966-08-28",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Médico",
-    "genero": "Masculino"
-   },
-   "id_partido": "pdt",
-   "id_coligacao": "cuidar-de-minas-mg",
-   "cargo": "senador",
-   "uf": "MG",
-   "ano": 2026,
-   "numero_urna": "123",
-   "sequencial_tse": "130002553856",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Giovane Lelis",
-    "Robson Dutra"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-mg-2026-marilia-campos",
-   "pessoa": {
-    "nome_urna": "Marília Campos",
-    "nome_completo": "Marilia Aparecida Campos",
-    "data_nascimento": "1961-09-14",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Aposentada (exceto servidor público)",
-    "genero": "Feminino"
-   },
-   "id_partido": "pt",
-   "id_coligacao": "pra-minas-gerais-voltar-a-sonhar-mg",
-   "cargo": "senador",
-   "uf": "MG",
-   "ano": 2026,
-   "numero_urna": "131",
-   "sequencial_tse": "130002550560",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Luciana Costa",
-    "Laércio Cintra"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-mg-2026-manoel-carvalho",
-   "pessoa": {
-    "nome_urna": "Manoel Carvalho",
-    "nome_completo": "Manoel Teodoro Pereira de Carvalho Filho",
-    "data_nascimento": "1977-03-06",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Zootecnista",
-    "genero": "Masculino"
-   },
-   "id_partido": "mdb",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "MG",
-   "ano": 2026,
-   "numero_urna": "150",
-   "sequencial_tse": "130002552299",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Kelvin Faria",
-    "Ivanise"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-mg-2026-arcanjo-pimenta",
-   "pessoa": {
-    "nome_urna": "Arcanjo Pimenta",
-    "nome_completo": "Arcanjo Carlos Pimenta",
-    "data_nascimento": "1964-10-26",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Industrial",
-    "genero": "Masculino"
-   },
-   "id_partido": "mdb",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "MG",
-   "ano": 2026,
-   "numero_urna": "155",
-   "sequencial_tse": "130002552302",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Placidino Stábile",
-    "Nena Marchese"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-mg-2026-jordano-metalurgico",
-   "pessoa": {
-    "nome_urna": "Jordano Metalúrgico",
-    "nome_completo": "Jordano Carvalho dos Santos",
-    "data_nascimento": "1979-08-15",
-    "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Trabalhador metalúrgico e siderúrgico",
-    "genero": "Masculino"
-   },
-   "id_partido": "pstu",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "MG",
-   "ano": 2026,
-   "numero_urna": "160",
-   "sequencial_tse": "130002551929",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Oraldo Paiva",
-    "José João"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-mg-2026-victoria-mello-vic",
-   "pessoa": {
-    "nome_urna": "Victória Mello Vic",
-    "nome_completo": "Victoria de Fatima de Mello",
-    "data_nascimento": "1956-07-27",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidora pública municipal",
-    "genero": "Feminino"
-   },
-   "id_partido": "pstu",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "MG",
-   "ano": 2026,
-   "numero_urna": "161",
-   "sequencial_tse": "130002551930",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Andrea Carla",
-    "Israel Pinheiro"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-mg-2026-domingos-savio",
-   "pessoa": {
-    "nome_urna": "Domingos Sávio",
-    "nome_completo": "Domingos Savio Campos Resende",
-    "data_nascimento": "1957-03-25",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Veterinário",
-    "genero": "Masculino"
-   },
-   "id_partido": "pl",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "MG",
-   "ano": 2026,
-   "numero_urna": "222",
-   "sequencial_tse": "130002551786",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Braulio Braz",
-    "Pablo Gontijo"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": [
+  "_nota": "Pessoa e candidatura no mesmo arquivo. Nenhum CPF e nenhum titulo eleitoral aqui: por principio, nao saem da base do TSE para o acervo.",
+  "_data_referencia": "2026-08-26",
+  "_fonte_registro": "TSE — Consulta de candidatos 2026, arquivo consulta_cand_2026_BRASIL.csv. Fonte primaria, sem espelho. Nivel: oficial.",
+  "_gerado_por": "cadastrar_uf.py",
+  "candidaturas": [
     {
-     "casa": "camara",
-     "id_externo": "160758",
-     "situacao": "Exercício",
-     "condicao": "Titular",
-     "desde": "2023-02-01",
-     "motivo_afastamento_anterior": null,
-     "_fonte": "Camara dos Deputados, dados abertos v2",
-     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
-    }
-   ]
-  },
-  {
-   "id_candidatura": "sen-mg-2026-juiz-ramon-moreira",
-   "pessoa": {
-    "nome_urna": "Juíz Ramon Moreira",
-    "nome_completo": "Ramon Moreira",
-    "data_nascimento": "1961-02-02",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Magistrado",
-    "genero": "Masculino"
-   },
-   "id_partido": "dc",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "MG",
-   "ano": 2026,
-   "numero_urna": "277",
-   "sequencial_tse": "130002551265",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Rita de Cássia Alves Rezende D",
-    "Noel Gonçalves de Oliveira"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-mg-2026-tiao-pessoa",
-   "pessoa": {
-    "nome_urna": "Tião Pessoa",
-    "nome_completo": "Sebastiao de Oliveira Pessoa",
-    "data_nascimento": "1966-01-20",
-    "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Administrador",
-    "genero": "Masculino"
-   },
-   "id_partido": "pco",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "MG",
-   "ano": 2026,
-   "numero_urna": "290",
-   "sequencial_tse": "130002552311",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Dalila de Almeida",
-    "Fernando Lirio"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-mg-2026-marco-antonio-superman",
-   "pessoa": {
-    "nome_urna": "Marco Antônio Superman",
-    "nome_completo": "Marco Antônio Moreira da Costa",
-    "data_nascimento": "1988-06-13",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado",
-    "genero": "Masculino"
-   },
-   "id_partido": "novo",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "MG",
-   "ano": 2026,
-   "numero_urna": "300",
-   "sequencial_tse": "130002551284",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Diego Moreira",
-    "Bruno Lopes"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-mg-2026-gustavo-galassi",
-   "pessoa": {
-    "nome_urna": "Gustavo Galassi",
-    "nome_completo": "Gustavo Galassi Gargalhone",
-    "data_nascimento": "1969-07-04",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Engenheiro",
-    "genero": "Masculino"
-   },
-   "id_partido": "psdb",
-   "id_coligacao": "cuidar-de-minas-mg",
-   "cargo": "senador",
-   "uf": "MG",
-   "ano": 2026,
-   "numero_urna": "456",
-   "sequencial_tse": "130002553354",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Zelinho",
-    "Antônio Divino"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-mg-2026-aurea-carolina",
-   "pessoa": {
-    "nome_urna": "Áurea Carolina",
-    "nome_completo": "Aurea Carolina de Freitas e Silva",
-    "data_nascimento": "1983-11-20",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Cientista política",
-    "genero": "Feminino"
-   },
-   "id_partido": "psol",
-   "id_coligacao": "pra-minas-gerais-voltar-a-sonhar-mg",
-   "cargo": "senador",
-   "uf": "MG",
-   "ano": 2026,
-   "numero_urna": "500",
-   "sequencial_tse": "130002550557",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Raquell Guimarães",
-    "Felipe Fonseca"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-mg-2026-carlos-viana",
-   "pessoa": {
-    "nome_urna": "Carlos Viana",
-    "nome_completo": "Carlos Alberto Dias Viana",
-    "data_nascimento": "1963-03-22",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Jornalista e redator",
-    "genero": "Masculino"
-   },
-   "id_partido": "psd",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "MG",
-   "ano": 2026,
-   "numero_urna": "555",
-   "sequencial_tse": "130002545590",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Misael Varella",
-    "Ilce Rocha"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": [
+      "id_candidatura": "sen-mg-2026-marcelo-aro",
+      "pessoa": {
+        "nome_urna": "Marcelo Aro",
+        "nome_completo": "Marcelo Guilherme de Aro Ferreira",
+        "data_nascimento": "1987-06-12",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Advogado",
+        "genero": "Masculino"
+      },
+      "id_partido": "pp",
+      "id_coligacao": "federacao-mg",
+      "cargo": "senador",
+      "uf": "MG",
+      "ano": 2026,
+      "numero_urna": "111",
+      "sequencial_tse": "130002548381",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Professora Marli",
+        "Tileléo"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@marceloaro",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/MARCELOARO/?LOCALE=PT_BR",
+          "HTTPS://WWW.INSTAGRAM.COM/MARCELOARO/?HL=PT-BR",
+          "HTTPS://WWW.THREADS.COM/@MARCELOARO",
+          "HTTPS://WWW.TIKTOK.COM/@SOUMARCELOARO",
+          "HTTPS://WWW.YOUTUBE.COM/@MARCELO_ARO",
+          "HTTPS://X.COM/MARCELOARO"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
     {
-     "casa": "senado",
-     "id_externo": "5990",
-     "situacao": "Exercício",
-     "condicao": null,
-     "desde": null,
-     "motivo_afastamento_anterior": null,
-     "_fonte": "Senado Federal, dados abertos",
-     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+      "id_candidatura": "sen-mg-2026-marcelo-heringer",
+      "pessoa": {
+        "nome_urna": "Marcelo Heringer",
+        "nome_completo": "Marcelo Heringer",
+        "data_nascimento": "1966-08-28",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Médico",
+        "genero": "Masculino"
+      },
+      "id_partido": "pdt",
+      "id_coligacao": "cuidar-de-minas-mg",
+      "cargo": "senador",
+      "uf": "MG",
+      "ano": 2026,
+      "numero_urna": "123",
+      "sequencial_tse": "130002553856",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Giovane Lelis",
+        "Robson Dutra"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [],
+      "_conferir_contato": [
+        "\"instagram:HTTPS:// @marceloheringer\" — texto livre, nao entra como contato"
+      ]
+    },
+    {
+      "id_candidatura": "sen-mg-2026-marilia-campos",
+      "pessoa": {
+        "nome_urna": "Marília Campos",
+        "nome_completo": "Marilia Aparecida Campos",
+        "data_nascimento": "1961-09-14",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Aposentada (exceto servidor público)",
+        "genero": "Feminino"
+      },
+      "id_partido": "pt",
+      "id_coligacao": "pra-minas-gerais-voltar-a-sonhar-mg",
+      "cargo": "senador",
+      "uf": "MG",
+      "ano": 2026,
+      "numero_urna": "131",
+      "sequencial_tse": "130002550560",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Luciana Costa",
+        "Laércio Cintra"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@mariliacampos.mg",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/MARILIACAMPOS.MG/",
+          "HTTPS://WWW.FLICKR.COM/PHOTOS/MARILIA_CAMPOS/",
+          "HTTPS://WWW.INSTAGRAM.COM/MARILIACAMPOS.MG/",
+          "HTTPS://WWW.LINKEDIN.COM/IN/MARÍLIA-CAMPOS-5346BB55",
+          "HTTPS://WWW.THREADS.COM/@MARILIACAMPOS.MG",
+          "HTTPS://WWW.TIKTOK.COM/@MARILIACAMPOS.MG",
+          "HTTPS://X.COM/MARILIACAMPOSMG"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-mg-2026-manoel-carvalho",
+      "pessoa": {
+        "nome_urna": "Manoel Carvalho",
+        "nome_completo": "Manoel Teodoro Pereira de Carvalho Filho",
+        "data_nascimento": "1977-03-06",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Zootecnista",
+        "genero": "Masculino"
+      },
+      "id_partido": "mdb",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "MG",
+      "ano": 2026,
+      "numero_urna": "150",
+      "sequencial_tse": "130002552299",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Kelvin Faria",
+        "Ivanise"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@manoelcarvalhofilho",
+        "redes": [
+          "https://www.facebook.com/ManoelCarvalhoMuriae/",
+          "https://www.instagram.com/manoelcarvalhofilho/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-mg-2026-arcanjo-pimenta",
+      "pessoa": {
+        "nome_urna": "Arcanjo Pimenta",
+        "nome_completo": "Arcanjo Carlos Pimenta",
+        "data_nascimento": "1964-10-26",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Industrial",
+        "genero": "Masculino"
+      },
+      "id_partido": "mdb",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "MG",
+      "ano": 2026,
+      "numero_urna": "155",
+      "sequencial_tse": "130002552302",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Placidino Stábile",
+        "Nena Marchese"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@arcanjopimenta",
+        "redes": [
+          "https://www.facebook.com/arcanjocarlospimenta/?locale=pa_IN",
+          "https://www.instagram.com/arcanjopimenta/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-mg-2026-jordano-metalurgico",
+      "pessoa": {
+        "nome_urna": "Jordano Metalúrgico",
+        "nome_completo": "Jordano Carvalho dos Santos",
+        "data_nascimento": "1979-08-15",
+        "escolaridade": "Ensino médio completo",
+        "ocupacao_declarada": "Trabalhador metalúrgico e siderúrgico",
+        "genero": "Masculino"
+      },
+      "id_partido": "pstu",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "MG",
+      "ano": 2026,
+      "numero_urna": "160",
+      "sequencial_tse": "130002551929",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Oraldo Paiva",
+        "José João"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [],
+      "_conferir_contato": [
+        "\"@JORDANOMETALURGICO\" — handle como texto, nao entra como contato"
+      ]
+    },
+    {
+      "id_candidatura": "sen-mg-2026-victoria-mello-vic",
+      "pessoa": {
+        "nome_urna": "Victória Mello Vic",
+        "nome_completo": "Victoria de Fatima de Mello",
+        "data_nascimento": "1956-07-27",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Servidora pública municipal",
+        "genero": "Feminino"
+      },
+      "id_partido": "pstu",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "MG",
+      "ano": 2026,
+      "numero_urna": "161",
+      "sequencial_tse": "130002551930",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Andrea Carla",
+        "Israel Pinheiro"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [],
+      "_conferir_contato": [
+        "\"@VICMELLO16\" — handle como texto, nao entra como contato"
+      ]
+    },
+    {
+      "id_candidatura": "sen-mg-2026-domingos-savio",
+      "pessoa": {
+        "nome_urna": "Domingos Sávio",
+        "nome_completo": "Domingos Savio Campos Resende",
+        "data_nascimento": "1957-03-25",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Veterinário",
+        "genero": "Masculino"
+      },
+      "id_partido": "pl",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "MG",
+      "ano": 2026,
+      "numero_urna": "222",
+      "sequencial_tse": "130002551786",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Braulio Braz",
+        "Pablo Gontijo"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@domingossaviomg",
+        "redes": [
+          "FACEBOOK.COM/DOMINGOSSAVIOMG",
+          "INSTAGRAM.COM/DOMINGOSSAVIOMG",
+          "TWITTER.COM/DOMINGOSSAVIOMG"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [
+        {
+          "casa": "camara",
+          "id_externo": "160758",
+          "situacao": "Exercício",
+          "condicao": "Titular",
+          "desde": "2023-02-01",
+          "motivo_afastamento_anterior": null,
+          "_fonte": "Camara dos Deputados, dados abertos v2",
+          "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+        }
+      ]
+    },
+    {
+      "id_candidatura": "sen-mg-2026-juiz-ramon-moreira",
+      "pessoa": {
+        "nome_urna": "Juíz Ramon Moreira",
+        "nome_completo": "Ramon Moreira",
+        "data_nascimento": "1961-02-02",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Magistrado",
+        "genero": "Masculino"
+      },
+      "id_partido": "dc",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "MG",
+      "ano": 2026,
+      "numero_urna": "277",
+      "sequencial_tse": "130002551265",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Rita de Cássia Alves Rezende D",
+        "Noel Gonçalves de Oliveira"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [],
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-mg-2026-tiao-pessoa",
+      "pessoa": {
+        "nome_urna": "Tião Pessoa",
+        "nome_completo": "Sebastiao de Oliveira Pessoa",
+        "data_nascimento": "1966-01-20",
+        "escolaridade": "Superior incompleto",
+        "ocupacao_declarada": "Administrador",
+        "genero": "Masculino"
+      },
+      "id_partido": "pco",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "MG",
+      "ano": 2026,
+      "numero_urna": "290",
+      "sequencial_tse": "130002552311",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Dalila de Almeida",
+        "Fernando Lirio"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [
+          "https://candidatos.pco.org.br"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "site_do_partido": "https://candidatos.pco.org.br",
+        "site_do_partido_nota": "URL declarada por 13 candidaturas: e material do partido, nao da candidatura.",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-mg-2026-marco-antonio-superman",
+      "pessoa": {
+        "nome_urna": "Marco Antônio Superman",
+        "nome_completo": "Marco Antônio Moreira da Costa",
+        "data_nascimento": "1988-06-13",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Advogado",
+        "genero": "Masculino"
+      },
+      "id_partido": "novo",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "MG",
+      "ano": 2026,
+      "numero_urna": "300",
+      "sequencial_tse": "130002551284",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Diego Moreira",
+        "Bruno Lopes"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@marco.antonio.costa",
+        "redes": [
+          "HTTPS://WWW.INSTAGRAM.COM/MARCO.ANTONIO.COSTA",
+          "HTTPS://WWW.YOUTUBE.COM/@MARCO.ANTONIOCOSTA"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-mg-2026-gustavo-galassi",
+      "pessoa": {
+        "nome_urna": "Gustavo Galassi",
+        "nome_completo": "Gustavo Galassi Gargalhone",
+        "data_nascimento": "1969-07-04",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Engenheiro",
+        "genero": "Masculino"
+      },
+      "id_partido": "psdb",
+      "id_coligacao": "cuidar-de-minas-mg",
+      "cargo": "senador",
+      "uf": "MG",
+      "ano": 2026,
+      "numero_urna": "456",
+      "sequencial_tse": "130002553354",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Zelinho",
+        "Antônio Divino"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@galassioficial",
+        "redes": [
+          "https://www.instagram.com/galassioficial/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-mg-2026-aurea-carolina",
+      "pessoa": {
+        "nome_urna": "Áurea Carolina",
+        "nome_completo": "Aurea Carolina de Freitas e Silva",
+        "data_nascimento": "1983-11-20",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Cientista política",
+        "genero": "Feminino"
+      },
+      "id_partido": "psol",
+      "id_coligacao": "pra-minas-gerais-voltar-a-sonhar-mg",
+      "cargo": "senador",
+      "uf": "MG",
+      "ano": 2026,
+      "numero_urna": "500",
+      "sequencial_tse": "130002550557",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Raquell Guimarães",
+        "Felipe Fonseca"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@aureacarolina",
+        "redes": [
+          "HTTPS://BR.LINKEDIN.COM/IN/AUREACAROLINAX",
+          "HTTPS://WWW.FACEBOOK.COM/AUREACAROLINA/",
+          "HTTPS://WWW.INSTAGRAM.COM/AUREACAROLINA/",
+          "HTTPS://WWW.THREADS.COM/@AUREACAROLINA",
+          "HTTPS://WWW.TIKTOK.COM/@AUREACAROLINA11",
+          "HTTPS://WWW.YOUTUBE.COM/@%C3%81UREACAROLINA-U4U",
+          "HTTPS://X.COM/AUREACAROLINAX",
+          "HTTPS://WWW.AUREACAROLINA.COM.BR"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "site": "HTTPS://WWW.AUREACAROLINA.COM.BR",
+        "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-mg-2026-carlos-viana",
+      "pessoa": {
+        "nome_urna": "Carlos Viana",
+        "nome_completo": "Carlos Alberto Dias Viana",
+        "data_nascimento": "1963-03-22",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Jornalista e redator",
+        "genero": "Masculino"
+      },
+      "id_partido": "psd",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "MG",
+      "ano": 2026,
+      "numero_urna": "555",
+      "sequencial_tse": "130002545590",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Misael Varella",
+        "Ilce Rocha"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@carlosviana",
+        "redes": [
+          "HTTPS://WWW.INSTAGRAM.COM/CARLOSVIANA/",
+          "HTTPS://X.COM/CARLOSVIANA"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [
+        {
+          "casa": "senado",
+          "id_externo": "5990",
+          "situacao": "Exercício",
+          "condicao": null,
+          "desde": null,
+          "motivo_afastamento_anterior": null,
+          "_fonte": "Senado Federal, dados abertos",
+          "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+        }
+      ],
+      "_conferir_contato": [
+        "\"HTTPS://WWW.FACEBOOK.COM/CARLOSVIANA/#HTTPS://WWW.FACEBOOK.COM/CARLOSVIANA/\" — malformada, nao entra como contato"
+      ]
+    },
+    {
+      "id_candidatura": "sen-mg-2026-carlin-moura",
+      "pessoa": {
+        "nome_urna": "Carlin Moura",
+        "nome_completo": "Carlos Magno de Moura Soares",
+        "data_nascimento": "1968-02-29",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Advogado",
+        "genero": "Masculino"
+      },
+      "id_partido": "avante",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "MG",
+      "ano": 2026,
+      "numero_urna": "700",
+      "sequencial_tse": "130002552186",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Edilson Nascimento",
+        "Tião Nara"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@eucarlinmoura",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/EUCARLINMOURA",
+          "HTTPS://WWW.INSTAGRAM.COM/EUCARLINMOURA?IGSH=MXGZMHN3DTJOMZA2NW%3D%3D"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-mg-2026-fidelis-alcantara",
+      "pessoa": {
+        "nome_urna": "Fidélis Alcântara",
+        "nome_completo": "Fidelis Oliveira Alcantara",
+        "data_nascimento": "1973-11-29",
+        "escolaridade": "Ensino médio incompleto",
+        "ocupacao_declarada": "Estudante, bolsista, estagiário e assemelhados",
+        "genero": "Masculino"
+      },
+      "id_partido": "up",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "MG",
+      "ano": 2026,
+      "numero_urna": "800",
+      "sequencial_tse": "130002547882",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Karen Graciella",
+        "Elson Violante"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@fidelis.alcantara.up",
+        "redes": [
+          "HTTPS://WWW.INSTAGRAM.COM/FIDELIS.ALCANTARA.UP/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-mg-2026-ana-luiza-do-mlb",
+      "pessoa": {
+        "nome_urna": "Ana Luiza do Mlb",
+        "nome_completo": "Ana Luiza Cardoso de Macedo",
+        "data_nascimento": "1984-03-22",
+        "escolaridade": "Ensino médio completo",
+        "ocupacao_declarada": "Auxiliar de laboratório",
+        "genero": "Feminino"
+      },
+      "id_partido": "up",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "MG",
+      "ano": 2026,
+      "numero_urna": "808",
+      "sequencial_tse": "130002547884",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Sandro Alberto",
+        "Christino Almeida"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@ana_da_mgs",
+        "redes": [
+          "HTTPS://WWW.INSTAGRAM.COM/ANA_DA_MGS/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
     }
-   ]
-  },
-  {
-   "id_candidatura": "sen-mg-2026-carlin-moura",
-   "pessoa": {
-    "nome_urna": "Carlin Moura",
-    "nome_completo": "Carlos Magno de Moura Soares",
-    "data_nascimento": "1968-02-29",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado",
-    "genero": "Masculino"
-   },
-   "id_partido": "avante",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "MG",
-   "ano": 2026,
-   "numero_urna": "700",
-   "sequencial_tse": "130002552186",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Edilson Nascimento",
-    "Tião Nara"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-mg-2026-fidelis-alcantara",
-   "pessoa": {
-    "nome_urna": "Fidélis Alcântara",
-    "nome_completo": "Fidelis Oliveira Alcantara",
-    "data_nascimento": "1973-11-29",
-    "escolaridade": "Ensino médio incompleto",
-    "ocupacao_declarada": "Estudante, bolsista, estagiário e assemelhados",
-    "genero": "Masculino"
-   },
-   "id_partido": "up",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "MG",
-   "ano": 2026,
-   "numero_urna": "800",
-   "sequencial_tse": "130002547882",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Karen Graciella",
-    "Elson Violante"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-mg-2026-ana-luiza-do-mlb",
-   "pessoa": {
-    "nome_urna": "Ana Luiza do Mlb",
-    "nome_completo": "Ana Luiza Cardoso de Macedo",
-    "data_nascimento": "1984-03-22",
-    "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Auxiliar de laboratório",
-    "genero": "Feminino"
-   },
-   "id_partido": "up",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "MG",
-   "ano": 2026,
-   "numero_urna": "808",
-   "sequencial_tse": "130002547884",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Sandro Alberto",
-    "Christino Almeida"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  }
- ]
+  ]
 }

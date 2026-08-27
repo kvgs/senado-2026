@@ -1,811 +1,970 @@
 {
- "_nota": "Pessoa e candidatura no mesmo arquivo. Nenhum CPF e nenhum titulo eleitoral aqui: por principio, nao saem da base do TSE para o acervo.",
- "_data_referencia": "2026-08-26",
- "_fonte_registro": "TSE — Consulta de candidatos 2026, arquivo consulta_cand_2026_BRASIL.csv. Fonte primaria, sem espelho. Nivel: oficial.",
- "_gerado_por": "cadastrar_uf.py",
- "candidaturas": [
-  {
-   "id_candidatura": "sen-pi-2026-ciro-nogueira",
-   "pessoa": {
-    "nome_urna": "Ciro Nogueira",
-    "nome_completo": "Ciro Nogueira Lima Filho",
-    "data_nascimento": "1968-11-21",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Empresário",
-    "genero": "Masculino"
-   },
-   "id_partido": "pp",
-   "id_coligacao": "juntos-pelo-piaui-pi",
-   "cargo": "senador",
-   "uf": "PI",
-   "ano": 2026,
-   "numero_urna": "111",
-   "sequencial_tse": "180002540446",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Raimundo Neto",
-    "Pastor Ricardo Braz"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": [
+  "_nota": "Pessoa e candidatura no mesmo arquivo. Nenhum CPF e nenhum titulo eleitoral aqui: por principio, nao saem da base do TSE para o acervo.",
+  "_data_referencia": "2026-08-26",
+  "_fonte_registro": "TSE — Consulta de candidatos 2026, arquivo consulta_cand_2026_BRASIL.csv. Fonte primaria, sem espelho. Nivel: oficial.",
+  "_gerado_por": "cadastrar_uf.py",
+  "candidaturas": [
     {
-     "casa": "senado",
-     "id_externo": "739",
-     "situacao": "Exercício",
-     "condicao": null,
-     "desde": null,
-     "motivo_afastamento_anterior": null,
-     "_fonte": "Senado Federal, dados abertos",
-     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
-    }
-   ]
-  },
-  {
-   "id_candidatura": "sen-pi-2026-marcelo-castro",
-   "pessoa": {
-    "nome_urna": "Marcelo Castro",
-    "nome_completo": "Marcelo Costa e Castro",
-    "data_nascimento": "1950-06-09",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Senador",
-    "genero": "Masculino"
-   },
-   "id_partido": "mdb",
-   "id_coligacao": "a-forca-do-povo-pi",
-   "cargo": "senador",
-   "uf": "PI",
-   "ano": 2026,
-   "numero_urna": "151",
-   "sequencial_tse": "180002533967",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Dr. Felipe Sampaio",
-    "Dário Castro"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": [
+      "id_candidatura": "sen-pi-2026-ciro-nogueira",
+      "pessoa": {
+        "nome_urna": "Ciro Nogueira",
+        "nome_completo": "Ciro Nogueira Lima Filho",
+        "data_nascimento": "1968-11-21",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Empresário",
+        "genero": "Masculino"
+      },
+      "id_partido": "pp",
+      "id_coligacao": "juntos-pelo-piaui-pi",
+      "cargo": "senador",
+      "uf": "PI",
+      "ano": 2026,
+      "numero_urna": "111",
+      "sequencial_tse": "180002540446",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Raimundo Neto",
+        "Pastor Ricardo Braz"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@amigosdociropi",
+        "redes": [
+          "HTTPS://K.KWAI.COM/U/@CIRONOGUEIRAOFICIAL/IRZCCDWJ",
+          "https://linktr.ee/cironogueira111",
+          "https://open.spotify.com/intl-pt/artist/7dlUudRIBl00BrqUIrC58m?si=6PqkrvdLSj-drG5bMv0sHQ",
+          "https://whatsapp.com/channel/0029VbARor0HLHQf2aED720Y",
+          "HTTPS://WWW.FACEBOOK.COM/CIRONOGUEIRA/?LOCALE=PT_BR",
+          "https://www.facebook.com/cironogueirapiaui",
+          "HTTPS://WWW.FACEBOOK.COM/SHARE/1AKPDU4DK3/?MIBEXTID=WWXIFR",
+          "HTTPS://WWW.FACEBOOK.COM/SHARE/1EG7NKYNHD/?MIBEXTID=WWXIFR",
+          "https://www.instagram.com/amigosdociropi/",
+          "https://www.instagram.com/cironogueira/",
+          "HTTPS://WWW.INSTAGRAM.COM/CIRONOGUEIRAPIAUI/",
+          "https://www.instagram.com/cirosenadordagente",
+          "https://www.instagram.com/euecascadebalapi/",
+          "https://www.instagram.com/florianocomciro/",
+          "https://www.instagram.com/meusenadorciro/",
+          "https://www.instagram.com/parnaibacomciro/",
+          "https://www.instagram.com/piauicomciro/",
+          "https://www.instagram.com/picoscomciro/",
+          "https://www.instagram.com/teresinacomciro/",
+          "https://www.instagram.com/tocomciropi",
+          "HTTPS://WWW.THREADS.COM/@CIRONOGUEIRA",
+          "HTTPS://WWW.THREADS.COM/@CIRONOGUEIRAPIAUI",
+          "HTTPS://WWW.TIKTOK.COM/@CIRONOGUEIRAOFICIAL",
+          "HTTPS://WWW.TIKTOK.COM/@CIRONOGUEIRAOFICIAL?_R=1&_T=ZS-97GSFCHLZZF",
+          "HTTPS://WWW.YOUTUBE.COM/@CIRONOGUEIRAOFICIAL",
+          "HTTPS://WWW.YOUTUBE.COM/USER/CIRONOGUEIRASENADOR",
+          "HTTPS://X.COM/CIRO_NOGUEIRA",
+          "HTTPS://X.COM/CIRONOGUEIRAPI",
+          "HTTPS://CIRONOGUEIRA.COM.BR",
+          "https://music.amazon.com.br/artists/B0HFFJQRRY",
+          "https://music.apple.com/br/artist/ciro-nogueira/6796064638",
+          "https://tidal.com/artist/83597958",
+          "https://tocomciro111.com/",
+          "https://www.deezer.com/br/artist/406982592"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "site": "HTTPS://CIRONOGUEIRA.COM.BR",
+        "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "outros_sites": [
+          "https://music.amazon.com.br/artists/B0HFFJQRRY",
+          "https://music.apple.com/br/artist/ciro-nogueira/6796064638",
+          "https://tidal.com/artist/83597958",
+          "https://tocomciro111.com/",
+          "https://www.deezer.com/br/artist/406982592"
+        ],
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [
+        {
+          "casa": "senado",
+          "id_externo": "739",
+          "situacao": "Exercício",
+          "condicao": null,
+          "desde": null,
+          "motivo_afastamento_anterior": null,
+          "_fonte": "Senado Federal, dados abertos",
+          "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+        }
+      ]
+    },
     {
-     "casa": "senado",
-     "id_externo": "742",
-     "situacao": "Exercício",
-     "condicao": null,
-     "desde": null,
-     "motivo_afastamento_anterior": null,
-     "_fonte": "Senado Federal, dados abertos",
-     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
-    }
-   ]
-  },
-  {
-   "id_candidatura": "sen-pi-2026-danniel-rocha",
-   "pessoa": {
-    "nome_urna": "Danniel Rocha",
-    "nome_completo": "Danniel Rocha do Nascimento",
-    "data_nascimento": "1983-01-22",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público federal",
-    "genero": "Masculino"
-   },
-   "id_partido": "pstu",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "PI",
-   "ano": 2026,
-   "numero_urna": "166",
-   "sequencial_tse": "180002537340",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Júnior Soares",
-    "Rosa Meireles"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pi-2026-tiago-junqueira",
-   "pessoa": {
-    "nome_urna": "Tiago Junqueira",
-    "nome_completo": "Tiago Maximiano Junqueira",
-    "data_nascimento": "1976-04-29",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Engenheiro",
-    "genero": "Masculino"
-   },
-   "id_partido": "pl",
-   "id_coligacao": "juntos-pelo-piaui-pi",
-   "cargo": "senador",
-   "uf": "PI",
-   "ano": 2026,
-   "numero_urna": "222",
-   "sequencial_tse": "180002540449",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Jhamya Junqueira",
-    "Carlos Augusto"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pi-2026-dionisio-carvalho",
-   "pessoa": {
-    "nome_urna": "Dionisio Carvalho",
-    "nome_completo": "Dionisio Carvalho Neto",
-    "data_nascimento": "1985-12-17",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público municipal",
-    "genero": "Masculino"
-   },
-   "id_partido": "dc",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "PI",
-   "ano": 2026,
-   "numero_urna": "277",
-   "sequencial_tse": "180002547863",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Dilcon Afonso",
-    "Francisco das Chagas"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pi-2026-irmao-evandro-marques",
-   "pessoa": {
-    "nome_urna": "Irmão Evandro Marques",
-    "nome_completo": "Evandro Marques Cunha",
-    "data_nascimento": "1976-08-21",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Agente administrativo",
-    "genero": "Masculino"
-   },
-   "id_partido": "dc",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "PI",
-   "ano": 2026,
-   "numero_urna": "278",
-   "sequencial_tse": "180002547860",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Afonso Vieira",
-    "Mikahil Mendes"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pi-2026-cloves-jose",
-   "pessoa": {
-    "nome_urna": "Cloves José",
-    "nome_completo": "Cloves José dos Santos",
-    "data_nascimento": "1967-01-25",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público estadual",
-    "genero": "Masculino"
-   },
-   "id_partido": "pco",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "PI",
-   "ano": 2026,
-   "numero_urna": "291",
-   "sequencial_tse": "180002553753",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Georgia Karynne",
-    "Grazielle Alves"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pi-2026-antonio-barros",
-   "pessoa": {
-    "nome_urna": "Antônio Barros",
-    "nome_completo": "Antônio de Barros Araújo Filho",
-    "data_nascimento": "1971-04-28",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Médico",
-    "genero": "Masculino"
-   },
-   "id_partido": "novo",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "PI",
-   "ano": 2026,
-   "numero_urna": "300",
-   "sequencial_tse": "180002530095",
-   "_sequenciais_duplicados": [
-    "180002549933"
-   ],
-   "_nota_duplicidade": "A base do TSE traz 2 registros desta candidatura, com o mesmo numero, partido e data de nascimento. Tratados como uma so pessoa; os sequenciais de todos ficam registrados.",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Marília Mendes",
-    "Marília Mendes",
-    "Betim",
-    "Betim"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pi-2026-major-paulo-roberto",
-   "pessoa": {
-    "nome_urna": "Major Paulo Roberto",
-    "nome_completo": "Paulo Roberto Bezerra de Oliveira",
-    "data_nascimento": "1968-06-23",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Membro das forças armadas",
-    "genero": "Masculino"
-   },
-   "id_partido": "mobiliza",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "PI",
-   "ano": 2026,
-   "numero_urna": "333",
-   "sequencial_tse": "180002544457",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Carlos Alberto",
-    "Dyego Soares"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pi-2026-toinho-dufrango",
-   "pessoa": {
-    "nome_urna": "Toinho Dufrango",
-    "nome_completo": "Antonio Almeida de Sousa",
-    "data_nascimento": "1962-10-16",
-    "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Comerciante",
-    "genero": "Masculino"
-   },
-   "id_partido": "mobiliza",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "PI",
-   "ano": 2026,
-   "numero_urna": "338",
-   "sequencial_tse": "180002544459",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Gersilda Teixeira",
-    "Angélica Veríssimo"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pi-2026-missionario-evandro-craveiro",
-   "pessoa": {
-    "nome_urna": "Missionário Evandro Craveiro",
-    "nome_completo": "Evandro Craveiro da Rocha",
-    "data_nascimento": "1976-02-03",
-    "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Outros",
-    "genero": "Masculino"
-   },
-   "id_partido": "democrata",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "PI",
-   "ano": 2026,
-   "numero_urna": "350",
-   "sequencial_tse": "180002548157",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Tiana Rocha",
-    "Alex Pinto"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pi-2026-jardenya-bezerra",
-   "pessoa": {
-    "nome_urna": "Jardenya Bezerra",
-    "nome_completo": "Jardenya Eylane Bezerra Teles",
-    "data_nascimento": "1978-03-17",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Outros",
-    "genero": "Feminino"
-   },
-   "id_partido": "democrata",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "PI",
-   "ano": 2026,
-   "numero_urna": "355",
-   "sequencial_tse": "180002548155",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Geovanni Nascimento",
-    "Antonio José dos Metalúrgicos"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pi-2026-jorge-lopes",
-   "pessoa": {
-    "nome_urna": "Jorge Lopes",
-    "nome_completo": "Francisco Jorge Lopes Sousa",
-    "data_nascimento": "1961-12-21",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público federal",
-    "genero": "Masculino"
-   },
-   "id_partido": "psdb",
-   "id_coligacao": "federacao-pi",
-   "cargo": "senador",
-   "uf": "PI",
-   "ano": 2026,
-   "numero_urna": "456",
-   "sequencial_tse": "180002548568",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Diego Mendes",
-    "Miltinho"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pi-2026-francinaldo-leao",
-   "pessoa": {
-    "nome_urna": "Francinaldo Leão",
-    "nome_completo": "Francinaldo Silva Leão",
-    "data_nascimento": "1975-07-13",
-    "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Agricultor",
-    "genero": "Masculino"
-   },
-   "id_partido": "psol",
-   "id_coligacao": "federacao-pi",
-   "cargo": "senador",
-   "uf": "PI",
-   "ano": 2026,
-   "numero_urna": "500",
-   "sequencial_tse": "180002550979",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Laudeci Silva Souza",
-    "Jucileide Leão"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pi-2026-maria-madalena-nunes",
-   "pessoa": {
-    "nome_urna": "Maria Madalena Nunes",
-    "nome_completo": "Maria Madalena Nunes",
-    "data_nascimento": "1962-11-15",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidora pública federal",
-    "genero": "Feminino"
-   },
-   "id_partido": "psol",
-   "id_coligacao": "federacao-pi",
-   "cargo": "senador",
-   "uf": "PI",
-   "ano": 2026,
-   "numero_urna": "505",
-   "sequencial_tse": "180002550977",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Tina Ribeiro",
-    "Maria Aires"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pi-2026-julio-cesar",
-   "pessoa": {
-    "nome_urna": "Julio Cesar",
-    "nome_completo": "Julio Cesar de Carvalho Lima",
-    "data_nascimento": "1948-08-25",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputado",
-    "genero": "Masculino"
-   },
-   "id_partido": "psd",
-   "id_coligacao": "a-forca-do-povo-pi",
-   "cargo": "senador",
-   "uf": "PI",
-   "ano": 2026,
-   "numero_urna": "555",
-   "sequencial_tse": "180002533964",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Rosario Bezerra",
-    "Pedro Rocha"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": [
+      "id_candidatura": "sen-pi-2026-marcelo-castro",
+      "pessoa": {
+        "nome_urna": "Marcelo Castro",
+        "nome_completo": "Marcelo Costa e Castro",
+        "data_nascimento": "1950-06-09",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Senador",
+        "genero": "Masculino"
+      },
+      "id_partido": "mdb",
+      "id_coligacao": "a-forca-do-povo-pi",
+      "cargo": "senador",
+      "uf": "PI",
+      "ano": 2026,
+      "numero_urna": "151",
+      "sequencial_tse": "180002533967",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Dr. Felipe Sampaio",
+        "Dário Castro"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@marcelocastropi",
+        "redes": [
+          "HTTPS://BSKY.APP/PROFILE/MARCELOCASTROPI.BSKY.SOCIAL",
+          "HTTPS://WWW.FACEBOOK.COM/MARCELOCASTROPIAUII/?LOCALE=PT_BR",
+          "HTTPS://WWW.FLICKR.COM/PHOTOS/SENADORMARCELOCASTRO/",
+          "HTTPS://WWW.INSTAGRAM.COM/MARCELOCASTROPI/",
+          "HTTPS://WWW.THREADS.COM/@MARCELOCASTROPI?IGSHID=NTC4MTIWNJQ2YQ==",
+          "HTTPS://WWW.TIKTOK.COM/@MARCELOCASTROPI?_R=1&_T=ZS-98RKE3DBVFR",
+          "HTTPS://WWW.YOUTUBE.COM/PLAYLIST?LIST=PLLLNYTNGOQIYZ4QOKNC9KMO78SW4DDTJ9",
+          "HTTPS://X.COM/MARCELOCASTROPI?S=11&T=CQ2F1NNPNQVXFJPR7HUCQA",
+          "HTTPS://MARCELOCASTROPIAUI.COM.BR"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "site": "HTTPS://MARCELOCASTROPIAUI.COM.BR",
+        "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [
+        {
+          "casa": "senado",
+          "id_externo": "742",
+          "situacao": "Exercício",
+          "condicao": null,
+          "desde": null,
+          "motivo_afastamento_anterior": null,
+          "_fonte": "Senado Federal, dados abertos",
+          "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+        }
+      ]
+    },
     {
-     "casa": "camara",
-     "id_externo": "74317",
-     "situacao": "Exercício",
-     "condicao": "Titular",
-     "desde": "2023-02-01",
-     "motivo_afastamento_anterior": null,
-     "_fonte": "Camara dos Deputados, dados abertos v2",
-     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+      "id_candidatura": "sen-pi-2026-danniel-rocha",
+      "pessoa": {
+        "nome_urna": "Danniel Rocha",
+        "nome_completo": "Danniel Rocha do Nascimento",
+        "data_nascimento": "1983-01-22",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Servidor público federal",
+        "genero": "Masculino"
+      },
+      "id_partido": "pstu",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "PI",
+      "ano": 2026,
+      "numero_urna": "166",
+      "sequencial_tse": "180002537340",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Júnior Soares",
+        "Rosa Meireles"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@pstupiaui",
+        "redes": [
+          "HTTPS://WWW.INSTAGRAM.COM/PSTUPIAUI/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-pi-2026-tiago-junqueira",
+      "pessoa": {
+        "nome_urna": "Tiago Junqueira",
+        "nome_completo": "Tiago Maximiano Junqueira",
+        "data_nascimento": "1976-04-29",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Engenheiro",
+        "genero": "Masculino"
+      },
+      "id_partido": "pl",
+      "id_coligacao": "juntos-pelo-piaui-pi",
+      "cargo": "senador",
+      "uf": "PI",
+      "ano": 2026,
+      "numero_urna": "222",
+      "sequencial_tse": "180002540449",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Jhamya Junqueira",
+        "Carlos Augusto"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [],
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-pi-2026-dionisio-carvalho",
+      "pessoa": {
+        "nome_urna": "Dionisio Carvalho",
+        "nome_completo": "Dionisio Carvalho Neto",
+        "data_nascimento": "1985-12-17",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Servidor público municipal",
+        "genero": "Masculino"
+      },
+      "id_partido": "dc",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "PI",
+      "ano": 2026,
+      "numero_urna": "277",
+      "sequencial_tse": "180002547863",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Dilcon Afonso",
+        "Francisco das Chagas"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@dionisiodopiaui",
+        "redes": [
+          "https://www.facebook.com/dionisiocarvalhopiaui",
+          "https://www.instagram.com/dionisiodopiaui?igsh=aGN0d2xqdzF0eWtv"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-pi-2026-irmao-evandro-marques",
+      "pessoa": {
+        "nome_urna": "Irmão Evandro Marques",
+        "nome_completo": "Evandro Marques Cunha",
+        "data_nascimento": "1976-08-21",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Agente administrativo",
+        "genero": "Masculino"
+      },
+      "id_partido": "dc",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "PI",
+      "ano": 2026,
+      "numero_urna": "278",
+      "sequencial_tse": "180002547860",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Afonso Vieira",
+        "Mikahil Mendes"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [],
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-pi-2026-cloves-jose",
+      "pessoa": {
+        "nome_urna": "Cloves José",
+        "nome_completo": "Cloves José dos Santos",
+        "data_nascimento": "1967-01-25",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Servidor público estadual",
+        "genero": "Masculino"
+      },
+      "id_partido": "pco",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "PI",
+      "ano": 2026,
+      "numero_urna": "291",
+      "sequencial_tse": "180002553753",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Georgia Karynne",
+        "Grazielle Alves"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [
+          "https://candidatos.pco.org.br"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "site_do_partido": "https://candidatos.pco.org.br",
+        "site_do_partido_nota": "URL declarada por 13 candidaturas: e material do partido, nao da candidatura.",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-pi-2026-antonio-barros",
+      "pessoa": {
+        "nome_urna": "Antônio Barros",
+        "nome_completo": "Antônio de Barros Araújo Filho",
+        "data_nascimento": "1971-04-28",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Médico",
+        "genero": "Masculino"
+      },
+      "id_partido": "novo",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "PI",
+      "ano": 2026,
+      "numero_urna": "300",
+      "sequencial_tse": "180002530095",
+      "_sequenciais_duplicados": [
+        "180002549933"
+      ],
+      "_nota_duplicidade": "A base do TSE traz 2 registros desta candidatura, com o mesmo numero, partido e data de nascimento. Tratados como uma so pessoa; os sequenciais de todos ficam registrados.",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Marília Mendes",
+        "Marília Mendes",
+        "Betim",
+        "Betim"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@antoniobarrosaf",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/ANTONIOBARROS",
+          "HTTPS://WWW.INSTAGRAM.COM/ANTONIOBARROSAF"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [],
+      "_conferir_contato": [
+        "\"HTTPS://WWW.FACEBOOK.COM/ANTONIOBARROS - HTTPS://WWW.FACEBOOK.COM/ANTONIOBARROS\" — malformada, nao entra como contato",
+        "\"HTTPS://WWW.INSTAGRAM.COM/ANTONIOBARROSAF - HTTPS://WWW.INSTAGRAM.COM/ANTONIOBA\" — malformada, nao entra como contato"
+      ]
+    },
+    {
+      "id_candidatura": "sen-pi-2026-major-paulo-roberto",
+      "pessoa": {
+        "nome_urna": "Major Paulo Roberto",
+        "nome_completo": "Paulo Roberto Bezerra de Oliveira",
+        "data_nascimento": "1968-06-23",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Membro das forças armadas",
+        "genero": "Masculino"
+      },
+      "id_partido": "mobiliza",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "PI",
+      "ano": 2026,
+      "numero_urna": "333",
+      "sequencial_tse": "180002544457",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Carlos Alberto",
+        "Dyego Soares"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@majorpauloroberto",
+        "redes": [
+          "INSTAGRAM.COM/MAJORPAULOROBERTO"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-pi-2026-toinho-dufrango",
+      "pessoa": {
+        "nome_urna": "Toinho Dufrango",
+        "nome_completo": "Antonio Almeida de Sousa",
+        "data_nascimento": "1962-10-16",
+        "escolaridade": "Superior incompleto",
+        "ocupacao_declarada": "Comerciante",
+        "genero": "Masculino"
+      },
+      "id_partido": "mobiliza",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "PI",
+      "ano": 2026,
+      "numero_urna": "338",
+      "sequencial_tse": "180002544459",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Gersilda Teixeira",
+        "Angélica Veríssimo"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@toinhodufrango",
+        "redes": [
+          "FACEBOOK.COM/TOIMDUFRANGOOFICIAL",
+          "INSTAGRAM.COM/TOINHODUFRANGO"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-pi-2026-missionario-evandro-craveiro",
+      "pessoa": {
+        "nome_urna": "Missionário Evandro Craveiro",
+        "nome_completo": "Evandro Craveiro da Rocha",
+        "data_nascimento": "1976-02-03",
+        "escolaridade": "Superior incompleto",
+        "ocupacao_declarada": "Outros",
+        "genero": "Masculino"
+      },
+      "id_partido": "democrata",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "PI",
+      "ano": 2026,
+      "numero_urna": "350",
+      "sequencial_tse": "180002548157",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Tiana Rocha",
+        "Alex Pinto"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@evandrovozesdopiaui",
+        "redes": [
+          "INSTAGRAM.COM/EVANDROVOZESDOPIAUI",
+          "INSTAGRAM.COM/MISS.EVANDROCRAVEIRO"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-pi-2026-jardenya-bezerra",
+      "pessoa": {
+        "nome_urna": "Jardenya Bezerra",
+        "nome_completo": "Jardenya Eylane Bezerra Teles",
+        "data_nascimento": "1978-03-17",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Outros",
+        "genero": "Feminino"
+      },
+      "id_partido": "democrata",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "PI",
+      "ano": 2026,
+      "numero_urna": "355",
+      "sequencial_tse": "180002548155",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Geovanni Nascimento",
+        "Antonio José dos Metalúrgicos"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@jardenyabezerra",
+        "redes": [
+          "FACEBOOK.COM/JARDENYA.BEZERRA.9",
+          "INSTAGRAM.COM/JARDENYABEZERRA"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-pi-2026-jorge-lopes",
+      "pessoa": {
+        "nome_urna": "Jorge Lopes",
+        "nome_completo": "Francisco Jorge Lopes Sousa",
+        "data_nascimento": "1961-12-21",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Servidor público federal",
+        "genero": "Masculino"
+      },
+      "id_partido": "psdb",
+      "id_coligacao": "federacao-pi",
+      "cargo": "senador",
+      "uf": "PI",
+      "ano": 2026,
+      "numero_urna": "456",
+      "sequencial_tse": "180002548568",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Diego Mendes",
+        "Miltinho"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@jorgelopespiaui",
+        "redes": [
+          "HTTPS://WWW.INSTAGRAM.COM/JORGELOPESPIAUI/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-pi-2026-francinaldo-leao",
+      "pessoa": {
+        "nome_urna": "Francinaldo Leão",
+        "nome_completo": "Francinaldo Silva Leão",
+        "data_nascimento": "1975-07-13",
+        "escolaridade": "Ensino médio completo",
+        "ocupacao_declarada": "Agricultor",
+        "genero": "Masculino"
+      },
+      "id_partido": "psol",
+      "id_coligacao": "federacao-pi",
+      "cargo": "senador",
+      "uf": "PI",
+      "ano": 2026,
+      "numero_urna": "500",
+      "sequencial_tse": "180002550979",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Laudeci Silva Souza",
+        "Jucileide Leão"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@francinaldopsol",
+        "redes": [
+          "HTTPS://WWW.INSTAGRAM.COM/FRANCINALDOPSOL/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-pi-2026-maria-madalena-nunes",
+      "pessoa": {
+        "nome_urna": "Maria Madalena Nunes",
+        "nome_completo": "Maria Madalena Nunes",
+        "data_nascimento": "1962-11-15",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Servidora pública federal",
+        "genero": "Feminino"
+      },
+      "id_partido": "psol",
+      "id_coligacao": "federacao-pi",
+      "cargo": "senador",
+      "uf": "PI",
+      "ano": 2026,
+      "numero_urna": "505",
+      "sequencial_tse": "180002550977",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Tina Ribeiro",
+        "Maria Aires"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@madalena.psol",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/MMADALENANUNES",
+          "HTTPS://WWW.INSTAGRAM.COM/MADALENA.PSOL/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-pi-2026-julio-cesar",
+      "pessoa": {
+        "nome_urna": "Julio Cesar",
+        "nome_completo": "Julio Cesar de Carvalho Lima",
+        "data_nascimento": "1948-08-25",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Deputado",
+        "genero": "Masculino"
+      },
+      "id_partido": "psd",
+      "id_coligacao": "a-forca-do-povo-pi",
+      "cargo": "senador",
+      "uf": "PI",
+      "ano": 2026,
+      "numero_urna": "555",
+      "sequencial_tse": "180002533964",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Rosario Bezerra",
+        "Pedro Rocha"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@juliocesardopiaui",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/JULIOCESARLIMADOPIAUI",
+          "https://www.facebook.com/share/1EX1LfJR4f/?mibextid=wwXIfr",
+          "HTTPS://WWW.INSTAGRAM.COM/JULIOCESARDOPIAUI",
+          "https://www.tiktok.com/@juliocesardopiauii",
+          "https://x.com/julio_cesar_pi?s=21"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [
+        {
+          "casa": "camara",
+          "id_externo": "74317",
+          "situacao": "Exercício",
+          "condicao": "Titular",
+          "desde": "2023-02-01",
+          "motivo_afastamento_anterior": null,
+          "_fonte": "Camara dos Deputados, dados abertos v2",
+          "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+        }
+      ]
+    },
+    {
+      "id_candidatura": "sen-pi-2026-antonio-jose-lira",
+      "pessoa": {
+        "nome_urna": "Antônio José Lira",
+        "nome_completo": "Antônio José de Freitas Lira",
+        "data_nascimento": "1960-09-21",
+        "escolaridade": "Superior incompleto",
+        "ocupacao_declarada": "Aposentado (exceto servidor público)",
+        "genero": "Masculino"
+      },
+      "id_partido": "avante",
+      "id_coligacao": "a-forca-da-fe-pi",
+      "cargo": "senador",
+      "uf": "PI",
+      "ano": 2026,
+      "numero_urna": "700",
+      "sequencial_tse": "180002549936",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Guilherme Rocha",
+        "Michel Saldanha",
+        "Ana Câmpelo",
+        "J C do Dirceu"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@antoniojoselirapi",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/SHARE/1F14CRQBSY/",
+          "HTTPS://WWW.INSTAGRAM.COM/ANTONIOJOSELIRAPI?UTM_SOURCE=QR&IGSH=MWR5NZDSNMHSZ3RSA"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-pi-2026-alexandre-mariano",
+      "pessoa": {
+        "nome_urna": "Alexandre Mariano",
+        "nome_completo": "Alexandre Mariano Lustosa",
+        "data_nascimento": "1964-10-17",
+        "escolaridade": "Superior incompleto",
+        "ocupacao_declarada": "Servidor público municipal",
+        "genero": "Masculino"
+      },
+      "id_partido": "avante",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "PI",
+      "ano": 2026,
+      "numero_urna": "700",
+      "sequencial_tse": "180002552962",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Guilherme Rocha",
+        "Michel Saldanha",
+        "Ana Câmpelo",
+        "J C do Dirceu"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@alexandremariano67_",
+        "redes": [
+          "https://www.instagram.com/alexandremariano67_?igsh=NjdhamJtcjZ6OHU2&igsi=NjdhamJ"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-pi-2026-pastor-sena",
+      "pessoa": {
+        "nome_urna": "Pastor Sena",
+        "nome_completo": "Francisco de Sena Santos",
+        "data_nascimento": "1981-02-08",
+        "escolaridade": "Ensino médio completo",
+        "ocupacao_declarada": "Empresário",
+        "genero": "Masculino"
+      },
+      "id_partido": "avante",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "PI",
+      "ano": 2026,
+      "numero_urna": "707",
+      "sequencial_tse": "180002552964",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Stanley Meireles",
+        "Ivanildo Lopes"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [
+          "www.pastorsena.com.br"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "site": "www.pastorsena.com.br",
+        "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-pi-2026-pedro-laurentino",
+      "pessoa": {
+        "nome_urna": "Pedro Laurentino",
+        "nome_completo": "Pedro Laurentino Reis Pereira",
+        "data_nascimento": "1956-09-06",
+        "escolaridade": "Superior incompleto",
+        "ocupacao_declarada": "Servidor público federal",
+        "genero": "Masculino"
+      },
+      "id_partido": "up",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "PI",
+      "ano": 2026,
+      "numero_urna": "800",
+      "sequencial_tse": "180002541938",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Raimunda Belizário",
+        "Samuel Lima"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@pedrolaurentinorp",
+        "redes": [
+          "HTTPS://WWW.INSTAGRAM.COM/PEDROLAURENTINORP/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
     }
-   ]
-  },
-  {
-   "id_candidatura": "sen-pi-2026-antonio-jose-lira",
-   "pessoa": {
-    "nome_urna": "Antônio José Lira",
-    "nome_completo": "Antônio José de Freitas Lira",
-    "data_nascimento": "1960-09-21",
-    "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Aposentado (exceto servidor público)",
-    "genero": "Masculino"
-   },
-   "id_partido": "avante",
-   "id_coligacao": "a-forca-da-fe-pi",
-   "cargo": "senador",
-   "uf": "PI",
-   "ano": 2026,
-   "numero_urna": "700",
-   "sequencial_tse": "180002549936",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Guilherme Rocha",
-    "Michel Saldanha",
-    "Ana Câmpelo",
-    "J C do Dirceu"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pi-2026-alexandre-mariano",
-   "pessoa": {
-    "nome_urna": "Alexandre Mariano",
-    "nome_completo": "Alexandre Mariano Lustosa",
-    "data_nascimento": "1964-10-17",
-    "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Servidor público municipal",
-    "genero": "Masculino"
-   },
-   "id_partido": "avante",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "PI",
-   "ano": 2026,
-   "numero_urna": "700",
-   "sequencial_tse": "180002552962",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Guilherme Rocha",
-    "Michel Saldanha",
-    "Ana Câmpelo",
-    "J C do Dirceu"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pi-2026-pastor-sena",
-   "pessoa": {
-    "nome_urna": "Pastor Sena",
-    "nome_completo": "Francisco de Sena Santos",
-    "data_nascimento": "1981-02-08",
-    "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Empresário",
-    "genero": "Masculino"
-   },
-   "id_partido": "avante",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "PI",
-   "ano": 2026,
-   "numero_urna": "707",
-   "sequencial_tse": "180002552964",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Stanley Meireles",
-    "Ivanildo Lopes"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pi-2026-pedro-laurentino",
-   "pessoa": {
-    "nome_urna": "Pedro Laurentino",
-    "nome_completo": "Pedro Laurentino Reis Pereira",
-    "data_nascimento": "1956-09-06",
-    "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Servidor público federal",
-    "genero": "Masculino"
-   },
-   "id_partido": "up",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "PI",
-   "ano": 2026,
-   "numero_urna": "800",
-   "sequencial_tse": "180002541938",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Raimunda Belizário",
-    "Samuel Lima"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  }
- ]
+  ]
 }

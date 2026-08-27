@@ -1,300 +1,353 @@
 {
- "_nota": "Pessoa e candidatura no mesmo arquivo. Nenhum CPF e nenhum titulo eleitoral aqui: por principio, nao saem da base do TSE para o acervo.",
- "_data_referencia": "2026-08-26",
- "_fonte_registro": "TSE — Consulta de candidatos 2026, arquivo consulta_cand_2026_BRASIL.csv. Fonte primaria, sem espelho. Nivel: oficial.",
- "_gerado_por": "cadastrar_uf.py",
- "candidaturas": [
-  {
-   "id_candidatura": "sen-al-2026-davi-davino-filho",
-   "pessoa": {
-    "nome_urna": "Davi Davino Filho",
-    "nome_completo": "David Cabral Davino Filho",
-    "data_nascimento": "1987-10-01",
-    "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Empresário",
-    "genero": "Masculino"
-   },
-   "id_partido": "republicanos",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "AL",
-   "ano": 2026,
-   "numero_urna": "100",
-   "sequencial_tse": "20002548147",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Arthur Albuquerque",
-    "Kamila"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-al-2026-arthur-lira",
-   "pessoa": {
-    "nome_urna": "Arthur Lira",
-    "nome_completo": "Arthur Cesar Pereira de Lira",
-    "data_nascimento": "1969-06-25",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado",
-    "genero": "Masculino"
-   },
-   "id_partido": "pp",
-   "id_coligacao": "alagoas-gigante-ii-al",
-   "cargo": "senador",
-   "uf": "AL",
-   "ano": 2026,
-   "numero_urna": "111",
-   "sequencial_tse": "20002553272",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Luiz Romero",
-    "Gustavo Feijó"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": [
+  "_nota": "Pessoa e candidatura no mesmo arquivo. Nenhum CPF e nenhum titulo eleitoral aqui: por principio, nao saem da base do TSE para o acervo.",
+  "_data_referencia": "2026-08-26",
+  "_fonte_registro": "TSE — Consulta de candidatos 2026, arquivo consulta_cand_2026_BRASIL.csv. Fonte primaria, sem espelho. Nivel: oficial.",
+  "_gerado_por": "cadastrar_uf.py",
+  "candidaturas": [
     {
-     "casa": "camara",
-     "id_externo": "160541",
-     "situacao": "Exercício",
-     "condicao": "Titular",
-     "desde": "2023-02-01",
-     "motivo_afastamento_anterior": null,
-     "_fonte": "Camara dos Deputados, dados abertos v2",
-     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
-    }
-   ]
-  },
-  {
-   "id_candidatura": "sen-al-2026-renan",
-   "pessoa": {
-    "nome_urna": "Renan",
-    "nome_completo": "Jose Renan Vasconcelos Calheiros",
-    "data_nascimento": "1955-09-16",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado",
-    "genero": "Masculino"
-   },
-   "id_partido": "mdb",
-   "id_coligacao": "pra-alagoas-fazer-historia-de-novo-al",
-   "cargo": "senador",
-   "uf": "AL",
-   "ano": 2026,
-   "numero_urna": "151",
-   "sequencial_tse": "20002553727",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Gustavo Henrique",
-    "Paulo",
-    "Christiane Bulhões",
-    "Sabino"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": [
+      "id_candidatura": "sen-al-2026-davi-davino-filho",
+      "pessoa": {
+        "nome_urna": "Davi Davino Filho",
+        "nome_completo": "David Cabral Davino Filho",
+        "data_nascimento": "1987-10-01",
+        "escolaridade": "Superior incompleto",
+        "ocupacao_declarada": "Empresário",
+        "genero": "Masculino"
+      },
+      "id_partido": "republicanos",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "AL",
+      "ano": 2026,
+      "numero_urna": "100",
+      "sequencial_tse": "20002548147",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Arthur Albuquerque",
+        "Kamila"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [],
+      "_conferir_contato": [
+        "\"INSTAGRAM E FACEBOOK:  @DAVIDAVINOFILHO\" — handle como texto, nao entra como contato",
+        "\"THREADS: DAVIDAVINOFILHO\" — handle como texto, nao entra como contato",
+        "\"TIKTOK: DAVIDAVINOFILHO\" — handle como texto, nao entra como contato"
+      ]
+    },
     {
-     "casa": "senado",
-     "id_externo": "70",
-     "situacao": "Exercício",
-     "condicao": null,
-     "desde": null,
-     "motivo_afastamento_anterior": null,
-     "_fonte": "Senado Federal, dados abertos",
-     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+      "id_candidatura": "sen-al-2026-arthur-lira",
+      "pessoa": {
+        "nome_urna": "Arthur Lira",
+        "nome_completo": "Arthur Cesar Pereira de Lira",
+        "data_nascimento": "1969-06-25",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Advogado",
+        "genero": "Masculino"
+      },
+      "id_partido": "pp",
+      "id_coligacao": "alagoas-gigante-ii-al",
+      "cargo": "senador",
+      "uf": "AL",
+      "ano": 2026,
+      "numero_urna": "111",
+      "sequencial_tse": "20002553272",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Luiz Romero",
+        "Gustavo Feijó"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@oficialarthurlira",
+        "redes": [
+          "https://web.facebook.com/oficialarthurlira",
+          "https://www.instagram.com/oficialarthurlira/",
+          "https://www.kwai.com/@arthurliraal",
+          "https://www.threads.com/@oficialarthurlira",
+          "https://www.tiktok.com/@arthurliraoficial",
+          "https://www.youtube.com/@oficialarthurlira",
+          "https://x.com/ArthurLira_ * TikTok"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [
+        {
+          "casa": "camara",
+          "id_externo": "160541",
+          "situacao": "Exercício",
+          "condicao": "Titular",
+          "desde": "2023-02-01",
+          "motivo_afastamento_anterior": null,
+          "_fonte": "Camara dos Deputados, dados abertos v2",
+          "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+        }
+      ]
+    },
+    {
+      "id_candidatura": "sen-al-2026-renan",
+      "pessoa": {
+        "nome_urna": "Renan",
+        "nome_completo": "Jose Renan Vasconcelos Calheiros",
+        "data_nascimento": "1955-09-16",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Advogado",
+        "genero": "Masculino"
+      },
+      "id_partido": "mdb",
+      "id_coligacao": "pra-alagoas-fazer-historia-de-novo-al",
+      "cargo": "senador",
+      "uf": "AL",
+      "ano": 2026,
+      "numero_urna": "151",
+      "sequencial_tse": "20002553727",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Gustavo Henrique",
+        "Paulo",
+        "Christiane Bulhões",
+        "Sabino"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@renancalheiros",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/RENANSENADOR/",
+          "HTTPS://WWW.INSTAGRAM.COM/RENANCALHEIROS/",
+          "HTTPS://WWW.THREADS.COM/@RENANCALHEIROS",
+          "HTTPS://WWW.TIKTOK.COM/@RENANCALHEIROS15",
+          "HTTPS://WWW.YOUTUBE.COM/@RENANCALHEIROSOFICIAL",
+          "HTTPS://X.COM/RENANCALHEIROS",
+          "HTTPS://RENANCALHEIROS.COM.BR/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "site": "HTTPS://RENANCALHEIROS.COM.BR/",
+        "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [
+        {
+          "casa": "senado",
+          "id_externo": "70",
+          "situacao": "Exercício",
+          "condicao": null,
+          "desde": null,
+          "motivo_afastamento_anterior": null,
+          "_fonte": "Senado Federal, dados abertos",
+          "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+        }
+      ]
+    },
+    {
+      "id_candidatura": "sen-al-2026-dr-wanderley",
+      "pessoa": {
+        "nome_urna": "Dr. Wanderley",
+        "nome_completo": "Jose Wanderley Neto",
+        "data_nascimento": "1949-07-08",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Médico",
+        "genero": "Masculino"
+      },
+      "id_partido": "mdb",
+      "id_coligacao": "pra-alagoas-fazer-historia-de-novo-al",
+      "cargo": "senador",
+      "uf": "AL",
+      "ano": 2026,
+      "numero_urna": "156",
+      "sequencial_tse": "20002553726",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Rafael Tenório",
+        "Robertson",
+        "Ademir",
+        "Cel. Camila Paiva"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@dr_wanderley",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/DRJOSEWANDERLEY",
+          "HTTPS://WWW.INSTAGRAM.COM/DR_WANDERLEY/",
+          "HTTPS://WWW.THREADS.COM/@DR_WANDERLEY"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-al-2026-mariedson",
+      "pessoa": {
+        "nome_urna": "Mariedson",
+        "nome_completo": "Jose Mariedson da Silva",
+        "data_nascimento": "1973-08-16",
+        "escolaridade": "Ensino médio incompleto",
+        "ocupacao_declarada": "Vigilante",
+        "genero": "Masculino"
+      },
+      "id_partido": "democrata",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "AL",
+      "ano": 2026,
+      "numero_urna": "355",
+      "sequencial_tse": "20002552524",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Adriana Nunes",
+        "Jeferson Gonçalves"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [],
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-al-2026-marina-jhc",
+      "pessoa": {
+        "nome_urna": "Marina Jhc",
+        "nome_completo": "Marina Antunes Candia e Figueiredo",
+        "data_nascimento": "1990-12-27",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Empresária",
+        "genero": "Feminino"
+      },
+      "id_partido": "psdb",
+      "id_coligacao": "alagoas-gigante-ii-al",
+      "cargo": "senador",
+      "uf": "AL",
+      "ano": 2026,
+      "numero_urna": "456",
+      "sequencial_tse": "20002553711",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Dra. Eudocia",
+        "Ronaldo Lessa"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@marina.candia",
+        "redes": [
+          "https://k.kwai.com/u/@marinajhc/yq3bC0ab",
+          "https://open.spotify.com/user/31lolgz77fbwuttf6mzqspvdv2uy?si=e_QYx65WQoux3eT6Q4",
+          "https://www.facebook.com/marina.candia.16/?locale=pt_BR",
+          "https://www.instagram.com/marina.candia?igsh=MWNpOGxtZ2dqc3V5Yg==",
+          "https://www.tiktok.com/@marinacandiaf?_r=1&_t=ZS-98u2Ime27KT",
+          "https://youtube.com/@marina.candia?si=hjSY9hmhEjLaKZ6e"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-al-2026-alexandre-fleming",
+      "pessoa": {
+        "nome_urna": "Alexandre Fleming",
+        "nome_completo": "Alexandre Fleming Vasques Bastos",
+        "data_nascimento": "1977-06-08",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Servidor público federal",
+        "genero": "Masculino"
+      },
+      "id_partido": "up",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "AL",
+      "ano": 2026,
+      "numero_urna": "800",
+      "sequencial_tse": "20002540197",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Liliane Pereira",
+        "Professor Nivaldo Mota"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@alexandrefleming_",
+        "redes": [
+          "HTTPS://WWW.INSTAGRAM.COM/ALEXANDREFLEMING_"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
     }
-   ]
-  },
-  {
-   "id_candidatura": "sen-al-2026-dr-wanderley",
-   "pessoa": {
-    "nome_urna": "Dr. Wanderley",
-    "nome_completo": "Jose Wanderley Neto",
-    "data_nascimento": "1949-07-08",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Médico",
-    "genero": "Masculino"
-   },
-   "id_partido": "mdb",
-   "id_coligacao": "pra-alagoas-fazer-historia-de-novo-al",
-   "cargo": "senador",
-   "uf": "AL",
-   "ano": 2026,
-   "numero_urna": "156",
-   "sequencial_tse": "20002553726",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Rafael Tenório",
-    "Robertson",
-    "Ademir",
-    "Cel. Camila Paiva"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-al-2026-mariedson",
-   "pessoa": {
-    "nome_urna": "Mariedson",
-    "nome_completo": "Jose Mariedson da Silva",
-    "data_nascimento": "1973-08-16",
-    "escolaridade": "Ensino médio incompleto",
-    "ocupacao_declarada": "Vigilante",
-    "genero": "Masculino"
-   },
-   "id_partido": "democrata",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "AL",
-   "ano": 2026,
-   "numero_urna": "355",
-   "sequencial_tse": "20002552524",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Adriana Nunes",
-    "Jeferson Gonçalves"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-al-2026-marina-jhc",
-   "pessoa": {
-    "nome_urna": "Marina Jhc",
-    "nome_completo": "Marina Antunes Candia e Figueiredo",
-    "data_nascimento": "1990-12-27",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Empresária",
-    "genero": "Feminino"
-   },
-   "id_partido": "psdb",
-   "id_coligacao": "alagoas-gigante-ii-al",
-   "cargo": "senador",
-   "uf": "AL",
-   "ano": 2026,
-   "numero_urna": "456",
-   "sequencial_tse": "20002553711",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Dra. Eudocia",
-    "Ronaldo Lessa"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-al-2026-alexandre-fleming",
-   "pessoa": {
-    "nome_urna": "Alexandre Fleming",
-    "nome_completo": "Alexandre Fleming Vasques Bastos",
-    "data_nascimento": "1977-06-08",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público federal",
-    "genero": "Masculino"
-   },
-   "id_partido": "up",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "AL",
-   "ano": 2026,
-   "numero_urna": "800",
-   "sequencial_tse": "20002540197",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Liliane Pereira",
-    "Professor Nivaldo Mota"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  }
- ]
+  ]
 }

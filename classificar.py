@@ -546,14 +546,25 @@ def main():
         print("*** MODO SANDBOX: trabalhando numa copia em " + str(DADOS))
         print("*** os arquivos de verdade nao serao tocados")
         print()
-    faltando = [c.name for c in ARQUIVOS.values() if not c.exists()]
+    # Cada coleta e independente. Exigir TODAS travava Pernambuco, que tem 878
+    # proposicoes e nenhum discurso coletado: 878 itens ja classificados ficavam
+    # inacessiveis por causa de um arquivo que nunca existiu. So Sao Paulo tinha
+    # os dois, entao a exigencia nunca tinha sido posta a prova.
+    faltando = [k for k, c in ARQUIVOS.items() if not c.exists()]
+    if len(faltando) == len(ARQUIVOS):
+        raise SystemExit(f"nenhuma coleta encontrada em {DADOS}."
+                         + chr(10) + "rode coletar_legislativo.py antes.")
     if faltando:
-        raise SystemExit("faltam arquivos de coleta: " + ", ".join(faltando) +
-                         "\nrode coletar_legislativo.py e coletar_discursos.py antes.")
+        print(f"  sem coleta de {', '.join(faltando)} em {_UF}: "
+              f"esta tela cobre so o que foi coletado.")
 
     itens, _ = montar_itens()
     ed = [x for x in itens if x["precisa_de_olho"]]
-    print(f"304 itens coletados, ja classificados por mim.")
+    # Estava escrito "304", o total de Sao Paulo. Em Pernambuco, que tem 878, a
+    # tela abria anunciando o numero de outro estado.
+    coletados = sum(len(json.loads(c.read_text(encoding="utf-8"))["registros"])
+                    for c in ARQUIVOS.values() if c.exists())
+    print(f"{coletados} itens coletados, ja classificados por mim.")
     print(f"{len(itens)} precisam do seu olho: {len(ed)} escolhas editoriais "
           f"+ {len(itens) - len(ed)} sorteados para auditoria.")
     print("ordem: os editoriais primeiro, que e onde eu menos confio em mim")

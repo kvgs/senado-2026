@@ -1,562 +1,647 @@
 {
- "_nota": "Pessoa e candidatura no mesmo arquivo. Nenhum CPF e nenhum titulo eleitoral aqui: por principio, nao saem da base do TSE para o acervo.",
- "_data_referencia": "2026-08-26",
- "_fonte_registro": "TSE — Consulta de candidatos 2026, arquivo consulta_cand_2026_BRASIL.csv. Fonte primaria, sem espelho. Nivel: oficial.",
- "_gerado_por": "cadastrar_uf.py",
- "candidaturas": [
-  {
-   "id_candidatura": "sen-rn-2026-rafael-motta",
-   "pessoa": {
-    "nome_urna": "Rafael Motta",
-    "nome_completo": "Rafael Huete da Motta",
-    "data_nascimento": "1986-08-15",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Engenheiro",
-    "genero": "Masculino"
-   },
-   "id_partido": "pdt",
-   "id_coligacao": "time-que-cuida-rn",
-   "cargo": "senador",
-   "uf": "RN",
-   "ano": 2026,
-   "numero_urna": "123",
-   "sequencial_tse": "200002533843",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Jean Paul Prates",
-    "João Batista"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-rn-2026-samanda-de-lula",
-   "pessoa": {
-    "nome_urna": "Samanda de Lula",
-    "nome_completo": "Samanda Alves de Freitas",
-    "data_nascimento": "1980-09-20",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Vereadora",
-    "genero": "Feminino"
-   },
-   "id_partido": "pt",
-   "id_coligacao": "time-que-cuida-rn",
-   "cargo": "senador",
-   "uf": "RN",
-   "ano": 2026,
-   "numero_urna": "131",
-   "sequencial_tse": "200002533841",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Pluvia Oliveira",
-    "Oswaldo Negrao"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-rn-2026-luciana-mandu",
-   "pessoa": {
-    "nome_urna": "Luciana Mandu",
-    "nome_completo": "Luciana Lima da Silva",
-    "data_nascimento": "1969-12-14",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professora de ensino fundamental",
-    "genero": "Feminino"
-   },
-   "id_partido": "pstu",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "RN",
-   "ano": 2026,
-   "numero_urna": "161",
-   "sequencial_tse": "200002542484",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Kelly Jane",
-    "Márcio Roberto"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-rn-2026-rosalia-fernandes",
-   "pessoa": {
-    "nome_urna": "Rosália Fernandes",
-    "nome_completo": "Rosalia Maria Fernandes",
-    "data_nascimento": "1967-08-16",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Assistente social",
-    "genero": "Feminino"
-   },
-   "id_partido": "pstu",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "RN",
-   "ano": 2026,
-   "numero_urna": "166",
-   "sequencial_tse": "200002542483",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Nazareno Godeiro",
-    "Josimar Henrique"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-rn-2026-styvenson-valentim",
-   "pessoa": {
-    "nome_urna": "Styvenson Valentim",
-    "nome_completo": "Eann Styvenson Valentim Mendes",
-    "data_nascimento": "1977-02-07",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Senador",
-    "genero": "Masculino"
-   },
-   "id_partido": "pode",
-   "id_coligacao": "endireita-rn-rn",
-   "cargo": "senador",
-   "uf": "RN",
-   "ano": 2026,
-   "numero_urna": "200",
-   "sequencial_tse": "200002534448",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Kelly Valentim",
-    "Milena Galvão"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": [
+  "_nota": "Pessoa e candidatura no mesmo arquivo. Nenhum CPF e nenhum titulo eleitoral aqui: por principio, nao saem da base do TSE para o acervo.",
+  "_data_referencia": "2026-08-26",
+  "_fonte_registro": "TSE — Consulta de candidatos 2026, arquivo consulta_cand_2026_BRASIL.csv. Fonte primaria, sem espelho. Nivel: oficial.",
+  "_gerado_por": "cadastrar_uf.py",
+  "candidaturas": [
     {
-     "casa": "senado",
-     "id_externo": "5959",
-     "situacao": "Exercício",
-     "condicao": null,
-     "desde": null,
-     "motivo_afastamento_anterior": null,
-     "_fonte": "Senado Federal, dados abertos",
-     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
-    }
-   ]
-  },
-  {
-   "id_candidatura": "sen-rn-2026-coronel-helio",
-   "pessoa": {
-    "nome_urna": "Coronel Hélio",
-    "nome_completo": "Helio Imbrosio Oliveira",
-    "data_nascimento": "1964-09-27",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Membro das forças armadas",
-    "genero": "Masculino"
-   },
-   "id_partido": "pl",
-   "id_coligacao": "endireita-rn-rn",
-   "cargo": "senador",
-   "uf": "RN",
-   "ano": 2026,
-   "numero_urna": "222",
-   "sequencial_tse": "200002534447",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Valério Marinho",
-    "Gabriela Fagundes"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-rn-2026-linhares-jiboia",
-   "pessoa": {
-    "nome_urna": "Linhares Jiboia",
-    "nome_completo": "Gladyer Linhares Godeiro",
-    "data_nascimento": "1977-04-25",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Empresário",
-    "genero": "Masculino"
-   },
-   "id_partido": "dc",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "RN",
-   "ano": 2026,
-   "numero_urna": "277",
-   "sequencial_tse": "200002550225",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Wilka Nóbrega",
-    "Allain Agente Judiciário"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-rn-2026-gari-wendell-batista",
-   "pessoa": {
-    "nome_urna": "Gari Wendell Batista",
-    "nome_completo": "Wendell Batista dos Santos",
-    "data_nascimento": "1977-12-29",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público municipal",
-    "genero": "Masculino"
-   },
-   "id_partido": "agir",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "RN",
-   "ano": 2026,
-   "numero_urna": "360",
-   "sequencial_tse": "200002549133",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "José Neto",
-    "Erivaldo Costa"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-rn-2026-clovis-costa-do-coletivo-nos",
-   "pessoa": {
-    "nome_urna": "Clóvis Costa do Coletivo Nós",
-    "nome_completo": "Clovis Ferreira da Costa",
-    "data_nascimento": "1966-02-22",
-    "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Policial militar",
-    "genero": "Masculino"
-   },
-   "id_partido": "agir",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "RN",
-   "ano": 2026,
-   "numero_urna": "369",
-   "sequencial_tse": "200002548115",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Gari Aldair",
-    "Priscila Dutra"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-rn-2026-tercio-tinoco",
-   "pessoa": {
-    "nome_urna": "Tércio Tinôco",
-    "nome_completo": "Tercio Barreto Ramos Tinoco",
-    "data_nascimento": "1987-06-17",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Vereador",
-    "genero": "Masculino"
-   },
-   "id_partido": "uniao",
-   "id_coligacao": "esperanca-e-trabalho-rn",
-   "cargo": "senador",
-   "uf": "RN",
-   "ano": 2026,
-   "numero_urna": "444",
-   "sequencial_tse": "200002535511",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Marcos Solano",
-    "Dadaia Ribeiro"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-rn-2026-sandro-pimentel",
-   "pessoa": {
-    "nome_urna": "Sandro Pimentel",
-    "nome_completo": "Sandro de Oliveira Pimentel",
-    "data_nascimento": "1966-05-28",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público federal",
-    "genero": "Masculino"
-   },
-   "id_partido": "psol",
-   "id_coligacao": "federacao-rn",
-   "cargo": "senador",
-   "uf": "RN",
-   "ano": 2026,
-   "numero_urna": "500",
-   "sequencial_tse": "200002546792",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Danniel Morais",
-    "Wesley"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-rn-2026-sonia-godeiro",
-   "pessoa": {
-    "nome_urna": "Sonia Godeiro",
-    "nome_completo": "Sonia Maria Godeiro",
-    "data_nascimento": "1954-09-07",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Médica",
-    "genero": "Feminino"
-   },
-   "id_partido": "psol",
-   "id_coligacao": "federacao-rn",
-   "cargo": "senador",
-   "uf": "RN",
-   "ano": 2026,
-   "numero_urna": "501",
-   "sequencial_tse": "200002546795",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Modesto Neto",
-    "Santino Arruda"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-rn-2026-zenaide-maia",
-   "pessoa": {
-    "nome_urna": "Zenaide Maia",
-    "nome_completo": "Zenaide Maia Calado Pereira dos Santos",
-    "data_nascimento": "1954-11-27",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Senadora",
-    "genero": "Feminino"
-   },
-   "id_partido": "psd",
-   "id_coligacao": "esperanca-e-trabalho-rn",
-   "cargo": "senador",
-   "uf": "RN",
-   "ano": 2026,
-   "numero_urna": "555",
-   "sequencial_tse": "200002535507",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Netinho Lins",
-    "Odete Lopes"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": [
+      "id_candidatura": "sen-rn-2026-rafael-motta",
+      "pessoa": {
+        "nome_urna": "Rafael Motta",
+        "nome_completo": "Rafael Huete da Motta",
+        "data_nascimento": "1986-08-15",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Engenheiro",
+        "genero": "Masculino"
+      },
+      "id_partido": "pdt",
+      "id_coligacao": "time-que-cuida-rn",
+      "cargo": "senador",
+      "uf": "RN",
+      "ano": 2026,
+      "numero_urna": "123",
+      "sequencial_tse": "200002533843",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Jean Paul Prates",
+        "João Batista"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@rafaelmottarn",
+        "redes": [
+          "https://open.spotify.com/user/31ki4zcoupc33sg34f5jvfa6zpgu?si=BaVcQ8lxTqiTPStggLSZRQ&utm_source=copy",
+          "https://www.facebook.com/share/1D1P1mzw5N/?mibextid=wwXIfr",
+          "HTTPS://WWW.INSTAGRAM.COM/RAFAELMOTTARN?IGSH=CJB2NWNYN2VRBWFZ",
+          "https://www.tiktok.com/@rafaelmottarn?_r=1&_t=ZS-98T1spoNS2X",
+          "https://x.com/rafaelmottarn?s=11",
+          "https://youtube.com/@rafaelmottarn?si=C3wYnb5ei-j7SbUA",
+          "HTTPS://MOTTA-CAMPEAO-SITE.LOVABLE.APP"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "site": "HTTPS://MOTTA-CAMPEAO-SITE.LOVABLE.APP",
+        "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
     {
-     "casa": "senado",
-     "id_externo": "5783",
-     "situacao": "Exercício",
-     "condicao": null,
-     "desde": null,
-     "motivo_afastamento_anterior": null,
-     "_fonte": "Senado Federal, dados abertos",
-     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+      "id_candidatura": "sen-rn-2026-samanda-de-lula",
+      "pessoa": {
+        "nome_urna": "Samanda de Lula",
+        "nome_completo": "Samanda Alves de Freitas",
+        "data_nascimento": "1980-09-20",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Vereadora",
+        "genero": "Feminino"
+      },
+      "id_partido": "pt",
+      "id_coligacao": "time-que-cuida-rn",
+      "cargo": "senador",
+      "uf": "RN",
+      "ano": 2026,
+      "numero_urna": "131",
+      "sequencial_tse": "200002533841",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Pluvia Oliveira",
+        "Oswaldo Negrao"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@samanda",
+        "redes": [
+          "HTTP://FACEBOOK.COM/SAMANDAALVES",
+          "HTTP://INSTAGRAM.COM/SAMANDA",
+          "HTTP://YOUTUBE.COM/@SAMANDAALVES"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-rn-2026-luciana-mandu",
+      "pessoa": {
+        "nome_urna": "Luciana Mandu",
+        "nome_completo": "Luciana Lima da Silva",
+        "data_nascimento": "1969-12-14",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Professora de ensino fundamental",
+        "genero": "Feminino"
+      },
+      "id_partido": "pstu",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "RN",
+      "ano": 2026,
+      "numero_urna": "161",
+      "sequencial_tse": "200002542484",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Kelly Jane",
+        "Márcio Roberto"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@lucianamandu16",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/SHARE/1BSC274FSZ/",
+          "HTTPS://WWW.INSTAGRAM.COM/LUCIANAMANDU16?IGSH=NZJVCZZJCWLZMWNS",
+          "HTTPS://WWW.INSTAGRAM.COM/PSTU_RN?IGSH=ZXBOCHZKAXU0Z3D0"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-rn-2026-rosalia-fernandes",
+      "pessoa": {
+        "nome_urna": "Rosália Fernandes",
+        "nome_completo": "Rosalia Maria Fernandes",
+        "data_nascimento": "1967-08-16",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Assistente social",
+        "genero": "Feminino"
+      },
+      "id_partido": "pstu",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "RN",
+      "ano": 2026,
+      "numero_urna": "166",
+      "sequencial_tse": "200002542483",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Nazareno Godeiro",
+        "Josimar Henrique"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@pstu_rn",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/SHARE/19NBEHWHAP/",
+          "HTTPS://WWW.INSTAGRAM.COM/PSTU_RN?IGSH=ZXBOCHZKAXU0Z3D0",
+          "HTTPS://WWW.INSTAGRAM.COM/ROSALIAPSTU16?IGSH=MWP2CWXRDZUYNNPTDA=="
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-rn-2026-styvenson-valentim",
+      "pessoa": {
+        "nome_urna": "Styvenson Valentim",
+        "nome_completo": "Eann Styvenson Valentim Mendes",
+        "data_nascimento": "1977-02-07",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Senador",
+        "genero": "Masculino"
+      },
+      "id_partido": "pode",
+      "id_coligacao": "endireita-rn-rn",
+      "cargo": "senador",
+      "uf": "RN",
+      "ano": 2026,
+      "numero_urna": "200",
+      "sequencial_tse": "200002534448",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Kelly Valentim",
+        "Milena Galvão"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@capitaostyvensonsenador",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/SHARE/1F1NMPQCFT/",
+          "HTTPS://WWW.INSTAGRAM.COM/CAPITAOSTYVENSONSENADOR?IGSH=DDCZNM14YNDTYMY3",
+          "HTTPS://WWW.INSTAGRAM.COM/SENADORSTYVENSONVALENTIM?IGSH=MWJ6BHRSZGZXDDDWNG==",
+          "HTTPS://WWW.TIKTOK.COM/@SENADORSTYVENSONVALENTIM"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [
+        {
+          "casa": "senado",
+          "id_externo": "5959",
+          "situacao": "Exercício",
+          "condicao": null,
+          "desde": null,
+          "motivo_afastamento_anterior": null,
+          "_fonte": "Senado Federal, dados abertos",
+          "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+        }
+      ]
+    },
+    {
+      "id_candidatura": "sen-rn-2026-coronel-helio",
+      "pessoa": {
+        "nome_urna": "Coronel Hélio",
+        "nome_completo": "Helio Imbrosio Oliveira",
+        "data_nascimento": "1964-09-27",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Membro das forças armadas",
+        "genero": "Masculino"
+      },
+      "id_partido": "pl",
+      "id_coligacao": "endireita-rn-rn",
+      "cargo": "senador",
+      "uf": "RN",
+      "ano": 2026,
+      "numero_urna": "222",
+      "sequencial_tse": "200002534447",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Valério Marinho",
+        "Gabriela Fagundes"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [
+          "WWW.INSTAGRAM.COM.BR/CORONELHELIORN"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-rn-2026-linhares-jiboia",
+      "pessoa": {
+        "nome_urna": "Linhares Jiboia",
+        "nome_completo": "Gladyer Linhares Godeiro",
+        "data_nascimento": "1977-04-25",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Empresário",
+        "genero": "Masculino"
+      },
+      "id_partido": "dc",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "RN",
+      "ano": 2026,
+      "numero_urna": "277",
+      "sequencial_tse": "200002550225",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Wilka Nóbrega",
+        "Allain Agente Judiciário"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [],
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-rn-2026-gari-wendell-batista",
+      "pessoa": {
+        "nome_urna": "Gari Wendell Batista",
+        "nome_completo": "Wendell Batista dos Santos",
+        "data_nascimento": "1977-12-29",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Servidor público municipal",
+        "genero": "Masculino"
+      },
+      "id_partido": "agir",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "RN",
+      "ano": 2026,
+      "numero_urna": "360",
+      "sequencial_tse": "200002549133",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "José Neto",
+        "Erivaldo Costa"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@wendellbatist",
+        "redes": [
+          "HTTPS://WWW.INSTAGRAM.COM/WENDELLBATIST?IGSH=MXH3MDV0ZGCZBGY2NA=="
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-rn-2026-clovis-costa-do-coletivo-nos",
+      "pessoa": {
+        "nome_urna": "Clóvis Costa do Coletivo Nós",
+        "nome_completo": "Clovis Ferreira da Costa",
+        "data_nascimento": "1966-02-22",
+        "escolaridade": "Ensino médio completo",
+        "ocupacao_declarada": "Policial militar",
+        "genero": "Masculino"
+      },
+      "id_partido": "agir",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "RN",
+      "ano": 2026,
+      "numero_urna": "369",
+      "sequencial_tse": "200002548115",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Gari Aldair",
+        "Priscila Dutra"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [],
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-rn-2026-tercio-tinoco",
+      "pessoa": {
+        "nome_urna": "Tércio Tinôco",
+        "nome_completo": "Tercio Barreto Ramos Tinoco",
+        "data_nascimento": "1987-06-17",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Vereador",
+        "genero": "Masculino"
+      },
+      "id_partido": "uniao",
+      "id_coligacao": "esperanca-e-trabalho-rn",
+      "cargo": "senador",
+      "uf": "RN",
+      "ano": 2026,
+      "numero_urna": "444",
+      "sequencial_tse": "200002535511",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Marcos Solano",
+        "Dadaia Ribeiro"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@terciotinoco",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/TERCIOTINOCO/?LOCALE=PT_BR",
+          "HTTPS://WWW.INSTAGRAM.COM/TERCIOTINOCO/",
+          "HTTPS://WWW.YOUTUBE.COM/@TERCIOTINOCO",
+          "HTTPS://X.COM/TERCIOTINOCO?LANG=DA"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-rn-2026-sandro-pimentel",
+      "pessoa": {
+        "nome_urna": "Sandro Pimentel",
+        "nome_completo": "Sandro de Oliveira Pimentel",
+        "data_nascimento": "1966-05-28",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Servidor público federal",
+        "genero": "Masculino"
+      },
+      "id_partido": "psol",
+      "id_coligacao": "federacao-rn",
+      "cargo": "senador",
+      "uf": "RN",
+      "ano": 2026,
+      "numero_urna": "500",
+      "sequencial_tse": "200002546792",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Danniel Morais",
+        "Wesley"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@sandropimentelpsol",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/SHARE/1DTZRCXN4A/?MIBEXTID=WWXIFR",
+          "HTTPS://WWW.INSTAGRAM.COM/SANDROPIMENTELPSOL?IGSH=MXBZDXPTBML0Z2G3YG==",
+          "HTTPS://WWW.YOUTUBE.COM/@SANDROPIMENTEL",
+          "HTTPS://WWW.YOUTUBE.COM/@SANDROPIMENTEL4016"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-rn-2026-sonia-godeiro",
+      "pessoa": {
+        "nome_urna": "Sonia Godeiro",
+        "nome_completo": "Sonia Maria Godeiro",
+        "data_nascimento": "1954-09-07",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Médica",
+        "genero": "Feminino"
+      },
+      "id_partido": "psol",
+      "id_coligacao": "federacao-rn",
+      "cargo": "senador",
+      "uf": "RN",
+      "ano": 2026,
+      "numero_urna": "501",
+      "sequencial_tse": "200002546795",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Modesto Neto",
+        "Santino Arruda"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@soniagodeiro",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/SHARE/18Z1XMKC7O/?MIBEXTID=WWXIFR",
+          "HTTPS://WWW.INSTAGRAM.COM/SONIAGODEIRO?IGSH=MWZ1BZVTNXQ4ENPMBQ=="
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-rn-2026-zenaide-maia",
+      "pessoa": {
+        "nome_urna": "Zenaide Maia",
+        "nome_completo": "Zenaide Maia Calado Pereira dos Santos",
+        "data_nascimento": "1954-11-27",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Senadora",
+        "genero": "Feminino"
+      },
+      "id_partido": "psd",
+      "id_coligacao": "esperanca-e-trabalho-rn",
+      "cargo": "senador",
+      "uf": "RN",
+      "ano": 2026,
+      "numero_urna": "555",
+      "sequencial_tse": "200002535507",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Netinho Lins",
+        "Odete Lopes"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@drazenaide",
+        "redes": [
+          "HTTPS://WWW.TIKTOK.COM/@DRAZENAIDE?_R=1&_T=ZS-98OA2VS60QQ",
+          "HTTPS://WWW.YOUTUBE.COM/@ZENAIDERN",
+          "HTTPS://X.COM/ZENAIDERN?S=11&T=Q_JDYSDHVY6YT8UBEUIP5G",
+          "WWW.FACEBOOK.COM/ZENAIDEMAIARN",
+          "WWW.INSTAGRAM.COM/DRAZENAIDE?IGSH=EGLYEDVIOTJYOGL3",
+          "HTTPS://TIMEZENAIDE.COM/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "site": "HTTPS://TIMEZENAIDE.COM/",
+        "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [
+        {
+          "casa": "senado",
+          "id_externo": "5783",
+          "situacao": "Exercício",
+          "condicao": null,
+          "desde": null,
+          "motivo_afastamento_anterior": null,
+          "_fonte": "Senado Federal, dados abertos",
+          "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+        }
+      ]
+    },
+    {
+      "id_candidatura": "sen-rn-2026-professor-guilherme",
+      "pessoa": {
+        "nome_urna": "Professor Guilherme",
+        "nome_completo": "Guilherme Oliveira Mosca",
+        "data_nascimento": "1987-10-20",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Professor de ensino médio",
+        "genero": "Masculino"
+      },
+      "id_partido": "up",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "RN",
+      "ano": 2026,
+      "numero_urna": "800",
+      "sequencial_tse": "200002550541",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Eleide dos Santos",
+        "Lucicleide Ferreira"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [],
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
     }
-   ]
-  },
-  {
-   "id_candidatura": "sen-rn-2026-professor-guilherme",
-   "pessoa": {
-    "nome_urna": "Professor Guilherme",
-    "nome_completo": "Guilherme Oliveira Mosca",
-    "data_nascimento": "1987-10-20",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professor de ensino médio",
-    "genero": "Masculino"
-   },
-   "id_partido": "up",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "RN",
-   "ano": 2026,
-   "numero_urna": "800",
-   "sequencial_tse": "200002550541",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Eleide dos Santos",
-    "Lucicleide Ferreira"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  }
- ]
+  ]
 }

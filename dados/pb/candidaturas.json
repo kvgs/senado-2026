@@ -1,402 +1,472 @@
 {
- "_nota": "Pessoa e candidatura no mesmo arquivo. Nenhum CPF e nenhum titulo eleitoral aqui: por principio, nao saem da base do TSE para o acervo.",
- "_data_referencia": "2026-08-26",
- "_fonte_registro": "TSE — Consulta de candidatos 2026, arquivo consulta_cand_2026_BRASIL.csv. Fonte primaria, sem espelho. Nivel: oficial.",
- "_gerado_por": "cadastrar_uf.py",
- "candidaturas": [
-  {
-   "id_candidatura": "sen-pb-2026-nabor",
-   "pessoa": {
-    "nome_urna": "Nabor",
-    "nome_completo": "Nabor Wanderley da Nobrega Filho",
-    "data_nascimento": "1965-09-14",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado",
-    "genero": "Masculino"
-   },
-   "id_partido": "republicanos",
-   "id_coligacao": "coligacao-daqui-pra-melhor-pb",
-   "cargo": "senador",
-   "uf": "PB",
-   "ano": 2026,
-   "numero_urna": "100",
-   "sequencial_tse": "150002549791",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Daniella Ribeiro",
-    "Renato Feliciano"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pb-2026-andre-gadelha",
-   "pessoa": {
-    "nome_urna": "André Gadelha",
-    "nome_completo": "Andre Avelino de Paiva Gadelha Neto",
-    "data_nascimento": "1975-04-10",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Administrador",
-    "genero": "Masculino"
-   },
-   "id_partido": "mdb",
-   "id_coligacao": "juntos-para-a-paraiba-dar-o-proximo-passo-pb",
-   "cargo": "senador",
-   "uf": "PB",
-   "ano": 2026,
-   "numero_urna": "151",
-   "sequencial_tse": "150002544909",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Ivonete Ludgério",
-    "Assis Freire",
-    "Junior Lira"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pb-2026-veneziano",
-   "pessoa": {
-    "nome_urna": "Veneziano",
-    "nome_completo": "Veneziano Vital do Rêgo Segundo Neto",
-    "data_nascimento": "1970-07-17",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado",
-    "genero": "Masculino"
-   },
-   "id_partido": "mdb",
-   "id_coligacao": "juntos-para-a-paraiba-dar-o-proximo-passo-pb",
-   "cargo": "senador",
-   "uf": "PB",
-   "ano": 2026,
-   "numero_urna": "155",
-   "sequencial_tse": "150002544905",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Janine Lucena",
-    "Paulo Rebello"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": [
+  "_nota": "Pessoa e candidatura no mesmo arquivo. Nenhum CPF e nenhum titulo eleitoral aqui: por principio, nao saem da base do TSE para o acervo.",
+  "_data_referencia": "2026-08-26",
+  "_fonte_registro": "TSE — Consulta de candidatos 2026, arquivo consulta_cand_2026_BRASIL.csv. Fonte primaria, sem espelho. Nivel: oficial.",
+  "_gerado_por": "cadastrar_uf.py",
+  "candidaturas": [
     {
-     "casa": "senado",
-     "id_externo": "5748",
-     "situacao": "Exercício",
-     "condicao": null,
-     "desde": null,
-     "motivo_afastamento_anterior": null,
-     "_fonte": "Senado Federal, dados abertos",
-     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+      "id_candidatura": "sen-pb-2026-nabor",
+      "pessoa": {
+        "nome_urna": "Nabor",
+        "nome_completo": "Nabor Wanderley da Nobrega Filho",
+        "data_nascimento": "1965-09-14",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Advogado",
+        "genero": "Masculino"
+      },
+      "id_partido": "republicanos",
+      "id_coligacao": "coligacao-daqui-pra-melhor-pb",
+      "cargo": "senador",
+      "uf": "PB",
+      "ano": 2026,
+      "numero_urna": "100",
+      "sequencial_tse": "150002549791",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Daniella Ribeiro",
+        "Renato Feliciano"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@naborwanderley",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/NABORWANDERLEY",
+          "HTTPS://WWW.INSTAGRAM.COM/NABORWANDERLEY",
+          "HTTPS://WWW.TIKTOK.COM/WANDERLEYNABOR",
+          "HTTPS://WWW.X.COM/REALNABOR",
+          "HTTPS://WWW.YOUTUBE.COM/WANDERLEYNABOR"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-pb-2026-andre-gadelha",
+      "pessoa": {
+        "nome_urna": "André Gadelha",
+        "nome_completo": "Andre Avelino de Paiva Gadelha Neto",
+        "data_nascimento": "1975-04-10",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Administrador",
+        "genero": "Masculino"
+      },
+      "id_partido": "mdb",
+      "id_coligacao": "juntos-para-a-paraiba-dar-o-proximo-passo-pb",
+      "cargo": "senador",
+      "uf": "PB",
+      "ano": 2026,
+      "numero_urna": "151",
+      "sequencial_tse": "150002544909",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Ivonete Ludgério",
+        "Assis Freire",
+        "Junior Lira"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [],
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-pb-2026-veneziano",
+      "pessoa": {
+        "nome_urna": "Veneziano",
+        "nome_completo": "Veneziano Vital do Rêgo Segundo Neto",
+        "data_nascimento": "1970-07-17",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Advogado",
+        "genero": "Masculino"
+      },
+      "id_partido": "mdb",
+      "id_coligacao": "juntos-para-a-paraiba-dar-o-proximo-passo-pb",
+      "cargo": "senador",
+      "uf": "PB",
+      "ano": 2026,
+      "numero_urna": "155",
+      "sequencial_tse": "150002544905",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Janine Lucena",
+        "Paulo Rebello"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@venezianovitalpb",
+        "redes": [
+          "CANAL DO YOUTUBE:  HTTPS://YOUTUBE.COM/@VENEZIANOVITALPB?SI=KKEXM16EJG0JCKMW",
+          "FACEBOOK:  HTTPS://WWW.FACEBOOK.COM/SHARE/1BPRFJJSU6/?MIBEXTID=WWXIFR",
+          "INSTAGRAM:  HTTPS://WWW.INSTAGRAM.COM/VENEZIANOVITALPB?IGSH=MWMWOHRXCW8WD3M2DA==",
+          "REDE SOCIAL THREADS:  HTTPS://WWW.THREADS.COM/@VENEZIANOVITALPB?IGSHID=NTC4MTIWN",
+          "REDE SOCIAL X (TWITTER):  HTTPS://X.COM/VENEZIANOVITAL?S=21&T=4WCDIMWAB2VWCIXL0K",
+          "TIKTOK:  HTTPS://WWW.TIKTOK.COM/@VENEZIANOVITAL?_R=1&_T=ZS-98EW1BIVR6Y"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [
+        {
+          "casa": "senado",
+          "id_externo": "5748",
+          "situacao": "Exercício",
+          "condicao": null,
+          "desde": null,
+          "motivo_afastamento_anterior": null,
+          "_fonte": "Senado Federal, dados abertos",
+          "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+        }
+      ]
+    },
+    {
+      "id_candidatura": "sen-pb-2026-dr-marcelo-queiroga",
+      "pessoa": {
+        "nome_urna": "Dr. Marcelo Queiroga",
+        "nome_completo": "Marcelo Antônio Cartaxo Queiroga Lopes",
+        "data_nascimento": "1965-12-04",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Médico",
+        "genero": "Masculino"
+      },
+      "id_partido": "pl",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "PB",
+      "ano": 2026,
+      "numero_urna": "222",
+      "sequencial_tse": "150002538459",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Carol Morais",
+        "Flavio Amaral",
+        "Carol Morais",
+        "Emir Candeia"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [],
+      "_conferir_contato": [
+        "\"@MARCELOQUEIROGA\" — handle como texto, nao entra como contato",
+        "\"@MQUEIROGA22\" — handle como texto, nao entra como contato"
+      ]
+    },
+    {
+      "id_candidatura": "sen-pb-2026-rinaldo-junior",
+      "pessoa": {
+        "nome_urna": "Rinaldo Júnior",
+        "nome_completo": "Rinaldo Elias Pereira Junior",
+        "data_nascimento": "1989-07-17",
+        "escolaridade": "Superior incompleto",
+        "ocupacao_declarada": "Empresário",
+        "genero": "Masculino"
+      },
+      "id_partido": "dc",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "PB",
+      "ano": 2026,
+      "numero_urna": "272",
+      "sequencial_tse": "150002548971",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Eliu Nicácio",
+        "Jamaika Suênia"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [],
+      "_conferir_contato": [
+        "\"@RINALDOJUNIORPB\" — handle como texto, nao entra como contato"
+      ]
+    },
+    {
+      "id_candidatura": "sen-pb-2026-adriano-trajano",
+      "pessoa": {
+        "nome_urna": "Adriano Trajano",
+        "nome_completo": "Adriano Trajano da Conceição",
+        "data_nascimento": "1973-11-19",
+        "escolaridade": "Ensino médio completo",
+        "ocupacao_declarada": "Agricultor",
+        "genero": "Masculino"
+      },
+      "id_partido": "pco",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "PB",
+      "ano": 2026,
+      "numero_urna": "290",
+      "sequencial_tse": "150002552607",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Antônio Carlos Pereira",
+        "Nara Souza"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [
+          "https://candidatos.pco.org.br"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "site_do_partido": "https://candidatos.pco.org.br",
+        "site_do_partido_nota": "URL declarada por 13 candidaturas: e material do partido, nao da candidatura.",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-pb-2026-major-fabio",
+      "pessoa": {
+        "nome_urna": "Major Fábio",
+        "nome_completo": "Fábio Rodrigues de Oliveira",
+        "data_nascimento": "1969-11-04",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Militar reformado",
+        "genero": "Masculino"
+      },
+      "id_partido": "novo",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "PB",
+      "ano": 2026,
+      "numero_urna": "300",
+      "sequencial_tse": "150002548968",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "José Carneiro",
+        "Pastor Jader Medeiros"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@major_fabio",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/FABIO.MAJOR.77",
+          "HTTPS://WWW.FACEBOOK.COM/MAJORFABIOPB",
+          "HTTPS://WWW.INSTAGRAM.COM/MAJOR_FABIO"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-pb-2026-joao-azevedo",
+      "pessoa": {
+        "nome_urna": "Joao Azevêdo",
+        "nome_completo": "João Azevêdo Lins Filho",
+        "data_nascimento": "1953-08-14",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Engenheiro",
+        "genero": "Masculino"
+      },
+      "id_partido": "psb",
+      "id_coligacao": "coligacao-daqui-pra-melhor-pb",
+      "cargo": "senador",
+      "uf": "PB",
+      "ano": 2026,
+      "numero_urna": "400",
+      "sequencial_tse": "150002549793",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Chico Mendes",
+        "Roberto Franca"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@joaoazevedodoc",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/JOAOAZEVEDOLINS",
+          "HTTPS://WWW.INSTAGRAM.COM/JOAOAZEVEDODOC",
+          "HTTPS://WWW.INSTAGRAM.COM/JOAOAZEVEDOLINS/",
+          "HTTPS://WWW.INSTAGRAM.COM/JOAOVERSOPB/",
+          "HTTPS://WWW.INSTAGRAM.COM/PRAFRENTECOMJOAO",
+          "HTTPS://WWW.THREADS.COM/@JOAOAZEVEDOLINS",
+          "HTTPS://WWW.TIKTOK.COM/@JOAOAZEVEDOPB",
+          "HTTPS://WWW.TIKTOK.COM/@JOAOVERSOPB",
+          "HTTPS://WWW.YOUTUBE.COM/@JOAOAZEVEDOLINS",
+          "HTTPS://X.COM/JOAOAZEVEDOLINS",
+          "WWW.JOAO400.COM.BR"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "site": "WWW.JOAO400.COM.BR",
+        "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-pb-2026-rosilene-santana",
+      "pessoa": {
+        "nome_urna": "Rosilene Santana",
+        "nome_completo": "Rosilene da Silva Santana",
+        "data_nascimento": "1982-11-06",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Pedagoga",
+        "genero": "Feminino"
+      },
+      "id_partido": "up",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "PB",
+      "ano": 2026,
+      "numero_urna": "800",
+      "sequencial_tse": "150002544135",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Conceição Brito",
+        "Laylla Michele"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@rosilene_up",
+        "redes": [
+          "HTTPS://WWW.INSTAGRAM.COM/ROSILENE_UP/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-pb-2026-joao-batista",
+      "pessoa": {
+        "nome_urna": "João Batista",
+        "nome_completo": "João Batista Domingos",
+        "data_nascimento": "1981-02-28",
+        "escolaridade": "Ensino médio completo",
+        "ocupacao_declarada": "Gari ou lixeiro",
+        "genero": "Masculino"
+      },
+      "id_partido": "up",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "PB",
+      "ano": 2026,
+      "numero_urna": "801",
+      "sequencial_tse": "150002544140",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Josiane Soares",
+        "Bruno Souto"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@joaobatista.up",
+        "redes": [
+          "HTTPS://WWW.INSTAGRAM.COM/JOAOBATISTA.UP/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
     }
-   ]
-  },
-  {
-   "id_candidatura": "sen-pb-2026-dr-marcelo-queiroga",
-   "pessoa": {
-    "nome_urna": "Dr. Marcelo Queiroga",
-    "nome_completo": "Marcelo Antônio Cartaxo Queiroga Lopes",
-    "data_nascimento": "1965-12-04",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Médico",
-    "genero": "Masculino"
-   },
-   "id_partido": "pl",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "PB",
-   "ano": 2026,
-   "numero_urna": "222",
-   "sequencial_tse": "150002538459",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Carol Morais",
-    "Flavio Amaral",
-    "Carol Morais",
-    "Emir Candeia"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pb-2026-rinaldo-junior",
-   "pessoa": {
-    "nome_urna": "Rinaldo Júnior",
-    "nome_completo": "Rinaldo Elias Pereira Junior",
-    "data_nascimento": "1989-07-17",
-    "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Empresário",
-    "genero": "Masculino"
-   },
-   "id_partido": "dc",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "PB",
-   "ano": 2026,
-   "numero_urna": "272",
-   "sequencial_tse": "150002548971",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Eliu Nicácio",
-    "Jamaika Suênia"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pb-2026-adriano-trajano",
-   "pessoa": {
-    "nome_urna": "Adriano Trajano",
-    "nome_completo": "Adriano Trajano da Conceição",
-    "data_nascimento": "1973-11-19",
-    "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Agricultor",
-    "genero": "Masculino"
-   },
-   "id_partido": "pco",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "PB",
-   "ano": 2026,
-   "numero_urna": "290",
-   "sequencial_tse": "150002552607",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Antônio Carlos Pereira",
-    "Nara Souza"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pb-2026-major-fabio",
-   "pessoa": {
-    "nome_urna": "Major Fábio",
-    "nome_completo": "Fábio Rodrigues de Oliveira",
-    "data_nascimento": "1969-11-04",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Militar reformado",
-    "genero": "Masculino"
-   },
-   "id_partido": "novo",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "PB",
-   "ano": 2026,
-   "numero_urna": "300",
-   "sequencial_tse": "150002548968",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "José Carneiro",
-    "Pastor Jader Medeiros"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pb-2026-joao-azevedo",
-   "pessoa": {
-    "nome_urna": "Joao Azevêdo",
-    "nome_completo": "João Azevêdo Lins Filho",
-    "data_nascimento": "1953-08-14",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Engenheiro",
-    "genero": "Masculino"
-   },
-   "id_partido": "psb",
-   "id_coligacao": "coligacao-daqui-pra-melhor-pb",
-   "cargo": "senador",
-   "uf": "PB",
-   "ano": 2026,
-   "numero_urna": "400",
-   "sequencial_tse": "150002549793",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Chico Mendes",
-    "Roberto Franca"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pb-2026-rosilene-santana",
-   "pessoa": {
-    "nome_urna": "Rosilene Santana",
-    "nome_completo": "Rosilene da Silva Santana",
-    "data_nascimento": "1982-11-06",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Pedagoga",
-    "genero": "Feminino"
-   },
-   "id_partido": "up",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "PB",
-   "ano": 2026,
-   "numero_urna": "800",
-   "sequencial_tse": "150002544135",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Conceição Brito",
-    "Laylla Michele"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-pb-2026-joao-batista",
-   "pessoa": {
-    "nome_urna": "João Batista",
-    "nome_completo": "João Batista Domingos",
-    "data_nascimento": "1981-02-28",
-    "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Gari ou lixeiro",
-    "genero": "Masculino"
-   },
-   "id_partido": "up",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "PB",
-   "ano": 2026,
-   "numero_urna": "801",
-   "sequencial_tse": "150002544140",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Josiane Soares",
-    "Bruno Souto"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  }
- ]
+  ]
 }

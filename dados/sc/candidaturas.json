@@ -1,517 +1,619 @@
 {
- "_nota": "Pessoa e candidatura no mesmo arquivo. Nenhum CPF e nenhum titulo eleitoral aqui: por principio, nao saem da base do TSE para o acervo.",
- "_data_referencia": "2026-08-26",
- "_fonte_registro": "TSE — Consulta de candidatos 2026, arquivo consulta_cand_2026_BRASIL.csv. Fonte primaria, sem espelho. Nivel: oficial.",
- "_gerado_por": "cadastrar_uf.py",
- "candidaturas": [
-  {
-   "id_candidatura": "sen-sc-2026-esperidiao-amin",
-   "pessoa": {
-    "nome_urna": "Esperidião Amin",
-    "nome_completo": "Esperidiao Amin Helou Filho",
-    "data_nascimento": "1947-12-21",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professor de ensino superior",
-    "genero": "Masculino"
-   },
-   "id_partido": "pp",
-   "id_coligacao": "santa-catarina-acima-de-tudo-sc",
-   "cargo": "senador",
-   "uf": "SC",
-   "ano": 2026,
-   "numero_urna": "111",
-   "sequencial_tse": "240002548632",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Volnei Weber",
-    "Eni Voltolini"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": [
+  "_nota": "Pessoa e candidatura no mesmo arquivo. Nenhum CPF e nenhum titulo eleitoral aqui: por principio, nao saem da base do TSE para o acervo.",
+  "_data_referencia": "2026-08-26",
+  "_fonte_registro": "TSE — Consulta de candidatos 2026, arquivo consulta_cand_2026_BRASIL.csv. Fonte primaria, sem espelho. Nivel: oficial.",
+  "_gerado_por": "cadastrar_uf.py",
+  "candidaturas": [
     {
-     "casa": "senado",
-     "id_externo": "22",
-     "situacao": "Exercício",
-     "condicao": null,
-     "desde": null,
-     "motivo_afastamento_anterior": null,
-     "_fonte": "Senado Federal, dados abertos",
-     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+      "id_candidatura": "sen-sc-2026-esperidiao-amin",
+      "pessoa": {
+        "nome_urna": "Esperidião Amin",
+        "nome_completo": "Esperidiao Amin Helou Filho",
+        "data_nascimento": "1947-12-21",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Professor de ensino superior",
+        "genero": "Masculino"
+      },
+      "id_partido": "pp",
+      "id_coligacao": "santa-catarina-acima-de-tudo-sc",
+      "cargo": "senador",
+      "uf": "SC",
+      "ano": 2026,
+      "numero_urna": "111",
+      "sequencial_tse": "240002548632",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Volnei Weber",
+        "Eni Voltolini"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@esperidiaoamin",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/ESPERIDIAO.AMIN.1",
+          "HTTPS://WWW.FACEBOOK.COM/ESPERIDIAOAMIN",
+          "HTTPS://WWW.INSTAGRAM.COM/ESPERIDIAOAMIN",
+          "HTTPS://WWW.THREADS.COM/@ESPERIDIAOAMIN",
+          "HTTPS://X.COM/ESPERIDIAOAMIN_"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [
+        {
+          "casa": "senado",
+          "id_externo": "22",
+          "situacao": "Exercício",
+          "condicao": null,
+          "desde": null,
+          "motivo_afastamento_anterior": null,
+          "_fonte": "Senado Federal, dados abertos",
+          "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+        }
+      ]
+    },
+    {
+      "id_candidatura": "sen-sc-2026-decio-lima",
+      "pessoa": {
+        "nome_urna": "Décio Lima",
+        "nome_completo": "Decio Nery de Lima",
+        "data_nascimento": "1960-10-01",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Advogado",
+        "genero": "Masculino"
+      },
+      "id_partido": "pt",
+      "id_coligacao": "coragem-para-mudar-sc",
+      "cargo": "senador",
+      "uf": "SC",
+      "ano": 2026,
+      "numero_urna": "133",
+      "sequencial_tse": "240002533898",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Elaine Berger",
+        "Fernanda Klitzke"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@deciolima",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/DECIOLIMAOFICIAL",
+          "HTTPS://WWW.INSTAGRAM.COM/DECIOLIMA/",
+          "HTTPS://WWW.THREADS.COM/@DECIOLIMA",
+          "HTTPS://X.COM/DECIOLIMAPT"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-sc-2026-tulio-de-amorim-pfuetzenreiter",
+      "pessoa": {
+        "nome_urna": "Túlio de Amorim Pfuetzenreiter",
+        "nome_completo": "Túlio de Amorim Pfuetzenreiter",
+        "data_nascimento": "1988-09-03",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Empresário",
+        "genero": "Masculino"
+      },
+      "id_partido": "missao",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "SC",
+      "ano": 2026,
+      "numero_urna": "144",
+      "sequencial_tse": "240002544094",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Comandante Edupercio Pratts",
+        "Diego Vieira"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [],
+      "_conferir_contato": [
+        "\"RUA GUANABARA, 61 CENTRO INDAIAL - SC\" — texto livre, nao entra como contato"
+      ]
+    },
+    {
+      "id_candidatura": "sen-sc-2026-lunelli",
+      "pessoa": {
+        "nome_urna": "Lunelli",
+        "nome_completo": "Antidio Aleixo Lunelli",
+        "data_nascimento": "1963-06-16",
+        "escolaridade": "Ensino médio completo",
+        "ocupacao_declarada": "Empresário",
+        "genero": "Masculino"
+      },
+      "id_partido": "mdb",
+      "id_coligacao": "santa-catarina-acima-de-tudo-sc",
+      "cargo": "senador",
+      "uf": "SC",
+      "ano": 2026,
+      "numero_urna": "155",
+      "sequencial_tse": "240002548630",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Clenilton",
+        "Genesio Spillere"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@antidiolunelli",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/ANTIDIOALUNELLI",
+          "HTTPS://WWW.INSTAGRAM.COM/ANTIDIOLUNELLI/",
+          "HTTPS://WWW.YOUTUBE.COM/@ANTIDIOLUNELLI9620",
+          "HTTPS://X.COM/ANTIDIO_LUNELLI"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-sc-2026-joaninha-de-oliveira",
+      "pessoa": {
+        "nome_urna": "Joaninha de Oliveira",
+        "nome_completo": "Joaninha de Oliveira",
+        "data_nascimento": "1958-10-04",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Servidora pública civil aposentada",
+        "genero": "Feminino"
+      },
+      "id_partido": "pstu",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "SC",
+      "ano": 2026,
+      "numero_urna": "160",
+      "sequencial_tse": "240002537632",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Jocemir",
+        "Adriana"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@oliveirajoaninhade",
+        "redes": [
+          "HTTPS://WWW.INSTAGRAM.COM/OLIVEIRAJOANINHADE?IGSH=ZMZYM3BYNGHHZ3QY"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-sc-2026-marcos-dorval",
+      "pessoa": {
+        "nome_urna": "Marcos Dorval",
+        "nome_completo": "Marcos Dorval Schmitz",
+        "data_nascimento": "1973-10-06",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Servidor público federal",
+        "genero": "Masculino"
+      },
+      "id_partido": "pstu",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "SC",
+      "ano": 2026,
+      "numero_urna": "161",
+      "sequencial_tse": "240002537630",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Marcos Becker",
+        "Wagner Betto"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@dorvalpstu",
+        "redes": [
+          "HTTPS://WWW.INSTAGRAM.COM/DORVALPSTU?IGSH=MWPOZGNHZMW1BGP6YQ=="
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-sc-2026-carol-de-toni",
+      "pessoa": {
+        "nome_urna": "Carol de Toni",
+        "nome_completo": "Caroline Rodrigues de Toni",
+        "data_nascimento": "1986-09-01",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Deputada",
+        "genero": "Feminino"
+      },
+      "id_partido": "pl",
+      "id_coligacao": "fe-no-trabalho-e-pe-na-tabua-sc",
+      "cargo": "senador",
+      "uf": "SC",
+      "ano": 2026,
+      "numero_urna": "221",
+      "sequencial_tse": "240002541931",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Geraldo Wetzel Neto",
+        "Andrey Tomazi"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@carolinedetoni",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/CAROLINERDETONI",
+          "HTTPS://WWW.INSTAGRAM.COM/CAROLINEDETONI",
+          "HTTPS://WWW.TIKTOK.COM/@CAROLDETONISC",
+          "HTTPS://X.COM/CAROLDETONI",
+          "https://caroldetoni.com.br/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "site": "https://caroldetoni.com.br/",
+        "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-sc-2026-carlos-bolsonaro",
+      "pessoa": {
+        "nome_urna": "Carlos Bolsonaro",
+        "nome_completo": "Carlos Nantes Bolsonaro",
+        "data_nascimento": "1982-12-07",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Outros",
+        "genero": "Masculino"
+      },
+      "id_partido": "pl",
+      "id_coligacao": "fe-no-trabalho-e-pe-na-tabua-sc",
+      "cargo": "senador",
+      "uf": "SC",
+      "ano": 2026,
+      "numero_urna": "222",
+      "sequencial_tse": "240002541935",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Rafael Caleffi",
+        "Balduino Rodrigues"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@carlosbolsonaro",
+        "redes": [
+          "HTTPS://FACEBOOK.COM/CBOLSONARO",
+          "HTTPS://GETTR.COM/USER/BOLSONAROCARLOS",
+          "HTTPS://INSTAGRAM.COM/CARLOSBOLSONARO",
+          "HTTPS://KWAI.COM/@CARLOSBOLSONARO",
+          "HTTPS://LINKEDIN.COM/IN/CARLOS-BOLSONARO-92533B231",
+          "HTTPS://T.ME/BOLSONAROCARLOS",
+          "HTTPS://THREADS.NET/@CARLOSBOLSONARO",
+          "HTTPS://TIKTOK.COM/@CARLOSNBOLSONARO",
+          "HTTPS://WHATSAPP.COM/CHANNEL/0029VAFO9JLJF05GBBTZVC2H",
+          "HTTPS://X.COM/CARLOSBOLSONARO",
+          "HTTPS://YOUTUBE.COM/@CARLOSNBOLSONARO",
+          "HTTP://CARLOS.BOLSONARO.TV"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "site": "HTTP://CARLOS.BOLSONARO.TV",
+        "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-sc-2026-jeferson-rocha",
+      "pessoa": {
+        "nome_urna": "Jeferson Rocha",
+        "nome_completo": "Jeferson da Rocha",
+        "data_nascimento": "1981-10-28",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Produtor agropecuário",
+        "genero": "Masculino"
+      },
+      "id_partido": "prd",
+      "id_coligacao": "federacao-sc",
+      "cargo": "senador",
+      "uf": "SC",
+      "ano": 2026,
+      "numero_urna": "250",
+      "sequencial_tse": "240002551377",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Camila Zimmer",
+        "Jeann Lisboa"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@jefersonrocha.agro",
+        "redes": [
+          "HTTPS://WWW.INSTAGRAM.COM/JEFERSONROCHA.AGRO?IGSH=D3JVNHFWBTJ2C2JZ"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-sc-2026-carol",
+      "pessoa": {
+        "nome_urna": "Carol",
+        "nome_completo": "Caroline Sant'Anna",
+        "data_nascimento": "1987-04-06",
+        "escolaridade": "Superior incompleto",
+        "ocupacao_declarada": "Professora de ensino fundamental",
+        "genero": "Feminino"
+      },
+      "_conferir_transcricao": [
+        "Nome normalizado do registro em caixa alta (\"CAROL\" / \"CAROLINE SANT ANNA\"): a regra nao resolve sozinha. Conferir a grafia.",
+        "O TSE grafou \"CAROLINE SANT ANNA\" sem apostrofo; restaurado para \"Caroline Sant'Anna\". Conferir contra o registro."
+      ],
+      "id_partido": "pco",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "SC",
+      "ano": 2026,
+      "numero_urna": "290",
+      "sequencial_tse": "240002553005",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Domingos",
+        "Gilberto Silveira"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [
+          "HTTPS://CANDIDATOS.PCO.ORG.BR"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "site_do_partido": "HTTPS://CANDIDATOS.PCO.ORG.BR",
+        "site_do_partido_nota": "URL declarada por 13 candidaturas: e material do partido, nao da candidatura.",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-sc-2026-afranio-boppre",
+      "pessoa": {
+        "nome_urna": "Afrânio Boppré",
+        "nome_completo": "Afranio Tadeu Boppre",
+        "data_nascimento": "1960-10-30",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Vereador",
+        "genero": "Masculino"
+      },
+      "id_partido": "psol",
+      "id_coligacao": "coragem-para-mudar-sc",
+      "cargo": "senador",
+      "uf": "SC",
+      "ano": 2026,
+      "numero_urna": "500",
+      "sequencial_tse": "240002535770",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Luci Choinacki",
+        "Cida da Silva"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@afranioboppre50",
+        "redes": [
+          "HTTPS://INSTAGRAM.COM/AFRANIOBOPPRE50",
+          "HTTPS://TIKTOK.COM/AFRANIOBOPPRE50",
+          "HTTPS://X.COM/AFRANIOBOPPRE50",
+          "HTTPS://AFRANIO.ORG.BR/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "site": "HTTPS://AFRANIO.ORG.BR/",
+        "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-sc-2026-ana-lucia-da-silveira-machado",
+      "pessoa": {
+        "nome_urna": "Ana Lucia da Silveira Machado",
+        "nome_completo": "Ana Lucia da Silveira Machado",
+        "data_nascimento": "1955-01-21",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Professora de ensino médio",
+        "genero": "Feminino"
+      },
+      "id_partido": "up",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "SC",
+      "ano": 2026,
+      "numero_urna": "800",
+      "sequencial_tse": "240002539636",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Jaqueline Almeida Camargo",
+        "Jorge Luiz Adão"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@analucia.up",
+        "redes": [
+          "HTTPS://WWW.INSTAGRAM.COM/ANALUCIA.UP/",
+          "HTTPS://WWW.INSTAGRAM.COM/UNIDADEPOPULARSC/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-sc-2026-marlene-soccas",
+      "pessoa": {
+        "nome_urna": "Marlene Soccas",
+        "nome_completo": "Marlene de Souza Soccas",
+        "data_nascimento": "1934-09-25",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Odontóloga",
+        "genero": "Feminino"
+      },
+      "id_partido": "up",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "SC",
+      "ano": 2026,
+      "numero_urna": "808",
+      "sequencial_tse": "240002550218",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Adriana Rio",
+        "Professor Jacson"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@marlenesoccas.up",
+        "redes": [
+          "HTTPS://WWW.INSTAGRAM.COM/MARLENESOCCAS.UP/",
+          "HTTPS://WWW.INSTAGRAM.COM/UNIDADEPOPULARSC/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
     }
-   ]
-  },
-  {
-   "id_candidatura": "sen-sc-2026-decio-lima",
-   "pessoa": {
-    "nome_urna": "Décio Lima",
-    "nome_completo": "Decio Nery de Lima",
-    "data_nascimento": "1960-10-01",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado",
-    "genero": "Masculino"
-   },
-   "id_partido": "pt",
-   "id_coligacao": "coragem-para-mudar-sc",
-   "cargo": "senador",
-   "uf": "SC",
-   "ano": 2026,
-   "numero_urna": "133",
-   "sequencial_tse": "240002533898",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Elaine Berger",
-    "Fernanda Klitzke"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-sc-2026-tulio-de-amorim-pfuetzenreiter",
-   "pessoa": {
-    "nome_urna": "Túlio de Amorim Pfuetzenreiter",
-    "nome_completo": "Túlio de Amorim Pfuetzenreiter",
-    "data_nascimento": "1988-09-03",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Empresário",
-    "genero": "Masculino"
-   },
-   "id_partido": "missao",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "SC",
-   "ano": 2026,
-   "numero_urna": "144",
-   "sequencial_tse": "240002544094",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Comandante Edupercio Pratts",
-    "Diego Vieira"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-sc-2026-lunelli",
-   "pessoa": {
-    "nome_urna": "Lunelli",
-    "nome_completo": "Antidio Aleixo Lunelli",
-    "data_nascimento": "1963-06-16",
-    "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Empresário",
-    "genero": "Masculino"
-   },
-   "id_partido": "mdb",
-   "id_coligacao": "santa-catarina-acima-de-tudo-sc",
-   "cargo": "senador",
-   "uf": "SC",
-   "ano": 2026,
-   "numero_urna": "155",
-   "sequencial_tse": "240002548630",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Clenilton",
-    "Genesio Spillere"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-sc-2026-joaninha-de-oliveira",
-   "pessoa": {
-    "nome_urna": "Joaninha de Oliveira",
-    "nome_completo": "Joaninha de Oliveira",
-    "data_nascimento": "1958-10-04",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidora pública civil aposentada",
-    "genero": "Feminino"
-   },
-   "id_partido": "pstu",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "SC",
-   "ano": 2026,
-   "numero_urna": "160",
-   "sequencial_tse": "240002537632",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Jocemir",
-    "Adriana"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-sc-2026-marcos-dorval",
-   "pessoa": {
-    "nome_urna": "Marcos Dorval",
-    "nome_completo": "Marcos Dorval Schmitz",
-    "data_nascimento": "1973-10-06",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público federal",
-    "genero": "Masculino"
-   },
-   "id_partido": "pstu",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "SC",
-   "ano": 2026,
-   "numero_urna": "161",
-   "sequencial_tse": "240002537630",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Marcos Becker",
-    "Wagner Betto"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-sc-2026-carol-de-toni",
-   "pessoa": {
-    "nome_urna": "Carol de Toni",
-    "nome_completo": "Caroline Rodrigues de Toni",
-    "data_nascimento": "1986-09-01",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputada",
-    "genero": "Feminino"
-   },
-   "id_partido": "pl",
-   "id_coligacao": "fe-no-trabalho-e-pe-na-tabua-sc",
-   "cargo": "senador",
-   "uf": "SC",
-   "ano": 2026,
-   "numero_urna": "221",
-   "sequencial_tse": "240002541931",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Geraldo Wetzel Neto",
-    "Andrey Tomazi"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-sc-2026-carlos-bolsonaro",
-   "pessoa": {
-    "nome_urna": "Carlos Bolsonaro",
-    "nome_completo": "Carlos Nantes Bolsonaro",
-    "data_nascimento": "1982-12-07",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Outros",
-    "genero": "Masculino"
-   },
-   "id_partido": "pl",
-   "id_coligacao": "fe-no-trabalho-e-pe-na-tabua-sc",
-   "cargo": "senador",
-   "uf": "SC",
-   "ano": 2026,
-   "numero_urna": "222",
-   "sequencial_tse": "240002541935",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Rafael Caleffi",
-    "Balduino Rodrigues"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-sc-2026-jeferson-rocha",
-   "pessoa": {
-    "nome_urna": "Jeferson Rocha",
-    "nome_completo": "Jeferson da Rocha",
-    "data_nascimento": "1981-10-28",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Produtor agropecuário",
-    "genero": "Masculino"
-   },
-   "id_partido": "prd",
-   "id_coligacao": "federacao-sc",
-   "cargo": "senador",
-   "uf": "SC",
-   "ano": 2026,
-   "numero_urna": "250",
-   "sequencial_tse": "240002551377",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Camila Zimmer",
-    "Jeann Lisboa"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-sc-2026-carol",
-   "pessoa": {
-    "nome_urna": "Carol",
-    "nome_completo": "Caroline Sant'Anna",
-    "data_nascimento": "1987-04-06",
-    "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Professora de ensino fundamental",
-    "genero": "Feminino"
-   },
-   "_conferir_transcricao": [
-    "Nome normalizado do registro em caixa alta (\"CAROL\" / \"CAROLINE SANT ANNA\"): a regra nao resolve sozinha. Conferir a grafia.",
-    "O TSE grafou \"CAROLINE SANT ANNA\" sem apostrofo; restaurado para \"Caroline Sant'Anna\". Conferir contra o registro."
-   ],
-   "id_partido": "pco",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "SC",
-   "ano": 2026,
-   "numero_urna": "290",
-   "sequencial_tse": "240002553005",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Domingos",
-    "Gilberto Silveira"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-sc-2026-afranio-boppre",
-   "pessoa": {
-    "nome_urna": "Afrânio Boppré",
-    "nome_completo": "Afranio Tadeu Boppre",
-    "data_nascimento": "1960-10-30",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Vereador",
-    "genero": "Masculino"
-   },
-   "id_partido": "psol",
-   "id_coligacao": "coragem-para-mudar-sc",
-   "cargo": "senador",
-   "uf": "SC",
-   "ano": 2026,
-   "numero_urna": "500",
-   "sequencial_tse": "240002535770",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Luci Choinacki",
-    "Cida da Silva"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-sc-2026-ana-lucia-da-silveira-machado",
-   "pessoa": {
-    "nome_urna": "Ana Lucia da Silveira Machado",
-    "nome_completo": "Ana Lucia da Silveira Machado",
-    "data_nascimento": "1955-01-21",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professora de ensino médio",
-    "genero": "Feminino"
-   },
-   "id_partido": "up",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "SC",
-   "ano": 2026,
-   "numero_urna": "800",
-   "sequencial_tse": "240002539636",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Jaqueline Almeida Camargo",
-    "Jorge Luiz Adão"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-sc-2026-marlene-soccas",
-   "pessoa": {
-    "nome_urna": "Marlene Soccas",
-    "nome_completo": "Marlene de Souza Soccas",
-    "data_nascimento": "1934-09-25",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Odontóloga",
-    "genero": "Feminino"
-   },
-   "id_partido": "up",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "SC",
-   "ano": 2026,
-   "numero_urna": "808",
-   "sequencial_tse": "240002550218",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Adriana Rio",
-    "Professor Jacson"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  }
- ]
+  ]
 }

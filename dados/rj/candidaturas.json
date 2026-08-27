@@ -1,674 +1,822 @@
 {
- "_nota": "Pessoa e candidatura no mesmo arquivo. Nenhum CPF e nenhum titulo eleitoral aqui: por principio, nao saem da base do TSE para o acervo.",
- "_data_referencia": "2026-08-26",
- "_fonte_registro": "TSE — Consulta de candidatos 2026, arquivo consulta_cand_2026_BRASIL.csv. Fonte primaria, sem espelho. Nivel: oficial.",
- "_gerado_por": "cadastrar_uf.py",
- "candidaturas": [
-  {
-   "id_candidatura": "sen-rj-2026-marcelo-crivella",
-   "pessoa": {
-    "nome_urna": "Marcelo Crivella",
-    "nome_completo": "Marcelo Bezerra Crivella",
-    "data_nascimento": "1957-10-09",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Engenheiro",
-    "genero": "Masculino"
-   },
-   "id_partido": "republicanos",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "RJ",
-   "ano": 2026,
-   "numero_urna": "100",
-   "sequencial_tse": "190002550184",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Vagner Arruda dos Santos",
-    "Francisco Eugenio"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": [
+  "_nota": "Pessoa e candidatura no mesmo arquivo. Nenhum CPF e nenhum titulo eleitoral aqui: por principio, nao saem da base do TSE para o acervo.",
+  "_data_referencia": "2026-08-26",
+  "_fonte_registro": "TSE — Consulta de candidatos 2026, arquivo consulta_cand_2026_BRASIL.csv. Fonte primaria, sem espelho. Nivel: oficial.",
+  "_gerado_por": "cadastrar_uf.py",
+  "candidaturas": [
     {
-     "casa": "camara",
-     "id_externo": "220599",
-     "situacao": "Exercício",
-     "condicao": "Titular",
-     "desde": "2023-02-01",
-     "motivo_afastamento_anterior": null,
-     "_fonte": "Camara dos Deputados, dados abertos v2",
-     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
-    }
-   ]
-  },
-  {
-   "id_candidatura": "sen-rj-2026-waguinho",
-   "pessoa": {
-    "nome_urna": "Waguinho",
-    "nome_completo": "Wagner dos Santos Carneiro",
-    "data_nascimento": "1971-10-29",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado",
-    "genero": "Masculino"
-   },
-   "id_partido": "republicanos",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "RJ",
-   "ano": 2026,
-   "numero_urna": "101",
-   "sequencial_tse": "190002550182",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Andre R.r Soares",
-    "Dra. Renata"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-rj-2026-benedita-da-silva",
-   "pessoa": {
-    "nome_urna": "Benedita da Silva",
-    "nome_completo": "Benedita Souza da Silva Sampaio",
-    "data_nascimento": "1942-04-26",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputada",
-    "genero": "Feminino"
-   },
-   "id_partido": "pt",
-   "id_coligacao": "juntos-para-mudar-coragem-para-reconstruir-rj",
-   "cargo": "senador",
-   "uf": "RJ",
-   "ano": 2026,
-   "numero_urna": "131",
-   "sequencial_tse": "190002548141",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Manoel Severino",
-    "Kleber Lucas"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": [
+      "id_candidatura": "sen-rj-2026-marcelo-crivella",
+      "pessoa": {
+        "nome_urna": "Marcelo Crivella",
+        "nome_completo": "Marcelo Bezerra Crivella",
+        "data_nascimento": "1957-10-09",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Engenheiro",
+        "genero": "Masculino"
+      },
+      "id_partido": "republicanos",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "RJ",
+      "ano": 2026,
+      "numero_urna": "100",
+      "sequencial_tse": "190002550184",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Vagner Arruda dos Santos",
+        "Francisco Eugenio"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/MARCELOCRIVELLA"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [
+        {
+          "casa": "camara",
+          "id_externo": "220599",
+          "situacao": "Exercício",
+          "condicao": "Titular",
+          "desde": "2023-02-01",
+          "motivo_afastamento_anterior": null,
+          "_fonte": "Camara dos Deputados, dados abertos v2",
+          "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+        }
+      ]
+    },
     {
-     "casa": "camara",
-     "id_externo": "73701",
-     "situacao": "Exercício",
-     "condicao": "Titular",
-     "desde": "2023-02-01",
-     "motivo_afastamento_anterior": null,
-     "_fonte": "Camara dos Deputados, dados abertos v2",
-     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
-    }
-   ]
-  },
-  {
-   "id_candidatura": "sen-rj-2026-helio-secco",
-   "pessoa": {
-    "nome_urna": "Helio Secco",
-    "nome_completo": "Helio Kinast Cruz Secco",
-    "data_nascimento": "1989-06-15",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Empresário",
-    "genero": "Masculino"
-   },
-   "id_partido": "missao",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "RJ",
-   "ano": 2026,
-   "numero_urna": "144",
-   "sequencial_tse": "190002543961",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Moisés Queiroz",
-    "Ramon Batista"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-rj-2026-paula-falcao",
-   "pessoa": {
-    "nome_urna": "Paula Falcão",
-    "nome_completo": "Paula Andreia Almeida Falcao",
-    "data_nascimento": "1989-12-26",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professora de ensino médio",
-    "genero": "Feminino"
-   },
-   "id_partido": "pstu",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "RJ",
-   "ano": 2026,
-   "numero_urna": "160",
-   "sequencial_tse": "190002539827",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Florinda Lombardi",
-    "Carlão Silveira"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-rj-2026-marcos-dias",
-   "pessoa": {
-    "nome_urna": "Marcos Dias",
-    "nome_completo": "Marcos Dias Pereira",
-    "data_nascimento": "1971-12-03",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Vereador",
-    "genero": "Masculino"
-   },
-   "id_partido": "pode",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "RJ",
-   "ano": 2026,
-   "numero_urna": "200",
-   "sequencial_tse": "190002545553",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Everaldo Pereira",
-    "Elaine Diniz"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-rj-2026-carlos-jordy",
-   "pessoa": {
-    "nome_urna": "Carlos Jordy",
-    "nome_completo": "Carlos Roberto Coelho de Mattos Júnior",
-    "data_nascimento": "1982-02-08",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputado",
-    "genero": "Masculino"
-   },
-   "id_partido": "pl",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "RJ",
-   "ano": 2026,
-   "numero_urna": "221",
-   "sequencial_tse": "190002542888",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Lucimar Ferreira",
-    "Zé Augusto Nalin"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": [
+      "id_candidatura": "sen-rj-2026-waguinho",
+      "pessoa": {
+        "nome_urna": "Waguinho",
+        "nome_completo": "Wagner dos Santos Carneiro",
+        "data_nascimento": "1971-10-29",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Advogado",
+        "genero": "Masculino"
+      },
+      "id_partido": "republicanos",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "RJ",
+      "ano": 2026,
+      "numero_urna": "101",
+      "sequencial_tse": "190002550182",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Andre R.r Soares",
+        "Dra. Renata"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@waguinhocarneirooficial",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/WAGUINHOCARNEIROOFICIAL",
+          "HTTPS://WWW.INSTAGRAM.COM/WAGUINHOCARNEIROOFICIAL",
+          "HTTPS://WWW.THREADS.COM/@WAGUINHOCARNEIROOFICIAL"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
     {
-     "casa": "camara",
-     "id_externo": "204460",
-     "situacao": "Exercício",
-     "condicao": "Titular",
-     "desde": "2024-09-04",
-     "motivo_afastamento_anterior": null,
-     "_fonte": "Camara dos Deputados, dados abertos v2",
-     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
-    }
-   ]
-  },
-  {
-   "id_candidatura": "sen-rj-2026-carlos-portinho",
-   "pessoa": {
-    "nome_urna": "Carlos Portinho",
-    "nome_completo": "Carlos Francisco Portinho",
-    "data_nascimento": "1973-07-02",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Senador",
-    "genero": "Masculino"
-   },
-   "id_partido": "pl",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "RJ",
-   "ano": 2026,
-   "numero_urna": "222",
-   "sequencial_tse": "190002535142",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Samuel Malafaia",
-    "Marcelinho"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": [
+      "id_candidatura": "sen-rj-2026-benedita-da-silva",
+      "pessoa": {
+        "nome_urna": "Benedita da Silva",
+        "nome_completo": "Benedita Souza da Silva Sampaio",
+        "data_nascimento": "1942-04-26",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Deputada",
+        "genero": "Feminino"
+      },
+      "id_partido": "pt",
+      "id_coligacao": "juntos-para-mudar-coragem-para-reconstruir-rj",
+      "cargo": "senador",
+      "uf": "RJ",
+      "ano": 2026,
+      "numero_urna": "131",
+      "sequencial_tse": "190002548141",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Manoel Severino",
+        "Kleber Lucas"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@instadabene",
+        "redes": [
+          "HTTPS://BSKY.APP/PROFILE/BENEDITADASILVA.BSKY.SOCIAL",
+          "HTTPS://K.KWAI.COM/U/@BENEDITADASILV543/C0E9ALRA",
+          "HTTPS://WWW.FACEBOOK.COM/BLOGDABENEDITA",
+          "HTTPS://WWW.INSTAGRAM.COM/INSTADABENE/",
+          "HTTPS://WWW.TIKTOK.COM/@TIKTOKDABENE",
+          "HTTPS://WWW.YOUTUBE.COM/@BENEDITASILVA",
+          "HTTPS://X.COM/DASILVABENEDITA",
+          "https://beneditasenadora.com.br",
+          "https://beneditasenadora131.com.br/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "site": "https://beneditasenadora.com.br",
+        "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "outros_sites": [
+          "https://beneditasenadora131.com.br/"
+        ],
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [
+        {
+          "casa": "camara",
+          "id_externo": "73701",
+          "situacao": "Exercício",
+          "condicao": "Titular",
+          "desde": "2023-02-01",
+          "motivo_afastamento_anterior": null,
+          "_fonte": "Camara dos Deputados, dados abertos v2",
+          "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+        }
+      ]
+    },
     {
-     "casa": "senado",
-     "id_externo": "5936",
-     "situacao": "Exercício",
-     "condicao": null,
-     "desde": null,
-     "motivo_afastamento_anterior": null,
-     "_fonte": "Senado Federal, dados abertos",
-     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
-    }
-   ]
-  },
-  {
-   "id_candidatura": "sen-rj-2026-luciano-mattos",
-   "pessoa": {
-    "nome_urna": "Luciano Mattos",
-    "nome_completo": "Luciano Oliveira Mattos de Souza",
-    "data_nascimento": "1968-12-05",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado",
-    "genero": "Masculino"
-   },
-   "id_partido": "prtb",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "RJ",
-   "ano": 2026,
-   "numero_urna": "280",
-   "sequencial_tse": "190002552083",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Murilo Romero",
-    "Ricardo Fernandes"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-rj-2026-luiz-eugenio",
-   "pessoa": {
-    "nome_urna": "Luiz Eugenio",
-    "nome_completo": "Luiz Eugenio Honorato",
-    "data_nascimento": "1961-04-29",
-    "escolaridade": "Ensino fundamental completo",
-    "ocupacao_declarada": "Aposentado (exceto servidor público)",
-    "genero": "Masculino"
-   },
-   "id_partido": "pco",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "RJ",
-   "ano": 2026,
-   "numero_urna": "290",
-   "sequencial_tse": "190002552521",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Antônio de Paula",
-    "Guilherme dos Santos"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-rj-2026-andre-monteiro",
-   "pessoa": {
-    "nome_urna": "André Monteiro",
-    "nome_completo": "Luiz Andre de Moura Monteiro",
-    "data_nascimento": "1971-04-14",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Militar reformado",
-    "genero": "Masculino"
-   },
-   "id_partido": "democrata",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "RJ",
-   "ano": 2026,
-   "numero_urna": "350",
-   "sequencial_tse": "190002550192",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Cmt Ribeiro Afonso",
-    "Alexandre Cardoso"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-rj-2026-o-clemente",
-   "pessoa": {
-    "nome_urna": "Ó Clemente",
-    "nome_completo": "Clemente Sebastião de Almeida Campos",
-    "data_nascimento": "1947-10-13",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público civil aposentado",
-    "genero": "Masculino"
-   },
-   "_conferir_transcricao": [
-    "Nome normalizado do registro em caixa alta (\"Ó CLEMENTE\" / \"CLEMENTE SEBASTIÃO DE ALMEIDA CAMPOS\"): a regra nao resolve sozinha. Conferir a grafia."
-   ],
-   "id_partido": "democrata",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "RJ",
-   "ano": 2026,
-   "numero_urna": "355",
-   "sequencial_tse": "190002550190",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Alberto Pró Vida-Betinho",
-    "Jorge Page"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-rj-2026-monica-benicio",
-   "pessoa": {
-    "nome_urna": "Monica Benicio",
-    "nome_completo": "Monica Tereza Azeredo Benicio",
-    "data_nascimento": "1986-02-01",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Vereadora",
-    "genero": "Feminino"
-   },
-   "id_partido": "psol",
-   "id_coligacao": "federacao-rj",
-   "cargo": "senador",
-   "uf": "RJ",
-   "ano": 2026,
-   "numero_urna": "500",
-   "sequencial_tse": "190002536164",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Vanderlea Aguiar",
-    "Maria dos Camelôs"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-rj-2026-pedro-paulo",
-   "pessoa": {
-    "nome_urna": "Pedro Paulo",
-    "nome_completo": "Pedro Paulo Carvalho Teixeira",
-    "data_nascimento": "1972-06-29",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Economista",
-    "genero": "Masculino"
-   },
-   "id_partido": "psd",
-   "id_coligacao": "juntos-para-mudar-coragem-para-reconstruir-rj",
-   "cargo": "senador",
-   "uf": "RJ",
-   "ano": 2026,
-   "numero_urna": "555",
-   "sequencial_tse": "190002548145",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Miro Teixeira",
-    "Savio Neves"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": [
+      "id_candidatura": "sen-rj-2026-helio-secco",
+      "pessoa": {
+        "nome_urna": "Helio Secco",
+        "nome_completo": "Helio Kinast Cruz Secco",
+        "data_nascimento": "1989-06-15",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Empresário",
+        "genero": "Masculino"
+      },
+      "id_partido": "missao",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "RJ",
+      "ano": 2026,
+      "numero_urna": "144",
+      "sequencial_tse": "190002543961",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Moisés Queiroz",
+        "Ramon Batista"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [
+          "HELIOSECCO.COM.BR"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "site": "HELIOSECCO.COM.BR",
+        "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [],
+      "_conferir_contato": [
+        "\"@SECCO.HELIO\" — handle como texto, nao entra como contato"
+      ]
+    },
     {
-     "casa": "camara",
-     "id_externo": "122158",
-     "situacao": "Exercício",
-     "condicao": "Titular",
-     "desde": "2023-02-01",
-     "motivo_afastamento_anterior": null,
-     "_fonte": "Camara dos Deputados, dados abertos v2",
-     "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+      "id_candidatura": "sen-rj-2026-paula-falcao",
+      "pessoa": {
+        "nome_urna": "Paula Falcão",
+        "nome_completo": "Paula Andreia Almeida Falcao",
+        "data_nascimento": "1989-12-26",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Professora de ensino médio",
+        "genero": "Feminino"
+      },
+      "id_partido": "pstu",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "RJ",
+      "ano": 2026,
+      "numero_urna": "160",
+      "sequencial_tse": "190002539827",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Florinda Lombardi",
+        "Carlão Silveira"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [],
+      "_conferir_contato": [
+        "\"@PAULAFALCAO16 INSTAGRAM\" — handle como texto, nao entra como contato"
+      ]
+    },
+    {
+      "id_candidatura": "sen-rj-2026-marcos-dias",
+      "pessoa": {
+        "nome_urna": "Marcos Dias",
+        "nome_completo": "Marcos Dias Pereira",
+        "data_nascimento": "1971-12-03",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Vereador",
+        "genero": "Masculino"
+      },
+      "id_partido": "pode",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "RJ",
+      "ano": 2026,
+      "numero_urna": "200",
+      "sequencial_tse": "190002545553",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Everaldo Pereira",
+        "Elaine Diniz"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@marcosdiasoficial_",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/MIDIASMARCOSDIAS",
+          "HTTPS://WWW.INSTAGRAM.COM/MARCOSDIASOFICIAL_/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-rj-2026-carlos-jordy",
+      "pessoa": {
+        "nome_urna": "Carlos Jordy",
+        "nome_completo": "Carlos Roberto Coelho de Mattos Júnior",
+        "data_nascimento": "1982-02-08",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Deputado",
+        "genero": "Masculino"
+      },
+      "id_partido": "pl",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "RJ",
+      "ano": 2026,
+      "numero_urna": "221",
+      "sequencial_tse": "190002542888",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Lucimar Ferreira",
+        "Zé Augusto Nalin"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@carlosjordy",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/CARLOSJORDYOFICIAL/?LOCALE=PT_BR",
+          "HTTPS://WWW.INSTAGRAM.COM/CARLOSJORDY/",
+          "HTTPS://WWW.TIKTOK.COM/@CARLOSJORDYDEP?LANG=PT-BR",
+          "HTTPS://WWW.YOUTUBE.COM/@CARLOSJORDY",
+          "HTTPS://X.COM/CARLOSJORDY",
+          "HTTPS://WWW.CARLOSJORDY.COM.BR/BIOGRAFIA"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "site": "HTTPS://WWW.CARLOSJORDY.COM.BR/BIOGRAFIA",
+        "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [
+        {
+          "casa": "camara",
+          "id_externo": "204460",
+          "situacao": "Exercício",
+          "condicao": "Titular",
+          "desde": "2024-09-04",
+          "motivo_afastamento_anterior": null,
+          "_fonte": "Camara dos Deputados, dados abertos v2",
+          "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+        }
+      ]
+    },
+    {
+      "id_candidatura": "sen-rj-2026-carlos-portinho",
+      "pessoa": {
+        "nome_urna": "Carlos Portinho",
+        "nome_completo": "Carlos Francisco Portinho",
+        "data_nascimento": "1973-07-02",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Senador",
+        "genero": "Masculino"
+      },
+      "id_partido": "pl",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "RJ",
+      "ano": 2026,
+      "numero_urna": "222",
+      "sequencial_tse": "190002535142",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Samuel Malafaia",
+        "Marcelinho"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@carlosportinho",
+        "redes": [
+          "HTTPS://LINKEDIN.COM/IN/CARLOSPORTINHO/",
+          "HTTPS://WWW.TIKTOK.COM/@CARLOSFPORTINHO",
+          "HTTPS://WWW.YOUTUBE.COM/@CARLOSFPORTINHO",
+          "HTTPS://X.COM/CARLOSFPORTINHO",
+          "WWW.FACEBOOK.COM/CARLOSFPORTINHO",
+          "WWW.INSTAGRAM.COM/CARLOSPORTINHO/",
+          "WWW.CARLOSPORTINHO.COM.BR/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "site": "WWW.CARLOSPORTINHO.COM.BR/",
+        "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [
+        {
+          "casa": "senado",
+          "id_externo": "5936",
+          "situacao": "Exercício",
+          "condicao": null,
+          "desde": null,
+          "motivo_afastamento_anterior": null,
+          "_fonte": "Senado Federal, dados abertos",
+          "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+        }
+      ],
+      "_conferir_contato": [
+        "\"HTTPS://WWW.THREADS.NET/@CARLOSPORTINHO HTTPS://BSKY.APP/PROFILE/CARLOSPORTINHO.\" — malformada, nao entra como contato"
+      ]
+    },
+    {
+      "id_candidatura": "sen-rj-2026-luciano-mattos",
+      "pessoa": {
+        "nome_urna": "Luciano Mattos",
+        "nome_completo": "Luciano Oliveira Mattos de Souza",
+        "data_nascimento": "1968-12-05",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Advogado",
+        "genero": "Masculino"
+      },
+      "id_partido": "prtb",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "RJ",
+      "ano": 2026,
+      "numero_urna": "280",
+      "sequencial_tse": "190002552083",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Murilo Romero",
+        "Ricardo Fernandes"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@lucianomattos.adv",
+        "redes": [
+          "HTTPS://LINKTR.EE/LUCIANOMATTOS.OFICIAL?UTM_SOURCE=LINKTREE_PROFILE_SHARE",
+          "HTTPS://WWW.FACEBOOK.COM/SHARE/1ECRAN3SDK/?MIBEXTID=WWXIFR",
+          "HTTPS://WWW.INSTAGRAM.COM/LUCIANOMATTOS.ADV?UTM_SOURCE=QR",
+          "HTTPS://WWW.INSTAGRAM.COM/LUCIANOMATTOS.OFICIAL?UTM_SOURCE=QR",
+          "HTTPS://WWW.INSTAGRAM.COM/LUCIANOOLIVEIRAMATTOS?UTM_SOURCE=QR",
+          "HTTPS://WWW.LINKEDIN.COM/IN/LUCIANO-MATTOS-A570B0335?UTM_SOURCE=SHARE_VIA&UTM_CO",
+          "HTTPS://WWW.TIKTOK.COM/@LUCIANOMATTOS.OFICIAL?_R=1&_T=ZS-98LE1IKVYU8",
+          "HTTPS://X.COM/LUCIANOMATTOSMP?S=11"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-rj-2026-luiz-eugenio",
+      "pessoa": {
+        "nome_urna": "Luiz Eugenio",
+        "nome_completo": "Luiz Eugenio Honorato",
+        "data_nascimento": "1961-04-29",
+        "escolaridade": "Ensino fundamental completo",
+        "ocupacao_declarada": "Aposentado (exceto servidor público)",
+        "genero": "Masculino"
+      },
+      "id_partido": "pco",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "RJ",
+      "ano": 2026,
+      "numero_urna": "290",
+      "sequencial_tse": "190002552521",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Antônio de Paula",
+        "Guilherme dos Santos"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [
+          "https://candidatos.pco.org.br"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "site_do_partido": "https://candidatos.pco.org.br",
+        "site_do_partido_nota": "URL declarada por 13 candidaturas: e material do partido, nao da candidatura.",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-rj-2026-andre-monteiro",
+      "pessoa": {
+        "nome_urna": "André Monteiro",
+        "nome_completo": "Luiz Andre de Moura Monteiro",
+        "data_nascimento": "1971-04-14",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Militar reformado",
+        "genero": "Masculino"
+      },
+      "id_partido": "democrata",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "RJ",
+      "ano": 2026,
+      "numero_urna": "350",
+      "sequencial_tse": "190002550192",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Cmt Ribeiro Afonso",
+        "Alexandre Cardoso"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "redes": [
+          "FACEBOOK.COM/MONTEIRO.ANDRE.RJ/",
+          "TWITTER.COM/RJANDREMONTEIRO",
+          "WWW.TIKTOK.COM/@ANDRE.MONTEIRORJ",
+          "WWW.YOUTUBE.COM/@ANDREMONTEIROOFICIAL"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [],
+      "_conferir_contato": [
+        "\"*  HTTPS://WWW.INSTAGRAM.COM/ANDREMONTEIRORJ * FACEBOOK: HTTPS://\" — malformada, nao entra como contato",
+        "\"ANDREMONTEIRORJ01@GMAIL.COM\" — email no campo de url, nao entra como contato"
+      ]
+    },
+    {
+      "id_candidatura": "sen-rj-2026-o-clemente",
+      "pessoa": {
+        "nome_urna": "Ó Clemente",
+        "nome_completo": "Clemente Sebastião de Almeida Campos",
+        "data_nascimento": "1947-10-13",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Servidor público civil aposentado",
+        "genero": "Masculino"
+      },
+      "_conferir_transcricao": [
+        "Nome normalizado do registro em caixa alta (\"Ó CLEMENTE\" / \"CLEMENTE SEBASTIÃO DE ALMEIDA CAMPOS\"): a regra nao resolve sozinha. Conferir a grafia."
+      ],
+      "id_partido": "democrata",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "RJ",
+      "ano": 2026,
+      "numero_urna": "355",
+      "sequencial_tse": "190002550190",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Alberto Pró Vida-Betinho",
+        "Jorge Page"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@clementesebastiaorj",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/CLEMENTE.SEBASTIAO.DE.ALMEIDA",
+          "HTTPS://WWW.FACEBOOK.COM/SHARE/17WIJQSFER/",
+          "HTTPS://WWW.INSTAGRAM.COM/CLEMENTESEBASTIAORJ/",
+          "HTTPS://WWW.TIKTOK.COM/@CLEMENTESEBASTIAORJ?_R=1&_T=ZS-98NOGMCBCPE",
+          "HTTPS://X.COM/CLEMENTECAMPO15",
+          "HTTPS://YOUTUBE.COM/@CLEMENTECAMPOS-LQ5WV?SI=OQRYSZ03TMN8YB5Y"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [],
+      "_conferir_contato": [
+        "\"CLEMENTECAMPOS67@GMAIL.COM\" — email no campo de url, nao entra como contato"
+      ]
+    },
+    {
+      "id_candidatura": "sen-rj-2026-monica-benicio",
+      "pessoa": {
+        "nome_urna": "Monica Benicio",
+        "nome_completo": "Monica Tereza Azeredo Benicio",
+        "data_nascimento": "1986-02-01",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Vereadora",
+        "genero": "Feminino"
+      },
+      "id_partido": "psol",
+      "id_coligacao": "federacao-rj",
+      "cargo": "senador",
+      "uf": "RJ",
+      "ano": 2026,
+      "numero_urna": "500",
+      "sequencial_tse": "190002536164",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Vanderlea Aguiar",
+        "Maria dos Camelôs"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@monicaterezabenicio",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/MONICATEREZABENICIO/?LOCALE=PT_BR",
+          "HTTPS://WWW.INSTAGRAM.COM/MONICATEREZABENICIO/?HL=EN",
+          "HTTPS://WWW.TIKTOK.COM/@MONICABENICIO_",
+          "HTTPS://X.COM/MONICA_BENICIO?LANG=EN"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-rj-2026-pedro-paulo",
+      "pessoa": {
+        "nome_urna": "Pedro Paulo",
+        "nome_completo": "Pedro Paulo Carvalho Teixeira",
+        "data_nascimento": "1972-06-29",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Economista",
+        "genero": "Masculino"
+      },
+      "id_partido": "psd",
+      "id_coligacao": "juntos-para-mudar-coragem-para-reconstruir-rj",
+      "cargo": "senador",
+      "uf": "RJ",
+      "ano": 2026,
+      "numero_urna": "555",
+      "sequencial_tse": "190002548145",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Miro Teixeira",
+        "Savio Neves"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@rio.pedropaulo",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/RIO.PEDROPAULO/",
+          "HTTPS://WWW.INSTAGRAM.COM/RIO.PEDROPAULO/",
+          "HTTPS://WWW.TIKTOK.COM/@PEDROPAULO.RIO",
+          "HTTPS://X.COM/PEDROPAULO",
+          "HTTPS://WWW.PEDROPAULO.RIO/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "site": "HTTPS://WWW.PEDROPAULO.RIO/",
+        "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": [
+        {
+          "casa": "camara",
+          "id_externo": "122158",
+          "situacao": "Exercício",
+          "condicao": "Titular",
+          "desde": "2023-02-01",
+          "motivo_afastamento_anterior": null,
+          "_fonte": "Camara dos Deputados, dados abertos v2",
+          "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
+        }
+      ]
+    },
+    {
+      "id_candidatura": "sen-rj-2026-michelly-xavier",
+      "pessoa": {
+        "nome_urna": "Michelly Xavier",
+        "nome_completo": "Michelly Xavier de Souza",
+        "data_nascimento": "1980-06-09",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Advogada",
+        "genero": "Feminino"
+      },
+      "id_partido": "up",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "RJ",
+      "ano": 2026,
+      "numero_urna": "800",
+      "sequencial_tse": "190002548589",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Roberto Vasconcellos",
+        "Elza do Mlb"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@michellyxerem.up",
+        "redes": [
+          "HTTPS://WWW.INSTAGRAM.COM/MICHELLYXEREM.UP"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
+    },
+    {
+      "id_candidatura": "sen-rj-2026-vinicius-benevides",
+      "pessoa": {
+        "nome_urna": "Vinicius Benevides",
+        "nome_completo": "Vinicius Benevides dos Santos Conceicao",
+        "data_nascimento": "1977-10-14",
+        "escolaridade": "Ensino médio completo",
+        "ocupacao_declarada": "Trabalhador de construção civil",
+        "genero": "Masculino"
+      },
+      "id_partido": "up",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "RJ",
+      "ano": 2026,
+      "numero_urna": "808",
+      "sequencial_tse": "190002548590",
+      "bens_declarados_brl": null,
+      "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
+      "suplentes": [
+        "Gabriela Gonçalves",
+        "George Thompson"
+      ],
+      "situacao_registro": [],
+      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "mandatos_anteriores": [],
+      "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@viniciusbenevides.up",
+        "redes": [
+          "HTTPS://WWW.INSTAGRAM.COM/VINICIUSBENEVIDES.UP"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-27",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+      },
+      "foto": null,
+      "situacao_parlamentar": []
     }
-   ]
-  },
-  {
-   "id_candidatura": "sen-rj-2026-michelly-xavier",
-   "pessoa": {
-    "nome_urna": "Michelly Xavier",
-    "nome_completo": "Michelly Xavier de Souza",
-    "data_nascimento": "1980-06-09",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogada",
-    "genero": "Feminino"
-   },
-   "id_partido": "up",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "RJ",
-   "ano": 2026,
-   "numero_urna": "800",
-   "sequencial_tse": "190002548589",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Roberto Vasconcellos",
-    "Elza do Mlb"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  },
-  {
-   "id_candidatura": "sen-rj-2026-vinicius-benevides",
-   "pessoa": {
-    "nome_urna": "Vinicius Benevides",
-    "nome_completo": "Vinicius Benevides dos Santos Conceicao",
-    "data_nascimento": "1977-10-14",
-    "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Trabalhador de construção civil",
-    "genero": "Masculino"
-   },
-   "id_partido": "up",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "RJ",
-   "ano": 2026,
-   "numero_urna": "808",
-   "sequencial_tse": "190002548590",
-   "bens_declarados_brl": null,
-   "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
-   "suplentes": [
-    "Gabriela Gonçalves",
-    "George Thompson"
-   ],
-   "situacao_registro": [],
-   "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
-   "mandatos_anteriores": [],
-   "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "redes": []
-   },
-   "_contato_ausente": "So entra contato de fonte oficial. A coluna de e-mail deste extrato vem vazia; para quem tem mandato, o contato sai dos dados abertos da casa legislativa.",
-   "foto": null,
-   "situacao_parlamentar": []
-  }
- ]
+  ]
 }

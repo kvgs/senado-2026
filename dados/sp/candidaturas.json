@@ -62,8 +62,6 @@
         "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
         "redes": [
           "HTTPS://LINKTR.EE/SIMONETEBET",
-          "HTTPS://SIMONE400.COM.BR/",
-          "HTTPS://SIMONETEBET.COM.BR/",
           "HTTPS://SOUNDCLOUD.COM/SIMONE-TEBET-25534643",
           "HTTPS://WWW.FACEBOOK.COM/SIMONETEBET/",
           "HTTPS://WWW.FLICKR.COM/PHOTOS/SIMONETEBETBR/",
@@ -72,15 +70,20 @@
           "HTTPS://WWW.THREADS.COM/@SIMONETEBET",
           "HTTPS://WWW.TIKTOK.COM/@SIMONETEBET.400",
           "HTTPS://WWW.TIKTOK.COM/@SIMONETEBETBR",
+          "https://www.youtube.com/SimoneTebet",
           "HTTPS://X.COM/SIMONETEBETBR",
           "WHATSAPP.COM/CHANNEL/0029VB8ZLGBIXNLWMP0WJU2B",
-          "https://www.youtube.com/SimoneTebet"
+          "HTTPS://SIMONE400.COM.BR/",
+          "HTTPS://SIMONETEBET.COM.BR/"
         ],
         "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "redes_consultado_em": "2026-08-24",
+        "redes_consultado_em": "2026-08-27",
         "site": "HTTPS://SIMONETEBET.COM.BR/",
         "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca.",
+        "outros_sites": [
+          "HTTPS://SIMONE400.COM.BR/"
+        ]
       },
       "_conferencia_registro": {
         "conferido_em": "2026-08-24",
@@ -168,16 +171,16 @@
         "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
         "_nota": "E-mail INSTITUCIONAL do gabinete, obtido de dados abertos da casa legislativa. Não é e-mail de campanha. Só existe porque a candidatura tem mandato — as que não têm ainda não têm contato registrado aqui.",
         "redes": [
-          "HTTPS://MARINASILVA.ORG.BR/",
           "HTTPS://WWW.FACEBOOK.COM/MARINASILVA.OFICIAL/",
           "HTTPS://WWW.INSTAGRAM.COM/MARINASILVAOFICIAL/",
           "HTTPS://WWW.THREADS.COM/@MARINASILVAOFICIAL",
           "HTTPS://WWW.TIKTOK.COM/@_MARINA.SILVA",
           "HTTPS://WWW.YOUTUBE.COM/@MSILVAONLINE",
-          "HTTPS://X.COM/MARINASILVA"
+          "HTTPS://X.COM/MARINASILVA",
+          "HTTPS://MARINASILVA.ORG.BR/"
         ],
         "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "redes_consultado_em": "2026-08-24",
+        "redes_consultado_em": "2026-08-27",
         "site": "HTTPS://MARINASILVA.ORG.BR/",
         "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
       },
@@ -276,7 +279,7 @@
           "HTTPS://X.COM/DERRITESP"
         ],
         "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "redes_consultado_em": "2026-08-24",
+        "redes_consultado_em": "2026-08-27",
         "_erro_classificacao_corrigido": "O endereco HTTPS://WWW.TIKTOK.COM/TAG/DERRITE estava registrado como 'site oficial'. E uma pagina de HASHTAG do TikTok, nao site da candidatura — meu classificador so reconhecia o padrao /@usuario e caiu no caso generico. Pagina de hashtag nao e publicada pela candidatura e nao sustenta declaracao nenhuma."
       },
       "_conferencia_registro": {
@@ -362,11 +365,11 @@
         "redes": [
           "HTTPS://WWW.FACEBOOK.COM/@RICARDOSALLESMMA",
           "HTTPS://WWW.INSTAGRAM.COM/RICARDOSALLESMMA",
-          "HTTPS://WWW.RICARDOSALLES.COM.BR",
-          "HTTPS://WWW.TWITTER.COM/@RSALLESMMA"
+          "HTTPS://WWW.TWITTER.COM/@RSALLESMMA",
+          "HTTPS://WWW.RICARDOSALLES.COM.BR"
         ],
         "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "redes_consultado_em": "2026-08-24",
+        "redes_consultado_em": "2026-08-27",
         "site": "HTTPS://WWW.RICARDOSALLES.COM.BR",
         "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
       },
@@ -492,7 +495,7 @@
           "HTTPS://X.COM/_ANDREDOPRADO"
         ],
         "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "redes_consultado_em": "2026-08-24"
+        "redes_consultado_em": "2026-08-27"
       },
       "_conferencia_registro": {
         "conferido_em": "2026-08-24",
@@ -599,8 +602,8 @@
           "HTTPS://X.COM/SONINHAFRANCINE"
         ],
         "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "redes_consultado_em": "2026-08-24",
-        "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
+        "redes_consultado_em": "2026-08-27",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
       },
       "_conferencia_registro": {
         "conferido_em": "2026-08-24",
@@ -675,8 +678,8 @@
           "WWW.YOUTUBE.COM/@GERALDORUFINO"
         ],
         "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "redes_consultado_em": "2026-08-24",
-        "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
+        "redes_consultado_em": "2026-08-27",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
       },
       "_conferencia_registro": {
         "conferido_em": "2026-08-24",
@@ -763,14 +766,14 @@
         "instagram": "@gutoschiavetto",
         "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
         "redes": [
-          "https://www.gutoschiavetto.com.br/",
-          "https://www.instagram.com/gutoschiavetto/"
+          "https://www.instagram.com/gutoschiavetto/",
+          "https://www.gutoschiavetto.com.br/"
         ],
         "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "redes_consultado_em": "2026-08-24",
+        "redes_consultado_em": "2026-08-27",
         "site": "https://www.gutoschiavetto.com.br/",
         "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
       },
       "_conferencia_registro": {
         "conferido_em": "2026-08-24",
@@ -836,8 +839,8 @@
           "HTTPS://WWW.INSTAGRAM.COM/PETTER.MAAHS/"
         ],
         "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "redes_consultado_em": "2026-08-24",
-        "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
+        "redes_consultado_em": "2026-08-27",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
       },
       "_conferencia_registro": {
         "conferido_em": "2026-08-24",
@@ -917,10 +920,10 @@
           "HTTPS://CANDIDATOS.PCO.ORG.BR"
         ],
         "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "redes_consultado_em": "2026-08-24",
-        "site": "HTTPS://CANDIDATOS.PCO.ORG.BR",
-        "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
+        "redes_consultado_em": "2026-08-27",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca.",
+        "site_do_partido": "HTTPS://CANDIDATOS.PCO.ORG.BR",
+        "site_do_partido_nota": "URL declarada por 13 candidaturas: e material do partido, nao da candidatura."
       },
       "_conferencia_registro": {
         "conferido_em": "2026-08-24",
@@ -994,8 +997,8 @@
           "HTTPS://WWW.INSTAGRAM.COM/DRA.ELIANAFERREIRA.PSTU/"
         ],
         "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "redes_consultado_em": "2026-08-24",
-        "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
+        "redes_consultado_em": "2026-08-27",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
       },
       "_conferencia_registro": {
         "conferido_em": "2026-08-24",
@@ -1078,8 +1081,8 @@
           "HTTPS://YOUTUBE.COM/@CANALDOWELLER"
         ],
         "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "redes_consultado_em": "2026-08-24",
-        "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
+        "redes_consultado_em": "2026-08-27",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
       },
       "_conferencia_registro": {
         "conferido_em": "2026-08-24",
@@ -1140,13 +1143,11 @@
         "email_tipo": null,
         "instagram": null,
         "instagram_fonte": null,
-        "redes": [
-          "@MAIRADESOUZA.UP"
-        ],
+        "redes": [],
         "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "redes_consultado_em": "2026-08-24",
+        "redes_consultado_em": "2026-08-27",
         "_pendente_rede_ambigua": "Declarou @MAIRADESOUZA.UP sem informar a plataforma. Parece Instagram, mas o registro nao diz — nao converter em @ sem confirmacao, para nao dirigir eleitor a conta errada.",
-        "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
       },
       "_conferencia_registro": {
         "conferido_em": "2026-08-24",
@@ -1169,7 +1170,10 @@
         "sha256_16": "fe27d5c0d9979293",
         "obtida_em": "2026-08-25",
         "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
-      }
+      },
+      "_conferir_contato": [
+        "\"@MAIRADESOUZA.UP\" — handle como texto, nao entra como contato"
+      ]
     },
     {
       "id_candidatura": "sen-sp-2026-marcio-alves",
@@ -1214,13 +1218,11 @@
         "email_tipo": null,
         "instagram": null,
         "instagram_fonte": null,
-        "redes": [
-          "@MARCIOALVES.UP"
-        ],
+        "redes": [],
         "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "redes_consultado_em": "2026-08-24",
+        "redes_consultado_em": "2026-08-27",
         "_pendente_rede_ambigua": "Declarou @MARCIOALVES.UP sem informar a plataforma. Parece Instagram, mas o registro nao diz — nao converter em @ sem confirmacao, para nao dirigir eleitor a conta errada.",
-        "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
       },
       "_conferencia_registro": {
         "conferido_em": "2026-08-24",
@@ -1243,7 +1245,10 @@
         "sha256_16": "d63d37a609b2a88c",
         "obtida_em": "2026-08-25",
         "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
-      }
+      },
+      "_conferir_contato": [
+        "\"@MARCIOALVES.UP\" — handle como texto, nao entra como contato"
+      ]
     },
     {
       "id_candidatura": "sen-sp-2026-william-teixeira",
@@ -1307,7 +1312,7 @@
         "instagram": null,
         "instagram_fonte": null,
         "_pendente_redes": "Candidatura sem nenhuma rede social declarada no dataset oficial do TSE (consultado em 2026-08-24). Ausencia no registro, nao falha de busca.",
-        "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
       },
       "_conferencia_registro": {
         "conferido_em": "2026-08-24",
