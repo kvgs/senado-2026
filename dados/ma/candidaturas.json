@@ -11,7 +11,8 @@
     "nome_completo": "Andre Luiz Carvalho Ribeiro",
     "data_nascimento": "1989-08-27",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Médico"
+    "ocupacao_declarada": "Médico",
+    "genero": "Masculino"
    },
    "id_partido": "pp",
    "id_coligacao": "maranhao-de-cara-nova-ma",
@@ -48,7 +49,8 @@
     "nome_completo": "Weverton Rocha Marques de Sousa",
     "data_nascimento": "1979-10-08",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Administrador"
+    "ocupacao_declarada": "Administrador",
+    "genero": "Masculino"
    },
    "id_partido": "pdt",
    "id_coligacao": "por-todo-maranhao-ma",
@@ -96,7 +98,8 @@
     "nome_completo": "Eliziane Pereira Gama Melo",
     "data_nascimento": "1977-02-27",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Senadora"
+    "ocupacao_declarada": "Senadora",
+    "genero": "Feminino"
    },
    "id_partido": "pt",
    "id_coligacao": "brasil-justo-maranhao-grande-ma",
@@ -144,7 +147,8 @@
     "nome_completo": "Roseana Sarney Murad",
     "data_nascimento": "1953-06-01",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputada"
+    "ocupacao_declarada": "Deputada",
+    "genero": "Feminino"
    },
    "id_partido": "mdb",
    "id_coligacao": "por-todo-maranhao-ma",
@@ -192,7 +196,8 @@
     "nome_completo": "Francisco Wilson Leite da Silva",
     "data_nascimento": "1977-04-21",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Técnico em informática"
+    "ocupacao_declarada": "Técnico em informática",
+    "genero": "Masculino"
    },
    "id_partido": "pstu",
    "id_coligacao": null,
@@ -229,7 +234,8 @@
     "nome_completo": "Raimundo Moreira Correa",
     "data_nascimento": "1968-08-30",
     "escolaridade": "Ensino médio incompleto",
-    "ocupacao_declarada": "Pescador"
+    "ocupacao_declarada": "Pescador",
+    "genero": "Masculino"
    },
    "id_partido": "pcb",
    "id_coligacao": null,
@@ -266,7 +272,8 @@
     "nome_completo": "Cidonio Goncalves dos Santos",
     "data_nascimento": "1961-04-07",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Produtor agropecuário"
+    "ocupacao_declarada": "Produtor agropecuário",
+    "genero": "Masculino"
    },
    "id_partido": "pl",
    "id_coligacao": null,
@@ -303,7 +310,8 @@
     "nome_completo": "José Simplício Alves de Araújo",
     "data_nascimento": "1969-04-18",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Analista de sistemas"
+    "ocupacao_declarada": "Analista de sistemas",
+    "genero": "Masculino"
    },
    "id_partido": "dc",
    "id_coligacao": null,
@@ -340,7 +348,8 @@
     "nome_completo": "Lahesio Rodrigues do Bonfim",
     "data_nascimento": "1978-07-30",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Médico"
+    "ocupacao_declarada": "Médico",
+    "genero": "Masculino"
    },
    "id_partido": "novo",
    "id_coligacao": "pra-transformar-o-maranhao-ma",
@@ -377,7 +386,8 @@
     "nome_completo": "Hilton Goncalo de Sousa",
     "data_nascimento": "1965-12-06",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Médico"
+    "ocupacao_declarada": "Médico",
+    "genero": "Masculino"
    },
    "id_partido": "mobiliza",
    "id_coligacao": "tempo-de-renovacao-ma",
@@ -414,7 +424,8 @@
     "nome_completo": "Enilton Silva Rodrigues",
     "data_nascimento": "1980-03-19",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Engenheiro"
+    "ocupacao_declarada": "Engenheiro",
+    "genero": "Masculino"
    },
    "id_partido": "psol",
    "id_coligacao": "brasil-justo-maranhao-grande-ma",

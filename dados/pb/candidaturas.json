@@ -11,7 +11,8 @@
     "nome_completo": "Nabor Wanderley da Nobrega Filho",
     "data_nascimento": "1965-09-14",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado"
+    "ocupacao_declarada": "Advogado",
+    "genero": "Masculino"
    },
    "id_partido": "republicanos",
    "id_coligacao": "coligacao-daqui-pra-melhor-pb",
@@ -48,7 +49,8 @@
     "nome_completo": "Andre Avelino de Paiva Gadelha Neto",
     "data_nascimento": "1975-04-10",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Administrador"
+    "ocupacao_declarada": "Administrador",
+    "genero": "Masculino"
    },
    "id_partido": "mdb",
    "id_coligacao": "juntos-para-a-paraiba-dar-o-proximo-passo-pb",
@@ -86,7 +88,8 @@
     "nome_completo": "Veneziano Vital do Rêgo Segundo Neto",
     "data_nascimento": "1970-07-17",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado"
+    "ocupacao_declarada": "Advogado",
+    "genero": "Masculino"
    },
    "id_partido": "mdb",
    "id_coligacao": "juntos-para-a-paraiba-dar-o-proximo-passo-pb",
@@ -134,7 +137,8 @@
     "nome_completo": "Marcelo Antônio Cartaxo Queiroga Lopes",
     "data_nascimento": "1965-12-04",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Médico"
+    "ocupacao_declarada": "Médico",
+    "genero": "Masculino"
    },
    "id_partido": "pl",
    "id_coligacao": null,
@@ -173,7 +177,8 @@
     "nome_completo": "Rinaldo Elias Pereira Junior",
     "data_nascimento": "1989-07-17",
     "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Empresário"
+    "ocupacao_declarada": "Empresário",
+    "genero": "Masculino"
    },
    "id_partido": "dc",
    "id_coligacao": null,
@@ -210,7 +215,8 @@
     "nome_completo": "Adriano Trajano da Conceição",
     "data_nascimento": "1973-11-19",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Agricultor"
+    "ocupacao_declarada": "Agricultor",
+    "genero": "Masculino"
    },
    "id_partido": "pco",
    "id_coligacao": null,
@@ -247,7 +253,8 @@
     "nome_completo": "Fábio Rodrigues de Oliveira",
     "data_nascimento": "1969-11-04",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Militar reformado"
+    "ocupacao_declarada": "Militar reformado",
+    "genero": "Masculino"
    },
    "id_partido": "novo",
    "id_coligacao": null,
@@ -284,7 +291,8 @@
     "nome_completo": "João Azevêdo Lins Filho",
     "data_nascimento": "1953-08-14",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Engenheiro"
+    "ocupacao_declarada": "Engenheiro",
+    "genero": "Masculino"
    },
    "id_partido": "psb",
    "id_coligacao": "coligacao-daqui-pra-melhor-pb",
@@ -321,7 +329,8 @@
     "nome_completo": "Rosilene da Silva Santana",
     "data_nascimento": "1982-11-06",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Pedagoga"
+    "ocupacao_declarada": "Pedagoga",
+    "genero": "Feminino"
    },
    "id_partido": "up",
    "id_coligacao": null,
@@ -358,7 +367,8 @@
     "nome_completo": "João Batista Domingos",
     "data_nascimento": "1981-02-28",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Gari ou lixeiro"
+    "ocupacao_declarada": "Gari ou lixeiro",
+    "genero": "Masculino"
    },
    "id_partido": "up",
    "id_coligacao": null,

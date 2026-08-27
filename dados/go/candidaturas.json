@@ -11,7 +11,8 @@
     "nome_completo": "Zacarias Calil Hamu",
     "data_nascimento": "1953-11-05",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Médico"
+    "ocupacao_declarada": "Médico",
+    "genero": "Masculino"
    },
    "id_partido": "mdb",
    "id_coligacao": null,
@@ -59,7 +60,8 @@
     "nome_completo": "Gustavo Gayer Machado de Araujo",
     "data_nascimento": "1981-04-13",
     "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Empresário"
+    "ocupacao_declarada": "Empresário",
+    "genero": "Masculino"
    },
    "id_partido": "pl",
    "id_coligacao": "goias-que-cresce-go",
@@ -107,7 +109,8 @@
     "nome_completo": "Oseias Mendes Pereira Varão",
     "data_nascimento": "1977-01-25",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado"
+    "ocupacao_declarada": "Advogado",
+    "genero": "Masculino"
    },
    "id_partido": "pl",
    "id_coligacao": "goias-que-cresce-go",
@@ -144,7 +147,8 @@
     "nome_completo": "Iure de Castro Silva",
     "data_nascimento": "1984-04-21",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado"
+    "ocupacao_declarada": "Advogado",
+    "genero": "Masculino"
    },
    "id_partido": "cidadania",
    "id_coligacao": "goias-de-verdade-go",
@@ -181,7 +185,8 @@
     "nome_completo": "Gustavo Mendanha Melo",
     "data_nascimento": "1982-10-07",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Empresário"
+    "ocupacao_declarada": "Empresário",
+    "genero": "Masculino"
    },
    "id_partido": "prd",
    "id_coligacao": "federacao-go",
@@ -218,7 +223,8 @@
     "nome_completo": "Maria Isaura Lemos",
     "data_nascimento": "1954-05-22",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Outros"
+    "ocupacao_declarada": "Outros",
+    "genero": "Feminino"
    },
    "id_partido": "psb",
    "id_coligacao": "goias-pode-mais-go",
@@ -255,7 +261,8 @@
     "nome_completo": "Maria das Graças Landim de Carvalho Caiado",
     "data_nascimento": "1959-04-30",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogada"
+    "ocupacao_declarada": "Advogada",
+    "genero": "Feminino"
    },
    "id_partido": "uniao",
    "id_coligacao": "federacao-go",
@@ -292,7 +299,8 @@
     "nome_completo": "Ernesto Guimarães Roller",
     "data_nascimento": "1969-11-11",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado"
+    "ocupacao_declarada": "Advogado",
+    "genero": "Masculino"
    },
    "id_partido": "psdb",
    "id_coligacao": "goias-de-verdade-go",
@@ -329,7 +337,8 @@
     "nome_completo": "Cintia Aparecida Dias",
     "data_nascimento": "1977-05-25",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Outros"
+    "ocupacao_declarada": "Outros",
+    "genero": "Feminino"
    },
    "id_partido": "psol",
    "id_coligacao": "goias-pode-mais-go",
@@ -366,7 +375,8 @@
     "nome_completo": "Vanderlan Vieira Cardoso",
     "data_nascimento": "1962-11-15",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Empresário"
+    "ocupacao_declarada": "Empresário",
+    "genero": "Masculino"
    },
    "id_partido": "psd",
    "id_coligacao": null,
@@ -414,7 +424,8 @@
     "nome_completo": "Guilherme Darques Alves de Paula",
     "data_nascimento": "1990-08-07",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Estudante, bolsista, estagiário e assemelhados"
+    "ocupacao_declarada": "Estudante, bolsista, estagiário e assemelhados",
+    "genero": "Masculino"
    },
    "id_partido": "up",
    "id_coligacao": null,

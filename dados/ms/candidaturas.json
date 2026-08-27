@@ -11,7 +11,8 @@
     "nome_completo": "Vander Luiz dos Santos Loubet",
     "data_nascimento": "1964-01-22",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Bancário e economiário"
+    "ocupacao_declarada": "Bancário e economiário",
+    "genero": "Masculino"
    },
    "id_partido": "pt",
    "id_coligacao": "por-um-ms-do-povo-ms",
@@ -59,7 +60,8 @@
     "nome_completo": "Renan Barbosa Contar",
     "data_nascimento": "1983-12-25",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Membro das forças armadas"
+    "ocupacao_declarada": "Membro das forças armadas",
+    "genero": "Masculino"
    },
    "id_partido": "pl",
    "id_coligacao": "fazendo-o-futuro-acontecer-ms",
@@ -96,7 +98,8 @@
     "nome_completo": "Reinaldo Azambuja Silva",
     "data_nascimento": "1963-05-13",
     "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Produtor agropecuário"
+    "ocupacao_declarada": "Produtor agropecuário",
+    "genero": "Masculino"
    },
    "id_partido": "pl",
    "id_coligacao": "fazendo-o-futuro-acontecer-ms",
@@ -133,7 +136,8 @@
     "nome_completo": "Valter Juvenal de Oliveira",
     "data_nascimento": "1969-03-08",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Empresário"
+    "ocupacao_declarada": "Empresário",
+    "genero": "Masculino"
    },
    "id_partido": "prd",
    "id_coligacao": "federacao-ms",
@@ -170,7 +174,8 @@
     "nome_completo": "Luiz Antonio Lemes de Oliveira",
     "data_nascimento": "1967-06-17",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Engenheiro"
+    "ocupacao_declarada": "Engenheiro",
+    "genero": "Masculino"
    },
    "id_partido": "dc",
    "id_coligacao": null,
@@ -208,7 +213,8 @@
     "nome_completo": "Valderi Garcia",
     "data_nascimento": "1974-02-04",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Trabalhador de construção civil"
+    "ocupacao_declarada": "Trabalhador de construção civil",
+    "genero": "Masculino"
    },
    "id_partido": "pco",
    "id_coligacao": null,
@@ -245,7 +251,8 @@
     "nome_completo": "Roberto Tarashigue Oshiro Junior",
     "data_nascimento": "1977-11-01",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado"
+    "ocupacao_declarada": "Advogado",
+    "genero": "Masculino"
    },
    "id_partido": "novo",
    "id_coligacao": null,
@@ -282,7 +289,8 @@
     "nome_completo": "Daniel Rodrigues Junior",
     "data_nascimento": "1979-01-27",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Outros"
+    "ocupacao_declarada": "Outros",
+    "genero": "Masculino"
    },
    "id_partido": "agir",
    "id_coligacao": null,
@@ -319,7 +327,8 @@
     "nome_completo": "Soraya Vieira Thronicke",
     "data_nascimento": "1973-06-01",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogada"
+    "ocupacao_declarada": "Advogada",
+    "genero": "Feminino"
    },
    "id_partido": "psb",
    "id_coligacao": "por-um-ms-do-povo-ms",
@@ -367,7 +376,8 @@
     "nome_completo": "Jonas Carlos da Conceicao",
     "data_nascimento": "1980-01-22",
     "escolaridade": "Ensino fundamental completo",
-    "ocupacao_declarada": "Agricultor"
+    "ocupacao_declarada": "Agricultor",
+    "genero": "Masculino"
    },
    "id_partido": "psol",
    "id_coligacao": "federacao-ms",

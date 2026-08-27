@@ -11,7 +11,8 @@
     "nome_completo": "Rafael Huete da Motta",
     "data_nascimento": "1986-08-15",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Engenheiro"
+    "ocupacao_declarada": "Engenheiro",
+    "genero": "Masculino"
    },
    "id_partido": "pdt",
    "id_coligacao": "time-que-cuida-rn",
@@ -48,7 +49,8 @@
     "nome_completo": "Samanda Alves de Freitas",
     "data_nascimento": "1980-09-20",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Vereadora"
+    "ocupacao_declarada": "Vereadora",
+    "genero": "Feminino"
    },
    "id_partido": "pt",
    "id_coligacao": "time-que-cuida-rn",
@@ -85,7 +87,8 @@
     "nome_completo": "Luciana Lima da Silva",
     "data_nascimento": "1969-12-14",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professora de ensino fundamental"
+    "ocupacao_declarada": "Professora de ensino fundamental",
+    "genero": "Feminino"
    },
    "id_partido": "pstu",
    "id_coligacao": null,
@@ -122,7 +125,8 @@
     "nome_completo": "Rosalia Maria Fernandes",
     "data_nascimento": "1967-08-16",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Assistente social"
+    "ocupacao_declarada": "Assistente social",
+    "genero": "Feminino"
    },
    "id_partido": "pstu",
    "id_coligacao": null,
@@ -159,7 +163,8 @@
     "nome_completo": "Eann Styvenson Valentim Mendes",
     "data_nascimento": "1977-02-07",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Senador"
+    "ocupacao_declarada": "Senador",
+    "genero": "Masculino"
    },
    "id_partido": "pode",
    "id_coligacao": "endireita-rn-rn",
@@ -207,7 +212,8 @@
     "nome_completo": "Helio Imbrosio Oliveira",
     "data_nascimento": "1964-09-27",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Membro das forças armadas"
+    "ocupacao_declarada": "Membro das forças armadas",
+    "genero": "Masculino"
    },
    "id_partido": "pl",
    "id_coligacao": "endireita-rn-rn",
@@ -244,7 +250,8 @@
     "nome_completo": "Gladyer Linhares Godeiro",
     "data_nascimento": "1977-04-25",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Empresário"
+    "ocupacao_declarada": "Empresário",
+    "genero": "Masculino"
    },
    "id_partido": "dc",
    "id_coligacao": null,
@@ -281,7 +288,8 @@
     "nome_completo": "Wendell Batista dos Santos",
     "data_nascimento": "1977-12-29",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público municipal"
+    "ocupacao_declarada": "Servidor público municipal",
+    "genero": "Masculino"
    },
    "id_partido": "agir",
    "id_coligacao": null,
@@ -318,7 +326,8 @@
     "nome_completo": "Clovis Ferreira da Costa",
     "data_nascimento": "1966-02-22",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Policial militar"
+    "ocupacao_declarada": "Policial militar",
+    "genero": "Masculino"
    },
    "id_partido": "agir",
    "id_coligacao": null,
@@ -355,7 +364,8 @@
     "nome_completo": "Tercio Barreto Ramos Tinoco",
     "data_nascimento": "1987-06-17",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Vereador"
+    "ocupacao_declarada": "Vereador",
+    "genero": "Masculino"
    },
    "id_partido": "uniao",
    "id_coligacao": "esperanca-e-trabalho-rn",
@@ -392,7 +402,8 @@
     "nome_completo": "Sandro de Oliveira Pimentel",
     "data_nascimento": "1966-05-28",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público federal"
+    "ocupacao_declarada": "Servidor público federal",
+    "genero": "Masculino"
    },
    "id_partido": "psol",
    "id_coligacao": "federacao-rn",
@@ -429,7 +440,8 @@
     "nome_completo": "Sonia Maria Godeiro",
     "data_nascimento": "1954-09-07",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Médica"
+    "ocupacao_declarada": "Médica",
+    "genero": "Feminino"
    },
    "id_partido": "psol",
    "id_coligacao": "federacao-rn",
@@ -466,7 +478,8 @@
     "nome_completo": "Zenaide Maia Calado Pereira dos Santos",
     "data_nascimento": "1954-11-27",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Senadora"
+    "ocupacao_declarada": "Senadora",
+    "genero": "Feminino"
    },
    "id_partido": "psd",
    "id_coligacao": "esperanca-e-trabalho-rn",
@@ -514,7 +527,8 @@
     "nome_completo": "Guilherme Oliveira Mosca",
     "data_nascimento": "1987-10-20",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professor de ensino médio"
+    "ocupacao_declarada": "Professor de ensino médio",
+    "genero": "Masculino"
    },
    "id_partido": "up",
    "id_coligacao": null,

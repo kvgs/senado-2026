@@ -11,7 +11,8 @@
     "nome_completo": "Esperidiao Amin Helou Filho",
     "data_nascimento": "1947-12-21",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professor de ensino superior"
+    "ocupacao_declarada": "Professor de ensino superior",
+    "genero": "Masculino"
    },
    "id_partido": "pp",
    "id_coligacao": "santa-catarina-acima-de-tudo-sc",
@@ -59,7 +60,8 @@
     "nome_completo": "Decio Nery de Lima",
     "data_nascimento": "1960-10-01",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado"
+    "ocupacao_declarada": "Advogado",
+    "genero": "Masculino"
    },
    "id_partido": "pt",
    "id_coligacao": "coragem-para-mudar-sc",
@@ -96,7 +98,8 @@
     "nome_completo": "Túlio de Amorim Pfuetzenreiter",
     "data_nascimento": "1988-09-03",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Empresário"
+    "ocupacao_declarada": "Empresário",
+    "genero": "Masculino"
    },
    "id_partido": "missao",
    "id_coligacao": null,
@@ -133,7 +136,8 @@
     "nome_completo": "Antidio Aleixo Lunelli",
     "data_nascimento": "1963-06-16",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Empresário"
+    "ocupacao_declarada": "Empresário",
+    "genero": "Masculino"
    },
    "id_partido": "mdb",
    "id_coligacao": "santa-catarina-acima-de-tudo-sc",
@@ -170,7 +174,8 @@
     "nome_completo": "Joaninha de Oliveira",
     "data_nascimento": "1958-10-04",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidora pública civil aposentada"
+    "ocupacao_declarada": "Servidora pública civil aposentada",
+    "genero": "Feminino"
    },
    "id_partido": "pstu",
    "id_coligacao": null,
@@ -207,7 +212,8 @@
     "nome_completo": "Marcos Dorval Schmitz",
     "data_nascimento": "1973-10-06",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público federal"
+    "ocupacao_declarada": "Servidor público federal",
+    "genero": "Masculino"
    },
    "id_partido": "pstu",
    "id_coligacao": null,
@@ -244,7 +250,8 @@
     "nome_completo": "Caroline Rodrigues de Toni",
     "data_nascimento": "1986-09-01",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputada"
+    "ocupacao_declarada": "Deputada",
+    "genero": "Feminino"
    },
    "id_partido": "pl",
    "id_coligacao": "fe-no-trabalho-e-pe-na-tabua-sc",
@@ -281,7 +288,8 @@
     "nome_completo": "Carlos Nantes Bolsonaro",
     "data_nascimento": "1982-12-07",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Outros"
+    "ocupacao_declarada": "Outros",
+    "genero": "Masculino"
    },
    "id_partido": "pl",
    "id_coligacao": "fe-no-trabalho-e-pe-na-tabua-sc",
@@ -318,7 +326,8 @@
     "nome_completo": "Jeferson da Rocha",
     "data_nascimento": "1981-10-28",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Produtor agropecuário"
+    "ocupacao_declarada": "Produtor agropecuário",
+    "genero": "Masculino"
    },
    "id_partido": "prd",
    "id_coligacao": "federacao-sc",
@@ -355,7 +364,8 @@
     "nome_completo": "Caroline Sant'Anna",
     "data_nascimento": "1987-04-06",
     "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Professora de ensino fundamental"
+    "ocupacao_declarada": "Professora de ensino fundamental",
+    "genero": "Feminino"
    },
    "_conferir_transcricao": [
     "Nome normalizado do registro em caixa alta (\"CAROL\" / \"CAROLINE SANT ANNA\"): a regra nao resolve sozinha. Conferir a grafia.",
@@ -396,7 +406,8 @@
     "nome_completo": "Afranio Tadeu Boppre",
     "data_nascimento": "1960-10-30",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Vereador"
+    "ocupacao_declarada": "Vereador",
+    "genero": "Masculino"
    },
    "id_partido": "psol",
    "id_coligacao": "coragem-para-mudar-sc",
@@ -433,7 +444,8 @@
     "nome_completo": "Ana Lucia da Silveira Machado",
     "data_nascimento": "1955-01-21",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professora de ensino médio"
+    "ocupacao_declarada": "Professora de ensino médio",
+    "genero": "Feminino"
    },
    "id_partido": "up",
    "id_coligacao": null,
@@ -470,7 +482,8 @@
     "nome_completo": "Marlene de Souza Soccas",
     "data_nascimento": "1934-09-25",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Odontóloga"
+    "ocupacao_declarada": "Odontóloga",
+    "genero": "Feminino"
    },
    "id_partido": "up",
    "id_coligacao": null,

@@ -31,6 +31,12 @@ HERE = BASE
 # gerada por gerar_inicio.py. OUT e resolvido depois de ler qual UF e esta.
 OUT = None   # definido abaixo, quando site.uf for conhecido
 
+# Nome do estado para o texto corrido das bios. acervo.por_extenso ja traz a
+# preposicao certa ("por Sao Paulo", "pelo Acre", "pela Bahia") — montar isso
+# com um "por " fixo daria "por o Acre".
+UF_POR_EXTENSO = acervo.por_extenso(_UF)
+UF_NOME_EXTENSO = acervo.estado(_UF)["nome"]
+
 ref = json.loads((BASE/"dados"/"referencia.json").read_text(encoding="utf-8"))
 cands = json.loads((DADOS_UF/"candidaturas.json").read_text(encoding="utf-8"))["candidaturas"]
 pos = json.loads((DADOS_UF/"posicoes.json").read_text(encoding="utf-8"))["posicoes"]
@@ -53,21 +59,38 @@ CARGO_NOME = {
 def bio(c):
     """Resumo biografico mecanico, so do registro. Sem adjetivo, sem juizo."""
     p = c["pessoa"]
-    fem = p["nome_urna"] in ("Simone Tebet","Marina Silva","Soninha Francine",
-                             "Dra Eliana Ferreira","Maíra de Souza")
+    # O genero vem do registro do TSE. Era uma lista de nomes de mulheres de Sao
+    # Paulo escrita a mao, entao toda deputada dos outros 26 estados virava
+    # "deputado". A lista fica so como reserva para cadastro antigo sem o campo.
+    fem = ((p.get("genero") or "").upper().startswith("FEMIN")
+           or p["nome_urna"] in ("Simone Tebet", "Marina Silva", "Soninha Francine",
+                                 "Dra Eliana Ferreira", "Maíra de Souza"))
     frases = []
     frases.append(f'Declarou ao TSE a ocupação de {p["ocupacao_declarada"].lower()}.')
 
     parl = (c.get("situacao_parlamentar") or [{}])[0]
     if parl.get("casa") == "camara":
-        t = f'Exerce mandato de deputad{"a" if fem else "o"} federal por São Paulo'
+        # "por Sao Paulo" estava escrito a mao: 31 bios dos outros estados
+        # afirmavam que a pessoa era deputada por Sao Paulo. Afirmacao falsa
+        # sobre gente real, gerada por um literal.
+        t = (f'Exerce mandato de deputad{"a" if fem else "o"} federal '
+             f'{UF_POR_EXTENSO}')
         if parl.get("desde"):
             t += f', em exercício desde {parl["desde"][8:10]}/{parl["desde"][5:7]}/{parl["desde"][:4]}'
         if parl.get("motivo_afastamento_anterior"):
             t += f' — antes disso, {parl["motivo_afastamento_anterior"][0].lower() + parl["motivo_afastamento_anterior"][1:]}'
         frases.append(t + '.')
+    elif parl.get("casa") == "senado":
+        # A casa "senado" nao era tratada: 32 senadores em exercicio nao tinham
+        # linha de mandato. Os que pareciam ter so declararam "senador" como
+        # OCUPACAO ao TSE, que e autodeclaracao — outro fato, e mais fraco.
+        t = f'Exerce mandato de senador{"a" if fem else ""} {UF_POR_EXTENSO}'
+        if parl.get("desde"):
+            t += f', em exercício desde {parl["desde"][8:10]}/{parl["desde"][5:7]}/{parl["desde"][:4]}'
+        frases.append(t + '.')
     elif parl.get("casa") == "alesp":
-        t = 'Exerce mandato de deputado estadual em São Paulo'
+        t = (f'Exerce mandato de deputad{"a" if fem else "o"} estadual '
+             f'em {UF_NOME_EXTENSO}')
         if parl.get("cargo_na_casa"): t += f' e ocupa o cargo de {parl["cargo_na_casa"]}'
         frases.append(t + '.')
 
@@ -382,7 +405,11 @@ if not _email:
 _assunto = urllib.parse.quote("Senado SP 2026 \u2014 feedback")
 # Marcadores de UF no HTML estatico (titulo, cabecalho, explicador). Cada um
 # tem de aparecer, senao o site sai dizendo o estado errado ou nenhum.
-for _m, _v in (("{{UF_NOME}}", dados["uf"]["nome"]), ("{{UF_POR}}", dados["uf"]["por"])):
+for _m, _v in (("{{UF_NOME}}", dados["uf"]["nome"]), ("{{UF_POR}}", dados["uf"]["por"]),
+               # Estava escrito "15" no template, do tempo em que so havia Sao
+               # Paulo. Com 27 estados, 26 paginas anunciavam o numero de outro
+               # estado logo abaixo do titulo.
+               ("{{N_CANDIDATURAS}}", str(len(dados["candidatos"])))):
     if _m not in tpl:
         raise SystemExit(f"_template_site.html perdeu o marcador {_m}")
     tpl = tpl.replace(_m, _v)

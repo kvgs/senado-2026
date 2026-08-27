@@ -11,7 +11,8 @@
     "nome_completo": "Carlos Eduardo de Souza Braga",
     "data_nascimento": "1960-12-06",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Senador"
+    "ocupacao_declarada": "Senador",
+    "genero": "Masculino"
    },
    "id_partido": "mdb",
    "id_coligacao": "forca-amazonas-am",
@@ -59,7 +60,8 @@
     "nome_completo": "José Evandro de Oliveira",
     "data_nascimento": "1979-02-12",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Técnico de mecânica"
+    "ocupacao_declarada": "Técnico de mecânica",
+    "genero": "Masculino"
    },
    "id_partido": "pstu",
    "id_coligacao": null,
@@ -96,7 +98,8 @@
     "nome_completo": "Ismael Franklin Goncalves",
     "data_nascimento": "1982-04-23",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Outros"
+    "ocupacao_declarada": "Outros",
+    "genero": "Masculino"
    },
    "id_partido": "rede",
    "id_coligacao": "federacao-am",
@@ -133,7 +136,8 @@
     "nome_completo": "Alberto Barros Cavalcante Neto",
     "data_nascimento": "1982-05-05",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputado"
+    "ocupacao_declarada": "Deputado",
+    "genero": "Masculino"
    },
    "id_partido": "pl",
    "id_coligacao": "mudar-e-urgente-am",
@@ -181,7 +185,8 @@
     "nome_completo": "Dailson de Queiroz Corrêa",
     "data_nascimento": "1966-06-07",
     "escolaridade": "Lê e escreve",
-    "ocupacao_declarada": "Comerciante"
+    "ocupacao_declarada": "Comerciante",
+    "genero": "Masculino"
    },
    "id_partido": "dc",
    "id_coligacao": null,
@@ -218,7 +223,8 @@
     "nome_completo": "Milton Rogério Moreira Pinto",
     "data_nascimento": "1964-08-26",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Militar reformado"
+    "ocupacao_declarada": "Militar reformado",
+    "genero": "Masculino"
    },
    "id_partido": "mobiliza",
    "id_coligacao": null,
@@ -255,7 +261,8 @@
     "nome_completo": "Wilson Miranda Lima",
     "data_nascimento": "1976-06-26",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Jornalista e redator"
+    "ocupacao_declarada": "Jornalista e redator",
+    "genero": "Masculino"
    },
    "id_partido": "uniao",
    "id_coligacao": "uniao-pelo-amazonas-am",
@@ -292,7 +299,8 @@
     "nome_completo": "Francisco Plinio Valerio Tomaz",
     "data_nascimento": "1955-01-31",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Jornalista e redator"
+    "ocupacao_declarada": "Jornalista e redator",
+    "genero": "Masculino"
    },
    "id_partido": "psdb",
    "id_coligacao": "federacao-am",
@@ -340,7 +348,8 @@
     "nome_completo": "Maria Evany do Nascimento",
     "data_nascimento": "1974-08-05",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professora de ensino superior"
+    "ocupacao_declarada": "Professora de ensino superior",
+    "genero": "Feminino"
    },
    "id_partido": "psol",
    "id_coligacao": "federacao-am",

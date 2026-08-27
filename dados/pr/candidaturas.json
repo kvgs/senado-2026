@@ -11,7 +11,8 @@
     "nome_completo": "Alexandre Maranhao Khury",
     "data_nascimento": "1979-04-09",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputado"
+    "ocupacao_declarada": "Deputado",
+    "genero": "Masculino"
    },
    "id_partido": "republicanos",
    "id_coligacao": "coligacao-a-mudanca-continua-pr",
@@ -48,7 +49,8 @@
     "nome_completo": "Gleisi Helena Hoffmann",
     "data_nascimento": "1965-09-06",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogada"
+    "ocupacao_declarada": "Advogada",
+    "genero": "Feminino"
    },
    "id_partido": "pt",
    "id_coligacao": "parana-para-todos-pr",
@@ -85,7 +87,8 @@
     "nome_completo": "Florisvaldo Fier",
     "data_nascimento": "1950-11-12",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Médico"
+    "ocupacao_declarada": "Médico",
+    "genero": "Masculino"
    },
    "id_partido": "pt",
    "id_coligacao": "parana-para-todos-pr",
@@ -122,7 +125,8 @@
     "nome_completo": "Karen Correia Guerreiro",
     "data_nascimento": "1980-10-31",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Gerente"
+    "ocupacao_declarada": "Gerente",
+    "genero": "Feminino"
    },
    "id_partido": "missao",
    "id_coligacao": null,
@@ -159,7 +163,8 @@
     "nome_completo": "Filipe Barros Baptista de Toledo Ribeiro",
     "data_nascimento": "1991-05-29",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado"
+    "ocupacao_declarada": "Advogado",
+    "genero": "Masculino"
    },
    "id_partido": "pl",
    "id_coligacao": "fortaleza-do-parana-pr",
@@ -207,7 +212,8 @@
     "nome_completo": "Marcelo Goncalves Marcelino",
     "data_nascimento": "1968-03-13",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Pedagogo"
+    "ocupacao_declarada": "Pedagogo",
+    "genero": "Masculino"
    },
    "id_partido": "pco",
    "id_coligacao": null,
@@ -244,7 +250,8 @@
     "nome_completo": "Deltan Martinazzo Dallagnol",
     "data_nascimento": "1980-01-15",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado"
+    "ocupacao_declarada": "Advogado",
+    "genero": "Masculino"
    },
    "id_partido": "novo",
    "id_coligacao": "fortaleza-do-parana-pr",
@@ -281,7 +288,8 @@
     "nome_completo": "Cristina Reis Graeml",
     "data_nascimento": "1969-12-07",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Jornalista e redator"
+    "ocupacao_declarada": "Jornalista e redator",
+    "genero": "Feminino"
    },
    "id_partido": "psd",
    "id_coligacao": "coligacao-a-mudanca-continua-pr",
@@ -318,7 +326,8 @@
     "nome_completo": "Joaquim Silva Maciel",
     "data_nascimento": "1948-02-12",
     "escolaridade": "Ensino fundamental incompleto",
-    "ocupacao_declarada": "Mecânico de manutenção"
+    "ocupacao_declarada": "Mecânico de manutenção",
+    "genero": "Masculino"
    },
    "id_partido": "up",
    "id_coligacao": null,

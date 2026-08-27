@@ -11,7 +11,8 @@
     "nome_completo": "David Cabral Davino Filho",
     "data_nascimento": "1987-10-01",
     "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Empresário"
+    "ocupacao_declarada": "Empresário",
+    "genero": "Masculino"
    },
    "id_partido": "republicanos",
    "id_coligacao": null,
@@ -48,7 +49,8 @@
     "nome_completo": "Arthur Cesar Pereira de Lira",
     "data_nascimento": "1969-06-25",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado"
+    "ocupacao_declarada": "Advogado",
+    "genero": "Masculino"
    },
    "id_partido": "pp",
    "id_coligacao": "alagoas-gigante-ii-al",
@@ -96,7 +98,8 @@
     "nome_completo": "Jose Renan Vasconcelos Calheiros",
     "data_nascimento": "1955-09-16",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado"
+    "ocupacao_declarada": "Advogado",
+    "genero": "Masculino"
    },
    "id_partido": "mdb",
    "id_coligacao": "pra-alagoas-fazer-historia-de-novo-al",
@@ -146,7 +149,8 @@
     "nome_completo": "Jose Wanderley Neto",
     "data_nascimento": "1949-07-08",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Médico"
+    "ocupacao_declarada": "Médico",
+    "genero": "Masculino"
    },
    "id_partido": "mdb",
    "id_coligacao": "pra-alagoas-fazer-historia-de-novo-al",
@@ -185,7 +189,8 @@
     "nome_completo": "Jose Mariedson da Silva",
     "data_nascimento": "1973-08-16",
     "escolaridade": "Ensino médio incompleto",
-    "ocupacao_declarada": "Vigilante"
+    "ocupacao_declarada": "Vigilante",
+    "genero": "Masculino"
    },
    "id_partido": "democrata",
    "id_coligacao": null,
@@ -222,7 +227,8 @@
     "nome_completo": "Marina Antunes Candia e Figueiredo",
     "data_nascimento": "1990-12-27",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Empresária"
+    "ocupacao_declarada": "Empresária",
+    "genero": "Feminino"
    },
    "id_partido": "psdb",
    "id_coligacao": "alagoas-gigante-ii-al",
@@ -259,7 +265,8 @@
     "nome_completo": "Alexandre Fleming Vasques Bastos",
     "data_nascimento": "1977-06-08",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público federal"
+    "ocupacao_declarada": "Servidor público federal",
+    "genero": "Masculino"
    },
    "id_partido": "up",
    "id_coligacao": null,

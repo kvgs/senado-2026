@@ -11,7 +11,8 @@
     "nome_completo": "Eduardo Henrique da Fonte de Albuquerque Silva",
     "data_nascimento": "1972-10-17",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Deputado"
+    "ocupacao_declarada": "Deputado",
+    "genero": "Masculino"
    },
    "id_partido": "pp",
    "id_coligacao": "pernambuco-de-coracao-pe",
@@ -59,7 +60,8 @@
     "nome_completo": "Marília Valença Rocha Arraes de Alencar",
     "data_nascimento": "1984-04-12",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogada"
+    "ocupacao_declarada": "Advogada",
+    "genero": "Feminino"
    },
    "id_partido": "pdt",
    "id_coligacao": "frente-popular-de-pernambuco-pe",
@@ -96,7 +98,8 @@
     "nome_completo": "Humberto Sergio Costa Lima",
     "data_nascimento": "1957-07-07",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Senador"
+    "ocupacao_declarada": "Senador",
+    "genero": "Masculino"
    },
    "id_partido": "pt",
    "id_coligacao": "frente-popular-de-pernambuco-pe",
@@ -144,7 +147,8 @@
     "nome_completo": "José Mariano de Macedo",
     "data_nascimento": "1965-05-01",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professor de ensino médio"
+    "ocupacao_declarada": "Professor de ensino médio",
+    "genero": "Masculino"
    },
    "id_partido": "pstu",
    "id_coligacao": null,
@@ -181,7 +185,8 @@
     "nome_completo": "Paulo Rubem Santiago Ferreira",
     "data_nascimento": "1955-07-17",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professor de ensino superior"
+    "ocupacao_declarada": "Professor de ensino superior",
+    "genero": "Masculino"
    },
    "id_partido": "rede",
    "id_coligacao": "frente-pernambuco-de-luta-pe",
@@ -218,7 +223,8 @@
     "nome_completo": "José Mendonça Bezerra Filho",
     "data_nascimento": "1966-07-12",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputado"
+    "ocupacao_declarada": "Deputado",
+    "genero": "Masculino"
    },
    "id_partido": "pl",
    "id_coligacao": null,
@@ -266,7 +272,8 @@
     "nome_completo": "Mailson da Silva Neto",
     "data_nascimento": "1968-08-06",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Engenheiro"
+    "ocupacao_declarada": "Engenheiro",
+    "genero": "Masculino"
    },
    "id_partido": "pco",
    "id_coligacao": null,
@@ -303,7 +310,8 @@
     "nome_completo": "Carlos Soares Sant'Anna",
     "data_nascimento": "1976-08-21",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado"
+    "ocupacao_declarada": "Advogado",
+    "genero": "Masculino"
    },
    "_conferir_transcricao": [
     "Nome normalizado do registro em caixa alta (\"CARLOS SANT ANNA\" / \"CARLOS SOARES SANT ANNA\"): a regra nao resolve sozinha. Conferir a grafia.",
@@ -344,7 +352,8 @@
     "nome_completo": "Gilvan Oliveira Costa",
     "data_nascimento": "1962-01-24",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Outros"
+    "ocupacao_declarada": "Outros",
+    "genero": "Masculino"
    },
    "id_partido": "democrata",
    "id_coligacao": null,
@@ -381,7 +390,8 @@
     "nome_completo": "Tulio Gadelha Sales de Melo",
     "data_nascimento": "1987-11-12",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputado"
+    "ocupacao_declarada": "Deputado",
+    "genero": "Masculino"
    },
    "id_partido": "psd",
    "id_coligacao": "pernambuco-de-coracao-pe",
@@ -429,7 +439,8 @@
     "nome_completo": "Samuel Timoteo da Silva",
     "data_nascimento": "1975-09-17",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Trabalhador de construção civil"
+    "ocupacao_declarada": "Trabalhador de construção civil",
+    "genero": "Masculino"
    },
    "id_partido": "up",
    "id_coligacao": null,
@@ -466,7 +477,8 @@
     "nome_completo": "Maria Gorett Bitu",
     "data_nascimento": "1957-03-02",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Aposentada (exceto servidor público)"
+    "ocupacao_declarada": "Aposentada (exceto servidor público)",
+    "genero": "Feminino"
    },
    "id_partido": "up",
    "id_coligacao": null,

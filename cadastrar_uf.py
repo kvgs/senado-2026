@@ -354,6 +354,10 @@ def montar(uf: str) -> tuple[list[dict], set, dict, list[str]]:
                 "data_nascimento": data_iso(l.get("DT_NASCIMENTO")),
                 "escolaridade": frase(l.get("DS_GRAU_INSTRUCAO")) or None,
                 "ocupacao_declarada": _ocup or None,
+                # O TSE informa o genero e o cadastro descartava. Sem ele o
+                # site chamava toda deputada de "deputado" fora de Sao Paulo,
+                # onde havia uma lista de nomes escrita a mao.
+                "genero": frase(l.get("DS_GENERO")) or None,
             },
             # A marca de conferencia mora no dado, e nao so no terminal de quem
             # rodou o script. Some quando alguem confere contra o registro.

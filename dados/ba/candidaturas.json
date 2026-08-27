@@ -11,7 +11,8 @@
     "nome_completo": "Angelo Mario Coronel de Azevedo Martins",
     "data_nascimento": "1958-05-03",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Senador"
+    "ocupacao_declarada": "Senador",
+    "genero": "Masculino"
    },
    "id_partido": "republicanos",
    "id_coligacao": "unidos-para-mudar-a-bahia-ba",
@@ -59,7 +60,8 @@
     "nome_completo": "Jaques Wagner",
     "data_nascimento": "1951-03-16",
     "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Senador"
+    "ocupacao_declarada": "Senador",
+    "genero": "Masculino"
    },
    "id_partido": "pt",
    "id_coligacao": "mais-bahia-mais-brasil-ba",
@@ -107,7 +109,8 @@
     "nome_completo": "Rui Costa dos Santos",
     "data_nascimento": "1963-01-18",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Economista"
+    "ocupacao_declarada": "Economista",
+    "genero": "Masculino"
    },
    "id_partido": "pt",
    "id_coligacao": "mais-bahia-mais-brasil-ba",
@@ -144,7 +147,8 @@
     "nome_completo": "Marcelo Carvalho Lavigne",
     "data_nascimento": "1980-10-14",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professor de ensino médio"
+    "ocupacao_declarada": "Professor de ensino médio",
+    "genero": "Masculino"
    },
    "id_partido": "rede",
    "id_coligacao": "federacao-ba",
@@ -181,7 +185,8 @@
     "nome_completo": "João Inácio Ribeiro Roma Neto",
     "data_nascimento": "1972-11-17",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Produtor agropecuário"
+    "ocupacao_declarada": "Produtor agropecuário",
+    "genero": "Masculino"
    },
    "id_partido": "pl",
    "id_coligacao": "unidos-para-mudar-a-bahia-ba",
@@ -218,7 +223,8 @@
     "nome_completo": "Marcelino Jose Guimaraes Santana",
     "data_nascimento": "1958-04-08",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado"
+    "ocupacao_declarada": "Advogado",
+    "genero": "Masculino"
    },
    "id_partido": "dc",
    "id_coligacao": null,
@@ -256,7 +262,8 @@
     "nome_completo": "Marcelo Millet Oliveira",
     "data_nascimento": "1986-02-04",
     "escolaridade": "Ensino médio incompleto",
-    "ocupacao_declarada": "Motorista particular"
+    "ocupacao_declarada": "Motorista particular",
+    "genero": "Masculino"
    },
    "id_partido": "pco",
    "id_coligacao": null,
@@ -293,7 +300,8 @@
     "nome_completo": "Carlos Eduardo Sodré",
     "data_nascimento": "1946-08-30",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado"
+    "ocupacao_declarada": "Advogado",
+    "genero": "Masculino"
    },
    "id_partido": "mobiliza",
    "id_coligacao": null,
@@ -330,7 +338,8 @@
     "nome_completo": "Delliana Ricelli Ribeiro da Silva",
     "data_nascimento": "1982-11-23",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professora de ensino médio"
+    "ocupacao_declarada": "Professora de ensino médio",
+    "genero": "Feminino"
    },
    "id_partido": "psol",
    "id_coligacao": "federacao-ba",
@@ -367,7 +376,8 @@
     "nome_completo": "Gregorio Motta Gould",
     "data_nascimento": "1986-05-30",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Outros"
+    "ocupacao_declarada": "Outros",
+    "genero": "Masculino"
    },
    "id_partido": "up",
    "id_coligacao": null,

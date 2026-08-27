@@ -11,7 +11,8 @@
     "nome_completo": "Leila Gomes de Barros Rêgo",
     "data_nascimento": "1971-09-30",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Senadora"
+    "ocupacao_declarada": "Senadora",
+    "genero": "Feminino"
    },
    "id_partido": "pdt",
    "id_coligacao": "df-do-povo-df",
@@ -59,7 +60,8 @@
     "nome_completo": "Erika Jucá Kokay",
     "data_nascimento": "1957-08-15",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputada"
+    "ocupacao_declarada": "Deputada",
+    "genero": "Feminino"
    },
    "id_partido": "pt",
    "id_coligacao": "df-do-povo-df",
@@ -107,7 +109,8 @@
     "nome_completo": "Eduardo Rennó Zanata",
     "data_nascimento": "1985-09-22",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professor de ensino fundamental"
+    "ocupacao_declarada": "Professor de ensino fundamental",
+    "genero": "Masculino"
    },
    "id_partido": "pstu",
    "id_coligacao": null,
@@ -144,7 +147,8 @@
     "nome_completo": "Michelle de Paula Firmo Reinaldo Bolsonaro",
     "data_nascimento": "1982-03-22",
     "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Empresária"
+    "ocupacao_declarada": "Empresária",
+    "genero": "Feminino"
    },
    "id_partido": "pl",
    "id_coligacao": "proposito-e-acao-df",
@@ -181,7 +185,8 @@
     "nome_completo": "Beatriz Kicis Torrents de Sordi",
     "data_nascimento": "1961-09-19",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputada"
+    "ocupacao_declarada": "Deputada",
+    "genero": "Feminino"
    },
    "id_partido": "pl",
    "id_coligacao": "proposito-e-acao-df",
@@ -229,7 +234,8 @@
     "nome_completo": "David Horn Pureza",
     "data_nascimento": "1963-01-16",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público civil aposentado"
+    "ocupacao_declarada": "Servidor público civil aposentado",
+    "genero": "Masculino"
    },
    "id_partido": "pco",
    "id_coligacao": null,
@@ -266,7 +272,8 @@
     "nome_completo": "Sebastiao Coelho da Silva",
     "data_nascimento": "1955-05-15",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Magistrado"
+    "ocupacao_declarada": "Magistrado",
+    "genero": "Masculino"
    },
    "id_partido": "novo",
    "id_coligacao": null,
@@ -303,7 +310,8 @@
     "nome_completo": "Avenir Angelo Rosa Filho",
     "data_nascimento": "1952-04-20",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado"
+    "ocupacao_declarada": "Advogado",
+    "genero": "Masculino"
    },
    "id_partido": "democrata",
    "id_coligacao": null,
@@ -340,7 +348,8 @@
     "nome_completo": "Tiago Társis Adaldo",
     "data_nascimento": "1986-09-22",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Agricultor"
+    "ocupacao_declarada": "Agricultor",
+    "genero": "Masculino"
    },
    "id_partido": "agir",
    "id_coligacao": null,
@@ -377,7 +386,8 @@
     "nome_completo": "Paulo Augusto Pimenta Felicio dos Santos",
     "data_nascimento": "1960-01-19",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Economista"
+    "ocupacao_declarada": "Economista",
+    "genero": "Masculino"
    },
    "id_partido": "psdb",
    "id_coligacao": "federacao-df",
@@ -414,7 +424,8 @@
     "nome_completo": "Ronaldo Fonseca de Souza",
     "data_nascimento": "1959-04-04",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado"
+    "ocupacao_declarada": "Advogado",
+    "genero": "Masculino"
    },
    "id_partido": "psd",
    "id_coligacao": null,
@@ -451,7 +462,8 @@
     "nome_completo": "Marley Mendonca Alves",
     "data_nascimento": "1959-11-25",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado"
+    "ocupacao_declarada": "Advogado",
+    "genero": "Masculino"
    },
    "id_partido": "avante",
    "id_coligacao": null,
@@ -488,7 +500,8 @@
     "nome_completo": "Guilherme de Amorim Lino",
     "data_nascimento": "1990-07-03",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professor de ensino médio"
+    "ocupacao_declarada": "Professor de ensino médio",
+    "genero": "Masculino"
    },
    "id_partido": "up",
    "id_coligacao": null,

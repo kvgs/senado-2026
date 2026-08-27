@@ -11,7 +11,8 @@
     "nome_completo": "Mariana Fonseca Ribeiro Carvalho de Moraes",
     "data_nascimento": "1986-11-26",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Médica"
+    "ocupacao_declarada": "Médica",
+    "genero": "Feminino"
    },
    "id_partido": "republicanos",
    "id_coligacao": "rondonia-com-a-forca-do-trabalho-e-da-uniao-ro",
@@ -49,7 +50,8 @@
     "nome_completo": "Silvia Cristina Amancio Chagas",
     "data_nascimento": "1974-01-15",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Jornalista e redator"
+    "ocupacao_declarada": "Jornalista e redator",
+    "genero": "Feminino"
    },
    "id_partido": "pp",
    "id_coligacao": "rondonia-com-a-forca-do-trabalho-e-da-uniao-ro",
@@ -97,7 +99,8 @@
     "nome_completo": "Acir Marcos Gurgacz",
     "data_nascimento": "1962-02-25",
     "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Empresário"
+    "ocupacao_declarada": "Empresário",
+    "genero": "Masculino"
    },
    "id_partido": "pdt",
    "id_coligacao": "experiencia-fe-e-autoridade-rondonia-forte-de-verdade-ro",
@@ -134,7 +137,8 @@
     "nome_completo": "Luciana de Oliveira e Silva",
     "data_nascimento": "1972-11-29",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Jornalista e redator"
+    "ocupacao_declarada": "Jornalista e redator",
+    "genero": "Feminino"
    },
    "id_partido": "pt",
    "id_coligacao": "federacao-ro",
@@ -171,7 +175,8 @@
     "nome_completo": "Thulio Santiago Castro",
     "data_nascimento": "1983-10-30",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Empresário"
+    "ocupacao_declarada": "Empresário",
+    "genero": "Masculino"
    },
    "id_partido": "missao",
    "id_coligacao": null,
@@ -208,7 +213,8 @@
     "nome_completo": "Fernando Rodrigues Máximo",
     "data_nascimento": "1979-10-04",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Médico"
+    "ocupacao_declarada": "Médico",
+    "genero": "Masculino"
    },
    "id_partido": "pl",
    "id_coligacao": "juntos-por-rondonia-ro",
@@ -256,7 +262,8 @@
     "nome_completo": "Bruno Scheid",
     "data_nascimento": "1983-04-13",
     "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Administrador"
+    "ocupacao_declarada": "Administrador",
+    "genero": "Masculino"
    },
    "id_partido": "pl",
    "id_coligacao": "juntos-por-rondonia-ro",
@@ -293,7 +300,8 @@
     "nome_completo": "Ivaneide Bandeira Cardozo",
     "data_nascimento": "1959-06-17",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Historiadora"
+    "ocupacao_declarada": "Historiadora",
+    "genero": "Feminino"
    },
    "id_partido": "psb",
    "id_coligacao": null,
@@ -330,7 +338,8 @@
     "nome_completo": "Aires Mota de Almeida",
     "data_nascimento": "1974-03-22",
     "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Outros"
+    "ocupacao_declarada": "Outros",
+    "genero": "Masculino"
    },
    "id_partido": "pv",
    "id_coligacao": "federacao-ro",
@@ -367,7 +376,8 @@
     "nome_completo": "Luis Fernando Pereira da Silva",
     "data_nascimento": "1968-01-13",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Administrador"
+    "ocupacao_declarada": "Administrador",
+    "genero": "Masculino"
    },
    "id_partido": "psd",
    "id_coligacao": "gente-que-gosta-de-gente-ro",

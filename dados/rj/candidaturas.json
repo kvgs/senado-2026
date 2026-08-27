@@ -11,7 +11,8 @@
     "nome_completo": "Marcelo Bezerra Crivella",
     "data_nascimento": "1957-10-09",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Engenheiro"
+    "ocupacao_declarada": "Engenheiro",
+    "genero": "Masculino"
    },
    "id_partido": "republicanos",
    "id_coligacao": null,
@@ -59,7 +60,8 @@
     "nome_completo": "Wagner dos Santos Carneiro",
     "data_nascimento": "1971-10-29",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado"
+    "ocupacao_declarada": "Advogado",
+    "genero": "Masculino"
    },
    "id_partido": "republicanos",
    "id_coligacao": null,
@@ -96,7 +98,8 @@
     "nome_completo": "Benedita Souza da Silva Sampaio",
     "data_nascimento": "1942-04-26",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputada"
+    "ocupacao_declarada": "Deputada",
+    "genero": "Feminino"
    },
    "id_partido": "pt",
    "id_coligacao": "juntos-para-mudar-coragem-para-reconstruir-rj",
@@ -144,7 +147,8 @@
     "nome_completo": "Helio Kinast Cruz Secco",
     "data_nascimento": "1989-06-15",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Empresário"
+    "ocupacao_declarada": "Empresário",
+    "genero": "Masculino"
    },
    "id_partido": "missao",
    "id_coligacao": null,
@@ -181,7 +185,8 @@
     "nome_completo": "Paula Andreia Almeida Falcao",
     "data_nascimento": "1989-12-26",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professora de ensino médio"
+    "ocupacao_declarada": "Professora de ensino médio",
+    "genero": "Feminino"
    },
    "id_partido": "pstu",
    "id_coligacao": null,
@@ -218,7 +223,8 @@
     "nome_completo": "Marcos Dias Pereira",
     "data_nascimento": "1971-12-03",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Vereador"
+    "ocupacao_declarada": "Vereador",
+    "genero": "Masculino"
    },
    "id_partido": "pode",
    "id_coligacao": null,
@@ -255,7 +261,8 @@
     "nome_completo": "Carlos Roberto Coelho de Mattos Júnior",
     "data_nascimento": "1982-02-08",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputado"
+    "ocupacao_declarada": "Deputado",
+    "genero": "Masculino"
    },
    "id_partido": "pl",
    "id_coligacao": null,
@@ -303,7 +310,8 @@
     "nome_completo": "Carlos Francisco Portinho",
     "data_nascimento": "1973-07-02",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Senador"
+    "ocupacao_declarada": "Senador",
+    "genero": "Masculino"
    },
    "id_partido": "pl",
    "id_coligacao": null,
@@ -351,7 +359,8 @@
     "nome_completo": "Luciano Oliveira Mattos de Souza",
     "data_nascimento": "1968-12-05",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado"
+    "ocupacao_declarada": "Advogado",
+    "genero": "Masculino"
    },
    "id_partido": "prtb",
    "id_coligacao": null,
@@ -388,7 +397,8 @@
     "nome_completo": "Luiz Eugenio Honorato",
     "data_nascimento": "1961-04-29",
     "escolaridade": "Ensino fundamental completo",
-    "ocupacao_declarada": "Aposentado (exceto servidor público)"
+    "ocupacao_declarada": "Aposentado (exceto servidor público)",
+    "genero": "Masculino"
    },
    "id_partido": "pco",
    "id_coligacao": null,
@@ -425,7 +435,8 @@
     "nome_completo": "Luiz Andre de Moura Monteiro",
     "data_nascimento": "1971-04-14",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Militar reformado"
+    "ocupacao_declarada": "Militar reformado",
+    "genero": "Masculino"
    },
    "id_partido": "democrata",
    "id_coligacao": null,
@@ -462,7 +473,8 @@
     "nome_completo": "Clemente Sebastião de Almeida Campos",
     "data_nascimento": "1947-10-13",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público civil aposentado"
+    "ocupacao_declarada": "Servidor público civil aposentado",
+    "genero": "Masculino"
    },
    "_conferir_transcricao": [
     "Nome normalizado do registro em caixa alta (\"Ó CLEMENTE\" / \"CLEMENTE SEBASTIÃO DE ALMEIDA CAMPOS\"): a regra nao resolve sozinha. Conferir a grafia."
@@ -502,7 +514,8 @@
     "nome_completo": "Monica Tereza Azeredo Benicio",
     "data_nascimento": "1986-02-01",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Vereadora"
+    "ocupacao_declarada": "Vereadora",
+    "genero": "Feminino"
    },
    "id_partido": "psol",
    "id_coligacao": "federacao-rj",
@@ -539,7 +552,8 @@
     "nome_completo": "Pedro Paulo Carvalho Teixeira",
     "data_nascimento": "1972-06-29",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Economista"
+    "ocupacao_declarada": "Economista",
+    "genero": "Masculino"
    },
    "id_partido": "psd",
    "id_coligacao": "juntos-para-mudar-coragem-para-reconstruir-rj",
@@ -587,7 +601,8 @@
     "nome_completo": "Michelly Xavier de Souza",
     "data_nascimento": "1980-06-09",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogada"
+    "ocupacao_declarada": "Advogada",
+    "genero": "Feminino"
    },
    "id_partido": "up",
    "id_coligacao": null,
@@ -624,7 +639,8 @@
     "nome_completo": "Vinicius Benevides dos Santos Conceicao",
     "data_nascimento": "1977-10-14",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Trabalhador de construção civil"
+    "ocupacao_declarada": "Trabalhador de construção civil",
+    "genero": "Masculino"
    },
    "id_partido": "up",
    "id_coligacao": null,

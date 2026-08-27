@@ -11,7 +11,8 @@
     "nome_completo": "Eli Dias Borges",
     "data_nascimento": "1960-09-01",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Deputado"
+    "ocupacao_declarada": "Deputado",
+    "genero": "Masculino"
    },
    "id_partido": "republicanos",
    "id_coligacao": null,
@@ -59,7 +60,8 @@
     "nome_completo": "Paulo Sardinha Mourao",
     "data_nascimento": "1956-03-09",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Empresário"
+    "ocupacao_declarada": "Empresário",
+    "genero": "Masculino"
    },
    "id_partido": "pt",
    "id_coligacao": "pra-frente-tocantins-to",
@@ -96,7 +98,8 @@
     "nome_completo": "José Alexandre Domingues Guimarães",
     "data_nascimento": "1986-02-19",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputado"
+    "ocupacao_declarada": "Deputado",
+    "genero": "Masculino"
    },
    "id_partido": "mdb",
    "id_coligacao": "pra-cima-tocantins-to",
@@ -144,7 +147,8 @@
     "nome_completo": "Fabio Paulino Ribeiro",
     "data_nascimento": "1977-07-17",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Empresário"
+    "ocupacao_declarada": "Empresário",
+    "genero": "Masculino"
    },
    "id_partido": "rede",
    "id_coligacao": "federacao-to",
@@ -182,7 +186,8 @@
     "nome_completo": "Vanderlei Luxemburgo da Silva",
     "data_nascimento": "1952-05-10",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professor e instrutor de formação profissional"
+    "ocupacao_declarada": "Professor e instrutor de formação profissional",
+    "genero": "Masculino"
    },
    "id_partido": "pode",
    "id_coligacao": null,
@@ -219,7 +224,8 @@
     "nome_completo": "Ronaldo Dimas Nogueira Pereira",
     "data_nascimento": "1961-04-27",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Engenheiro"
+    "ocupacao_declarada": "Engenheiro",
+    "genero": "Masculino"
    },
    "id_partido": "pode",
    "id_coligacao": null,
@@ -256,7 +262,8 @@
     "nome_completo": "Carlos Eduardo Torres Gomes",
     "data_nascimento": "1966-04-28",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Senador"
+    "ocupacao_declarada": "Senador",
+    "genero": "Masculino"
    },
    "id_partido": "pl",
    "id_coligacao": null,
@@ -304,7 +311,8 @@
     "nome_completo": "Flavio Alves Braga",
     "data_nascimento": "1981-06-01",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado"
+    "ocupacao_declarada": "Advogado",
+    "genero": "Masculino"
    },
    "id_partido": "dc",
    "id_coligacao": null,
@@ -341,7 +349,8 @@
     "nome_completo": "Nilton Rodrigues dos Santos",
     "data_nascimento": "1976-04-06",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Bombeiro militar"
+    "ocupacao_declarada": "Bombeiro militar",
+    "genero": "Masculino"
    },
    "id_partido": "novo",
    "id_coligacao": null,
@@ -378,7 +387,8 @@
     "nome_completo": "Helio Rodrigues Carvalho",
     "data_nascimento": "1969-08-12",
     "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Vendedor pracista, representante, caixeiro-viajante e assemelhados"
+    "ocupacao_declarada": "Vendedor pracista, representante, caixeiro-viajante e assemelhados",
+    "genero": "Masculino"
    },
    "id_partido": "democrata",
    "id_coligacao": null,
@@ -415,7 +425,8 @@
     "nome_completo": "Osvani Pereira da Luz",
     "data_nascimento": "1982-10-07",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Diretora de empresas"
+    "ocupacao_declarada": "Diretora de empresas",
+    "genero": "Feminino"
    },
    "id_partido": "democrata",
    "id_coligacao": null,
@@ -452,7 +463,8 @@
     "nome_completo": "Carlos Henrique Amorim",
     "data_nascimento": "1961-04-21",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputado"
+    "ocupacao_declarada": "Deputado",
+    "genero": "Masculino"
    },
    "id_partido": "uniao",
    "id_coligacao": "federacao-to",
@@ -489,7 +501,8 @@
     "nome_completo": "Osvaldo Soares Neto",
     "data_nascimento": "1959-11-08",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público estadual"
+    "ocupacao_declarada": "Servidor público estadual",
+    "genero": "Masculino"
    },
    "id_partido": "psol",
    "id_coligacao": "federacao-to",

@@ -11,7 +11,8 @@
     "nome_completo": "Reginaldo Ferreira de Araujo",
     "data_nascimento": "1973-09-01",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público municipal"
+    "ocupacao_declarada": "Servidor público municipal",
+    "genero": "Masculino"
    },
    "id_partido": "pstu",
    "id_coligacao": null,
@@ -48,7 +49,8 @@
     "nome_completo": "Luizianne de Oliveira Lins",
     "data_nascimento": "1968-11-18",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputada"
+    "ocupacao_declarada": "Deputada",
+    "genero": "Feminino"
    },
    "id_partido": "rede",
    "id_coligacao": "ceara-forte-do-lado-certo-ce",
@@ -85,7 +87,8 @@
     "nome_completo": "Alcides Fernandes da Silva",
     "data_nascimento": "1967-10-01",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputado"
+    "ocupacao_declarada": "Deputado",
+    "genero": "Masculino"
    },
    "id_partido": "pl",
    "id_coligacao": "unir-para-mudar-ce",
@@ -122,7 +125,8 @@
     "nome_completo": "Lino Alves de Almeida",
     "data_nascimento": "1956-06-28",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Engenheiro"
+    "ocupacao_declarada": "Engenheiro",
+    "genero": "Masculino"
    },
    "id_partido": "pco",
    "id_coligacao": null,
@@ -159,7 +163,8 @@
     "nome_completo": "Guilherme Cals Theophilo Gaspar de Oliveira",
     "data_nascimento": "1955-03-13",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Militar reformado"
+    "ocupacao_declarada": "Militar reformado",
+    "genero": "Masculino"
    },
    "id_partido": "novo",
    "id_coligacao": null,
@@ -196,7 +201,8 @@
     "nome_completo": "Cid Ferreira Gomes",
     "data_nascimento": "1963-04-27",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Senador"
+    "ocupacao_declarada": "Senador",
+    "genero": "Masculino"
    },
    "id_partido": "psb",
    "id_coligacao": "ceara-forte-do-lado-certo-ce",
@@ -244,7 +250,8 @@
     "nome_completo": "Wagner Sousa Gomes",
     "data_nascimento": "1979-01-21",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Policial militar"
+    "ocupacao_declarada": "Policial militar",
+    "genero": "Masculino"
    },
    "id_partido": "uniao",
    "id_coligacao": "unir-para-mudar-ce",
@@ -281,7 +288,8 @@
     "nome_completo": "Catarina da Graca Almeida Matos",
     "data_nascimento": "1988-08-17",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professora de ensino médio"
+    "ocupacao_declarada": "Professora de ensino médio",
+    "genero": "Feminino"
    },
    "id_partido": "up",
    "id_coligacao": null,

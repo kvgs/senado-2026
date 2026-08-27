@@ -11,7 +11,8 @@
     "nome_completo": "Margareth Gettert Busetti",
     "data_nascimento": "1959-10-31",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Empresária"
+    "ocupacao_declarada": "Empresária",
+    "genero": "Feminino"
    },
    "id_partido": "pp",
    "id_coligacao": "mato-grosso-nao-pode-parar-i-mt",
@@ -48,7 +49,8 @@
     "nome_completo": "Janaina Greyce Riva Fagundes",
     "data_nascimento": "1989-01-27",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputada"
+    "ocupacao_declarada": "Deputada",
+    "genero": "Feminino"
    },
    "id_partido": "mdb",
    "id_coligacao": "coracao-da-gente-mt",
@@ -85,7 +87,8 @@
     "nome_completo": "Jose Antonio dos Santos Medeiros",
     "data_nascimento": "1970-03-19",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público civil aposentado"
+    "ocupacao_declarada": "Servidor público civil aposentado",
+    "genero": "Masculino"
    },
    "_conferir_transcricao": [
     "Nome normalizado do registro em caixa alta (\"ZÉ MEDEIROS\" / \"JOSE ANTONIO DOS SANTOS MEDEIROS\"): a regra nao resolve sozinha. Conferir a grafia."
@@ -125,7 +128,8 @@
     "nome_completo": "Darwin Salgado Germano",
     "data_nascimento": "1978-03-14",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Policial militar"
+    "ocupacao_declarada": "Policial militar",
+    "genero": "Masculino"
    },
    "id_partido": "democrata",
    "id_coligacao": null,
@@ -162,7 +166,8 @@
     "nome_completo": "Nelson Carlos Ferreira Junior",
     "data_nascimento": "1973-01-01",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professor de ensino fundamental"
+    "ocupacao_declarada": "Professor de ensino fundamental",
+    "genero": "Masculino"
    },
    "id_partido": "agir",
    "id_coligacao": null,
@@ -199,7 +204,8 @@
     "nome_completo": "Benival Alves da Silva",
     "data_nascimento": "1973-03-11",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Comerciante"
+    "ocupacao_declarada": "Comerciante",
+    "genero": "Masculino"
    },
    "id_partido": "agir",
    "id_coligacao": null,
@@ -236,7 +242,8 @@
     "nome_completo": "Jose Pedro Goncalves Taques",
     "data_nascimento": "1968-03-15",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado"
+    "ocupacao_declarada": "Advogado",
+    "genero": "Masculino"
    },
    "id_partido": "psb",
    "id_coligacao": "mato-grosso-para-todos-mt",
@@ -273,7 +280,8 @@
     "nome_completo": "Mauro Mendes Ferreira",
     "data_nascimento": "1964-04-12",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Empresário"
+    "ocupacao_declarada": "Empresário",
+    "genero": "Masculino"
    },
    "id_partido": "uniao",
    "id_coligacao": "mato-grosso-nao-pode-parar-i-mt",
@@ -310,7 +318,8 @@
     "nome_completo": "Carlos Henrique Baqueta Favaro",
     "data_nascimento": "1969-10-19",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Agricultor"
+    "ocupacao_declarada": "Agricultor",
+    "genero": "Masculino"
    },
    "id_partido": "psd",
    "id_coligacao": "mato-grosso-para-todos-mt",
@@ -358,7 +367,8 @@
     "nome_completo": "Antonio Galvan",
     "data_nascimento": "1957-11-13",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Agricultor"
+    "ocupacao_declarada": "Agricultor",
+    "genero": "Masculino"
    },
    "id_partido": "avante",
    "id_coligacao": null,

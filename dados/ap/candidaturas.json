@@ -11,7 +11,8 @@
     "nome_completo": "Randolph Frederich Rodrigues Alves",
     "data_nascimento": "1972-11-06",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Senador"
+    "ocupacao_declarada": "Senador",
+    "genero": "Masculino"
    },
    "id_partido": "pt",
    "id_coligacao": "juntos-por-todo-o-amapa-ap",
@@ -59,7 +60,8 @@
     "nome_completo": "Acacio da Silva Favacho Neto",
     "data_nascimento": "1983-09-28",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputado"
+    "ocupacao_declarada": "Deputado",
+    "genero": "Masculino"
    },
    "id_partido": "mdb",
    "id_coligacao": null,
@@ -107,7 +109,8 @@
     "nome_completo": "Rayssa Cadena Furlan",
     "data_nascimento": "1987-02-08",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Médica"
+    "ocupacao_declarada": "Médica",
+    "genero": "Feminino"
    },
    "id_partido": "pode",
    "id_coligacao": "trabalhar-para-transformar-o-amapa-ap",
@@ -144,7 +147,8 @@
     "nome_completo": "Uzian Pinto Machado",
     "data_nascimento": "1981-04-07",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Fiscal"
+    "ocupacao_declarada": "Fiscal",
+    "genero": "Masculino"
    },
    "id_partido": "dc",
    "id_coligacao": null,
@@ -181,7 +185,8 @@
     "nome_completo": "Joenilda Lobato Silva Lenzi",
     "data_nascimento": "1973-04-17",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidora pública civil aposentada"
+    "ocupacao_declarada": "Servidora pública civil aposentada",
+    "genero": "Feminino"
    },
    "_conferir_transcricao": [
     "Nome normalizado do registro em caixa alta (\"JUÍZA JÔ\" / \"JOENILDA LOBATO SILVA LENZI\"): a regra nao resolve sozinha. Conferir a grafia."
@@ -221,7 +226,8 @@
     "nome_completo": "Helio Palheta Silva",
     "data_nascimento": "1966-09-30",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Aposentado (exceto servidor público)"
+    "ocupacao_declarada": "Aposentado (exceto servidor público)",
+    "genero": "Masculino"
    },
    "id_partido": "pco",
    "id_coligacao": null,
@@ -258,7 +264,8 @@
     "nome_completo": "Joao Alberto Rodrigues Capiberibe",
     "data_nascimento": "1947-05-06",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Outros"
+    "ocupacao_declarada": "Outros",
+    "genero": "Masculino"
    },
    "id_partido": "psb",
    "id_coligacao": null,
@@ -295,7 +302,8 @@
     "nome_completo": "Alliny Sousa da Rocha Serrao",
     "data_nascimento": "1985-02-11",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputada"
+    "ocupacao_declarada": "Deputada",
+    "genero": "Feminino"
    },
    "id_partido": "uniao",
    "id_coligacao": "juntos-por-todo-o-amapa-ap",
@@ -332,7 +340,8 @@
     "nome_completo": "Luiz Cantuaria Barreto",
     "data_nascimento": "1964-11-10",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Senador"
+    "ocupacao_declarada": "Senador",
+    "genero": "Masculino"
    },
    "id_partido": "psd",
    "id_coligacao": "trabalhar-para-transformar-o-amapa-ap",

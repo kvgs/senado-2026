@@ -11,7 +11,8 @@
     "nome_completo": "Eduardo Alves do Amorim",
     "data_nascimento": "1963-05-17",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Médico"
+    "ocupacao_declarada": "Médico",
+    "genero": "Masculino"
    },
    "id_partido": "republicanos",
    "id_coligacao": "muda-sergipe-com-a-forca-do-povo-se",
@@ -48,7 +49,8 @@
     "nome_completo": "André David Caldas Rosa Rodrigues",
     "data_nascimento": "1973-09-29",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público estadual"
+    "ocupacao_declarada": "Servidor público estadual",
+    "genero": "Masculino"
    },
    "id_partido": "republicanos",
    "id_coligacao": "muda-sergipe-com-a-forca-do-povo-se",
@@ -85,7 +87,8 @@
     "nome_completo": "Edvaldo Nogueira Filho",
     "data_nascimento": "1961-01-25",
     "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Outros"
+    "ocupacao_declarada": "Outros",
+    "genero": "Masculino"
    },
    "id_partido": "pdt",
    "id_coligacao": null,
@@ -122,7 +125,8 @@
     "nome_completo": "Rogerio Carvalho Santos",
     "data_nascimento": "1968-08-02",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Senador"
+    "ocupacao_declarada": "Senador",
+    "genero": "Masculino"
    },
    "id_partido": "pt",
    "id_coligacao": "sergipe-cresce-com-voce-se",
@@ -170,7 +174,8 @@
     "nome_completo": "Alessandro Vieira",
     "data_nascimento": "1975-04-03",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Senador"
+    "ocupacao_declarada": "Senador",
+    "genero": "Masculino"
    },
    "id_partido": "mdb",
    "id_coligacao": null,
@@ -218,7 +223,8 @@
     "nome_completo": "Henrique Alves da Rocha",
     "data_nascimento": "1967-04-05",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Militar reformado"
+    "ocupacao_declarada": "Militar reformado",
+    "genero": "Masculino"
    },
    "id_partido": "pl",
    "id_coligacao": "fe-e-coragem-pra-mudar-se",
@@ -255,7 +261,8 @@
     "nome_completo": "Rodrigo Santana Valadares",
     "data_nascimento": "1989-08-06",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado"
+    "ocupacao_declarada": "Advogado",
+    "genero": "Masculino"
    },
    "id_partido": "pl",
    "id_coligacao": "fe-e-coragem-pra-mudar-se",
@@ -303,7 +310,8 @@
     "nome_completo": "Paulo Vieira dos Anjos",
     "data_nascimento": "1960-01-14",
     "escolaridade": "Ensino médio incompleto",
-    "ocupacao_declarada": "Empresário"
+    "ocupacao_declarada": "Empresário",
+    "genero": "Masculino"
    },
    "id_partido": "dc",
    "id_coligacao": null,
@@ -340,7 +348,8 @@
     "nome_completo": "Renata Oliveira Silva",
     "data_nascimento": "1991-04-27",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Estudante bolsista, estagiário e assemelhados"
+    "ocupacao_declarada": "Estudante bolsista, estagiário e assemelhados",
+    "genero": "Feminino"
    },
    "_conferir_transcricao": [
     "Ocupacao \"Estudante bolsista, estagiário e assemelhados\": nao sei flexionar no feminino, ficou como o TSE gravou. Conferir."
@@ -380,7 +389,8 @@
     "nome_completo": "Andre Luis Dantas Ferreira",
     "data_nascimento": "1972-02-23",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Administrador"
+    "ocupacao_declarada": "Administrador",
+    "genero": "Masculino"
    },
    "id_partido": "uniao",
    "id_coligacao": "sergipe-cresce-com-voce-se",
@@ -417,7 +427,8 @@
     "nome_completo": "Jose Iran Barbosa Filho",
     "data_nascimento": "1966-06-21",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professor de ensino superior"
+    "ocupacao_declarada": "Professor de ensino superior",
+    "genero": "Masculino"
    },
    "id_partido": "psol",
    "id_coligacao": "federacao-se",

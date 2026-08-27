@@ -11,7 +11,8 @@
     "nome_completo": "Cylmara Fernandes da Rocha Gripp",
     "data_nascimento": "1973-09-04",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Jornalista e redator"
+    "ocupacao_declarada": "Jornalista e redator",
+    "genero": "Feminino"
    },
    "id_partido": "republicanos",
    "id_coligacao": "trabalho-da-esperanca-ac",
@@ -48,7 +49,8 @@
     "nome_completo": "Gladson de Lima Camelí",
     "data_nascimento": "1978-03-26",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Engenheiro"
+    "ocupacao_declarada": "Engenheiro",
+    "genero": "Masculino"
    },
    "id_partido": "pp",
    "id_coligacao": "avanca-acre-ac",
@@ -85,7 +87,8 @@
     "nome_completo": "Jorge Ney Viana Macedo Neves",
     "data_nascimento": "1959-09-20",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Engenheiro"
+    "ocupacao_declarada": "Engenheiro",
+    "genero": "Masculino"
    },
    "id_partido": "pt",
    "id_coligacao": "frente-ampla-pelo-acre-ac",
@@ -123,7 +126,8 @@
     "nome_completo": "Marcio Miguel Bittar",
     "data_nascimento": "1963-06-28",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Senador"
+    "ocupacao_declarada": "Senador",
+    "genero": "Masculino"
    },
    "id_partido": "pl",
    "id_coligacao": "avanca-acre-ac",
@@ -171,7 +175,8 @@
     "nome_completo": "Ribamar de Sousa Feitoza Júnior",
     "data_nascimento": "1982-05-09",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado"
+    "ocupacao_declarada": "Advogado",
+    "genero": "Masculino"
    },
    "id_partido": "dc",
    "id_coligacao": null,
@@ -208,7 +213,8 @@
     "nome_completo": "Inacio Alves Moreira Netto",
     "data_nascimento": "1970-05-14",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professor de ensino fundamental"
+    "ocupacao_declarada": "Professor de ensino fundamental",
+    "genero": "Masculino"
    },
    "id_partido": "psol",
    "id_coligacao": "federacao-ac",
@@ -245,7 +251,8 @@
     "nome_completo": "Sergio de Oliveira Cunha",
     "data_nascimento": "1960-04-20",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Empresário"
+    "ocupacao_declarada": "Empresário",
+    "genero": "Masculino"
    },
    "id_partido": "psd",
    "id_coligacao": "trabalho-da-esperanca-ac",
@@ -293,7 +300,8 @@
     "nome_completo": "Eduardo Ovidio Borges de Velloso Vianna",
     "data_nascimento": "1976-07-08",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Médico"
+    "ocupacao_declarada": "Médico",
+    "genero": "Masculino"
    },
    "id_partido": "solidariedade",
    "id_coligacao": "produzir-para-empregar-ac",

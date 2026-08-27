@@ -11,7 +11,8 @@
     "nome_completo": "Evair Vieira de Melo",
     "data_nascimento": "1972-04-02",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputado"
+    "ocupacao_declarada": "Deputado",
+    "genero": "Masculino"
    },
    "id_partido": "republicanos",
    "id_coligacao": "paz-pra-viver-um-novo-tempo-es",
@@ -59,7 +60,8 @@
     "nome_completo": "Fabiano Contarato",
     "data_nascimento": "1966-06-20",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Senador"
+    "ocupacao_declarada": "Senador",
+    "genero": "Masculino"
    },
    "id_partido": "pt",
    "id_coligacao": "federacao-es",
@@ -107,7 +109,8 @@
     "nome_completo": "Rosilda de Freitas",
     "data_nascimento": "1949-01-23",
     "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Produtora agropecuária"
+    "ocupacao_declarada": "Produtora agropecuária",
+    "genero": "Feminino"
    },
    "id_partido": "mdb",
    "id_coligacao": "agora-e-o-futuro-es",
@@ -145,7 +148,8 @@
     "nome_completo": "Magda Santos Malta",
     "data_nascimento": "1983-08-24",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Publicitária"
+    "ocupacao_declarada": "Publicitária",
+    "genero": "Feminino"
    },
    "id_partido": "pl",
    "id_coligacao": "paz-pra-viver-um-novo-tempo-es",
@@ -182,7 +186,8 @@
     "nome_completo": "Wellington Callegari",
     "data_nascimento": "1981-12-14",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público estadual"
+    "ocupacao_declarada": "Servidor público estadual",
+    "genero": "Masculino"
    },
    "id_partido": "dc",
    "id_coligacao": "senado-forte-es",
@@ -219,7 +224,8 @@
     "nome_completo": "Rodney Rocha Miranda",
     "data_nascimento": "1964-09-15",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado"
+    "ocupacao_declarada": "Advogado",
+    "genero": "Masculino"
    },
    "id_partido": "prtb",
    "id_coligacao": null,
@@ -256,7 +262,8 @@
     "nome_completo": "Leonardo Passos Monjardim",
     "data_nascimento": "1973-06-11",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Vereador"
+    "ocupacao_declarada": "Vereador",
+    "genero": "Masculino"
    },
    "id_partido": "novo",
    "id_coligacao": null,
@@ -293,7 +300,8 @@
     "nome_completo": "José Renato Casagrande",
     "data_nascimento": "1960-12-03",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Engenheiro"
+    "ocupacao_declarada": "Engenheiro",
+    "genero": "Masculino"
    },
    "id_partido": "psb",
    "id_coligacao": "agora-e-o-futuro-es",
@@ -330,7 +338,8 @@
     "nome_completo": "Carlos Fabian de Carvalho",
     "data_nascimento": "1977-02-23",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professor de ensino fundamental"
+    "ocupacao_declarada": "Professor de ensino fundamental",
+    "genero": "Masculino"
    },
    "id_partido": "psol",
    "id_coligacao": "federacao-es",
@@ -367,7 +376,8 @@
     "nome_completo": "Sergio Meneguelli",
     "data_nascimento": "1956-06-01",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputado"
+    "ocupacao_declarada": "Deputado",
+    "genero": "Masculino"
    },
    "id_partido": "psd",
    "id_coligacao": null,
@@ -404,7 +414,8 @@
     "nome_completo": "Marcos Ribeiro do Val",
     "data_nascimento": "1971-06-15",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Senador"
+    "ocupacao_declarada": "Senador",
+    "genero": "Masculino"
    },
    "id_partido": "avante",
    "id_coligacao": null,

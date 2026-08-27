@@ -11,7 +11,8 @@
     "nome_completo": "Maria Teresa Saenz Surita Guimarães",
     "data_nascimento": "1956-08-14",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Publicitária"
+    "ocupacao_declarada": "Publicitária",
+    "genero": "Feminino"
    },
    "id_partido": "mdb",
    "id_coligacao": "roraima-em-primeiro-lugar-rr",
@@ -48,7 +49,8 @@
     "nome_completo": "Helio Fernando Barbosa Lopes",
     "data_nascimento": "1969-03-28",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Membro das forças armadas"
+    "ocupacao_declarada": "Membro das forças armadas",
+    "genero": "Masculino"
    },
    "id_partido": "pl",
    "id_coligacao": null,
@@ -87,7 +89,8 @@
     "nome_completo": "Antonio Carlos Nicoletti",
     "data_nascimento": "1981-07-21",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Membro das forças armadas"
+    "ocupacao_declarada": "Membro das forças armadas",
+    "genero": "Masculino"
    },
    "id_partido": "pl",
    "id_coligacao": null,
@@ -135,7 +138,8 @@
     "nome_completo": "Rogério Miranda",
     "data_nascimento": "1949-07-01",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Empresário"
+    "ocupacao_declarada": "Empresário",
+    "genero": "Masculino"
    },
    "id_partido": "dc",
    "id_coligacao": null,
@@ -172,7 +176,8 @@
     "nome_completo": "Regina Aparecida Silva",
     "data_nascimento": "1969-10-05",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Comerciante"
+    "ocupacao_declarada": "Comerciante",
+    "genero": "Feminino"
    },
    "id_partido": "novo",
    "id_coligacao": null,
@@ -209,7 +214,8 @@
     "nome_completo": "Francisco de Assis Rodrigues",
     "data_nascimento": "1951-04-23",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Senador"
+    "ocupacao_declarada": "Senador",
+    "genero": "Masculino"
    },
    "id_partido": "psb",
    "id_coligacao": "roraima-mais-forte-rr",
@@ -257,7 +263,8 @@
     "nome_completo": "Hiperion de Oliveira Silva",
     "data_nascimento": "1964-10-30",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Engenheiro"
+    "ocupacao_declarada": "Engenheiro",
+    "genero": "Masculino"
    },
    "id_partido": "pv",
    "id_coligacao": "federacao-rr",
@@ -294,7 +301,8 @@
     "nome_completo": "Isamar Pessoa Ramalho",
     "data_nascimento": "1963-01-10",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Outros"
+    "ocupacao_declarada": "Outros",
+    "genero": "Masculino"
    },
    "id_partido": "uniao",
    "id_coligacao": "roraima-segue-em-frente-rr",
@@ -331,7 +339,8 @@
     "nome_completo": "Márcio Henrique Junqueira Pereira",
     "data_nascimento": "1968-01-27",
     "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Outros"
+    "ocupacao_declarada": "Outros",
+    "genero": "Masculino"
    },
    "id_partido": "psdb",
    "id_coligacao": "roraima-mais-forte-rr",
@@ -368,7 +377,8 @@
     "nome_completo": "Bartolomeu da Silva Tomaz",
     "data_nascimento": "1969-02-23",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Desenhista"
+    "ocupacao_declarada": "Desenhista",
+    "genero": "Masculino"
    },
    "id_partido": "psol",
    "id_coligacao": "federacao-rr",
@@ -405,7 +415,8 @@
     "nome_completo": "Mario Souza da Rocha",
     "data_nascimento": "1959-04-02",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público civil aposentado"
+    "ocupacao_declarada": "Servidor público civil aposentado",
+    "genero": "Masculino"
    },
    "id_partido": "psol",
    "id_coligacao": "federacao-rr",
@@ -442,7 +453,8 @@
     "nome_completo": "Maria Helena Teixeira Lima",
     "data_nascimento": "1976-03-30",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputada"
+    "ocupacao_declarada": "Deputada",
+    "genero": "Feminino"
    },
    "id_partido": "psd",
    "id_coligacao": "roraima-segue-em-frente-rr",
@@ -479,7 +491,8 @@
     "nome_completo": "Hilton Xavier de Araujo",
     "data_nascimento": "1986-08-24",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Agricultor"
+    "ocupacao_declarada": "Agricultor",
+    "genero": "Masculino"
    },
    "id_partido": "avante",
    "id_coligacao": "endireita-roraima-rr",

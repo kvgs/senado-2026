@@ -11,7 +11,8 @@
     "nome_completo": "Ciro Nogueira Lima Filho",
     "data_nascimento": "1968-11-21",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Empresário"
+    "ocupacao_declarada": "Empresário",
+    "genero": "Masculino"
    },
    "id_partido": "pp",
    "id_coligacao": "juntos-pelo-piaui-pi",
@@ -59,7 +60,8 @@
     "nome_completo": "Marcelo Costa e Castro",
     "data_nascimento": "1950-06-09",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Senador"
+    "ocupacao_declarada": "Senador",
+    "genero": "Masculino"
    },
    "id_partido": "mdb",
    "id_coligacao": "a-forca-do-povo-pi",
@@ -107,7 +109,8 @@
     "nome_completo": "Danniel Rocha do Nascimento",
     "data_nascimento": "1983-01-22",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público federal"
+    "ocupacao_declarada": "Servidor público federal",
+    "genero": "Masculino"
    },
    "id_partido": "pstu",
    "id_coligacao": null,
@@ -144,7 +147,8 @@
     "nome_completo": "Tiago Maximiano Junqueira",
     "data_nascimento": "1976-04-29",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Engenheiro"
+    "ocupacao_declarada": "Engenheiro",
+    "genero": "Masculino"
    },
    "id_partido": "pl",
    "id_coligacao": "juntos-pelo-piaui-pi",
@@ -181,7 +185,8 @@
     "nome_completo": "Dionisio Carvalho Neto",
     "data_nascimento": "1985-12-17",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público municipal"
+    "ocupacao_declarada": "Servidor público municipal",
+    "genero": "Masculino"
    },
    "id_partido": "dc",
    "id_coligacao": null,
@@ -218,7 +223,8 @@
     "nome_completo": "Evandro Marques Cunha",
     "data_nascimento": "1976-08-21",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Agente administrativo"
+    "ocupacao_declarada": "Agente administrativo",
+    "genero": "Masculino"
    },
    "id_partido": "dc",
    "id_coligacao": null,
@@ -255,7 +261,8 @@
     "nome_completo": "Cloves José dos Santos",
     "data_nascimento": "1967-01-25",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público estadual"
+    "ocupacao_declarada": "Servidor público estadual",
+    "genero": "Masculino"
    },
    "id_partido": "pco",
    "id_coligacao": null,
@@ -292,7 +299,8 @@
     "nome_completo": "Antônio de Barros Araújo Filho",
     "data_nascimento": "1971-04-28",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Médico"
+    "ocupacao_declarada": "Médico",
+    "genero": "Masculino"
    },
    "id_partido": "novo",
    "id_coligacao": null,
@@ -335,7 +343,8 @@
     "nome_completo": "Paulo Roberto Bezerra de Oliveira",
     "data_nascimento": "1968-06-23",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Membro das forças armadas"
+    "ocupacao_declarada": "Membro das forças armadas",
+    "genero": "Masculino"
    },
    "id_partido": "mobiliza",
    "id_coligacao": null,
@@ -372,7 +381,8 @@
     "nome_completo": "Antonio Almeida de Sousa",
     "data_nascimento": "1962-10-16",
     "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Comerciante"
+    "ocupacao_declarada": "Comerciante",
+    "genero": "Masculino"
    },
    "id_partido": "mobiliza",
    "id_coligacao": null,
@@ -409,7 +419,8 @@
     "nome_completo": "Evandro Craveiro da Rocha",
     "data_nascimento": "1976-02-03",
     "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Outros"
+    "ocupacao_declarada": "Outros",
+    "genero": "Masculino"
    },
    "id_partido": "democrata",
    "id_coligacao": null,
@@ -446,7 +457,8 @@
     "nome_completo": "Jardenya Eylane Bezerra Teles",
     "data_nascimento": "1978-03-17",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Outros"
+    "ocupacao_declarada": "Outros",
+    "genero": "Feminino"
    },
    "id_partido": "democrata",
    "id_coligacao": null,
@@ -483,7 +495,8 @@
     "nome_completo": "Francisco Jorge Lopes Sousa",
     "data_nascimento": "1961-12-21",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público federal"
+    "ocupacao_declarada": "Servidor público federal",
+    "genero": "Masculino"
    },
    "id_partido": "psdb",
    "id_coligacao": "federacao-pi",
@@ -520,7 +533,8 @@
     "nome_completo": "Francinaldo Silva Leão",
     "data_nascimento": "1975-07-13",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Agricultor"
+    "ocupacao_declarada": "Agricultor",
+    "genero": "Masculino"
    },
    "id_partido": "psol",
    "id_coligacao": "federacao-pi",
@@ -557,7 +571,8 @@
     "nome_completo": "Maria Madalena Nunes",
     "data_nascimento": "1962-11-15",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidora pública federal"
+    "ocupacao_declarada": "Servidora pública federal",
+    "genero": "Feminino"
    },
    "id_partido": "psol",
    "id_coligacao": "federacao-pi",
@@ -594,7 +609,8 @@
     "nome_completo": "Julio Cesar de Carvalho Lima",
     "data_nascimento": "1948-08-25",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputado"
+    "ocupacao_declarada": "Deputado",
+    "genero": "Masculino"
    },
    "id_partido": "psd",
    "id_coligacao": "a-forca-do-povo-pi",
@@ -642,7 +658,8 @@
     "nome_completo": "Antônio José de Freitas Lira",
     "data_nascimento": "1960-09-21",
     "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Aposentado (exceto servidor público)"
+    "ocupacao_declarada": "Aposentado (exceto servidor público)",
+    "genero": "Masculino"
    },
    "id_partido": "avante",
    "id_coligacao": "a-forca-da-fe-pi",
@@ -681,7 +698,8 @@
     "nome_completo": "Alexandre Mariano Lustosa",
     "data_nascimento": "1964-10-17",
     "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Servidor público municipal"
+    "ocupacao_declarada": "Servidor público municipal",
+    "genero": "Masculino"
    },
    "id_partido": "avante",
    "id_coligacao": null,
@@ -720,7 +738,8 @@
     "nome_completo": "Francisco de Sena Santos",
     "data_nascimento": "1981-02-08",
     "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Empresário"
+    "ocupacao_declarada": "Empresário",
+    "genero": "Masculino"
    },
    "id_partido": "avante",
    "id_coligacao": null,
@@ -757,7 +776,8 @@
     "nome_completo": "Pedro Laurentino Reis Pereira",
     "data_nascimento": "1956-09-06",
     "escolaridade": "Superior incompleto",
-    "ocupacao_declarada": "Servidor público federal"
+    "ocupacao_declarada": "Servidor público federal",
+    "genero": "Masculino"
    },
    "id_partido": "up",
    "id_coligacao": null,

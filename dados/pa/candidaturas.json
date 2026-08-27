@@ -11,7 +11,8 @@
     "nome_completo": "Celso Sabino de Oliveira",
     "data_nascimento": "1978-08-29",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público estadual"
+    "ocupacao_declarada": "Servidor público estadual",
+    "genero": "Masculino"
    },
    "id_partido": "pdt",
    "id_coligacao": null,
@@ -59,7 +60,8 @@
     "nome_completo": "Helder Zahluth Barbalho",
     "data_nascimento": "1979-05-18",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Empresário"
+    "ocupacao_declarada": "Empresário",
+    "genero": "Masculino"
    },
    "id_partido": "mdb",
    "id_coligacao": "o-para-ta-junto-pa",
@@ -96,7 +98,8 @@
     "nome_completo": "José da Cruz Marinho",
     "data_nascimento": "1959-09-18",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Senador"
+    "ocupacao_declarada": "Senador",
+    "genero": "Masculino"
    },
    "id_partido": "pode",
    "id_coligacao": null,
@@ -145,7 +148,8 @@
     "nome_completo": "Eder Mauro Cardoso Barra",
     "data_nascimento": "1960-12-14",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público estadual"
+    "ocupacao_declarada": "Servidor público estadual",
+    "genero": "Masculino"
    },
    "id_partido": "pl",
    "id_coligacao": null,
@@ -193,7 +197,8 @@
     "nome_completo": "Willem da Silva",
     "data_nascimento": "1987-10-30",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Eletricista e assemelhados"
+    "ocupacao_declarada": "Eletricista e assemelhados",
+    "genero": "Masculino"
    },
    "id_partido": "dc",
    "id_coligacao": null,
@@ -230,7 +235,8 @@
     "nome_completo": "Breno Ramos Guimaraes Martins",
     "data_nascimento": "1981-07-16",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público estadual"
+    "ocupacao_declarada": "Servidor público estadual",
+    "genero": "Masculino"
    },
    "id_partido": "mobiliza",
    "id_coligacao": null,
@@ -267,7 +273,8 @@
     "nome_completo": "Edlaine Guimarães Santos Rodrigues",
     "data_nascimento": "1982-08-12",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Contadora"
+    "ocupacao_declarada": "Contadora",
+    "genero": "Feminino"
    },
    "id_partido": "democrata",
    "id_coligacao": null,
@@ -304,7 +311,8 @@
     "nome_completo": "Francisco das Chagas Silva Melo Filho",
     "data_nascimento": "1961-04-19",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputado"
+    "ocupacao_declarada": "Deputado",
+    "genero": "Masculino"
    },
    "id_partido": "uniao",
    "id_coligacao": "o-para-ta-junto-pa",
@@ -341,7 +349,8 @@
     "nome_completo": "Marcelino Conti de Souza",
     "data_nascimento": "1964-07-29",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público federal"
+    "ocupacao_declarada": "Servidor público federal",
+    "genero": "Masculino"
    },
    "id_partido": "psol",
    "id_coligacao": "federacao-pa",
@@ -378,7 +387,8 @@
     "nome_completo": "Gizelle Soares de Freitas",
     "data_nascimento": "1982-09-23",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Assistente social"
+    "ocupacao_declarada": "Assistente social",
+    "genero": "Feminino"
    },
    "id_partido": "psol",
    "id_coligacao": "federacao-pa",
@@ -415,7 +425,8 @@
     "nome_completo": "Lívia Maria Araújo Noronha de Oliveira",
     "data_nascimento": "1990-01-24",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professora de ensino superior"
+    "ocupacao_declarada": "Professora de ensino superior",
+    "genero": "Feminino"
    },
    "id_partido": "solidariedade",
    "id_coligacao": "federacao-pa",
@@ -452,7 +463,8 @@
     "nome_completo": "Fernanda Maristane Lopes Araujo",
     "data_nascimento": "1979-04-24",
     "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professora de ensino médio"
+    "ocupacao_declarada": "Professora de ensino médio",
+    "genero": "Feminino"
    },
    "id_partido": "up",
    "id_coligacao": null,

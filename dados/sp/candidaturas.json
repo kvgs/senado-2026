@@ -1,1328 +1,1343 @@
 {
- "_nota": "Pessoa e candidatura no mesmo arquivo, com situacao_registro e situacao_parlamentar aninhadas como histórico. Ver dados/README.md. Nenhum CPF aqui: por princípio, CPF não sai da Bronze.",
- "_data_referencia": "2026-08-24",
- "_fonte_registro": "doc-nexo-base-2026 (espelho do registro TSE). Nível: verificada. TSE direto inacessível (HTTP 403).",
- "candidaturas": [
-  {
-   "id_candidatura": "sen-sp-2026-tebet",
-   "pessoa": {
-    "nome_urna": "Simone Tebet",
-    "nome_completo": "Simone Nassar Tebet Rocha",
-    "data_nascimento": "1970-02-22",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogada"
-   },
-   "id_partido": "psb",
-   "id_coligacao": "desperta-sp",
-   "cargo": "senador",
-   "uf": "SP",
-   "ano": 2026,
-   "numero_urna": "400",
-   "sequencial_tse": "250002551502",
-   "bens_declarados_brl": 14293526.96,
-   "suplentes": [
-    "Laio Morais",
-    "Marcelo Barbieri"
-   ],
-   "situacao_registro": [
+  "_nota": "Pessoa e candidatura no mesmo arquivo, com situacao_registro e situacao_parlamentar aninhadas como histórico. Ver dados/README.md. Nenhum CPF aqui: por princípio, CPF não sai da Bronze.",
+  "_data_referencia": "2026-08-24",
+  "_fonte_registro": "doc-nexo-base-2026 (espelho do registro TSE). Nível: verificada. TSE direto inacessível (HTTP 403).",
+  "candidaturas": [
     {
-     "situacao": "Aguardando julgamento",
-     "observado_em": "2026-08-24"
-    }
-   ],
-   "mandatos_anteriores": [
-    {
-     "cargo": "senador",
-     "uf": "MS",
-     "ano": 2014,
-     "resultado": "eleita",
-     "votos": 640336
+      "id_candidatura": "sen-sp-2026-tebet",
+      "pessoa": {
+        "nome_urna": "Simone Tebet",
+        "nome_completo": "Simone Nassar Tebet Rocha",
+        "data_nascimento": "1970-02-22",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Advogada",
+        "genero": "Feminino"
+      },
+      "id_partido": "psb",
+      "id_coligacao": "desperta-sp",
+      "cargo": "senador",
+      "uf": "SP",
+      "ano": 2026,
+      "numero_urna": "400",
+      "sequencial_tse": "250002551502",
+      "bens_declarados_brl": 14293526.96,
+      "suplentes": [
+        "Laio Morais",
+        "Marcelo Barbieri"
+      ],
+      "situacao_registro": [
+        {
+          "situacao": "Aguardando julgamento",
+          "observado_em": "2026-08-24"
+        }
+      ],
+      "mandatos_anteriores": [
+        {
+          "cargo": "senador",
+          "uf": "MS",
+          "ano": 2014,
+          "resultado": "eleita",
+          "votos": 640336
+        },
+        {
+          "cargo": "presidente",
+          "ano": 2022,
+          "resultado": "nao_eleita",
+          "votos": 4915423
+        },
+        {
+          "cargo": "vice_governador",
+          "uf": "MS",
+          "ano": 2010,
+          "resultado": "eleita",
+          "votos": 704407
+        }
+      ],
+      "_nota": "Toda a trajetória eleitoral anterior é em MS; concorre por SP em 2026. Fato verificável, apresentar sem juízo de valor.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@simonetebet",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes": [
+          "HTTPS://LINKTR.EE/SIMONETEBET",
+          "HTTPS://SIMONE400.COM.BR/",
+          "HTTPS://SIMONETEBET.COM.BR/",
+          "HTTPS://SOUNDCLOUD.COM/SIMONE-TEBET-25534643",
+          "HTTPS://WWW.FACEBOOK.COM/SIMONETEBET/",
+          "HTTPS://WWW.FLICKR.COM/PHOTOS/SIMONETEBETBR/",
+          "HTTPS://WWW.INSTAGRAM.COM/SIMONETEBET/",
+          "HTTPS://WWW.KWAI.COM/@SIMONETEBET",
+          "HTTPS://WWW.THREADS.COM/@SIMONETEBET",
+          "HTTPS://WWW.TIKTOK.COM/@SIMONETEBET.400",
+          "HTTPS://WWW.TIKTOK.COM/@SIMONETEBETBR",
+          "HTTPS://X.COM/SIMONETEBETBR",
+          "WHATSAPP.COM/CHANNEL/0029VB8ZLGBIXNLWMP0WJU2B",
+          "https://www.youtube.com/SimoneTebet"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-24",
+        "site": "HTTPS://SIMONETEBET.COM.BR/",
+        "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
+      },
+      "_conferencia_registro": {
+        "conferido_em": "2026-08-24",
+        "contra": "doc-tse-consulta-cand-2026",
+        "campos": [
+          "nome_urna",
+          "nome_completo",
+          "data_nascimento",
+          "escolaridade",
+          "partido",
+          "numero_urna",
+          "cargo"
+        ],
+        "resultado": "todos conferem com o registro oficial"
+      },
+      "foto": {
+        "arquivo": "fotos-candidatos/250002551502.jpg",
+        "credito": "TSE — foto de registro de candidatura",
+        "bytes": 6921,
+        "sha256_16": "91fa152ba1f2b115",
+        "obtida_em": "2026-08-25",
+        "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
+      }
     },
     {
-     "cargo": "presidente",
-     "ano": 2022,
-     "resultado": "nao_eleita",
-     "votos": 4915423
+      "id_candidatura": "sen-sp-2026-marina",
+      "pessoa": {
+        "nome_urna": "Marina Silva",
+        "nome_completo": "Maria Osmarina Marina da Silva Vaz de Lima",
+        "data_nascimento": "1958-02-08",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Deputada",
+        "genero": "Feminino"
+      },
+      "id_partido": "rede",
+      "id_coligacao": "desperta-sp",
+      "cargo": "senador",
+      "uf": "SP",
+      "ano": 2026,
+      "numero_urna": "180",
+      "sequencial_tse": "250002551501",
+      "bens_declarados_brl": 274503.85,
+      "suplentes": [
+        "Djalma Nery",
+        "Antonio Neto"
+      ],
+      "situacao_registro": [
+        {
+          "situacao": "Aguardando julgamento",
+          "observado_em": "2026-08-24"
+        }
+      ],
+      "situacao_parlamentar": [
+        {
+          "casa": "camara",
+          "id_externo": "220637",
+          "situacao": "Exercício",
+          "condicao": "Titular",
+          "desde": "2026-04-01",
+          "motivo_afastamento_anterior": "Licenciada do mandato para ocupar o Ministério do Meio Ambiente",
+          "_regra": "Obrigatório exibir junto de qualquer contagem de produção legislativa."
+        }
+      ],
+      "mandatos_anteriores": [
+        {
+          "cargo": "deputado_federal",
+          "uf": "SP",
+          "ano": 2022,
+          "resultado": "eleita",
+          "votos": 237526
+        },
+        {
+          "cargo": "senador",
+          "uf": "AC",
+          "ano": 2002,
+          "resultado": "eleita",
+          "votos": 157588
+        }
+      ],
+      "contato": {
+        "email": "dep.marinasilva@camara.leg.br",
+        "email_fonte": "Câmara dos Deputados (dados abertos)",
+        "email_tipo": "institucional",
+        "instagram": "@marinasilvaoficial",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_nota": "E-mail INSTITUCIONAL do gabinete, obtido de dados abertos da casa legislativa. Não é e-mail de campanha. Só existe porque a candidatura tem mandato — as que não têm ainda não têm contato registrado aqui.",
+        "redes": [
+          "HTTPS://MARINASILVA.ORG.BR/",
+          "HTTPS://WWW.FACEBOOK.COM/MARINASILVA.OFICIAL/",
+          "HTTPS://WWW.INSTAGRAM.COM/MARINASILVAOFICIAL/",
+          "HTTPS://WWW.THREADS.COM/@MARINASILVAOFICIAL",
+          "HTTPS://WWW.TIKTOK.COM/@_MARINA.SILVA",
+          "HTTPS://WWW.YOUTUBE.COM/@MSILVAONLINE",
+          "HTTPS://X.COM/MARINASILVA"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-24",
+        "site": "HTTPS://MARINASILVA.ORG.BR/",
+        "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
+      },
+      "_conferencia_registro": {
+        "conferido_em": "2026-08-24",
+        "contra": "doc-tse-consulta-cand-2026",
+        "campos": [
+          "nome_urna",
+          "nome_completo",
+          "data_nascimento",
+          "escolaridade",
+          "partido",
+          "numero_urna",
+          "cargo"
+        ],
+        "resultado": "todos conferem com o registro oficial"
+      },
+      "foto": {
+        "arquivo": "fotos-candidatos/250002551501.jpg",
+        "credito": "TSE — foto de registro de candidatura",
+        "bytes": 5158,
+        "sha256_16": "fde8f8d562f6f0d4",
+        "obtida_em": "2026-08-25",
+        "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
+      }
     },
     {
-     "cargo": "vice_governador",
-     "uf": "MS",
-     "ano": 2010,
-     "resultado": "eleita",
-     "votos": 704407
-    }
-   ],
-   "_nota": "Toda a trajetória eleitoral anterior é em MS; concorre por SP em 2026. Fato verificável, apresentar sem juízo de valor.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": "@simonetebet",
-    "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "redes": [
-     "HTTPS://LINKTR.EE/SIMONETEBET",
-     "HTTPS://SIMONE400.COM.BR/",
-     "HTTPS://SIMONETEBET.COM.BR/",
-     "HTTPS://SOUNDCLOUD.COM/SIMONE-TEBET-25534643",
-     "HTTPS://WWW.FACEBOOK.COM/SIMONETEBET/",
-     "HTTPS://WWW.FLICKR.COM/PHOTOS/SIMONETEBETBR/",
-     "HTTPS://WWW.INSTAGRAM.COM/SIMONETEBET/",
-     "HTTPS://WWW.KWAI.COM/@SIMONETEBET",
-     "HTTPS://WWW.THREADS.COM/@SIMONETEBET",
-     "HTTPS://WWW.TIKTOK.COM/@SIMONETEBET.400",
-     "HTTPS://WWW.TIKTOK.COM/@SIMONETEBETBR",
-     "HTTPS://X.COM/SIMONETEBETBR",
-     "WHATSAPP.COM/CHANNEL/0029VB8ZLGBIXNLWMP0WJU2B",
-     "https://www.youtube.com/SimoneTebet"
-    ],
-    "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "redes_consultado_em": "2026-08-24",
-    "site": "HTTPS://SIMONETEBET.COM.BR/",
-    "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
-   },
-   "_conferencia_registro": {
-    "conferido_em": "2026-08-24",
-    "contra": "doc-tse-consulta-cand-2026",
-    "campos": [
-     "nome_urna",
-     "nome_completo",
-     "data_nascimento",
-     "escolaridade",
-     "partido",
-     "numero_urna",
-     "cargo"
-    ],
-    "resultado": "todos conferem com o registro oficial"
-   },
-   "foto": {
-    "arquivo": "fotos-candidatos/250002551502.jpg",
-    "credito": "TSE — foto de registro de candidatura",
-    "bytes": 6921,
-    "sha256_16": "91fa152ba1f2b115",
-    "obtida_em": "2026-08-25",
-    "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
-   }
-  },
-  {
-   "id_candidatura": "sen-sp-2026-marina",
-   "pessoa": {
-    "nome_urna": "Marina Silva",
-    "nome_completo": "Maria Osmarina Marina da Silva Vaz de Lima",
-    "data_nascimento": "1958-02-08",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputada"
-   },
-   "id_partido": "rede",
-   "id_coligacao": "desperta-sp",
-   "cargo": "senador",
-   "uf": "SP",
-   "ano": 2026,
-   "numero_urna": "180",
-   "sequencial_tse": "250002551501",
-   "bens_declarados_brl": 274503.85,
-   "suplentes": [
-    "Djalma Nery",
-    "Antonio Neto"
-   ],
-   "situacao_registro": [
-    {
-     "situacao": "Aguardando julgamento",
-     "observado_em": "2026-08-24"
-    }
-   ],
-   "situacao_parlamentar": [
-    {
-     "casa": "camara",
-     "id_externo": "220637",
-     "situacao": "Exercício",
-     "condicao": "Titular",
-     "desde": "2026-04-01",
-     "motivo_afastamento_anterior": "Licenciada do mandato para ocupar o Ministério do Meio Ambiente",
-     "_regra": "Obrigatório exibir junto de qualquer contagem de produção legislativa."
-    }
-   ],
-   "mandatos_anteriores": [
-    {
-     "cargo": "deputado_federal",
-     "uf": "SP",
-     "ano": 2022,
-     "resultado": "eleita",
-     "votos": 237526
+      "id_candidatura": "sen-sp-2026-derrite",
+      "pessoa": {
+        "nome_urna": "Guilherme Derrite",
+        "nome_completo": "Guilherme Muraro Derrite",
+        "data_nascimento": "1984-10-10",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Deputado",
+        "genero": "Masculino"
+      },
+      "id_partido": "pp",
+      "id_coligacao": "coragem-avancando",
+      "cargo": "senador",
+      "uf": "SP",
+      "ano": 2026,
+      "numero_urna": "111",
+      "sequencial_tse": "250002541312",
+      "bens_declarados_brl": 2021196.05,
+      "suplentes": [
+        "Vicente Santini",
+        "Julio Serson"
+      ],
+      "situacao_registro": [
+        {
+          "situacao": "Aguardando julgamento",
+          "observado_em": "2026-08-24"
+        }
+      ],
+      "situacao_parlamentar": [
+        {
+          "casa": "camara",
+          "id_externo": "204531",
+          "situacao": "Exercício",
+          "condicao": "Titular",
+          "desde": "2025-12-02",
+          "motivo_afastamento_anterior": "Licenciado do mandato para ocupar a Secretaria de Segurança Pública de São Paulo",
+          "_regra": "Obrigatório exibir junto de qualquer contagem de produção legislativa."
+        }
+      ],
+      "mandatos_anteriores": [
+        {
+          "cargo": "deputado_federal",
+          "uf": "SP",
+          "ano": 2022,
+          "partido_na_epoca": "pl",
+          "resultado": "eleito",
+          "votos": 239772
+        },
+        {
+          "cargo": "deputado_federal",
+          "uf": "SP",
+          "ano": 2018,
+          "partido_na_epoca": "pp",
+          "resultado": "eleito",
+          "votos": 119034
+        }
+      ],
+      "_nota": "Eleito pelo PL em 2022, hoje no PP. Mudança de partido no curso do mandato — exibir.",
+      "contato": {
+        "email": "dep.guilhermederrite@camara.leg.br",
+        "email_fonte": "Câmara dos Deputados (dados abertos)",
+        "email_tipo": "institucional",
+        "instagram": "@guilhermederrite",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_nota": "E-mail INSTITUCIONAL do gabinete, obtido de dados abertos da casa legislativa. Não é e-mail de campanha. Só existe porque a candidatura tem mandato — as que não têm ainda não têm contato registrado aqui.",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/GUILHERMEDERRITE",
+          "HTTPS://WWW.INSTAGRAM.COM/GUILHERMEDERRITE",
+          "HTTPS://WWW.TIKTOK.COM/TAG/DERRITE",
+          "HTTPS://X.COM/DERRITESP"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-24",
+        "_erro_classificacao_corrigido": "O endereco HTTPS://WWW.TIKTOK.COM/TAG/DERRITE estava registrado como 'site oficial'. E uma pagina de HASHTAG do TikTok, nao site da candidatura — meu classificador so reconhecia o padrao /@usuario e caiu no caso generico. Pagina de hashtag nao e publicada pela candidatura e nao sustenta declaracao nenhuma."
+      },
+      "_conferencia_registro": {
+        "conferido_em": "2026-08-24",
+        "contra": "doc-tse-consulta-cand-2026",
+        "campos": [
+          "nome_urna",
+          "nome_completo",
+          "data_nascimento",
+          "escolaridade",
+          "partido",
+          "numero_urna",
+          "cargo"
+        ],
+        "resultado": "todos conferem com o registro oficial"
+      },
+      "foto": {
+        "arquivo": "fotos-candidatos/250002541312.jpg",
+        "credito": "TSE — foto de registro de candidatura",
+        "bytes": 5717,
+        "sha256_16": "1c22611d33c2486e",
+        "obtida_em": "2026-08-25",
+        "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
+      }
     },
     {
-     "cargo": "senador",
-     "uf": "AC",
-     "ano": 2002,
-     "resultado": "eleita",
-     "votos": 157588
-    }
-   ],
-   "contato": {
-    "email": "dep.marinasilva@camara.leg.br",
-    "email_fonte": "Câmara dos Deputados (dados abertos)",
-    "email_tipo": "institucional",
-    "instagram": "@marinasilvaoficial",
-    "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "_nota": "E-mail INSTITUCIONAL do gabinete, obtido de dados abertos da casa legislativa. Não é e-mail de campanha. Só existe porque a candidatura tem mandato — as que não têm ainda não têm contato registrado aqui.",
-    "redes": [
-     "HTTPS://MARINASILVA.ORG.BR/",
-     "HTTPS://WWW.FACEBOOK.COM/MARINASILVA.OFICIAL/",
-     "HTTPS://WWW.INSTAGRAM.COM/MARINASILVAOFICIAL/",
-     "HTTPS://WWW.THREADS.COM/@MARINASILVAOFICIAL",
-     "HTTPS://WWW.TIKTOK.COM/@_MARINA.SILVA",
-     "HTTPS://WWW.YOUTUBE.COM/@MSILVAONLINE",
-     "HTTPS://X.COM/MARINASILVA"
-    ],
-    "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "redes_consultado_em": "2026-08-24",
-    "site": "HTTPS://MARINASILVA.ORG.BR/",
-    "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
-   },
-   "_conferencia_registro": {
-    "conferido_em": "2026-08-24",
-    "contra": "doc-tse-consulta-cand-2026",
-    "campos": [
-     "nome_urna",
-     "nome_completo",
-     "data_nascimento",
-     "escolaridade",
-     "partido",
-     "numero_urna",
-     "cargo"
-    ],
-    "resultado": "todos conferem com o registro oficial"
-   },
-   "foto": {
-    "arquivo": "fotos-candidatos/250002551501.jpg",
-    "credito": "TSE — foto de registro de candidatura",
-    "bytes": 5158,
-    "sha256_16": "fde8f8d562f6f0d4",
-    "obtida_em": "2026-08-25",
-    "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
-   }
-  },
-  {
-   "id_candidatura": "sen-sp-2026-derrite",
-   "pessoa": {
-    "nome_urna": "Guilherme Derrite",
-    "nome_completo": "Guilherme Muraro Derrite",
-    "data_nascimento": "1984-10-10",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputado"
-   },
-   "id_partido": "pp",
-   "id_coligacao": "coragem-avancando",
-   "cargo": "senador",
-   "uf": "SP",
-   "ano": 2026,
-   "numero_urna": "111",
-   "sequencial_tse": "250002541312",
-   "bens_declarados_brl": 2021196.05,
-   "suplentes": [
-    "Vicente Santini",
-    "Julio Serson"
-   ],
-   "situacao_registro": [
-    {
-     "situacao": "Aguardando julgamento",
-     "observado_em": "2026-08-24"
-    }
-   ],
-   "situacao_parlamentar": [
-    {
-     "casa": "camara",
-     "id_externo": "204531",
-     "situacao": "Exercício",
-     "condicao": "Titular",
-     "desde": "2025-12-02",
-     "motivo_afastamento_anterior": "Licenciado do mandato para ocupar a Secretaria de Segurança Pública de São Paulo",
-     "_regra": "Obrigatório exibir junto de qualquer contagem de produção legislativa."
-    }
-   ],
-   "mandatos_anteriores": [
-    {
-     "cargo": "deputado_federal",
-     "uf": "SP",
-     "ano": 2022,
-     "partido_na_epoca": "pl",
-     "resultado": "eleito",
-     "votos": 239772
+      "id_candidatura": "sen-sp-2026-salles",
+      "pessoa": {
+        "nome_urna": "Salles",
+        "nome_completo": "Ricardo de Aquino Salles",
+        "data_nascimento": "1975-06-08",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Advogado",
+        "genero": "Masculino"
+      },
+      "id_partido": "novo",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "SP",
+      "ano": 2026,
+      "numero_urna": "300",
+      "sequencial_tse": "250002532794",
+      "bens_declarados_brl": 9050000.0,
+      "suplentes": [
+        "Federico d'Avila",
+        "Ferreira"
+      ],
+      "situacao_registro": [
+        {
+          "situacao": "Aguardando julgamento",
+          "observado_em": "2026-08-24"
+        }
+      ],
+      "situacao_parlamentar": [
+        {
+          "casa": "camara",
+          "id_externo": "220633",
+          "situacao": "Exercício",
+          "condicao": "Titular",
+          "desde": "2023-02-01",
+          "motivo_afastamento_anterior": null,
+          "_nota": "Mandato inteiro em exercício, sem licença. Único dos três nessa condição."
+        }
+      ],
+      "mandatos_anteriores": [
+        {
+          "cargo": "deputado_federal",
+          "uf": "SP",
+          "ano": 2022,
+          "partido_na_epoca": "pl",
+          "resultado": "eleito",
+          "votos": 640918
+        }
+      ],
+      "_nota": "Eleito pelo PL em 2022, hoje no NOVO.",
+      "contato": {
+        "email": "dep.ricardosalles@camara.leg.br",
+        "email_fonte": "Câmara dos Deputados (dados abertos)",
+        "email_tipo": "institucional",
+        "instagram": "@ricardosallesmma",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_nota": "E-mail INSTITUCIONAL do gabinete, obtido de dados abertos da casa legislativa. Não é e-mail de campanha. Só existe porque a candidatura tem mandato — as que não têm ainda não têm contato registrado aqui.",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/@RICARDOSALLESMMA",
+          "HTTPS://WWW.INSTAGRAM.COM/RICARDOSALLESMMA",
+          "HTTPS://WWW.RICARDOSALLES.COM.BR",
+          "HTTPS://WWW.TWITTER.COM/@RSALLESMMA"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-24",
+        "site": "HTTPS://WWW.RICARDOSALLES.COM.BR",
+        "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
+      },
+      "_conferencia_registro": {
+        "conferido_em": "2026-08-24",
+        "contra": "doc-tse-consulta-cand-2026",
+        "campos": [
+          "nome_urna",
+          "nome_completo",
+          "data_nascimento",
+          "escolaridade",
+          "partido",
+          "numero_urna",
+          "cargo"
+        ],
+        "resultado": "todos conferem com o registro oficial"
+      },
+      "foto": {
+        "arquivo": "fotos-candidatos/250002532794.jpg",
+        "credito": "TSE — foto de registro de candidatura",
+        "bytes": 5543,
+        "sha256_16": "28b85881710bb7c8",
+        "obtida_em": "2026-08-25",
+        "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
+      }
     },
     {
-     "cargo": "deputado_federal",
-     "uf": "SP",
-     "ano": 2018,
-     "partido_na_epoca": "pp",
-     "resultado": "eleito",
-     "votos": 119034
-    }
-   ],
-   "_nota": "Eleito pelo PL em 2022, hoje no PP. Mudança de partido no curso do mandato — exibir.",
-   "contato": {
-    "email": "dep.guilhermederrite@camara.leg.br",
-    "email_fonte": "Câmara dos Deputados (dados abertos)",
-    "email_tipo": "institucional",
-    "instagram": "@guilhermederrite",
-    "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "_nota": "E-mail INSTITUCIONAL do gabinete, obtido de dados abertos da casa legislativa. Não é e-mail de campanha. Só existe porque a candidatura tem mandato — as que não têm ainda não têm contato registrado aqui.",
-    "redes": [
-     "HTTPS://WWW.FACEBOOK.COM/GUILHERMEDERRITE",
-     "HTTPS://WWW.INSTAGRAM.COM/GUILHERMEDERRITE",
-     "HTTPS://WWW.TIKTOK.COM/TAG/DERRITE",
-     "HTTPS://X.COM/DERRITESP"
-    ],
-    "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "redes_consultado_em": "2026-08-24",
-    "_erro_classificacao_corrigido": "O endereco HTTPS://WWW.TIKTOK.COM/TAG/DERRITE estava registrado como 'site oficial'. E uma pagina de HASHTAG do TikTok, nao site da candidatura — meu classificador so reconhecia o padrao /@usuario e caiu no caso generico. Pagina de hashtag nao e publicada pela candidatura e nao sustenta declaracao nenhuma."
-   },
-   "_conferencia_registro": {
-    "conferido_em": "2026-08-24",
-    "contra": "doc-tse-consulta-cand-2026",
-    "campos": [
-     "nome_urna",
-     "nome_completo",
-     "data_nascimento",
-     "escolaridade",
-     "partido",
-     "numero_urna",
-     "cargo"
-    ],
-    "resultado": "todos conferem com o registro oficial"
-   },
-   "foto": {
-    "arquivo": "fotos-candidatos/250002541312.jpg",
-    "credito": "TSE — foto de registro de candidatura",
-    "bytes": 5717,
-    "sha256_16": "1c22611d33c2486e",
-    "obtida_em": "2026-08-25",
-    "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
-   }
-  },
-  {
-   "id_candidatura": "sen-sp-2026-salles",
-   "pessoa": {
-    "nome_urna": "Salles",
-    "nome_completo": "Ricardo de Aquino Salles",
-    "data_nascimento": "1975-06-08",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogado"
-   },
-   "id_partido": "novo",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "SP",
-   "ano": 2026,
-   "numero_urna": "300",
-   "sequencial_tse": "250002532794",
-   "bens_declarados_brl": 9050000.0,
-   "suplentes": [
-    "Federico d'Avila",
-    "Ferreira"
-   ],
-   "situacao_registro": [
-    {
-     "situacao": "Aguardando julgamento",
-     "observado_em": "2026-08-24"
-    }
-   ],
-   "situacao_parlamentar": [
-    {
-     "casa": "camara",
-     "id_externo": "220633",
-     "situacao": "Exercício",
-     "condicao": "Titular",
-     "desde": "2023-02-01",
-     "motivo_afastamento_anterior": null,
-     "_nota": "Mandato inteiro em exercício, sem licença. Único dos três nessa condição."
-    }
-   ],
-   "mandatos_anteriores": [
-    {
-     "cargo": "deputado_federal",
-     "uf": "SP",
-     "ano": 2022,
-     "partido_na_epoca": "pl",
-     "resultado": "eleito",
-     "votos": 640918
-    }
-   ],
-   "_nota": "Eleito pelo PL em 2022, hoje no NOVO.",
-   "contato": {
-    "email": "dep.ricardosalles@camara.leg.br",
-    "email_fonte": "Câmara dos Deputados (dados abertos)",
-    "email_tipo": "institucional",
-    "instagram": "@ricardosallesmma",
-    "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "_nota": "E-mail INSTITUCIONAL do gabinete, obtido de dados abertos da casa legislativa. Não é e-mail de campanha. Só existe porque a candidatura tem mandato — as que não têm ainda não têm contato registrado aqui.",
-    "redes": [
-     "HTTPS://WWW.FACEBOOK.COM/@RICARDOSALLESMMA",
-     "HTTPS://WWW.INSTAGRAM.COM/RICARDOSALLESMMA",
-     "HTTPS://WWW.RICARDOSALLES.COM.BR",
-     "HTTPS://WWW.TWITTER.COM/@RSALLESMMA"
-    ],
-    "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "redes_consultado_em": "2026-08-24",
-    "site": "HTTPS://WWW.RICARDOSALLES.COM.BR",
-    "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
-   },
-   "_conferencia_registro": {
-    "conferido_em": "2026-08-24",
-    "contra": "doc-tse-consulta-cand-2026",
-    "campos": [
-     "nome_urna",
-     "nome_completo",
-     "data_nascimento",
-     "escolaridade",
-     "partido",
-     "numero_urna",
-     "cargo"
-    ],
-    "resultado": "todos conferem com o registro oficial"
-   },
-   "foto": {
-    "arquivo": "fotos-candidatos/250002532794.jpg",
-    "credito": "TSE — foto de registro de candidatura",
-    "bytes": 5543,
-    "sha256_16": "28b85881710bb7c8",
-    "obtida_em": "2026-08-25",
-    "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
-   }
-  },
-  {
-   "id_candidatura": "sen-sp-2026-andre-do-prado",
-   "pessoa": {
-    "nome_urna": "André do Prado",
-    "nome_completo": "Andre Luis do Prado",
-    "data_nascimento": "1969-06-07",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Deputado"
-   },
-   "id_partido": "pl",
-   "id_coligacao": "coragem-avancando",
-   "cargo": "senador",
-   "uf": "SP",
-   "ano": 2026,
-   "numero_urna": "222",
-   "sequencial_tse": "250002541308",
-   "bens_declarados_brl": 692610.86,
-   "suplentes": [
-    "Fernando Godoy",
-    "Rute Costa"
-   ],
-   "situacao_registro": [
-    {
-     "situacao": "Aguardando julgamento",
-     "observado_em": "2026-08-24"
-    }
-   ],
-   "situacao_parlamentar": [
-    {
-     "casa": "alesp",
-     "id_externo": "429",
-     "id_spl": "12381",
-     "situacao": "Exercício",
-     "desde": null,
-     "cargo_na_casa": "Presidente da ALESP",
-     "_pendencia": "Divergência a resolver: uma fonte indica presidência no biênio 2023-2025, outra indica reeleição para 2025-2027 com 88 votos. Provavelmente dois mandatos consecutivos."
-    }
-   ],
-   "areas_atuacao_declaradas": [
-    "Educação",
-    "Infraestrutura",
-    "Saúde"
-   ],
-   "base_eleitoral_declarada": [
-    "Grande São Paulo",
-    "Vale do Ribeira",
-    "Vale do Paraíba"
-   ],
-   "mandatos_anteriores": [
-    {
-     "cargo": "deputado_estadual",
-     "uf": "SP",
-     "ano": 2022,
-     "resultado": "eleito",
-     "votos": 216268
+      "id_candidatura": "sen-sp-2026-andre-do-prado",
+      "pessoa": {
+        "nome_urna": "André do Prado",
+        "nome_completo": "Andre Luis do Prado",
+        "data_nascimento": "1969-06-07",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Deputado",
+        "genero": "Masculino"
+      },
+      "id_partido": "pl",
+      "id_coligacao": "coragem-avancando",
+      "cargo": "senador",
+      "uf": "SP",
+      "ano": 2026,
+      "numero_urna": "222",
+      "sequencial_tse": "250002541308",
+      "bens_declarados_brl": 692610.86,
+      "suplentes": [
+        "Fernando Godoy",
+        "Rute Costa"
+      ],
+      "situacao_registro": [
+        {
+          "situacao": "Aguardando julgamento",
+          "observado_em": "2026-08-24"
+        }
+      ],
+      "situacao_parlamentar": [
+        {
+          "casa": "alesp",
+          "id_externo": "429",
+          "id_spl": "12381",
+          "situacao": "Exercício",
+          "desde": null,
+          "cargo_na_casa": "Presidente da ALESP",
+          "_pendencia": "Divergência a resolver: uma fonte indica presidência no biênio 2023-2025, outra indica reeleição para 2025-2027 com 88 votos. Provavelmente dois mandatos consecutivos."
+        }
+      ],
+      "areas_atuacao_declaradas": [
+        "Educação",
+        "Infraestrutura",
+        "Saúde"
+      ],
+      "base_eleitoral_declarada": [
+        "Grande São Paulo",
+        "Vale do Ribeira",
+        "Vale do Paraíba"
+      ],
+      "mandatos_anteriores": [
+        {
+          "cargo": "deputado_estadual",
+          "uf": "SP",
+          "ano": 2022,
+          "resultado": "eleito",
+          "votos": 216268
+        },
+        {
+          "cargo": "deputado_estadual",
+          "uf": "SP",
+          "ano": 2018,
+          "resultado": "eleito",
+          "votos": 123313
+        },
+        {
+          "cargo": "deputado_estadual",
+          "uf": "SP",
+          "ano": 2014,
+          "resultado": "eleito",
+          "votos": 164589
+        },
+        {
+          "cargo": "deputado_estadual",
+          "uf": "SP",
+          "ano": 2010,
+          "resultado": "eleito",
+          "votos": 86346
+        },
+        {
+          "cargo": "prefeito",
+          "municipio": "Guararema",
+          "ano": 2004,
+          "resultado": "eleito"
+        }
+      ],
+      "contato": {
+        "email": "andredoprado@al.sp.gov.br",
+        "email_fonte": "ALESP (dados abertos)",
+        "email_tipo": "institucional",
+        "instagram": "@andredopradosp",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_nota": "E-mail INSTITUCIONAL do gabinete, obtido de dados abertos da casa legislativa. Não é e-mail de campanha. Só existe porque a candidatura tem mandato — as que não têm ainda não têm contato registrado aqui.",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/DEP.ANDREDOPRADO",
+          "HTTPS://WWW.INSTAGRAM.COM/ANDREDOPRADOSP/",
+          "HTTPS://WWW.TIKTOK.COM/@ANDREDOPRADO_",
+          "HTTPS://X.COM/_ANDREDOPRADO"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-24"
+      },
+      "_conferencia_registro": {
+        "conferido_em": "2026-08-24",
+        "contra": "doc-tse-consulta-cand-2026",
+        "campos": [
+          "nome_urna",
+          "nome_completo",
+          "data_nascimento",
+          "escolaridade",
+          "partido",
+          "numero_urna",
+          "cargo"
+        ],
+        "resultado": "todos conferem com o registro oficial"
+      },
+      "foto": {
+        "arquivo": "fotos-candidatos/250002541308.jpg",
+        "credito": "TSE — foto de registro de candidatura",
+        "bytes": 6277,
+        "sha256_16": "8647fde59d725be5",
+        "obtida_em": "2026-08-25",
+        "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
+      }
     },
     {
-     "cargo": "deputado_estadual",
-     "uf": "SP",
-     "ano": 2018,
-     "resultado": "eleito",
-     "votos": 123313
+      "id_candidatura": "sen-sp-2026-soninha",
+      "pessoa": {
+        "nome_urna": "Soninha Francine",
+        "nome_completo": "Sonia Francine Gaspar Marmo",
+        "data_nascimento": "1967-08-25",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Publicitária",
+        "genero": "Feminino"
+      },
+      "id_partido": "cidadania",
+      "id_coligacao": "fed-psdb-cidadania",
+      "cargo": "senador",
+      "uf": "SP",
+      "ano": 2026,
+      "numero_urna": "232",
+      "sequencial_tse": "250002552369",
+      "bens_declarados_brl": 420186.95,
+      "suplentes": [
+        "Dr. Fabio Lopes",
+        "Shell Gomes"
+      ],
+      "situacao_registro": [
+        {
+          "situacao": "Aguardando julgamento",
+          "observado_em": "2026-08-24"
+        }
+      ],
+      "cargos_executivos_anteriores": [
+        {
+          "cargo": "Secretária Municipal de Direitos Humanos e Cidadania",
+          "ente": "São Paulo",
+          "de": "2022-05",
+          "ate": "2025-01"
+        },
+        {
+          "cargo": "Coordenadora de Políticas para a Diversidade Sexual",
+          "ente": "Estado de São Paulo",
+          "de": "2015",
+          "ate": "2015"
+        },
+        {
+          "cargo": "Secretária Municipal de Assistência Social",
+          "ente": "São Paulo",
+          "de": "2017",
+          "ate": "2017"
+        },
+        {
+          "cargo": "Subprefeita da Lapa",
+          "ente": "São Paulo",
+          "de": "2009",
+          "ate": "2010"
+        }
+      ],
+      "mandatos_anteriores": [
+        {
+          "cargo": "vereador",
+          "municipio": "São Paulo",
+          "ano": 2016,
+          "resultado": "eleita",
+          "votos": 40113
+        },
+        {
+          "cargo": "vereador",
+          "municipio": "São Paulo",
+          "ano": 2004,
+          "resultado": "eleita",
+          "votos": 50989
+        }
+      ],
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@soninhafrancine_oficial",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/SONINHAFRANCINE/?LOCALE=PT_BR",
+          "HTTPS://WWW.INSTAGRAM.COM/SONINHAFRANCINE_OFICIAL/",
+          "HTTPS://X.COM/SONINHAFRANCINE"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-24",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
+      },
+      "_conferencia_registro": {
+        "conferido_em": "2026-08-24",
+        "contra": "doc-tse-consulta-cand-2026",
+        "campos": [
+          "nome_urna",
+          "nome_completo",
+          "data_nascimento",
+          "escolaridade",
+          "partido",
+          "numero_urna",
+          "cargo"
+        ],
+        "resultado": "todos conferem com o registro oficial"
+      },
+      "foto": {
+        "arquivo": "fotos-candidatos/250002552369.jpg",
+        "credito": "TSE — foto de registro de candidatura",
+        "bytes": 6503,
+        "sha256_16": "fb1e83f0c040a950",
+        "obtida_em": "2026-08-25",
+        "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
+      }
     },
     {
-     "cargo": "deputado_estadual",
-     "uf": "SP",
-     "ano": 2014,
-     "resultado": "eleito",
-     "votos": 164589
+      "id_candidatura": "sen-sp-2026-rufino",
+      "pessoa": {
+        "nome_urna": "Geraldo Rufino",
+        "nome_completo": "Geraldo Aristides Rufino",
+        "data_nascimento": "1958-11-21",
+        "escolaridade": "Ensino médio completo",
+        "ocupacao_declarada": "Empresário",
+        "genero": "Masculino"
+      },
+      "id_partido": "pode",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "SP",
+      "ano": 2026,
+      "numero_urna": "200",
+      "sequencial_tse": "250002544673",
+      "bens_declarados_brl": 5645157.05,
+      "suplentes": [
+        "Luciana Felix",
+        "Jason Albuquerque"
+      ],
+      "situacao_registro": [
+        {
+          "situacao": "Aguardando julgamento",
+          "observado_em": "2026-08-24"
+        }
+      ],
+      "mandatos_anteriores": [
+        {
+          "cargo": "deputado_federal",
+          "uf": "SP",
+          "ano": 2018,
+          "resultado": "suplente",
+          "votos": 17713
+        }
+      ],
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "instagram_fonte": null,
+        "redes": [
+          "HTTPS://BR.LINKEDIN.COM/IN/GERALDORUFINO",
+          "HTTPS://WWW.FACEBOOK.COM/GERALDORUFINOOFICIAL/?LOCALE=PT_BR",
+          "HTTPS://WWW.TIKTOK.COM/@GERALDOARUFINO",
+          "WWW.YOUTUBE.COM/@GERALDORUFINO"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-24",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
+      },
+      "_conferencia_registro": {
+        "conferido_em": "2026-08-24",
+        "contra": "doc-tse-consulta-cand-2026",
+        "campos": [
+          "nome_urna",
+          "nome_completo",
+          "data_nascimento",
+          "escolaridade",
+          "partido",
+          "numero_urna",
+          "cargo"
+        ],
+        "resultado": "todos conferem com o registro oficial"
+      },
+      "foto": {
+        "arquivo": "fotos-candidatos/250002544673.jpg",
+        "credito": "TSE — foto de registro de candidatura",
+        "bytes": 4703,
+        "sha256_16": "1104f9c55fb6fe42",
+        "obtida_em": "2026-08-25",
+        "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
+      }
     },
     {
-     "cargo": "deputado_estadual",
-     "uf": "SP",
-     "ano": 2010,
-     "resultado": "eleito",
-     "votos": 86346
+      "id_candidatura": "sen-sp-2026-schiavetto",
+      "pessoa": {
+        "nome_urna": "Guto Schiavetto",
+        "nome_completo": "Ricardo Augusto Mangue Schiavetto",
+        "data_nascimento": "1982-01-23",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Comerciante",
+        "genero": "Masculino"
+      },
+      "id_partido": "missao",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "SP",
+      "ano": 2026,
+      "numero_urna": "144",
+      "sequencial_tse": "250002554075",
+      "bens_declarados_brl": 116500.0,
+      "suplentes": [
+        "Medon",
+        "Fabio Rodrigues"
+      ],
+      "situacao_registro": [
+        {
+          "situacao": "Aguardando julgamento",
+          "observado_em": "2026-08-24"
+        }
+      ],
+      "mandatos_anteriores": [
+        {
+          "cargo": "vereador",
+          "municipio": "Limeira",
+          "ano": 2024,
+          "resultado": "suplente",
+          "votos": 998
+        },
+        {
+          "cargo": "vereador",
+          "municipio": "Limeira",
+          "ano": 2020,
+          "resultado": "suplente",
+          "votos": 806
+        },
+        {
+          "cargo": "vereador",
+          "municipio": "Limeira",
+          "ano": 2016,
+          "resultado": "nao_eleito",
+          "votos": 866
+        }
+      ],
+      "_pendencias": [
+        "Sequencial divergente: encontrado também 250002553928 em outra fonte. Resolver contra o TSE.",
+        "Candidatura ausente das listas de 17/ago de Poder360, Gazeta do Povo e JOTA — foi lançada no evento de campanha de Renan Santos e entrou depois."
+      ],
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@gutoschiavetto",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes": [
+          "https://www.gutoschiavetto.com.br/",
+          "https://www.instagram.com/gutoschiavetto/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-24",
+        "site": "https://www.gutoschiavetto.com.br/",
+        "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
+      },
+      "_conferencia_registro": {
+        "conferido_em": "2026-08-24",
+        "contra": "doc-tse-consulta-cand-2026",
+        "campos": [
+          "nome_urna",
+          "nome_completo",
+          "data_nascimento",
+          "escolaridade",
+          "partido",
+          "numero_urna",
+          "cargo"
+        ],
+        "resultado": "todos conferem com o registro oficial"
+      },
+      "foto": {
+        "arquivo": "fotos-candidatos/250002554075.jpg",
+        "credito": "TSE — foto de registro de candidatura",
+        "bytes": 5733,
+        "sha256_16": "930d34803b5773e8",
+        "obtida_em": "2026-08-25",
+        "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
+      }
     },
     {
-     "cargo": "prefeito",
-     "municipio": "Guararema",
-     "ano": 2004,
-     "resultado": "eleito"
-    }
-   ],
-   "contato": {
-    "email": "andredoprado@al.sp.gov.br",
-    "email_fonte": "ALESP (dados abertos)",
-    "email_tipo": "institucional",
-    "instagram": "@andredopradosp",
-    "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "_nota": "E-mail INSTITUCIONAL do gabinete, obtido de dados abertos da casa legislativa. Não é e-mail de campanha. Só existe porque a candidatura tem mandato — as que não têm ainda não têm contato registrado aqui.",
-    "redes": [
-     "HTTPS://WWW.FACEBOOK.COM/DEP.ANDREDOPRADO",
-     "HTTPS://WWW.INSTAGRAM.COM/ANDREDOPRADOSP/",
-     "HTTPS://WWW.TIKTOK.COM/@ANDREDOPRADO_",
-     "HTTPS://X.COM/_ANDREDOPRADO"
-    ],
-    "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "redes_consultado_em": "2026-08-24"
-   },
-   "_conferencia_registro": {
-    "conferido_em": "2026-08-24",
-    "contra": "doc-tse-consulta-cand-2026",
-    "campos": [
-     "nome_urna",
-     "nome_completo",
-     "data_nascimento",
-     "escolaridade",
-     "partido",
-     "numero_urna",
-     "cargo"
-    ],
-    "resultado": "todos conferem com o registro oficial"
-   },
-   "foto": {
-    "arquivo": "fotos-candidatos/250002541308.jpg",
-    "credito": "TSE — foto de registro de candidatura",
-    "bytes": 6277,
-    "sha256_16": "8647fde59d725be5",
-    "obtida_em": "2026-08-25",
-    "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
-   }
-  },
-  {
-   "id_candidatura": "sen-sp-2026-soninha",
-   "pessoa": {
-    "nome_urna": "Soninha Francine",
-    "nome_completo": "Sonia Francine Gaspar Marmo",
-    "data_nascimento": "1967-08-25",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Publicitária"
-   },
-   "id_partido": "cidadania",
-   "id_coligacao": "fed-psdb-cidadania",
-   "cargo": "senador",
-   "uf": "SP",
-   "ano": 2026,
-   "numero_urna": "232",
-   "sequencial_tse": "250002552369",
-   "bens_declarados_brl": 420186.95,
-   "suplentes": [
-    "Dr. Fabio Lopes",
-    "Shell Gomes"
-   ],
-   "situacao_registro": [
-    {
-     "situacao": "Aguardando julgamento",
-     "observado_em": "2026-08-24"
-    }
-   ],
-   "cargos_executivos_anteriores": [
-    {
-     "cargo": "Secretária Municipal de Direitos Humanos e Cidadania",
-     "ente": "São Paulo",
-     "de": "2022-05",
-     "ate": "2025-01"
+      "id_candidatura": "sen-sp-2026-petter-maahs",
+      "pessoa": {
+        "nome_urna": "Petter Maahs",
+        "nome_completo": "Petter Maahs da Silva",
+        "data_nascimento": "1974-11-08",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Servidor público municipal",
+        "genero": "Masculino"
+      },
+      "id_partido": "pcb",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "SP",
+      "ano": 2026,
+      "numero_urna": "211",
+      "sequencial_tse": "250002552153",
+      "bens_declarados_brl": 117533.7,
+      "suplentes": [
+        "Olga Soares",
+        "Vinicius Jardim"
+      ],
+      "situacao_registro": [
+        {
+          "situacao": "Aguardando julgamento",
+          "observado_em": "2026-08-24"
+        }
+      ],
+      "mandatos_anteriores": [],
+      "_nota": "Primeira disputa eleitoral registrada nos dados do TSE desde 1998. Pedagogo, doutor em educação pela USP, diretor de escola municipal em Cubatão desde 2008.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@petter.maahs",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/PROFILE.PHP?ID=61579060252850&LOCALE=PT_BR",
+          "HTTPS://WWW.INSTAGRAM.COM/PETTER.MAAHS/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-24",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
+      },
+      "_conferencia_registro": {
+        "conferido_em": "2026-08-24",
+        "contra": "doc-tse-consulta-cand-2026",
+        "campos": [
+          "nome_urna",
+          "nome_completo",
+          "data_nascimento",
+          "escolaridade",
+          "partido",
+          "numero_urna",
+          "cargo"
+        ],
+        "resultado": "todos conferem com o registro oficial"
+      },
+      "foto": {
+        "arquivo": "fotos-candidatos/250002552153.jpg",
+        "credito": "TSE — foto de registro de candidatura",
+        "bytes": 5384,
+        "sha256_16": "8a300dc8c2e9880a",
+        "obtida_em": "2026-08-25",
+        "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
+      }
     },
     {
-     "cargo": "Coordenadora de Políticas para a Diversidade Sexual",
-     "ente": "Estado de São Paulo",
-     "de": "2015",
-     "ate": "2015"
+      "id_candidatura": "sen-sp-2026-cesaretti",
+      "pessoa": {
+        "nome_urna": "Ednelson Cesaretti",
+        "nome_completo": "Ednelson Cesaretti",
+        "data_nascimento": "1970-03-28",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Professor de ensino médio",
+        "genero": "Masculino"
+      },
+      "id_partido": "pco",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "SP",
+      "ano": 2026,
+      "numero_urna": "290",
+      "sequencial_tse": "250002552955",
+      "bens_declarados_brl": 0,
+      "suplentes": [
+        "Carlos Augusto",
+        "André Amado"
+      ],
+      "situacao_registro": [
+        {
+          "situacao": "Aguardando julgamento",
+          "observado_em": "2026-08-24"
+        }
+      ],
+      "mandatos_anteriores": [
+        {
+          "cargo": "deputado_federal",
+          "uf": "SP",
+          "ano": 2006,
+          "resultado": "nao_eleito",
+          "votos": 134
+        },
+        {
+          "cargo": "deputado_federal",
+          "uf": "SP",
+          "ano": 2002,
+          "resultado": "nao_eleito",
+          "votos": 452
+        }
+      ],
+      "_nota": "Bens declarados zero é o valor correto conforme a fonte, não campo faltante. Professor da rede pública, militante do PCO desde 1995.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "instagram_fonte": null,
+        "redes": [
+          "HTTPS://CANDIDATOS.PCO.ORG.BR"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-24",
+        "site": "HTTPS://CANDIDATOS.PCO.ORG.BR",
+        "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
+      },
+      "_conferencia_registro": {
+        "conferido_em": "2026-08-24",
+        "contra": "doc-tse-consulta-cand-2026",
+        "campos": [
+          "nome_urna",
+          "nome_completo",
+          "data_nascimento",
+          "escolaridade",
+          "partido",
+          "numero_urna",
+          "cargo"
+        ],
+        "resultado": "todos conferem com o registro oficial"
+      },
+      "foto": {
+        "arquivo": "fotos-candidatos/250002552955.jpg",
+        "credito": "TSE — foto de registro de candidatura",
+        "bytes": 4472,
+        "sha256_16": "9025af5f1ac51fb1",
+        "obtida_em": "2026-08-25",
+        "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
+      }
     },
     {
-     "cargo": "Secretária Municipal de Assistência Social",
-     "ente": "São Paulo",
-     "de": "2017",
-     "ate": "2017"
+      "id_candidatura": "sen-sp-2026-eliana-ferreira",
+      "pessoa": {
+        "nome_urna": "Dra Eliana Ferreira",
+        "nome_completo": "Eliana Lucia Ferreira",
+        "data_nascimento": "1968-01-29",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Advogada",
+        "genero": "Feminino"
+      },
+      "id_partido": "pstu",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "SP",
+      "ano": 2026,
+      "numero_urna": "161",
+      "sequencial_tse": "250002541362",
+      "bens_declarados_brl": 1902839.07,
+      "suplentes": [
+        "Claudio Donizete",
+        "Veruska Tenório"
+      ],
+      "situacao_registro": [
+        {
+          "situacao": "Registro deferido",
+          "observado_em": "2026-08-24",
+          "_nota": "Única das 15 com registro deferido nesta data. Provavelmente ordem de processamento, não mérito."
+        }
+      ],
+      "mandatos_anteriores": [
+        {
+          "cargo": "senador",
+          "uf": "SP",
+          "ano": 2018,
+          "resultado": "nao_eleita",
+          "votos": 60731
+        }
+      ],
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@dra.elianaferreira.pstu",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/DRA.ELIANA.PSTU",
+          "HTTPS://WWW.INSTAGRAM.COM/DRA.ELIANAFERREIRA.PSTU/"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-24",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
+      },
+      "_conferencia_registro": {
+        "conferido_em": "2026-08-24",
+        "contra": "doc-tse-consulta-cand-2026",
+        "campos": [
+          "nome_urna",
+          "nome_completo",
+          "data_nascimento",
+          "escolaridade",
+          "partido",
+          "numero_urna",
+          "cargo"
+        ],
+        "resultado": "todos conferem com o registro oficial"
+      },
+      "foto": {
+        "arquivo": "fotos-candidatos/250002541362.jpg",
+        "credito": "TSE — foto de registro de candidatura",
+        "bytes": 7813,
+        "sha256_16": "f122f7d801c46ee2",
+        "obtida_em": "2026-08-25",
+        "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
+      }
     },
     {
-     "cargo": "Subprefeita da Lapa",
-     "ente": "São Paulo",
-     "de": "2009",
-     "ate": "2010"
-    }
-   ],
-   "mandatos_anteriores": [
-    {
-     "cargo": "vereador",
-     "municipio": "São Paulo",
-     "ano": 2016,
-     "resultado": "eleita",
-     "votos": 40113
+      "id_candidatura": "sen-sp-2026-weller",
+      "pessoa": {
+        "nome_urna": "Weller Gonçalves",
+        "nome_completo": "Weller Pereira Gonçalves",
+        "data_nascimento": "1986-05-09",
+        "escolaridade": "Ensino médio completo",
+        "ocupacao_declarada": "Trabalhador da metalurgia e siderurgia",
+        "genero": "Masculino"
+      },
+      "id_partido": "pstu",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "SP",
+      "ano": 2026,
+      "numero_urna": "160",
+      "sequencial_tse": "250002541365",
+      "bens_declarados_brl": 19000.0,
+      "suplentes": [
+        "Maria Guilherme",
+        "Bruno Teixeira"
+      ],
+      "situacao_registro": [
+        {
+          "situacao": "Aguardando julgamento",
+          "observado_em": "2026-08-24"
+        }
+      ],
+      "mandatos_anteriores": [
+        {
+          "cargo": "deputado_federal",
+          "uf": "SP",
+          "ano": 2022,
+          "resultado": "nao_eleito",
+          "votos": 1995
+        }
+      ],
+      "cargos_representacao": [
+        {
+          "cargo": "Presidente do Sindicato dos Metalúrgicos de São José dos Campos e Região",
+          "verificavel": true
+        }
+      ],
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": "@weller_goncalves",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes": [
+          "HTTPS://WWW.FACEBOOK.COM/WELLERMETALURGICO",
+          "HTTPS://WWW.INSTAGRAM.COM/WELLER_GONCALVES",
+          "HTTPS://WWW.THREADS.COM/@WELLER_GONCALVES",
+          "HTTPS://WWW.TIKTOK.COM/@WELLERGONCALVES",
+          "HTTPS://X.COM/WELLERSIND",
+          "HTTPS://YOUTUBE.COM/@CANALDOWELLER"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-24",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
+      },
+      "_conferencia_registro": {
+        "conferido_em": "2026-08-24",
+        "contra": "doc-tse-consulta-cand-2026",
+        "campos": [
+          "nome_urna",
+          "nome_completo",
+          "data_nascimento",
+          "escolaridade",
+          "partido",
+          "numero_urna",
+          "cargo"
+        ],
+        "resultado": "todos conferem com o registro oficial"
+      },
+      "foto": {
+        "arquivo": "fotos-candidatos/250002541365.jpg",
+        "credito": "TSE — foto de registro de candidatura",
+        "bytes": 5522,
+        "sha256_16": "1dc352b0482dc4a0",
+        "obtida_em": "2026-08-25",
+        "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
+      }
     },
     {
-     "cargo": "vereador",
-     "municipio": "São Paulo",
-     "ano": 2004,
-     "resultado": "eleita",
-     "votos": 50989
-    }
-   ],
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": "@soninhafrancine_oficial",
-    "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "redes": [
-     "HTTPS://WWW.FACEBOOK.COM/SONINHAFRANCINE/?LOCALE=PT_BR",
-     "HTTPS://WWW.INSTAGRAM.COM/SONINHAFRANCINE_OFICIAL/",
-     "HTTPS://X.COM/SONINHAFRANCINE"
-    ],
-    "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "redes_consultado_em": "2026-08-24",
-    "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
-   },
-   "_conferencia_registro": {
-    "conferido_em": "2026-08-24",
-    "contra": "doc-tse-consulta-cand-2026",
-    "campos": [
-     "nome_urna",
-     "nome_completo",
-     "data_nascimento",
-     "escolaridade",
-     "partido",
-     "numero_urna",
-     "cargo"
-    ],
-    "resultado": "todos conferem com o registro oficial"
-   },
-   "foto": {
-    "arquivo": "fotos-candidatos/250002552369.jpg",
-    "credito": "TSE — foto de registro de candidatura",
-    "bytes": 6503,
-    "sha256_16": "fb1e83f0c040a950",
-    "obtida_em": "2026-08-25",
-    "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
-   }
-  },
-  {
-   "id_candidatura": "sen-sp-2026-rufino",
-   "pessoa": {
-    "nome_urna": "Geraldo Rufino",
-    "nome_completo": "Geraldo Aristides Rufino",
-    "data_nascimento": "1958-11-21",
-    "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Empresário"
-   },
-   "id_partido": "pode",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "SP",
-   "ano": 2026,
-   "numero_urna": "200",
-   "sequencial_tse": "250002544673",
-   "bens_declarados_brl": 5645157.05,
-   "suplentes": [
-    "Luciana Felix",
-    "Jason Albuquerque"
-   ],
-   "situacao_registro": [
-    {
-     "situacao": "Aguardando julgamento",
-     "observado_em": "2026-08-24"
-    }
-   ],
-   "mandatos_anteriores": [
-    {
-     "cargo": "deputado_federal",
-     "uf": "SP",
-     "ano": 2018,
-     "resultado": "suplente",
-     "votos": 17713
-    }
-   ],
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "instagram_fonte": null,
-    "redes": [
-     "HTTPS://BR.LINKEDIN.COM/IN/GERALDORUFINO",
-     "HTTPS://WWW.FACEBOOK.COM/GERALDORUFINOOFICIAL/?LOCALE=PT_BR",
-     "HTTPS://WWW.TIKTOK.COM/@GERALDOARUFINO",
-     "WWW.YOUTUBE.COM/@GERALDORUFINO"
-    ],
-    "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "redes_consultado_em": "2026-08-24",
-    "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
-   },
-   "_conferencia_registro": {
-    "conferido_em": "2026-08-24",
-    "contra": "doc-tse-consulta-cand-2026",
-    "campos": [
-     "nome_urna",
-     "nome_completo",
-     "data_nascimento",
-     "escolaridade",
-     "partido",
-     "numero_urna",
-     "cargo"
-    ],
-    "resultado": "todos conferem com o registro oficial"
-   },
-   "foto": {
-    "arquivo": "fotos-candidatos/250002544673.jpg",
-    "credito": "TSE — foto de registro de candidatura",
-    "bytes": 4703,
-    "sha256_16": "1104f9c55fb6fe42",
-    "obtida_em": "2026-08-25",
-    "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
-   }
-  },
-  {
-   "id_candidatura": "sen-sp-2026-schiavetto",
-   "pessoa": {
-    "nome_urna": "Guto Schiavetto",
-    "nome_completo": "Ricardo Augusto Mangue Schiavetto",
-    "data_nascimento": "1982-01-23",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Comerciante"
-   },
-   "id_partido": "missao",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "SP",
-   "ano": 2026,
-   "numero_urna": "144",
-   "sequencial_tse": "250002554075",
-   "bens_declarados_brl": 116500.0,
-   "suplentes": [
-    "Medon",
-    "Fabio Rodrigues"
-   ],
-   "situacao_registro": [
-    {
-     "situacao": "Aguardando julgamento",
-     "observado_em": "2026-08-24"
-    }
-   ],
-   "mandatos_anteriores": [
-    {
-     "cargo": "vereador",
-     "municipio": "Limeira",
-     "ano": 2024,
-     "resultado": "suplente",
-     "votos": 998
+      "id_candidatura": "sen-sp-2026-maira",
+      "pessoa": {
+        "nome_urna": "Maíra de Souza",
+        "nome_completo": "Maíra Dias de Souza",
+        "data_nascimento": "1979-12-17",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Professora de ensino fundamental",
+        "genero": "Feminino"
+      },
+      "id_partido": "up",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "SP",
+      "ano": 2026,
+      "numero_urna": "808",
+      "sequencial_tse": "250002544516",
+      "bens_declarados_brl": 210000.0,
+      "suplentes": [
+        "Renato Melo",
+        "Penha Daolio"
+      ],
+      "situacao_registro": [
+        {
+          "situacao": "Aguardando julgamento",
+          "observado_em": "2026-08-24"
+        }
+      ],
+      "mandatos_anteriores": [],
+      "_nota": "Primeira candidatura registrada nos dados do TSE desde 1998. Professora há 24 anos, servidora de Praia Grande, coordenadora estadual do Movimento Luta de Classes desde 2021.",
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "instagram_fonte": null,
+        "redes": [
+          "@MAIRADESOUZA.UP"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-24",
+        "_pendente_rede_ambigua": "Declarou @MAIRADESOUZA.UP sem informar a plataforma. Parece Instagram, mas o registro nao diz — nao converter em @ sem confirmacao, para nao dirigir eleitor a conta errada.",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
+      },
+      "_conferencia_registro": {
+        "conferido_em": "2026-08-24",
+        "contra": "doc-tse-consulta-cand-2026",
+        "campos": [
+          "nome_urna",
+          "nome_completo",
+          "data_nascimento",
+          "escolaridade",
+          "partido",
+          "numero_urna",
+          "cargo"
+        ],
+        "resultado": "todos conferem com o registro oficial"
+      },
+      "foto": {
+        "arquivo": "fotos-candidatos/250002544516.jpg",
+        "credito": "TSE — foto de registro de candidatura",
+        "bytes": 6981,
+        "sha256_16": "fe27d5c0d9979293",
+        "obtida_em": "2026-08-25",
+        "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
+      }
     },
     {
-     "cargo": "vereador",
-     "municipio": "Limeira",
-     "ano": 2020,
-     "resultado": "suplente",
-     "votos": 806
+      "id_candidatura": "sen-sp-2026-marcio-alves",
+      "pessoa": {
+        "nome_urna": "Marcio Alves",
+        "nome_completo": "Marcio Alves dos Santos",
+        "data_nascimento": "1983-11-08",
+        "escolaridade": "Ensino médio completo",
+        "ocupacao_declarada": "Eletricista e afins",
+        "genero": "Masculino"
+      },
+      "id_partido": "up",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "SP",
+      "ano": 2026,
+      "numero_urna": "800",
+      "sequencial_tse": "250002544514",
+      "bens_declarados_brl": 0,
+      "suplentes": [
+        "Manoel Pereira",
+        "Allana Mattos"
+      ],
+      "situacao_registro": [
+        {
+          "situacao": "Aguardando julgamento",
+          "observado_em": "2026-08-24"
+        }
+      ],
+      "mandatos_anteriores": [
+        {
+          "cargo": "suplente_senador",
+          "uf": "SP",
+          "ano": 2022,
+          "resultado": "nao_eleito",
+          "votos": 280460
+        }
+      ],
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "instagram_fonte": null,
+        "redes": [
+          "@MARCIOALVES.UP"
+        ],
+        "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
+        "redes_consultado_em": "2026-08-24",
+        "_pendente_rede_ambigua": "Declarou @MARCIOALVES.UP sem informar a plataforma. Parece Instagram, mas o registro nao diz — nao converter em @ sem confirmacao, para nao dirigir eleitor a conta errada.",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
+      },
+      "_conferencia_registro": {
+        "conferido_em": "2026-08-24",
+        "contra": "doc-tse-consulta-cand-2026",
+        "campos": [
+          "nome_urna",
+          "nome_completo",
+          "data_nascimento",
+          "escolaridade",
+          "partido",
+          "numero_urna",
+          "cargo"
+        ],
+        "resultado": "todos conferem com o registro oficial"
+      },
+      "foto": {
+        "arquivo": "fotos-candidatos/250002544514.jpg",
+        "credito": "TSE — foto de registro de candidatura",
+        "bytes": 4881,
+        "sha256_16": "d63d37a609b2a88c",
+        "obtida_em": "2026-08-25",
+        "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
+      }
     },
     {
-     "cargo": "vereador",
-     "municipio": "Limeira",
-     "ano": 2016,
-     "resultado": "nao_eleito",
-     "votos": 866
+      "id_candidatura": "sen-sp-2026-william-teixeira",
+      "pessoa": {
+        "nome_urna": "William Teixeira",
+        "nome_completo": "William Teixeira de Oliveira",
+        "data_nascimento": "1985-05-19",
+        "escolaridade": "Superior completo",
+        "ocupacao_declarada": "Relações-públicas",
+        "genero": "Masculino"
+      },
+      "id_partido": "agir",
+      "id_coligacao": null,
+      "cargo": "senador",
+      "uf": "SP",
+      "ano": 2026,
+      "numero_urna": "360",
+      "sequencial_tse": "250002553252",
+      "bens_declarados_brl": 0,
+      "suplentes": [
+        "Toninho Serapião Tubarão",
+        "José Vaz"
+      ],
+      "situacao_registro": [
+        {
+          "situacao": "Aguardando julgamento",
+          "observado_em": "2026-08-24"
+        }
+      ],
+      "mandatos_anteriores": [
+        {
+          "cargo": "vereador",
+          "municipio": "Santana de Parnaíba",
+          "ano": 2012,
+          "partido_na_epoca": "pt",
+          "resultado": "nao_eleito",
+          "votos": 177
+        },
+        {
+          "cargo": "deputado_estadual",
+          "uf": "SP",
+          "ano": 2010,
+          "partido_na_epoca": "pcb",
+          "resultado": "indeferido"
+        }
+      ],
+      "candidaturas_concorrentes_2026": [
+        {
+          "cargo": "deputado_federal",
+          "uf": "SP",
+          "numero_urna": "3616",
+          "partido": "agir",
+          "situacao": "Renúncia registrada",
+          "_nota": "RESOLVIDO em 24/ago/2026. Ele registrou as duas candidaturas, mas renunciou à de deputado federal. Não era erro de agregador nem candidatura dupla irregular — a divergência entre fontes vinha de umas registrarem o pedido original e outras a renúncia. Concorre só ao Senado."
+        }
+      ],
+      "contato": {
+        "email": null,
+        "email_fonte": null,
+        "email_tipo": null,
+        "instagram": null,
+        "instagram_fonte": null,
+        "_pendente_redes": "Candidatura sem nenhuma rede social declarada no dataset oficial do TSE (consultado em 2026-08-24). Ausencia no registro, nao falha de busca.",
+        "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
+      },
+      "_conferencia_registro": {
+        "conferido_em": "2026-08-24",
+        "contra": "doc-tse-consulta-cand-2026",
+        "campos": [
+          "nome_urna",
+          "nome_completo",
+          "data_nascimento",
+          "escolaridade",
+          "partido",
+          "numero_urna",
+          "cargo"
+        ],
+        "resultado": "todos conferem com o registro oficial"
+      },
+      "foto": {
+        "arquivo": "fotos-candidatos/250002553252.jpg",
+        "credito": "TSE — foto de registro de candidatura",
+        "bytes": 5314,
+        "sha256_16": "69dd36015da959ee",
+        "obtida_em": "2026-08-25",
+        "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
+      }
     }
-   ],
-   "_pendencias": [
-    "Sequencial divergente: encontrado também 250002553928 em outra fonte. Resolver contra o TSE.",
-    "Candidatura ausente das listas de 17/ago de Poder360, Gazeta do Povo e JOTA — foi lançada no evento de campanha de Renan Santos e entrou depois."
-   ],
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": "@gutoschiavetto",
-    "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "redes": [
-     "https://www.gutoschiavetto.com.br/",
-     "https://www.instagram.com/gutoschiavetto/"
-    ],
-    "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "redes_consultado_em": "2026-08-24",
-    "site": "https://www.gutoschiavetto.com.br/",
-    "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
-   },
-   "_conferencia_registro": {
-    "conferido_em": "2026-08-24",
-    "contra": "doc-tse-consulta-cand-2026",
-    "campos": [
-     "nome_urna",
-     "nome_completo",
-     "data_nascimento",
-     "escolaridade",
-     "partido",
-     "numero_urna",
-     "cargo"
-    ],
-    "resultado": "todos conferem com o registro oficial"
-   },
-   "foto": {
-    "arquivo": "fotos-candidatos/250002554075.jpg",
-    "credito": "TSE — foto de registro de candidatura",
-    "bytes": 5733,
-    "sha256_16": "930d34803b5773e8",
-    "obtida_em": "2026-08-25",
-    "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
-   }
-  },
-  {
-   "id_candidatura": "sen-sp-2026-petter-maahs",
-   "pessoa": {
-    "nome_urna": "Petter Maahs",
-    "nome_completo": "Petter Maahs da Silva",
-    "data_nascimento": "1974-11-08",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Servidor público municipal"
-   },
-   "id_partido": "pcb",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "SP",
-   "ano": 2026,
-   "numero_urna": "211",
-   "sequencial_tse": "250002552153",
-   "bens_declarados_brl": 117533.7,
-   "suplentes": [
-    "Olga Soares",
-    "Vinicius Jardim"
-   ],
-   "situacao_registro": [
-    {
-     "situacao": "Aguardando julgamento",
-     "observado_em": "2026-08-24"
-    }
-   ],
-   "mandatos_anteriores": [],
-   "_nota": "Primeira disputa eleitoral registrada nos dados do TSE desde 1998. Pedagogo, doutor em educação pela USP, diretor de escola municipal em Cubatão desde 2008.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": "@petter.maahs",
-    "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "redes": [
-     "HTTPS://WWW.FACEBOOK.COM/PROFILE.PHP?ID=61579060252850&LOCALE=PT_BR",
-     "HTTPS://WWW.INSTAGRAM.COM/PETTER.MAAHS/"
-    ],
-    "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "redes_consultado_em": "2026-08-24",
-    "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
-   },
-   "_conferencia_registro": {
-    "conferido_em": "2026-08-24",
-    "contra": "doc-tse-consulta-cand-2026",
-    "campos": [
-     "nome_urna",
-     "nome_completo",
-     "data_nascimento",
-     "escolaridade",
-     "partido",
-     "numero_urna",
-     "cargo"
-    ],
-    "resultado": "todos conferem com o registro oficial"
-   },
-   "foto": {
-    "arquivo": "fotos-candidatos/250002552153.jpg",
-    "credito": "TSE — foto de registro de candidatura",
-    "bytes": 5384,
-    "sha256_16": "8a300dc8c2e9880a",
-    "obtida_em": "2026-08-25",
-    "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
-   }
-  },
-  {
-   "id_candidatura": "sen-sp-2026-cesaretti",
-   "pessoa": {
-    "nome_urna": "Ednelson Cesaretti",
-    "nome_completo": "Ednelson Cesaretti",
-    "data_nascimento": "1970-03-28",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professor de ensino médio"
-   },
-   "id_partido": "pco",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "SP",
-   "ano": 2026,
-   "numero_urna": "290",
-   "sequencial_tse": "250002552955",
-   "bens_declarados_brl": 0,
-   "suplentes": [
-    "Carlos Augusto",
-    "André Amado"
-   ],
-   "situacao_registro": [
-    {
-     "situacao": "Aguardando julgamento",
-     "observado_em": "2026-08-24"
-    }
-   ],
-   "mandatos_anteriores": [
-    {
-     "cargo": "deputado_federal",
-     "uf": "SP",
-     "ano": 2006,
-     "resultado": "nao_eleito",
-     "votos": 134
-    },
-    {
-     "cargo": "deputado_federal",
-     "uf": "SP",
-     "ano": 2002,
-     "resultado": "nao_eleito",
-     "votos": 452
-    }
-   ],
-   "_nota": "Bens declarados zero é o valor correto conforme a fonte, não campo faltante. Professor da rede pública, militante do PCO desde 1995.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "instagram_fonte": null,
-    "redes": [
-     "HTTPS://CANDIDATOS.PCO.ORG.BR"
-    ],
-    "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "redes_consultado_em": "2026-08-24",
-    "site": "HTTPS://CANDIDATOS.PCO.ORG.BR",
-    "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
-   },
-   "_conferencia_registro": {
-    "conferido_em": "2026-08-24",
-    "contra": "doc-tse-consulta-cand-2026",
-    "campos": [
-     "nome_urna",
-     "nome_completo",
-     "data_nascimento",
-     "escolaridade",
-     "partido",
-     "numero_urna",
-     "cargo"
-    ],
-    "resultado": "todos conferem com o registro oficial"
-   },
-   "foto": {
-    "arquivo": "fotos-candidatos/250002552955.jpg",
-    "credito": "TSE — foto de registro de candidatura",
-    "bytes": 4472,
-    "sha256_16": "9025af5f1ac51fb1",
-    "obtida_em": "2026-08-25",
-    "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
-   }
-  },
-  {
-   "id_candidatura": "sen-sp-2026-eliana-ferreira",
-   "pessoa": {
-    "nome_urna": "Dra Eliana Ferreira",
-    "nome_completo": "Eliana Lucia Ferreira",
-    "data_nascimento": "1968-01-29",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Advogada"
-   },
-   "id_partido": "pstu",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "SP",
-   "ano": 2026,
-   "numero_urna": "161",
-   "sequencial_tse": "250002541362",
-   "bens_declarados_brl": 1902839.07,
-   "suplentes": [
-    "Claudio Donizete",
-    "Veruska Tenório"
-   ],
-   "situacao_registro": [
-    {
-     "situacao": "Registro deferido",
-     "observado_em": "2026-08-24",
-     "_nota": "Única das 15 com registro deferido nesta data. Provavelmente ordem de processamento, não mérito."
-    }
-   ],
-   "mandatos_anteriores": [
-    {
-     "cargo": "senador",
-     "uf": "SP",
-     "ano": 2018,
-     "resultado": "nao_eleita",
-     "votos": 60731
-    }
-   ],
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": "@dra.elianaferreira.pstu",
-    "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "redes": [
-     "HTTPS://WWW.FACEBOOK.COM/DRA.ELIANA.PSTU",
-     "HTTPS://WWW.INSTAGRAM.COM/DRA.ELIANAFERREIRA.PSTU/"
-    ],
-    "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "redes_consultado_em": "2026-08-24",
-    "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
-   },
-   "_conferencia_registro": {
-    "conferido_em": "2026-08-24",
-    "contra": "doc-tse-consulta-cand-2026",
-    "campos": [
-     "nome_urna",
-     "nome_completo",
-     "data_nascimento",
-     "escolaridade",
-     "partido",
-     "numero_urna",
-     "cargo"
-    ],
-    "resultado": "todos conferem com o registro oficial"
-   },
-   "foto": {
-    "arquivo": "fotos-candidatos/250002541362.jpg",
-    "credito": "TSE — foto de registro de candidatura",
-    "bytes": 7813,
-    "sha256_16": "f122f7d801c46ee2",
-    "obtida_em": "2026-08-25",
-    "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
-   }
-  },
-  {
-   "id_candidatura": "sen-sp-2026-weller",
-   "pessoa": {
-    "nome_urna": "Weller Gonçalves",
-    "nome_completo": "Weller Pereira Gonçalves",
-    "data_nascimento": "1986-05-09",
-    "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Trabalhador da metalurgia e siderurgia"
-   },
-   "id_partido": "pstu",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "SP",
-   "ano": 2026,
-   "numero_urna": "160",
-   "sequencial_tse": "250002541365",
-   "bens_declarados_brl": 19000.0,
-   "suplentes": [
-    "Maria Guilherme",
-    "Bruno Teixeira"
-   ],
-   "situacao_registro": [
-    {
-     "situacao": "Aguardando julgamento",
-     "observado_em": "2026-08-24"
-    }
-   ],
-   "mandatos_anteriores": [
-    {
-     "cargo": "deputado_federal",
-     "uf": "SP",
-     "ano": 2022,
-     "resultado": "nao_eleito",
-     "votos": 1995
-    }
-   ],
-   "cargos_representacao": [
-    {
-     "cargo": "Presidente do Sindicato dos Metalúrgicos de São José dos Campos e Região",
-     "verificavel": true
-    }
-   ],
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": "@weller_goncalves",
-    "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "redes": [
-     "HTTPS://WWW.FACEBOOK.COM/WELLERMETALURGICO",
-     "HTTPS://WWW.INSTAGRAM.COM/WELLER_GONCALVES",
-     "HTTPS://WWW.THREADS.COM/@WELLER_GONCALVES",
-     "HTTPS://WWW.TIKTOK.COM/@WELLERGONCALVES",
-     "HTTPS://X.COM/WELLERSIND",
-     "HTTPS://YOUTUBE.COM/@CANALDOWELLER"
-    ],
-    "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "redes_consultado_em": "2026-08-24",
-    "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
-   },
-   "_conferencia_registro": {
-    "conferido_em": "2026-08-24",
-    "contra": "doc-tse-consulta-cand-2026",
-    "campos": [
-     "nome_urna",
-     "nome_completo",
-     "data_nascimento",
-     "escolaridade",
-     "partido",
-     "numero_urna",
-     "cargo"
-    ],
-    "resultado": "todos conferem com o registro oficial"
-   },
-   "foto": {
-    "arquivo": "fotos-candidatos/250002541365.jpg",
-    "credito": "TSE — foto de registro de candidatura",
-    "bytes": 5522,
-    "sha256_16": "1dc352b0482dc4a0",
-    "obtida_em": "2026-08-25",
-    "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
-   }
-  },
-  {
-   "id_candidatura": "sen-sp-2026-maira",
-   "pessoa": {
-    "nome_urna": "Maíra de Souza",
-    "nome_completo": "Maíra Dias de Souza",
-    "data_nascimento": "1979-12-17",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Professora de ensino fundamental"
-   },
-   "id_partido": "up",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "SP",
-   "ano": 2026,
-   "numero_urna": "808",
-   "sequencial_tse": "250002544516",
-   "bens_declarados_brl": 210000.0,
-   "suplentes": [
-    "Renato Melo",
-    "Penha Daolio"
-   ],
-   "situacao_registro": [
-    {
-     "situacao": "Aguardando julgamento",
-     "observado_em": "2026-08-24"
-    }
-   ],
-   "mandatos_anteriores": [],
-   "_nota": "Primeira candidatura registrada nos dados do TSE desde 1998. Professora há 24 anos, servidora de Praia Grande, coordenadora estadual do Movimento Luta de Classes desde 2021.",
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "instagram_fonte": null,
-    "redes": [
-     "@MAIRADESOUZA.UP"
-    ],
-    "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "redes_consultado_em": "2026-08-24",
-    "_pendente_rede_ambigua": "Declarou @MAIRADESOUZA.UP sem informar a plataforma. Parece Instagram, mas o registro nao diz — nao converter em @ sem confirmacao, para nao dirigir eleitor a conta errada.",
-    "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
-   },
-   "_conferencia_registro": {
-    "conferido_em": "2026-08-24",
-    "contra": "doc-tse-consulta-cand-2026",
-    "campos": [
-     "nome_urna",
-     "nome_completo",
-     "data_nascimento",
-     "escolaridade",
-     "partido",
-     "numero_urna",
-     "cargo"
-    ],
-    "resultado": "todos conferem com o registro oficial"
-   },
-   "foto": {
-    "arquivo": "fotos-candidatos/250002544516.jpg",
-    "credito": "TSE — foto de registro de candidatura",
-    "bytes": 6981,
-    "sha256_16": "fe27d5c0d9979293",
-    "obtida_em": "2026-08-25",
-    "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
-   }
-  },
-  {
-   "id_candidatura": "sen-sp-2026-marcio-alves",
-   "pessoa": {
-    "nome_urna": "Marcio Alves",
-    "nome_completo": "Marcio Alves dos Santos",
-    "data_nascimento": "1983-11-08",
-    "escolaridade": "Ensino médio completo",
-    "ocupacao_declarada": "Eletricista e afins"
-   },
-   "id_partido": "up",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "SP",
-   "ano": 2026,
-   "numero_urna": "800",
-   "sequencial_tse": "250002544514",
-   "bens_declarados_brl": 0,
-   "suplentes": [
-    "Manoel Pereira",
-    "Allana Mattos"
-   ],
-   "situacao_registro": [
-    {
-     "situacao": "Aguardando julgamento",
-     "observado_em": "2026-08-24"
-    }
-   ],
-   "mandatos_anteriores": [
-    {
-     "cargo": "suplente_senador",
-     "uf": "SP",
-     "ano": 2022,
-     "resultado": "nao_eleito",
-     "votos": 280460
-    }
-   ],
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "instagram_fonte": null,
-    "redes": [
-     "@MARCIOALVES.UP"
-    ],
-    "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-    "redes_consultado_em": "2026-08-24",
-    "_pendente_rede_ambigua": "Declarou @MARCIOALVES.UP sem informar a plataforma. Parece Instagram, mas o registro nao diz — nao converter em @ sem confirmacao, para nao dirigir eleitor a conta errada.",
-    "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
-   },
-   "_conferencia_registro": {
-    "conferido_em": "2026-08-24",
-    "contra": "doc-tse-consulta-cand-2026",
-    "campos": [
-     "nome_urna",
-     "nome_completo",
-     "data_nascimento",
-     "escolaridade",
-     "partido",
-     "numero_urna",
-     "cargo"
-    ],
-    "resultado": "todos conferem com o registro oficial"
-   },
-   "foto": {
-    "arquivo": "fotos-candidatos/250002544514.jpg",
-    "credito": "TSE — foto de registro de candidatura",
-    "bytes": 4881,
-    "sha256_16": "d63d37a609b2a88c",
-    "obtida_em": "2026-08-25",
-    "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
-   }
-  },
-  {
-   "id_candidatura": "sen-sp-2026-william-teixeira",
-   "pessoa": {
-    "nome_urna": "William Teixeira",
-    "nome_completo": "William Teixeira de Oliveira",
-    "data_nascimento": "1985-05-19",
-    "escolaridade": "Superior completo",
-    "ocupacao_declarada": "Relações-públicas"
-   },
-   "id_partido": "agir",
-   "id_coligacao": null,
-   "cargo": "senador",
-   "uf": "SP",
-   "ano": 2026,
-   "numero_urna": "360",
-   "sequencial_tse": "250002553252",
-   "bens_declarados_brl": 0,
-   "suplentes": [
-    "Toninho Serapião Tubarão",
-    "José Vaz"
-   ],
-   "situacao_registro": [
-    {
-     "situacao": "Aguardando julgamento",
-     "observado_em": "2026-08-24"
-    }
-   ],
-   "mandatos_anteriores": [
-    {
-     "cargo": "vereador",
-     "municipio": "Santana de Parnaíba",
-     "ano": 2012,
-     "partido_na_epoca": "pt",
-     "resultado": "nao_eleito",
-     "votos": 177
-    },
-    {
-     "cargo": "deputado_estadual",
-     "uf": "SP",
-     "ano": 2010,
-     "partido_na_epoca": "pcb",
-     "resultado": "indeferido"
-    }
-   ],
-   "candidaturas_concorrentes_2026": [
-    {
-     "cargo": "deputado_federal",
-     "uf": "SP",
-     "numero_urna": "3616",
-     "partido": "agir",
-     "situacao": "Renúncia registrada",
-     "_nota": "RESOLVIDO em 24/ago/2026. Ele registrou as duas candidaturas, mas renunciou à de deputado federal. Não era erro de agregador nem candidatura dupla irregular — a divergência entre fontes vinha de umas registrarem o pedido original e outras a renúncia. Concorre só ao Senado."
-    }
-   ],
-   "contato": {
-    "email": null,
-    "email_fonte": null,
-    "email_tipo": null,
-    "instagram": null,
-    "instagram_fonte": null,
-    "_pendente_redes": "Candidatura sem nenhuma rede social declarada no dataset oficial do TSE (consultado em 2026-08-24). Ausencia no registro, nao falha de busca.",
-    "_email_indisponivel": "O TSE nao divulga e-mail de candidato (DS_EMAIL mascarado para todas as 2.610 candidaturas de SP, conferido em 2026-08-24). Ausencia da fonte, nao da nossa busca."
-   },
-   "_conferencia_registro": {
-    "conferido_em": "2026-08-24",
-    "contra": "doc-tse-consulta-cand-2026",
-    "campos": [
-     "nome_urna",
-     "nome_completo",
-     "data_nascimento",
-     "escolaridade",
-     "partido",
-     "numero_urna",
-     "cargo"
-    ],
-    "resultado": "todos conferem com o registro oficial"
-   },
-   "foto": {
-    "arquivo": "fotos-candidatos/250002553252.jpg",
-    "credito": "TSE — foto de registro de candidatura",
-    "bytes": 5314,
-    "sha256_16": "69dd36015da959ee",
-    "obtida_em": "2026-08-25",
-    "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
-   }
+  ],
+  "_contatos": {
+    "atualizado_em": "2026-08-24",
+    "com_email": 4,
+    "total": 15,
+    "regra": "Só entra contato de fonte OFICIAL: dados abertos de casa legislativa, ou o dataset de Redes sociais de candidatos do TSE, autodeclarado pelo candidato no registro. Nunca raspagem de rede social nem contato encontrado em busca — risco de mandar mensagem para a pessoa errada.",
+    "assimetria_a_declarar": "Hoje só as 4 candidaturas COM MANDATO têm e-mail, porque a fonte é o gabinete. Isso favorece quem já está eleito e precisa aparecer como limitação nossa, não como se as outras 11 fossem inacessíveis."
   }
- ],
- "_contatos": {
-  "atualizado_em": "2026-08-24",
-  "com_email": 4,
-  "total": 15,
-  "regra": "Só entra contato de fonte OFICIAL: dados abertos de casa legislativa, ou o dataset de Redes sociais de candidatos do TSE, autodeclarado pelo candidato no registro. Nunca raspagem de rede social nem contato encontrado em busca — risco de mandar mensagem para a pessoa errada.",
-  "assimetria_a_declarar": "Hoje só as 4 candidaturas COM MANDATO têm e-mail, porque a fonte é o gabinete. Isso favorece quem já está eleito e precisa aparecer como limitação nossa, não como se as outras 11 fossem inacessíveis."
- }
 }
