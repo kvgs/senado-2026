@@ -153,7 +153,8 @@
       "situacao_parlamentar": [],
       "_conferir_contato": [
         "\"@COLETIVA_SENADORS\" — handle como texto, nao entra como contato"
-      ]
+      ],
+      "_contato_ausente": "A candidatura declarou 1 endereco(s) ao TSE e nenhum e utilizavel como canal: ver _conferir_contato. Nao e ausencia de declaracao, e declaracao que nao da contato."
     },
     {
       "id_candidatura": "sen-rs-2026-regis-ethur",
@@ -196,7 +197,8 @@
       "situacao_parlamentar": [],
       "_conferir_contato": [
         "\"@REGISETHUR\" — handle como texto, nao entra como contato"
-      ]
+      ],
+      "_contato_ausente": "A candidatura declarou 1 endereco(s) ao TSE e nenhum e utilizavel como canal: ver _conferir_contato. Nao e ausencia de declaracao, e declaracao que nao da contato."
     },
     {
       "id_candidatura": "sen-rs-2026-sanderson",
@@ -300,7 +302,8 @@
       "situacao_parlamentar": [],
       "_conferir_contato": [
         "\"@RENATOJAGUARAOOFICIAL\" — handle como texto, nao entra como contato"
-      ]
+      ],
+      "_contato_ausente": "A candidatura declarou 1 endereco(s) ao TSE e nenhum e utilizavel como canal: ver _conferir_contato. Nao e ausencia de declaracao, e declaracao que nao da contato."
     },
     {
       "id_candidatura": "sen-rs-2026-ric-jones",
@@ -343,7 +346,8 @@
       "situacao_parlamentar": [],
       "_conferir_contato": [
         "\"HTTPS://CANDIDATOS.PCO.ORG.BR/C/NOME-DE-URNA-2026\" — placeholder do partido, nao entra como contato"
-      ]
+      ],
+      "_contato_ausente": "A candidatura declarou 1 endereco(s) ao TSE e nenhum e utilizavel como canal: ver _conferir_contato. Nao e ausencia de declaracao, e declaracao que nao da contato."
     },
     {
       "id_candidatura": "sen-rs-2026-marcel-van-hattem",
@@ -449,7 +453,8 @@
       "situacao_parlamentar": [],
       "_conferir_contato": [
         "\"MILTONCARDOSO.OFICIAL\" — dominio improvavel, nao entra como contato"
-      ]
+      ],
+      "_contato_ausente": "A candidatura declarou 1 endereco(s) ao TSE e nenhum e utilizavel como canal: ver _conferir_contato. Nao e ausencia de declaracao, e declaracao que nao da contato."
     },
     {
       "id_candidatura": "sen-rs-2026-manuela-d-avila",

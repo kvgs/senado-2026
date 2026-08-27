@@ -225,7 +225,8 @@
       "situacao_parlamentar": [],
       "_conferir_contato": [
         "\"@MACEDOJOSEMARIANO\" — handle como texto, nao entra como contato"
-      ]
+      ],
+      "_contato_ausente": "A candidatura declarou 1 endereco(s) ao TSE e nenhum e utilizavel como canal: ver _conferir_contato. Nao e ausencia de declaracao, e declaracao que nao da contato."
     },
     {
       "id_candidatura": "sen-pe-2026-paulo-rubem-santiago",
@@ -468,7 +469,8 @@
       "situacao_parlamentar": [],
       "_conferir_contato": [
         "\"INSTAGRAM.  -PRGILVAN COSTA\" — texto livre, nao entra como contato"
-      ]
+      ],
+      "_contato_ausente": "A candidatura declarou 1 endereco(s) ao TSE e nenhum e utilizavel como canal: ver _conferir_contato. Nao e ausencia de declaracao, e declaracao que nao da contato."
     },
     {
       "id_candidatura": "sen-pe-2026-tulio-gadelha",

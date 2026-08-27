@@ -263,7 +263,8 @@
       "situacao_parlamentar": [],
       "_conferir_contato": [
         "\"@ENGENHEIROTHULIO.RO\" — handle como texto, nao entra como contato"
-      ]
+      ],
+      "_contato_ausente": "A candidatura declarou 1 endereco(s) ao TSE e nenhum e utilizavel como canal: ver _conferir_contato. Nao e ausencia de declaracao, e declaracao que nao da contato."
     },
     {
       "id_candidatura": "sen-ro-2026-dr-fernando-maximo",

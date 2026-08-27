@@ -153,7 +153,8 @@
         "\"INSTAGRAM: @ALCIDESFERNANDES\" — handle como texto, nao entra como contato",
         "\"TIK TOK: ALCIDESFERNANDESBR\" — handle como texto, nao entra como contato",
         "\"TWITER: ALCIDESFERNM\" — handle como texto, nao entra como contato"
-      ]
+      ],
+      "_contato_ausente": "A candidatura declarou 4 endereco(s) ao TSE e nenhum e utilizavel como canal: ver _conferir_contato. Nao e ausencia de declaracao, e declaracao que nao da contato."
     },
     {
       "id_candidatura": "sen-ce-2026-lino-alves",

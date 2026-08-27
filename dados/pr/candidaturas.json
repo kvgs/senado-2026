@@ -474,7 +474,8 @@
         "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
       },
       "foto": null,
-      "situacao_parlamentar": []
+      "situacao_parlamentar": [],
+      "_contato_ausente": "A candidatura nao declarou nenhuma URL na base de redes sociais do TSE, e o TSE nao divulga e-mail. Ausencia da fonte, nao da nossa busca."
     }
   ]
 }

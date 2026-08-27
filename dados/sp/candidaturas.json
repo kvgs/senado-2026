@@ -1173,7 +1173,8 @@
       },
       "_conferir_contato": [
         "\"@MAIRADESOUZA.UP\" — handle como texto, nao entra como contato"
-      ]
+      ],
+      "_contato_ausente": "A candidatura declarou 1 endereco(s) ao TSE e nenhum e utilizavel como canal: ver _conferir_contato. Nao e ausencia de declaracao, e declaracao que nao da contato."
     },
     {
       "id_candidatura": "sen-sp-2026-marcio-alves",
@@ -1248,7 +1249,8 @@
       },
       "_conferir_contato": [
         "\"@MARCIOALVES.UP\" — handle como texto, nao entra como contato"
-      ]
+      ],
+      "_contato_ausente": "A candidatura declarou 1 endereco(s) ao TSE e nenhum e utilizavel como canal: ver _conferir_contato. Nao e ausencia de declaracao, e declaracao que nao da contato."
     },
     {
       "id_candidatura": "sen-sp-2026-william-teixeira",
@@ -1335,7 +1337,8 @@
         "sha256_16": "69dd36015da959ee",
         "obtida_em": "2026-08-25",
         "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
-      }
+      },
+      "_contato_ausente": "A candidatura nao declarou nenhuma URL na base de redes sociais do TSE, e o TSE nao divulga e-mail. Ausencia da fonte, nao da nossa busca."
     }
   ],
   "_contatos": {

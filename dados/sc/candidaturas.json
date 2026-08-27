@@ -149,7 +149,8 @@
       "situacao_parlamentar": [],
       "_conferir_contato": [
         "\"RUA GUANABARA, 61 CENTRO INDAIAL - SC\" — texto livre, nao entra como contato"
-      ]
+      ],
+      "_contato_ausente": "A candidatura declarou 1 endereco(s) ao TSE e nenhum e utilizavel como canal: ver _conferir_contato. Nao e ausencia de declaracao, e declaracao que nao da contato."
     },
     {
       "id_candidatura": "sen-sc-2026-lunelli",

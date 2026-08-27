@@ -261,8 +261,23 @@ def montar(uf: str, por_seq: dict[str, list[str]], uso: collections.Counter) -> 
         if not contato.get("email"):
             contato["_email_indisponivel"] = MOTIVO_EMAIL
 
+        # AUSENCIA DE CONTATO TEM DOIS TIPOS, e junta-los seria o mesmo erro que
+        # o site combate nos temas. "Nao declarou" e um fato sobre a candidatura;
+        # "declarou e nada serve" e um fato sobre o registro, e e recuperavel —
+        # a maioria e handle de Instagram digitado como texto.
+        if contato.get("redes"):
+            c.pop("_contato_ausente", None)
+        elif problemas:
+            c["_contato_ausente"] = (
+                f"A candidatura declarou {len(problemas)} endereco(s) ao TSE e nenhum e "
+                f"utilizavel como canal: ver _conferir_contato. Nao e ausencia de "
+                f"declaracao, e declaracao que nao da contato.")
+        else:
+            c["_contato_ausente"] = (
+                "A candidatura nao declarou nenhuma URL na base de redes sociais do TSE, "
+                "e o TSE nao divulga e-mail. Ausencia da fonte, nao da nossa busca.")
+
         c["contato"] = contato
-        c.pop("_contato_ausente", None)
         if problemas:
             c["_conferir_contato"] = problemas
             resumo["com lixo no campo"] += 1
