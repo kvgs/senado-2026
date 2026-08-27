@@ -46,7 +46,9 @@ _ap = _argparse.ArgumentParser(add_help=False)
 _ap.add_argument("--uf", default=None)
 _UF = (_ap.parse_known_args()[0].uf or acervo.uf_padrao()).upper()
 
-DADOS = acervo.exige(_UF)          # dados/<uf>/ — acervo daquele estado
+DADOS = acervo.exige(_UF)
+_ap.add_argument("--quem", default=None)
+QUEM = acervo.quem(_ap.parse_known_args()[0].quem)          # dados/<uf>/ — acervo daquele estado
 NACIONAL = acervo.NACIONAL         # dados/ — referencia, estados, mapa
 PORTA = 8765
 
@@ -142,7 +144,11 @@ def gravar(id_posicao, decisao, nota, citacao=""):
         if r["id_posicao"] != id_posicao:
             continue
         achou = True
-        r["revisao"] = {"em": date.today().isoformat(), "resultado": decisao, "nota": nota or ""}
+        # QUEM decidiu, e nao so QUE alguem decidiu. Com uma pessoa "humano" e
+        # "ela" eram a mesma coisa; com colaboradores, sem isto nao da para
+        # revisar de novo so o que uma pessoa fez.
+        r["revisao"] = {"em": date.today().isoformat(), "resultado": decisao,
+                        "nota": nota or "", "por_quem": QUEM}
         # A frase colada na revisao vira a citacao literal do acervo: a revisao
         # nao so aprova, ela preenche a ancora que faltava. Guarda tambem a marca
         # de que veio da revisao humana, e nao da extracao automatica.
@@ -153,6 +159,8 @@ def gravar(id_posicao, decisao, nota, citacao=""):
         # registro de problema: um item com problema conhecido nao esta revisado,
         # esta condenado.
         r["revisado_por_humano"] = (decisao == "confere")
+        if decisao == "confere":
+            r["revisado_por"] = QUEM
     if not achou:
         return False
     caminho.write_text(json.dumps(dados, ensure_ascii=False, indent=1), encoding="utf-8")

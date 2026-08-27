@@ -71,6 +71,10 @@ _ap.add_argument("--uf", default=None)
 _UF = (_ap.parse_known_args()[0].uf or acervo.uf_padrao()).upper()
 
 DADOS = acervo.exige(_UF)          # dados/<uf>/ — acervo daquele estado
+_ap.add_argument("--quem", default=None)
+# Em sandbox nao pergunta: o teste roda sem ninguem no teclado.
+QUEM = ("teste-automatizado" if "--sandbox" in _sys.argv
+        else acervo.quem(_ap.parse_known_args()[0].quem))
 NACIONAL = acervo.NACIONAL         # dados/ — referencia, estados, mapa
 PORTA = 8766
 HOJE = date.today().isoformat()
@@ -194,7 +198,8 @@ def gravar(id_item, temas, motivo):
                 continue
             antes = (r.get("_classificacao") or {})
             r["_classificacao"] = {
-                "temas": temas, "motivo": motivo, "por": "humano", "decidido_em": HOJE,
+                "temas": temas, "motivo": motivo, "por": "humano",
+                "por_quem": QUEM, "decidido_em": HOJE,
             }
             # Guarda se ela concordou comigo. E a unica forma honesta de saber se
             # a minha classificacao presta: medida, e nao afirmada.

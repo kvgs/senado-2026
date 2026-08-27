@@ -15,7 +15,11 @@ import importlib.util, json, sys
 spec = importlib.util.spec_from_file_location("rev", r"${RAIZ}/revisar.py")
 m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
 sys.stdout.write(json.dumps({"pagina": m.PAGINA, "itens": m.montar_itens()}, ensure_ascii=False))
-`], { encoding: "utf8", maxBuffer: 40 * 1024 * 1024, env: { ...process.env, PYTHONIOENCODING: "utf-8" } });
+`], { encoding: "utf8", maxBuffer: 40 * 1024 * 1024,
+      /* SENADO_QUEM: o revisar.py passou a registrar QUEM decidiu e recusa subir
+         sem apelido. Aqui nao ha ninguem no teclado, entao o teste se identifica,
+         e "teste-automatizado" no dado deixa obvio que nao foi gente. */
+      env: { ...process.env, PYTHONIOENCODING: "utf-8", SENADO_QUEM: "teste-automatizado" } });
 
 const { pagina, itens } = JSON.parse(saida);
 const js = pagina.match(/<script>([\s\S]*?)<\/script>/)[1];

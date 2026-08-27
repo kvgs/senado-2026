@@ -87,6 +87,47 @@ def estado(uf: str | None = None) -> dict:
     raise SystemExit(f"{u} nao esta em dados/estados.json")
 
 
+# ---------------------------------------------------------------- quem revisa
+# Enquanto havia uma pessoa, "humano" e "ela" eram a mesma coisa e bastava um
+# booleano. Com colaboradores, revisado_por_humano=true deixa de dizer QUEM
+# conferiu — e se um erro aparecer numa posicao publicada, nao da para revisar de
+# novo so o que aquela pessoa fez.
+#
+# O identificador NAO vem de git config user.name. Ali esta o nome civil de quem
+# mantem o projeto, e este repositorio e publico: herdar dali reporia nos dados
+# exatamente o nome que a curadoria pediu para tirar. Quem trabalha ESCOLHE um
+# apelido, sabendo que ele fica visivel.
+ARQ_QUEM = RAIZ / ".quem"          # fora do git, por maquina
+
+
+def quem(argumento: str | None = None) -> str:
+    """Apelido de quem esta decidindo. Ordem: --quem, variavel de ambiente,
+    arquivo local, e por fim pergunta uma vez e guarda."""
+    import os
+    import sys
+
+    v = (argumento or os.environ.get("SENADO_QUEM") or "").strip()
+    if not v and ARQ_QUEM.exists():
+        v = ARQ_QUEM.read_text(encoding="utf-8").strip()
+    if not v and not sys.stdin.isatty():
+        # Sem ninguem no teclado, perguntar PENDURA o processo em vez de falhar.
+        # Acontece em teste e em qualquer execucao automatizada.
+        raise SystemExit(
+            "nao sei quem esta revisando, e nao ha terminal para perguntar."
+            + chr(10) + "passe --quem SEU_APELIDO, ou defina SENADO_QUEM no ambiente.")
+    if not v:
+        print("Quem esta revisando? Escolha um apelido curto — ele vai junto de cada")
+        print("decisao e FICA VISIVEL no repositorio publico. Sugestao: o seu usuario")
+        print("do GitHub. Nao use nome civil se nao quiser que ele apareca.")
+        v = input("apelido: ").strip()
+        if v:
+            ARQ_QUEM.write_text(v, encoding="utf-8")
+            print(f"guardado em {ARQ_QUEM.name} (fora do git); apague o arquivo para trocar")
+    if not v:
+        raise SystemExit("sem apelido nao da para registrar quem decidiu")
+    return v
+
+
 def por_extenso(uf: str | None = None) -> str:
     """"por Sao Paulo", "pelo Acre", "pela Bahia" — concordancia sai do dado."""
     e = estado(uf)

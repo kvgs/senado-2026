@@ -190,6 +190,10 @@ async function main() {
     .find(r => r.id_registro === alvoId);
   ok(disco?._classificacao?.temas?.[0] === "t1", "a decisao fica gravada no arquivo");
   ok(disco?._classificacao?.por === "humano", "a decisao gravada fica marcada como humana");
+  // QUEM decidiu, e nao so QUE alguem decidiu. Com colaboradores, sem isto nao
+  // da para revisar de novo so o que uma pessoa fez.
+  ok(!!disco?._classificacao?.por_quem,
+     `a decisao registra quem decidiu (${disco?._classificacao?.por_quem})`);
   ok(typeof disco?._classificacao?.concordou === "boolean",
      "a gravacao registra se a pessoa concordou com o modelo");
   ok(Array.isArray(disco?._classificacao?.modelo_propos),

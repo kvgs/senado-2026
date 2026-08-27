@@ -41,3 +41,7 @@ fontes/prestacao-contas-2026.zip
 
 # Copia de seguranca que revisar.py faz ao iniciar; o git ja e o historico
 dados/posicoes.json.antes-da-revisao
+
+# Apelido de quem revisa nesta maquina. Escolhido pela pessoa, nao herdado do
+# git config: ali esta o nome civil, e este repositorio e publico.
+.quem
