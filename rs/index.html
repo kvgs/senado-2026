@@ -1074,6 +1074,11 @@ function corpoTema(cid,tid){
     const vezes = v.ocorrencias>1 ? ' <em>(votou assim nas '+esc(v.ocorrencias)+' vezes em que esta pergunta foi votada na sessão)</em>' : '';
     h+='<p class="voto"><b>Voto registrado:</b> '+esc(v.voto)+' — '+esc(v.pergunta)+vezes+
        ' ('+esc(v.proposicao)+', '+esc(dataBR(v.data))+').';
+    /* DO QUE TRATA A PROPOSICAO, antes de qualquer ressalva. A pergunta e o texto
+       regimental da sessao ("Aprovacao do Projeto de Lei no 6.139/2023, ressalvado
+       o destaque") e nao diz nada a quem le. Sem esta linha, o site informa que a
+       pessoa votou, e nao no que ela votou. */
+    if(v.assunto) h+='<br><strong>Do que se trata:</strong> '+esc(v.assunto);
     if(v.cuidado) h+='<br><strong>Atenção:</strong> '+esc(v.cuidado);
     h+='</p>';
   }

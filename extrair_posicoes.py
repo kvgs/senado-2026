@@ -42,6 +42,40 @@ def normal(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip()
 
 
+# Marcas de frase que NAO e posicao: valor generico, metodo de atuacao, ou
+# descricao de instituicao. A curadoria pediu que so entre frase clara sobre um
+# dos temas ou sobre posicao politica — "defendo a democracia" nao diz o que a
+# candidatura faria, e enche a tela sem informar.
+#
+# Isto FLAGRA, nao recusa: "defendo a democracia" e generico, mas "defendo a
+# democracia direta com plebiscito obrigatorio para X" nao e, e a diferenca esta
+# no objeto concreto, que regex nenhuma reconhece. Quem decide e quem le.
+GENERICA = (
+    "defendo a democracia", "direitos fundamentais de todos", "acredito na política",
+    "acredito numa forma", "forma sustentável de viver", "senadora municipalista",
+    "senador municipalista", "deixar as ideologias de lado", "o senado existe para",
+    "compromisso com o", "voz de quem", "trabalhar pelo futuro", "amo o meu estado",
+    "experiência, trabalho e compromisso",
+)
+
+# Objeto concreto: lei, orgao, programa, valor, prazo, percentual. Posicao que
+# nao menciona nenhum costuma ser profissao de fe.
+CONCRETO = (
+    "lei", "projeto", "pec", "programa", "fundo", "imposto", "tributo", "sus",
+    "escola", "universidade", "hospital", "leito", "polícia", "presídio", "pena",
+    "%", "r$", "código", "estatuto", "ministério", "agência", "cota", "salário",
+    "aposentadoria", "creche", "professor", "câmera", "ouvidoria", "seguro",
+    "crédito", "municípios", "cooperativa", "privatiz", "propaganda", "maioridade",
+    # Acrescentados depois que o alerta apontou 10 de 33 e quase todas eram
+    # concretas. Alerta que erra assim e alerta que se aprende a ignorar.
+    "castração", "renda", "violência", "mulher", "vício", "redes sociais", "dívida",
+    "patrimônio", "tortura", "ditadura", "emissões", "ecossistema", "especulação",
+    "fome", "desigualdade", "fiscalização", "liberdade de expressão", "exportação",
+    "delivery", "entregador", "feminicídio", "misoginia", "banrisul", "agro",
+    "tempo integral", "educação técnica", "atenção básica", "saúde mental",
+)
+
+
 def carregar_coleta(uf: str) -> dict[str, dict]:
     f = acervo.de(uf) / "_coleta_sites.json"
     if not f.exists():
@@ -113,6 +147,23 @@ def main() -> None:
                                "palavra contra o texto coletado em " + coleta[cid]["coletado_em"] +
                                "; se a pagina mudou desde entao, a conferencia manda."),
         })
+
+    # CLAREZA. A regra da curadoria: so entra frase clara sobre um dos temas ou
+    # sobre posicao politica. Voto e defesa de lei precisam dizer do que tratam.
+    vagas = []
+    for x in aceitas:
+        b = x["trecho"].lower()
+        # So flagra se casar uma marca de frase generica, OU se for curta E nao
+        # citar nada concreto. O "ou" solto flagrava frase longa e especifica.
+        if any(g in b for g in GENERICA) or (
+                len(b) < 130 and not any(c in b for c in CONCRETO)):
+            vagas.append(x)
+    if vagas:
+        print(f"\n  {len(vagas)} possivelmente generica(s) — nao nomeiam medida, orgao "
+              f"nem norma. Decida uma a uma:")
+        for x in vagas:
+            print(f"    ? {x['id_candidatura'].split('-', 3)[-1]}: {x['trecho'][:96]}")
+        print()
 
     print(f"{uf}: {len(aceitas)} aceita(s), {len(recusadas)} recusada(s)")
     for p, e in recusadas:

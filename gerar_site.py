@@ -253,17 +253,35 @@ for v in regs.get("votacoes_nominais", []):
     # A ressalva do registro descreve A PERGUNTA PRINCIPAL. Copiar para o voto
     # adicional grudava nele um texto sobre outra pergunta — o mesmo erro de
     # atribuicao, uma camada abaixo.
-    grupos = [(v.get("pergunta"), v.get("votos", []), v.get("_cuidado", ""))]
+    # VOTO SEM ASSUNTO NAO PUBLICA.
+    #
+    # "Aprovacao do Projeto de Lei no 6.139/2023, ressalvado o destaque" era o que
+    # o visitante lia. Dois candidatos votaram "Nao" — em que? A pergunta e o
+    # texto regimental da sessao, e nao diz do que trata a proposicao. Publicar
+    # voto assim informa que a pessoa votou, e nao no que ela votou, que e a
+    # unica parte util.
+    if not (v.get("assunto") or "").strip():
+        raise SystemExit(
+            f"PAROU: votacao sem 'assunto' em dados/{_UF.lower()}/registros_legislativos.json"
+            + chr(10) + f"  pergunta: {v.get('pergunta')}"
+            + chr(10) + "Escreva em 'assunto' do que trata a proposicao, em linguagem simples."
+            + chr(10) + "Voto sem isso diz que a pessoa votou, e nao no que ela votou.")
+
+    grupos = [(v.get("pergunta"), v.get("votos", []), v.get("_cuidado", ""),
+               v.get("assunto", ""))]
     if adicional.get("votos"):
         grupos.append((adicional.get("pergunta") or v.get("pergunta"),
                        adicional["votos"],
-                       adicional.get("_cuidado", "")))
-    for pergunta, lista, cuidado in grupos:
+                       adicional.get("_cuidado", ""),
+                       adicional.get("assunto") or v.get("assunto", "")))
+    for pergunta, lista, cuidado, assunto in grupos:
         for x in lista:
             if x["id_candidatura"] not in cand_por_id:
                 continue
             votos.append({"cand": x["id_candidatura"], "voto": x["voto"],
                           "pergunta": pergunta, "data": v["data"],
+                          # Do que trata a proposicao, em linguagem de quem le.
+                          "assunto": assunto,
                           # Quantas vezes a mesma pergunta foi votada na sessao com
                           # esse mesmo voto. Sem isso, "votou Nao duas vezes" some.
                           "ocorrencias": x.get("ocorrencias"),

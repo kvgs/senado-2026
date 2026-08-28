@@ -859,7 +859,9 @@
    ],
    "id_documento": "doc-camara-api",
    "_destaque": "Contraste direto no Tema 6: Marina Silva contra a urgência para alterar o Código de Mineração, Salles a favor. É o único voto nominal da Marina na janela — ela reassumiu a cadeira em abril/2026.",
-   "_cuidado": "O voto é sobre URGÊNCIA na tramitação, não sobre o mérito do Código de Mineração. Não apresentar como voto de mérito."
+   "_cuidado": "O voto é sobre URGÊNCIA na tramitação, não sobre o mérito do Código de Mineração. Não apresentar como voto de mérito.",
+   "assunto": "O PL 957/2024 altera o Código de Mineração de 1967 e as leis de pesquisa e lavra mineral, mudando regras de exploração e fiscalização. Este voto foi sobre acelerar a tramitação, não sobre o conteúdo do projeto.",
+   "assunto_fonte": "Ementa obtida na API de dados abertos da Câmara dos Deputados em 2026-08-28."
   },
   {
    "id_votacao": "589982-x",
@@ -913,10 +915,14 @@
       "id_candidatura": "sen-sp-2026-salles",
       "voto": "Sim"
      }
-    ]
+    ],
+    "assunto": "Projeto que tipifica o desaparecimento forçado de pessoas como crime. Este voto foi sobre manter o texto como estava, contra um destaque que propunha alterá-lo — não sobre ser a favor ou contra tipificar o crime.",
+    "assunto_fonte": "Ementa obtida na API de dados abertos da Câmara dos Deputados em 2026-08-28."
    },
    "id_documento": "doc-camara-api",
-   "_cuidado": "LER COM RIGOR. A pergunta votada foi 'manter o texto' contra um destaque; votar Não significa querer alterar o texto, não necessariamente ser contra tipificar desaparecimento forçado. Sem ler o destaque, NÃO é possível afirmar a posição de mérito. Registrar o voto e a pergunta; não concluir a posição."
+   "_cuidado": "LER COM RIGOR. A pergunta votada foi 'manter o texto' contra um destaque; votar Não significa querer alterar o texto, não necessariamente ser contra tipificar desaparecimento forçado. Sem ler o destaque, NÃO é possível afirmar a posição de mérito. Registrar o voto e a pergunta; não concluir a posição.",
+   "assunto": "Projeto que tipifica o desaparecimento forçado de pessoas como crime. Este voto foi sobre manter o texto como estava, contra um destaque que propunha alterá-lo — não sobre ser a favor ou contra tipificar o crime.",
+   "assunto_fonte": "Ementa obtida na API de dados abertos da Câmara dos Deputados em 2026-08-28."
   },
   {
    "id_votacao": "2543171-x",
@@ -949,7 +955,9 @@
     }
    ],
    "id_documento": "doc-camara-api",
-   "_nota": "Voto de mérito, e aqui a leitura é direta: os dois votaram contra a aprovação do projeto de crédito à exportação, que foi aprovado por 340 a 108."
+   "_nota": "Voto de mérito, e aqui a leitura é direta: os dois votaram contra a aprovação do projeto de crédito à exportação, que foi aprovado por 340 a 108.",
+   "assunto": "O PL 6.139/2023 cria o sistema brasileiro de apoio oficial ao crédito à exportação, alterando as leis do Fundo de Garantia à Exportação. Este voto foi sobre aprovar o projeto, ressalvado um destaque votado à parte.",
+   "assunto_fonte": "Ementa obtida na API de dados abertos da Câmara dos Deputados em 2026-08-28."
   },
   {
    "id_votacao": "2572994-x",
@@ -978,7 +986,9 @@
     }
    ],
    "id_documento": "doc-camara-api",
-   "_corroboracao": "Coerente com a autoria dele: Salles apresentou o PL 1384/2026, que também altera a Lei 5.991/1973 para ampliar a oferta de medicamentos ao consumidor. Autoria e voto apontam na mesma direção — é o tipo de convergência que dá solidez ao selo 🔵."
+   "_corroboracao": "Coerente com a autoria dele: Salles apresentou o PL 1384/2026, que também altera a Lei 5.991/1973 para ampliar a oferta de medicamentos ao consumidor. Autoria e voto apontam na mesma direção — é o tipo de convergência que dá solidez ao selo 🔵.",
+   "assunto": "O PL 2.158/2023 altera a lei de controle sanitário de medicamentos de 1973 para permitir a venda de remédios em farmácia instalada dentro de supermercado. Este voto foi sobre acelerar a tramitação, não sobre o conteúdo do projeto.",
+   "assunto_fonte": "Ementa obtida na API de dados abertos da Câmara dos Deputados em 2026-08-28."
   }
  ],
  "pendencias": [
