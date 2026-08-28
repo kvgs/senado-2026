@@ -45,8 +45,21 @@ provável de quem chega.
 ### `revisar.py` — "a fonte sustenta o que está escrito?"
 
 ```
-python revisar.py --uf SP
+python revisar.py            # os 27 estados, intercalados
+python revisar.py --uf PE    # só um estado
 ```
+
+Sem `--uf` a fila cobre o acervo inteiro e **alterna estado e candidatura a cada
+item**. São duas razões:
+
+- ler quinze linhas seguidas da mesma pessoa cria expectativa, e a décima quinta
+  acaba julgada pelo que as catorze anteriores pareciam;
+- revisar estado por estado significa dar a São Paulo uma atenção que o Acre
+  nunca teria.
+
+A ordem por risco continua valendo: a alternância acontece **dentro** de cada
+faixa, nunca entre faixas. Parar na metade ainda deixa revisada a metade que
+importa.
 
 Aqui você **afirma sobre uma candidatura**. Abra o link, leia, e decida:
 

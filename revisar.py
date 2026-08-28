@@ -1,11 +1,23 @@
 # -*- coding: utf-8 -*-
-"""Tela local para revisar as 122 posicoes do acervo, uma a uma.
+"""Tela local para revisar as posicoes do acervo, uma a uma.
 
 POR QUE UMA TELA E NAO UMA LISTA
-Revisar 122 itens num editor de JSON e uma tarefa que se abandona no item 15.
-Aqui cada item aparece sozinho, com o link da fonte a um clique e tres botoes.
-Cada decisao e gravada na hora em dados/posicoes.json — fechar a janela no meio
-nao perde nada.
+Revisar num editor de JSON e uma tarefa que se abandona no item 15. Aqui cada
+item aparece sozinho, com o link da fonte a um clique e tres botoes. Cada decisao
+e gravada na hora em dados/<uf>/posicoes.json — fechar a janela no meio nao
+perde nada.
+
+O ACERVO INTEIRO, E NAO UM ESTADO
+Sem --uf a tela abre os 27 estados juntos. Ela nasceu presa a um estado porque o
+acervo tinha um so; hoje sao 27, e revisar estado por estado significa dar a Sao
+Paulo uma atencao que o Acre nunca teria.
+
+E OS ITENS VEM INTERCALADOS
+Dentro de cada faixa de risco, a fila alterna estado e candidatura a cada item.
+Ler quinze linhas seguidas da mesma pessoa cria expectativa: a decima quinta e
+julgada pelo que as catorze anteriores pareciam, e nao pelo que a fonte diz.
+Alternar quebra isso, e de quebra espalha a revisao pelo pais em vez de deixar
+um estado revisado e vinte e seis intocados.
 
 A ORDEM E POR RISCO, NAO POR ID
 Primeiro o que veio de fonte secundaria e o que a IA marcou como conferencia
@@ -21,9 +33,11 @@ O QUE CADA BOTAO FAZ
                clique e como se perde acervo.
 
 USO
-    python revisar.py
+    python revisar.py              # os 27 estados, intercalados
+    python revisar.py --uf PE      # so Pernambuco
     (abre http://localhost:8765 no navegador)
 """
+import collections
 import http.server
 import json
 import pathlib
@@ -39,17 +53,24 @@ import argparse as _argparse
 
 import acervo
 
-# Qual estado esta ferramenta trabalha. --uf existe para nao ser preciso editar
-# referencia.json e lembrar de voltar: esquecer de voltar escreveria no acervo
-# errado achando que era o certo.
+# SEM --uf, TODOS OS ESTADOS. O padrao antigo era um estado so, herdado de quando
+# o acervo tinha um. Revisar por estado nao e neutro: quem comeca por Sao Paulo
+# revisa Sao Paulo e para, e os outros 26 ficam com o selo de nao revisado para
+# sempre. --uf continua existindo para quando o alvo for mesmo um estado.
 _ap = _argparse.ArgumentParser(add_help=False)
 _ap.add_argument("--uf", default=None)
-_UF = (_ap.parse_known_args()[0].uf or acervo.uf_padrao()).upper()
-
-DADOS = acervo.exige(_UF)
 _ap.add_argument("--quem", default=None)
-QUEM = acervo.quem(_ap.parse_known_args()[0].quem)          # dados/<uf>/ — acervo daquele estado
+_args = _ap.parse_known_args()[0]
+_UF = _args.uf.upper() if _args.uf else None
+
 NACIONAL = acervo.NACIONAL         # dados/ — referencia, estados, mapa
+UFS = ([_UF] if _UF else
+       [e["uf"] for e in json.loads((NACIONAL / "estados.json").read_text(encoding="utf-8"))["estados"]])
+NOME_UF = {e["uf"]: e["nome"] for e in
+           json.loads((NACIONAL / "estados.json").read_text(encoding="utf-8"))["estados"]}
+for _u in UFS:
+    acervo.exige(_u)               # falha aqui, e nao no meio da revisao
+QUEM = acervo.quem(_args.quem)
 PORTA = 8765
 
 ORDEM_FORCA = {"baixa": 0, "media": 1, "alta": 2}
@@ -62,17 +83,22 @@ O_QUE_CONFERIR = {
                             "muda sem aviso, e a data de referência tem de bater com o que se vê hoje.",
     "registro_legislativo": "Confira o número e o ano da proposição, e se a autoria é mesmo desta "
                             "candidatura — em projeto com muitos autores, ser um deles não é ser o autor.",
+    # O estado entra por formatacao: a frase dizia "vale para Sao Paulo" fixo, e
+    # seguiu dizendo isso depois que o acervo virou 27 estados. Instrucao errada
+    # e pior que instrucao nenhuma — manda conferir a coisa errada.
     "oficial": "Aqui a pergunta não é se o assunto está no documento — costuma estar. É se a "
                "REDAÇÃO bate. Paráfrase escorrega: já houve um caso em que 'controle estatal dos "
                "preços' virou 'congelamento de preços', que é outra política. Confira palavra a "
-               "palavra, e confira se o documento vale para São Paulo.",
+               "palavra, e confira se o documento vale para {estado} — programa registrado por uma "
+               "candidatura de outro estado não vale para esta.",
 }
 
 
-def carregar():
-    pos = json.loads((DADOS / "posicoes.json").read_text(encoding="utf-8"))
-    docs = json.loads((DADOS / "documentos.json").read_text(encoding="utf-8"))
-    cand = json.loads((DADOS / "candidaturas.json").read_text(encoding="utf-8"))
+def carregar(uf):
+    d = acervo.de(uf)
+    pos = json.loads((d / "posicoes.json").read_text(encoding="utf-8"))
+    docs = json.loads((d / "documentos.json").read_text(encoding="utf-8"))
+    cand = json.loads((d / "candidaturas.json").read_text(encoding="utf-8"))
     ref = json.loads((NACIONAL / "referencia.json").read_text(encoding="utf-8"))
     return pos, docs, cand, ref
 
@@ -81,8 +107,8 @@ def lista(x, chave):
     return x[chave] if isinstance(x, dict) else x
 
 
-def montar_itens():
-    pos, docs, cand, ref = carregar()
+def itens_de(uf):
+    pos, docs, cand, ref = carregar(uf)
     dm = {d["id_documento"]: d for d in lista(docs, "documentos")}
     cm = {c["id_candidatura"]: c for c in lista(cand, "candidaturas")}
     pm = {p["id_partido"]: p for p in ref["partidos"]}
@@ -97,6 +123,8 @@ def montar_itens():
         de_partido = r.get("atribuido_a_tipo") == "partido"
         itens.append({
             "id": r["id_posicao"],
+            "uf": uf,
+            "uf_nome": NOME_UF.get(uf, uf),
             "candidatura": (c.get("pessoa", {}).get("nome_urna") or alvo or "?"),
             "numero": c.get("numero_urna", ""),
             "tema": tm.get(r.get("id_tema"), r.get("id_tema", "")),
@@ -114,29 +142,75 @@ def montar_itens():
             "forca": conf.get("forca", ""),
             "base": conf.get("base", ""),
             "ressalva": conf.get("ressalva", ""),
-            "o_que_conferir": O_QUE_CONFERIR.get(r.get("nivel_fonte"), ""),
+            "o_que_conferir": O_QUE_CONFERIR.get(r.get("nivel_fonte"), "")
+                              .replace("{estado}", NOME_UF.get(uf, uf)),
             "revisado": bool(r.get("revisado_por_humano")),
             "revisao": r.get("revisao") or {},
         })
-
-    # Dentro de cada classe, primeiro o que NAO tem citacao literal.
-    # Hipotese, nao fato medido: parafrase sem trecho citado nao tem ancora, e
-    # foi assim que "controle estatal dos precos" virou "congelamento de precos"
-    # numa posicao do programa da UP. A revisao feita ate agora nao testa isso
-    # (so 1 dos 35 itens revisados tinha citacao), entao vale como ordem de
-    # prioridade, nunca como certificado de qualidade dos que tem citacao.
-    itens.sort(key=lambda x: (
-        bool(x["revisado"] or x["revisao"]),
-        ORDEM_FORCA.get(x["forca"], 9),
-        ORDEM_FONTE.get(x["nivel_fonte"], 9),
-        bool(x["citacao"].strip()),
-        x["id"],
-    ))
     return itens
 
 
-def gravar(id_posicao, decisao, nota, citacao=""):
-    caminho = DADOS / "posicoes.json"
+def faixa_de_risco(x):
+    """A ordem que existia antes, sem o id: dentro de cada faixa, primeiro o que
+    NAO tem citacao literal. Hipotese, nao fato medido: parafrase sem trecho
+    citado nao tem ancora, e foi assim que "controle estatal dos precos" virou
+    "congelamento de precos" numa posicao do programa da UP."""
+    return (bool(x["revisado"] or x["revisao"]),
+            ORDEM_FORCA.get(x["forca"], 9),
+            ORDEM_FONTE.get(x["nivel_fonte"], 9),
+            bool(x["citacao"].strip()))
+
+
+def intercalar(itens):
+    """Alterna estado E candidatura a cada item, sem sair da faixa de risco.
+
+    Sempre puxa do grupo (estado, candidatura) que tem MAIS itens na fila. E o
+    que evita o final ruim: se os pequenos saem primeiro, sobram vinte itens da
+    mesma pessoa no fim, exatamente a leitura em bloco que a intercalacao existe
+    para impedir. Quando nao houver grupo que sirva, repete — repetir e melhor
+    que travar."""
+    grupos = collections.OrderedDict()
+    for x in itens:
+        grupos.setdefault((x["uf"], x["candidatura"]), []).append(x)
+    saida, ultimo_uf, ultima_cand = [], None, None
+    while grupos:
+        ordenados = sorted(grupos.items(), key=lambda kv: (-len(kv[1]), kv[0]))
+        escolhido = next((k for k, _ in ordenados
+                          if k[0] != ultimo_uf and k[1] != ultima_cand), None)
+        if escolhido is None:                       # so um estado na fila
+            escolhido = next((k for k, _ in ordenados if k[1] != ultima_cand), None)
+        if escolhido is None:                       # so uma candidatura na fila
+            escolhido = ordenados[0][0]
+        saida.append(grupos[escolhido].pop(0))
+        ultimo_uf, ultima_cand = escolhido
+        if not grupos[escolhido]:
+            del grupos[escolhido]
+    return saida
+
+
+def montar_itens():
+    itens = []
+    for uf in UFS:
+        itens.extend(itens_de(uf))
+    # Intercala DENTRO de cada faixa de risco, e nunca entre faixas: misturar as
+    # faixas daria variedade e perderia a garantia de que parar na metade deixa
+    # revisada a metade que importa.
+    porfaixa = collections.OrderedDict()
+    for x in sorted(itens, key=lambda x: (faixa_de_risco(x), x["id"])):
+        porfaixa.setdefault(faixa_de_risco(x), []).append(x)
+    saida = []
+    for grupo in porfaixa.values():
+        saida.extend(intercalar(grupo))
+    return saida
+
+
+def gravar(uf, id_posicao, decisao, nota, citacao=""):
+    # O ESTADO VEM DO ITEM, e nao de uma variavel global. Com um acervo so, errar
+    # o arquivo era impossivel; com 27, escrever a decisao no estado errado seria
+    # silencioso — marcaria como revisada uma linha que ninguem leu.
+    if uf not in UFS:
+        return False
+    caminho = acervo.de(uf) / "posicoes.json"
     dados = json.loads(caminho.read_text(encoding="utf-8"))
     alvo = lista(dados, "posicoes")
     achou = False
@@ -198,6 +272,13 @@ h1{font-size:1.25rem;margin:0 0 3px}
   padding:2px 7px;border-radius:3px;border:1px solid var(--rule-forte);color:var(--muted)}
 .tag.baixa{color:var(--erro);border-color:var(--erro)}
 .tag.media{color:var(--aviso);border-color:var(--aviso)}
+/* A sigla do estado e o primeiro dado do cartao, e nao mais um selo entre os
+   outros: a fila alterna estados a cada item, e quem revisa precisa saber ONDE
+   esta antes de ler a frase. display:block porque span e inline e ignoraria a
+   altura — ja aconteceu de uma barra vazar do cartao por isso. */
+.uf{display:block;font:700 .8rem/1 ui-monospace,monospace;letter-spacing:.08em;
+  padding:6px 9px;border-radius:4px;background:var(--surface-2);
+  border:1px solid var(--rule-forte);color:var(--ink-2);align-self:center}
 blockquote{margin:0 0 12px;padding:11px 15px;background:var(--surface-2);
   border-left:4px solid var(--rule-forte);border-radius:0 4px 4px 0;font-size:1.02rem}
 .txt{margin:0 0 12px}
@@ -226,9 +307,17 @@ var ITENS=[], i=0;
 function esc(s){var d=document.createElement('div');d.textContent=s==null?'':String(s);return d.innerHTML;}
 
 function progresso(){
-  var feitos=ITENS.filter(function(x){return x.revisado||x.revisao&&x.revisao.resultado;}).length;
+  var feitos=0, ufs={}, ufsFeitos={};
+  ITENS.forEach(function(x){
+    ufs[x.uf]=1;
+    if(x.revisado||x.revisao&&x.revisao.resultado){ feitos++; ufsFeitos[x.uf]=1; }
+  });
+  /* Conta ESTADOS ALCANCADOS, e nao so linhas. E o numero que diz se a revisao
+     esta espalhada ou empilhada num canto — que e a coisa que a intercalacao
+     existe para resolver, e que uma barra de progresso sozinha esconderia. */
   document.getElementById('progresso').textContent =
-    feitos+' de '+ITENS.length+' decididas · restam '+(ITENS.length-feitos);
+    feitos+' de '+ITENS.length+' decididas · restam '+(ITENS.length-feitos)+
+    ' · '+Object.keys(ufsFeitos).length+' de '+Object.keys(ufs).length+' estados alcancados';
   document.getElementById('preenche').style.width=(feitos/ITENS.length*100)+'%';
 }
 
@@ -240,6 +329,7 @@ function desenhar(){
     '<code>python gerar_site.py</code> para publicar.</p>'; return; }
   var it=pend[0];
   alvo.innerHTML='<div class="cartao"><div class="topo">'+
+    '<span class="uf">'+esc(it.uf)+'</span>'+
     '<h2>'+esc(it.numero)+' · '+esc(it.candidatura)+'</h2>'+
     '<span class="tag">'+esc(it.tema)+'</span>'+
     '<span class="tag '+esc(it.forca)+'">conferencia '+esc(it.forca)+'</span>'+
@@ -275,7 +365,8 @@ function desenhar(){
       '<button data-d="remover">Nao deveria estar aqui (3)</button>'+
       '<button data-d="pular">Pular</button>'+
     '</div>'+
-    '<p class="atalho">Teclas 1, 2 e 3. A decisao e gravada na hora em dados/posicoes.json.</p>'+
+    '<p class="atalho">Teclas 1, 2 e 3. A decisao e gravada na hora em dados/'+
+      esc(it.uf.toLowerCase())+'/posicoes.json.</p>'+
     '</div>';
 }
 
@@ -298,7 +389,7 @@ function decidir(d){
     document.getElementById('cit').focus(); return;
   }
   fetch('/api/decidir',{method:'POST',headers:{'content-type':'application/json'},
-    body:JSON.stringify({id:it.id,decisao:d,nota:nota,citacao:cit})})
+    body:JSON.stringify({uf:it.uf,id:it.id,decisao:d,nota:nota,citacao:cit})})
     .then(function(r){return r.json();})
     .then(function(r){
       if(r.erro){ alert(r.erro); return; }
@@ -351,8 +442,10 @@ class Handler(http.server.BaseHTTPRequestHandler):
             return self._envia(json.dumps({"erro": "pedido malformado"}), status=400)
         if c.get("decisao") not in ("confere", "corrigir", "remover"):
             return self._envia(json.dumps({"erro": "decisao invalida"}), status=400)
-        ok = gravar(c.get("id"), c["decisao"], c.get("nota", ""), c.get("citacao", ""))
-        self._envia(json.dumps({"ok": ok} if ok else {"erro": "posicao nao encontrada"}))
+        ok = gravar(c.get("uf", ""), c.get("id"), c["decisao"],
+                    c.get("nota", ""), c.get("citacao", ""))
+        self._envia(json.dumps({"ok": ok} if ok else
+                               {"erro": "posicao nao encontrada neste estado"}))
 
     def log_message(self, *a):
         pass
@@ -375,23 +468,38 @@ def conferir_pagina():
             "dentro de um literal de string e a pagina abre vazia."
         )
 
-    for marca in ('id="cit"', 'id="nota"', 'data-d="confere"', "/api/decidir"):
+    for marca in ('id="cit"', 'id="nota"', 'data-d="confere"', "/api/decidir",
+                  # Sem o uf no corpo do POST, o servidor nao sabe em qual dos 27
+                  # arquivos escrever, e recusa tudo. Sem o uf no cartao, a tela
+                  # alterna estados sem dizer que alternou.
+                  "uf:it.uf", 'class="uf"'):
         if marca not in js and marca not in PAGINA:
             raise SystemExit(f"A pagina perdeu um elemento essencial: {marca}")
 
 
 def main():
     conferir_pagina()
-    origem = DADOS / "posicoes.json"
-    backup = DADOS / "posicoes.json.antes-da-revisao"
-    if not backup.exists():
-        shutil.copy2(origem, backup)
-        print(f"copia de seguranca: {backup.name}")
+    novas = 0
+    for uf in UFS:
+        origem = acervo.de(uf) / "posicoes.json"
+        backup = acervo.de(uf) / "posicoes.json.antes-da-revisao"
+        if not backup.exists():
+            shutil.copy2(origem, backup)
+            novas += 1
+    if novas:
+        print(f"copia de seguranca criada em {novas} estado(s)")
 
     itens = montar_itens()
     pend = [x for x in itens if not (x["revisado"] or x["revisao"])]
-    print(f"{len(itens)} posicoes · {len(pend)} ainda sem decisao")
+    ufs_pend = sorted({x["uf"] for x in pend})
+    print(f"{len(itens)} posicoes em {len(UFS)} estado(s) · {len(pend)} ainda sem decisao")
+    print(f"pendencias em {len(ufs_pend)} estado(s): {' '.join(ufs_pend)}")
     print("ordem: fonte secundaria e conferencia fraca primeiro")
+    print("a fila alterna estado e candidatura a cada item")
+    if pend:
+        print("\nprimeiros da fila:")
+        for x in pend[:6]:
+            print(f"  {x['uf']}  {x['candidatura'][:34]:34}  {x['tema']}")
     print(f"\nabra http://localhost:{PORTA}  (ctrl+c aqui para parar)\n")
 
     socketserver.TCPServer.allow_reuse_address = True
