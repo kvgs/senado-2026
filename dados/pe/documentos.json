@@ -1,4 +1,14 @@
 {
  "_nota": "Documentos que sustentam posicao: plano registrado no TSE, programa partidario, site oficial, base de dados abertos, reportagem, entrevista. Vazio porque a coleta de Pernambuco ainda nao comecou.",
- "documentos": []
+ "documentos": [
+  {
+   "id_documento": "doc-site-sen-pe-2026-mendonca-filho",
+   "tipo": "site_de_candidatura",
+   "titulo": "Propostas – Mendonça Filho",
+   "url": "https://mendoncafilho.com.br/propostas/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-27",
+   "_origem": "Endereco declarado pela propria candidatura no registro no TSE (base de redes sociais 2026)."
+  }
+ ]
 }

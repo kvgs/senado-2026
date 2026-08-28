@@ -3191,6 +3191,28 @@
    },
    "citacao_literal": "\"Dentre eles, desenvolvemos a luta permanente contra o imperialismo e a solidariedade militanteaCuba, à Palestina, ao povo do Irã, da Venezuela e todos os povos que enfrentama velhaordem imperial e defendem sua soberania e autodeterminação.\", \"Legalizaçãodoaborto, com garantia de atendimento na rede pública de saúde, bemcomo políticaspúblicas que possibilitem a emancipação da mulher dos trabalhos domésticos, zerandoas filas de creches, ampliando a educação integral e efetuando a construção massivaderestaurantes e lavanderias populares.\"",
    "escopo": "Vem do programa que o partido registrou no TSE para Edmilson Costa, candidato à Presidência da República — não é documento da candidatura ao Senado. Aparece aqui como posição do partido, que a candidatura integra."
+  },
+  {
+   "id_posicao": "pos-sen-sp-2026-tebet-site-001",
+   "id_tema": "t1",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-sp-2026-tebet",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-sp-2026-tebet",
+   "citacao_literal": "Com a adesão ao Vote pela Paz, Simone reforça o compromisso com uma segurança pública que combine firmeza no combate ao crime, valorização das polícias, inteligência, prevenção e responsabilidade na construção das leis.",
+   "texto": "Adere a manifesto por seguranca publica que combina combate ao crime, valorizacao das policias, inteligencia e prevencao.",
+   "url_especifica": "https://simone400.com.br/simone-tebet-adere-ao-manifesto-vote-pela-paz-por-uma-seguranca-publica-mais-eficiente/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
   }
  ],
  "_conferencia_por_ia": {

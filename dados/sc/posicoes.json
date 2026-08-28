@@ -1,4 +1,49 @@
 {
  "_nota": "Posicoes por candidatura e tema, cada uma com fonte, selo e estado de cobertura. Vazio NAO significa que as candidaturas nao tem proposta: significa que ainda nao procuramos.",
- "posicoes": []
+ "posicoes": [
+  {
+   "id_posicao": "pos-sen-sc-2026-afranio-boppre-site-001",
+   "id_tema": "t3",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-sc-2026-afranio-boppre",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-sc-2026-afranio-boppre",
+   "citacao_literal": "Compromisso com a defesa do SUS, com a qualidade dos postos de saúde e valorização dos seus profissionais.",
+   "texto": "Declara compromisso com a defesa do SUS e a valorizacao dos profissionais da rede.",
+   "url_especifica": "https://afranio.org.br/acao-parlamentar/nossa-atuacao/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-sc-2026-afranio-boppre-site-002",
+   "id_tema": "t6",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-sc-2026-afranio-boppre",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-sc-2026-afranio-boppre",
+   "citacao_literal": "Compromisso com a preservação dos ecossistemas, proteção das áreas naturais, combate à especulação imobiliária e promoção de uma Cidade sustentável.",
+   "texto": "Declara compromisso com preservacao de ecossistemas e combate a especulacao imobiliaria.",
+   "url_especifica": "https://afranio.org.br/acao-parlamentar/nossa-atuacao/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  }
+ ]
 }

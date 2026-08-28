@@ -1,4 +1,32 @@
 {
  "_nota": "Documentos que sustentam posicao: plano registrado no TSE, programa partidario, site oficial, base de dados abertos, reportagem, entrevista. Vazio porque a coleta pelo Paraná ainda nao comecou.",
- "documentos": []
+ "documentos": [
+  {
+   "id_documento": "doc-site-sen-pr-2026-alexandre-curi",
+   "tipo": "site_de_candidatura",
+   "titulo": "Em encontro com 1,6 mil produtoras, Curi reforça defesa do agro e apresenta prioridades para Brasília – Alexandre Curi",
+   "url": "https://alexandrecuri.com.br/noticias/em-encontro-com-16-mil-produtoras-curi-reforca-defesa-do-agro-e-apresenta-prioridades-para-brasilia/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-27",
+   "_origem": "Endereco declarado pela propria candidatura no registro no TSE (base de redes sociais 2026)."
+  },
+  {
+   "id_documento": "doc-site-sen-pr-2026-deltan-dallagnol",
+   "tipo": "site_de_candidatura",
+   "titulo": "A plataforma · Deltan Dallagnol 300 · Senador pelo Paraná",
+   "url": "https://deltandallagnol.com.br/plataforma/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-27",
+   "_origem": "Endereco declarado pela propria candidatura no registro no TSE (base de redes sociais 2026)."
+  },
+  {
+   "id_documento": "doc-site-sen-pr-2026-cristina-graeml",
+   "tipo": "site_de_candidatura",
+   "titulo": "Cristina Graeml — Jornalista e Pré-candidata ao Senado pelo Paraná",
+   "url": "https://cristinagraeml.com.br",
+   "publicado_em": null,
+   "consultado_em": "2026-08-27",
+   "_origem": "Endereco declarado pela propria candidatura no registro no TSE (base de redes sociais 2026)."
+  }
+ ]
 }

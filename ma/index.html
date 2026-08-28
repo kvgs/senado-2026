@@ -815,8 +815,17 @@ document.getElementById('atualizado').textContent=D.atualizado;
      todo mundo não pode descrever errado o próprio estado. */
   let h;
   if(!t.revisadas){
-    h='<b>Rascunho de trabalho.</b> Nenhuma das '+t.posicoes+' informações desta página passou '+
-      'por revisão humana ainda. Não use como referência para decidir voto. ';
+    /* O texto anterior dizia "não use como referência para decidir voto". Foi
+       escrito quando a alternativa era não publicar nada, e ficou impreciso: a
+       citação É conferida palavra por palavra contra o texto coletado, e vem
+       com o endereço. Dizer que não serve para nada num site que existe para
+       ajudar a decidir seria desfazer a própria entrega. O honesto é separar o
+       que a máquina garante do que só uma pessoa resolve. */
+    h='<b>Ainda não revisado por uma pessoa.</b> As '+t.posicoes+' informações desta página '+
+      'foram levantadas automaticamente. Cada citação foi conferida palavra por palavra '+
+      'contra a página de origem, e traz o endereço ao lado. O que ainda <em>não</em> foi '+
+      'conferido por gente: se o trecho representa o conjunto do que a candidatura defende, '+
+      'e se a página mudou depois da coleta. ';
   } else if(falta){
     h='<b>Revisão em andamento.</b> '+t.revisadas+' de '+t.posicoes+' informações desta página '+
       'já foram conferidas por uma pessoa contra a fonte original; as outras '+falta+

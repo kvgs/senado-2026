@@ -1,4 +1,181 @@
 {
  "_nota": "Posicoes por candidatura e tema, cada uma com fonte, selo e estado de cobertura. Vazio NAO significa que as candidaturas nao tem proposta: significa que ainda nao procuramos.",
- "posicoes": []
+ "posicoes": [
+  {
+   "id_posicao": "pos-sen-es-2026-professor-fabian-site-001",
+   "id_tema": "t2",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-es-2026-professor-fabian",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-es-2026-professor-fabian",
+   "citacao_literal": "Defendo a valorização e a formação continuada em serviço dos profissionais de educação, o fortalecimento de todos os níveis, etapas e modalidades da Educação Básica em uma perspectiva emancipatória e inclusiva. As modalidades da educação básica serão tratadas como prioridade, bem como o fortalecimento das universidades públicas e dos Institutos Federais.",
+   "texto": "Defende valorização e formação continuada dos profissionais de educação, e prioriza a educação de jovens e adultos e as universidades públicas e Institutos Federais.",
+   "url_especifica": "https://professorfabian.com.br/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-es-2026-professor-fabian-site-002",
+   "id_tema": "t2",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-es-2026-professor-fabian",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-es-2026-professor-fabian",
+   "citacao_literal": "Quero tratar a escola pública como estrutura central de transformação social e priorizar a educação de jovens e adultos, especialmente nos territórios historicamente esquecidos pelo poder público, e cuidar também dos profissionais que atuam nas instituições privadas de educação, monitorando permanentemente a execução das metas dos planos nacional, estadual e municipal de educação.",
+   "texto": "Quer priorizar a educação de jovens e adultos em territórios sem atendimento e monitorar a execução das metas dos planos de educação.",
+   "url_especifica": "https://professorfabian.com.br/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-es-2026-professor-fabian-site-003",
+   "id_tema": "t1",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-es-2026-professor-fabian",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-es-2026-professor-fabian",
+   "citacao_literal": "Proponho um modelo de segurança que rompe com a lógica do armamento e da repressão à periferia. Defendo câmeras em 100% dos fardamentos policiais, a criação de uma ouvidoria independente para segurança pública, militar, civil e guarda, o fortalecimento de políticas de prevenção à tortura e a massacres, e que a justiça responsável por esses casos seja civil, não militar.",
+   "texto": "Propõe câmeras em todos os fardamentos policiais, ouvidoria independente de segurança pública e julgamento civil, não militar, dos casos de tortura.",
+   "url_especifica": "https://professorfabian.com.br/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-es-2026-professor-fabian-site-004",
+   "id_tema": "t9",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-es-2026-professor-fabian",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-es-2026-professor-fabian",
+   "citacao_literal": "defendo políticas de valorização e sustentação das escolas de samba, dos grupos culturais de base comunitária e das rádios comunitárias que já sustentam a cultura do Espírito Santo com recursos próprios. Quero reconhecer a cultura popular como política de Estado, e não como evento isolado, dando estrutura permanente ao que hoje se sustenta na base da doação e do voluntariado.",
+   "texto": "Defende financiamento permanente para escolas de samba, grupos culturais de base comunitária e rádios comunitárias, tratando cultura popular como política de Estado.",
+   "url_especifica": "https://professorfabian.com.br/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-es-2026-renato-casagrande-site-005",
+   "id_tema": "t2",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-es-2026-renato-casagrande",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-es-2026-renato-casagrande",
+   "citacao_literal": "Expansão da educação técnica, apoio ao ensino em tempo integral e muito mais.",
+   "texto": "Lista, entre as propostas de educação, a expansão da educação técnica e o apoio ao ensino em tempo integral.",
+   "url_especifica": "https://renatocasagrande.com.br/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-es-2026-renato-casagrande-site-006",
+   "id_tema": "t3",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-es-2026-renato-casagrande",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-es-2026-renato-casagrande",
+   "citacao_literal": "Mais leitos, regionalização do atendimento e fortalecimento da atenção básica.",
+   "texto": "Propõe mais leitos hospitalares, regionalização do atendimento e fortalecimento da atenção básica.",
+   "url_especifica": "https://renatocasagrande.com.br/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-es-2026-renato-casagrande-site-007",
+   "id_tema": "t1",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-es-2026-renato-casagrande",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-es-2026-renato-casagrande",
+   "citacao_literal": "Inteligência, tecnologia e valorização das forças de segurança.",
+   "texto": "Resume a proposta de segurança em inteligência, tecnologia e valorização das forças de segurança.",
+   "url_especifica": "https://renatocasagrande.com.br/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-es-2026-fabiano-contarato-site-008",
+   "id_tema": "t1",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-es-2026-fabiano-contarato",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-es-2026-fabiano-contarato",
+   "citacao_literal": "O motorista que desrespeita a lei não pode ter a certeza de que nada acontecerá. Precisamos reduzir essa triste estatística e endurecer a legislação para proteger a vida.",
+   "texto": "Defende endurecer a legislação de trânsito para reduzir mortes.",
+   "url_especifica": "https://fabianocontarato.com.br/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  }
+ ]
 }

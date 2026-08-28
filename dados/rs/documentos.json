@@ -1,4 +1,23 @@
 {
  "_nota": "Documentos que sustentam posicao: plano registrado no TSE, programa partidario, site oficial, base de dados abertos, reportagem, entrevista. Vazio porque a coleta pelo Rio Grande do Sul ainda nao comecou.",
- "documentos": []
+ "documentos": [
+  {
+   "id_documento": "doc-site-sen-rs-2026-marcel-van-hattem",
+   "tipo": "site_de_candidatura",
+   "titulo": "Marcel van Hattem – Deputado Federal",
+   "url": "https://www.marcelvanhattem.com.br/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-27",
+   "_origem": "Endereco declarado pela propria candidatura no registro no TSE (base de redes sociais 2026)."
+  },
+  {
+   "id_documento": "doc-site-sen-rs-2026-frederico-antunes",
+   "tipo": "site_de_candidatura",
+   "titulo": "Frederico Antunes | Candidato ao Senado pelo RS",
+   "url": "https://fredericoantunes.com.br",
+   "publicado_em": null,
+   "consultado_em": "2026-08-27",
+   "_origem": "Endereco declarado pela propria candidatura no registro no TSE (base de redes sociais 2026)."
+  }
+ ]
 }

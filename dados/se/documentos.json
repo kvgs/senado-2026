@@ -1,4 +1,14 @@
 {
  "_nota": "Documentos que sustentam posicao: plano registrado no TSE, programa partidario, site oficial, base de dados abertos, reportagem, entrevista. Vazio porque a coleta por Sergipe ainda nao comecou.",
- "documentos": []
+ "documentos": [
+  {
+   "id_documento": "doc-site-sen-se-2026-iran-barbosa",
+   "tipo": "site_de_candidatura",
+   "titulo": "Iran apela para que PL da Misoginia seja pautado para votação na Câmara Federal - IRAN BARBOSA - VEREADOR :: ARACAJU - PSOL",
+   "url": "https://iranbarbosa.com.br/2026/07/14/iran-apela-para-que-pl-da-misoginia-seja-pautado-para-votacao-na-camara-federal/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-27",
+   "_origem": "Endereco declarado pela propria candidatura no registro no TSE (base de redes sociais 2026)."
+  }
+ ]
 }

@@ -1,4 +1,93 @@
 {
  "_nota": "Posicoes por candidatura e tema, cada uma com fonte, selo e estado de cobertura. Vazio NAO significa que as candidaturas nao tem proposta: significa que ainda nao procuramos.",
- "posicoes": []
+ "posicoes": [
+  {
+   "id_posicao": "pos-sen-pr-2026-alexandre-curi-site-001",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-pr-2026-alexandre-curi",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-pr-2026-alexandre-curi",
+   "citacao_literal": "Precisamos criar condições para que o filho e a filha do produtor enxerguem futuro no campo. Isso passa por renda, crédito, tecnologia, internet, infraestrutura e qualidade de vida. O jovem não pode precisar abandonar a propriedade para encontrar oportunidade",
+   "texto": "Defende renda, credito, tecnologia, internet e infraestrutura para manter o jovem no campo.",
+   "url_especifica": "https://alexandrecuri.com.br/noticias/em-encontro-com-16-mil-produtoras-curi-reforca-defesa-do-agro-e-apresenta-prioridades-para-brasilia/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pr-2026-alexandre-curi-site-002",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-pr-2026-alexandre-curi",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-pr-2026-alexandre-curi",
+   "citacao_literal": "Quero estar em Brasília para defender quem produz aqui, fortalecer nossas cooperativas e garantir que o Paraná tenha voz nas decisões que afetam o campo.",
+   "texto": "Quer defender a producao agropecuaria do Parana e fortalecer as cooperativas.",
+   "url_especifica": "https://alexandrecuri.com.br/noticias/em-encontro-com-16-mil-produtoras-curi-reforca-defesa-do-agro-e-apresenta-prioridades-para-brasilia/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pr-2026-deltan-dallagnol-site-003",
+   "id_tema": "t10",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-pr-2026-deltan-dallagnol",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-pr-2026-deltan-dallagnol",
+   "citacao_literal": "O corrupto precisa perder o dinheiro, o cargo e a liberdade, e precisa saber que a lei será cumprida.",
+   "texto": "Defende que condenados por corrupcao percam dinheiro, cargo e liberdade.",
+   "url_especifica": "https://deltandallagnol.com.br/plataforma/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pr-2026-cristina-graeml-site-004",
+   "id_tema": "t10",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-pr-2026-cristina-graeml",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-pr-2026-cristina-graeml",
+   "citacao_literal": "Defendo a fiscalização de quem ocupa cargos públicos e a liberdade de expressão, porque sei, como jornalista, o que significa ser impedida de falar.",
+   "texto": "Defende fiscalizacao de ocupantes de cargo publico e liberdade de expressao.",
+   "url_especifica": "https://cristinagraeml.com.br",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  }
+ ]
 }

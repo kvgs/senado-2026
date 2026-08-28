@@ -1,4 +1,71 @@
 {
  "_nota": "Posicoes por candidatura e tema, cada uma com fonte, selo e estado de cobertura. Vazio NAO significa que as candidaturas nao tem proposta: significa que ainda nao procuramos.",
- "posicoes": []
+ "posicoes": [
+  {
+   "id_posicao": "pos-sen-rs-2026-marcel-van-hattem-site-001",
+   "id_tema": "t1",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-rs-2026-marcel-van-hattem",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-rs-2026-marcel-van-hattem",
+   "citacao_literal": "Garantir a vida da população é o primeiro dever do Estado para com o pagador de impostos! Além disso, defendo que é direito do cidadão proteger sua propriedade e sua família.",
+   "texto": "Coloca a garantia da vida como primeiro dever do Estado e defende o direito de proteger propriedade e familia.",
+   "url_especifica": "https://www.marcelvanhattem.com.br/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-rs-2026-marcel-van-hattem-site-002",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-rs-2026-marcel-van-hattem",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-rs-2026-marcel-van-hattem",
+   "citacao_literal": "Seu compromisso com a redução de impostos e simplificação tributária busca estimular o crescimento econômico, enquanto o engajamento direto com a sociedade civil reflete sua convicção na participação ativa dos cidadãos.",
+   "texto": "O site descreve compromisso com reducao de impostos e simplificacao tributaria.",
+   "url_especifica": "https://www.marcelvanhattem.com.br/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-rs-2026-frederico-antunes-site-003",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-rs-2026-frederico-antunes",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-rs-2026-frederico-antunes",
+   "citacao_literal": "Privatizar o Banrisul é mais do que vender. É fechar! Quero ser Senador pra defender a nossa economia, a nossa gente.",
+   "texto": "Posiciona-se contra a privatizacao do Banrisul, citando o lucro e a participacao do estado.",
+   "url_especifica": "https://fredericoantunes.com.br",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  }
+ ]
 }

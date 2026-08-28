@@ -1,4 +1,71 @@
 {
  "_nota": "Posicoes por candidatura e tema, cada uma com fonte, selo e estado de cobertura. Vazio NAO significa que as candidaturas nao tem proposta: significa que ainda nao procuramos.",
- "posicoes": []
+ "posicoes": [
+  {
+   "id_posicao": "pos-sen-am-2026-wilson-lima-site-001",
+   "id_tema": "t1",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-am-2026-wilson-lima",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-am-2026-wilson-lima",
+   "citacao_literal": "Eu defendo e vou lutar no Congresso pela castração química de quem estupra criança, de quem abusa de menor de idade. Não tem conversa, tem que cortar o mal pela raiz. Bandido tem que estar na cadeia. Com a castração química, o criminoso vai pensar duas vezes",
+   "texto": "Diz que vai lutar no Congresso pela castracao quimica de condenados por estupro de crianca.",
+   "url_especifica": "http://wilsonlimaam.com.br/2026/08/14/tem-que-cortar-o-mal-pela-raiz-afirma-wilson-ao-defender-castracao-quimica-para-estupradores-de-criancas-condenados-pela-justica/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-am-2026-wilson-lima-site-002",
+   "id_tema": "t1",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-am-2026-wilson-lima",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-am-2026-wilson-lima",
+   "citacao_literal": "Não adianta o governador equipar a polícia, contratar pessoal e comprar equipamento novo se as nossas leis ainda são frouxas demais. Não adianta a polícia prender se, no dia seguinte, o bandido passa por uma audiência de custódia e está de volta às ruas, afrontando a sociedade e a polícia. Quero estar no Congresso para tornar as leis mais duras, punir bandido e proteger o cidadão de bem",
+   "texto": "Defende endurecer a legislacao penal, criticando a audiencia de custodia.",
+   "url_especifica": "http://wilsonlimaam.com.br/2026/08/14/no-lancamento-da-candidatura-de-wanderley-monteiro-wilson-lima-defende-leis-mais-duras-contra-criminosos/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-am-2026-wilson-lima-site-003",
+   "id_tema": "t1",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-am-2026-wilson-lima",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-am-2026-wilson-lima",
+   "citacao_literal": "Quem tem que ter medo é o bandido, e não o cidadão de bem. Quero estar em Brasília para endurecer as leis contra a bandidagem e também exigir do Governo Federal que cumpra a sua parte na proteção das nossas fronteiras, porque as polícias do Amazonas não conseguem fazer isso sozinhas",
+   "texto": "Quer endurecer leis e cobrar do governo federal a protecao das fronteiras do Amazonas.",
+   "url_especifica": "http://wilsonlimaam.com.br/2026/08/14/em-barcelos-wilson-lima-propoe-policia-de-fronteira-para-ampliar-atuacao-das-bases-fluviais-contra-o-narcotrafico/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  }
+ ]
 }

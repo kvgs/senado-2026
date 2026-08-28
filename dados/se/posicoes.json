@@ -1,4 +1,27 @@
 {
  "_nota": "Posicoes por candidatura e tema, cada uma com fonte, selo e estado de cobertura. Vazio NAO significa que as candidaturas nao tem proposta: significa que ainda nao procuramos.",
- "posicoes": []
+ "posicoes": [
+  {
+   "id_posicao": "pos-sen-se-2026-iran-barbosa-site-001",
+   "id_tema": "t9",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-se-2026-iran-barbosa",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-se-2026-iran-barbosa",
+   "citacao_literal": "Precisamos proteger as mulheres, que são a todo momento atacadas e violentadas nos seus direitos. Isso gera todo um processo de ‘coisificação’ das mulheres que acaba resultando em feminicídio",
+   "texto": "Defende a aprovacao do projeto sobre misoginia como protecao a mulheres.",
+   "url_especifica": "https://iranbarbosa.com.br/2026/07/14/iran-apela-para-que-pl-da-misoginia-seja-pautado-para-votacao-na-camara-federal/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  }
+ ]
 }

@@ -1,4 +1,32 @@
 {
  "_nota": "Documentos que sustentam posicao: plano registrado no TSE, programa partidario, site oficial, base de dados abertos, reportagem, entrevista. Vazio porque a coleta pelo Espírito Santo ainda nao comecou.",
- "documentos": []
+ "documentos": [
+  {
+   "id_documento": "doc-site-sen-es-2026-professor-fabian",
+   "tipo": "site_de_candidatura",
+   "titulo": "Professor Fabian – Pré-Candidato ao Senado – PSol ES",
+   "url": "https://professorfabian.com.br/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-27",
+   "_origem": "Endereco declarado pela propria candidatura no registro no TSE (base de redes sociais 2026)."
+  },
+  {
+   "id_documento": "doc-site-sen-es-2026-renato-casagrande",
+   "tipo": "site_de_candidatura",
+   "titulo": "Senador Casagrande 400 – O Espírito Santo em 1º lugar",
+   "url": "https://renatocasagrande.com.br/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-27",
+   "_origem": "Endereco declarado pela propria candidatura no registro no TSE (base de redes sociais 2026)."
+  },
+  {
+   "id_documento": "doc-site-sen-es-2026-fabiano-contarato",
+   "tipo": "site_de_candidatura",
+   "titulo": "Home - Fabiano Contarato Senador",
+   "url": "https://fabianocontarato.com.br/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-27",
+   "_origem": "Endereco declarado pela propria candidatura no registro no TSE (base de redes sociais 2026)."
+  }
+ ]
 }

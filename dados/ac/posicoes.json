@@ -1,4 +1,27 @@
 {
  "_nota": "Posicoes por candidatura e tema, cada uma com fonte, selo e estado de cobertura. Vazio NAO significa que as candidaturas nao tem proposta: significa que ainda nao procuramos.",
- "posicoes": []
+ "posicoes": [
+  {
+   "id_posicao": "pos-sen-ac-2026-jorge-viana-site-001",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-ac-2026-jorge-viana",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-ac-2026-jorge-viana",
+   "citacao_literal": "Defendo a necessidade de uma distribuição de renda mais justa , para combater a fome e as enormes desigualdades sociais que temos no nosso país.",
+   "texto": "Defende distribuicao de renda mais justa para combater a fome e a desigualdade social.",
+   "url_especifica": "https://jorgeviana.com.br/o-que-penso/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  }
+ ]
 }

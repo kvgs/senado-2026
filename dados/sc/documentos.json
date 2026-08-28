@@ -1,4 +1,14 @@
 {
  "_nota": "Documentos que sustentam posicao: plano registrado no TSE, programa partidario, site oficial, base de dados abertos, reportagem, entrevista. Vazio porque a coleta por Santa Catarina ainda nao comecou.",
- "documentos": []
+ "documentos": [
+  {
+   "id_documento": "doc-site-sen-sc-2026-afranio-boppre",
+   "tipo": "site_de_candidatura",
+   "titulo": "Nossa atuação - Afrânio Boppré",
+   "url": "https://afranio.org.br/acao-parlamentar/nossa-atuacao/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-27",
+   "_origem": "Endereco declarado pela propria candidatura no registro no TSE (base de redes sociais 2026)."
+  }
+ ]
 }

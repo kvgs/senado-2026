@@ -1,4 +1,27 @@
 {
  "_nota": "Posicoes por candidatura e tema, cada uma com fonte, selo e estado de cobertura. Vazio NAO significa que as candidaturas nao tem proposta: significa que ainda nao procuramos.",
- "posicoes": []
+ "posicoes": [
+  {
+   "id_posicao": "pos-sen-al-2026-renan-site-001",
+   "id_tema": "t9",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-al-2026-renan",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-al-2026-renan",
+   "citacao_literal": "É infamante celebrar um movimento que matou, torturou, exilou, sequestrou pessoas, fechou o Congresso, censurou a imprensa e mergulhou o país no caos e no obscurantismo.",
+   "texto": "Condena a celebracao do regime militar de 1964, citando mortos, desaparecidos, censura e fechamento do Congresso.",
+   "url_especifica": "https://renancalheiros.com.br/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  }
+ ]
 }

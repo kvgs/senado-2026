@@ -1,4 +1,14 @@
 {
  "_nota": "Documentos que sustentam posicao: plano registrado no TSE, programa partidario, site oficial, base de dados abertos, reportagem, entrevista. Vazio porque a coleta pelo Amazonas ainda nao comecou.",
- "documentos": []
+ "documentos": [
+  {
+   "id_documento": "doc-site-sen-am-2026-wilson-lima",
+   "tipo": "site_de_candidatura",
+   "titulo": "Tem que cortar o mal pela raiz”, afirma Wilson ao defender castração química para estupradores de crianças condenados pela justiça – Wilson Lima",
+   "url": "http://wilsonlimaam.com.br/2026/08/14/tem-que-cortar-o-mal-pela-raiz-afirma-wilson-ao-defender-castracao-quimica-para-estupradores-de-criancas-condenados-pela-justica/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-27",
+   "_origem": "Endereco declarado pela propria candidatura no registro no TSE (base de redes sociais 2026)."
+  }
+ ]
 }
