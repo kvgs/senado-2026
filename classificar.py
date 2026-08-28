@@ -105,10 +105,26 @@ ARQUIVOS = {
     "discurso": DADOS / "_coleta_discursos.json",
 }
 
-# Candidaturas que hoje nao tem NENHUMA proposta no site. Sao o motivo de tudo
-# isto existir, entao vem primeiro.
-PRIORIDADE = ["sen-sp-2026-salles", "sen-sp-2026-derrite",
-              "sen-sp-2026-tebet", "sen-sp-2026-marina"]
+def _prioridade() -> list[str]:
+    """Candidaturas que hoje NAO TEM nenhuma posicao publicada neste estado. Sao
+    o motivo de tudo isto existir, entao vem primeiro na fila.
+
+    Isto era uma lista escrita a mao com quatro ids de Sao Paulo, e envelheceu
+    duas vezes: a fila de Pernambuco era ordenada por candidaturas de outro
+    estado, e as quatro ja tem posicao publicada — a premissa que justificava a
+    lista deixou de valer sem que a lista mudasse. Agora sai do acervo, e nao
+    pode divergir dele."""
+    try:
+        pos = {p.get("id_candidatura_contexto") or p.get("atribuido_a_id")
+               for p in acervo.ler("posicoes.json", _UF)["posicoes"]}
+        return [c["id_candidatura"]
+                for c in acervo.ler("candidaturas.json", _UF)["candidaturas"]
+                if c["id_candidatura"] not in pos]
+    except Exception:                       # noqa: BLE001 — ordem nao vale travar a tela
+        return []
+
+
+PRIORIDADE = _prioridade()
 
 ORDEM_CONF = {"boa": 0, "ambigua": 1, "fraca": 2, "nenhuma": 3}
 
