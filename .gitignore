@@ -40,6 +40,11 @@ fontes/consulta-candidatos-2026.zip
 fontes/prestacao-contas-2026.zip
 
 # Copia de seguranca que revisar.py faz ao iniciar; o git ja e o historico
+# Copia que revisar.py faz antes da primeira decisao. O caminho aqui era
+# dados/posicoes.json.antes-da-revisao, do tempo em que o acervo tinha um
+# estado so — e parou de casar quando virou dados/<uf>/, sem avisar. A regra
+# continuou no arquivo parecendo que funcionava.
+dados/*/posicoes.json.antes-da-revisao
 dados/posicoes.json.antes-da-revisao
 
 # Apelido de quem revisa nesta maquina. Escolhido pela pessoa, nao herdado do
