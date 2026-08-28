@@ -181,13 +181,22 @@
   .rodape p{max-width:68ch;color:var(--ink-2);font-size:.94rem;margin-bottom:11px}
   .rodape a{color:var(--acento)}
 
-  .tema{position:absolute;top:14px;right:16px;display:flex;gap:4px}
-  .tema button{font:inherit;font-size:.76rem;padding:5px 9px;cursor:pointer;
-    border:1px solid var(--rule-strong);background:var(--surface);color:var(--ink-2);
-    border-radius:5px}
-  .tema button[aria-pressed="true"]{background:var(--ink);color:var(--ground);
-    border-color:var(--ink)}
+  /* MESMO SELETOR DA PAGINA DO ESTADO. Eram dois desenhos diferentes para o
+     mesmo controle — tres botoes quadrados com borda aqui, uma pilula unica la.
+     Trocar de pagina trocava o visual de um controle que faz a mesma coisa, e
+     isso le como dois sites. Vale a versao do estado, que e a mais discreta. */
+  .tema{position:absolute;top:16px;right:22px;display:flex;gap:2px;z-index:5;
+    background:var(--surface-2);border:1px solid var(--rule);border-radius:99px;padding:3px}
+  .tema button{font:inherit;font-family:"PlexMono",ui-monospace,monospace;font-size:.72rem;font-weight:500;
+    letter-spacing:.06em;text-transform:uppercase;padding:6px 11px;border:0;border-radius:99px;
+    background:none;color:var(--muted);cursor:pointer}
+  .tema button:hover{color:var(--ink)}
+  .tema button[aria-pressed="true"]{background:var(--surface);color:var(--acento);
+    box-shadow:0 1px 2px rgba(0,0,0,.12)}
   .tema button:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+  @media (max-width:560px){
+    .tema{position:static;margin:16px 0 0;justify-content:flex-start;width:max-content}
+  }
 
   .vis-oculto{position:absolute;width:1px;height:1px;padding:0;margin:-1px;
     overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
