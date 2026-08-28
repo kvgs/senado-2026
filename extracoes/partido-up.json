@@ -1,0 +1,55 @@
+{
+  "partido": "UP",
+  "titulo": "Programa da Unidade Popular pelo Socialismo — Programa de Governo (2026)",
+  "url": "https://unidadepopular.org.br/programa-eleitoral",
+  "texto_extraido": "fontes/programa-up-2026-NACIONAL-site.txt",
+  "publicado_em": "2026",
+  "nota": "PDF de 67 páginas publicado pelo próprio partido em seu site nacional, na página /programa-eleitoral. Cita dados de 2025 e 2026. NÃO é o PDF que cada candidatura registra no TSE, que varia por estado.",
+  "posicoes": [
+    {
+      "tema": "t2",
+      "resumo": "Defende educação pública e gratuita em todos os níveis, fim do lucro na educação e fim do vestibular.",
+      "trecho": "EDUCAÇÃO PÚBLICA E GRATUITA PARA TODOS E EM TODOS OS NÍVEIS; FIM DO LUCRO NA EDUCAÇÃO. GARANTIA DE LIVRE ACESSO DO POVO À UNIVERSIDADE E/OU CURSOS TÉCNICOS PROFISSIONALIZANTES; FIM DO VESTIBULAR OU QUALQUER PROCESSO SELETIVO"
+    },
+    {
+      "tema": "t1",
+      "resumo": "Defende a desmilitarização das polícias.",
+      "trecho": "SEGURANÇA PÚBLICA E DESMILITARIZAÇÃO DAS POLÍCIAS"
+    },
+    {
+      "tema": "t6",
+      "resumo": "Defende proibir a destruição de florestas e estabelecer controle popular sobre a Amazônia, com expulsão de monopólios estrangeiros da região.",
+      "trecho": "DEFESA E PROTEÇÃO DO MEIO AMBIENTE E DA NATUREZA; PROIBIÇÃO DA DESTRUIÇÃO DE FLORESTAS; ESTABELECIMENTO DO CONTROLE POPULAR SOBRE A AMAZÔNIA E EXPULSÃO DE TODOS OS MONOPÓLIOS ESTRANGEIROS DA REGIÃO;"
+    },
+    {
+      "tema": "t7",
+      "resumo": "Defende moradia digna e acesso à cidade.",
+      "trecho": "MORADIA DIGNA PARA O POVO E ACESSO À CIDADE"
+    },
+    {
+      "tema": "t4",
+      "resumo": "Propõe aumento de 100% no salário mínimo.",
+      "trecho": "AUMENTO DE 100% NO SALÁRIO MÍNIMO"
+    },
+    {
+      "tema": "t4",
+      "resumo": "Propõe o fim da escala 6x1 e a adoção da escala 4x3.",
+      "trecho": "DA ESCALA 6X1 E ESTABELECIMENTO DA ESCALA 4X3"
+    },
+    {
+      "tema": "t4",
+      "resumo": "Defende revogar as reformas trabalhista e previdenciária, a terceirização irrestrita e o arcabouço fiscal.",
+      "trecho": "REVOGAR AS REFORMAS TRABALHISTA E PREVIDENCIÁRIA, A TERCEIRIZAÇÃO IRRESTRITA E O ARCABOUÇO FISCAL"
+    },
+    {
+      "tema": "t10",
+      "resumo": "Propõe suspender o pagamento de juros e amortização da dívida pública, seguido de auditoria pública.",
+      "trecho": "SUSPENSÃO IMEDIATA DO PAGAMENTO DE JUROS E AMORTIZAÇÃO DA DÍVIDA PÚBLICA, SEGUIDO DE PROCESSO PÚBLICO DE AUDITORIA"
+    },
+    {
+      "tema": "t3",
+      "resumo": "Defende a saúde pública e a valorização do SUS.",
+      "trecho": "SAÚDE PÚBLICA E VALORIZAÇÃO DO SUS"
+    }
+  ]
+}

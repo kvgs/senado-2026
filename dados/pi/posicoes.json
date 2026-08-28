@@ -1,4 +1,212 @@
 {
  "_nota": "Posicoes por candidatura e tema, cada uma com fonte, selo e estado de cobertura. Vazio NAO significa que as candidaturas nao tem proposta: significa que ainda nao procuramos.",
- "posicoes": []
+ "posicoes": [
+  {
+   "id_posicao": "pos-sen-pi-2026-pedro-laurentino-prog-up-001",
+   "id_candidatura_contexto": "sen-pi-2026-pedro-laurentino",
+   "id_tema": "t2",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "up",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-up",
+   "citacao_literal": "EDUCAÇÃO PÚBLICA E GRATUITA PARA TODOS E EM TODOS OS NÍVEIS; FIM DO LUCRO NA EDUCAÇÃO. GARANTIA DE LIVRE ACESSO DO POVO À UNIVERSIDADE E/OU CURSOS TÉCNICOS PROFISSIONALIZANTES; FIM DO VESTIBULAR OU QUALQUER PROCESSO SELETIVO",
+   "texto": "Defende educação pública e gratuita em todos os níveis, fim do lucro na educação e fim do vestibular.",
+   "url_especifica": "https://unidadepopular.org.br/programa-eleitoral",
+   "data_referencia": "2026",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-up-2026-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pi-2026-pedro-laurentino-prog-up-002",
+   "id_candidatura_contexto": "sen-pi-2026-pedro-laurentino",
+   "id_tema": "t1",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "up",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-up",
+   "citacao_literal": "SEGURANÇA PÚBLICA E DESMILITARIZAÇÃO DAS POLÍCIAS",
+   "texto": "Defende a desmilitarização das polícias.",
+   "url_especifica": "https://unidadepopular.org.br/programa-eleitoral",
+   "data_referencia": "2026",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-up-2026-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pi-2026-pedro-laurentino-prog-up-003",
+   "id_candidatura_contexto": "sen-pi-2026-pedro-laurentino",
+   "id_tema": "t6",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "up",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-up",
+   "citacao_literal": "DEFESA E PROTEÇÃO DO MEIO AMBIENTE E DA NATUREZA; PROIBIÇÃO DA DESTRUIÇÃO DE FLORESTAS; ESTABELECIMENTO DO CONTROLE POPULAR SOBRE A AMAZÔNIA E EXPULSÃO DE TODOS OS MONOPÓLIOS ESTRANGEIROS DA REGIÃO;",
+   "texto": "Defende proibir a destruição de florestas e estabelecer controle popular sobre a Amazônia, com expulsão de monopólios estrangeiros da região.",
+   "url_especifica": "https://unidadepopular.org.br/programa-eleitoral",
+   "data_referencia": "2026",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-up-2026-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pi-2026-pedro-laurentino-prog-up-004",
+   "id_candidatura_contexto": "sen-pi-2026-pedro-laurentino",
+   "id_tema": "t7",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "up",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-up",
+   "citacao_literal": "MORADIA DIGNA PARA O POVO E ACESSO À CIDADE",
+   "texto": "Defende moradia digna e acesso à cidade.",
+   "url_especifica": "https://unidadepopular.org.br/programa-eleitoral",
+   "data_referencia": "2026",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-up-2026-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pi-2026-pedro-laurentino-prog-up-005",
+   "id_candidatura_contexto": "sen-pi-2026-pedro-laurentino",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "up",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-up",
+   "citacao_literal": "AUMENTO DE 100% NO SALÁRIO MÍNIMO",
+   "texto": "Propõe aumento de 100% no salário mínimo.",
+   "url_especifica": "https://unidadepopular.org.br/programa-eleitoral",
+   "data_referencia": "2026",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-up-2026-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pi-2026-pedro-laurentino-prog-up-006",
+   "id_candidatura_contexto": "sen-pi-2026-pedro-laurentino",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "up",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-up",
+   "citacao_literal": "DA ESCALA 6X1 E ESTABELECIMENTO DA ESCALA 4X3",
+   "texto": "Propõe o fim da escala 6x1 e a adoção da escala 4x3.",
+   "url_especifica": "https://unidadepopular.org.br/programa-eleitoral",
+   "data_referencia": "2026",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-up-2026-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pi-2026-pedro-laurentino-prog-up-007",
+   "id_candidatura_contexto": "sen-pi-2026-pedro-laurentino",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "up",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-up",
+   "citacao_literal": "REVOGAR AS REFORMAS TRABALHISTA E PREVIDENCIÁRIA, A TERCEIRIZAÇÃO IRRESTRITA E O ARCABOUÇO FISCAL",
+   "texto": "Defende revogar as reformas trabalhista e previdenciária, a terceirização irrestrita e o arcabouço fiscal.",
+   "url_especifica": "https://unidadepopular.org.br/programa-eleitoral",
+   "data_referencia": "2026",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-up-2026-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pi-2026-pedro-laurentino-prog-up-008",
+   "id_candidatura_contexto": "sen-pi-2026-pedro-laurentino",
+   "id_tema": "t10",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "up",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-up",
+   "citacao_literal": "SUSPENSÃO IMEDIATA DO PAGAMENTO DE JUROS E AMORTIZAÇÃO DA DÍVIDA PÚBLICA, SEGUIDO DE PROCESSO PÚBLICO DE AUDITORIA",
+   "texto": "Propõe suspender o pagamento de juros e amortização da dívida pública, seguido de auditoria pública.",
+   "url_especifica": "https://unidadepopular.org.br/programa-eleitoral",
+   "data_referencia": "2026",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-up-2026-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pi-2026-pedro-laurentino-prog-up-009",
+   "id_candidatura_contexto": "sen-pi-2026-pedro-laurentino",
+   "id_tema": "t3",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "up",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-up",
+   "citacao_literal": "SAÚDE PÚBLICA E VALORIZAÇÃO DO SUS",
+   "texto": "Defende a saúde pública e a valorização do SUS.",
+   "url_especifica": "https://unidadepopular.org.br/programa-eleitoral",
+   "data_referencia": "2026",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-up-2026-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  }
+ ]
 }
