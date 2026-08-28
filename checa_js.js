@@ -10,9 +10,16 @@ const vm = require("vm");
 // site passou de dois estados: 25 paginas geradas nunca tiveram o JS conferido.
 // Descobrir sozinho e a unica forma de a checagem nao envelhecer de novo.
 const RAIZ = "c:/Users/BOC277 - Usuario/Documents/politica/";
+// O filtro era /^[a-z]{2}$/ — so as siglas de estado. Quando a pagina de
+// analise entrou em analise/, ela ficou de fora sem ninguem notar, e ela TEM
+// script. Agora vale qualquer pasta com index.html, que e a regra que descreve
+// o site de verdade.
+const IGNORAR = new Set(["node_modules", "dados", "fontes", "fontes-web",
+  "fontes-ttf", "fotos-candidatos", "artes-instagram", "conhecimento",
+  "extracoes", "agente"]);
 const paginasDeEstado = () =>
   fs.readdirSync(RAIZ, { withFileTypes: true })
-    .filter((d) => d.isDirectory() && /^[a-z]{2}$/.test(d.name))
+    .filter((d) => d.isDirectory() && !d.name.startsWith(".") && !IGNORAR.has(d.name))
     .filter((d) => fs.existsSync(`${RAIZ}${d.name}/index.html`))
     .map((d) => `${d.name}/index.html`)
     .sort();

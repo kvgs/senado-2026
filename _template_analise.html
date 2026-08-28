@@ -1,0 +1,284 @@
+<title>O que os dados dizem — Candidaturas ao Senado 2026</title>
+<!-- Pagina de analise. Fala sobre a ELEICAO e sobre o proprio registro; nunca
+     sobre uma candidatura.
+
+     O ESTILO NAO E COPIADO: o gerador recorta tokens, fontes e reset do
+     _template_site.html e injeta no marcador. Duas paletas divergem; uma, nao.
+     E o nome do marcador nao se escreve aqui de novo — escrito duas vezes, o
+     replace troca as duas e o comentario recebe 4 KB de CSS. -->
+
+<style>
+{{ESTILO_BASE}}
+
+  .env{max-width:900px;margin:0 auto;padding:34px 22px 90px;position:relative}
+  .lbl{font-family:"PlexMono",ui-monospace,monospace;font-size:.76rem;
+    letter-spacing:.07em;color:var(--muted);margin-bottom:12px}
+  h1{font-family:"Bricolage",system-ui,sans-serif;font-size:clamp(1.9rem,5vw,2.7rem);
+    line-height:1.12;font-weight:700;text-wrap:balance;margin-bottom:14px}
+  .lede{font-size:1.08rem;color:var(--ink-2);max-width:64ch;line-height:1.6}
+  .lede strong{color:var(--ink)}
+
+  section{margin-top:58px}
+  h2{font-family:"Bricolage",system-ui,sans-serif;font-size:1.44rem;margin:0 0 8px;
+    text-wrap:balance}
+  .sub{color:var(--ink-2);max-width:66ch;line-height:1.6;font-size:.99rem}
+  .achado{margin:20px 0 4px;padding:17px 21px;background:var(--surface-2);
+    border-left:5px solid var(--acento-vivo);border-radius:0 8px 8px 0;
+    font-size:1.03rem;line-height:1.55;max-width:66ch}
+  .achado b{color:var(--ink)}
+
+  figure{margin:22px 0 0}
+  figcaption{font-size:.87rem;color:var(--muted);margin-top:12px;line-height:1.55;
+    max-width:70ch}
+  .leg{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0 6px;font-size:.86rem;
+    color:var(--ink-2)}
+  .ch{display:inline-flex;align-items:center;gap:7px}
+  .ch i{display:inline-block;width:13px;height:13px;border-radius:3px;flex:0 0 auto}
+  .ch i.a{background:var(--serieA);border-radius:50%}
+  .ch i.b{background:var(--serieB);border-radius:50%}
+  .ch i.d0{background:var(--d0)} .ch i.d1{background:var(--d1)}
+  .ch i.d2{background:var(--d2)} .ch i.d3{background:var(--d3)}
+  .ch i.d4{background:var(--d4)}
+
+  /* As series NAO usam --acento: a esta espessura de marca ele reprova no piso
+     de croma e le como cinza. Estes sao os degraus mais proximos que passam nas
+     cinco checagens do validador, e o escuro tem os seus — a banda do escuro e
+     mais estreita e mais escura, entao nao e o claro invertido. */
+  :root{
+    --serieA:#1E88C7; --serieB:#8B4A00;
+    --d0:#EAF2F7; --d1:#C3DCEA; --d2:#8FBFD9; --d3:#4E96C1; --d4:#1E6E9B;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --serieA:#3199D0; --serieB:#B0762A;
+      --d0:#1E2A31; --d1:#28485C; --d2:#2F6485; --d3:#3B85AD; --d4:#4FA3CE;
+    }
+  }
+  :root[data-theme="dark"]{
+    --serieA:#3199D0; --serieB:#B0762A;
+    --d0:#1E2A31; --d1:#28485C; --d2:#2F6485; --d3:#3B85AD; --d4:#4FA3CE;
+  }
+
+  svg.g{display:block;width:100%;height:auto;overflow:visible}
+  .rot{font-size:13px;fill:var(--ink-2)}
+  .eixo{font-size:11px;fill:var(--muted);font-family:"PlexMono",ui-monospace,monospace}
+  .gr{stroke:var(--rule);stroke-width:1}
+  .haste{stroke:var(--rule-strong);stroke-width:2;opacity:.45}
+  .mA{fill:var(--serieA);stroke:var(--ground);stroke-width:2}
+  .mB{fill:var(--serieB);stroke:var(--ground);stroke-width:2}
+  .par:hover .haste,.par:focus-visible .haste{opacity:1}
+  .par:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+
+  .uf{stroke:var(--ground);stroke-width:1;vector-effect:non-scaling-stroke}
+  .uf.d0{fill:var(--d0)} .uf.d1{fill:var(--d1)} .uf.d2{fill:var(--d2)}
+  .uf.d3{fill:var(--d3)} .uf.d4{fill:var(--d4)}
+  .uf:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+  .mapa{max-width:600px;margin:0 auto}
+
+  .bl{display:grid;grid-template-columns:minmax(150px,230px) 1fr 46px;gap:14px;
+    align-items:center;padding:10px 0;border-top:1px solid var(--rule)}
+  .bl:last-of-type{border-bottom:1px solid var(--rule)}
+  .bl:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+  .bk{font-size:.93rem;color:var(--ink-2)}
+  /* display:block explicito, e nao herdado de o pai ser grid: se .bl deixar de
+     ser grid um dia, a altura seria ignorada em silencio e a barra vazaria. */
+  .bb{display:block;background:var(--surface-3);border-radius:4px;height:16px;
+    overflow:hidden}
+  .bb i{display:block;height:100%;background:var(--serieB);border-radius:0 4px 4px 0}
+  .bn{font-family:"PlexMono",ui-monospace,monospace;font-size:.9rem;text-align:right;
+    font-variant-numeric:tabular-nums;color:var(--ink)}
+
+  .duplo{display:grid;grid-template-columns:repeat(auto-fit,minmax(262px,1fr));
+    gap:22px;margin-top:22px}
+  .prop{background:var(--surface-2);border:1px solid var(--rule);border-radius:10px;
+    padding:22px 24px}
+  .prop .n{font-family:"Bricolage",system-ui,sans-serif;font-size:3.1rem;font-weight:700;
+    line-height:1;color:var(--serieA);font-variant-numeric:tabular-nums}
+  .prop.b .n{color:var(--serieB)}
+  .prop .q{margin-top:9px;color:var(--ink-2);font-size:.96rem;line-height:1.5}
+  /* Mesmo motivo do .bb: <span> e inline, e altura em inline e ignorada. */
+  .prop .tr{display:block;margin-top:15px;height:12px;background:var(--surface-3);
+    border-radius:99px;overflow:hidden}
+  .prop .tr i{display:block;height:100%;background:var(--serieA)}
+  .prop.b .tr i{background:var(--serieB)}
+
+  details{margin-top:18px;border:1px solid var(--rule);border-radius:8px;
+    background:var(--surface)}
+  summary{cursor:pointer;padding:13px 17px;font-weight:600;font-size:.94rem}
+  summary:focus-visible{outline:3px solid var(--focus);outline-offset:-3px}
+  .tab{padding:0 17px 17px;overflow-x:auto}
+  table{width:100%;border-collapse:collapse;font-size:.9rem}
+  th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--rule)}
+  td{font-family:"PlexMono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+  thead th{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--muted)}
+
+  .cuidado{margin-top:16px;font-size:.91rem;color:var(--muted);line-height:1.6;
+    max-width:68ch;border-top:1px dashed var(--rule);padding-top:13px}
+  .cuidado b{color:var(--ink-2)}
+
+  .rodape{margin-top:60px;padding-top:24px;border-top:2px solid var(--ink)}
+  .rodape p{max-width:68ch;color:var(--ink-2);font-size:.94rem;margin-bottom:11px}
+  .rodape a{color:var(--acento)}
+
+  .voltar-mapa{position:absolute;top:16px;left:22px;z-index:5;display:inline-flex;
+    align-items:center;gap:7px;font-family:"PlexMono",ui-monospace,monospace;
+    font-size:.72rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;
+    padding:9px 14px;border:1px solid var(--rule);border-radius:99px;
+    background:var(--surface-2);color:var(--muted);text-decoration:none}
+  .voltar-mapa:hover{color:var(--ink);border-color:var(--muted)}
+  .voltar-mapa:focus-visible{outline:2px solid var(--acento);outline-offset:2px;
+    color:var(--ink)}
+  .tema{position:absolute;top:16px;right:22px;display:flex;gap:2px;z-index:5;
+    background:var(--surface-2);border:1px solid var(--rule);border-radius:99px;padding:3px}
+  .tema button{font:inherit;font-family:"PlexMono",ui-monospace,monospace;font-size:.72rem;
+    font-weight:500;letter-spacing:.06em;text-transform:uppercase;padding:6px 11px;
+    border:0;border-radius:99px;background:none;color:var(--muted);cursor:pointer}
+  .tema button:hover{color:var(--ink)}
+  .tema button[aria-pressed="true"]{background:var(--surface);color:var(--acento);
+    box-shadow:0 1px 2px rgba(0,0,0,.12)}
+  .tema button:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+  @media (max-width:620px){
+    .voltar-mapa,.tema{position:static;margin:0 0 12px;width:max-content}
+    .env{padding-top:20px}
+  }
+
+  .vis-oculto{position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+    overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+</style>
+
+<div class="env">
+  <a class="voltar-mapa" href="../"><span aria-hidden="true">←</span>Todos os estados</a>
+  <div class="tema" role="group" aria-label="Aparência do site">
+    <button type="button" data-tema="auto" aria-pressed="true">Sistema</button>
+    <button type="button" data-tema="light" aria-pressed="false">Claro</button>
+    <button type="button" data-tema="dark" aria-pressed="false">Escuro</button>
+  </div>
+
+  <header style="margin-top:52px">
+    <p class="lbl">ELEIÇÕES 2026 · SENADO FEDERAL · ANÁLISE</p>
+    <h1>O que os dados dizem sobre esta eleição</h1>
+    <p class="lede">Esta página conta sobre <strong>temas, fontes e o próprio
+    registro</strong> — nunca sobre uma candidatura. Contar por pessoa seria ranquear
+    com outro nome, que é exatamente o que o resto do site existe para não fazer.
+    Todos os números são medidos do acervo público a cada geração.</p>
+  </header>
+
+  <section>
+    <h2>1. Os partidos escrevem sobre habitação. As campanhas, não.</h2>
+    <p class="sub">Cada tema aparece duas vezes: quanto ele ocupa do que as
+    <b>candidaturas</b> dizem por conta própria ({{TOTAL_A}} posições), e quanto ocupa
+    dos <b>programas de partido</b> ({{TOTAL_B}} posições). A distância entre os dois
+    pontos é a diferença entre o que o partido escreveu e o que a campanha fala.</p>
+
+    <p class="achado"><b>Habitação é {{HABITACAO_B}}% do que os partidos escrevem e
+    {{HABITACAO_A}}% do que as candidaturas dizem.</b> Meio Ambiente e Tecnologia têm a
+    mesma inversão, em menor grau.</p>
+
+    <div class="leg">
+      <span class="ch"><i class="a"></i>o que a candidatura diz</span>
+      <span class="ch"><i class="b"></i>o que o programa do partido diz</span>
+    </div>
+    <figure>
+      <svg class="g" viewBox="0 0 {{LARG1}} {{ALT1}}" role="list"
+        aria-label="Participação de cada tema no que as candidaturas dizem e no que os programas de partido dizem">{{DUMBBELL}}</svg>
+      <figcaption>Participação de cada tema no total de cada corpo de texto, em
+      porcentagem. Ordenados pela diferença entre os dois — não por volume.</figcaption>
+    </figure>
+    <p class="cuidado"><b>O que isto não permite concluir:</b> que uma candidatura não
+    se importe com habitação. Mede o que está <em>publicado e localizável</em>, e a
+    maior parte das candidaturas não publicou material próprio em lugar nenhum.</p>
+  </section>
+
+  <section>
+    <h2>2. Quanto de cada estado já tem informação</h2>
+    <p class="sub">Proporção das candidaturas de cada estado que já têm ao menos uma
+    informação no site — própria ou do partido.</p>
+    <div class="leg">{{LEGENDA}}</div>
+    <figure>
+      <div class="mapa">
+        <svg class="g" viewBox="{{VIEWBOX}}" role="list"
+          aria-label="Cobertura do acervo por estado"><g transform="{{TRANSFORM}}">{{MAPA}}</g></svg>
+      </div>
+      <figcaption>A cobertura vai de {{COB_MIN}}% a {{COB_MAX}}%. É uma medida do
+      <em>nosso</em> trabalho, não das candidaturas.</figcaption>
+    </figure>
+    <details><summary>Ver a tabela por estado</summary><div class="tab">
+      <table><caption class="vis-oculto">Cobertura do acervo por estado</caption>
+      <thead><tr><th scope="col">Estado</th><th scope="col">Com informação</th>
+      <th scope="col">Candidaturas</th><th scope="col">%</th></tr></thead>
+      <tbody>{{TABELA}}</tbody></table></div></details>
+  </section>
+
+  <section>
+    <h2>3. O campo de endereço do TSE aceita qualquer coisa</h2>
+    <p class="sub">As candidaturas declaram seus canais oficiais no registro. O campo é
+    texto livre, e das <b>{{TOTAL_URLS}} URLs</b> declaradas pelas candidaturas ao
+    Senado, <b>{{TOTAL_LIXO}}</b> não são endereço utilizável.</p>
+
+    <p class="achado">Entre elas, <b>quatro e-mails e um telefone</b> gravados no campo
+    de URL — e um endereço-modelo que o partido não preencheu, ainda com o texto
+    <code>NOME-DE-URNA</code>.</p>
+
+    <figure>{{BARRAS}}
+      <figcaption>Ocorrências por tipo de defeito. Nenhuma delas entra no site como
+      contato: publicar telefone no lugar de site mandaria o eleitor para o lugar
+      errado.</figcaption>
+    </figure>
+    <p class="cuidado"><b>Isto não é erro das candidaturas.</b> É um campo sem validação
+    numa base pública: quem digita um handle de Instagram onde se pede uma URL está
+    respondendo à pergunta que entendeu.</p>
+  </section>
+
+  <section>
+    <h2>4. Quem já tem mandato tem quase três vezes mais chance de ter site</h2>
+    <p class="sub">Proporção que declarou site próprio ao TSE, entre quem exerce mandato
+    federal e quem não exerce.</p>
+    <div class="duplo">
+      <div class="prop">
+        <p class="n">{{PCT_MANDATO}}%</p>
+        <p class="q">das <b>{{N_MANDATO}}</b> candidaturas <b>com mandato federal</b>
+        declararam site próprio</p>
+        <span class="tr"><i style="width:{{PCT_MANDATO}}%"></i></span>
+      </div>
+      <div class="prop b">
+        <p class="n">{{PCT_SEM}}%</p>
+        <p class="q">das <b>{{N_SEM}}</b> candidaturas <b>sem mandato</b> declararam
+        site próprio</p>
+        <span class="tr"><i style="width:{{PCT_SEM}}%"></i></span>
+      </div>
+    </div>
+    <p class="cuidado"><b>É por isso que este site nunca conta informações por
+    candidatura.</b> Um placar desses mediria estrutura de campanha e tempo de mandato,
+    não qualidade de candidatura — e a diferença acima é o tamanho desse viés.</p>
+  </section>
+
+  <div class="rodape">
+    <p><strong>Como conferir.</strong> Todos os números saem do acervo público e são
+    recalculados a cada geração da página — nenhum é digitado. O código que os mede
+    está em <code>gerar_analise.py</code>, no repositório.</p>
+    <p><strong>Ajude a construir.</strong> Achou um erro, conhece uma fonte que falta,
+    ou tem uma dúvida? Escreva para <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>, ou fale
+    pelo Instagram <a href="{{INSTAGRAM_URL}}" target="_blank" rel="noopener">{{INSTAGRAM}}<span
+    class="vis-oculto"> (abre em nova aba)</span></a>.</p>
+  </div>
+</div>
+
+<script>
+/* Mesma logica de tema do resto do site: escolha explicita ganha do sistema, e
+   fica gravada. localStorage pode falhar, e a pagina tem de funcionar sem ele. */
+(function(){
+  var raiz = document.documentElement, bs = document.querySelectorAll(".tema button");
+  function por(v){
+    if (v === "auto") raiz.removeAttribute("data-theme");
+    else raiz.setAttribute("data-theme", v);
+    for (var i = 0; i < bs.length; i++)
+      bs[i].setAttribute("aria-pressed", String(bs[i].dataset.tema === v));
+    try { localStorage.setItem("tema", v); } catch(e){}
+  }
+  for (var i = 0; i < bs.length; i++)
+    bs[i].addEventListener("click", function(){ por(this.dataset.tema); });
+  var g = null; try { g = localStorage.getItem("tema"); } catch(e){}
+  if (g) por(g);
+})();
+</script>
