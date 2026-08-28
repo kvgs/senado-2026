@@ -590,6 +590,138 @@
     "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
    },
    "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pe-2026-eduardo-da-fonte-site-009",
+   "id_tema": "t2",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-pe-2026-eduardo-da-fonte",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-pe-2026-eduardo-da-fonte",
+   "citacao_literal": "O PL 4.265/2021 propõe a oferta de pelo menos duas refeições por dia aos estudantes da educação básica da rede pública, além de propostas de valorização dos professores e de garantia de regime escolar especial para estudantes com deficiência.",
+   "texto": "Apresentou projeto que prevê pelo menos duas refeições por dia aos estudantes da educação básica da rede pública.",
+   "url_especifica": "https://eduardodafonte.com.br/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pe-2026-eduardo-da-fonte-site-010",
+   "id_tema": "t1",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-pe-2026-eduardo-da-fonte",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-pe-2026-eduardo-da-fonte",
+   "citacao_literal": "O PL 3.485/2026 propõe um marco legal para o Subsistema de Inteligência de Segurança Pública, com integração e compartilhamento de dados entre diferentes instituições.",
+   "texto": "Apresentou projeto de marco legal para o Subsistema de Inteligência de Segurança Pública, com compartilhamento de dados entre órgãos.",
+   "url_especifica": "https://eduardodafonte.com.br/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pe-2026-eduardo-da-fonte-site-011",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-pe-2026-eduardo-da-fonte",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-pe-2026-eduardo-da-fonte",
+   "citacao_literal": "Entre as propostas voltadas ao Semiárido está o PL 5.641/2023, que prevê isenção de IPI para determinados tratores, colheitadeiras, motoniveladoras e implementos agrícolas adquiridos por produtores rurais da região.",
+   "texto": "Apresentou projeto que isenta de IPI tratores, colheitadeiras e implementos agrícolas comprados por produtores rurais do Semiárido.",
+   "url_especifica": "https://eduardodafonte.com.br/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pe-2026-eduardo-da-fonte-site-012",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-pe-2026-eduardo-da-fonte",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-pe-2026-eduardo-da-fonte",
+   "citacao_literal": "foi relator do projeto que prevê a redução da jornada semanal dos Agentes Comunitários de Saúde e Agentes de Combate às Endemias de 40 para 30 horas, sem redução salarial. Também atuou em iniciativa que reconhece marisqueiras como pescadoras artesanais para fins de acesso ao seguro-defeso, posicionou-se contra a Reforma Trabalhista e integra a coautoria da proposta que trata do fim da escala 6x1.",
+   "texto": "Foi relator do projeto que reduz a jornada dos Agentes Comunitários de Saúde de 40 para 30 horas sem redução salarial, posicionou-se contra a Reforma Trabalhista e é coautor da proposta de fim da escala 6x1.",
+   "url_especifica": "https://eduardodafonte.com.br/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pe-2026-eduardo-da-fonte-site-013",
+   "id_tema": "t9",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-pe-2026-eduardo-da-fonte",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-pe-2026-eduardo-da-fonte",
+   "citacao_literal": "Entre elas está uma proposta que prevê monitoramento eletrônico de agressores em casos de violência doméstica e familiar. Outra iniciativa, o PL 6.337/2019, prevê a utilização de recursos do Fundo Nacional de Segurança Pública para construção, reforma e manutenção de casas-abrigo para mulheres vítimas de violência.",
+   "texto": "Apresentou projeto para usar recursos do Fundo Nacional de Segurança Pública em casas-abrigo para mulheres vítimas de violência, e proposta de monitoramento eletrônico de agressores.",
+   "url_especifica": "https://eduardodafonte.com.br/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pe-2026-eduardo-da-fonte-site-014",
+   "id_tema": "t3",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-pe-2026-eduardo-da-fonte",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-pe-2026-eduardo-da-fonte",
+   "citacao_literal": "Entre elas estão as unidades da Casa Azul, viabilizadas em diferentes municípios pernambucanos para atendimento multiprofissional de pessoas com TEA. O PL 6.418/2025 propõe levar o modelo para uma política pública nacional.",
+   "texto": "Apresentou projeto que leva o modelo das unidades Casa Azul, de atendimento a pessoas com autismo, para política pública nacional.",
+   "url_especifica": "https://eduardodafonte.com.br/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
   }
  ]
 }

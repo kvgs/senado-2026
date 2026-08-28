@@ -198,6 +198,49 @@ def links(corpo: bytes, tipo: str, base: str) -> list[tuple[str, str]]:
     return unicos
 
 
+def texto_do_bundle(html: str, base: str) -> str:
+    """Le o texto de uma pagina montada por JavaScript, do proprio arquivo .js.
+
+    POR QUE ISTO E PRECISO. O site que Eduardo da Fonte declarou ao TSE responde
+    1 KB de HTML e um bundle: todo o conteudo — projetos com numero, secoes por
+    tema — esta la dentro, e o coletor via uma pagina vazia. Dez sites do acervo
+    estavam marcados "sem texto util" e pelo menos um deles era isto.
+
+    POR QUE E LEGITIMO. E o mesmo arquivo que o servidor entrega a qualquer
+    visitante, sem login e sem bloqueio contornado. E a pagina publica, servida
+    de outro jeito.
+
+    O minificador grava as strings entre CRASES, e nao aspas — foi o que fez a
+    primeira tentativa achar zero trechos num bundle cheio de texto.
+    """
+    host = urllib.parse.urlsplit(base).netloc
+    fora = []
+    for m in re.finditer(r'<script[^>]+src=["\']([^"\']+)["\']', html, re.I):
+        u = urllib.parse.urljoin(base, m.group(1))
+        if urllib.parse.urlsplit(u).netloc != host:
+            continue
+        try:
+            st, _, corpo, _ = buscar(u, tempo=40)
+        except Exception:                        # noqa: BLE001
+            continue
+        if st != 200:
+            continue
+        s = corpo.decode("utf-8", "replace")
+        crase = chr(96)
+        brutas = (re.findall(crase + "([^" + crase + "]{25,900})" + crase, s)
+                  + re.findall('"([^"]{25,900})"', s))
+        acento = re.compile("[áéíóúâêôàãõçÁÉÍÓÚÂÊÔÃÕÇ]")
+        lixo = re.compile(r"(className|https?:|/assets/|px-|text-|flex|rounded|grid|"
+                          r"absolute|translate|w-full|md:|lg:|sm:|function|=>)")
+        vistos = set()
+        for f in brutas:
+            f = f.strip()
+            if not acento.search(f) or lixo.search(f) or f in vistos:
+                continue
+            vistos.add(f); fora.append(f)
+    return "\n\n".join(fora)
+
+
 def diagnostico(t: str) -> str | None:
     """Motivo para o texto nao servir. Vira registro, nao silencio."""
     if len(t) < 400:
@@ -261,7 +304,14 @@ def coletar_um(c: dict, uf: str) -> dict:
 
     def guarda(u_, tipo_, corpo_, rotulo):
         t = texto(corpo_, tipo_)
+        de_bundle = False
+        # HTML quase vazio + script proprio = pagina montada no navegador.
+        if len(t) < 400:
+            extra = texto_do_bundle(corpo_.decode("utf-8", "replace"), u_)
+            if len(extra) > len(t):
+                t, de_bundle = extra, True
         p = {
+            "_texto_do_bundle": de_bundle,
             "url": u_,
             "rotulo_do_link": rotulo,
             "titulo": titulo(corpo_, tipo_),

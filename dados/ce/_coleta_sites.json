@@ -11,6 +11,7 @@
       "_nota_selo": "Selo roxo: prova que a candidatura publicou isto, nunca que o conteudo e verdadeiro.",
       "paginas": [
         {
+          "_texto_do_bundle": false,
           "url": "https://luiziannelins.com",
           "rotulo_do_link": "pagina inicial",
           "titulo": "Luizianne Lins | Espaço de debate do mandato da deputada federal Luizianne Lins",
@@ -21,6 +22,7 @@
           "caracteres_proprios": 2810
         },
         {
+          "_texto_do_bundle": false,
           "url": "https://luiziannelins.com/2026/07/31/luizianne-defende-que-mais-mulheres-ocupem-espacos-de-poder-na-politica/",
           "rotulo_do_link": "Luizianne defende que mais mulheres ocupem espaços de poder na&nbsp;política",
           "titulo": "Luizianne defende que mais mulheres ocupem espaços de poder na política | Luizianne Lins",
@@ -71,6 +73,7 @@
       "_nota_selo": "Selo roxo: prova que a candidatura publicou isto, nunca que o conteudo e verdadeiro.",
       "paginas": [
         {
+          "_texto_do_bundle": false,
           "url": "https://cidgomes.com.br/",
           "rotulo_do_link": "pagina inicial",
           "titulo": "Lar",
