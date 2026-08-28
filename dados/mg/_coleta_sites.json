@@ -1,0 +1,16 @@
+{
+  "registros": [
+    {
+      "id_candidatura": "sen-mg-2026-aurea-carolina",
+      "uf": "MG",
+      "nome_urna": "Áurea Carolina",
+      "url_declarada": "HTTPS://WWW.AUREACAROLINA.COM.BR",
+      "coletado_em": "2026-08-27",
+      "_fonte": "Site declarado pela candidatura ao TSE (base de redes sociais 2026)",
+      "_selo": "declaracao_do_candidato",
+      "_nota_selo": "Selo roxo: prova que a candidatura publicou isto, nunca que o conteudo e verdadeiro.",
+      "paginas": [],
+      "_indisponivel": "Site declarado nao respondeu com pagina HTML. Tentativas: https://www.aureacarolina.com.br -> 503; http://www.aureacarolina.com.br -> 503"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "registros": [
+    {
+      "id_candidatura": "sen-rn-2026-rafael-motta",
+      "uf": "RN",
+      "nome_urna": "Rafael Motta",
+      "url_declarada": "HTTPS://MOTTA-CAMPEAO-SITE.LOVABLE.APP",
+      "coletado_em": "2026-08-27",
+      "_fonte": "Site declarado pela candidatura ao TSE (base de redes sociais 2026)",
+      "_selo": "declaracao_do_candidato",
+      "_nota_selo": "Selo roxo: prova que a candidatura publicou isto, nunca que o conteudo e verdadeiro.",
+      "paginas": [
+        {
+          "url": "https://motta-campeao-site.lovable.app",
+          "rotulo_do_link": "pagina inicial",
+          "titulo": "Rafael Motta",
+          "bytes": 21589,
+          "sha256_16": "2fab74ae90ee7e86",
+          "caracteres_de_texto": 3606,
+          "texto": "Rafael Motta CNPJ: 68.306.410/0001-07\n\n RAFAEL MOTTA Trajetória Mandato Conquistas Contato Fale com o gabinete \n Rafael é de Lula · O RN é do povo Do RN a Brasília,\n com a nossa gente. \n Rafael Motta representa o Rio Grande do Norte em Brasília ao lado do presidente Lula: um mandato de coragem, direitos e cuidado com quem mais precisa.\n Conheça as conquistas → Conheça o Rafael \n Direitos sociais Segurança Educação Causa animal \n\n L R \n Aliado do Presidente Lula\n no Rio Grande do Norte\n\n 02\n Mandatos como deputado federal\n\n R$ 40mi\n Emendas para segurança do RN\n\n R$ 5,5mi\n Hospital Veterinário de Natal\n\n 13.871\n Lei federal de proteção às mulheres\n\n L R \n O Rafael é de Lula. O Rafael é do povo do Rio Grande do Norte.\n\n Ver o time → \n — Trajetória\n Uma história\nconstruída\n com a nossa gente. \n Do trabalho recordista na Câmara de Natal até dois mandatos como deputado federal em Brasília — o compromisso segue o mesmo: cuidar de quem mais precisa.\n\n 1 Vereador em Natal\n Início da vida pública com mandato recordista na Câmara Municipal.\n\n 2 Subsecretário da Juventude do RN\n Ampliação de políticas públicas para a juventude potiguar.\n\n 3 Engenheiro de Produção — UFRN\n Formação técnica pela Universidade Federal do Rio Grande do Norte.\n\n 4 Mestre em Administração Pública — IDP\n Aprofundamento acadêmico na gestão do Estado.\n\n 5 Deputado Federal — 2 mandatos\n Defesa dos direitos sociais e proteção das classes mais vulneráveis.\n\n Natal, Rio Grande do Norte — onde tudo começou.\n\n — O Mandato\n Um voto que defende direitos. \n Um mandato baseado na defesa histórica dos direitos sociais, na proteção das classes mais vulneráveis e no alinhamento com a agenda progressista do presidente Lula.\n Voto histórico\n Votou contra as reformas da Previdência e Trabalhista.\n Em defesa dos trabalhadores e dos aposentados do Brasil.\n\n — Conquistas\n Resultado do trabalho —\n não da promessa. \n\n Leis, emendas e articulações que se transformaram em direitos, obras e cidadania para quem mais precisa.\n\n 01 Direitos das Mulheres \n Lei de proteção às mulheres vítimas de violência\n Autor da Lei Federal nº 13.871/2019, que altera a Lei Maria da Penha para obrigar agressores a ressarcirem os cofres públicos pelos custos de atendimento às vítimas pelo SUS.\n 02 Causa Animal \n Primeiro Hospital Veterinário Público de Natal\n Autor da primeira emenda da bancada potiguar para a causa animal — R$ 5,5 milhões para o hospital, além de recursos para castração e apoio a entidades.\n 03 Segurança Pública \n R$ 40 milhões em emendas para a segurança do RN\n Primeiro parlamentar do estado a articular a destinação de R$ 40 milhões em emendas coletivas de bancada para a segurança pública do Rio Grande do Norte.\n 04 Inclusão \n Câmara Inclusiva com a APAE-DF\n Como secretário da Juventude da Câmara, celebrou contrato com a APAE-DF para inserir jovens com Síndrome de Down na prestação de serviços na Casa.\n 05 Educação \n Prêmio Darcy Ribeiro para uma professora potiguar\n Indicou a professora Débora Seabra, vencedora do Prêmio Darcy Ribeiro de Educação, considerada exemplo em ações educativas em todo o país.\n 06 Cidadania \n Van dos Direitos\n Autor da emenda para a “Van dos Direitos”, unidade móvel da Defensoria Pública do RN que leva assistência jurídica gratuita às comunidades mais vulneráveis.\n \n — Juntos\n Estar ao lado da\nnossa gente é o que nos move.\n Acompanhe o mandato, participe das agendas e ajude a construir o próximo capítulo desta caminhada ao lado do presidente Lula.\n Falar com o gabinete Acompanhar nas redes \n\n © 2026 Rafael Motta · Deputado Federal · PDT / RN\n Rafael é de Lula. Rafael é do povo.",
+          "caracteres_proprios": 3606
+        }
+      ],
+      "robots": "robots.txt nao obtido (HTTPError): nada proibido explicitamente",
+      "url_final": "https://motta-campeao-site.lovable.app",
+      "links_de_proposta_encontrados": []
+    },
+    {
+      "id_candidatura": "sen-rn-2026-zenaide-maia",
+      "uf": "RN",
+      "nome_urna": "Zenaide Maia",
+      "url_declarada": "HTTPS://TIMEZENAIDE.COM/",
+      "coletado_em": "2026-08-27",
+      "_fonte": "Site declarado pela candidatura ao TSE (base de redes sociais 2026)",
+      "_selo": "declaracao_do_candidato",
+      "_nota_selo": "Selo roxo: prova que a candidatura publicou isto, nunca que o conteudo e verdadeiro.",
+      "paginas": [
+        {
+          "url": "https://timezenaide.com/",
+          "rotulo_do_link": "pagina inicial",
+          "titulo": "Faça parte do Time Zenaide",
+          "bytes": 26176,
+          "sha256_16": "cb149e11e659d4ec",
+          "caracteres_de_texto": 481,
+          "texto": "Faça parte do Time Zenaide \n\n Mobilização e participação\n Entre para o \n Time Zenaide\n Cadastre-se para entrar no grupo de WhatsApp da sua cidade e receber novidades em primeira mão.\n Quero participar \n\n Receba novidades em primeira mão\n Fique por dentro das ações e iniciativas.\n\n Entre no grupo da sua cidade\n Participe do WhatsApp da sua região.\n\n Ajude a compartilhar conteúdos\n Sua voz fortalece o nosso trabalho.\n\n © 2026 - PSD RN - Todos os direitos reservados · Privacidade",
+          "caracteres_proprios": 481
+        }
+      ],
+      "robots": "robots.txt nao obtido (HTTPError): nada proibido explicitamente",
+      "url_final": "https://timezenaide.com/",
+      "links_de_proposta_encontrados": []
+    }
+  ]
+}
