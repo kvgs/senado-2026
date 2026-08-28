@@ -103,6 +103,9 @@
     .tema{position:static;margin:16px 0 0;justify-content:flex-start;width:max-content}
     /* Nas duas o absolute sai: empilhadas, o mapa vem primeiro. */
     .voltar-mapa{position:static;margin:16px 0 0;width:max-content}
+    /* E aqui elas ocupam lugar no fluxo, entao o recuo do cabecalho que abria
+       espaco para elas viraria buraco. */
+    header{padding:34px 0 0}
   }
 
   /* Salto de escala de verdade: manchete que chega a 4rem contra corpo em 1.05.
@@ -134,7 +137,12 @@
   h2::after{content:"";flex:1;height:2px;background:var(--rule);align-self:center}
 
   /* ---------- cabecalho ---------- */
-  header{padding:52px 0 0}
+  /* As duas pilulas do topo comecam em 16px e tem ~39px de altura: terminam
+     perto de 55px. Com o cabecalho abrindo em 52px, a linha "Eleicoes 2026 ..."
+     passava POR BAIXO delas — encostada no botao de voltar, como se fosse
+     legenda dele. Agora o titulo comeca depois que as pilulas acabam, com ar
+     entre as duas coisas. Se mudar o tamanho das pilulas, mude este numero. */
+  header{padding:96px 0 0}
   header .lbl{color:var(--acento)}
   header h1{margin-top:16px;max-width:26ch}
   .lede{margin-top:22px;color:var(--ink-2);max-width:56ch;font-size:1.18rem;line-height:1.5}
