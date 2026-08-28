@@ -6,21 +6,31 @@ estado; cada estado tem a sua.
 
 **https://kvgs.github.io/senado-2026/**
 
-## Onde está cada estado
+## Onde o acervo está
 
-São **317 candidaturas ao Senado em 27 unidades da federação**. O acervo é
-construído estado a estado, e a página inicial diz de qual já começamos.
+O TSE registra **317 candidaturas ao Senado nas 27 unidades da federação** — que
+são **315 pessoas**, porque duas aparecem com registro duplicado. Todas as 27
+têm página, e todas as 315 têm cadastro, foto e os canais que declararam ao TSE.
 
-| estado | situação |
+| | |
 |---|---|
-| **São Paulo** | 15 candidaturas · 41 posições publicadas, todas conferidas contra a fonte |
-| **Pernambuco** | 12 candidaturas · cadastro do TSE e 878 registros legislativos aguardando revisão |
-| os outros 25 | ainda não começamos |
+| Candidaturas cadastradas | **315**, direto da base do TSE |
+| Com foto de registro | **315** |
+| Posições publicadas | **692** |
+| **Conferidas por uma pessoa** | **41** |
+| Candidaturas com alguma posição | **114 de 315** |
 
-**⚠️ Trabalho em curso.** Em São Paulo, das 122 posições levantadas, **41
-passaram na revisão humana** e são as únicas publicadas — as outras 81 ficam nos
-dados abertos, com o motivo da reprovação. Em Pernambuco nenhuma posição foi
-revisada ainda. Não use como referência única para decidir voto.
+**⚠️ A maior parte ainda não passou por revisão humana.** Das 692 posições
+publicadas, 41 foram lidas por uma pessoa contra a fonte original; as outras 651
+aparecem **marcadas como "não revisado", uma a uma, com o link da fonte ao
+lado**. A marcação não é rodapé: está em cada informação.
+
+**E 618 das 692 são programa de partido, não da candidatura** — o site escreve
+"Proposta do partido, não da candidatura" em cada uma. Só **71** são posição
+própria, atribuída a uma pessoa. A desproporção é real e está na tela.
+
+Isto não é um produto pronto. É um acervo em construção que mostra o próprio
+estado, inclusive quando ele é ruim.
 
 ---
 
@@ -89,23 +99,35 @@ cartão transformaria a lista num ranking.
 
 ```
 index.html              escolha do estado (mapa + lista), página nacional
-sp/index.html           a página de São Paulo
-pe/index.html           a página de Pernambuco
-gerar_inicio.py         gera a página nacional
-gerar_site.py --uf SP   gera a página de um estado
+sp/  pe/  ac/  ...       uma pasta por estado, com a página gerada
 _template_inicio.html   template da página nacional
 _template_site.html     template da página de estado
 acervo.py               diz onde cada arquivo mora
-validar.py --uf SP      valida a integridade de um acervo estadual
 conhecimento/REGRAS.md  as 23 regras da curadoria, e o erro que gerou cada uma
 modelo-de-dados.md      o desenho do modelo e o caso real que forçou cada decisão
 
-dados/referencia.json   temas, partidos, selos — vale para os 27 estados
+dados/referencia.json   temas, partidos, selos, contato — vale para os 27 estados
 dados/estados.json      as 27 unidades, com a contagem do TSE
 dados/mapa-uf.json      malha do IBGE, simplificada
-dados/sp/  dados/pe/    o acervo de cada estado
+dados/<uf>/             o acervo de cada estado
 fontes/                 documentos primários e extrações
 ```
+
+Os scripts ficam na raiz, e se separam em cinco etapas — que são as etapas pelas
+quais uma informação passa antes de chegar à tela:
+
+| etapa | scripts |
+|---|---|
+| **cadastrar** | `cadastrar_uf`, `cadastrar_redes`, `resolver_mandatos`, `baixar_fotos` |
+| **coletar** | `coletar_sites`, `coletar_legislativo`, `coletar_discursos`, `coletar_imprensa` |
+| **extrair** | `extrair_posicoes`, `extrair_programa_partido`, `classificar_modelo`, `aplicar_classificacao` |
+| **revisar** | `revisar` e `classificar` — as duas telas, e a única etapa que é humana |
+| **publicar** | `promover_sites`, `promover_legislativo`, `gerar_site`, `gerar_inicio`, `validar` |
+
+A separação entre **extrair** e **publicar** é o coração do desenho: extrair
+guarda no acervo, publicar leva à tela, e entre as duas existe uma trava que
+depende de gente. `promover_legislativo.py` recusa publicar enquanto a amostra
+de classificação não tiver sido revisada e batido 80% de concordância.
 
 Fontes, fotos e o mapa ficam na raiz e são **compartilhados** pelos estados — não
 copiados 27 vezes.
@@ -121,8 +143,10 @@ python conferir_contraste.py     # WCAG AA medido, nos dois temas
 ```
 
 Toda ferramenta aceita `--uf`; sem ele, usa o estado padrão de
-`dados/referencia.json`. Sem dependências além da biblioteca padrão do Python 3,
-exceto `pypdf` para ler PDF.
+`dados/referencia.json`. O site e o acervo não dependem de nada além da
+biblioteca padrão do Python 3, exceto `pypdf` para ler PDF de programa
+partidário. As peças gráficas do Instagram (`gerar_avatar.py`, `gerar_artes.py`)
+usam `Pillow` e `fontTools` — mas nada do site depende delas.
 
 **Quer contribuir?** Leia [`CONTRIBUINDO.md`](CONTRIBUINDO.md) — ele explica por
 que uma informação entra ou não entra, que é a parte que importa.
@@ -151,9 +175,11 @@ executada:
 
 Alvo WCAG 2.1 nível AA.
 
-- Contraste medido, não estimado: as 64 combinações de texto e fundo foram
-  calculadas nos temas claro e escuro. A menor razão é 4,8:1, acima do mínimo
-  de 4,5:1 para texto normal.
+- Contraste medido, não estimado: todas as combinações de texto e fundo são
+  calculadas nos dois temas a cada geração, e `conferir_contraste.py` falha se
+  alguma cair. O pior par hoje é 4,51:1, acima do mínimo de 4,5:1 — e o mapa da
+  página inicial entrou nessa checagem depois de um erro em que ele ficou
+  invisível no tema escuro, com 1,09:1.
 - Abas seguem o padrão WAI-ARIA, com navegação por setas, Home e End.
 - Áreas que trocam de conteúdo são `aria-live`, então leitor de tela anuncia a
   mudança.
@@ -168,12 +194,22 @@ semântica foram conferidos; a experiência de uso, não.
 
 ## Limites conhecidos
 
-- **Revisão humana: 0 de 119.** É o que separa este rascunho de algo
-  publicável.
-- **Sem fotos.** O dataset oficial de fotos de candidatos do TSE bloqueia
-  acesso automatizado. Até obtê-las de lá, cada candidatura aparece com as
-  iniciais do nome de urna — e não com imagem de outra origem, para não haver
-  risco de trocar o retrato de alguém.
+- **Revisão humana: 41 de 692.** É o limite que mais pesa. O que não passou
+  aparece marcado, com o link da fonte, mas marcado não é conferido.
+- **618 das 692 posições são do partido, não da candidatura.** O site rotula
+  cada uma, mas o desequilíbrio é grande: a maioria das candidaturas não tem
+  material próprio publicado em lugar nenhum, e programa de partido é igual para
+  todas as candidaturas daquele partido no país inteiro.
+- **1.182 registros legislativos coletados e não publicados.** Câmara e Senado
+  respondem bem, e o material está no acervo — mas a classificação temática
+  ainda não foi medida contra revisão humana, e `promover_legislativo.py`
+  bloqueia a publicação até que seja.
+- **Sete sites declarados ao TSE não abrem.** São páginas montadas por
+  JavaScript cujo conteúdo vem de uma API em tempo de execução; o coletor lê
+  HTML e bundle, e nesses casos nenhum dos dois basta. A célula vazia diz isso.
+- **Nove endereços declarados ao TSE não existem.** Conferido no DNS, um a um.
+  É fato sobre a declaração, não sobre a pessoa: pode ser site tirado do ar ou
+  endereço digitado errado.
 - **Situação do registro muda** por decisão da Justiça Eleitoral até a
   eleição. Cada candidatura mostra a situação com a data em que foi observada.
 - **Votação nominal é escassa** na base pública do período, e por isso
@@ -189,7 +225,9 @@ semântica foram conferidos; a experiência de uso, não.
 
 ## Encontrou um erro?
 
-Abra uma issue — inclusive se o erro estiver no que já foi publicado. Correção é
+Escreva para **contato.candidaturasenado@gmail.com**, fale pelo Instagram
+[@candidaturasenado](https://www.instagram.com/candidaturasenado/), ou abra uma
+issue — inclusive se o erro estiver no que já foi publicado. Correção é
 contribuição, e o histórico deste repositório está cheio delas. Se você é candidato, assessoria de campanha ou partido e
 identificou informação incorreta ou desatualizada sobre a sua candidatura,
 abra uma issue com a fonte correta — correção de dado factual não depende de
@@ -197,11 +235,15 @@ concordância editorial.
 
 ## Fontes
 
-Registro de candidaturas: TSE. Programas partidários: documentos registrados
-no TSE, arquivados em `fontes/` com hash. Registro legislativo: dados abertos
-da Câmara dos Deputados, do Senado Federal e da ALESP. Pesquisa: instituto
-identificado com número de registro no TSE. O link de cada fonte está na
-própria informação, no site.
+Registro de candidaturas, fotos e canais declarados: TSE. Programas
+partidários: documentos registrados no TSE e programas nacionais publicados
+pelos próprios partidos — cada um com a data e o âmbito anotados, porque
+documento de 2014 ou de uma candidatura estadual não vale para 2026 nem para o
+país. Sites de candidatura: o endereço que a própria candidatura declarou ao
+TSE, lido com `robots.txt` respeitado e User-Agent identificado. Registro
+legislativo: dados abertos da Câmara, do Senado e da ALESP. Pesquisa: instituto
+identificado com número de registro no TSE. O link de cada fonte está na própria
+informação, no site.
 
-**Data de referência dos dados: 24 de agosto de 2026.**
+**Data de referência dos dados: 28 de agosto de 2026.**
 Eleição: 4 de outubro de 2026.
