@@ -2344,6 +2344,121 @@
     "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
    },
    "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-sc-2026-esperidiao-amin-prog-pp-001",
+   "id_candidatura_contexto": "sen-sc-2026-esperidiao-amin",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pp",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pp",
+   "citacao_literal": "consecução de um sistema econômico livre, que favoreça a prática das regras de mercado, mas que tenha como objetivo maior o bem-estar dos brasileiros e a eliminação das desigualdades sociais",
+   "texto": "Defende um sistema econômico livre, guiado pelas regras de mercado, tendo como objetivo maior o bem-estar e a redução das desigualdades.",
+   "url_especifica": "https://progressistas.org.br/programa-partidario/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pp-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-sc-2026-esperidiao-amin-prog-pp-002",
+   "id_candidatura_contexto": "sen-sc-2026-esperidiao-amin",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pp",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pp",
+   "citacao_literal": "ação do Estado no campo econômico que leve em conta valores sociais como a criação e a distribuição de riquezas para todos com geração de empregos, renda, poupança, consumo e funcionamento de efetiva economia social de mercado",
+   "texto": "Defende uma atuação do Estado na economia voltada à geração de emprego e renda, numa economia social de mercado.",
+   "url_especifica": "https://progressistas.org.br/programa-partidario/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pp-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-sc-2026-esperidiao-amin-prog-pp-003",
+   "id_candidatura_contexto": "sen-sc-2026-esperidiao-amin",
+   "id_tema": "t9",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pp",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pp",
+   "citacao_literal": "Liberdade de culto religioso, garantia da inviolabilidade da privacidade, direito ao trabalho digno, ao salário justo, à moradia, à educação, à saúde, à alimentação, ao lazer, à segurança, bem como o exercício de uma imprensa livre e responsável e à preservação do meio-ambiente",
+   "texto": "Lista como direitos que defende a liberdade de culto, a privacidade, o trabalho digno, a moradia, a educação, a saúde, a segurança e a imprensa livre.",
+   "url_especifica": "https://progressistas.org.br/programa-partidario/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pp-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-sc-2026-esperidiao-amin-prog-pp-004",
+   "id_candidatura_contexto": "sen-sc-2026-esperidiao-amin",
+   "id_tema": "t10",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pp",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pp",
+   "citacao_literal": "Intangibilidade da Federação, harmonia dos poderes e crescente autonomia dos Estados e Municípios",
+   "texto": "Defende a Federação, a harmonia entre os poderes e mais autonomia para estados e municípios.",
+   "url_especifica": "https://progressistas.org.br/programa-partidario/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pp-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-sc-2026-esperidiao-amin-prog-pp-005",
+   "id_candidatura_contexto": "sen-sc-2026-esperidiao-amin",
+   "id_tema": "t10",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pp",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pp",
+   "citacao_literal": "para a consolidação do regime democrático no País é necessário a existência de partidos políticos organizados e bem estruturados que garantam a legitimidade e a proporcionalidade da representação política",
+   "texto": "Defende que a democracia depende de partidos organizados que garantam a legitimidade e a proporcionalidade da representação política.",
+   "url_especifica": "https://progressistas.org.br/programa-partidario/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pp-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
   }
  ]
 }

@@ -82,6 +82,16 @@
    "consultado_em": "2026-08-28",
    "_ambito": "nacional",
    "_nota": "Documento final aprovado no 8º Congresso Nacional do PT, realizado em Brasilia entre 24 e 26 de abril de 2026, publicado na integra pelo proprio partido em pt.org.br. E o texto que atualiza o programa partidario para o ciclo 2026-2027. NAO usamos a Carta de Principios do site do PT: aquele e o texto de fundacao, de 1979, e nao um programa para esta eleicao. O manifesto nao traz proposta clara sobre seguranca publica, habitacao nem meio ambiente — as palavras 'desmatamento', 'Amazonia' e 'climatica' nao aparecem uma vez sequer no documento. Essas ausencias ficam como ausencias."
+  },
+  {
+   "id_documento": "doc-programa-nacional-pp",
+   "tipo": "programa_partidario",
+   "titulo": "Programa Partidário do Progressistas",
+   "url": "https://progressistas.org.br/programa-partidario/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Pagina 'Programa Partidario' do site oficial do Progressistas, consultada em 28/ago/2026. E um texto curto: seis valores e principios numerados em algarismos romanos, mais um paragrafo de encerramento. Nao traz data. Desde agosto de 2025 o Progressistas integra com o Uniao Brasil a federacao Uniao Progressista, cujo programa proprio nao esta publicado no site do partido. O programa nao trata de forma especifica de seguranca publica, educacao, saude, habitacao, mobilidade urbana, meio ambiente nem tecnologia — cita varios desses temas apenas numa lista de direitos, sem proposta. Essas ausencias ficam como ausencias."
   }
  ]
 }

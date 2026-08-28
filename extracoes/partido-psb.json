@@ -1,0 +1,39 @@
+{
+ "partido": "PSB",
+ "titulo": "Programa do Partido Socialista Brasileiro",
+ "url": "https://psb40.org.br/documentos/programa-do-partido-socialista-brasileiro-psb/",
+ "texto_extraido": "fontes/programa-psb-NACIONAL-site.txt",
+ "nota": "PDF de 4 paginas publicado pelo proprio partido na secao 'Documentos > Programa' do site oficial, consultado em 28/ago/2026. E o programa de fundacao do PSB, sob o lema 'Socialismo e Liberdade', e nao traz data no documento nem na pagina — o que sabemos e que e o texto que o partido publica hoje como seu Programa. O programa nao trata de seguranca publica, habitacao, mobilidade urbana, meio ambiente nem tecnologia; essas ausencias ficam como ausencias.",
+ "posicoes": [
+  {
+   "tema": "t2",
+   "trecho": "O ensino oficial será leigo e organizado de modo que vise ao interesse público e não aos fins comerciais.",
+   "resumo": "Defende que o ensino oficial seja laico e organizado pelo interesse público, não por fins comerciais."
+  },
+  {
+   "tema": "t3",
+   "trecho": "A manutenção da saúde pública é dever do Estado, que não só estabelecerá condições gerais capazes de assegurar existência e trabalho sadios em todo o território nacional, como ainda proporcionará a todos, assistência médica, sanitária e hospitalar.",
+   "resumo": "Defende que o Estado garanta a todos assistência médica, sanitária e hospitalar."
+  },
+  {
+   "tema": "t4",
+   "trecho": "O comércio exterior ficará sob controle do Estado até se tornar função privativa deste.",
+   "resumo": "Defende colocar o comércio exterior sob controle do Estado, até que se torne função exclusiva dele."
+  },
+  {
+   "tema": "t4",
+   "trecho": "O trabalho será considerado direito e obrigação social de todo cidadão válido",
+   "resumo": "Considera o trabalho um direito e uma obrigação social de todo cidadão, cujo exercício o Estado deve assegurar."
+  },
+  {
+   "tema": "t4",
+   "trecho": "Os sindicatos serão órgãos de defesa das forças produtoras. Deverão, por isso, gozar de liberdade e autonomia. Será assegurado o direito de greve.",
+   "resumo": "Defende liberdade e autonomia sindical e o direito de greve assegurado."
+  },
+  {
+   "tema": "t10",
+   "trecho": "O Estado será organizado democraticamente, mantendo sua tradicional forma federativa",
+   "resumo": "Defende um Estado democrático de forma federativa, respeitada a autonomia dos municípios."
+  }
+ ]
+}

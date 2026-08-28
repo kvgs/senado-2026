@@ -1,0 +1,49 @@
+{
+ "partido": "PDT",
+ "titulo": "Programa do PDT — os sete compromissos programáticos do Trabalhismo Democrático",
+ "url": "https://pdt.org.br/index.php/o-pdt/ideologia/",
+ "texto_extraido": "fontes/programa-pdt-NACIONAL-site.txt",
+ "nota": "Pagina 'O PDT > Ideologia' do site oficial, consultada em 28/ago/2026. A pagina abre dizendo que, 'de acordo com os principios estabelecidos em seu manifesto de lancamento, o Partido Democratico Trabalhista propoe-se a lutar pela realizacao do Programa que segue', e lista sete compromissos. O texto vem do manifesto de fundacao (1979) e e o programa que o partido publica hoje; o rodape da pagina marca 2021. O PDT convocou o 6o Congresso Nacional para escrever um programa novo, que ainda nao esta publicado. O programa nao trata de saude, habitacao, mobilidade urbana nem tecnologia; essas ausencias ficam como ausencias.",
+ "posicoes": [
+  {
+   "tema": "t2",
+   "trecho": "Assistir desde o ventre materno, alimentar, escolarizar, acolher e educar todas as crianças no nosso país, com igualdade de oportunidade para todos, é a prioridade máxima do Trabalhismo Democrático.",
+   "resumo": "Coloca como prioridade máxima assistir, alimentar e escolarizar todas as crianças do país, com igualdade de oportunidade."
+  },
+  {
+   "tema": "t2",
+   "trecho": "Como medida de emergência assegurará, gratuitamente, a todas as crianças, até dois anos de idade, um litro de leite diário.",
+   "resumo": "Propõe, como medida de emergência, garantir um litro de leite por dia, de graça, a toda criança de até dois anos."
+  },
+  {
+   "tema": "t4",
+   "trecho": "O segundo é com os interesses dos trabalhadores, muito especialmente das grandes maiorias populares que, em todas as regiões brasileiras, vivem em diversos níveis de pobreza, de marginalidade, ocupando áreas improdutivas ou sendo cruelmente explorados em benefício de setores privilegiados.",
+   "resumo": "Assume compromisso com os interesses dos trabalhadores e das maiorias populares que vivem em situação de pobreza."
+  },
+  {
+   "tema": "t4",
+   "trecho": "O sétimo compromisso é a recuperação para o povo brasileiro de todas as concessões feitas a grupos e interesses estrangeiros, lesivas ao nosso patrimônio, à economia nacional e atentatória a nossa própria soberania.",
+   "resumo": "Defende retomar concessões feitas a grupos e interesses estrangeiros consideradas lesivas ao patrimônio e à economia nacional."
+  },
+  {
+   "tema": "t6",
+   "trecho": "O Trabalhismo Democrático propugna por um movimento e uma legislação que defendam o ambiente natural do país e coíbam as diversas formas de poluição e pela implementação de um amplo programa nacional de descontaminação.",
+   "resumo": "Defende legislação de proteção ambiental, combate às formas de poluição e um programa nacional de descontaminação."
+  },
+  {
+   "tema": "t9",
+   "trecho": "O terceiro é com a mulher, contra a sua discriminação propugnando por sua efetiva participação em todas as áreas de decisão, pela definição de seus direitos sociais, no emprego ou no lar, pela igualdade de remuneração e de oportunidades, de educação e formação profissional",
+   "resumo": "Defende a participação efetiva da mulher em todas as áreas de decisão e a igualdade de remuneração e de oportunidades."
+  },
+  {
+   "tema": "t9",
+   "trecho": "Esse compromisso nós concretizaremos no combate à discriminação social em todos os campos, em especial no da educação e da cultura e nas relações sociais e de trabalho.",
+   "resumo": "Sobre a causa das populações negras, compromete-se a combater a discriminação social na educação, na cultura e nas relações de trabalho."
+  },
+  {
+   "tema": "t9",
+   "trecho": "O Trabalhismo Democrático assume, como um dos seus compromissos políticos fundamentais, poder lutar em defesa das populações indígenas, por direitos à autodeterminação como minoria nacional e à preservação de suas culturas, assim como ao uso dos recursos naturais necessários a sua sobrevivência e desenvolvimento.",
+   "resumo": "Defende os direitos das populações indígenas à autodeterminação, à preservação de suas culturas e ao uso dos recursos naturais de que dependem."
+  }
+ ]
+}

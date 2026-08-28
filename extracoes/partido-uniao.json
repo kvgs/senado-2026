@@ -1,0 +1,64 @@
+{
+ "partido": "UNIÃO",
+ "titulo": "Manifesto do União Brasil — Nossos Valores e Princípios",
+ "url": "https://uniaobrasil.org.br/wp-content/uploads/2024/08/BOOK-148x210mm-Manifesto_Uniao_BRASIL.pdf",
+ "texto_extraido": "fontes/programa-uniao-manifesto.txt",
+ "nota": "Manifesto de 24 paginas publicado pelo proprio partido em uniaobrasil.org.br, arquivo enviado ao site em agosto de 2024 (segundo o caminho de upload); o documento nao traz data impressa. Os trechos vem da secao de compromissos, escrita em primeira pessoa do plural. Desde agosto de 2025 o Uniao Brasil integra com o Progressistas a federacao Uniao Progressista, cujo programa proprio nao esta publicado no site do partido — este manifesto e o que o Uniao Brasil publica hoje. O documento nao trata de mobilidade urbana nem de reforma tributaria; essas ausencias ficam como ausencias.",
+ "posicoes": [
+  {
+   "tema": "t1",
+   "trecho": "Garantia do direito de ir e vir, da livre circulação dos cidadãos nas cidades, da paz às famílias, nas suas casas e nas suas vizinhanças.",
+   "resumo": "Assume como compromisso garantir o direito de ir e vir e a livre circulação dos cidadãos nas cidades."
+  },
+  {
+   "tema": "t1",
+   "trecho": "Nas sociedades democráticas, o Estado detém o monopólio da força e deve exercê-lo com a máxima responsabilidade, mas também com todo rigor no enfrentamento da criminalidade.",
+   "resumo": "Defende que o Estado exerça o monopólio da força com responsabilidade e com rigor no enfrentamento da criminalidade."
+  },
+  {
+   "tema": "t1",
+   "trecho": "O Brasil não tolera mais o convívio com índices de morte violenta piores que os de países conflagrados por guerras, nem pode mais aceitar as mortes de jovens pobres e negros.",
+   "resumo": "Afirma que o país não pode mais aceitar índices de morte violenta de país em guerra nem as mortes de jovens pobres e negros."
+  },
+  {
+   "tema": "t2",
+   "trecho": "Por isso, assumimos o compromisso de fazer do processo educacional o principal caminho para a conquista da cidadania plena e a inclusão social.",
+   "resumo": "Assume o compromisso de fazer da educação o principal caminho para a cidadania plena e a inclusão social."
+  },
+  {
+   "tema": "t2",
+   "trecho": "Prioridade à qualificação escolar e profissional como instrumentos estratégicos de superação da pobreza",
+   "resumo": "Defende priorizar a qualificação escolar e profissional como caminho para superar a pobreza."
+  },
+  {
+   "tema": "t3",
+   "trecho": "Fortalecimento do SUS.",
+   "resumo": "Assume como compromisso o fortalecimento do SUS."
+  },
+  {
+   "tema": "t4",
+   "trecho": "Apoio a programas de transferência de renda, compreendidos como ferramentas necessárias de segurança social e alimentar, por garantirem a subsistência das famílias mais pobres.",
+   "resumo": "Apoia os programas de transferência de renda como ferramenta de segurança social e alimentar das famílias mais pobres."
+  },
+  {
+   "tema": "t6",
+   "trecho": "Resgate e fortalecimento de uma política ambiental responsável e sustentável.",
+   "resumo": "Assume como compromisso resgatar e fortalecer uma política ambiental responsável e sustentável."
+  },
+  {
+   "tema": "t8",
+   "trecho": "Compromisso com a Ciência na formulação de políticas públicas e prioridade para programas de desenvolvimento científico e tecnológico.",
+   "resumo": "Defende usar a ciência na formulação de políticas públicas e priorizar programas de desenvolvimento científico e tecnológico."
+  },
+  {
+   "tema": "t9",
+   "trecho": "Priorização de políticas públicas voltadas para a Primeira Infância.",
+   "resumo": "Defende priorizar as políticas públicas voltadas para a primeira infância."
+  },
+  {
+   "tema": "t9",
+   "trecho": "Defesa intransigente da Liberdade de Imprensa, força social necessária à saúde da Democracia.",
+   "resumo": "Defende a liberdade de imprensa como condição da democracia."
+  }
+ ]
+}

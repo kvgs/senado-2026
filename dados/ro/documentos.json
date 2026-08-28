@@ -30,6 +30,36 @@
    "consultado_em": "2026-08-28",
    "_ambito": "nacional",
    "_nota": "Pagina 'O Partido > Manifesto e Programa' do site oficial do Republicanos, consultada em 28/ago/2026 (rodape do site: 2026). Cada trecho e um dos dez topicos programaticos, escritos na primeira pessoa do plural ('Nos, os Republicanos, ...'). O documento se intitula 'Programa Brasil 2022'; e o programa que o partido publica hoje, e nao ha versao mais recente no site. Os topicos sao declaracoes de principio curtas, sem medida concreta: entram como o que sao. O programa nao trata de habitacao, mobilidade urbana nem meio ambiente; essas ausencias ficam como ausencias."
+  },
+  {
+   "id_documento": "doc-programa-nacional-pdt",
+   "tipo": "programa_partidario",
+   "titulo": "Programa do PDT — os sete compromissos programáticos do Trabalhismo Democrático",
+   "url": "https://pdt.org.br/index.php/o-pdt/ideologia/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Pagina 'O PDT > Ideologia' do site oficial, consultada em 28/ago/2026. A pagina abre dizendo que, 'de acordo com os principios estabelecidos em seu manifesto de lancamento, o Partido Democratico Trabalhista propoe-se a lutar pela realizacao do Programa que segue', e lista sete compromissos. O texto vem do manifesto de fundacao (1979) e e o programa que o partido publica hoje; o rodape da pagina marca 2021. O PDT convocou o 6o Congresso Nacional para escrever um programa novo, que ainda nao esta publicado. O programa nao trata de saude, habitacao, mobilidade urbana nem tecnologia; essas ausencias ficam como ausencias."
+  },
+  {
+   "id_documento": "doc-programa-nacional-psb",
+   "tipo": "programa_partidario",
+   "titulo": "Programa do Partido Socialista Brasileiro",
+   "url": "https://psb40.org.br/documentos/programa-do-partido-socialista-brasileiro-psb/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "PDF de 4 paginas publicado pelo proprio partido na secao 'Documentos > Programa' do site oficial, consultado em 28/ago/2026. E o programa de fundacao do PSB, sob o lema 'Socialismo e Liberdade', e nao traz data no documento nem na pagina — o que sabemos e que e o texto que o partido publica hoje como seu Programa. O programa nao trata de seguranca publica, habitacao, mobilidade urbana, meio ambiente nem tecnologia; essas ausencias ficam como ausencias."
+  },
+  {
+   "id_documento": "doc-programa-nacional-pp",
+   "tipo": "programa_partidario",
+   "titulo": "Programa Partidário do Progressistas",
+   "url": "https://progressistas.org.br/programa-partidario/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Pagina 'Programa Partidario' do site oficial do Progressistas, consultada em 28/ago/2026. E um texto curto: seis valores e principios numerados em algarismos romanos, mais um paragrafo de encerramento. Nao traz data. Desde agosto de 2025 o Progressistas integra com o Uniao Brasil a federacao Uniao Progressista, cujo programa proprio nao esta publicado no site do partido. O programa nao trata de forma especifica de seguranca publica, educacao, saude, habitacao, mobilidade urbana, meio ambiente nem tecnologia — cita varios desses temas apenas numa lista de direitos, sem proposta. Essas ausencias ficam como ausencias."
   }
  ]
 }

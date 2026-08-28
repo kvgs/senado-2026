@@ -73,6 +73,16 @@
    "consultado_em": "2026-08-28",
    "_ambito": "nacional",
    "_nota": "Pagina 'O Partido > Manifesto e Programa' do site oficial do Republicanos, consultada em 28/ago/2026 (rodape do site: 2026). Cada trecho e um dos dez topicos programaticos, escritos na primeira pessoa do plural ('Nos, os Republicanos, ...'). O documento se intitula 'Programa Brasil 2022'; e o programa que o partido publica hoje, e nao ha versao mais recente no site. Os topicos sao declaracoes de principio curtas, sem medida concreta: entram como o que sao. O programa nao trata de habitacao, mobilidade urbana nem meio ambiente; essas ausencias ficam como ausencias."
+  },
+  {
+   "id_documento": "doc-programa-nacional-união",
+   "tipo": "programa_partidario",
+   "titulo": "Manifesto do União Brasil — Nossos Valores e Princípios",
+   "url": "https://uniaobrasil.org.br/wp-content/uploads/2024/08/BOOK-148x210mm-Manifesto_Uniao_BRASIL.pdf",
+   "publicado_em": null,
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Manifesto de 24 paginas publicado pelo proprio partido em uniaobrasil.org.br, arquivo enviado ao site em agosto de 2024 (segundo o caminho de upload); o documento nao traz data impressa. Os trechos vem da secao de compromissos, escrita em primeira pessoa do plural. Desde agosto de 2025 o Uniao Brasil integra com o Progressistas a federacao Uniao Progressista, cujo programa proprio nao esta publicado no site do partido — este manifesto e o que o Uniao Brasil publica hoje. O documento nao trata de mobilidade urbana nem de reforma tributaria; essas ausencias ficam como ausencias."
   }
  ]
 }

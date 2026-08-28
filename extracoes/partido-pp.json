@@ -1,0 +1,34 @@
+{
+ "partido": "PP",
+ "titulo": "Programa Partidário do Progressistas",
+ "url": "https://progressistas.org.br/programa-partidario/",
+ "texto_extraido": "fontes/programa-pp-NACIONAL-site.txt",
+ "nota": "Pagina 'Programa Partidario' do site oficial do Progressistas, consultada em 28/ago/2026. E um texto curto: seis valores e principios numerados em algarismos romanos, mais um paragrafo de encerramento. Nao traz data. Desde agosto de 2025 o Progressistas integra com o Uniao Brasil a federacao Uniao Progressista, cujo programa proprio nao esta publicado no site do partido. O programa nao trata de forma especifica de seguranca publica, educacao, saude, habitacao, mobilidade urbana, meio ambiente nem tecnologia — cita varios desses temas apenas numa lista de direitos, sem proposta. Essas ausencias ficam como ausencias.",
+ "posicoes": [
+  {
+   "tema": "t4",
+   "trecho": "consecução de um sistema econômico livre, que favoreça a prática das regras de mercado, mas que tenha como objetivo maior o bem-estar dos brasileiros e a eliminação das desigualdades sociais",
+   "resumo": "Defende um sistema econômico livre, guiado pelas regras de mercado, tendo como objetivo maior o bem-estar e a redução das desigualdades."
+  },
+  {
+   "tema": "t4",
+   "trecho": "ação do Estado no campo econômico que leve em conta valores sociais como a criação e a distribuição de riquezas para todos com geração de empregos, renda, poupança, consumo e funcionamento de efetiva economia social de mercado",
+   "resumo": "Defende uma atuação do Estado na economia voltada à geração de emprego e renda, numa economia social de mercado."
+  },
+  {
+   "tema": "t9",
+   "trecho": "Liberdade de culto religioso, garantia da inviolabilidade da privacidade, direito ao trabalho digno, ao salário justo, à moradia, à educação, à saúde, à alimentação, ao lazer, à segurança, bem como o exercício de uma imprensa livre e responsável e à preservação do meio-ambiente",
+   "resumo": "Lista como direitos que defende a liberdade de culto, a privacidade, o trabalho digno, a moradia, a educação, a saúde, a segurança e a imprensa livre."
+  },
+  {
+   "tema": "t10",
+   "trecho": "Intangibilidade da Federação, harmonia dos poderes e crescente autonomia dos Estados e Municípios",
+   "resumo": "Defende a Federação, a harmonia entre os poderes e mais autonomia para estados e municípios."
+  },
+  {
+   "tema": "t10",
+   "trecho": "para a consolidação do regime democrático no País é necessário a existência de partidos políticos organizados e bem estruturados que garantam a legitimidade e a proporcionalidade da representação política",
+   "resumo": "Defende que a democracia depende de partidos organizados que garantam a legitimidade e a proporcionalidade da representação política."
+  }
+ ]
+}

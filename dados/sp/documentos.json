@@ -304,6 +304,26 @@
    "consultado_em": "2026-08-28",
    "_ambito": "nacional",
    "_nota": "Apresentacao institucional publicada pelo proprio partido em novo.org.br (secao Material Oficial), arquivo enviado ao site em novembro de 2025 (segundo o caminho de upload); o documento nao traz data impressa. Os trechos vem da secao intitulada 'O QUE O NOVO ACREDITA', que e a parte do documento onde o partido lista suas posicoes; o proprio slide acrescenta 'E voce nao precisa concordar com tudo!'. NAO e o programa registrado no TSE: a pagina 'Nossos posicionamentos' do site oficial esta com o link quebrado (HTTP 404) e o site avisa que esta 'em versao Beta'. O documento nao trata de saude, habitacao, mobilidade, meio ambiente nem tecnologia; em seguranca publica ele so diz que o Estado deve ter 'foco no essencial: educacao, seguranca e saude', que e prioridade de gasto e nao proposta. Essas ausencias ficam como ausencias."
+  },
+  {
+   "id_documento": "doc-programa-nacional-psb",
+   "tipo": "programa_partidario",
+   "titulo": "Programa do Partido Socialista Brasileiro",
+   "url": "https://psb40.org.br/documentos/programa-do-partido-socialista-brasileiro-psb/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "PDF de 4 paginas publicado pelo proprio partido na secao 'Documentos > Programa' do site oficial, consultado em 28/ago/2026. E o programa de fundacao do PSB, sob o lema 'Socialismo e Liberdade', e nao traz data no documento nem na pagina — o que sabemos e que e o texto que o partido publica hoje como seu Programa. O programa nao trata de seguranca publica, habitacao, mobilidade urbana, meio ambiente nem tecnologia; essas ausencias ficam como ausencias."
+  },
+  {
+   "id_documento": "doc-programa-nacional-pp",
+   "tipo": "programa_partidario",
+   "titulo": "Programa Partidário do Progressistas",
+   "url": "https://progressistas.org.br/programa-partidario/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Pagina 'Programa Partidario' do site oficial do Progressistas, consultada em 28/ago/2026. E um texto curto: seis valores e principios numerados em algarismos romanos, mais um paragrafo de encerramento. Nao traz data. Desde agosto de 2025 o Progressistas integra com o Uniao Brasil a federacao Uniao Progressista, cujo programa proprio nao esta publicado no site do partido. O programa nao trata de forma especifica de seguranca publica, educacao, saude, habitacao, mobilidade urbana, meio ambiente nem tecnologia — cita varios desses temas apenas numa lista de direitos, sem proposta. Essas ausencias ficam como ausencias."
   }
  ],
  "_pendencias_de_download": {

@@ -60,6 +60,16 @@
    "consultado_em": "2026-08-28",
    "_ambito": "nacional",
    "_nota": "Apresentacao institucional publicada pelo proprio partido em novo.org.br (secao Material Oficial), arquivo enviado ao site em novembro de 2025 (segundo o caminho de upload); o documento nao traz data impressa. Os trechos vem da secao intitulada 'O QUE O NOVO ACREDITA', que e a parte do documento onde o partido lista suas posicoes; o proprio slide acrescenta 'E voce nao precisa concordar com tudo!'. NAO e o programa registrado no TSE: a pagina 'Nossos posicionamentos' do site oficial esta com o link quebrado (HTTP 404) e o site avisa que esta 'em versao Beta'. O documento nao trata de saude, habitacao, mobilidade, meio ambiente nem tecnologia; em seguranca publica ele so diz que o Estado deve ter 'foco no essencial: educacao, seguranca e saude', que e prioridade de gasto e nao proposta. Essas ausencias ficam como ausencias."
+  },
+  {
+   "id_documento": "doc-programa-nacional-pdt",
+   "tipo": "programa_partidario",
+   "titulo": "Programa do PDT — os sete compromissos programáticos do Trabalhismo Democrático",
+   "url": "https://pdt.org.br/index.php/o-pdt/ideologia/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Pagina 'O PDT > Ideologia' do site oficial, consultada em 28/ago/2026. A pagina abre dizendo que, 'de acordo com os principios estabelecidos em seu manifesto de lancamento, o Partido Democratico Trabalhista propoe-se a lutar pela realizacao do Programa que segue', e lista sete compromissos. O texto vem do manifesto de fundacao (1979) e e o programa que o partido publica hoje; o rodape da pagina marca 2021. O PDT convocou o 6o Congresso Nacional para escrever um programa novo, que ainda nao esta publicado. O programa nao trata de saude, habitacao, mobilidade urbana nem tecnologia; essas ausencias ficam como ausencias."
   }
  ]
 }

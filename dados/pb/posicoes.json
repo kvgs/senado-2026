@@ -2277,6 +2277,144 @@
     "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
    },
    "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pb-2026-joao-azevedo-prog-psb-001",
+   "id_candidatura_contexto": "sen-pb-2026-joao-azevedo",
+   "id_tema": "t2",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "psb",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-psb",
+   "citacao_literal": "O ensino oficial será leigo e organizado de modo que vise ao interesse público e não aos fins comerciais.",
+   "texto": "Defende que o ensino oficial seja laico e organizado pelo interesse público, não por fins comerciais.",
+   "url_especifica": "https://psb40.org.br/documentos/programa-do-partido-socialista-brasileiro-psb/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-psb-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pb-2026-joao-azevedo-prog-psb-002",
+   "id_candidatura_contexto": "sen-pb-2026-joao-azevedo",
+   "id_tema": "t3",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "psb",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-psb",
+   "citacao_literal": "A manutenção da saúde pública é dever do Estado, que não só estabelecerá condições gerais capazes de assegurar existência e trabalho sadios em todo o território nacional, como ainda proporcionará a todos, assistência médica, sanitária e hospitalar.",
+   "texto": "Defende que o Estado garanta a todos assistência médica, sanitária e hospitalar.",
+   "url_especifica": "https://psb40.org.br/documentos/programa-do-partido-socialista-brasileiro-psb/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-psb-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pb-2026-joao-azevedo-prog-psb-003",
+   "id_candidatura_contexto": "sen-pb-2026-joao-azevedo",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "psb",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-psb",
+   "citacao_literal": "O comércio exterior ficará sob controle do Estado até se tornar função privativa deste.",
+   "texto": "Defende colocar o comércio exterior sob controle do Estado, até que se torne função exclusiva dele.",
+   "url_especifica": "https://psb40.org.br/documentos/programa-do-partido-socialista-brasileiro-psb/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-psb-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pb-2026-joao-azevedo-prog-psb-004",
+   "id_candidatura_contexto": "sen-pb-2026-joao-azevedo",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "psb",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-psb",
+   "citacao_literal": "O trabalho será considerado direito e obrigação social de todo cidadão válido",
+   "texto": "Considera o trabalho um direito e uma obrigação social de todo cidadão, cujo exercício o Estado deve assegurar.",
+   "url_especifica": "https://psb40.org.br/documentos/programa-do-partido-socialista-brasileiro-psb/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-psb-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pb-2026-joao-azevedo-prog-psb-005",
+   "id_candidatura_contexto": "sen-pb-2026-joao-azevedo",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "psb",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-psb",
+   "citacao_literal": "Os sindicatos serão órgãos de defesa das forças produtoras. Deverão, por isso, gozar de liberdade e autonomia. Será assegurado o direito de greve.",
+   "texto": "Defende liberdade e autonomia sindical e o direito de greve assegurado.",
+   "url_especifica": "https://psb40.org.br/documentos/programa-do-partido-socialista-brasileiro-psb/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-psb-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pb-2026-joao-azevedo-prog-psb-006",
+   "id_candidatura_contexto": "sen-pb-2026-joao-azevedo",
+   "id_tema": "t10",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "psb",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-psb",
+   "citacao_literal": "O Estado será organizado democraticamente, mantendo sua tradicional forma federativa",
+   "texto": "Defende um Estado democrático de forma federativa, respeitada a autonomia dos municípios.",
+   "url_especifica": "https://psb40.org.br/documentos/programa-do-partido-socialista-brasileiro-psb/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-psb-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
   }
  ]
 }
