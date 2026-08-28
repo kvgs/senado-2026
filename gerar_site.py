@@ -490,6 +490,15 @@ tpl = tpl.replace("{{RAIZ}}", PREFIXO)
 
 tpl = tpl.replace("{{MAILTO}}", f"mailto:{_email}?subject={_assunto}").replace("{{EMAIL}}", _email)
 
+# O perfil e o site se apontam. Sem isso, quem chega pelo Instagram nao tem como
+# saber que o site e o mesmo projeto — e uma conta que fala de candidatura sem
+# endereco proprio parece anonima, que e exatamente o que este projeto nao e.
+_insta = ((ref.get("contato") or {}).get("instagram") or "").strip()
+_insta_url = ((ref.get("contato") or {}).get("instagram_url") or "").strip()
+if not _insta or not _insta_url:
+    raise SystemExit("dados/referencia.json nao tem contato.instagram e instagram_url")
+tpl = tpl.replace("{{INSTAGRAM_URL}}", _insta_url).replace("{{INSTAGRAM}}", _insta)
+
 # Sem o link de volta, quem entra num estado so sai pelo botao do navegador — e
 # quem chega por link direto nunca ve o mapa. E um <a> solto no template: some
 # numa refatoracao sem quebrar nada, do mesmo jeito que o "15" ficou para tras.

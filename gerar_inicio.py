@@ -131,6 +131,10 @@ def main() -> int:
     email = ((ref.get("contato") or {}).get("email") or "").strip()
     if not email:
         raise SystemExit("dados/referencia.json nao tem contato.email")
+    insta = ((ref.get("contato") or {}).get("instagram") or "").strip()
+    insta_url = ((ref.get("contato") or {}).get("instagram_url") or "").strip()
+    if not insta or not insta_url:
+        raise SystemExit("dados/referencia.json nao tem contato.instagram e instagram_url")
 
     tpl = (AQUI / "_template_inicio.html").read_text(encoding="utf-8")
     # Cada marcador tem de aparecer UMA vez. Mencionar o nome do marcador num
@@ -148,7 +152,9 @@ def main() -> int:
             .replace("{{TOTAL_CANDIDATURAS}}",
                      str(sum(e["candidaturas_tse"] for e in estados)))
             .replace("{{MAILTO}}", f"mailto:{email}?subject={assunto}")
-            .replace("{{EMAIL}}", email))
+            .replace("{{EMAIL}}", email)
+            .replace("{{INSTAGRAM_URL}}", insta_url)
+            .replace("{{INSTAGRAM}}", insta))
 
     faltou = re.findall(r"\{\{[A-Z_]+\}\}", html)
     if faltou:

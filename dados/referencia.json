@@ -1062,7 +1062,10 @@
   ],
   "contato": {
     "email": "contato.candidaturasenado@gmail.com",
-    "_nota": "Conta dedicada ao projeto, criada em 2026-08-28. Substitui o endereco pessoal que estava publicado no rodape das 27 paginas — este e o dado de contato que mais circula, porque esta na pagina divulgada. O mesmo endereco e o do Instagram @candidaturasenado, para quem ve o perfil e quem ve o site reconhecerem o mesmo projeto."
+    "_nota": "Conta dedicada ao projeto, criada em 2026-08-28. Substitui o endereco pessoal que estava publicado no rodape das 27 paginas — este e o dado de contato que mais circula, porque esta na pagina divulgada. O mesmo endereco e o do Instagram @candidaturasenado, para quem ve o perfil e quem ve o site reconhecerem o mesmo projeto.",
+    "instagram": "@candidaturasenado",
+    "instagram_url": "https://www.instagram.com/candidaturasenado/",
+    "_nota_instagram": "Conta do PROJETO, nao de pessoa. O site e o perfil se apontam para que quem chega por um reconheca o outro — e para que nenhum dos dois seja uma conta anonima falando de candidatura. Fonte unica: trocar aqui troca nas 27 paginas."
   },
   "site": {
     "uf": "SP",
