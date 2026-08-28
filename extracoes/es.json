@@ -1,0 +1,60 @@
+{
+  "posicoes": [
+    {
+      "id_candidatura": "sen-es-2026-professor-fabian",
+      "tema": "t2",
+      "url": "https://professorfabian.com.br/",
+      "resumo": "Defende valorização e formação continuada dos profissionais de educação, e prioriza a educação de jovens e adultos e as universidades públicas e Institutos Federais.",
+      "trecho": "Defendo a valorização e a formação continuada em serviço dos profissionais de educação, o fortalecimento de todos os níveis, etapas e modalidades da Educação Básica em uma perspectiva emancipatória e inclusiva. As modalidades da educação básica serão tratadas como prioridade, bem como o fortalecimento das universidades públicas e dos Institutos Federais."
+    },
+    {
+      "id_candidatura": "sen-es-2026-professor-fabian",
+      "tema": "t2",
+      "url": "https://professorfabian.com.br/",
+      "resumo": "Quer priorizar a educação de jovens e adultos em territórios sem atendimento e monitorar a execução das metas dos planos de educação.",
+      "trecho": "Quero tratar a escola pública como estrutura central de transformação social e priorizar a educação de jovens e adultos, especialmente nos territórios historicamente esquecidos pelo poder público, e cuidar também dos profissionais que atuam nas instituições privadas de educação, monitorando permanentemente a execução das metas dos planos nacional, estadual e municipal de educação."
+    },
+    {
+      "id_candidatura": "sen-es-2026-professor-fabian",
+      "tema": "t1",
+      "url": "https://professorfabian.com.br/",
+      "resumo": "Propõe câmeras em todos os fardamentos policiais, ouvidoria independente de segurança pública e julgamento civil, não militar, dos casos de tortura.",
+      "trecho": "Proponho um modelo de segurança que rompe com a lógica do armamento e da repressão à periferia. Defendo câmeras em 100% dos fardamentos policiais, a criação de uma ouvidoria independente para segurança pública, militar, civil e guarda, o fortalecimento de políticas de prevenção à tortura e a massacres, e que a justiça responsável por esses casos seja civil, não militar."
+    },
+    {
+      "id_candidatura": "sen-es-2026-professor-fabian",
+      "tema": "t9",
+      "url": "https://professorfabian.com.br/",
+      "resumo": "Defende financiamento permanente para escolas de samba, grupos culturais de base comunitária e rádios comunitárias, tratando cultura popular como política de Estado.",
+      "trecho": "defendo políticas de valorização e sustentação das escolas de samba, dos grupos culturais de base comunitária e das rádios comunitárias que já sustentam a cultura do Espírito Santo com recursos próprios. Quero reconhecer a cultura popular como política de Estado, e não como evento isolado, dando estrutura permanente ao que hoje se sustenta na base da doação e do voluntariado."
+    },
+    {
+      "id_candidatura": "sen-es-2026-renato-casagrande",
+      "tema": "t2",
+      "url": "https://renatocasagrande.com.br/",
+      "resumo": "Lista, entre as propostas de educação, a expansão da educação técnica e o apoio ao ensino em tempo integral.",
+      "trecho": "Expansão da educação técnica, apoio ao ensino em tempo integral e muito mais."
+    },
+    {
+      "id_candidatura": "sen-es-2026-renato-casagrande",
+      "tema": "t3",
+      "url": "https://renatocasagrande.com.br/",
+      "resumo": "Propõe mais leitos hospitalares, regionalização do atendimento e fortalecimento da atenção básica.",
+      "trecho": "Mais leitos, regionalização do atendimento e fortalecimento da atenção básica."
+    },
+    {
+      "id_candidatura": "sen-es-2026-renato-casagrande",
+      "tema": "t1",
+      "url": "https://renatocasagrande.com.br/",
+      "resumo": "Resume a proposta de segurança em inteligência, tecnologia e valorização das forças de segurança.",
+      "trecho": "Inteligência, tecnologia e valorização das forças de segurança."
+    },
+    {
+      "id_candidatura": "sen-es-2026-fabiano-contarato",
+      "tema": "t1",
+      "url": "https://fabianocontarato.com.br/",
+      "resumo": "Defende endurecer a legislação de trânsito para reduzir mortes.",
+      "trecho": "O motorista que desrespeita a lei não pode ter a certeza de que nada acontecerá. Precisamos reduzir essa triste estatística e endurecer a legislação para proteger a vida."
+    }
+  ]
+}

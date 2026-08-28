@@ -173,7 +173,11 @@ def links(corpo: bytes, tipo: str, base: str) -> list[tuple[str, str]]:
     """(url_absoluta, texto_do_link) das paginas internas que parecem proposta."""
     s = corpo.decode("utf-8", "replace")
     fora, host = [], urllib.parse.urlsplit(base).netloc
-    for m in re.finditer(r'<a\b[^>]*href=["\']([^"\'#]+)["\'][^>]*>(.*?)</a>', s, re.S | re.I):
+    # O padrao antigo era href="([^"'#]+)", que DESCARTA todo endereco contendo
+    # "#" — e nao so a ancora pura. Site de campanha em pagina unica escreve
+    # href="/#propostas", e o link chamado "Propostas" era justamente o que se
+    # perdia. Agora casa o endereco inteiro e o fragmento e cortado depois.
+    for m in re.finditer(r'<a\b[^>]*href=["\']([^"\']+)["\'][^>]*>(.*?)</a>', s, re.S | re.I):
         href, rotulo = m.group(1).strip(), re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", m.group(2))).strip()
         if href.lower().startswith(("mailto:", "tel:", "javascript:")):
             continue
