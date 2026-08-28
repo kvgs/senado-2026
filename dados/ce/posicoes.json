@@ -207,6 +207,28 @@
     "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
    },
    "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-ce-2026-luizianne-site-001",
+   "id_tema": "t1",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-ce-2026-luizianne",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-ce-2026-luizianne",
+   "citacao_literal": "o Projeto de Lei (PL nº 2418/2026), que altera a Lei Maria da Penha, para tornar obrigatório o monitoramento eletrônico do agressor em casos de violência física grave ou uso de arma. A obrigatoriedade da tornozeleira eletrônica retira da vítima o ônus de vigiar o agressor",
+   "texto": "Apresentou projeto que altera a Lei Maria da Penha para tornar obrigatório o monitoramento eletrônico do agressor em casos de violência física grave ou uso de arma.",
+   "url_especifica": "https://luiziannelins.com",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
   }
  ]
 }

@@ -1,17 +1,24 @@
 {
  "gerado_de": "dados/posicoes.json",
- "n": 11,
+ "n": 18,
  "chaves": [
   "13d6ad373ecf0462",
   "19331310b473e8d7",
+  "2904fb9850d1c6dd",
   "2cb2a108c5eb1cdc",
+  "513ec6d606593884",
   "560ce69fe8db065d",
   "60a84a40975f7e61",
+  "6aff6521d61a33c6",
+  "7db2d3f743b53a00",
   "a3929e29a2045c81",
+  "ae4fd3e232753e44",
   "b89d0198f0c6b0ec",
   "cdcd1d904df10461",
   "d4e3f69439e8b232",
+  "ddfdb4f5fa991c62",
   "ead6bdc37ee1831a",
+  "eb19af93d6967c2b",
   "ff049c511b2b7fbb"
  ]
 }

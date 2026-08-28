@@ -480,6 +480,167 @@
     "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
    },
    "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-rs-2026-manuela-d-avila-prog-psol-001",
+   "id_candidatura_contexto": "sen-rs-2026-manuela-d-avila",
+   "id_tema": "t1",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "psol",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-psol",
+   "citacao_literal": "Desmilitarizar a polícia e a vida é uma necessidade democrática. É preciso construir um modelo de polícia de caráter civil, com controle interno e externo, de ciclo completo",
+   "texto": "Defende desmilitarizar a polícia e construir um modelo de polícia civil de ciclo completo, com controle interno e externo.",
+   "url_especifica": "https://psol50.org.br/partido/programa/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-rs-2026-manuela-d-avila-prog-psol-002",
+   "id_candidatura_contexto": "sen-rs-2026-manuela-d-avila",
+   "id_tema": "t2",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "psol",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-psol",
+   "citacao_literal": "Todas as crianças, adolescentes, jovens e adultos têm direito à educação pública, gratuita, democrática, de qualidade, laica, inclusiva e socialmente referenciada",
+   "texto": "Defende direito à educação pública, gratuita, laica e inclusiva em todas as idades.",
+   "url_especifica": "https://psol50.org.br/partido/programa/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-rs-2026-manuela-d-avila-prog-psol-003",
+   "id_candidatura_contexto": "sen-rs-2026-manuela-d-avila",
+   "id_tema": "t3",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "psol",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-psol",
+   "citacao_literal": "É central a defesa intransigente do SUS e o enfrentamento ao negacionismo científico",
+   "texto": "Coloca a defesa do SUS e o enfrentamento ao negacionismo científico como centrais.",
+   "url_especifica": "https://psol50.org.br/partido/programa/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-rs-2026-manuela-d-avila-prog-psol-004",
+   "id_candidatura_contexto": "sen-rs-2026-manuela-d-avila",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "psol",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-psol",
+   "citacao_literal": "a defesa intransigente dos serviços públicos universais, a redução da jornada de trabalho, a regulação democrática da tecnologia e uma transição ecológica justa e popular",
+   "texto": "Defende serviços públicos universais, redução da jornada de trabalho e transição ecológica.",
+   "url_especifica": "https://psol50.org.br/partido/programa/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-rs-2026-manuela-d-avila-prog-psol-005",
+   "id_candidatura_contexto": "sen-rs-2026-manuela-d-avila",
+   "id_tema": "t8",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "psol",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-psol",
+   "citacao_literal": "enfrentando os monopólios midiáticos e combatendo o poder das Big Techs com soberania digital, transparência dos dados e responsabilização das corporações sobre conteúdos divulgados",
+   "texto": "Propõe enfrentar monopólios de mídia e regular as big techs, com soberania digital e responsabilização por conteúdo.",
+   "url_especifica": "https://psol50.org.br/partido/programa/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-rs-2026-manuela-d-avila-prog-psol-006",
+   "id_candidatura_contexto": "sen-rs-2026-manuela-d-avila",
+   "id_tema": "t6",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "psol",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-psol",
+   "citacao_literal": "Transição justa para um modelo econômico pós-extrativista, com planejamento ecológico de longo prazo",
+   "texto": "Propõe transição para um modelo econômico pós-extrativista com planejamento ecológico de longo prazo.",
+   "url_especifica": "https://psol50.org.br/partido/programa/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-rs-2026-manuela-d-avila-prog-psol-007",
+   "id_candidatura_contexto": "sen-rs-2026-manuela-d-avila",
+   "id_tema": "t7",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "psol",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-psol",
+   "citacao_literal": "Reforma Urbana: Combate à especulação imobiliária, implementação da tarifa zero, acesso a moradia de qualidade, saneamento básico, lazer, cultura e áreas verdes",
+   "texto": "Propõe reforma urbana com combate à especulação imobiliária, tarifa zero e acesso a moradia e saneamento.",
+   "url_especifica": "https://psol50.org.br/partido/programa/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
   }
  ]
 }

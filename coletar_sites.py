@@ -287,6 +287,13 @@ def coletar_um(c: dict, uf: str) -> dict:
         time.sleep(pausa)
         try:
             st, tp, cp, fin = buscar(u_)
+            # O LINK ERA INTERNO E O DESTINO NAO E. Botao de compartilhar do
+            # WordPress aponta para o proprio dominio com "?share=twitter" e
+            # REDIRECIONA para x.com. Como eu gravo a URL final, o x.com e o
+            # facebook entravam no acervo como se fossem paginas da candidatura.
+            # A conferencia de dominio tem de ser feita DEPOIS do redirecionamento.
+            if urllib.parse.urlsplit(fin).netloc != urllib.parse.urlsplit(final).netloc:
+                continue
             if st == 200 and "html" in tp.lower():
                 reg["paginas"].append(guarda(fin, tp, cp, rot))
         except Exception:                        # noqa: BLE001

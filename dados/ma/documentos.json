@@ -1,4 +1,15 @@
 {
  "_nota": "Documentos que sustentam posicao: plano registrado no TSE, programa partidario, site oficial, base de dados abertos, reportagem, entrevista. Vazio porque a coleta pelo Maranhão ainda nao comecou.",
- "documentos": []
+ "documentos": [
+  {
+   "id_documento": "doc-programa-nacional-psol",
+   "tipo": "programa_partidario",
+   "titulo": "Programa do PSOL (página oficial do partido)",
+   "url": "https://psol50.org.br/partido/programa/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Programa permanente do partido, publicado na seção /partido/programa/ do site oficial. A página não traz data de publicação; a data de consulta fica registrada. Não é programa de uma eleição específica."
+  }
+ ]
 }
