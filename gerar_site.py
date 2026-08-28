@@ -229,6 +229,55 @@ for t in grade:
     for cid in grade[t]:
         grade[t][cid].sort(key=lambda i: (0 if i["citacao"] else 1))
 
+# ---------------------------------------------------------------------------
+# POR QUE ESTA CELULA ESTA VAZIA — por candidatura, e nao uma frase so.
+#
+# O texto antigo era "Este cruzamento ainda nao foi trabalhado", igual para todo
+# mundo. Mas os motivos sao diferentes e a diferenca importa: quem nao declarou
+# site ao TSE, quem declarou um endereco que nao existe, e quem tem site que
+# lemos inteiro e nao fala do tema nao estao na mesma situacao. Sem isso, 16
+# candidaturas com proposta fazem as outras 299 parecerem sem ideias — e o que
+# a tela estaria medindo e quem tem site, nao quem tem proposta.
+#
+# Tudo aqui e afirmacao sobre A NOSSA BUSCA, e sai so do que foi registrado.
+_coleta_sites = {}
+_f = DADOS_UF / "_coleta_sites.json"
+if _f.exists():
+    _coleta_sites = {r["id_candidatura"]: r
+                     for r in json.loads(_f.read_text(encoding="utf-8"))["registros"]}
+
+for _c in cands:
+    _cid = _c["id_candidatura"]
+    _ct = _c.get("contato") or {}
+    _site = _ct.get("site")
+    _col = _coleta_sites.get(_cid)
+    if not _site:
+        _b = {"estado": "sem_site",
+              "texto": ("Esta candidatura não declarou site próprio no registro no TSE. "
+                        "Procuramos onde a lei manda declarar; a ausência é do registro, "
+                        "não da candidatura.")}
+    elif _col is None:
+        _b = {"estado": "nao_coletado", "url": _site,
+              "texto": ("Esta candidatura declarou um site ao TSE, e ainda não o "
+                        "coletamos. A lacuna é nossa.")}
+    elif _col.get("_indisponivel"):
+        _b = {"estado": "site_fora_do_ar", "url": _site, "quando": _col.get("coletado_em"),
+              "texto": ("O site que esta candidatura declarou ao TSE não respondeu quando "
+                        "tentamos ler, em " + str(_col.get("coletado_em")) + ".")}
+    elif _col.get("_sem_material"):
+        _b = {"estado": "site_sem_conteudo", "url": _col.get("url_final") or _site,
+              "quando": _col.get("coletado_em"),
+              "texto": ("O site que esta candidatura declarou ao TSE respondeu, e não "
+                        "trouxe texto que pudéssemos ler (em " + str(_col.get("coletado_em")) + ").")}
+    else:
+        _b = {"estado": "site_lido", "url": _col.get("url_final") or _site,
+              "quando": _col.get("coletado_em"),
+              "paginas": len(_col.get("paginas") or []),
+              "texto": ("Lemos " + str(len(_col.get("paginas") or [])) + " página(s) do site "
+                        "que esta candidatura declarou ao TSE, em " + str(_col.get("coletado_em")) +
+                        ", e não encontramos nada dela sobre este tema.")}
+    cand_por_id[_cid]["busca"] = _b
+
 leg = {t["id_tema"]: {} for t in temas}
 for rg in regs["registros"]:
     for a in rg.get("autoria", []):

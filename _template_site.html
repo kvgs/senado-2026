@@ -1055,8 +1055,25 @@ function corpoTema(cid,tid){
     h+='<p class="ausente"><b>Não aborda este tema.</b> '+esc(cs[0].texto)+'</p>';
     if(cs[0].ressalva) h+='<p class="ausente" style="margin-top:7px;font-size:.86rem;color:var(--s-verificada)"><strong>Ressalva:</strong> '+esc(cs[0].ressalva)+'</p>';
   }
-  else h+='<p class="ausente">Este cruzamento ainda não foi trabalhado. Diferente de “não aborda” '+
-          'e de “não localizamos”.</p>';
+  else {
+    /* POR QUE ESTA CELULA ESTA VAZIA, para ESTA candidatura. Antes era uma frase
+       igual para todo mundo, e por isso nao informava: quem nao declarou site,
+       quem declarou um endereco que nao existe e quem tem site que lemos inteiro
+       nao estao na mesma situacao. Sem essa distincao, as 16 candidaturas com
+       proposta fazem as outras parecerem sem ideias — e o que a tela mediria e
+       quem tem site, nao quem tem proposta. */
+    const b=(D.candidatos[cid]||{}).busca;
+    if(b){
+      h+='<p class="ausente"><b>Não encontramos nada aqui — e o motivo é este.</b> '+esc(b.texto);
+      if(b.url) h+=' <a href="'+esc(/^https?:\/\//i.test(b.url)?b.url:'https://'+b.url)+
+                   '" target="_blank" rel="noopener">Ver o site declarado'+
+                   '<span class="vis-oculto"> (abre em nova aba)</span></a>.';
+      h+=' Isto é uma afirmação sobre a nossa busca, não sobre a candidatura.</p>';
+    } else {
+      h+='<p class="ausente">Este cruzamento ainda não foi trabalhado. Diferente de “não aborda” '+
+         'e de “não localizamos”.</p>';
+    }
+  }
 
   /* Se nao houve proposta mas HA registro legislativo ou voto, a celula nao pode
      ler como vazia: o que existe vale tanto quanto o que falta, e comportamento
