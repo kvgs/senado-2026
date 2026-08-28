@@ -38,6 +38,39 @@
    "publicado_em": null,
    "consultado_em": "2026-08-28",
    "_origem": "Endereco declarado pela propria candidatura no registro no TSE (base de redes sociais 2026)."
+  },
+  {
+   "id_documento": "doc-programa-nacional-pstu",
+   "tipo": "programa_partidario",
+   "titulo": "Com os Trabalhadores Contra o Sistema — Por um Brasil Soberano e Socialista (programa nacional do PSTU, eleicoes 2026)",
+   "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016998007",
+   "publicado_em": null,
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Programa nacional do PSTU para 2026, registrado no TSE pela candidatura presidencial (Hertz Dias / Vanessa Portugal) do diretorio nacional. Documento de ambito nacional, replicado como proposta DO PARTIDO para as candidaturas do PSTU ao Senado. Nao e documento de nenhuma candidatura estadual."
+  },
+  {
+   "id_documento": "doc-programa-nacional-dc",
+   "tipo": "programa_partidario",
+   "titulo": "Programa da Democracia Crista (publicado pelo partido em democraciacrista.org.br/sobre-nos/programa)",
+   "url": "https://www.democraciacrista.org.br/sobre-nos/programa/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Programa nacional publicado pelo proprio partido na secao 'Sobre Nos > Programa' do site oficial, consultado em 28/ago/2026 (rodape do site: (c) 2026). O texto e apresentado sob o nome anterior da legenda, 'PSDC - Partido Social Democrata Cristao', e nao traz data de aprovacao. robots.txt do dominio: 'User-agent: *' com 'Allow: /' e 'Content-Signal: search=yes, ai-train=no, use=reference' - a coleta aqui e de referencia com citacao e link para a fonte, nao de treino. O programa nao trata de Tecnologia e Inteligencia Artificial; essa ausencia fica como ausencia."
+  },
+  {
+   "id_documento": "doc-programa-nacional-mdb",
+   "tipo": "programa_partidario",
+   "titulo": "Caminhos para o Brasil — Nosso País, Nossa Causa (documento politico-programatico do MDB, 2025)",
+   "url": "https://www.mdb.org.br/documento-caminhos-para-o-brasil/",
+   "publicado_em": "2025-10-23",
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Documento politico-programatico nacional elaborado pela Fundacao Ulysses Guimaraes, fundacao do MDB, e apresentado pelo proprio partido no site oficial em 23/out/2025 como 'novo conjunto de propostas para o Pais'. 67 paginas; PDF em fundacaoulysses.org.br/wp-content/uploads/2025/10/FUG-18x26cm-DIGITAL.pdf. Os trechos aqui vem da secao 'Principais ideias e propostas', que e a parte do documento escrita como proposta. Os capitulos sobre meio ambiente e sobre organizacao do Estado sao escritos em prosa, sem lista de propostas, e nao renderam trecho claro o bastante para publicar: essa ausencia fica como ausencia.",
+   "_arquivo_url": "https://fundacaoulysses.org.br/wp-content/uploads/2025/10/FUG-18x26cm-DIGITAL.pdf",
+   "_arquivo_bytes": 51632950,
+   "_arquivo_sha256": "4b704f69587c70746056bb94ebf9c137b246dd9d712731eafac63af75911510a"
   }
  ]
 }

@@ -46,3 +46,9 @@ dados/posicoes.json.antes-da-revisao
 # git config: ali esta o nome civil, e este repositorio e publico.
 .quem
 fontes-ttf/
+
+# Documento politico-programatico do MDB (Caminhos para o Brasil, 2025): 51 MB
+# de PDF diagramado. Grande demais para o repositorio, e recriavel — a URL, o
+# tamanho e o sha256 ficam em documentos.json, que e o que prova que o arquivo
+# baixado hoje e o mesmo que foi lido.
+fontes/programa-mdb-2025-caminhos-para-o-brasil.pdf

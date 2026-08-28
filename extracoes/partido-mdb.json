@@ -1,0 +1,90 @@
+{
+ "partido": "MDB",
+ "titulo": "Caminhos para o Brasil — Nosso País, Nossa Causa (documento politico-programatico do MDB, 2025)",
+ "url": "https://www.mdb.org.br/documento-caminhos-para-o-brasil/",
+ "publicado_em": "2025-10-23",
+ "texto_extraido": "fontes/programa-mdb-2025-caminhos.txt",
+ "nota": "Documento politico-programatico nacional elaborado pela Fundacao Ulysses Guimaraes, fundacao do MDB, e apresentado pelo proprio partido no site oficial em 23/out/2025 como 'novo conjunto de propostas para o Pais'. 67 paginas; PDF em fundacaoulysses.org.br/wp-content/uploads/2025/10/FUG-18x26cm-DIGITAL.pdf. Os trechos aqui vem da secao 'Principais ideias e propostas', que e a parte do documento escrita como proposta. Os capitulos sobre meio ambiente e sobre organizacao do Estado sao escritos em prosa, sem lista de propostas, e nao renderam trecho claro o bastante para publicar: essa ausencia fica como ausencia.",
+ "posicoes": [
+  {
+   "tema": "t1",
+   "trecho": "Aplicação de reconhecimento facial em todas as áreas centrais e de grande circulação nos principais centros urbanos",
+   "resumo": "Defende usar reconhecimento facial nas áreas centrais e de grande circulação dos principais centros urbanos."
+  },
+  {
+   "tema": "t1",
+   "trecho": "Investimento em treinamento, processos e fortalecimento das áreas de “Assuntos Internos” e corregedorias em todas as polícias e organizações de segurança pública.",
+   "resumo": "Defende investir nas corregedorias e nas áreas de assuntos internos de todas as polícias."
+  },
+  {
+   "tema": "t1",
+   "trecho": "Ampliação das políticas sociais de base, com foco na promoção da Cultura da Paz, especialmente em bairros com maior vulnerabilidade social.",
+   "resumo": "Defende ampliar políticas sociais de base voltadas à cultura da paz nos bairros de maior vulnerabilidade social."
+  },
+  {
+   "tema": "t2",
+   "trecho": "as licenciaturas adotem pelo menos 70% de carga horária presencial, reservando o modelo de 50% exclusivamente para contextos geográficos específicos e desafiadores.",
+   "resumo": "Defende exigir pelo menos 70% de carga horária presencial nos cursos de licenciatura, contra o mínimo de 50% da regra atual."
+  },
+  {
+   "tema": "t2",
+   "trecho": "Estabelecimento de diretrizes nacionais para o uso de inteligência artificial (IA) na educação, em todos os níveis de ensino, garantindo alinhamento ético, pedagógico e tecnológico.",
+   "resumo": "Defende diretrizes nacionais para o uso de inteligência artificial na educação, em todos os níveis de ensino."
+  },
+  {
+   "tema": "t2",
+   "trecho": "Promoção da alfabetização digital básica e da formação crítica, voltada ao desenvolvimento de competências digitais essenciais",
+   "resumo": "Defende alfabetização digital básica e formação crítica na escola."
+  },
+  {
+   "tema": "t3",
+   "trecho": "Implementação do prontuário eletrônico individual completo em âmbito nacional, com garantia de sigilo, permitindo grande otimização no uso da rede, do acompanhamento de exames, procedimentos, medicação, evitando duplicações e aumentando a assertividade em todos os níveis, especialmente na atenção primária.",
+   "resumo": "Defende prontuário eletrônico individual em âmbito nacional, com sigilo, para acompanhar exames, procedimentos e medicação sem duplicação."
+  },
+  {
+   "tema": "t4",
+   "trecho": "Estudo de novas formas de arrecadação para a Previdência Social, alinhadas às transformações no mundo do trabalho e aos novos formatos de contratação.",
+   "resumo": "Defende estudar novas formas de arrecadação da Previdência Social, adaptadas aos novos formatos de contratação."
+  },
+  {
+   "tema": "t4",
+   "trecho": "Criação de modalidades complementares de seguridade social e poupança, mais versáteis e adaptadas às diferentes trajetórias profissionais.",
+   "resumo": "Defende criar modalidades complementares de seguridade social e poupança para diferentes trajetórias profissionais."
+  },
+  {
+   "tema": "t4",
+   "trecho": "Melhorar o modelo de previdência para os MEIs, de forma a melhor garantir a sua seguridade social.",
+   "resumo": "Defende melhorar o modelo de previdência do microempreendedor individual (MEI)."
+  },
+  {
+   "tema": "t5",
+   "trecho": "Criação de sistema de financiamento mais acessível e em melhores condições para construção e operação de infraestrutura e armazenamento da produção e silagem vinculada à logística da produção.",
+   "resumo": "Defende um sistema de financiamento mais acessível para infraestrutura e armazenamento da produção agrícola."
+  },
+  {
+   "tema": "t7",
+   "trecho": "Nesse contexto, é essencial aumentar o sistema de habitação subsidiada, estendendo-o também à classe média brasileira. Para isso, propõe-se a criação de faixas de financiamento que considerem as diferentes realidades regionais, contemplando famílias com renda de até 15 salários mínimos",
+   "resumo": "Defende ampliar a habitação subsidiada até a classe média, com faixas de financiamento regionais para famílias com renda de até 15 salários mínimos."
+  },
+  {
+   "tema": "t7",
+   "trecho": "foco na elevação do padrão das moradias destinadas a habitação de interesse social, especialmente na Faixa 1 do programa Minha Casa, Minha Vida",
+   "resumo": "Defende elevar o padrão das moradias de interesse social, sobretudo na Faixa 1 do Minha Casa, Minha Vida."
+  },
+  {
+   "tema": "t8",
+   "trecho": "Destinação de recursos específicos para investimentos em infraestrutura, conectividade e implementação de bases curriculares e tecnológicas voltadas ao ensino e à aplicação da IA nas escolas.",
+   "resumo": "Defende destinar recursos próprios para infraestrutura, conectividade e currículo de inteligência artificial nas escolas."
+  },
+  {
+   "tema": "t9",
+   "trecho": "Plena implementação do novo Estatuto da Criança e Adolescente (ECA) Digital, com preparação de todas as instâncias para a sua execução, incluindo unidades especializadas.",
+   "resumo": "Defende implementar plenamente o ECA Digital, com unidades especializadas."
+  },
+  {
+   "tema": "t9",
+   "trecho": "Intensificação de ações sociais e de conscientização em escolas, assistência social e logradouros públicos sobre situações de risco, violência contra mulheres e crianças.",
+   "resumo": "Defende intensificar ações de conscientização sobre violência contra mulheres e crianças em escolas e serviços públicos."
+  }
+ ]
+}

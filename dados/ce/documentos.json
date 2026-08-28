@@ -39,6 +39,16 @@
    "consultado_em": "2026-08-28",
    "_ambito": "nacional",
    "_nota": "Programa referendado nas convenções nacional e estaduais do PCO, publicado no site do partido. A própria página diz que o partido 'não participa das eleições para fazer promessas, mas para fazer da campanha uma tribuna' — a natureza do documento fica assim."
+  },
+  {
+   "id_documento": "doc-programa-nacional-pstu",
+   "tipo": "programa_partidario",
+   "titulo": "Com os Trabalhadores Contra o Sistema — Por um Brasil Soberano e Socialista (programa nacional do PSTU, eleicoes 2026)",
+   "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016998007",
+   "publicado_em": null,
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Programa nacional do PSTU para 2026, registrado no TSE pela candidatura presidencial (Hertz Dias / Vanessa Portugal) do diretorio nacional. Documento de ambito nacional, replicado como proposta DO PARTIDO para as candidaturas do PSTU ao Senado. Nao e documento de nenhuma candidatura estadual."
   }
  ]
 }

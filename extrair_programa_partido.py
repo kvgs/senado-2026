@@ -92,9 +92,14 @@ def main() -> None:
     ufs = [u for u, _ in ufs]
     for u, n in pulados:
         print(f"  {u} pulado: ja tem {n} posicao(oes) do {sigla} de programa mais especifico")
+    # A CONTA E POR CANDIDATURA, e nao por estado — e por isso que o total tem de
+    # multiplicar pelas candidaturas alvo, nao pelos estados. Escrito errado, este
+    # numero dizia 256 onde o acervo recebia 304: quem lesse a saida ficaria com uma
+    # contagem menor do que a realidade, sem nenhum erro para avisar.
+    n_cands = sum(1 for u, _ in alvos if u in set(ufs))
     print(f"  {len(alvos)} candidatura(s) do {sigla} em {len(ufs)} estado(s): {' '.join(ufs)}")
-    print(f"  {len(aceitas)} posicao(oes) x {len(ufs)} estado(s) = "
-          f"{len(aceitas) * len(ufs)} linha(s) de programa")
+    print(f"  {len(aceitas)} posicao(oes) x {n_cands} candidatura(s) = "
+          f"{len(aceitas) * n_cands} linha(s) de programa")
 
     if not a.gravar:
         print("\n(sem --gravar: nada foi escrito)")

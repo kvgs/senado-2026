@@ -39,6 +39,16 @@
    "publicado_em": null,
    "consultado_em": "2026-08-28",
    "_origem": "Endereco declarado pela propria candidatura no registro no TSE (base de redes sociais 2026)."
+  },
+  {
+   "id_documento": "doc-programa-nacional-dc",
+   "tipo": "programa_partidario",
+   "titulo": "Programa da Democracia Crista (publicado pelo partido em democraciacrista.org.br/sobre-nos/programa)",
+   "url": "https://www.democraciacrista.org.br/sobre-nos/programa/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Programa nacional publicado pelo proprio partido na secao 'Sobre Nos > Programa' do site oficial, consultado em 28/ago/2026 (rodape do site: (c) 2026). O texto e apresentado sob o nome anterior da legenda, 'PSDC - Partido Social Democrata Cristao', e nao traz data de aprovacao. robots.txt do dominio: 'User-agent: *' com 'Allow: /' e 'Content-Signal: search=yes, ai-train=no, use=reference' - a coleta aqui e de referencia com citacao e link para a fonte, nao de treino. O programa nao trata de Tecnologia e Inteligencia Artificial; essa ausencia fica como ausencia."
   }
  ]
 }

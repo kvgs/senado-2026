@@ -1,0 +1,89 @@
+{
+ "partido": "DC",
+ "titulo": "Programa da Democracia Crista (publicado pelo partido em democraciacrista.org.br/sobre-nos/programa)",
+ "url": "https://www.democraciacrista.org.br/sobre-nos/programa/",
+ "texto_extraido": "fontes/programa-dc-NACIONAL-site.txt",
+ "nota": "Programa nacional publicado pelo proprio partido na secao 'Sobre Nos > Programa' do site oficial, consultado em 28/ago/2026 (rodape do site: (c) 2026). O texto e apresentado sob o nome anterior da legenda, 'PSDC - Partido Social Democrata Cristao', e nao traz data de aprovacao. robots.txt do dominio: 'User-agent: *' com 'Allow: /' e 'Content-Signal: search=yes, ai-train=no, use=reference' - a coleta aqui e de referencia com citacao e link para a fonte, nao de treino. O programa nao trata de Tecnologia e Inteligencia Artificial; essa ausencia fica como ausencia.",
+ "posicoes": [
+  {
+   "tema": "t1",
+   "trecho": "Combate total ao tráfico de drogas, que assassina os jovens e destrói as famílias, punindo-se severamente os traficantes.",
+   "resumo": "Defende combate total ao tráfico de drogas, com punição severa a traficantes."
+  },
+  {
+   "tema": "t1",
+   "trecho": "Promover um Plano Nacional de Segurança Pública, que possa realmente assegurar ao cidadão, o direito de viver e trabalhar em paz e sem medo.",
+   "resumo": "Propõe um Plano Nacional de Segurança Pública."
+  },
+  {
+   "tema": "t2",
+   "trecho": "Assegurar todos o direito de acesso à educação, em todos os níveis, quer através do ensino público, quer a través do ensino privado mediante concessão de bolsas de estudos, crédito educativo e formas afins, aos estudantes carentes.",
+   "resumo": "Defende garantir acesso à educação tanto pela rede pública quanto pela rede privada, com bolsas e crédito educativo para estudantes carentes."
+  },
+  {
+   "tema": "t2",
+   "trecho": "-Subsídios às escolas particulares mantidas por entidades sem fins lucrativos e colocadas a serviço da comunidade;",
+   "resumo": "Defende subsídio público a escolas particulares mantidas por entidades sem fins lucrativos."
+  },
+  {
+   "tema": "t3",
+   "trecho": "Promover um Sistema Nacional de Saúde, ao mesmo tempo unificado e descentralizado, que assegure a todos, assistência médica, odontológica e hospitalar, atribuindo-se especial ênfase à prevenção das doenças.",
+   "resumo": "Defende um sistema nacional de saúde unificado e descentralizado, com atendimento médico, odontológico e hospitalar e ênfase em prevenção."
+  },
+  {
+   "tema": "t4",
+   "trecho": "Apoio a Livre Iniciativa, fortalecendo a empresa privada, estimulando a empresa nacional e limitando a ação do Estado aos campos de sua natural atuação.",
+   "resumo": "Defende fortalecer a empresa privada e limitar a atuação do Estado na economia."
+  },
+  {
+   "tema": "t4",
+   "trecho": "-A não incidência de tributos sobre tributos, fenômeno tributário que desestimula a produção, eleva os preços, diminui o consumo e pauperisa a população;",
+   "resumo": "Na reforma tributária, defende acabar com a cobrança de tributo sobre tributo (efeito cascata)."
+  },
+  {
+   "tema": "t4",
+   "trecho": "Tornar efetivo o direito constitucional dos trabalhadores de participação nos lucros ou resultados das empresas, estimulando-se a parceria entre capital e trabalho.",
+   "resumo": "Defende tornar efetiva a participação dos trabalhadores nos lucros ou resultados das empresas."
+  },
+  {
+   "tema": "t5",
+   "trecho": "Orientar os procedimentos públicos na área de transporte urbano, no sentido de assegurar aos trabalhadores o direito ao transporte coletivo em condições de segurança e dignidade.",
+   "resumo": "Defende que a política de transporte urbano assegure transporte coletivo seguro e digno aos trabalhadores."
+  },
+  {
+   "tema": "t6",
+   "trecho": "Promover a harmonia entre a atividade econômica e o meio ambiente, respeitando-se a fauna e a flora, mantendo-se o equilíbrio ecológico.",
+   "resumo": "Defende conciliar atividade econômica e meio ambiente, com preservação da fauna, da flora e do equilíbrio ecológico."
+  },
+  {
+   "tema": "t7",
+   "trecho": "Garantir a cada família o direito a uma moradia digna. Um lugar que seja só seu, onde ninguém entre sem pedir licença, um lugar para viver, envelhecer e ser feliz.",
+   "resumo": "Defende garantir a cada família o direito a uma moradia digna e própria."
+  },
+  {
+   "tema": "t9",
+   "trecho": "Contribuir para erradicar o preconceito de raça em todos os setores da vida social e econômica do país, fazendo cumprir e aperfeiçoando a legislação específica.",
+   "resumo": "Defende erradicar o preconceito racial, fazendo cumprir e aperfeiçoar a legislação específica."
+  },
+  {
+   "tema": "t9",
+   "trecho": "Garantir à família, mecanismos eficazes de proteção contra a pornografia e a violência nos meios de comunicação.",
+   "resumo": "Defende mecanismos de proteção da família contra pornografia e violência nos meios de comunicação."
+  },
+  {
+   "tema": "t10",
+   "trecho": "Promover adequada distribuição de encargos e recursos entre a União, Estados e Municípios e valorizar o Município como base de toda estrutura federativa.",
+   "resumo": "Defende redistribuir encargos e recursos entre União, Estados e Municípios, valorizando o Município como base da federação."
+  },
+  {
+   "tema": "t10",
+   "trecho": "Promover o fortalecimento da República, da Federação, do regime democrático representativo e dos partidos políticos, adotando-se o princípio da fidelidade partidária.",
+   "resumo": "Defende fortalecer os partidos políticos adotando o princípio da fidelidade partidária."
+  },
+  {
+   "tema": "t10",
+   "trecho": "Combater toda e qualquer forma de corrupção e desonestidade no trato da coisa pública, punindo-se severamente os culpados e não se admitindo a nenhum pretexto, a impunidade.",
+   "resumo": "Defende punição severa por corrupção no trato da coisa pública, sem admitir impunidade."
+  }
+ ]
+}
