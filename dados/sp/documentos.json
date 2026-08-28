@@ -284,6 +284,16 @@
    "publicado_em": null,
    "consultado_em": "2026-08-27",
    "_origem": "Endereco declarado pela propria candidatura no registro no TSE (base de redes sociais 2026)."
+  },
+  {
+   "id_documento": "doc-programa-nacional-pl",
+   "tipo": "programa_partidario",
+   "titulo": "Programa do Partido Liberal (Estatuto e declaração programática, Diário Oficial da União)",
+   "url": "https://www.in.gov.br/",
+   "publicado_em": "2022-12-19",
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Estatuto e programa aprovados na Convenção Nacional de 19 de dezembro de 2022 e publicados no Diário Oficial da União, seção 3. Documento permanente do partido, não de uma eleição. O PDF está em fontes/programa-pl-2022-dou.pdf."
   }
  ],
  "_pendencias_de_download": {

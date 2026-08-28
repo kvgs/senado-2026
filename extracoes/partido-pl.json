@@ -1,0 +1,30 @@
+{
+  "partido": "PL",
+  "titulo": "Programa do Partido Liberal (Estatuto e declaração programática, Diário Oficial da União)",
+  "url": "https://www.in.gov.br/",
+  "texto_extraido": "fontes/programa-pl-DOU.txt",
+  "publicado_em": "2022-12-19",
+  "nota": "Estatuto e programa aprovados na Convenção Nacional de 19 de dezembro de 2022 e publicados no Diário Oficial da União, seção 3. Documento permanente do partido, não de uma eleição. O PDF está em fontes/programa-pl-2022-dou.pdf.",
+  "posicoes": [
+    {
+      "tema": "t4",
+      "resumo": "Defende simplificar a legislação e reduzir a carga tributária, e desburocratizar as normas trabalhistas para favorecer contratações e empreendedorismo.",
+      "trecho": "o Partido Liberal defende a necessidade de simplificar a legislação e reduzir a carga tributária. Os avanços da legislação trabalhista devem facilitar as contratações, desburocratizar e desregular as normas para favorecer a criação de empresas e o empreendedorismo."
+    },
+    {
+      "tema": "t9",
+      "resumo": "Defende igualdade salarial entre homens e mulheres na mesma ocupação, combate ao feminicídio e assistência a mulheres em situação de violência.",
+      "trecho": "a busca pela igualdade de salários entre homens e mulheres que desempenham a mesma ocupação. Merecem destaque as ações para a projeção econômica, a inclusão produtiva das mulheres e o aumento da participação de mulheres no parlamento e nas direções partidárias. Desenvolvimento de ações de combate ao feminicídio e na promoção de assistência às mulheres em situação de violência."
+    },
+    {
+      "tema": "t4",
+      "resumo": "Propõe políticas de inserção do jovem no mercado de trabalho, alinhando ensino às demandas sociais e facilitando acesso ao crédito.",
+      "trecho": "Implementar políticas públicas voltadas para a inserção do jovem no mercado de trabalho de forma justa e assertiva, estabelecendo estratégias que alinhem ensino e as demandas sociais, econômicas e políticas, incentivando a formação de jovens líderes, facilitando o acesso ao crédito e incentivando o empreendedorismo."
+    },
+    {
+      "tema": "t8",
+      "resumo": "Defende expandir digitalização e conectividade, com foco em quem vive em localidades remotas.",
+      "trecho": "há uma irrevogável necessidade de implantação e expansão de novas tecnologias de digitalização e inovação que melhorem tanto a competitividade nacional como a qualidade de vida dos cidadãos, principalmente aqueles mais vulneráveis ou que se encontram em localidades remotas"
+    }
+  ]
+}

@@ -20,6 +20,26 @@
    "consultado_em": "2026-08-28",
    "_ambito": "nacional",
    "_nota": "Programa permanente do partido, publicado na seção /partido/programa/ do site oficial. A página não traz data de publicação; a data de consulta fica registrada. Não é programa de uma eleição específica."
+  },
+  {
+   "id_documento": "doc-programa-nacional-pl",
+   "tipo": "programa_partidario",
+   "titulo": "Programa do Partido Liberal (Estatuto e declaração programática, Diário Oficial da União)",
+   "url": "https://www.in.gov.br/",
+   "publicado_em": "2022-12-19",
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Estatuto e programa aprovados na Convenção Nacional de 19 de dezembro de 2022 e publicados no Diário Oficial da União, seção 3. Documento permanente do partido, não de uma eleição. O PDF está em fontes/programa-pl-2022-dou.pdf."
+  },
+  {
+   "id_documento": "doc-programa-nacional-pco",
+   "tipo": "programa_partidario",
+   "titulo": "Um programa de luta em defesa do povo trabalhador e da revolução — programa do PCO para as eleições 2026",
+   "url": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
+   "publicado_em": "2026",
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Programa referendado nas convenções nacional e estaduais do PCO, publicado no site do partido. A própria página diz que o partido 'não participa das eleições para fazer promessas, mas para fazer da campanha uma tribuna' — a natureza do documento fica assim."
   }
  ]
 }

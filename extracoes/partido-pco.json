@@ -1,0 +1,55 @@
+{
+  "partido": "PCO",
+  "titulo": "Um programa de luta em defesa do povo trabalhador e da revolução — programa do PCO para as eleições 2026",
+  "url": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
+  "texto_extraido": "fontes/programa-pco-NACIONAL-site.txt",
+  "publicado_em": "2026",
+  "nota": "Programa referendado nas convenções nacional e estaduais do PCO, publicado no site do partido. A própria página diz que o partido 'não participa das eleições para fazer promessas, mas para fazer da campanha uma tribuna' — a natureza do documento fica assim.",
+  "posicoes": [
+    {
+      "tema": "t4",
+      "resumo": "Propõe aumento emergencial de 50% em salários e aposentadorias e salário mínimo de pelo menos R$ 7.500.",
+      "trecho": "Salário mínimo vital suficiente para atender às necessidades do trabalhador e de sua família (que hoje não poderia ser menor que R$ 7.500);"
+    },
+    {
+      "tema": "t4",
+      "resumo": "Propõe jornada máxima de 7 horas por dia, cinco dias por semana, totalizando 35 horas semanais.",
+      "trecho": "Redução da jornada de trabalho para o máximo de 7 horas por dia, 5 dias por semana (35 horas semanais);"
+    },
+    {
+      "tema": "t4",
+      "resumo": "Defende cancelar a reforma trabalhista e restaurar a legislação de proteção ao trabalho.",
+      "trecho": "Cancelamento da “reforma” trabalhista, retorno e ampliação de toda a legislação de proteção dos trabalhadores;"
+    },
+    {
+      "tema": "t4",
+      "resumo": "Propõe aposentadoria com no máximo 25 anos de trabalho para mulheres e 30 para homens, e imposto sobre grandes fortunas para custear.",
+      "trecho": "Aposentadoria, no máximo, aos 25 anos de trabalho para as mulheres e 30 anos para os homens;"
+    },
+    {
+      "tema": "t10",
+      "resumo": "Propõe cancelar as privatizações já feitas e nacionalizar o petróleo, com Petrobrás 100% estatal.",
+      "trecho": "Cancelamento de todas as privatizações realizadas (Eletrobras, Vale, bancos, telefonia etc.);"
+    },
+    {
+      "tema": "t3",
+      "resumo": "Defende mais verbas para saúde e educação e o fim do teto de gastos e da Lei de Responsabilidade Fiscal.",
+      "trecho": "Mais verbas para a Saúde, Educação e demais serviços essenciais;"
+    },
+    {
+      "tema": "t7",
+      "resumo": "Propõe proibir despejos e cortes de serviços essenciais como água, luz e gás.",
+      "trecho": "Proibição de despejos e cortes de serviços essenciais (como água, luz, gás etc.);"
+    },
+    {
+      "tema": "t5",
+      "resumo": "Propõe passe livre no transporte para desempregados e trabalhadores informais.",
+      "trecho": "Passe livre nos transportes para desempregados e trabalhadores da economia informal;"
+    },
+    {
+      "tema": "t6",
+      "resumo": "Propõe reforma agrária com expropriação do latifúndio e demarcação das terras indígenas.",
+      "trecho": "Demarcação e posse da terra para todos os índios das retomadas; expulsão dos latifundiários que invadiram as terras dps índios;"
+    }
+  ]
+}

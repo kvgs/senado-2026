@@ -337,6 +337,98 @@
     "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
    },
    "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-es-2026-maguinha-malta-prog-pl-001",
+   "id_candidatura_contexto": "sen-es-2026-maguinha-malta",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pl",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pl",
+   "citacao_literal": "o Partido Liberal defende a necessidade de simplificar a legislação e reduzir a carga tributária. Os avanços da legislação trabalhista devem facilitar as contratações, desburocratizar e desregular as normas para favorecer a criação de empresas e o empreendedorismo.",
+   "texto": "Defende simplificar a legislação e reduzir a carga tributária, e desburocratizar as normas trabalhistas para favorecer contratações e empreendedorismo.",
+   "url_especifica": "https://www.in.gov.br/",
+   "data_referencia": "2022-12-19",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pl-DOU.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-es-2026-maguinha-malta-prog-pl-002",
+   "id_candidatura_contexto": "sen-es-2026-maguinha-malta",
+   "id_tema": "t9",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pl",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pl",
+   "citacao_literal": "a busca pela igualdade de salários entre homens e mulheres que desempenham a mesma ocupação. Merecem destaque as ações para a projeção econômica, a inclusão produtiva das mulheres e o aumento da participação de mulheres no parlamento e nas direções partidárias. Desenvolvimento de ações de combate ao feminicídio e na promoção de assistência às mulheres em situação de violência.",
+   "texto": "Defende igualdade salarial entre homens e mulheres na mesma ocupação, combate ao feminicídio e assistência a mulheres em situação de violência.",
+   "url_especifica": "https://www.in.gov.br/",
+   "data_referencia": "2022-12-19",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pl-DOU.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-es-2026-maguinha-malta-prog-pl-003",
+   "id_candidatura_contexto": "sen-es-2026-maguinha-malta",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pl",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pl",
+   "citacao_literal": "Implementar políticas públicas voltadas para a inserção do jovem no mercado de trabalho de forma justa e assertiva, estabelecendo estratégias que alinhem ensino e as demandas sociais, econômicas e políticas, incentivando a formação de jovens líderes, facilitando o acesso ao crédito e incentivando o empreendedorismo.",
+   "texto": "Propõe políticas de inserção do jovem no mercado de trabalho, alinhando ensino às demandas sociais e facilitando acesso ao crédito.",
+   "url_especifica": "https://www.in.gov.br/",
+   "data_referencia": "2022-12-19",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pl-DOU.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-es-2026-maguinha-malta-prog-pl-004",
+   "id_candidatura_contexto": "sen-es-2026-maguinha-malta",
+   "id_tema": "t8",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pl",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pl",
+   "citacao_literal": "há uma irrevogável necessidade de implantação e expansão de novas tecnologias de digitalização e inovação que melhorem tanto a competitividade nacional como a qualidade de vida dos cidadãos, principalmente aqueles mais vulneráveis ou que se encontram em localidades remotas",
+   "texto": "Defende expandir digitalização e conectividade, com foco em quem vive em localidades remotas.",
+   "url_especifica": "https://www.in.gov.br/",
+   "data_referencia": "2022-12-19",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pl-DOU.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
   }
  ]
 }
