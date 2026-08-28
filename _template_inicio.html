@@ -107,6 +107,20 @@
   .dentro p{max-width:68ch;color:var(--ink-2);font-size:.96rem;margin-top:12px}
   .dentro strong{color:var(--ink)}
 
+  /* Convite para a analise. Cartao de largura inteira logo abaixo do mapa: e
+     ali que a pessoa acabou de ver a cobertura, que e o assunto da pagina. */
+  .convite{display:grid;grid-template-columns:1fr auto;gap:6px 18px;align-items:center;
+    margin:4px 0 34px;padding:18px 22px;background:var(--surface-2);
+    border:1px solid var(--rule);border-left:5px solid var(--acento-vivo);
+    border-radius:0 8px 8px 0;text-decoration:none;color:inherit}
+  .convite:hover{background:var(--surface-3);border-color:var(--acento-vivo)}
+  .convite:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+  .convite .ct{font-family:"Bricolage",system-ui,sans-serif;font-weight:700;
+    font-size:1.08rem;line-height:1.3;grid-column:1}
+  .convite .cd{font-size:.92rem;color:var(--ink-2);line-height:1.5;max-width:62ch;
+    grid-column:1}
+  .convite .cs{grid-column:2;grid-row:1 / span 2;font-size:1.4rem;color:var(--acento)}
+
   .rodape{margin-top:52px;padding-top:24px;border-top:2px solid var(--ink)}
   .rodape p{max-width:68ch;color:var(--ink-2);font-size:.94rem;margin-bottom:11px}
   .rodape a{color:var(--acento)}
@@ -165,6 +179,19 @@
     A contagem de cada estado vem do registro no TSE.</p>
 
   {{MAPA}}
+
+  <!-- O convite para a analise fica AQUI, logo depois do mapa, e nao no rodape.
+       Estava no rodape, a 97% da pagina: abaixo do mapa, dos 27 estados e do
+       explicador. Link que ninguem alcanca e link que nao existe. Aqui ele
+       aparece no mesmo lugar onde a pessoa acabou de olhar a cobertura no
+       mapa — que e exatamente o assunto da pagina de analise. -->
+  <a class="convite" href="analise/">
+    <span class="ct">O que os dados dizem sobre esta eleição</span>
+    <span class="cd">Quais temas as campanhas falam e quais só os partidos escrevem,
+      quanto de cada estado já tem informação, e os defeitos mensuráveis do registro
+      do TSE.</span>
+    <span class="cs" aria-hidden="true">→</span>
+  </a>
 
   {{ESTADOS}}
 
