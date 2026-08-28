@@ -1,0 +1,59 @@
+{
+ "partido": "CIDADANIA",
+ "titulo": "Programa do Cidadania 23",
+ "url": "https://rede23.org/programa/",
+ "texto_extraido": "fontes/programa-cidadania-NACIONAL-site.txt",
+ "nota": "Pagina 'Programa' do portal oficial do Cidadania (rede23.org), consultada em 28/ago/2026. O programa e dividido em secoes numeradas por tema. O documento nao traz data. O site do partido em cidadania23.org.br redireciona o conteudo institucional para rede23.org.",
+ "posicoes": [
+  {
+   "tema": "t1",
+   "trecho": "o Cidadania propõe o incremento da cooperação entre os entes da Federação; a internacional com as forças de segurança de outros países para melhor monitorar as atividades relativas a tráfico de armas e drogas, a lavagem de dinheiro e a ocultação de bens; o controle mais rigoroso sobre as fronteiras",
+   "resumo": "Defende mais cooperação entre União, estados e municípios e com forças de segurança de outros países, para monitorar tráfico de armas e drogas e lavagem de dinheiro, e controle mais rigoroso das fronteiras."
+  },
+  {
+   "tema": "t1",
+   "trecho": "a maior presença das agências do Estado, particularmente escolas e postos de saúde, nas áreas mais afetadas pela presença de organizações criminosas; a atividade permanente de educação democrática das forças policiais; o investimento forte e continuado em atividade de inteligência",
+   "resumo": "Defende mais presença de escolas e postos de saúde nas áreas dominadas pelo crime organizado, educação democrática das polícias e investimento em inteligência."
+  },
+  {
+   "tema": "t2",
+   "trecho": "Nossas diretrizes contemplam, em primeiro lugar, o ensino laico e a educação pública, de qualidade, acessível a todos os brasileiros. Consideramos igualmente relevantes a preservação da perspectiva crítica por parte dos educadores e a garantia indispensável da liberdade de cátedra.",
+   "resumo": "Defende ensino laico e educação pública de qualidade para todos, com liberdade de cátedra para os educadores."
+  },
+  {
+   "tema": "t2",
+   "trecho": "Integram ainda o norte de nossa proposta o foco na primeira infância, a redução do analfabetismo e das disparidades de gênero, assim como o acesso universal a todos os níveis de educação e formação profissional.",
+   "resumo": "Defende foco na primeira infância, redução do analfabetismo e das disparidades de gênero, e acesso universal a todos os níveis de ensino."
+  },
+  {
+   "tema": "t3",
+   "trecho": "propomos a universalização no curto prazo do acesso ao saneamento básico; a reforma e o fortalecimento do Sistema Único de Saúde, o SUS, de modo a assegurar a todos acesso a atendimento eficaz à saúde",
+   "resumo": "Defende universalizar o saneamento básico no curto prazo e reformar e fortalecer o SUS."
+  },
+  {
+   "tema": "t4",
+   "trecho": "entendemos que o equilíbrio fiscal é um pressuposto para o funcionamento do Estado no provimento dos serviços públicos e na promoção das atividades econômicas",
+   "resumo": "Defende o equilíbrio fiscal como condição para o Estado prover serviços públicos e promover a atividade econômica."
+  },
+  {
+   "tema": "t6",
+   "trecho": "sustentamos a necessidade da mudança imediata da matriz energética no sentido da superação da economia movida a carbono",
+   "resumo": "Defende mudar imediatamente a matriz energética para superar a economia movida a carbono."
+  },
+  {
+   "tema": "t9",
+   "trecho": "Assumimos as bandeiras da pauta feminista contra a violência e a exclusão, em favor da maior equidade das oportunidades de trabalho. Estamos na frente de combate ao racismo em todas as suas formas, inclusive no caso da violência policial seletiva contra pobres e negros.",
+   "resumo": "Assume a pauta feminista contra a violência e pela equidade no trabalho, e o combate ao racismo, incluindo a violência policial seletiva contra pobres e negros."
+  },
+  {
+   "tema": "t9",
+   "trecho": "reforçar sua agenda de reivindicações, em particular a demarcação de suas terras, de acordo com a previsão constitucional",
+   "resumo": "Apoia a agenda dos povos indígenas, em particular a demarcação das terras prevista na Constituição."
+  },
+  {
+   "tema": "t10",
+   "trecho": "Propugnamos o aumento da transparência, da participação popular e da maior responsabilidade política de eleitores e mandatários, por meio de um processo de reformas políticas que tenha como base a reforma eleitoral e como horizonte a instauração do parlamentarismo.",
+   "resumo": "Defende reformas políticas com base na reforma eleitoral e tendo como horizonte a adoção do parlamentarismo."
+  }
+ ]
+}

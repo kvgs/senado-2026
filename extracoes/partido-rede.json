@@ -1,0 +1,79 @@
+{
+ "partido": "REDE",
+ "titulo": "Manifesto da Rede Sustentabilidade — Diretrizes Programáticas e Plataforma de ação política",
+ "url": "https://redesustentabilidade.org.br/manifesto/",
+ "texto_extraido": "fontes/programa-rede-NACIONAL-site.txt",
+ "nota": "Pagina 'Manifesto' do site oficial da Rede Sustentabilidade, consultada em 28/ago/2026, subtitulada 'Diretrizes Programaticas da Rede Sustentabilidade'. Os trechos vem da secao 'Plataforma de acao politica', que lista as bandeiras do partido em dez itens numerados. O documento nao traz data.",
+ "posicoes": [
+  {
+   "tema": "t2",
+   "trecho": "Educação pública e universal de qualidade em todos os níveis, integral inclusiva, formadora de cidadãos comprometidos com uma vida social solidária e sustentável",
+   "resumo": "Defende educação pública, universal e de qualidade em todos os níveis, integral e inclusiva."
+  },
+  {
+   "tema": "t3",
+   "trecho": "Universalização e melhoria dos serviços de saúde, com ênfase na atenção básica, da qualidade de vida com condições dignas de moradia, alimentação saudável e em quantidade suficiente, prevenção de doenças, saneamento básico, redução da violência e promoção da cultura de paz",
+   "resumo": "Defende universalizar e melhorar os serviços de saúde, com ênfase na atenção básica, prevenção de doenças e saneamento."
+  },
+  {
+   "tema": "t4",
+   "trecho": "justiça e eficiência tributária e a reforma do Pacto Federativo",
+   "resumo": "Defende justiça e eficiência tributária e uma reforma do pacto federativo."
+  },
+  {
+   "tema": "t4",
+   "trecho": "taxas de juros em patamares que induzam os investimentos produtivos nos setores vitais para o desenvolvimento sustentável do País",
+   "resumo": "Defende taxas de juros em patamares que estimulem o investimento produtivo."
+  },
+  {
+   "tema": "t5",
+   "trecho": "possibilite o redirecionamento do investimento em mobilidade para priorizar os pedestres, o transporte ativo e o transporte público",
+   "resumo": "Defende redirecionar o investimento em mobilidade para priorizar pedestres, transporte ativo (a pé e de bicicleta) e transporte público."
+  },
+  {
+   "tema": "t6",
+   "trecho": "diversificação da matriz energética em busca de uma matriz limpa e segura",
+   "resumo": "Defende diversificar a matriz energética em direção a uma matriz limpa e segura."
+  },
+  {
+   "tema": "t6",
+   "trecho": "democratização do acesso à terra e uma política agropecuária que recupere a função estratégica do setor para a segurança alimentar, melhoria da qualidade de vida da população e preservação dos nossos biomas",
+   "resumo": "Defende democratizar o acesso à terra e uma política agropecuária voltada à segurança alimentar e à preservação dos biomas."
+  },
+  {
+   "tema": "t7",
+   "trecho": "Reforma urbana que transforme nossas cidades em espaços saudáveis, democráticos e seguros, que garanta o direito a moradia como forma de cidadania",
+   "resumo": "Defende uma reforma urbana que garanta o direito à moradia e cidades saudáveis, democráticas e seguras."
+  },
+  {
+   "tema": "t8",
+   "trecho": "Democratização do sistema de comunicação, garantindo-se a liberdade de expressão, transparência, livre acesso à informação e ao conhecimento, valorização das diversas formas de manifestação cultural e o princípio de neutralidade da rede",
+   "resumo": "Defende democratizar o sistema de comunicação, com livre acesso à informação, neutralidade da rede e banda larga de qualidade."
+  },
+  {
+   "tema": "t9",
+   "trecho": "Respeito aos direitos humanos, garantia de igualdade de gênero e repúdio a todas as formas de discriminação: étnica, racial, religiosa, sexual ou outras, garantindo a cada grupo espaço próprio de participação política",
+   "resumo": "Defende os direitos humanos, a igualdade de gênero e o repúdio a toda forma de discriminação, com espaço de participação política para cada grupo."
+  },
+  {
+   "tema": "t9",
+   "trecho": "Defesa dos Direitos animais por meio da abolição de todas as formas de crueldade contra animais e de políticas públicas para o bem-estar de animais urbanos, selvagens e de uso comercial.",
+   "resumo": "Defende abolir toda forma de crueldade contra animais e criar políticas de bem-estar animal."
+  },
+  {
+   "tema": "t10",
+   "trecho": "candidaturas independentes, sem a exigência de filiação partidária, para quebrar o monopólio dos partidos sobre os cargos de representação, e renovação de lideranças políticas com limitação a uma reeleição de mandatos parlamentares",
+   "resumo": "Defende candidaturas independentes, sem filiação partidária, e limite de uma reeleição para mandatos parlamentares."
+  },
+  {
+   "tema": "t10",
+   "trecho": "financiamento público de campanha e teto máximo de doações por pessoa jurídica e física",
+   "resumo": "Defende financiamento público de campanha com teto para doações de pessoas físicas e jurídicas."
+  },
+  {
+   "tema": "t10",
+   "trecho": "fim da reeleição para os cargos do Poder Executivo com ampliação do tempo de mandato para inibir o uso da máquina administrativa para fins eleitorais",
+   "resumo": "Defende acabar com a reeleição no Executivo e alongar o mandato, para inibir o uso da máquina administrativa em campanha."
+  }
+ ]
+}

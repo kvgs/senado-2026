@@ -2088,6 +2088,121 @@
     "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
    },
    "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-ap-2026-rayssa-furlan-prog-pode-001",
+   "id_candidatura_contexto": "sen-ap-2026-rayssa-furlan",
+   "id_tema": "t2",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pode",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pode",
+   "citacao_literal": "Um país que abrace suas crianças e adolescentes, garantindo educação de qualidade, proteção contra abusos e perspectivas de um futuro digno.",
+   "texto": "Quer um país que garanta às crianças e adolescentes educação de qualidade e proteção contra abusos.",
+   "url_especifica": "https://www.podemos.org.br/manifesto/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pode-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-ap-2026-rayssa-furlan-prog-pode-002",
+   "id_candidatura_contexto": "sen-ap-2026-rayssa-furlan",
+   "id_tema": "t3",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pode",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pode",
+   "citacao_literal": "Precisamos avançar na defesa dos brasileiros com TEA, TDAH e doenças raras, assegurando políticas públicas eficazes, tratamento adequado, apoio às famílias e acesso a um sistema de saúde digno.",
+   "texto": "Defende políticas públicas, tratamento e apoio às famílias de pessoas com TEA, TDAH e doenças raras.",
+   "url_especifica": "https://www.podemos.org.br/manifesto/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pode-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-ap-2026-rayssa-furlan-prog-pode-003",
+   "id_candidatura_contexto": "sen-ap-2026-rayssa-furlan",
+   "id_tema": "t9",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pode",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pode",
+   "citacao_literal": "Quero um país onde as mulheres tenham segurança, respeito e oportunidades iguais, sem medo de serem silenciadas e invisibilizadas.",
+   "texto": "Quer um país onde as mulheres tenham segurança, respeito e oportunidades iguais.",
+   "url_especifica": "https://www.podemos.org.br/manifesto/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pode-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-ap-2026-rayssa-furlan-prog-pode-004",
+   "id_candidatura_contexto": "sen-ap-2026-rayssa-furlan",
+   "id_tema": "t9",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pode",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pode",
+   "citacao_literal": "Quero uma nação que valorize a inclusão, onde pessoas com deficiência tenham seus direitos garantidos, acessibilidade plena e oportunidades para se desenvolverem plenamente.",
+   "texto": "Quer direitos garantidos e acessibilidade plena para pessoas com deficiência.",
+   "url_especifica": "https://www.podemos.org.br/manifesto/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pode-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-ap-2026-rayssa-furlan-prog-pode-005",
+   "id_candidatura_contexto": "sen-ap-2026-rayssa-furlan",
+   "id_tema": "t10",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pode",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pode",
+   "citacao_literal": "Quero hoje o que pedimos há 30 anos! Um Brasil com mais transparência, mais participação e mais democracia direta.",
+   "texto": "Quer mais transparência, mais participação e mais democracia direta.",
+   "url_especifica": "https://www.podemos.org.br/manifesto/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pode-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
   }
  ]
 }

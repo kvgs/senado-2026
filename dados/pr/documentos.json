@@ -87,6 +87,16 @@
    "consultado_em": "2026-08-28",
    "_ambito": "nacional",
    "_nota": "Pagina 'O Partido > Manifesto e Programa' do site oficial do Republicanos, consultada em 28/ago/2026 (rodape do site: 2026). Cada trecho e um dos dez topicos programaticos, escritos na primeira pessoa do plural ('Nos, os Republicanos, ...'). O documento se intitula 'Programa Brasil 2022'; e o programa que o partido publica hoje, e nao ha versao mais recente no site. Os topicos sao declaracoes de principio curtas, sem medida concreta: entram como o que sao. O programa nao trata de habitacao, mobilidade urbana nem meio ambiente; essas ausencias ficam como ausencias."
+  },
+  {
+   "id_documento": "doc-programa-nacional-missão",
+   "tipo": "programa_partidario",
+   "titulo": "Livro Amarelo — Missão 2026: O Futuro é Glorioso (programa nacional registrado no TSE)",
+   "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017002789",
+   "publicado_em": null,
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Versao condensada de 51 paginas do Livro Amarelo, registrada no TSE pela candidatura PRESIDENCIAL do Missao (Renan Santos). Documento de ambito nacional, replicado como proposta DO PARTIDO para as candidaturas ao Senado; nao e documento de nenhuma candidatura estadual. O arquivo ja estava no acervo desde 24/ago/2026 (sha256 cdece60b71117c78), mas so tinha sido aplicado a Sao Paulo — e la os trechos foram escritos como resumo, nao como citacao literal, num formato anterior a trava de citacao. Os trechos aqui sao literais. Estrutura do documento: 3 partes, 14 capitulos, cada um com a secao 'PROPOSTAS E SOLUCOES DA MISSAO'."
   }
  ]
 }

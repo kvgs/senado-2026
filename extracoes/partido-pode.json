@@ -1,0 +1,34 @@
+{
+ "partido": "PODE",
+ "titulo": "Manifesto de Fundação do Podemos",
+ "url": "https://www.podemos.org.br/manifesto/",
+ "texto_extraido": "fontes/programa-pode-NACIONAL-site.txt",
+ "nota": "Pagina 'Conheca o Podemos > Manifesto de Fundacao' do site oficial, consultada em 28/ago/2026. O site nao tem pagina de programa partidario: /programa/ e /programa-partidario/ devolvem 404. O manifesto e apresentado como texto vivo, para ser assinado por quem se identifica com ele ('Assine o manifesto'), e traz paragrafos recentes — cita TEA, TDAH e doencas raras. E escrito em primeira pessoa, em forma de desejo ('Quero um pais onde...'), e nao lista medidas: os trechos entram como o que sao. O manifesto nao trata de seguranca publica, economia, habitacao, mobilidade urbana, meio ambiente nem tecnologia; essas ausencias ficam como ausencias.",
+ "posicoes": [
+  {
+   "tema": "t2",
+   "trecho": "Um país que abrace suas crianças e adolescentes, garantindo educação de qualidade, proteção contra abusos e perspectivas de um futuro digno.",
+   "resumo": "Quer um país que garanta às crianças e adolescentes educação de qualidade e proteção contra abusos."
+  },
+  {
+   "tema": "t3",
+   "trecho": "Precisamos avançar na defesa dos brasileiros com TEA, TDAH e doenças raras, assegurando políticas públicas eficazes, tratamento adequado, apoio às famílias e acesso a um sistema de saúde digno.",
+   "resumo": "Defende políticas públicas, tratamento e apoio às famílias de pessoas com TEA, TDAH e doenças raras."
+  },
+  {
+   "tema": "t9",
+   "trecho": "Quero um país onde as mulheres tenham segurança, respeito e oportunidades iguais, sem medo de serem silenciadas e invisibilizadas.",
+   "resumo": "Quer um país onde as mulheres tenham segurança, respeito e oportunidades iguais."
+  },
+  {
+   "tema": "t9",
+   "trecho": "Quero uma nação que valorize a inclusão, onde pessoas com deficiência tenham seus direitos garantidos, acessibilidade plena e oportunidades para se desenvolverem plenamente.",
+   "resumo": "Quer direitos garantidos e acessibilidade plena para pessoas com deficiência."
+  },
+  {
+   "tema": "t10",
+   "trecho": "Quero hoje o que pedimos há 30 anos! Um Brasil com mais transparência, mais participação e mais democracia direta.",
+   "resumo": "Quer mais transparência, mais participação e mais democracia direta."
+  }
+ ]
+}

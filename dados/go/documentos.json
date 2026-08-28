@@ -72,6 +72,16 @@
    "consultado_em": "2026-08-28",
    "_ambito": "nacional",
    "_nota": "Manifesto de 24 paginas publicado pelo proprio partido em uniaobrasil.org.br, arquivo enviado ao site em agosto de 2024 (segundo o caminho de upload); o documento nao traz data impressa. Os trechos vem da secao de compromissos, escrita em primeira pessoa do plural. Desde agosto de 2025 o Uniao Brasil integra com o Progressistas a federacao Uniao Progressista, cujo programa proprio nao esta publicado no site do partido — este manifesto e o que o Uniao Brasil publica hoje. O documento nao trata de mobilidade urbana nem de reforma tributaria; essas ausencias ficam como ausencias."
+  },
+  {
+   "id_documento": "doc-programa-nacional-cidadania",
+   "tipo": "programa_partidario",
+   "titulo": "Programa do Cidadania 23",
+   "url": "https://rede23.org/programa/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Pagina 'Programa' do portal oficial do Cidadania (rede23.org), consultada em 28/ago/2026. O programa e dividido em secoes numeradas por tema. O documento nao traz data. O site do partido em cidadania23.org.br redireciona o conteudo institucional para rede23.org."
   }
  ]
 }

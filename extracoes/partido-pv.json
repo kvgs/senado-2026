@@ -1,0 +1,34 @@
+{
+ "partido": "PV",
+ "titulo": "Programa do Partido Verde",
+ "url": "https://pv.org.br/programa/",
+ "texto_extraido": "fontes/programa-pv-NACIONAL-site.txt",
+ "nota": "Pagina 'O Partido > Programa' do site oficial do PV, consultada em 28/ago/2026. O programa e dividido em doze capitulos, de Principios a Politica Externa Planetaria. O documento nao traz data. A pagina tem um defeito de codificacao: onde o texto original usa hifen, aparece '?' (por exemplo 'Relaciona?se'); os trechos escolhidos aqui nao passam por nenhum desses pontos.",
+ "posicoes": [
+  {
+   "tema": "t1",
+   "trecho": "As propostas de reforma do judiciário e das instituições de segurança pública passam por mudanças constitucionais, reformas no código penal, reformas no judiciário e nas polícias.",
+   "resumo": "Defende reformar as instituições de segurança pública e o Judiciário por meio de mudanças constitucionais e no Código Penal."
+  },
+  {
+   "tema": "t1",
+   "trecho": "novas leis, que acompanham a evolução dos problemas e os costumes da sociedade, para os delitos econômicos e os chamados crimes de colarinho branco",
+   "resumo": "Defende novas leis para delitos econômicos e crimes de colarinho branco."
+  },
+  {
+   "tema": "t5",
+   "trecho": "racionalizar o sistema de ônibus para obter a oferta de um serviço socialmente mais equilibrado e ambientalmente menos poluente. Criar faixas exclusivas, canaletas, estações de rápido embarque, estimular e regulamentar o uso de veículos de maior capacidade, mais silenciosos, com emissões controladas com uma parte da frota movida a gás natural.",
+   "resumo": "Defende racionalizar o sistema de ônibus com faixas exclusivas, canaletas, estações de embarque rápido e frota menos poluente."
+  },
+  {
+   "tema": "t5",
+   "trecho": "priorizar o transporte de massas nas suas alternativas mais eficientes e não poluentes, de acordo com as condições específicas da cada cidade: trens de superfície, metrô, Veículo Leve sobre Trilhos – VLT – bonde, trolei, bem como as formas de integração intermodais",
+   "resumo": "Defende priorizar o transporte de massa não poluente: trem, metrô, VLT, bonde e trólebus, com integração entre os modos."
+  },
+  {
+   "tema": "t5",
+   "trecho": "implantar sistemas cicloviários com ciclovias, ciclofaixas, bicicletários e educação para sua correta utilização",
+   "resumo": "Defende implantar sistemas cicloviários com ciclovias, ciclofaixas e bicicletários."
+  }
+ ]
+}

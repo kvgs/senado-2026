@@ -1,0 +1,59 @@
+{
+ "partido": "MISSÃO",
+ "titulo": "Livro Amarelo — Missão 2026: O Futuro é Glorioso (programa nacional registrado no TSE)",
+ "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017002789",
+ "texto_extraido": "fontes/programa-missao-2026-TSE.txt",
+ "nota": "Versao condensada de 51 paginas do Livro Amarelo, registrada no TSE pela candidatura PRESIDENCIAL do Missao (Renan Santos). Documento de ambito nacional, replicado como proposta DO PARTIDO para as candidaturas ao Senado; nao e documento de nenhuma candidatura estadual. O arquivo ja estava no acervo desde 24/ago/2026 (sha256 cdece60b71117c78), mas so tinha sido aplicado a Sao Paulo — e la os trechos foram escritos como resumo, nao como citacao literal, num formato anterior a trava de citacao. Os trechos aqui sao literais. Estrutura do documento: 3 partes, 14 capitulos, cada um com a secao 'PROPOSTAS E SOLUCOES DA MISSAO'.",
+ "posicoes": [
+  {
+   "tema": "t1",
+   "trecho": "Naturalmente, não consiste em prender e matar os criminosos, mas simplesmente em permitir que as forças de segurança tratem como inimigos aqueles que ameaçam a segurança dos cidadãos e a soberania do Estado Brasileiro.",
+   "resumo": "Sob o lema \"Prendeu, Matou\", defende que as forças de segurança tratem como inimigos do Estado quem ameaça a segurança dos cidadãos."
+  },
+  {
+   "tema": "t2",
+   "trecho": "Também buscaremos a adoção universal do sistema fônico de alfabetização, que se encontra amparado pelas melhores evidências científicas disponíveis",
+   "resumo": "Defende a adoção universal do método fônico de alfabetização, tomando como referência o modelo do Ceará."
+  },
+  {
+   "tema": "t3",
+   "trecho": "A ideia central de nossa proposta é criar a ENER, um sistema de fila viva, que não fique engessado na ordem cronológica, mas atenda critérios objetivos de prioridade",
+   "resumo": "Propõe a ENER, uma fila do SUS ordenada por critérios objetivos de prioridade, e não pela ordem de chegada."
+  },
+  {
+   "tema": "t4",
+   "trecho": "estímulos fiscais por meio de suspensão de direitos aduaneiros e de regime específico de IBS/CBS para a zona (LC 214/2025)",
+   "resumo": "Propõe Zonas Econômicas Especiais com estímulos fiscais: suspensão de impostos de importação e regime próprio de IBS/CBS (os tributos criados pela reforma tributária)."
+  },
+  {
+   "tema": "t6",
+   "trecho": "O primeiro pilar é o fim das invasões de propriedade rural e a restauração da segurança jurídica no campo, com a revogação da Nota Técnica nº 4/2025 do Ministério do Desenvolvimento Agrário e instrução às polícias para repressão das invasões",
+   "resumo": "No plano AgroBrasil 2030, defende acabar com as invasões de propriedade rural, revogar a Nota Técnica nº 4/2025 do MDA e instruir as polícias a reprimir invasões."
+  },
+  {
+   "tema": "t7",
+   "trecho": "é o fim da favela como modalidade de moradia popular no Brasil",
+   "resumo": "Propõe a desfavelização integral do Brasil em dez anos, transformando as 12.348 favelas em bairros formais."
+  },
+  {
+   "tema": "t7",
+   "trecho": "Para executar esse programa em escala nacional, propomos o Marco Nacional da Desfavelização , lei federal que amplia e acelera a REURB (Lei 13.465/2017)",
+   "resumo": "Propõe o Marco Nacional da Desfavelização, lei federal que amplia e acelera a REURB (Lei 13.465/2017, de regularização fundiária urbana)."
+  },
+  {
+   "tema": "t8",
+   "trecho": "a segunda, o Marco Brasileiro da Inteligência Artificial (MBIA), organiza a agenda computacional",
+   "resumo": "Propõe o Marco Brasileiro da Inteligência Artificial (MBIA) para organizar a agenda de computação do país."
+  },
+  {
+   "tema": "t9",
+   "trecho": "Procuramos nos basear nas ideias do plano de governo da candidatura Arthur do Val à prefeitura de São Paulo em 2020, que criticou duramente os tombamentos excessivos motivados por razões políticas.",
+   "resumo": "Defende mudar a governança do IPHAN e a política de tombamentos, que considera excessiva."
+  },
+  {
+   "tema": "t10",
+   "trecho": "A consolidação tomará como referência metodológica a tese dos amálgamas municipais desenvolvida na UFPB, que demonstra a possibilidade técnica de reduzir o número de municípios brasileiros em até 70%, de 5.570 para algo próximo de 1.656",
+   "resumo": "Propõe a Grande Consolidação Municipal, fundindo municípios inviáveis e reduzindo os 5.570 municípios brasileiros para cerca de 1.656."
+  }
+ ]
+}

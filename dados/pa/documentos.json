@@ -73,6 +73,26 @@
    "consultado_em": "2026-08-28",
    "_ambito": "nacional",
    "_nota": "Manifesto de 24 paginas publicado pelo proprio partido em uniaobrasil.org.br, arquivo enviado ao site em agosto de 2024 (segundo o caminho de upload); o documento nao traz data impressa. Os trechos vem da secao de compromissos, escrita em primeira pessoa do plural. Desde agosto de 2025 o Uniao Brasil integra com o Progressistas a federacao Uniao Progressista, cujo programa proprio nao esta publicado no site do partido — este manifesto e o que o Uniao Brasil publica hoje. O documento nao trata de mobilidade urbana nem de reforma tributaria; essas ausencias ficam como ausencias."
+  },
+  {
+   "id_documento": "doc-programa-nacional-pode",
+   "tipo": "programa_partidario",
+   "titulo": "Manifesto de Fundação do Podemos",
+   "url": "https://www.podemos.org.br/manifesto/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Pagina 'Conheca o Podemos > Manifesto de Fundacao' do site oficial, consultada em 28/ago/2026. O site nao tem pagina de programa partidario: /programa/ e /programa-partidario/ devolvem 404. O manifesto e apresentado como texto vivo, para ser assinado por quem se identifica com ele ('Assine o manifesto'), e traz paragrafos recentes — cita TEA, TDAH e doencas raras. E escrito em primeira pessoa, em forma de desejo ('Quero um pais onde...'), e nao lista medidas: os trechos entram como o que sao. O manifesto nao trata de seguranca publica, economia, habitacao, mobilidade urbana, meio ambiente nem tecnologia; essas ausencias ficam como ausencias."
+  },
+  {
+   "id_documento": "doc-programa-nacional-solidariedade",
+   "tipo": "programa_partidario",
+   "titulo": "Programa Partidário do Solidariedade",
+   "url": "https://solidariedade.org.br/media/2021/06/programa-partidario_paginas-duplas_web.pdf",
+   "publicado_em": null,
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "PDF de 55 paginas publicado pelo proprio partido na secao 'Downloads > Programa partidario' do site oficial (solidariedade.org.br/programa/), consultado em 28/ago/2026. O arquivo foi enviado ao site em junho de 2021 (segundo o caminho de upload) e nao traz data impressa. O programa e organizado em 21 temas, e cada tema tem um plano de acao separado por ambito municipal, estadual e FEDERAL. Como aqui se trata de candidatura ao Senado, todos os trechos foram tirados do ambito federal."
   }
  ]
 }

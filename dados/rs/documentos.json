@@ -101,6 +101,16 @@
    "consultado_em": "2026-08-28",
    "_ambito": "nacional",
    "_nota": "Apresentacao institucional publicada pelo proprio partido em novo.org.br (secao Material Oficial), arquivo enviado ao site em novembro de 2025 (segundo o caminho de upload); o documento nao traz data impressa. Os trechos vem da secao intitulada 'O QUE O NOVO ACREDITA', que e a parte do documento onde o partido lista suas posicoes; o proprio slide acrescenta 'E voce nao precisa concordar com tudo!'. NAO e o programa registrado no TSE: a pagina 'Nossos posicionamentos' do site oficial esta com o link quebrado (HTTP 404) e o site avisa que esta 'em versao Beta'. O documento nao trata de saude, habitacao, mobilidade, meio ambiente nem tecnologia; em seguranca publica ele so diz que o Estado deve ter 'foco no essencial: educacao, seguranca e saude', que e prioridade de gasto e nao proposta. Essas ausencias ficam como ausencias."
+  },
+  {
+   "id_documento": "doc-programa-nacional-cidadania",
+   "tipo": "programa_partidario",
+   "titulo": "Programa do Cidadania 23",
+   "url": "https://rede23.org/programa/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Pagina 'Programa' do portal oficial do Cidadania (rede23.org), consultada em 28/ago/2026. O programa e dividido em secoes numeradas por tema. O documento nao traz data. O site do partido em cidadania23.org.br redireciona o conteudo institucional para rede23.org."
   }
  ]
 }

@@ -79,6 +79,16 @@
    "consultado_em": "2026-08-28",
    "_ambito": "nacional",
    "_nota": "Pagina 'O Partido > Manifesto e Programa' do site oficial do Republicanos, consultada em 28/ago/2026 (rodape do site: 2026). Cada trecho e um dos dez topicos programaticos, escritos na primeira pessoa do plural ('Nos, os Republicanos, ...'). O documento se intitula 'Programa Brasil 2022'; e o programa que o partido publica hoje, e nao ha versao mais recente no site. Os topicos sao declaracoes de principio curtas, sem medida concreta: entram como o que sao. O programa nao trata de habitacao, mobilidade urbana nem meio ambiente; essas ausencias ficam como ausencias."
+  },
+  {
+   "id_documento": "doc-programa-nacional-rede",
+   "tipo": "programa_partidario",
+   "titulo": "Manifesto da Rede Sustentabilidade — Diretrizes Programáticas e Plataforma de ação política",
+   "url": "https://redesustentabilidade.org.br/manifesto/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Pagina 'Manifesto' do site oficial da Rede Sustentabilidade, consultada em 28/ago/2026, subtitulada 'Diretrizes Programaticas da Rede Sustentabilidade'. Os trechos vem da secao 'Plataforma de acao politica', que lista as bandeiras do partido em dez itens numerados. O documento nao traz data."
   }
  ]
 }

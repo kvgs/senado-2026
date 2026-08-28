@@ -92,6 +92,16 @@
    "consultado_em": "2026-08-28",
    "_ambito": "nacional",
    "_nota": "Pagina 'Programa Partidario' do site oficial do Progressistas, consultada em 28/ago/2026. E um texto curto: seis valores e principios numerados em algarismos romanos, mais um paragrafo de encerramento. Nao traz data. Desde agosto de 2025 o Progressistas integra com o Uniao Brasil a federacao Uniao Progressista, cujo programa proprio nao esta publicado no site do partido. O programa nao trata de forma especifica de seguranca publica, educacao, saude, habitacao, mobilidade urbana, meio ambiente nem tecnologia — cita varios desses temas apenas numa lista de direitos, sem proposta. Essas ausencias ficam como ausencias."
+  },
+  {
+   "id_documento": "doc-programa-nacional-missão",
+   "tipo": "programa_partidario",
+   "titulo": "Livro Amarelo — Missão 2026: O Futuro é Glorioso (programa nacional registrado no TSE)",
+   "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017002789",
+   "publicado_em": null,
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Versao condensada de 51 paginas do Livro Amarelo, registrada no TSE pela candidatura PRESIDENCIAL do Missao (Renan Santos). Documento de ambito nacional, replicado como proposta DO PARTIDO para as candidaturas ao Senado; nao e documento de nenhuma candidatura estadual. O arquivo ja estava no acervo desde 24/ago/2026 (sha256 cdece60b71117c78), mas so tinha sido aplicado a Sao Paulo — e la os trechos foram escritos como resumo, nao como citacao literal, num formato anterior a trava de citacao. Os trechos aqui sao literais. Estrutura do documento: 3 partes, 14 capitulos, cada um com a secao 'PROPOSTAS E SOLUCOES DA MISSAO'."
   }
  ]
 }

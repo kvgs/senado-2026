@@ -1,0 +1,60 @@
+{
+ "partido": "PCB",
+ "titulo": "Programa do Partido Comunista Brasileiro para as Eleições Presidenciais de 2026 — Construir o Poder Popular, rumo ao Socialismo",
+ "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017107286",
+ "publicado_em": "2026-08-01",
+ "texto_extraido": "fontes/programa-pcb-2026-TSE.txt",
+ "nota": "Programa de 16 paginas registrado no TSE pela candidatura PRESIDENCIAL do PCB (Edmilson Costa / Cleusa Santos), aprovado em Convencao Nacional de 01/08/2026. Documento de ambito nacional, replicado como proposta DO PARTIDO para as candidaturas ao Senado; nao e documento de nenhuma candidatura estadual. O arquivo ja estava no acervo, mas so tinha sido aplicado a Sao Paulo.",
+ "posicoes": [
+  {
+   "tema": "t1",
+   "trecho": "pondo fim à política de “guerra às drogas”, para o que se faz necessária a completa desmilitarização da segurança pública, com unificação das polícias e instituição do ciclo completo",
+   "resumo": "Defende acabar com a política de guerra às drogas, desmilitarizar a segurança pública e unificar as polícias em ciclo completo."
+  },
+  {
+   "tema": "t2",
+   "trecho": "Os Institutos Federais e as Escolas Técnicas serão ampliados para o interior do Brasil, haverá um amplo programa de valorização dos profissionais da educação e cada estudante terá acesso a um computador em todos os níveis.",
+   "resumo": "Defende ensino 100% público e gratuito, da creche à pós-graduação, com Institutos Federais e Escolas Técnicas no interior e um computador para cada estudante."
+  },
+  {
+   "tema": "t2",
+   "trecho": "Promoveremos o fim do vestibular nas universidades federais e a ampliação das cotas",
+   "resumo": "Defende acabar com o vestibular nas universidades federais e ampliar as cotas."
+  },
+  {
+   "tema": "t3",
+   "trecho": "Na saúde o governo do poder popular tornará público todo o sistema de saúde, integrado com assistência (hospitais, serviços ambulatoriais, de apoio diagnóstico e terapêutico), pesquisa, produção de medicamentos, vacinas e equipamentos, com fortalecimento da atenção básica em todos os bairros",
+   "resumo": "Defende tornar público todo o sistema de saúde, incluindo pesquisa e produção de medicamentos e vacinas, com atenção básica em todos os bairros."
+  },
+  {
+   "tema": "t4",
+   "trecho": "Garantiremos o direito ao trabalho para todos, com redução da jornada de trabalho para 30 horas sem redução de salário e o fim da escala 6x1.",
+   "resumo": "Defende reduzir a jornada de trabalho para 30 horas semanais sem reduzir salário e acabar com a escala 6x1."
+  },
+  {
+   "tema": "t4",
+   "trecho": "Garantiremos também o registro em carteira e piso salarial para os trabalhadores e as trabalhadoras de plataformas de aplicativos, garantindo todos os direitos e pondo fim as jornadas exaustivas.",
+   "resumo": "Defende registro em carteira e piso salarial para trabalhadores de aplicativos."
+  },
+  {
+   "tema": "t9",
+   "trecho": "Serão adotadas políticas públicas de combate radical ao machismo, à misoginia, ao racismo, à lgbtfobia, ao capacitismo, em defesa dos direitos das mulheres, da juventude, do povo negro, dos povos originários, quilombolas e das pessoas com deficiência.",
+   "resumo": "Defende políticas de combate ao machismo, ao racismo, à lgbtfobia e ao capacitismo, e os direitos de mulheres, povo negro, povos originários, quilombolas e pessoas com deficiência."
+  },
+  {
+   "tema": "t10",
+   "trecho": "O Senado será extinto e substituído por um Parlamento Unicameral",
+   "resumo": "Defende extinguir o Senado e substituí-lo por um parlamento de casa única."
+  },
+  {
+   "tema": "t10",
+   "trecho": "serão instituídos os Conselhos Populares, eleitos nos locais de trabalho, moradia e estudo, como instrumentos permanentes de participação popular",
+   "resumo": "Defende criar Conselhos Populares eleitos nos locais de trabalho, moradia e estudo."
+  },
+  {
+   "tema": "t10",
+   "trecho": "os mandatos poderão ser revogados pela população através de referendos",
+   "resumo": "Defende que os mandatos possam ser revogados pela população por referendo: no Executivo depois do primeiro ano, no Legislativo depois de seis meses."
+  }
+ ]
+}

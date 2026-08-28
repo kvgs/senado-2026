@@ -1,0 +1,44 @@
+{
+ "partido": "PRTB",
+ "titulo": "Programa Partidário do PRTB — Manifesto do Partido Brasileiro",
+ "url": "https://prtb.org.br/manifesto/",
+ "texto_extraido": "fontes/programa-prtb-NACIONAL-site.txt",
+ "nota": "Pagina 'Conheca o Brasileiro > Manifesto do Partido' do site oficial, consultada em 28/ago/2026. O proprio texto se apresenta como 'Este Programa Partidario' e reflete a direcao nacional eleita em 2024. E escrito em forma de artigos; os trechos vem do Art. 4 (principios e valores) e do Art. 15 (objetivos permanentes). O documento nao trata de educacao, saude, habitacao, mobilidade urbana nem meio ambiente; essas ausencias ficam como ausencias.",
+ "posicoes": [
+  {
+   "tema": "t4",
+   "trecho": "Defender a liberdade econômica, a livre iniciativa, a redução da carga tributária e o ambiente de negócios favorável ao empreendedor brasileiro;",
+   "resumo": "Defende a liberdade econômica, a livre iniciativa e a redução da carga tributária."
+  },
+  {
+   "tema": "t4",
+   "trecho": "A liberdade individual, a propriedade privada e a livre iniciativa como motores do desenvolvimento nacional;",
+   "resumo": "Tem como princípio a liberdade individual, a propriedade privada e a livre iniciativa como motores do desenvolvimento."
+  },
+  {
+   "tema": "t8",
+   "trecho": "A inovação tecnológica e o empreendedorismo como instrumentos de transformação social e econômica;",
+   "resumo": "Tem como princípio a inovação tecnológica e o empreendedorismo como instrumentos de transformação social e econômica."
+  },
+  {
+   "tema": "t9",
+   "trecho": "A defesa da família natural, célula basilar da sociedade, e o respeito à vida desde a concepção;",
+   "resumo": "Tem como princípio a defesa da família natural e o respeito à vida desde a concepção."
+  },
+  {
+   "tema": "t9",
+   "trecho": "A soberania de Deus sobre as nações e a liberdade religiosa como direito fundamental de cada cidadão;",
+   "resumo": "Tem como princípio a soberania de Deus sobre as nações e a liberdade religiosa como direito fundamental."
+  },
+  {
+   "tema": "t10",
+   "trecho": "Combater a corrupção, o desvio de recursos públicos e a impunidade em todas as suas manifestações;",
+   "resumo": "Tem como objetivo combater a corrupção, o desvio de recursos públicos e a impunidade."
+  },
+  {
+   "tema": "t10",
+   "trecho": "A transparência radical e o uso da tecnologia digital para aproximar o partido do povo.",
+   "resumo": "Tem como princípio a transparência radical e o uso da tecnologia digital para aproximar o partido do povo."
+  }
+ ]
+}

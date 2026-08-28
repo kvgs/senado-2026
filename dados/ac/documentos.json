@@ -69,6 +69,16 @@
    "consultado_em": "2026-08-28",
    "_ambito": "nacional",
    "_nota": "Pagina 'Programa Partidario' do site oficial do Progressistas, consultada em 28/ago/2026. E um texto curto: seis valores e principios numerados em algarismos romanos, mais um paragrafo de encerramento. Nao traz data. Desde agosto de 2025 o Progressistas integra com o Uniao Brasil a federacao Uniao Progressista, cujo programa proprio nao esta publicado no site do partido. O programa nao trata de forma especifica de seguranca publica, educacao, saude, habitacao, mobilidade urbana, meio ambiente nem tecnologia — cita varios desses temas apenas numa lista de direitos, sem proposta. Essas ausencias ficam como ausencias."
+  },
+  {
+   "id_documento": "doc-programa-nacional-solidariedade",
+   "tipo": "programa_partidario",
+   "titulo": "Programa Partidário do Solidariedade",
+   "url": "https://solidariedade.org.br/media/2021/06/programa-partidario_paginas-duplas_web.pdf",
+   "publicado_em": null,
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "PDF de 55 paginas publicado pelo proprio partido na secao 'Downloads > Programa partidario' do site oficial (solidariedade.org.br/programa/), consultado em 28/ago/2026. O arquivo foi enviado ao site em junho de 2021 (segundo o caminho de upload) e nao traz data impressa. O programa e organizado em 21 temas, e cada tema tem um plano de acao separado por ambito municipal, estadual e FEDERAL. Como aqui se trata de candidatura ao Senado, todos os trechos foram tirados do ambito federal."
   }
  ]
 }

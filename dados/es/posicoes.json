@@ -2127,6 +2127,167 @@
     "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
    },
    "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-es-2026-rodney-miranda-prog-prtb-001",
+   "id_candidatura_contexto": "sen-es-2026-rodney-miranda",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "prtb",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-prtb",
+   "citacao_literal": "Defender a liberdade econômica, a livre iniciativa, a redução da carga tributária e o ambiente de negócios favorável ao empreendedor brasileiro;",
+   "texto": "Defende a liberdade econômica, a livre iniciativa e a redução da carga tributária.",
+   "url_especifica": "https://prtb.org.br/manifesto/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-prtb-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-es-2026-rodney-miranda-prog-prtb-002",
+   "id_candidatura_contexto": "sen-es-2026-rodney-miranda",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "prtb",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-prtb",
+   "citacao_literal": "A liberdade individual, a propriedade privada e a livre iniciativa como motores do desenvolvimento nacional;",
+   "texto": "Tem como princípio a liberdade individual, a propriedade privada e a livre iniciativa como motores do desenvolvimento.",
+   "url_especifica": "https://prtb.org.br/manifesto/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-prtb-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-es-2026-rodney-miranda-prog-prtb-003",
+   "id_candidatura_contexto": "sen-es-2026-rodney-miranda",
+   "id_tema": "t8",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "prtb",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-prtb",
+   "citacao_literal": "A inovação tecnológica e o empreendedorismo como instrumentos de transformação social e econômica;",
+   "texto": "Tem como princípio a inovação tecnológica e o empreendedorismo como instrumentos de transformação social e econômica.",
+   "url_especifica": "https://prtb.org.br/manifesto/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-prtb-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-es-2026-rodney-miranda-prog-prtb-004",
+   "id_candidatura_contexto": "sen-es-2026-rodney-miranda",
+   "id_tema": "t9",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "prtb",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-prtb",
+   "citacao_literal": "A defesa da família natural, célula basilar da sociedade, e o respeito à vida desde a concepção;",
+   "texto": "Tem como princípio a defesa da família natural e o respeito à vida desde a concepção.",
+   "url_especifica": "https://prtb.org.br/manifesto/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-prtb-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-es-2026-rodney-miranda-prog-prtb-005",
+   "id_candidatura_contexto": "sen-es-2026-rodney-miranda",
+   "id_tema": "t9",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "prtb",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-prtb",
+   "citacao_literal": "A soberania de Deus sobre as nações e a liberdade religiosa como direito fundamental de cada cidadão;",
+   "texto": "Tem como princípio a soberania de Deus sobre as nações e a liberdade religiosa como direito fundamental.",
+   "url_especifica": "https://prtb.org.br/manifesto/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-prtb-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-es-2026-rodney-miranda-prog-prtb-006",
+   "id_candidatura_contexto": "sen-es-2026-rodney-miranda",
+   "id_tema": "t10",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "prtb",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-prtb",
+   "citacao_literal": "Combater a corrupção, o desvio de recursos públicos e a impunidade em todas as suas manifestações;",
+   "texto": "Tem como objetivo combater a corrupção, o desvio de recursos públicos e a impunidade.",
+   "url_especifica": "https://prtb.org.br/manifesto/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-prtb-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-es-2026-rodney-miranda-prog-prtb-007",
+   "id_candidatura_contexto": "sen-es-2026-rodney-miranda",
+   "id_tema": "t10",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "prtb",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-prtb",
+   "citacao_literal": "A transparência radical e o uso da tecnologia digital para aproximar o partido do povo.",
+   "texto": "Tem como princípio a transparência radical e o uso da tecnologia digital para aproximar o partido do povo.",
+   "url_especifica": "https://prtb.org.br/manifesto/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-prtb-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
   }
  ]
 }

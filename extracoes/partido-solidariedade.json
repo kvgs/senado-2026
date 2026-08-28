@@ -1,0 +1,54 @@
+{
+ "partido": "SOLIDARIEDADE",
+ "titulo": "Programa Partidário do Solidariedade",
+ "url": "https://solidariedade.org.br/media/2021/06/programa-partidario_paginas-duplas_web.pdf",
+ "texto_extraido": "fontes/programa-solidariedade.txt",
+ "nota": "PDF de 55 paginas publicado pelo proprio partido na secao 'Downloads > Programa partidario' do site oficial (solidariedade.org.br/programa/), consultado em 28/ago/2026. O arquivo foi enviado ao site em junho de 2021 (segundo o caminho de upload) e nao traz data impressa. O programa e organizado em 21 temas, e cada tema tem um plano de acao separado por ambito municipal, estadual e FEDERAL. Como aqui se trata de candidatura ao Senado, todos os trechos foram tirados do ambito federal.",
+ "posicoes": [
+  {
+   "tema": "t1",
+   "trecho": "Garantir orçamento público federal para investimentos nas estruturas técnica, operacional, de inteligência policial e de qualificação da Polícia Federal;",
+   "resumo": "No âmbito federal, defende orçamento para a estrutura técnica, operacional e de inteligência da Polícia Federal."
+  },
+  {
+   "tema": "t3",
+   "trecho": "Defender e propor projetos de lei que tenham em sua essência o paradigma da saúde e não o paradigma da doença, como ainda persiste em nossa cultura, estabelecendo parcerias de compromisso fundadas num pacto de gestão pela vida e em defesa dos princípios básicos do SUS: a universalidade, equidade e integralidade;",
+   "resumo": "No âmbito federal, defende leis orientadas pela prevenção e pelos princípios do SUS: universalidade, equidade e integralidade."
+  },
+  {
+   "tema": "t4",
+   "trecho": "Reduzir a jornada de trabalho, sem redução do salário;",
+   "resumo": "No âmbito federal, defende reduzir a jornada de trabalho sem reduzir o salário."
+  },
+  {
+   "tema": "t4",
+   "trecho": "Regulamentar a terceirização para garantir os direitos dos terceirizados;",
+   "resumo": "No âmbito federal, defende regulamentar a terceirização para garantir os direitos dos terceirizados."
+  },
+  {
+   "tema": "t4",
+   "trecho": "Eliminar o trabalho análogo ao escravo e as discriminações no ambiente de trabalho, por meio de fiscalização em convênio com os órgãos competentes;",
+   "resumo": "No âmbito federal, defende eliminar o trabalho análogo ao escravo por meio de fiscalização em convênio com os órgãos competentes."
+  },
+  {
+   "tema": "t6",
+   "trecho": "Propor e defender no âmbito do Congresso Nacional que seus membros destinem uma porcentagem de suas emendas anuais ao orçamento para a construção de centros ou usinas de reciclagem de resíduos sólidos no país;",
+   "resumo": "No âmbito federal, defende que parlamentares destinem parte das emendas ao orçamento para centros e usinas de reciclagem de resíduos sólidos."
+  },
+  {
+   "tema": "t6",
+   "trecho": "Garantir o cumprimento da lei das licitações que determina que todas as contratações de serviços de órgãos públicos sejam feitas por empresas que comprovem que suas práticas são sustentáveis;",
+   "resumo": "No âmbito federal, defende exigir comprovação de práticas sustentáveis nas empresas contratadas por órgãos públicos."
+  },
+  {
+   "tema": "t7",
+   "trecho": "Fortalecer o SNHIS (Sistema Nacional de Habitação de Interesse Social);",
+   "resumo": "No âmbito federal, defende fortalecer o Sistema Nacional de Habitação de Interesse Social (SNHIS)."
+  },
+  {
+   "tema": "t7",
+   "trecho": "Garantir a dotação orçamentária necessária para a execução do Plano Nacional de Habitação de Interesse Social, bem como desenvolver ações de estímulo e apoio aos estados e municípios",
+   "resumo": "No âmbito federal, defende garantir orçamento para o Plano Nacional de Habitação de Interesse Social e apoiar estados e municípios."
+  }
+ ]
+}

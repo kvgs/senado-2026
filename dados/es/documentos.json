@@ -119,6 +119,16 @@
    "consultado_em": "2026-08-28",
    "_ambito": "nacional",
    "_nota": "PDF de 4 paginas publicado pelo proprio partido na secao 'Documentos > Programa' do site oficial, consultado em 28/ago/2026. E o programa de fundacao do PSB, sob o lema 'Socialismo e Liberdade', e nao traz data no documento nem na pagina — o que sabemos e que e o texto que o partido publica hoje como seu Programa. O programa nao trata de seguranca publica, habitacao, mobilidade urbana, meio ambiente nem tecnologia; essas ausencias ficam como ausencias."
+  },
+  {
+   "id_documento": "doc-programa-nacional-prtb",
+   "tipo": "programa_partidario",
+   "titulo": "Programa Partidário do PRTB — Manifesto do Partido Brasileiro",
+   "url": "https://prtb.org.br/manifesto/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Pagina 'Conheca o Brasileiro > Manifesto do Partido' do site oficial, consultada em 28/ago/2026. O proprio texto se apresenta como 'Este Programa Partidario' e reflete a direcao nacional eleita em 2024. E escrito em forma de artigos; os trechos vem do Art. 4 (principios e valores) e do Art. 15 (objetivos permanentes). O documento nao trata de educacao, saude, habitacao, mobilidade urbana nem meio ambiente; essas ausencias ficam como ausencias."
   }
  ]
 }

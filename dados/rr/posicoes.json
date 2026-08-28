@@ -1863,6 +1863,121 @@
     "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
    },
    "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-rr-2026-hiperion-de-oliveira-prog-pv-001",
+   "id_candidatura_contexto": "sen-rr-2026-hiperion-de-oliveira",
+   "id_tema": "t1",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pv",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pv",
+   "citacao_literal": "As propostas de reforma do judiciário e das instituições de segurança pública passam por mudanças constitucionais, reformas no código penal, reformas no judiciário e nas polícias.",
+   "texto": "Defende reformar as instituições de segurança pública e o Judiciário por meio de mudanças constitucionais e no Código Penal.",
+   "url_especifica": "https://pv.org.br/programa/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pv-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-rr-2026-hiperion-de-oliveira-prog-pv-002",
+   "id_candidatura_contexto": "sen-rr-2026-hiperion-de-oliveira",
+   "id_tema": "t1",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pv",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pv",
+   "citacao_literal": "novas leis, que acompanham a evolução dos problemas e os costumes da sociedade, para os delitos econômicos e os chamados crimes de colarinho branco",
+   "texto": "Defende novas leis para delitos econômicos e crimes de colarinho branco.",
+   "url_especifica": "https://pv.org.br/programa/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pv-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-rr-2026-hiperion-de-oliveira-prog-pv-003",
+   "id_candidatura_contexto": "sen-rr-2026-hiperion-de-oliveira",
+   "id_tema": "t5",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pv",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pv",
+   "citacao_literal": "racionalizar o sistema de ônibus para obter a oferta de um serviço socialmente mais equilibrado e ambientalmente menos poluente. Criar faixas exclusivas, canaletas, estações de rápido embarque, estimular e regulamentar o uso de veículos de maior capacidade, mais silenciosos, com emissões controladas com uma parte da frota movida a gás natural.",
+   "texto": "Defende racionalizar o sistema de ônibus com faixas exclusivas, canaletas, estações de embarque rápido e frota menos poluente.",
+   "url_especifica": "https://pv.org.br/programa/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pv-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-rr-2026-hiperion-de-oliveira-prog-pv-004",
+   "id_candidatura_contexto": "sen-rr-2026-hiperion-de-oliveira",
+   "id_tema": "t5",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pv",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pv",
+   "citacao_literal": "priorizar o transporte de massas nas suas alternativas mais eficientes e não poluentes, de acordo com as condições específicas da cada cidade: trens de superfície, metrô, Veículo Leve sobre Trilhos – VLT – bonde, trolei, bem como as formas de integração intermodais",
+   "texto": "Defende priorizar o transporte de massa não poluente: trem, metrô, VLT, bonde e trólebus, com integração entre os modos.",
+   "url_especifica": "https://pv.org.br/programa/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pv-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-rr-2026-hiperion-de-oliveira-prog-pv-005",
+   "id_candidatura_contexto": "sen-rr-2026-hiperion-de-oliveira",
+   "id_tema": "t5",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pv",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pv",
+   "citacao_literal": "implantar sistemas cicloviários com ciclovias, ciclofaixas, bicicletários e educação para sua correta utilização",
+   "texto": "Defende implantar sistemas cicloviários com ciclovias, ciclofaixas e bicicletários.",
+   "url_especifica": "https://pv.org.br/programa/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pv-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
+   },
+   "_promovido_em": "2026-08-28"
   }
  ]
 }
