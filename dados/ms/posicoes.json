@@ -552,6 +552,50 @@
     "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
    },
    "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-ms-2026-vander-loubet-site-001",
+   "id_tema": "t2",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-ms-2026-vander-loubet",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-ms-2026-vander-loubet",
+   "citacao_literal": "Eixo de integração continental, MS precisa ampliar polos de conhecimento universitário, propõe Vander Candidato a senador defende ampliação de bases universitárias para desafios peculiares de regiões como Pantanal e áreas de fronteira",
+   "texto": "Defende ampliar bases universitárias em Mato Grosso do Sul, com foco no Pantanal e nas áreas de fronteira.",
+   "url_especifica": "https://vanderloubet.com.br/deputado/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-ms-2026-vander-loubet-site-002",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-ms-2026-vander-loubet",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-ms-2026-vander-loubet",
+   "citacao_literal": "Vander reforça apelos por celeridade na votação do fim da escala 6×1 Dados mostram os graves impactos que a escala 6x1 provoca na saúde e qualidade de vida dos trabalhadores e na economia",
+   "texto": "Pede celeridade na votação do fim da escala 6x1, citando os impactos na saúde dos trabalhadores.",
+   "url_especifica": "https://vanderloubet.com.br/deputado/",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
   }
  ]
 }

@@ -92,6 +92,28 @@
     "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
    },
    "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-mt-2026-favaro-site-001",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-mt-2026-favaro",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-mt-2026-favaro",
+   "citacao_literal": "O Projeto de Lei 4.977/2026 faz essa escolha: propõe impedir novas autorizações, encerrar gradualmente as existentes e proibir a oferta, a divulgação, a publicidade, o patrocínio e a intermediação de apostas no país.",
+   "texto": "Apresentou projeto que proíbe novas autorizações de apostas, encerra gradualmente as existentes e veda publicidade e patrocínio do setor.",
+   "url_especifica": "https://carlosfavaro.com.br/pl-4977/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
   }
  ]
 }

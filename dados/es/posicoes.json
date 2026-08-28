@@ -429,6 +429,94 @@
     "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
    },
    "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-es-2026-evair-de-melo-site-009",
+   "id_tema": "t10",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-es-2026-evair-de-melo",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-es-2026-evair-de-melo",
+   "citacao_literal": "ANISTIA - Reparação de injustiças Projeto prevê perdão a condenados por crimes de opinião no período entre 1º de janeiro de 2019 e 22 de abril de 2022",
+   "texto": "Apresentou projeto de anistia a condenados por crimes de opinião entre janeiro de 2019 e abril de 2022.",
+   "url_especifica": "https://evairdemelo.com.br/projetos",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-es-2026-evair-de-melo-site-010",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-es-2026-evair-de-melo",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-es-2026-evair-de-melo",
+   "citacao_literal": "PROFERT - Programa de Desenvolvimento da Indústria de Fertilizantes O projeto busca fomentar o setor através do aumento da competitividade e desenvolvimento da categoria",
+   "texto": "Apresentou projeto de desenvolvimento da indústria de fertilizantes.",
+   "url_especifica": "https://evairdemelo.com.br/projetos",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-es-2026-evair-de-melo-site-011",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-es-2026-evair-de-melo",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-es-2026-evair-de-melo",
+   "citacao_literal": "“Refis Caminhoneiros” O PL estabelece uma série de medidas para facilitações através do financiamento e refinanciamento de dívidas do setor",
+   "texto": "Apresentou projeto de financiamento e refinanciamento de dívidas de caminhoneiros.",
+   "url_especifica": "https://evairdemelo.com.br/projetos",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-es-2026-evair-de-melo-site-012",
+   "id_tema": "t9",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-es-2026-evair-de-melo",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-es-2026-evair-de-melo",
+   "citacao_literal": "Dia Nacional do Imigrante Pomerano no Brasil - 28 de junho A proposta visa valorizar a cultura pomerana e instituir o Dia Nacional do Imigrante Pomerano no Brasil.",
+   "texto": "Apresentou projeto que institui o Dia Nacional do Imigrante Pomerano, valorizando a cultura pomerana.",
+   "url_especifica": "https://evairdemelo.com.br/projetos",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
   }
  ]
 }

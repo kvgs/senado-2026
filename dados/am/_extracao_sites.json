@@ -12,12 +12,12 @@
       "titulo_da_pagina": "Tem que cortar o mal pela raiz”, afirma Wilson ao defender castração química para estupradores de crianças condenados pela justiça – Wilson Lima",
       "selo": "declaracao_do_candidato",
       "estado_cobertura": "A",
-      "coletado_em": "2026-08-27",
+      "coletado_em": "2026-08-28",
       "extraido_em": "2026-08-28",
       "extraido_por": "modelo",
       "revisado_por_humano": false,
       "_nota_selo": "Declaracao da candidatura no site que ela declarou ao TSE. Prova que publicou isto, nao que seja verdade.",
-      "_como_conferir": "Abra a URL e procure o trecho. Ele foi conferido palavra por palavra contra o texto coletado em 2026-08-27; se a pagina mudou desde entao, a conferencia manda."
+      "_como_conferir": "Abra a URL e procure o trecho. Ele foi conferido palavra por palavra contra o texto coletado em 2026-08-28; se a pagina mudou desde entao, a conferencia manda."
     },
     {
       "id_posicao": "pos-sen-am-2026-wilson-lima-site-002",
@@ -31,12 +31,12 @@
       "titulo_da_pagina": "No lançamento da candidatura de Wanderley Monteiro, Wilson Lima defende leis mais duras contra criminosos – Wilson Lima",
       "selo": "declaracao_do_candidato",
       "estado_cobertura": "A",
-      "coletado_em": "2026-08-27",
+      "coletado_em": "2026-08-28",
       "extraido_em": "2026-08-28",
       "extraido_por": "modelo",
       "revisado_por_humano": false,
       "_nota_selo": "Declaracao da candidatura no site que ela declarou ao TSE. Prova que publicou isto, nao que seja verdade.",
-      "_como_conferir": "Abra a URL e procure o trecho. Ele foi conferido palavra por palavra contra o texto coletado em 2026-08-27; se a pagina mudou desde entao, a conferencia manda."
+      "_como_conferir": "Abra a URL e procure o trecho. Ele foi conferido palavra por palavra contra o texto coletado em 2026-08-28; se a pagina mudou desde entao, a conferencia manda."
     },
     {
       "id_posicao": "pos-sen-am-2026-wilson-lima-site-003",
@@ -50,12 +50,31 @@
       "titulo_da_pagina": "Em Barcelos, Wilson Lima propõe Polícia de Fronteira para ampliar atuação das bases fluviais contra o narcotráfico – Wilson Lima",
       "selo": "declaracao_do_candidato",
       "estado_cobertura": "A",
-      "coletado_em": "2026-08-27",
+      "coletado_em": "2026-08-28",
       "extraido_em": "2026-08-28",
       "extraido_por": "modelo",
       "revisado_por_humano": false,
       "_nota_selo": "Declaracao da candidatura no site que ela declarou ao TSE. Prova que publicou isto, nao que seja verdade.",
-      "_como_conferir": "Abra a URL e procure o trecho. Ele foi conferido palavra por palavra contra o texto coletado em 2026-08-27; se a pagina mudou desde entao, a conferencia manda."
+      "_como_conferir": "Abra a URL e procure o trecho. Ele foi conferido palavra por palavra contra o texto coletado em 2026-08-28; se a pagina mudou desde entao, a conferencia manda."
+    },
+    {
+      "id_posicao": "pos-sen-am-2026-eduardo-braga-site-004",
+      "id_candidatura": "sen-am-2026-eduardo-braga",
+      "atribuido_a_id": "sen-am-2026-eduardo-braga",
+      "atribuido_a_tipo": "candidatura",
+      "tema": "t5",
+      "trecho": "a ordem de contratação de serviços necessários para a implementação do tão aguardado Plano de Melhoramento e PAVIMENTAÇÃO de mais de 430 km da BR-319. O início imediato da execução da obra de construção da ponte sobre o rio Igapó-Açu.",
+      "resumo": "Coloca a pavimentação da BR-319 como pauta central do mandato, e relata a assinatura do plano de melhoramento de 430 km e da ponte sobre o rio Igapó-Açu.",
+      "url": "https://br319ja.com.br",
+      "titulo_da_pagina": "BR-319 sai do papel | Vitória do Amazonas",
+      "selo": "declaracao_do_candidato",
+      "estado_cobertura": "A",
+      "coletado_em": "2026-08-28",
+      "extraido_em": "2026-08-28",
+      "extraido_por": "modelo",
+      "revisado_por_humano": false,
+      "_nota_selo": "Declaracao da candidatura no site que ela declarou ao TSE. Prova que publicou isto, nao que seja verdade.",
+      "_como_conferir": "Abra a URL e procure o trecho. Ele foi conferido palavra por palavra contra o texto coletado em 2026-08-28; se a pagina mudou desde entao, a conferencia manda."
     }
   ]
 }

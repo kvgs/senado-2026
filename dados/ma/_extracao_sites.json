@@ -1,0 +1,23 @@
+{
+  "posicoes": [
+    {
+      "id_posicao": "pos-sen-ma-2026-wilson-leite-site-001",
+      "id_candidatura": "sen-ma-2026-wilson-leite",
+      "atribuido_a_id": "sen-ma-2026-wilson-leite",
+      "atribuido_a_tipo": "candidatura",
+      "tema": "t4",
+      "trecho": "você é a favor da redução da jornada de trabalho SEM REDUÇÃO DE SALÁRIO? Isso significa mais tempo para viver, para estudar, para ficar com a família e para descansar . A luta é por dignidade!",
+      "resumo": "Defende a redução da jornada de trabalho sem redução de salário, e faz campanha pelo plebiscito popular sobre o tema.",
+      "url": "https://blogwilsonleite.com.br/vida-alem-do-trabalho-reducao-jornada-trabalho/",
+      "titulo_da_pagina": "Não vai dar? A gente vai lutar. Vote! – Blog Wilson Leite",
+      "selo": "declaracao_do_candidato",
+      "estado_cobertura": "A",
+      "coletado_em": "2026-08-27",
+      "extraido_em": "2026-08-28",
+      "extraido_por": "modelo",
+      "revisado_por_humano": false,
+      "_nota_selo": "Declaracao da candidatura no site que ela declarou ao TSE. Prova que publicou isto, nao que seja verdade.",
+      "_como_conferir": "Abra a URL e procure o trecho. Ele foi conferido palavra por palavra contra o texto coletado em 2026-08-27; se a pagina mudou desde entao, a conferencia manda."
+    }
+  ]
+}

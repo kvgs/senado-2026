@@ -1,0 +1,23 @@
+{
+  "posicoes": [
+    {
+      "id_posicao": "pos-sen-mt-2026-favaro-site-001",
+      "id_candidatura": "sen-mt-2026-favaro",
+      "atribuido_a_id": "sen-mt-2026-favaro",
+      "atribuido_a_tipo": "candidatura",
+      "tema": "t4",
+      "trecho": "O Projeto de Lei 4.977/2026 faz essa escolha: propõe impedir novas autorizações, encerrar gradualmente as existentes e proibir a oferta, a divulgação, a publicidade, o patrocínio e a intermediação de apostas no país.",
+      "resumo": "Apresentou projeto que proíbe novas autorizações de apostas, encerra gradualmente as existentes e veda publicidade e patrocínio do setor.",
+      "url": "https://carlosfavaro.com.br/pl-4977/",
+      "titulo_da_pagina": "Chega de bets | Apoie o Projeto de Lei 4.977/2026",
+      "selo": "declaracao_do_candidato",
+      "estado_cobertura": "A",
+      "coletado_em": "2026-08-27",
+      "extraido_em": "2026-08-28",
+      "extraido_por": "modelo",
+      "revisado_por_humano": false,
+      "_nota_selo": "Declaracao da candidatura no site que ela declarou ao TSE. Prova que publicou isto, nao que seja verdade.",
+      "_como_conferir": "Abra a URL e procure o trecho. Ele foi conferido palavra por palavra contra o texto coletado em 2026-08-27; se a pagina mudou desde entao, a conferencia manda."
+    }
+  ]
+}
