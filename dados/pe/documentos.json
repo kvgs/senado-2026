@@ -58,6 +58,26 @@
    "consultado_em": "2026-08-28",
    "_ambito": "nacional",
    "_nota": "Programa nacional do PSTU para 2026, registrado no TSE pela candidatura presidencial (Hertz Dias / Vanessa Portugal) do diretorio nacional. Documento de ambito nacional, replicado como proposta DO PARTIDO para as candidaturas do PSTU ao Senado. Nao e documento de nenhuma candidatura estadual."
+  },
+  {
+   "id_documento": "doc-programa-nacional-pt",
+   "tipo": "programa_partidario",
+   "titulo": "Construindo o futuro: Manifesto do PT para seguir transformando o país (aprovado no 8º Congresso Nacional, abril de 2026)",
+   "url": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
+   "publicado_em": "2026-04-26",
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Documento final aprovado no 8º Congresso Nacional do PT, realizado em Brasilia entre 24 e 26 de abril de 2026, publicado na integra pelo proprio partido em pt.org.br. E o texto que atualiza o programa partidario para o ciclo 2026-2027. NAO usamos a Carta de Principios do site do PT: aquele e o texto de fundacao, de 1979, e nao um programa para esta eleicao. O manifesto nao traz proposta clara sobre seguranca publica, habitacao nem meio ambiente — as palavras 'desmatamento', 'Amazonia' e 'climatica' nao aparecem uma vez sequer no documento. Essas ausencias ficam como ausencias."
+  },
+  {
+   "id_documento": "doc-programa-nacional-novo",
+   "tipo": "programa_partidario",
+   "titulo": "O que o NOVO acredita — apresentação oficial do Partido Novo (2025)",
+   "url": "https://novo.org.br/wp-content/uploads/2025/11/APRESENTACAO_PARTIDO_NOVO-2025-v2-1.pdf",
+   "publicado_em": null,
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Apresentacao institucional publicada pelo proprio partido em novo.org.br (secao Material Oficial), arquivo enviado ao site em novembro de 2025 (segundo o caminho de upload); o documento nao traz data impressa. Os trechos vem da secao intitulada 'O QUE O NOVO ACREDITA', que e a parte do documento onde o partido lista suas posicoes; o proprio slide acrescenta 'E voce nao precisa concordar com tudo!'. NAO e o programa registrado no TSE: a pagina 'Nossos posicionamentos' do site oficial esta com o link quebrado (HTTP 404) e o site avisa que esta 'em versao Beta'. O documento nao trata de saude, habitacao, mobilidade, meio ambiente nem tecnologia; em seguranca publica ele so diz que o Estado deve ter 'foco no essencial: educacao, seguranca e saude', que e prioridade de gasto e nao proposta. Essas ausencias ficam como ausencias."
   }
  ]
 }

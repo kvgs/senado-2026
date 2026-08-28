@@ -1,0 +1,59 @@
+{
+ "partido": "NOVO",
+ "titulo": "O que o NOVO acredita — apresentação oficial do Partido Novo (2025)",
+ "url": "https://novo.org.br/wp-content/uploads/2025/11/APRESENTACAO_PARTIDO_NOVO-2025-v2-1.pdf",
+ "texto_extraido": "fontes/programa-novo-2025-apresentacao.txt",
+ "nota": "Apresentacao institucional publicada pelo proprio partido em novo.org.br (secao Material Oficial), arquivo enviado ao site em novembro de 2025 (segundo o caminho de upload); o documento nao traz data impressa. Os trechos vem da secao intitulada 'O QUE O NOVO ACREDITA', que e a parte do documento onde o partido lista suas posicoes; o proprio slide acrescenta 'E voce nao precisa concordar com tudo!'. NAO e o programa registrado no TSE: a pagina 'Nossos posicionamentos' do site oficial esta com o link quebrado (HTTP 404) e o site avisa que esta 'em versao Beta'. O documento nao trata de saude, habitacao, mobilidade, meio ambiente nem tecnologia; em seguranca publica ele so diz que o Estado deve ter 'foco no essencial: educacao, seguranca e saude', que e prioridade de gasto e nao proposta. Essas ausencias ficam como ausencias.",
+ "posicoes": [
+  {
+   "tema": "t2",
+   "trecho": "Priorização da educação básica, desde a creche até o ensino médio",
+   "resumo": "Defende priorizar a educação básica, da creche ao ensino médio."
+  },
+  {
+   "tema": "t4",
+   "trecho": "Parcerias, concessões e privatização de todas as estatais",
+   "resumo": "Defende privatizar todas as estatais, além de parcerias e concessões."
+  },
+  {
+   "tema": "t4",
+   "trecho": "Ampla abertura e integração à economia mundial",
+   "resumo": "Defende ampla abertura comercial e integração do Brasil à economia mundial."
+  },
+  {
+   "tema": "t4",
+   "trecho": "Equilíbrio das contas públicas",
+   "resumo": "Defende equilíbrio das contas públicas."
+  },
+  {
+   "tema": "t4",
+   "trecho": "Programas assistenciais como porta de saída da miséria e da pobreza",
+   "resumo": "Defende que os programas assistenciais funcionem como porta de saída da miséria e da pobreza."
+  },
+  {
+   "tema": "t10",
+   "trecho": "Fim de dinheiro público para políticos e campanhas",
+   "resumo": "Defende acabar com o dinheiro público para políticos e para campanhas eleitorais (fundo eleitoral e fundo partidário)."
+  },
+  {
+   "tema": "t10",
+   "trecho": "Voto facultativo e possibilidade de candidatura avulsa",
+   "resumo": "Defende voto facultativo e candidatura avulsa, isto é, concorrer sem estar filiado a um partido."
+  },
+  {
+   "tema": "t10",
+   "trecho": "Voto distrital",
+   "resumo": "Defende o voto distrital, em que cada deputado é eleito por um distrito e não pela lista do estado inteiro."
+  },
+  {
+   "tema": "t10",
+   "trecho": "Mais autonomia para estados e municípios",
+   "resumo": "Defende mais autonomia para estados e municípios."
+  },
+  {
+   "tema": "t10",
+   "trecho": "Combate incansável à corrupção e à impunidade",
+   "resumo": "Defende combate à corrupção e à impunidade."
+  }
+ ]
+}

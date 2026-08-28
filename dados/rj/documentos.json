@@ -59,6 +59,26 @@
    "consultado_em": "2026-08-28",
    "_ambito": "nacional",
    "_nota": "Programa nacional do PSTU para 2026, registrado no TSE pela candidatura presidencial (Hertz Dias / Vanessa Portugal) do diretorio nacional. Documento de ambito nacional, replicado como proposta DO PARTIDO para as candidaturas do PSTU ao Senado. Nao e documento de nenhuma candidatura estadual."
+  },
+  {
+   "id_documento": "doc-programa-nacional-pt",
+   "tipo": "programa_partidario",
+   "titulo": "Construindo o futuro: Manifesto do PT para seguir transformando o país (aprovado no 8º Congresso Nacional, abril de 2026)",
+   "url": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
+   "publicado_em": "2026-04-26",
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Documento final aprovado no 8º Congresso Nacional do PT, realizado em Brasilia entre 24 e 26 de abril de 2026, publicado na integra pelo proprio partido em pt.org.br. E o texto que atualiza o programa partidario para o ciclo 2026-2027. NAO usamos a Carta de Principios do site do PT: aquele e o texto de fundacao, de 1979, e nao um programa para esta eleicao. O manifesto nao traz proposta clara sobre seguranca publica, habitacao nem meio ambiente — as palavras 'desmatamento', 'Amazonia' e 'climatica' nao aparecem uma vez sequer no documento. Essas ausencias ficam como ausencias."
+  },
+  {
+   "id_documento": "doc-programa-nacional-republicanos",
+   "tipo": "programa_partidario",
+   "titulo": "Manifesto e Programa do Republicanos — os 10 tópicos do \"Programa Brasil 2022\"",
+   "url": "https://republicanos10.org.br/manifesto-e-programa/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Pagina 'O Partido > Manifesto e Programa' do site oficial do Republicanos, consultada em 28/ago/2026 (rodape do site: 2026). Cada trecho e um dos dez topicos programaticos, escritos na primeira pessoa do plural ('Nos, os Republicanos, ...'). O documento se intitula 'Programa Brasil 2022'; e o programa que o partido publica hoje, e nao ha versao mais recente no site. Os topicos sao declaracoes de principio curtas, sem medida concreta: entram como o que sao. O programa nao trata de habitacao, mobilidade urbana nem meio ambiente; essas ausencias ficam como ausencias."
   }
  ]
 }

@@ -1,0 +1,70 @@
+{
+ "partido": "PT",
+ "titulo": "Construindo o futuro: Manifesto do PT para seguir transformando o país (aprovado no 8º Congresso Nacional, abril de 2026)",
+ "url": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
+ "publicado_em": "2026-04-26",
+ "texto_extraido": "fontes/programa-pt-2026-manifesto.txt",
+ "nota": "Documento final aprovado no 8º Congresso Nacional do PT, realizado em Brasilia entre 24 e 26 de abril de 2026, publicado na integra pelo proprio partido em pt.org.br. E o texto que atualiza o programa partidario para o ciclo 2026-2027. NAO usamos a Carta de Principios do site do PT: aquele e o texto de fundacao, de 1979, e nao um programa para esta eleicao. O manifesto nao traz proposta clara sobre seguranca publica, habitacao nem meio ambiente — as palavras 'desmatamento', 'Amazonia' e 'climatica' nao aparecem uma vez sequer no documento. Essas ausencias ficam como ausencias.",
+ "posicoes": [
+  {
+   "tema": "t2",
+   "trecho": "a universalização da escola em tempo integral para todas as crianças, em todos os municípios brasileiros, com investimento em infraestrutura escolar adequada, no magistério e na gestão educacional",
+   "resumo": "Defende universalizar a escola em tempo integral para todas as crianças, em todos os municípios, com investimento em infraestrutura, magistério e gestão."
+  },
+  {
+   "tema": "t2",
+   "trecho": "Deve também assegurar a universalização do acesso à creche e à alfabetização infantil.",
+   "resumo": "Defende universalizar o acesso à creche e à alfabetização infantil."
+  },
+  {
+   "tema": "t3",
+   "trecho": "Precisamos universalizar o direito à segurança alimentar e ao atendimento à saúde",
+   "resumo": "Defende universalizar o direito à segurança alimentar e ao atendimento à saúde."
+  },
+  {
+   "tema": "t4",
+   "trecho": "a luta histórica pela redução de jornada de trabalho, materializada pela luta pelo fim imediato da jornada 6×1, constitui também o núcleo de um projeto de país soberano",
+   "resumo": "Defende reduzir a jornada de trabalho e acabar imediatamente com a escala 6×1 (seis dias de trabalho para um de folga)."
+  },
+  {
+   "tema": "t4",
+   "trecho": "Reforma tributária, para corrigir distorções graves do sistema de impostos e financiar direitos.",
+   "resumo": "Defende reforma tributária para corrigir distorções do sistema de impostos e financiar direitos."
+  },
+  {
+   "tema": "t5",
+   "trecho": "assegurar o direito à mobilidade urbana, com tarifa zero",
+   "resumo": "Defende o direito à mobilidade urbana com tarifa zero no transporte público."
+  },
+  {
+   "tema": "t8",
+   "trecho": "Reforma tecnológica, com vistas à soberania produtiva, científica e digital, fortalecida por uma ampla regulamentação dos oligopólios das plataformas digitais",
+   "resumo": "Defende uma reforma tecnológica pela soberania digital, com ampla regulamentação dos oligopólios das plataformas digitais."
+  },
+  {
+   "tema": "t8",
+   "trecho": "nosso projeto exige que o processamento e a inteligência sobre esses minerais ocorram em solo nacional, gerando empregos qualificados e protegendo nossa riqueza contra a cobiça internacional",
+   "resumo": "Sobre as terras raras, defende que o processamento e a tecnologia fiquem em solo nacional, em vez de exportar minério bruto."
+  },
+  {
+   "tema": "t9",
+   "trecho": "promover os direitos à cultura, ao esporte e ao lazer; garantir o direito à assistência social; e assegurar a igualdade de gênero, étnico-racial e regional",
+   "resumo": "Defende garantir os direitos à cultura, ao esporte e ao lazer, a assistência social e a igualdade de gênero, étnico-racial e regional."
+  },
+  {
+   "tema": "t10",
+   "trecho": "Reforma política e eleitoral, capaz de democratizar o poder e restituir a soberania popular e alterar o atual modelo de execução orçamentária através de emendas parlamentares",
+   "resumo": "Defende reforma política e eleitoral que mude o modelo atual de execução do orçamento por emendas parlamentares."
+  },
+  {
+   "tema": "t10",
+   "trecho": "Reforma do Poder Judiciário, visando à democratização, mecanismos de autocorreção e fortalecimento do Estado de Direito",
+   "resumo": "Defende reforma do Judiciário, com democratização e mecanismos de autocorreção."
+  },
+  {
+   "tema": "t10",
+   "trecho": "Reforma da comunicação, garantindo o cumprimento da Constituição que proíbe monopólios neste setor.",
+   "resumo": "Defende reforma da comunicação para fazer cumprir a proibição constitucional de monopólios no setor."
+  }
+ ]
+}

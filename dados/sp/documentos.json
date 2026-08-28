@@ -294,6 +294,16 @@
    "consultado_em": "2026-08-28",
    "_ambito": "nacional",
    "_nota": "Estatuto e programa aprovados na Convenção Nacional de 19 de dezembro de 2022 e publicados no Diário Oficial da União, seção 3. Documento permanente do partido, não de uma eleição. O PDF está em fontes/programa-pl-2022-dou.pdf."
+  },
+  {
+   "id_documento": "doc-programa-nacional-novo",
+   "tipo": "programa_partidario",
+   "titulo": "O que o NOVO acredita — apresentação oficial do Partido Novo (2025)",
+   "url": "https://novo.org.br/wp-content/uploads/2025/11/APRESENTACAO_PARTIDO_NOVO-2025-v2-1.pdf",
+   "publicado_em": null,
+   "consultado_em": "2026-08-28",
+   "_ambito": "nacional",
+   "_nota": "Apresentacao institucional publicada pelo proprio partido em novo.org.br (secao Material Oficial), arquivo enviado ao site em novembro de 2025 (segundo o caminho de upload); o documento nao traz data impressa. Os trechos vem da secao intitulada 'O QUE O NOVO ACREDITA', que e a parte do documento onde o partido lista suas posicoes; o proprio slide acrescenta 'E voce nao precisa concordar com tudo!'. NAO e o programa registrado no TSE: a pagina 'Nossos posicionamentos' do site oficial esta com o link quebrado (HTTP 404) e o site avisa que esta 'em versao Beta'. O documento nao trata de saude, habitacao, mobilidade, meio ambiente nem tecnologia; em seguranca publica ele so diz que o Estado deve ter 'foco no essencial: educacao, seguranca e saude', que e prioridade de gasto e nao proposta. Essas ausencias ficam como ausencias."
   }
  ],
  "_pendencias_de_download": {
