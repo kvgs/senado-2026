@@ -159,6 +159,15 @@ def texto(corpo: bytes, tipo: str) -> str:
     # "Warning: Use of undefined constant..." no meio do conteudo, e isso entraria
     # na coleta como se fosse texto da candidatura.
     s = re.sub(r"^\s*(Warning|Notice|Deprecated|Fatal error)\s*:.*$", "", s, flags=re.M)
+    # CPF E TITULO NAO ENTRAM NO ACERVO, mesmo publicados pela propria pessoa.
+    # Um candidato imprime o proprio CPF no site, convidando quem quiser a
+    # conferir — e o numero veio junto na coleta. A regra do projeto e sobre o
+    # que ESTE acervo redistribui, e nao sobre o que a fonte publicou: nao cabe
+    # a nos multiplicar identificador de ninguem. Substituido, e o motivo fica
+    # legivel no lugar.
+    s = re.sub(r"\b\d{3}\.\d{3}\.\d{3}-\d{2}\b", "[CPF removido pela coleta]", s)
+    s = re.sub(r"\bt[ií]tulo\s+(de\s+)?eleitor(al)?\s*:?\s*\d[\d\s.-]{9,}",
+               "[título eleitoral removido pela coleta]", s, flags=re.I)
     s = re.sub(r"[ \t\xa0]+", " ", s)
     return re.sub(r"\n\s*\n\s*\n+", "\n\n", s).strip()
 

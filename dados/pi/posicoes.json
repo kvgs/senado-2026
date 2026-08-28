@@ -828,6 +828,160 @@
     "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
    },
    "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pi-2026-ciro-nogueira-site-001",
+   "id_tema": "t3",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-pi-2026-ciro-nogueira",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-pi-2026-ciro-nogueira",
+   "citacao_literal": "Atuar por iniciativas de descentralização da saúde que possam fixar profissionais de saúde nas pequenas comunidades, a fim de garantir que o atendimento presencial seja uma realidade.",
+   "texto": "Compromete-se a descentralizar a saúde para fixar profissionais em pequenas comunidades e garantir atendimento presencial.",
+   "url_especifica": "https://tocomciro111.com/metas.html",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pi-2026-ciro-nogueira-site-002",
+   "id_tema": "t1",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-pi-2026-ciro-nogueira",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-pi-2026-ciro-nogueira",
+   "citacao_literal": "Atuar por mecanismos que garantam a asfixia financeira de facções criminosas, que aterrorizam famílias em todo o estado. Apoiar o policiamento de precisão, com o uso de câmeras de monitoramento para antecipar crimes nos municípios do interior e na capital.",
+   "texto": "Propõe asfixia financeira de facções e policiamento com câmeras de monitoramento no interior e na capital.",
+   "url_especifica": "https://tocomciro111.com/metas.html",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pi-2026-ciro-nogueira-site-003",
+   "id_tema": "t2",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-pi-2026-ciro-nogueira",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-pi-2026-ciro-nogueira",
+   "citacao_literal": "Valorizar os professores e fornecer suporte material necessário, como ônibus escolares, salas climatizadas e melhor acesso à internet.",
+   "texto": "Promete valorização dos professores e suporte material: ônibus escolares, salas climatizadas e acesso à internet.",
+   "url_especifica": "https://tocomciro111.com/metas.html",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pi-2026-ciro-nogueira-site-004",
+   "id_tema": "t5",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-pi-2026-ciro-nogueira",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-pi-2026-ciro-nogueira",
+   "citacao_literal": "Aumentar significativamente a oferta de água no semiárido com a construção de adutoras, passagens molhadas e barragens, para garantir água na torneira dos piauienses.",
+   "texto": "Propõe adutoras, passagens molhadas e barragens para ampliar a oferta de água no semiárido.",
+   "url_especifica": "https://tocomciro111.com/metas.html",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pi-2026-ciro-nogueira-site-005",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-pi-2026-ciro-nogueira",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-pi-2026-ciro-nogueira",
+   "citacao_literal": "Aumentar a capacidade produtiva com linhas de crédito, transferência de tecnologias da Embrapa, mecanização e assistência técnica constante e envio de recursos para aquisição de maquinário agrícola dos produtores.",
+   "texto": "Propõe crédito, tecnologia da Embrapa, mecanização e assistência técnica para a agricultura familiar.",
+   "url_especifica": "https://tocomciro111.com/metas.html",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pi-2026-ciro-nogueira-site-006",
+   "id_tema": "t7",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-pi-2026-ciro-nogueira",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-pi-2026-ciro-nogueira",
+   "citacao_literal": "Oferecer linhas de crédito populares para que a população possa fazer a reforma e a ampliação de suas casas.",
+   "texto": "Propõe linhas de crédito populares para reforma e ampliação de casas.",
+   "url_especifica": "https://tocomciro111.com/metas.html",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-pi-2026-ciro-nogueira-site-007",
+   "id_tema": "t6",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-pi-2026-ciro-nogueira",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-pi-2026-ciro-nogueira",
+   "citacao_literal": "Estimular o uso de energias limpas e baratas, como a solar e a eólica.",
+   "texto": "Propõe estimular energia solar e eólica.",
+   "url_especifica": "https://tocomciro111.com/metas.html",
+   "data_referencia": "2026-08-28",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
   }
  ]
 }

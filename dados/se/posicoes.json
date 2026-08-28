@@ -367,6 +367,28 @@
     "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
    },
    "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-se-2026-eduardo-amorim-site-002",
+   "id_tema": "t2",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-se-2026-eduardo-amorim",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-se-2026-eduardo-amorim",
+   "citacao_literal": "Eduardo Amorim destacou que Nossa Senhora do Socorro precisa de uma universidade pública.",
+   "texto": "Defende a criação de uma universidade pública em Nossa Senhora do Socorro, segundo maior município de Sergipe.",
+   "url_especifica": "https://eduardoamorimsergipe.com.br/2026/08/21/eduardo-amorim-defende-universidade-publica-em-nossa-senhora-do-socorro/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
   }
  ]
 }

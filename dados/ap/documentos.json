@@ -10,6 +10,15 @@
    "consultado_em": "2026-08-28",
    "_ambito": "nacional",
    "_nota": "Programa referendado nas convenções nacional e estaduais do PCO, publicado no site do partido. A própria página diz que o partido 'não participa das eleições para fazer promessas, mas para fazer da campanha uma tribuna' — a natureza do documento fica assim."
+  },
+  {
+   "id_documento": "doc-site-sen-ap-2026-alliny-serrao",
+   "tipo": "site_de_candidatura",
+   "titulo": "Alliny Serrão | Site Oficial",
+   "url": "https://allinyserrao.com.br",
+   "publicado_em": null,
+   "consultado_em": "2026-08-27",
+   "_origem": "Endereco declarado pela propria candidatura no registro no TSE (base de redes sociais 2026)."
   }
  ]
 }

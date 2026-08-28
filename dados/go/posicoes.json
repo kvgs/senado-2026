@@ -552,6 +552,72 @@
     "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
    },
    "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-go-2026-gustavo-mendanha-site-001",
+   "id_tema": "t10",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-go-2026-gustavo-mendanha",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-go-2026-gustavo-mendanha",
+   "citacao_literal": "Municípios fortes Defender os municípios goianos em Brasília com a experiência de quem já esteve do outro lado da mesa, administrando uma cidade grande.",
+   "texto": "Coloca a defesa dos municípios goianos em Brasília como primeira prioridade, apoiada na experiência de prefeito.",
+   "url_especifica": "https://www.gustavomendanha.com.br/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-go-2026-gustavo-mendanha-site-002",
+   "id_tema": "t1",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-go-2026-gustavo-mendanha",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-go-2026-gustavo-mendanha",
+   "citacao_literal": "Segurança pública Defender políticas que preservem os avanços de Goiás na segurança e deem condições para o Estado proteger as famílias.",
+   "texto": "Diz que quer preservar os avanços de Goiás em segurança e dar condições ao Estado para proteger as famílias.",
+   "url_especifica": "https://www.gustavomendanha.com.br/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-go-2026-gustavo-mendanha-site-003",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-go-2026-gustavo-mendanha",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-go-2026-gustavo-mendanha",
+   "citacao_literal": "Emprego e renda Trabalhar por um ambiente favorável a investimentos, qualificação, empreendedorismo e geração de oportunidades.",
+   "texto": "Coloca investimentos, qualificação e empreendedorismo entre as três prioridades declaradas.",
+   "url_especifica": "https://www.gustavomendanha.com.br/",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
   }
  ]
 }

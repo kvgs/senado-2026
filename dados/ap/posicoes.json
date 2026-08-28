@@ -207,6 +207,116 @@
     "ressalva": "Proposta do partido, nao da candidatura. O documento usa titulo em caixa alta; a caixa foi normalizada para leitura, as palavras nao."
    },
    "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-ap-2026-alliny-serrao-site-001",
+   "id_tema": "t9",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-ap-2026-alliny-serrao",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-ap-2026-alliny-serrao",
+   "citacao_literal": "Lei nº 3.311/2025 Código Amapaense da Mulher Consolida o Código Amapaense da Mulher – CAM, fortalecendo os direitos, a proteção e as políticas públicas voltadas às mulheres.",
+   "texto": "Autora da lei que consolida o Código Amapaense da Mulher, reunindo direitos, proteção e políticas públicas para mulheres.",
+   "url_especifica": "https://allinyserrao.com.br",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-ap-2026-alliny-serrao-site-002",
+   "id_tema": "t1",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-ap-2026-alliny-serrao",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-ap-2026-alliny-serrao",
+   "citacao_literal": "Lei nº 3.201/2025 Box Lilás Atendimento especializado, humanizado e prioritário para mulheres vítimas de violência.",
+   "texto": "Autora da lei do Box Lilás, de atendimento especializado e prioritário a mulheres vítimas de violência.",
+   "url_especifica": "https://allinyserrao.com.br",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-ap-2026-alliny-serrao-site-003",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-ap-2026-alliny-serrao",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-ap-2026-alliny-serrao",
+   "citacao_literal": "Lei nº 3.299/2025 Mulheres do Agro 4.0 Institui a Política Estadual de Incentivo às Mulheres do Agro 4.0, promovendo inovação, capacitação e empreendedorismo no campo.",
+   "texto": "Autora da lei que institui a Política Estadual de Incentivo às Mulheres do Agro 4.0.",
+   "url_especifica": "https://allinyserrao.com.br",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-ap-2026-alliny-serrao-site-004",
+   "id_tema": "t3",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-ap-2026-alliny-serrao",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-ap-2026-alliny-serrao",
+   "citacao_literal": "Lei nº 3.242/2025 Menopausa e Climatério Cria programa estadual de apoio, acolhimento e assistência às mulheres durante a menopausa e o climatério.",
+   "texto": "Autora da lei que cria programa estadual de apoio a mulheres na menopausa e no climatério.",
+   "url_especifica": "https://allinyserrao.com.br",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-ap-2026-alliny-serrao-site-005",
+   "id_tema": "t9",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-ap-2026-alliny-serrao",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-ap-2026-alliny-serrao",
+   "citacao_literal": "Lei nº 2.750/2022 Isonomia nas Premiações Garante igualdade entre homens e mulheres nas premiações de competições esportivas e culturais financiadas com recursos públicos.",
+   "texto": "Autora da lei que garante igualdade entre homens e mulheres nas premiações esportivas e culturais com recurso público.",
+   "url_especifica": "https://allinyserrao.com.br",
+   "data_referencia": "2026-08-27",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-28",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-08-28"
   }
  ]
 }

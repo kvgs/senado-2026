@@ -1,0 +1,25 @@
+{
+  "posicoes": [
+    {
+      "id_candidatura": "sen-go-2026-gustavo-mendanha",
+      "tema": "t10",
+      "url": "https://www.gustavomendanha.com.br/",
+      "resumo": "Coloca a defesa dos municípios goianos em Brasília como primeira prioridade, apoiada na experiência de prefeito.",
+      "trecho": "Municípios fortes Defender os municípios goianos em Brasília com a experiência de quem já esteve do outro lado da mesa, administrando uma cidade grande."
+    },
+    {
+      "id_candidatura": "sen-go-2026-gustavo-mendanha",
+      "tema": "t1",
+      "url": "https://www.gustavomendanha.com.br/",
+      "resumo": "Diz que quer preservar os avanços de Goiás em segurança e dar condições ao Estado para proteger as famílias.",
+      "trecho": "Segurança pública Defender políticas que preservem os avanços de Goiás na segurança e deem condições para o Estado proteger as famílias."
+    },
+    {
+      "id_candidatura": "sen-go-2026-gustavo-mendanha",
+      "tema": "t4",
+      "url": "https://www.gustavomendanha.com.br/",
+      "resumo": "Coloca investimentos, qualificação e empreendedorismo entre as três prioridades declaradas.",
+      "trecho": "Emprego e renda Trabalhar por um ambiente favorável a investimentos, qualificação, empreendedorismo e geração de oportunidades."
+    }
+  ]
+}
