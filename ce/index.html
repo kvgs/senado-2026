@@ -266,6 +266,11 @@
   .quem .part{color:var(--s-declaracao)}
   .quem .nrev{color:var(--muted);font-weight:600;font-size:.72rem;letter-spacing:.08em;
     text-transform:uppercase}
+  /* Quando o selo vira link, precisa PARECER clicavel: sublinhado, e nao so cor
+     — cor sozinha nao chega a quem nao distingue as duas. */
+  a.nrev{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+  a.nrev:hover{color:var(--ink)}
+  a.nrev:focus-visible{outline:2px solid var(--acento);outline-offset:2px;color:var(--ink)}
   blockquote{margin:0 0 9px;padding:2px 0 2px 14px;border-left:3px solid var(--rule-strong);
     font-size:1.02rem;color:var(--ink)}
   .txt{font-size:.96rem;color:var(--ink-2)}
@@ -822,10 +827,8 @@ document.getElementById('atualizado').textContent=D.atualizado;
        ajudar a decidir seria desfazer a própria entrega. O honesto é separar o
        que a máquina garante do que só uma pessoa resolve. */
     h='<b>Ainda não revisado por uma pessoa.</b> As '+t.posicoes+' informações desta página '+
-      'foram levantadas automaticamente. Cada citação foi conferida palavra por palavra '+
-      'contra a página de origem, e traz o endereço ao lado. O que ainda <em>não</em> foi '+
-      'conferido por gente: se o trecho representa o conjunto do que a candidatura defende, '+
-      'e se a página mudou depois da coleta. ';
+      'foram levantadas automaticamente e cada uma traz o link da sua fonte — '+
+      '<strong>confira lá antes de usar como referência</strong>. ';
   } else if(falta){
     h='<b>Revisão em andamento.</b> '+t.revisadas+' de '+t.posicoes+' informações desta página '+
       'já foram conferidas por uma pessoa contra a fonte original; as outras '+falta+
@@ -907,7 +910,15 @@ function proposta(i){
   let h='<div class="prop"><p class="quem">';
   h+= i.de_partido ? '<span class="part">Proposta do '+esc(i.partido)+', não da candidatura</span>'
                    : '<span>Proposta própria</span>';
-  if(!i.revisado) h+='<span class="nrev">não revisado</span>';
+  /* O aviso carrega a acao. "Não revisado" sozinho conta um problema e deixa o
+     leitor sem saída; com o link, a mesma linha diz o que fazer a respeito — e a
+     fonte específica só existe aqui, no item, não no aviso do topo da página. */
+  if(!i.revisado){
+    h+= i.url ? '<a class="nrev" href="'+esc(i.url)+'" target="_blank" rel="noopener">'+
+                'não revisado — confira a fonte<span class="vis-oculto"> '+
+                '(abre em nova aba)</span></a>'
+              : '<span class="nrev">não revisado</span>';
+  }
   h+='</p>';
   if(i.citacao) h+='<blockquote>“'+esc(i.citacao)+'”</blockquote>';
   if(i.texto)   h+='<p class="txt">'+esc(i.texto)+'</p>';
