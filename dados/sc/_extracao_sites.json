@@ -1,0 +1,42 @@
+{
+  "posicoes": [
+    {
+      "id_posicao": "pos-sen-sc-2026-afranio-boppre-site-001",
+      "id_candidatura": "sen-sc-2026-afranio-boppre",
+      "atribuido_a_id": "sen-sc-2026-afranio-boppre",
+      "atribuido_a_tipo": "candidatura",
+      "tema": "t3",
+      "trecho": "Compromisso com a defesa do SUS, com a qualidade dos postos de saúde e valorização dos seus profissionais.",
+      "resumo": "Declara compromisso com a defesa do SUS e a valorizacao dos profissionais da rede.",
+      "url": "https://afranio.org.br/acao-parlamentar/nossa-atuacao/",
+      "titulo_da_pagina": "Nossa atuação - Afrânio Boppré",
+      "selo": "declaracao_do_candidato",
+      "estado_cobertura": "A",
+      "coletado_em": "2026-08-27",
+      "extraido_em": "2026-08-28",
+      "extraido_por": "modelo",
+      "revisado_por_humano": false,
+      "_nota_selo": "Declaracao da candidatura no site que ela declarou ao TSE. Prova que publicou isto, nao que seja verdade.",
+      "_como_conferir": "Abra a URL e procure o trecho. Ele foi conferido palavra por palavra contra o texto coletado em 2026-08-27; se a pagina mudou desde entao, a conferencia manda."
+    },
+    {
+      "id_posicao": "pos-sen-sc-2026-afranio-boppre-site-002",
+      "id_candidatura": "sen-sc-2026-afranio-boppre",
+      "atribuido_a_id": "sen-sc-2026-afranio-boppre",
+      "atribuido_a_tipo": "candidatura",
+      "tema": "t6",
+      "trecho": "Compromisso com a preservação dos ecossistemas, proteção das áreas naturais, combate à especulação imobiliária e promoção de uma Cidade sustentável.",
+      "resumo": "Declara compromisso com preservacao de ecossistemas e combate a especulacao imobiliaria.",
+      "url": "https://afranio.org.br/acao-parlamentar/nossa-atuacao/",
+      "titulo_da_pagina": "Nossa atuação - Afrânio Boppré",
+      "selo": "declaracao_do_candidato",
+      "estado_cobertura": "A",
+      "coletado_em": "2026-08-27",
+      "extraido_em": "2026-08-28",
+      "extraido_por": "modelo",
+      "revisado_por_humano": false,
+      "_nota_selo": "Declaracao da candidatura no site que ela declarou ao TSE. Prova que publicou isto, nao que seja verdade.",
+      "_como_conferir": "Abra a URL e procure o trecho. Ele foi conferido palavra por palavra contra o texto coletado em 2026-08-27; se a pagina mudou desde entao, a conferencia manda."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "posicoes": [
+    {
+      "id_candidatura": "sen-pr-2026-alexandre-curi",
+      "tema": "t4",
+      "url": "https://alexandrecuri.com.br/noticias/em-encontro-com-16-mil-produtoras-curi-reforca-defesa-do-agro-e-apresenta-prioridades-para-brasilia/",
+      "resumo": "Defende renda, credito, tecnologia, internet e infraestrutura para manter o jovem no campo.",
+      "trecho": "Precisamos criar condições para que o filho e a filha do produtor enxerguem futuro no campo. Isso passa por renda, crédito, tecnologia, internet, infraestrutura e qualidade de vida. O jovem não pode precisar abandonar a propriedade para encontrar oportunidade"
+    },
+    {
+      "id_candidatura": "sen-pr-2026-alexandre-curi",
+      "tema": "t4",
+      "url": "https://alexandrecuri.com.br/noticias/em-encontro-com-16-mil-produtoras-curi-reforca-defesa-do-agro-e-apresenta-prioridades-para-brasilia/",
+      "resumo": "Quer defender a producao agropecuaria do Parana e fortalecer as cooperativas.",
+      "trecho": "Quero estar em Brasília para defender quem produz aqui, fortalecer nossas cooperativas e garantir que o Paraná tenha voz nas decisões que afetam o campo."
+    },
+    {
+      "id_candidatura": "sen-pr-2026-deltan-dallagnol",
+      "tema": "t10",
+      "url": "https://deltandallagnol.com.br/plataforma/",
+      "resumo": "Defende que condenados por corrupcao percam dinheiro, cargo e liberdade.",
+      "trecho": "O corrupto precisa perder o dinheiro, o cargo e a liberdade, e precisa saber que a lei será cumprida."
+    },
+    {
+      "id_candidatura": "sen-pr-2026-deltan-dallagnol",
+      "tema": "t10",
+      "url": "https://deltandallagnol.com.br/plataforma/",
+      "resumo": "Coloca o Senado como instancia de fiscalizacao e limite aos demais Poderes.",
+      "trecho": "O Senado existe para fiscalizar, sabatinar, impor limites e proteger o equilíbrio entre os Poderes."
+    },
+    {
+      "id_candidatura": "sen-pr-2026-cristina-graeml",
+      "tema": "t10",
+      "url": "https://cristinagraeml.com.br",
+      "resumo": "Defende fiscalizacao de ocupantes de cargo publico e liberdade de expressao.",
+      "trecho": "Defendo a fiscalização de quem ocupa cargos públicos e a liberdade de expressão, porque sei, como jornalista, o que significa ser impedida de falar."
+    },
+    {
+      "id_candidatura": "sen-pr-2026-cristina-graeml",
+      "tema": "t10",
+      "url": "https://cristinagraeml.com.br",
+      "resumo": "Propoe atuacao municipalista, representando prefeitos, vereadores e o interior.",
+      "trecho": "quero ser, em Brasília, a voz de prefeitos, vereadores e moradores do interior — uma senadora municipalista, de fato."
+    }
+  ]
+}

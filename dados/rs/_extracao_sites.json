@@ -1,0 +1,61 @@
+{
+  "posicoes": [
+    {
+      "id_posicao": "pos-sen-rs-2026-marcel-van-hattem-site-001",
+      "id_candidatura": "sen-rs-2026-marcel-van-hattem",
+      "atribuido_a_id": "sen-rs-2026-marcel-van-hattem",
+      "atribuido_a_tipo": "candidatura",
+      "tema": "t1",
+      "trecho": "Garantir a vida da população é o primeiro dever do Estado para com o pagador de impostos! Além disso, defendo que é direito do cidadão proteger sua propriedade e sua família.",
+      "resumo": "Coloca a garantia da vida como primeiro dever do Estado e defende o direito de proteger propriedade e familia.",
+      "url": "https://www.marcelvanhattem.com.br/",
+      "titulo_da_pagina": "Marcel van Hattem – Deputado Federal",
+      "selo": "declaracao_do_candidato",
+      "estado_cobertura": "A",
+      "coletado_em": "2026-08-27",
+      "extraido_em": "2026-08-28",
+      "extraido_por": "modelo",
+      "revisado_por_humano": false,
+      "_nota_selo": "Declaracao da candidatura no site que ela declarou ao TSE. Prova que publicou isto, nao que seja verdade.",
+      "_como_conferir": "Abra a URL e procure o trecho. Ele foi conferido palavra por palavra contra o texto coletado em 2026-08-27; se a pagina mudou desde entao, a conferencia manda."
+    },
+    {
+      "id_posicao": "pos-sen-rs-2026-marcel-van-hattem-site-002",
+      "id_candidatura": "sen-rs-2026-marcel-van-hattem",
+      "atribuido_a_id": "sen-rs-2026-marcel-van-hattem",
+      "atribuido_a_tipo": "candidatura",
+      "tema": "t4",
+      "trecho": "Seu compromisso com a redução de impostos e simplificação tributária busca estimular o crescimento econômico, enquanto o engajamento direto com a sociedade civil reflete sua convicção na participação ativa dos cidadãos.",
+      "resumo": "O site descreve compromisso com reducao de impostos e simplificacao tributaria.",
+      "url": "https://www.marcelvanhattem.com.br/",
+      "titulo_da_pagina": "Marcel van Hattem – Deputado Federal",
+      "selo": "declaracao_do_candidato",
+      "estado_cobertura": "A",
+      "coletado_em": "2026-08-27",
+      "extraido_em": "2026-08-28",
+      "extraido_por": "modelo",
+      "revisado_por_humano": false,
+      "_nota_selo": "Declaracao da candidatura no site que ela declarou ao TSE. Prova que publicou isto, nao que seja verdade.",
+      "_como_conferir": "Abra a URL e procure o trecho. Ele foi conferido palavra por palavra contra o texto coletado em 2026-08-27; se a pagina mudou desde entao, a conferencia manda."
+    },
+    {
+      "id_posicao": "pos-sen-rs-2026-frederico-antunes-site-003",
+      "id_candidatura": "sen-rs-2026-frederico-antunes",
+      "atribuido_a_id": "sen-rs-2026-frederico-antunes",
+      "atribuido_a_tipo": "candidatura",
+      "tema": "t4",
+      "trecho": "Privatizar o Banrisul é mais do que vender. É fechar! Quero ser Senador pra defender a nossa economia, a nossa gente.",
+      "resumo": "Posiciona-se contra a privatizacao do Banrisul, citando o lucro e a participacao do estado.",
+      "url": "https://fredericoantunes.com.br",
+      "titulo_da_pagina": "Frederico Antunes | Candidato ao Senado pelo RS",
+      "selo": "declaracao_do_candidato",
+      "estado_cobertura": "A",
+      "coletado_em": "2026-08-27",
+      "extraido_em": "2026-08-28",
+      "extraido_por": "modelo",
+      "revisado_por_humano": false,
+      "_nota_selo": "Declaracao da candidatura no site que ela declarou ao TSE. Prova que publicou isto, nao que seja verdade.",
+      "_como_conferir": "Abra a URL e procure o trecho. Ele foi conferido palavra por palavra contra o texto coletado em 2026-08-27; se a pagina mudou desde entao, a conferencia manda."
+    }
+  ]
+}
