@@ -469,7 +469,10 @@ dados["site_url"] = _sitecfg.get("url", "")
 _email = ((ref.get("contato") or {}).get("email") or "").strip()
 if not _email:
     raise SystemExit("dados/referencia.json nao tem contato.email — o site ficaria sem contato")
-_assunto = urllib.parse.quote("Senado SP 2026 \u2014 feedback")
+# O assunto trazia "SP" fixo, e as 27 paginas mandavam e-mail dizendo Sao Paulo.
+# Quem escreve do Acre nomeando Sao Paulo no assunto obriga quem le a adivinhar
+# de onde veio \u2014 e o assunto existe justamente para nao precisar adivinhar.
+_assunto = urllib.parse.quote(f"Senado {_UF} 2026 \u2014 feedback")
 # Marcadores de UF no HTML estatico (titulo, cabecalho, explicador). Cada um
 # tem de aparecer, senao o site sai dizendo o estado errado ou nenhum.
 for _m, _v in (("{{UF_NOME}}", dados["uf"]["nome"]), ("{{UF_POR}}", dados["uf"]["por"]),
