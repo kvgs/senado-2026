@@ -383,9 +383,11 @@ def montar(uf: str) -> tuple[list[dict], set, dict, list[str]]:
             "_bens_ausente": "Esta no conjunto 'bens de candidato' do TSE, ainda nao baixado.",
             "suplentes": sup,
             "situacao_registro": [],
-            "_situacao_ausente": ("A base de candidatos traz DS_SITUACAO_CANDIDATURA como "
-                                  "'#NE' (nao especificado) neste extrato. Registrar uma "
-                                  "situacao sem ter lido seria inventar."),
+            "_situacao_ausente": (
+                # Este texto APARECE na ficha de cada candidatura, e nao so no
+                # arquivo: e a linha "Situacao do registro". Sem acento, sai
+                # capenga em 315 paginas de um site em portugues.
+                "A base de candidatos do TSE traz DS_SITUACAO_CANDIDATURA como '#NE' (não especificado) neste extrato. Registrar uma situação sem ter lido seria inventar."),
             "mandatos_anteriores": [],
             "_mandatos_ausente": ("Exige a serie historica de candidaturas do TSE, outro "
                                   "conjunto. Vazio aqui NAO significa primeira eleicao."),

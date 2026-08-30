@@ -28,18 +28,24 @@
         "Kamila"
       ],
       "situacao_registro": [],
-      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "_situacao_ausente": "A base de candidatos do TSE traz DS_SITUACAO_CANDIDATURA como '#NE' (não especificado) neste extrato. Registrar uma situação sem ter lido seria inventar.",
       "mandatos_anteriores": [],
       "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
       "contato": {
         "email": null,
         "email_fonte": null,
         "email_tipo": null,
-        "instagram": null,
-        "redes": [],
+        "instagram": "@davidavinofilho",
+        "redes": [
+          "https://www.instagram.com/davidavinofilho",
+          "https://www.facebook.com/davidavinofilho",
+          "https://www.threads.net/@davidavinofilho",
+          "https://www.tiktok.com/@davidavinofilho"
+        ],
         "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "redes_consultado_em": "2026-08-27",
-        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+        "redes_consultado_em": "2026-08-30",
+        "_email_indisponivel": "O TSE não divulga e-mail de candidato: a coluna DS_EMAIL traz \"NÃO DIVULGÁVEL\" em todas as linhas. Ausência da fonte, não da nossa busca.",
+        "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
       },
       "foto": {
         "arquivo": "fotos-candidatos/20002548147.jpg",
@@ -50,12 +56,11 @@
         "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
       },
       "situacao_parlamentar": [],
-      "_conferir_contato": [
-        "\"INSTAGRAM E FACEBOOK:  @DAVIDAVINOFILHO\" — handle como texto, nao entra como contato",
-        "\"THREADS: DAVIDAVINOFILHO\" — handle como texto, nao entra como contato",
-        "\"TIKTOK: DAVIDAVINOFILHO\" — handle como texto, nao entra como contato"
-      ],
-      "_contato_ausente": "A candidatura declarou 3 endereco(s) ao TSE e nenhum e utilizavel como canal: ver _conferir_contato. Nao e ausencia de declaracao, e declaracao que nao da contato."
+      "_contato_recuperado": [
+        "\"INSTAGRAM E FACEBOOK:  @DAVIDAVINOFILHO\" — handle declarado como texto, com a rede nomeada ao lado: https://www.instagram.com/davidavinofilho, https://www.facebook.com/davidavinofilho",
+        "\"THREADS: DAVIDAVINOFILHO\" — handle declarado como texto, com a rede nomeada ao lado: https://www.threads.net/@davidavinofilho",
+        "\"TIKTOK: DAVIDAVINOFILHO\" — handle declarado como texto, com a rede nomeada ao lado: https://www.tiktok.com/@davidavinofilho"
+      ]
     },
     {
       "id_candidatura": "sen-al-2026-arthur-lira",
@@ -81,7 +86,7 @@
         "Gustavo Feijó"
       ],
       "situacao_registro": [],
-      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "_situacao_ausente": "A base de candidatos do TSE traz DS_SITUACAO_CANDIDATURA como '#NE' (não especificado) neste extrato. Registrar uma situação sem ter lido seria inventar.",
       "mandatos_anteriores": [],
       "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
       "contato": {
@@ -96,12 +101,12 @@
           "https://www.threads.com/@oficialarthurlira",
           "https://www.tiktok.com/@arthurliraoficial",
           "https://www.youtube.com/@oficialarthurlira",
-          "https://x.com/ArthurLira_ * TikTok"
+          "https://x.com/ArthurLira_"
         ],
         "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "redes_consultado_em": "2026-08-27",
+        "redes_consultado_em": "2026-08-30",
         "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+        "_email_indisponivel": "O TSE não divulga e-mail de candidato: a coluna DS_EMAIL traz \"NÃO DIVULGÁVEL\" em todas as linhas. Ausência da fonte, não da nossa busca."
       },
       "foto": {
         "arquivo": "fotos-candidatos/20002553272.jpg",
@@ -122,6 +127,9 @@
           "_fonte": "Camara dos Deputados, dados abertos v2",
           "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
         }
+      ],
+      "_contato_recuperado": [
+        "\"https://x.com/ArthurLira_ * TikTok\" — endereço recuperado do texto declarado: https://x.com/ArthurLira_"
       ]
     },
     {
@@ -150,7 +158,7 @@
         "Sabino"
       ],
       "situacao_registro": [],
-      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "_situacao_ausente": "A base de candidatos do TSE traz DS_SITUACAO_CANDIDATURA como '#NE' (não especificado) neste extrato. Registrar uma situação sem ter lido seria inventar.",
       "mandatos_anteriores": [],
       "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
       "contato": {
@@ -168,11 +176,11 @@
           "HTTPS://RENANCALHEIROS.COM.BR/"
         ],
         "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "redes_consultado_em": "2026-08-27",
+        "redes_consultado_em": "2026-08-30",
         "site": "HTTPS://RENANCALHEIROS.COM.BR/",
         "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
         "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+        "_email_indisponivel": "O TSE não divulga e-mail de candidato: a coluna DS_EMAIL traz \"NÃO DIVULGÁVEL\" em todas as linhas. Ausência da fonte, não da nossa busca."
       },
       "foto": {
         "arquivo": "fotos-candidatos/20002553727.jpg",
@@ -221,7 +229,7 @@
         "Cel. Camila Paiva"
       ],
       "situacao_registro": [],
-      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "_situacao_ausente": "A base de candidatos do TSE traz DS_SITUACAO_CANDIDATURA como '#NE' (não especificado) neste extrato. Registrar uma situação sem ter lido seria inventar.",
       "mandatos_anteriores": [],
       "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
       "contato": {
@@ -235,9 +243,9 @@
           "HTTPS://WWW.THREADS.COM/@DR_WANDERLEY"
         ],
         "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "redes_consultado_em": "2026-08-27",
+        "redes_consultado_em": "2026-08-30",
         "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+        "_email_indisponivel": "O TSE não divulga e-mail de candidato: a coluna DS_EMAIL traz \"NÃO DIVULGÁVEL\" em todas as linhas. Ausência da fonte, não da nossa busca."
       },
       "foto": {
         "arquivo": "fotos-candidatos/20002553726.jpg",
@@ -273,7 +281,7 @@
         "Jeferson Gonçalves"
       ],
       "situacao_registro": [],
-      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "_situacao_ausente": "A base de candidatos do TSE traz DS_SITUACAO_CANDIDATURA como '#NE' (não especificado) neste extrato. Registrar uma situação sem ter lido seria inventar.",
       "mandatos_anteriores": [],
       "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
       "contato": {
@@ -282,7 +290,7 @@
         "email_tipo": null,
         "instagram": null,
         "redes": [],
-        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+        "_email_indisponivel": "O TSE não divulga e-mail de candidato: a coluna DS_EMAIL traz \"NÃO DIVULGÁVEL\" em todas as linhas. Ausência da fonte, não da nossa busca."
       },
       "foto": {
         "arquivo": "fotos-candidatos/20002552524.jpg",
@@ -293,7 +301,7 @@
         "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
       },
       "situacao_parlamentar": [],
-      "_contato_ausente": "A candidatura nao declarou nenhuma URL na base de redes sociais do TSE, e o TSE nao divulga e-mail. Ausencia da fonte, nao da nossa busca."
+      "_contato_ausente": "A candidatura não declarou nenhuma URL na base de redes sociais do TSE, e o TSE não divulga e-mail. Ausência da fonte, não da nossa busca."
     },
     {
       "id_candidatura": "sen-al-2026-marina-jhc",
@@ -319,7 +327,7 @@
         "Ronaldo Lessa"
       ],
       "situacao_registro": [],
-      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "_situacao_ausente": "A base de candidatos do TSE traz DS_SITUACAO_CANDIDATURA como '#NE' (não especificado) neste extrato. Registrar uma situação sem ter lido seria inventar.",
       "mandatos_anteriores": [],
       "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
       "contato": {
@@ -329,16 +337,16 @@
         "instagram": "@marina.candia",
         "redes": [
           "https://k.kwai.com/u/@marinajhc/yq3bC0ab",
-          "https://open.spotify.com/user/31lolgz77fbwuttf6mzqspvdv2uy?si=e_QYx65WQoux3eT6Q4",
+          "https://open.spotify.com/user/31lolgz77fbwuttf6mzqspvdv2uy",
           "https://www.facebook.com/marina.candia.16/?locale=pt_BR",
-          "https://www.instagram.com/marina.candia?igsh=MWNpOGxtZ2dqc3V5Yg==",
+          "https://www.instagram.com/marina.candia",
           "https://www.tiktok.com/@marinacandiaf?_r=1&_t=ZS-98u2Ime27KT",
-          "https://youtube.com/@marina.candia?si=hjSY9hmhEjLaKZ6e"
+          "https://youtube.com/@marina.candia"
         ],
         "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "redes_consultado_em": "2026-08-27",
+        "redes_consultado_em": "2026-08-30",
         "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+        "_email_indisponivel": "O TSE não divulga e-mail de candidato: a coluna DS_EMAIL traz \"NÃO DIVULGÁVEL\" em todas as linhas. Ausência da fonte, não da nossa busca."
       },
       "foto": {
         "arquivo": "fotos-candidatos/20002553711.jpg",
@@ -374,7 +382,7 @@
         "Professor Nivaldo Mota"
       ],
       "situacao_registro": [],
-      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "_situacao_ausente": "A base de candidatos do TSE traz DS_SITUACAO_CANDIDATURA como '#NE' (não especificado) neste extrato. Registrar uma situação sem ter lido seria inventar.",
       "mandatos_anteriores": [],
       "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
       "contato": {
@@ -386,9 +394,9 @@
           "HTTPS://WWW.INSTAGRAM.COM/ALEXANDREFLEMING_"
         ],
         "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "redes_consultado_em": "2026-08-27",
+        "redes_consultado_em": "2026-08-30",
         "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+        "_email_indisponivel": "O TSE não divulga e-mail de candidato: a coluna DS_EMAIL traz \"NÃO DIVULGÁVEL\" em todas as linhas. Ausência da fonte, não da nossa busca."
       },
       "foto": {
         "arquivo": "fotos-candidatos/20002540197.jpg",

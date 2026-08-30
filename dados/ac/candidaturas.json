@@ -28,7 +28,7 @@
         "Moreira"
       ],
       "situacao_registro": [],
-      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "_situacao_ausente": "A base de candidatos do TSE traz DS_SITUACAO_CANDIDATURA como '#NE' (não especificado) neste extrato. Registrar uma situação sem ter lido seria inventar.",
       "mandatos_anteriores": [],
       "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
       "contato": {
@@ -41,9 +41,9 @@
           "HTTPS://WWW.INSTAGRAM.COM/MARAROCHAACRE"
         ],
         "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "redes_consultado_em": "2026-08-27",
+        "redes_consultado_em": "2026-08-30",
         "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+        "_email_indisponivel": "O TSE não divulga e-mail de candidato: a coluna DS_EMAIL traz \"NÃO DIVULGÁVEL\" em todas as linhas. Ausência da fonte, não da nossa busca."
       },
       "foto": {
         "arquivo": "fotos-candidatos/10002533895.jpg",
@@ -79,7 +79,7 @@
         "Debora Nunes"
       ],
       "situacao_registro": [],
-      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "_situacao_ausente": "A base de candidatos do TSE traz DS_SITUACAO_CANDIDATURA como '#NE' (não especificado) neste extrato. Registrar uma situação sem ter lido seria inventar.",
       "mandatos_anteriores": [],
       "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
       "contato": {
@@ -88,12 +88,12 @@
         "email_tipo": null,
         "instagram": "@gladsoncameli",
         "redes": [
-          "HTTPS://WWW.INSTAGRAM.COM/GLADSONCAMELI?IGSH=MXA3BXG2Y2JJYTBTMW=="
+          "HTTPS://WWW.INSTAGRAM.COM/GLADSONCAMELI"
         ],
         "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "redes_consultado_em": "2026-08-27",
+        "redes_consultado_em": "2026-08-30",
         "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+        "_email_indisponivel": "O TSE não divulga e-mail de candidato: a coluna DS_EMAIL traz \"NÃO DIVULGÁVEL\" em todas as linhas. Ausência da fonte, não da nossa busca."
       },
       "foto": {
         "arquivo": "fotos-candidatos/10002548046.jpg",
@@ -130,7 +130,7 @@
         "Delegada Carla Britto"
       ],
       "situacao_registro": [],
-      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "_situacao_ausente": "A base de candidatos do TSE traz DS_SITUACAO_CANDIDATURA como '#NE' (não especificado) neste extrato. Registrar uma situação sem ter lido seria inventar.",
       "mandatos_anteriores": [],
       "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
       "contato": {
@@ -147,11 +147,11 @@
           "WWW.JORGEVIANA.COM.BR"
         ],
         "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "redes_consultado_em": "2026-08-27",
+        "redes_consultado_em": "2026-08-30",
         "site": "WWW.JORGEVIANA.COM.BR",
         "site_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
         "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+        "_email_indisponivel": "O TSE não divulga e-mail de candidato: a coluna DS_EMAIL traz \"NÃO DIVULGÁVEL\" em todas as linhas. Ausência da fonte, não da nossa busca."
       },
       "foto": {
         "arquivo": "fotos-candidatos/10002536441.jpg",
@@ -187,7 +187,7 @@
         "Livio Veras"
       ],
       "situacao_registro": [],
-      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "_situacao_ausente": "A base de candidatos do TSE traz DS_SITUACAO_CANDIDATURA como '#NE' (não especificado) neste extrato. Registrar uma situação sem ter lido seria inventar.",
       "mandatos_anteriores": [],
       "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
       "contato": {
@@ -196,12 +196,12 @@
         "email_tipo": null,
         "instagram": "@marciobittar_",
         "redes": [
-          "HTTPS://WWW.INSTAGRAM.COM/MARCIOBITTAR_?IGSH=MWI4Z2FXBTZKAZCZOQ=="
+          "HTTPS://WWW.INSTAGRAM.COM/MARCIOBITTAR_"
         ],
         "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "redes_consultado_em": "2026-08-27",
+        "redes_consultado_em": "2026-08-30",
         "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+        "_email_indisponivel": "O TSE não divulga e-mail de candidato: a coluna DS_EMAIL traz \"NÃO DIVULGÁVEL\" em todas as linhas. Ausência da fonte, não da nossa busca."
       },
       "foto": {
         "arquivo": "fotos-candidatos/10002548050.jpg",
@@ -248,7 +248,7 @@
         "Raimundo Moreira"
       ],
       "situacao_registro": [],
-      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "_situacao_ausente": "A base de candidatos do TSE traz DS_SITUACAO_CANDIDATURA como '#NE' (não especificado) neste extrato. Registrar uma situação sem ter lido seria inventar.",
       "mandatos_anteriores": [],
       "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
       "contato": {
@@ -257,12 +257,12 @@
         "email_tipo": null,
         "instagram": "@dr.junior_feitosa",
         "redes": [
-          "HTTPS://WWW.INSTAGRAM.COM/DR.JUNIOR_FEITOSA?IGSH=BZHRYMWZBXVXMMZH"
+          "HTTPS://WWW.INSTAGRAM.COM/DR.JUNIOR_FEITOSA"
         ],
         "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "redes_consultado_em": "2026-08-27",
+        "redes_consultado_em": "2026-08-30",
         "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+        "_email_indisponivel": "O TSE não divulga e-mail de candidato: a coluna DS_EMAIL traz \"NÃO DIVULGÁVEL\" em todas as linhas. Ausência da fonte, não da nossa busca."
       },
       "foto": {
         "arquivo": "fotos-candidatos/10002536710.jpg",
@@ -298,7 +298,7 @@
         "Janaina Queiroz"
       ],
       "situacao_registro": [],
-      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "_situacao_ausente": "A base de candidatos do TSE traz DS_SITUACAO_CANDIDATURA como '#NE' (não especificado) neste extrato. Registrar uma situação sem ter lido seria inventar.",
       "mandatos_anteriores": [],
       "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
       "contato": {
@@ -307,7 +307,7 @@
         "email_tipo": null,
         "instagram": null,
         "redes": [],
-        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+        "_email_indisponivel": "O TSE não divulga e-mail de candidato: a coluna DS_EMAIL traz \"NÃO DIVULGÁVEL\" em todas as linhas. Ausência da fonte, não da nossa busca."
       },
       "foto": {
         "arquivo": "fotos-candidatos/10002544110.jpg",
@@ -318,7 +318,7 @@
         "_origem_tecnica": "Arquivo obtido do espelho publicado por candidatos.nexojornal.com.br, que republica o dataset de fotos do TSE indexado pelo sequencial da candidatura. O TSE devolve 403 a acesso automatizado e o dataset de 2026 nao foi localizado no portal de dados abertos. O credito da imagem e do TSE: o Nexo redistribui, nao origina."
       },
       "situacao_parlamentar": [],
-      "_contato_ausente": "A candidatura nao declarou nenhuma URL na base de redes sociais do TSE, e o TSE nao divulga e-mail. Ausencia da fonte, nao da nossa busca."
+      "_contato_ausente": "A candidatura não declarou nenhuma URL na base de redes sociais do TSE, e o TSE não divulga e-mail. Ausência da fonte, não da nossa busca."
     },
     {
       "id_candidatura": "sen-ac-2026-petecao",
@@ -344,7 +344,7 @@
         "Solino Matos"
       ],
       "situacao_registro": [],
-      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "_situacao_ausente": "A base de candidatos do TSE traz DS_SITUACAO_CANDIDATURA como '#NE' (não especificado) neste extrato. Registrar uma situação sem ter lido seria inventar.",
       "mandatos_anteriores": [],
       "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
       "contato": {
@@ -357,9 +357,9 @@
           "HTTPS://WWW.INSTAGRAM.COM/SENADORPETECAO/"
         ],
         "redes_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "redes_consultado_em": "2026-08-27",
+        "redes_consultado_em": "2026-08-30",
         "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)",
-        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+        "_email_indisponivel": "O TSE não divulga e-mail de candidato: a coluna DS_EMAIL traz \"NÃO DIVULGÁVEL\" em todas as linhas. Ausência da fonte, não da nossa busca."
       },
       "foto": {
         "arquivo": "fotos-candidatos/10002535804.jpg",
@@ -407,7 +407,7 @@
         "Vando Torquato"
       ],
       "situacao_registro": [],
-      "_situacao_ausente": "A base de candidatos traz DS_SITUACAO_CANDIDATURA como '#NE' (nao especificado) neste extrato. Registrar uma situacao sem ter lido seria inventar.",
+      "_situacao_ausente": "A base de candidatos do TSE traz DS_SITUACAO_CANDIDATURA como '#NE' (não especificado) neste extrato. Registrar uma situação sem ter lido seria inventar.",
       "mandatos_anteriores": [],
       "_mandatos_ausente": "Exige a serie historica de candidaturas do TSE, outro conjunto. Vazio aqui NAO significa primeira eleicao.",
       "contato": {
@@ -416,7 +416,7 @@
         "email_tipo": null,
         "instagram": null,
         "redes": [],
-        "_email_indisponivel": "O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz \"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da nossa busca."
+        "_email_indisponivel": "O TSE não divulga e-mail de candidato: a coluna DS_EMAIL traz \"NÃO DIVULGÁVEL\" em todas as linhas. Ausência da fonte, não da nossa busca."
       },
       "foto": {
         "arquivo": "fotos-candidatos/10002544274.jpg",
@@ -438,7 +438,7 @@
           "_casado_por": "nome, conferido unico contra a lista de parlamentares em exercicio"
         }
       ],
-      "_contato_ausente": "A candidatura nao declarou nenhuma URL na base de redes sociais do TSE, e o TSE nao divulga e-mail. Ausencia da fonte, nao da nossa busca."
+      "_contato_ausente": "A candidatura não declarou nenhuma URL na base de redes sociais do TSE, e o TSE não divulga e-mail. Ausência da fonte, não da nossa busca."
     }
   ]
 }

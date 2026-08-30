@@ -14,6 +14,27 @@ uma URL malformada ("https://.www.") e enderecos que nao sao URL nenhuma. Nada
 disso e descartado em silencio: vai para _conferir_contato, porque publicar um
 telefone no lugar de um site e pior do que nao publicar nada.
 
+RECUSAR NAO ERA SUFICIENTE, E RECUSAR DEMAIS TAMBEM ERA ERRO. Duas coisas
+apareceram quando esta parte foi medida:
+
+  1. 49 links iam para o ar sem abrir nada. A linha "FACEBOOK: HTTPS://WWW.
+     FACEBOOK.COM/RUICOSTAOFICIAL" contem "facebook.com", entao era classificada
+     como rede e publicada inteira como href — com o rotulo dentro. O navegador
+     tentava abrir "https://FACEBOOK: HTTPS://...". Atingia Jaques Wagner (10
+     links), Favaro (9), Rui Costa, Pedro Taques e Veneziano (6 cada), entre
+     outros. O conserto foi por ordem: texto com espaco e frase, nao endereco, e
+     passa a ser examinado antes de casar com nome de dominio.
+  2. 27 candidaturas apareciam como "nao declarou nenhuma rede social nem site".
+     Tinham declarado. A recuperacao (ver recuperar()) le a frase e tira dela o
+     endereco, quando da para fazer isso sem escolher nada por conta propria.
+
+O TSE CORTA DS_URL EM 80 CARACTERES: 1.899 enderecos da base tem exatamente 80,
+contra ~140 em cada comprimento vizinho. Quando o corte cai no rastreio
+(?igsh=, ?utm_source=) nao faz falta; quando cai no caminho, o endereco aponta
+para um perfil que nao existe. As duas situacoes sao tratadas de forma diferente.
+
+teste-redes.py trava cada uma dessas decisoes, com as linhas reais da base.
+
 PAGINA DE PARTIDO NAO E SITE DA CANDIDATURA. Treze candidaturas do PCO declaram
 a mesma URL. Isso e material do partido, que no modelo deste site e o estado B —
 outro fato, e nao pode virar "site oficial da candidatura". Vai para
@@ -49,9 +70,8 @@ BASE = acervo.RAIZ / "fontes" / "redes-sociais-candidatos-2026.zip"
 
 FONTE = "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
 
-MOTIVO_EMAIL = ("O TSE nao divulga e-mail de candidato: a coluna DS_EMAIL traz "
-                "\"NAO DIVULGAVEL\" em todas as linhas. Ausencia da fonte, nao da "
-                "nossa busca.")
+# Sai impresso no bloco de canais de cada candidatura.
+MOTIVO_EMAIL = "O TSE não divulga e-mail de candidato: a coluna DS_EMAIL traz \"NÃO DIVULGÁVEL\" em todas as linhas. Ausência da fonte, não da nossa busca."
 
 # Dominios que sao rede social, agregador de links ou hospedagem de midia. Nao
 # sao "site da candidatura", que e onde mora programa e proposta.
@@ -123,13 +143,16 @@ def especie(u: str) -> str:
         return "handle_como_texto"
     if re.search(r"https?://\.", b) or b.count("://") > 1:
         return "malformada"
-    if any(d in b for d in REDES):
-        return "rede"
-    # Texto livre com varias palavras nao e endereco: uma candidatura declarou
-    # dois e-mails e um site na mesma linha, separados por " - ".
+    # TEXTO LIVRE ANTES DE REDE. Estava depois, e por isso "X/TWITTER:
+    # X.COM/JAQUESWAGNER KWAI: KWAI.COM/@... YOUTUBE: YOUTU" virava "rede" — a
+    # linha inteira contem "x.com" — e ia para o site como UM link, que nao abre
+    # nada. Endereco nao tem espaco no meio; se tem, e frase, e frase vai para a
+    # recuperacao, que sabe achar os enderecos dentro dela.
     corpo = re.sub(r"^https?://", "", b)
     if len(corpo.split()) > 1:
         return "texto_livre"
+    if any(d in b for d in REDES):
+        return "rede"
     dominio = corpo.split("/")[0].rstrip(".")
     if not any(dominio.endswith(t) for t in TLD):
         return "dominio_improvavel"
@@ -137,6 +160,199 @@ def especie(u: str) -> str:
     if re.search(r"nome-de-urna|seu-nome|nomecandidato|exemplo", b):
         return "placeholder_do_partido"
     return "site"
+
+
+# ---------------------------------------------------------------- recuperacao
+# 27 candidaturas apareciam no site como "nao declarou nenhuma rede social nem
+# site no registro no TSE". Elas declararam: escreveram "INSTAGRAM: @FULANO" num
+# campo que espera URL, e o classificador recusou. A frase publicada era falsa
+# sobre 27 pessoas reais.
+#
+# O QUE ENTRA: so o que tem PLATAFORMA NOMEADA e HANDLE SEM ESPACO. "INSTAGRAM:
+# @ALCIDESFERNANDES" tem os dois. "FACEBOOK: ALCIDES FERNANDES" tem um nome com
+# espaco, que nao e handle — fica de fora. "@REGISETHUR" sozinho nao diz a rede,
+# e a base do TSE nao tem coluna de plataforma para desempatar — fica de fora.
+#
+# O QUE NUNCA ENTRA: e-mail, telefone e endereco de rua. A pessoa errou o campo,
+# e republicar o dado pessoal dela por causa do erro seria decisao nossa, nao
+# dela.
+PERFIL = {
+    "instagram": "https://www.instagram.com/{h}",
+    "facebook": "https://www.facebook.com/{h}",
+    "threads": "https://www.threads.net/@{h}",
+    "tiktok": "https://www.tiktok.com/@{h}",
+    "x": "https://x.com/{h}",
+    "youtube": "https://www.youtube.com/@{h}",
+    "linkedin": "https://www.linkedin.com/in/{h}",
+    "kwai": "https://www.kwai.com/@{h}",
+}
+# Como as pessoas digitaram de verdade, erros de grafia inclusive.
+APELIDO_REDE = {
+    "instagram": "instagram", "instagran": "instagram", "insta": "instagram",
+    "facebook": "facebook", "face": "facebook", "fb": "facebook",
+    "threads": "threads",
+    "tiktok": "tiktok", "tik tok": "tiktok",
+    "x": "x", "twitter": "x", "twiter": "x",
+    "youtube": "youtube",
+    "linkedin": "linkedin",
+    "kwai": "kwai",
+}
+HANDLE_OK = re.compile(r"^[A-Za-z0-9._\-]{2,40}$")
+RUIDO = {"https", "http", "e", "-", "oficial", "rede", "social", "perfil"}
+# Palavras que a pessoa escreveu DEPOIS de um endereco para explicar o que ele e.
+# Servem de prova de que o espaco ali separava mesmo dois campos.
+ROTULO_DEPOIS = {"fanpage", "pagina", "página", "canal", "site", "twitter", "telegram",
+                 "whatsapp", "spotify", "flickr", "linktree", "bluesky", "bsky"}
+
+# O TSE CORTA DS_URL EM 80 CARACTERES. Medido na base: 1.899 enderecos tem
+# exatamente 80, contra ~140 em cada comprimento vizinho. O corte cai quase
+# sempre no rastreio (?igsh=, ?utm_source=), que nao faz falta — mas quando cai
+# no caminho, o endereco aponta para lugar nenhum.
+CORTE_TSE = 80
+
+# Parametros que as redes grudam no endereco quando alguem usa "compartilhar".
+# Nao identificam o perfil, envelhecem, e sao o pedaco que o corte do TSE come.
+RASTREIO = re.compile(
+    r"^(utm_\w+|igs\w*|si|xmt|s|t|rdid|share_url|hr|wtsid|fbclid|gclid|mibextid)$", re.I)
+
+# Endereco escrito sem http://. So com TLD conhecido: sem a lista, "MILTONCARDOSO
+# .OFICIAL" e "MARIANACARVALHO.RO" virariam dominios, e nao sao.
+SEM_ESQUEMA = re.compile(
+    r"(?:^|[\s:*])((?:www\.)?[a-z0-9][a-z0-9-]{0,60}"
+    r"\.(?:com\.br|org\.br|net\.br|com|net|org|br|me|app|nz|ee|tv)"
+    r"(?:/[^\s*]*)?)", re.I)
+
+
+def arruma_esquema(u: str) -> str:
+    """Esquema digitado errado, letra por letra: "TTPS://K.KWAI.COM/..." perdeu o
+    H e "HTTPS:WWW.TIKTOK.COM/..." perdeu as duas barras. Os dois iam para o site
+    como href e o navegador nao abre nenhum deles."""
+    u = re.sub(r"^(t)(tps?://)", lambda m: ("H" if m.group(1).isupper() else "h") + m.group(0),
+               u, flags=re.I)
+    return re.sub(r"^(https?):(?!//)", r"\1://", u, flags=re.I)
+
+
+def sem_rastreio(u: str) -> str:
+    """Tira so o rastreio da query. Mantem tudo o que identifica a pagina."""
+    if "?" not in u:
+        return u
+    base, _, query = u.partition("?")
+    fica = [p for p in query.split("&") if p and not RASTREIO.match(p.split("=")[0])]
+    return base + ("?" + "&".join(fica) if fica else "")
+
+
+def _tokens(b: str) -> list[str]:
+    b = re.sub(r"tik\s+tok", "tiktok", b, flags=re.I)
+    brutos = (t.strip("@:/.,-*()[] ") for t in re.split(r"[\s:/,*()\[\]]+", b))
+    return [t for t in brutos if t and t.lower() not in RUIDO]
+
+
+def recuperar(u: str, cortada: bool = False) -> tuple[list[str], str]:
+    """Devolve (urls, motivo). Lista vazia significa que nao deu para recuperar
+    sem inventar, e o motivo diz por que — que e o que vai para a tela.
+
+    `cortada` avisa que a linha bateu no limite de 80 do TSE, e portanto o ultimo
+    pedaco dela pode estar pela metade."""
+    b = limpa(u)
+    if not b:
+        return [], "campo vazio no registro"
+    if re.search(r"[\w.+-]+@[\w-]+\.[\w.]+", b) and "instagram.com/" not in b.lower():
+        return [], "e-mail no campo de rede social: dado pessoal que não republicamos"
+    # Telefone digitado com ou sem rotulo ("TELEGRAM 8198377-0777"). Conta digitos
+    # fora de URL: handle costuma ter um ou dois, telefone tem oito ou mais.
+    if "http" not in b.lower() and len(re.findall(r"\d", b)) >= 8:
+        return [], "telefone no campo de rede social: dado pessoal que não republicamos"
+    if re.search(r"nome-de-urna|seu-nome|nomecandidato|exemplo", b, re.I):
+        return [], "modelo do partido que ficou sem preencher"
+
+    # 1) Endereco quase certo: sobra de digitacao em volta de uma URL boa.
+    #    "https://.www.X" tem um ponto a mais; "URL#URL" e "URL - URL" sao a
+    #    mesma URL repetida; "* URL * FACEBOOK: https://" tem uma URL e um resto.
+    def _limpa(cru: str) -> str:
+        cru = re.sub(r"^(https?://)\.+", r"\1", cru, flags=re.I).rstrip(".,-/")
+        # Linha cortada perde a query INTEIRA, e nao so os parametros que eu
+        # conheco: o ultimo parametro de uma linha de 80 esta pela metade, e um
+        # parametro pela metade e lixo do mesmo jeito que o inteiro.
+        return cru.split("?")[0] if cortada else sem_rastreio(cru)
+
+    # Esquema digitado errado, letra por letra: "TTPS://K.KWAI.COM/..." perdeu o
+    # H, "HTTPS:WWW.TIKTOK.COM/..." perdeu as duas barras. Os dois estavam indo
+    # para o site como href, e o navegador nao abre nenhum dos dois.
+    b = re.sub(r"(?<![a-z])(t)(tps?://)",
+               lambda m: ("H" if m.group(1).isupper() else "h") + m.group(0), b, flags=re.I)
+    b = re.sub(r"(https?):(?!//)", r"\1://", b, flags=re.I)
+
+    achados = [(m.group(0), m.end()) for m in re.finditer(r"https?://[^\s*#]+", b, re.I)]
+    # E TAMBEM os enderecos sem http:// na frente, na MESMA linha. Uma linha
+    # so do Jaques Wagner tem "YOUTUBE: YOUTUBE.COM/@... FLICKR: HTTPS://..." —
+    # se o sem-esquema so valesse quando nao ha nenhum http, o YouTube dele
+    # sumiria por causa do Flickr que veio depois. Apago o que ja foi achado
+    # antes de varrer, para nao pegar o mesmo endereco duas vezes.
+    resto_b = b
+    for u, fim in achados:
+        resto_b = resto_b[:fim - len(u)] + " " * len(u) + resto_b[fim:]
+    achados += [("https://" + m.group(1), m.end()) for m in SEM_ESQUEMA.finditer(resto_b)]
+    achados.sort(key=lambda x: x[1])
+
+    # ESPACO DENTRO DO ENDERECO PARECE FIM DE ENDERECO. Duas candidaturas
+    # digitaram um espaco no meio do proprio link: "OPEN.SPOTIFY.COM/SHO
+    # W/64IDJ..." e "WWW.FACEBOOK.COM/ ANDREMOURASE". Cortar ali produz
+    # "spotify.com/SHO" e "facebook.com/" — enderecos que PARECEM bons e levam a
+    # lugar nenhum, que e pior do que o texto quebrado que estava la antes.
+    #
+    # O que separa os dois casos e a palavra seguinte: quando e nome de rede ou
+    # rotulo ("INSTAGRAM", "FANPAGE"), o espaco separa mesmo dois enderecos;
+    # quando e qualquer outra coisa, o espaco caiu dentro de um endereco so.
+    def _corte_confiavel(fim: int) -> bool:
+        depois = b[fim:].lstrip(" \t*-—#|,.")
+        if not depois:
+            return True
+        prox = re.split(r"[\s:/,*]+", depois)[0].strip("@:/.,-*()[] ").lower()
+        return (not prox or prox in APELIDO_REDE or prox in RUIDO
+                or prox in ROTULO_DEPOIS or depois.lower().startswith(("http", "www.")))
+
+    achados = [(u, fim) for u, fim in achados if _corte_confiavel(fim)]
+    # O QUE ENCOSTA NO FIM DE UMA LINHA CORTADA NAO ENTRA. Uma candidatura do
+    # Piaui declarou o mesmo Instagram duas vezes e o corte comeu o fim do
+    # segundo: ".../ANTONIOBARROSAF" e ".../ANTONIOBA". Os dois passariam como
+    # enderecos validos, e o segundo levaria o eleitor a um perfil inexistente.
+    # A regra e por POSICAO, e nao "o ultimo": na linha do Jaques Wagner o que
+    # ficou pela metade foi um "YOUTU" solto depois do ultimo endereco inteiro,
+    # e descartar o ultimo endereco jogaria fora um link bom.
+    # Encostar no fim so condena o endereco se o corte caiu no CAMINHO. Se caiu
+    # dentro da query — ".../mauromendesoficial?igsh=MTU0" —, o perfil esta
+    # inteiro e so o rastreio ficou pela metade: joga fora a query, guarda o
+    # endereco. Descartar tudo aqui perderia um link que funciona.
+    achadas = [_limpa(u) for u, fim in achados
+               if "?" in u or not (cortada and fim == len(b))]
+    achadas = [u for u in achadas if re.match(r"^https?://[^/]+\.[a-z]{2,}", u, re.I)]
+    # Endereco que e comeco de outro e o mesmo endereco cortado.
+    achadas = [x for x in achadas
+               if not any(y != x and chave(y).startswith(chave(x)) for y in achadas)]
+    vistas, unicas = set(), []
+    for x in achadas:
+        if chave(x) not in vistas:
+            vistas.add(chave(x)); unicas.append(x)
+    if unicas:
+        return unicas, "endereço recuperado do texto declarado"
+
+    # 2) Plataforma nomeada + handle, cada um como palavra inteira. Palavra
+    #    inteira importa: "THREADS_EITUVIU" e um token so, e nao da para saber se
+    #    a rede e Threads com handle "eituviu" ou se o handle inteiro se chama
+    #    assim. Fica de fora.
+    toks = _tokens(b)
+    redes = [APELIDO_REDE[t.lower()] for t in toks if t.lower() in APELIDO_REDE]
+    resto = [t for t in toks if t.lower() not in APELIDO_REDE]
+    if not redes:
+        return [], "handle declarado sem dizer a rede, e a base do TSE não guarda a plataforma"
+    handles = [t for t in resto if HANDLE_OK.match(t)]
+    if len(resto) != 1 or len(handles) != 1:
+        # Sobra palavra ("ALCIDES FERNANDES") ou ha mais de um candidato a
+        # handle: escolher qual seria palpite nosso.
+        return [], "não dá para separar a rede do handle sem escolher por conta própria"
+    h = handles[0].lower()
+    return [PERFIL[r].format(h=h) for r in dict.fromkeys(redes) if r in PERFIL], \
+           "handle declarado como texto, com a rede nomeada ao lado"
 
 
 def qual_rede(u: str) -> str | None:
@@ -189,18 +405,26 @@ def montar(uf: str, por_seq: dict[str, list[str]], uso: collections.Counter) -> 
             vistas.add(chave(u)); urls.append(u)
 
         contato = dict(c.get("contato") or {})
-        problemas = []
+        problemas, recuperados = [], []
         sites, redes, compartilhadas = [], [], []
         for u in sorted(urls, key=lambda x: x.lower()):
             e = especie(u)
             if e == "site":
                 # grava sem o rotulo "SITE: ", que nao faz parte do endereco
-                lim = sem_rotulo(u)
+                lim = sem_rastreio(arruma_esquema(sem_rotulo(u)))
                 (compartilhadas if uso[chave(lim)] > 1 else sites).append(lim)
             elif e == "rede":
-                redes.append(u)
+                redes.append(sem_rastreio(arruma_esquema(u)))
             else:
-                problemas.append(f'"{u}" — {e.replace("_", " ")}, nao entra como contato')
+                # SEGUNDA PASSADA. O que o classificador recusa nao e
+                # necessariamente lixo: na maioria das vezes e um endereco bom
+                # com sujeira em volta, ou um handle com a rede escrita ao lado.
+                achadas, motivo = recuperar(u, cortada=len(limpa(u)) == CORTE_TSE)
+                if achadas:
+                    redes += achadas
+                    recuperados.append(f'"{u}" — {motivo}: {", ".join(achadas)}')
+                else:
+                    problemas.append(f'"{u}" — {motivo}')
 
         if urls:
             contato["redes"] = redes + sites + compartilhadas
@@ -269,13 +493,13 @@ def montar(uf: str, por_seq: dict[str, list[str]], uso: collections.Counter) -> 
             c.pop("_contato_ausente", None)
         elif problemas:
             c["_contato_ausente"] = (
-                f"A candidatura declarou {len(problemas)} endereco(s) ao TSE e nenhum e "
-                f"utilizavel como canal: ver _conferir_contato. Nao e ausencia de "
-                f"declaracao, e declaracao que nao da contato.")
+                f"A candidatura declarou {len(problemas)} endereço(s) ao TSE e nenhum é "
+                f"utilizável como canal: ver _conferir_contato. Não é ausência de "
+                f"declaração, é declaração que não dá contato.")
         else:
             c["_contato_ausente"] = (
-                "A candidatura nao declarou nenhuma URL na base de redes sociais do TSE, "
-                "e o TSE nao divulga e-mail. Ausencia da fonte, nao da nossa busca.")
+                "A candidatura não declarou nenhuma URL na base de redes sociais do TSE, "
+                "e o TSE não divulga e-mail. Ausência da fonte, não da nossa busca.")
 
         c["contato"] = contato
         if problemas:
@@ -283,6 +507,14 @@ def montar(uf: str, por_seq: dict[str, list[str]], uso: collections.Counter) -> 
             resumo["com lixo no campo"] += 1
         else:
             c.pop("_conferir_contato", None)
+        # O que foi recuperado fica escrito, com a linha crua ao lado. Endereco
+        # que a maquina montou a partir de texto tem de poder ser desfeito por
+        # quem revisa, e para desfazer e preciso ver de onde veio.
+        if recuperados:
+            c["_contato_recuperado"] = recuperados
+            resumo["com endereco recuperado"] += 1
+        else:
+            c.pop("_contato_recuperado", None)
     return cands, resumo
 
 
@@ -319,7 +551,7 @@ def main() -> None:
         n = acervo.estado(uf)["nome"]
         print(f"{n} ({uf}) — {len(cands)} candidaturas")
         for k in ("com site proprio", "com pagina de partido", "com alguma URL",
-                  "sem URL declarada", "com lixo no campo"):
+                  "sem URL declarada", "com endereco recuperado", "com lixo no campo"):
             if resumo.get(k):
                 print(f"    {resumo[k]:3}  {k}")
         if a.gravar:

@@ -165,6 +165,7 @@ python gerar_inicio.py           # regera a página nacional
 node checa_js.js                 # sintaxe do JS gerado
 node teste-revisar.mjs
 node teste-classificar.mjs
+python teste-redes.py            # recuperação de contato: o que entra e o que não
 ```
 
 O site é **gerado** a partir de `dados/`. Não edite `index.html` nem

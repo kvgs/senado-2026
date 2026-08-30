@@ -157,9 +157,7 @@ def main() -> None:
                     "data": date.today().isoformat(),
                     "forca": "alta",
                     "base": f"trecho conferido palavra por palavra contra {spec['texto_extraido']}",
-                    "ressalva": ("Proposta do partido, nao da candidatura. O documento usa "
-                                 "titulo em caixa alta; a caixa foi normalizada para leitura, "
-                                 "as palavras nao."),
+                    "ressalva": ("Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."),
                 },
                 "_promovido_em": date.today().isoformat(),
             })

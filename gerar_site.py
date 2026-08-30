@@ -160,6 +160,13 @@ for c in cands:
             [c["_nota"]] if c.get("_nota") else []),
         "concorrentes": c.get("candidaturas_concorrentes_2026", []),
         "contato": c.get("contato") or {},
+        # DUAS AUSENCIAS DIFERENTES DE CONTATO. A tela dizia "nao declarou
+        # nenhuma rede social nem site" para as duas, e para 48 candidaturas
+        # isso era falso: elas declararam, mas o que escreveram nao vira canal
+        # ("@FULANO" sem dizer a rede, o telefone no campo do site). Dizer que
+        # nao declarou e uma afirmacao sobre a pessoa; o certo e sobre o campo.
+        "contato_ausente": c.get("_contato_ausente"),
+        "contato_lixo": c.get("_conferir_contato") or [],
     }
 
 # Situacao do programa do PARTIDO de cada candidatura. Serve para o site dizer
