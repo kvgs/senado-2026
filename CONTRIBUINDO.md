@@ -29,8 +29,17 @@ terço. Esse número é a razão de tudo o que está escrito abaixo.
 
 ## O que você pode fazer
 
-O que está aberto para colaboração é **construir e revisar o acervo de estados
-novos**. Hoje existem São Paulo e Pernambuco; faltam 25 unidades da federação.
+Os 27 estados já estão cadastrados, com 315 candidaturas vindas da base do TSE.
+O que falta é o mais caro e o único que não dá para automatizar: **abrir a fonte
+de cada informação e conferir**. São 2.490 posições esperando, espalhadas pelos
+27 estados.
+
+Também é bem-vindo **achar fonte para as 52 candidaturas que ainda não têm nada**
+— quase todas de partidos cujo programa não está publicado em lugar nenhum.
+
+**Combine antes qual estado você vai revisar.** As decisões são gravadas em
+`dados/<uf>/posicoes.json`, e duas pessoas revisando o mesmo estado ao mesmo
+tempo vão colidir no mesmo arquivo. Um estado por pessoa resolve.
 
 A moderação do agente de perguntas (o `/admin`, que dispara e-mail para gabinete
 em nome do projeto) **não** faz parte disso e segue com a curadoria.
