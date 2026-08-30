@@ -1,3 +1,12 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<!-- SEM ESTA LINHA O CELULAR FINGE TER 980px DE LARGURA, encolhe a pagina para
+     caber e obriga a pessoa a dar zoom. Pior: nenhuma das media queries deste
+     arquivo chegava a disparar, porque a largura relatada nunca ficava abaixo de
+     560px. Todo o desenho para telas pequenas existia e nunca foi usado. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Candidaturas ao Senado {{UF_POR}} 2026</title>
 <!-- Sem fonte externa de proposito: num site sobre candidatos, carregar
      tipografia de terceiro contaria a esse terceiro quem esta lendo. -->
@@ -571,6 +580,8 @@
     [role="tab"]{padding:10px 13px;font-size:.92rem}
   }
 </style>
+</head>
+<body>
 <script>
 /* Aplica o tema ANTES da primeira pintura. Se isso rodasse depois, quem escolheu
    escuro veria um lampejo branco em cada carregamento. */
@@ -693,7 +704,7 @@
 
   <main id="principal">
     <div role="tabpanel" id="p-candidatos" aria-labelledby="tab-candidatos" tabindex="0">
-      <h2>As 15 candidaturas</h2>
+      <h2>As {{N_CANDIDATURAS}} candidaturas</h2>
       <p class="metodo-p" style="margin-top:8px;color:var(--muted);font-size:.93rem;max-width:70ch">
         Em ordem de número de urna. A ordem não expressa preferência nem posição em pesquisa.</p>
       <ul class="grade-cands" id="lista-cands"></ul>
@@ -706,7 +717,7 @@
           <label for="sel-tema">Escolha um tema</label>
           <select id="sel-tema"></select>
         </div>
-        <p class="dica">As 15 candidaturas aparecem sempre, mesmo quando não há proposta —
+        <p class="dica">As {{N_CANDIDATURAS}} candidaturas aparecem sempre, mesmo quando não há proposta —
           com o motivo, que não é o mesmo em todos os casos.</p>
       </div>
       <div aria-live="polite" id="saida-tema"></div>
@@ -1272,7 +1283,7 @@ function renderTema(){
            D.votos.some(function(v){ return v.cand===cid&&v.temas.indexOf(tid)>=0; });
   }).length;
   let h='<p style="margin-top:20px;color:var(--muted);font-size:.93rem">Em <strong>'+esc(nome)+
-        '</strong>: '+comProp+' das 15 candidaturas têm proposta registrada e '+comLeg+
+        '</strong>: '+comProp+' das '+D.ordem.length+' candidaturas têm proposta registrada e '+comLeg+
         ' têm registro legislativo — projeto apresentado ou voto em plenário. '+
         'São coisas diferentes, e uma não substitui a outra.</p>';
   h+='<ul class="lista">'+D.ordem.map(cid=>{
@@ -1777,7 +1788,7 @@ function responder(q){
 
   if(negativa && temas.length){
     const tid=temas[0], nome=D.temas.find(t=>t.id===tid).nome;
-    como='Procurei, entre as 15 candidaturas, quais NÃO têm proposta registrada em '+nome+
+    como='Procurei, entre as '+D.ordem.length+' candidaturas, quais NÃO têm proposta registrada em '+nome+
          ' — e por qual dos motivos, que não é o mesmo em todos os casos.';
     for(const cid of D.ordem){
       const its=itensDe(cid,tid);
@@ -2173,3 +2184,5 @@ document.getElementById('sel-tema-comp').addEventListener('change',renderComp);
 document.getElementById('checks').addEventListener('change',renderComp);
 porHash();   /* link direto para um perfil vence a aba guardada */
 </script>
+</body>
+</html>

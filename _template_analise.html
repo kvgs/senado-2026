@@ -1,3 +1,12 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<!-- SEM ESTA LINHA O CELULAR FINGE TER 980px DE LARGURA, encolhe a pagina para
+     caber e obriga a pessoa a dar zoom. Pior: nenhuma das media queries deste
+     arquivo chegava a disparar, porque a largura relatada nunca ficava abaixo de
+     560px. Todo o desenho para telas pequenas existia e nunca foi usado. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>O que os dados dizem — Candidaturas ao Senado 2026</title>
 <!-- Pagina de analise. Fala sobre a ELEICAO e sobre o proprio registro; nunca
      sobre uma candidatura.
@@ -146,6 +155,8 @@
   .vis-oculto{position:absolute;width:1px;height:1px;padding:0;margin:-1px;
     overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 </style>
+</head>
+<body>
 
 <div class="env">
   <a class="voltar-mapa" href="../"><span aria-hidden="true">←</span>Todos os estados</a>
@@ -282,3 +293,5 @@
   if (g) por(g);
 })();
 </script>
+</body>
+</html>
