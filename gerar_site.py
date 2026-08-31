@@ -57,7 +57,18 @@ CARGO_NOME = {
 }
 
 def bio(c):
-    """Resumo biografico mecanico, so do registro. Sem adjetivo, sem juizo."""
+    """Resumo biografico mecanico, so do registro. Sem adjetivo, sem juizo.
+
+    Devolve DUAS versoes. A ficha do perfil recebe tudo; o CARTAO da lista recebe
+    so o que distingue uma candidatura da outra.
+
+    Por que separar: na lista de Pernambuco, doze de doze cartoes comecavam com
+    "Declarou ao TSE a ocupacao de..." e a maioria terminava com "Primeira
+    candidatura registrada nos dados abertos do TSE." Frase que aparece em todos
+    os cartoes nao distingue ninguem — ocupa linha, empurra o cartao para 430px
+    de altura e faz o olho reler a mesma abertura doze vezes. A origem TSE passa
+    a ser dita UMA vez, acima da lista.
+    """
     p = c["pessoa"]
     # O genero vem do registro do TSE. Era uma lista de nomes de mulheres de Sao
     # Paulo escrita a mao, entao toda deputada dos outros 26 estados virava
@@ -66,7 +77,10 @@ def bio(c):
            or p["nome_urna"] in ("Simone Tebet", "Marina Silva", "Soninha Francine",
                                  "Dra Eliana Ferreira", "Maíra de Souza"))
     frases = []
-    frases.append(f'Declarou ao TSE a ocupação de {p["ocupacao_declarada"].lower()}.')
+    ocup = (p.get("ocupacao_declarada") or "").strip()
+    frases.append(f'Declarou ao TSE a ocupação de {ocup.lower()}.')
+    # No cartao a ocupacao entra sem o preambulo, com inicial maiuscula.
+    curtas = [ocup[0].upper() + ocup[1:] + "."] if ocup else []
 
     parl = (c.get("situacao_parlamentar") or [{}])[0]
     if parl.get("casa") == "camara":
@@ -79,7 +93,7 @@ def bio(c):
             t += f', em exercício desde {parl["desde"][8:10]}/{parl["desde"][5:7]}/{parl["desde"][:4]}'
         if parl.get("motivo_afastamento_anterior"):
             t += f' — antes disso, {parl["motivo_afastamento_anterior"][0].lower() + parl["motivo_afastamento_anterior"][1:]}'
-        frases.append(t + '.')
+        frases.append(t + '.'); curtas.append(t + '.')
     elif parl.get("casa") == "senado":
         # A casa "senado" nao era tratada: 32 senadores em exercicio nao tinham
         # linha de mandato. Os que pareciam ter so declararam "senador" como
@@ -87,17 +101,19 @@ def bio(c):
         t = f'Exerce mandato de senador{"a" if fem else ""} {UF_POR_EXTENSO}'
         if parl.get("desde"):
             t += f', em exercício desde {parl["desde"][8:10]}/{parl["desde"][5:7]}/{parl["desde"][:4]}'
-        frases.append(t + '.')
+        frases.append(t + '.'); curtas.append(t + '.')
     elif parl.get("casa") == "alesp":
         t = (f'Exerce mandato de deputad{"a" if fem else "o"} estadual '
              f'em {UF_NOME_EXTENSO}')
         if parl.get("cargo_na_casa"): t += f' e ocupa o cargo de {parl["cargo_na_casa"]}'
-        frases.append(t + '.')
+        frases.append(t + '.'); curtas.append(t + '.')
 
     for ce in c.get("cargos_executivos_anteriores", [])[:1]:
         frases.append(f'Foi {ce["cargo"]} ({ce["ente"]}).')
+        curtas.append(f'Foi {ce["cargo"]} ({ce["ente"]}).')
     for cr in c.get("cargos_representacao", [])[:1]:
         frases.append(f'É {cr["cargo"]}.')
+        curtas.append(f'É {cr["cargo"]}.')
 
     ma = c.get("mandatos_anteriores", [])
     eleitos = [m for m in ma if m.get("resultado","").startswith("eleit")]
@@ -107,17 +123,28 @@ def bio(c):
             nome = CARGO_NOME.get(m["cargo"], m["cargo"])
             uf = m.get("uf") or m.get("municipio") or ""
             cargos.append(f'{nome}{" por " + uf if uf else ""} em {m["ano"]}')
-        frases.append(f'Já foi eleit{"a" if fem else "o"} ' + "; ".join(cargos[:3]) + '.')
+        ja = f'Já foi eleit{"a" if fem else "o"} ' + "; ".join(cargos[:3]) + '.'
+        frases.append(ja); curtas.append(ja)
     elif ma:
         frases.append(f'Disputou {len(ma)} eleiç{"ões" if len(ma)>1 else "ão"} anterior'
                       f'{"es" if len(ma)>1 else ""} sem ser eleit{"a" if fem else "o"}.')
     else:
         frases.append(f'Primeira candidatura registrada nos dados abertos do TSE.')
 
+    if len(curtas) > 1 and ocup:
+        import unicodedata as _u
+        def _sem(s):
+            return _u.normalize("NFD", s).encode("ascii", "ignore").decode().lower()
+        if _sem(ocup) in _sem(" ".join(curtas[1:])):
+            curtas = curtas[1:]
+
     nota = c.get("_nota")
     if nota and "Primeira disputa" not in nota and "Primeira candidatura" not in nota:
         pass
-    return " ".join(frases)
+    # "Primeira candidatura registrada" fica so na ficha: no cartao ela era a
+    # ultima linha de quase todos, e o que ela diz e uma AUSENCIA de mandato
+    # anterior — que o cartao ja comunica por nao ter linha de mandato nenhuma.
+    return {"completa": " ".join(frases), "curta": " ".join(curtas)}
 
 cand_por_id = {}
 for c in cands:
@@ -132,7 +159,8 @@ for c in cands:
         "coligacao_comp": colig.get("composicao",""),
         "numero": c["numero_urna"],
         "iniciais": iniciais,
-        "bio": bio(c),
+        "bio": bio(c)["completa"],
+        "bio_curta": bio(c)["curta"],
         # A situacao do registro pode nao existir: a base de candidatos do TSE traz
         # "#NE" em alguns extratos. Ausencia vira None e o site DIZ que nao sabe,
         # em vez de a pagina quebrar ou, pior, mostrar campo vazio sem explicar.

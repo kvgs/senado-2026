@@ -158,24 +158,11 @@
   .atualizado{margin-top:16px;font-size:.84rem;color:var(--muted)}
 
 
-  /* ---------- chamada: por que o site existe ---------- */
-  .chamada-topo{margin:30px 0 0;padding:24px 26px;background:var(--surface-2);
-    border-left:5px solid var(--acento-vivo);border-radius:0 6px 6px 0}
-  .chamada-topo p{max-width:64ch}
-  .chamada-topo .forte{font-family:"Bricolage",system-ui,sans-serif;font-size:1.32rem;
-    line-height:1.24;font-weight:700;letter-spacing:-.02em;color:var(--ink)}
-  .chamada-topo .depois{margin-top:12px;color:var(--ink-2);font-size:1.02rem}
-  /* A frase que liga o fato juridico ao trabalho do site. E a tese da pagina:
-     ganha a face de display, corpo maior e marca ciano — como traco de marcador
-     sobre a linha, nao como caixa, para nao competir com a faixa dos numeros. */
-  .chamada-topo .tese{margin-top:16px;font-family:"Bricolage",system-ui,sans-serif;
-    font-size:1.24rem;line-height:1.34;font-weight:700;letter-spacing:-.018em;color:var(--ink)}
-  .chamada-topo .tese em{font-style:normal;background:var(--acento-vivo);
-    padding:1px 6px;border-radius:3px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
-  .chamada-topo .pedido{margin-top:16px;padding-top:15px;border-top:1px solid var(--rule);
-    font-size:1rem;color:var(--ink-2)}
-  .chamada-topo .pedido strong{color:var(--ink)}
-  .chamada-topo a{font-weight:600}
+  /* A linha do convite. Era o ultimo paragrafo da caixa de 443px; sobreviveu
+     porque e a unica parte que pede algo de quem le. */
+  .ajude{margin:16px 0 0;font-size:.95rem;color:var(--ink-2);max-width:74ch}
+  .ajude strong{color:var(--ink)}
+  .ajude a{font-weight:600}
 
   /* ---------- o que faz um senador ---------- */
   .cargo{margin-top:16px;background:var(--surface);border:1px solid var(--rule);border-radius:6px}
@@ -205,10 +192,11 @@
   /* ---------- abas ---------- */
   [role="tablist"]{display:flex;flex-wrap:wrap;gap:0 4px;margin:40px 0 0;
     border-bottom:1px solid var(--rule)}
-  [role="tab"]{font:inherit;font-family:"PlexMono",monospace;font-size:.82rem;font-weight:500;
-    letter-spacing:.06em;text-transform:uppercase;padding:14px 2px;border:0;
-    background:none;color:var(--muted);cursor:pointer;border-bottom:3px solid transparent;
-    margin:0 22px -1px 0}
+  [role="tab"]{font:inherit;font-size:1rem;font-weight:600;
+    padding:14px 16px;border:0;
+    background:none;color:var(--ink-2);cursor:pointer;border-bottom:3px solid transparent;
+    margin:0 2px -1px 0}
+  [role="tab"]:first-child{padding-left:0}
   [role="tab"]:hover{color:var(--ink)}
   [role="tab"][aria-selected="true"]{color:var(--acento);border-bottom-color:var(--acento)}
   [role="tabpanel"]{padding-top:28px}
@@ -577,7 +565,7 @@
   @media (max-width:600px){
     .wrap{padding:0 14px 64px}
     .card-top{flex-wrap:wrap}
-    [role="tab"]{padding:10px 13px;font-size:.92rem}
+    [role="tab"]{padding:11px 8px;font-size:.95rem;margin-right:0}
   }
 </style>
 </head>
@@ -612,25 +600,27 @@
     <p class="atualizado">Dados de <strong id="atualizado"></strong>. Cada informação mostra sua
       própria data de referência.</p>
 
-    <div class="chamada-topo">
-      <p class="forte">Candidaturas ao Senado não precisam registrar plano de governo no TSE.</p>
-      <p class="depois">A lei exige proposta de governo apenas de quem concorre a Presidente,
-        Governador e Prefeito — senador não está na lista
-        (<a href="https://www.planalto.gov.br/ccivil_03/leis/l9504.htm" target="_blank"
-        rel="noopener">Lei 9.504/1997, art. 11, §1º, IX <span class="vis-oculto">(abre em nova
-        aba)</span></a>).</p>
-      <p class="tese">Por isso é difícil saber o que cada candidatura defende:
-        <em>não existe um documento único onde procurar.</em></p>
-      <p class="depois">Este site existe para ajudar nisso — reunir o que há, com a fonte de cada
-        informação, e dizer com clareza o que não foi encontrado.</p>
-      <p class="pedido" style="border-top:0;padding-top:0;margin-top:12px;font-size:.86rem;
-        color:var(--muted)">Fotos: <strong>TSE</strong> — foto de registro de candidatura.</p>
-      <p class="pedido"><strong>Ajude a construir.</strong> Achou um erro, conhece uma fonte que
-        falta, ou tem uma dúvida? Escreva para
-        <a href="{{MAILTO}}">{{EMAIL}}</a>, ou fale pelo Instagram
-        <a href="{{INSTAGRAM_URL}}" target="_blank" rel="noopener">{{INSTAGRAM}}<span
-        class="vis-oculto"> (abre em nova aba)</span></a>.</p>
-    </div>
+    <!-- A TESE VIRA UM BLOCO QUE ABRE. Ela era uma caixa aberta de 443px em toda
+         pagina de estado, e o TEXTO E IDENTICO ao da pagina inicial: quem chega
+         pelo mapa lia os mesmos seis paragrafos duas vezes seguidas. O primeiro
+         cartao de candidatura comecava em 1.268px, 28% da pagina abaixo do topo.
+         Fechado, o texto continua aqui para quem chega por link direto — que e a
+         unica pessoa para quem ele era novidade. -->
+    <details class="cargo">
+      <summary>Por que é difícil saber o que cada candidatura defende</summary>
+      <div class="dentro">
+        <p><strong>Candidaturas ao Senado não precisam registrar plano de governo no TSE.</strong>
+          A lei exige proposta de governo apenas de quem concorre a Presidente,
+          Governador e Prefeito — senador não está na lista
+          (<a href="https://www.planalto.gov.br/ccivil_03/leis/l9504.htm" target="_blank"
+          rel="noopener">Lei 9.504/1997, art. 11, §1º, IX <span class="vis-oculto">(abre em nova
+          aba)</span></a>).</p>
+        <p>Por isso <strong>não existe um documento único onde procurar</strong>. Este site existe
+          para ajudar nisso — reunir o que há, com a fonte de cada informação, e dizer com clareza
+          o que não foi encontrado.</p>
+        <p>Fotos: <strong>TSE</strong> — foto de registro de candidatura.</p>
+      </div>
+    </details>
 
     <details class="cargo">
       <summary>O que faz um senador?</summary>
@@ -689,6 +679,11 @@
       </div>
     </details>
 
+    <p class="ajude"><strong>Ajude a construir.</strong> Achou um erro, conhece uma fonte que
+      falta, ou tem uma dúvida? Escreva para <a href="{{MAILTO}}">{{EMAIL}}</a>, ou fale pelo
+      Instagram <a href="{{INSTAGRAM_URL}}" target="_blank" rel="noopener">{{INSTAGRAM}}<span
+      class="vis-oculto"> (abre em nova aba)</span></a>.</p>
+
     <div class="aviso" role="note" id="aviso"></div>
   </header>
 
@@ -698,7 +693,11 @@
     <button role="tab" id="tab-comparar" aria-controls="p-comparar" aria-selected="false" tabindex="-1">Comparar</button>
     <button role="tab" id="tab-consulta" aria-controls="p-consulta" aria-selected="false" tabindex="-1">Perguntar</button>
     <button role="tab" id="tab-pesquisa" aria-controls="p-pesquisa" aria-selected="false" tabindex="-1">Pesquisa</button>
-    <button role="tab" id="tab-metodo" aria-controls="p-metodo" aria-selected="false" tabindex="-1">Como é feito</button>
+    <!-- A aba "Como e feito" saiu daqui. Ela abria um painel com as regras do
+         acervo, enquanto a secao #metodo no pe da pagina ja falava do mesmo
+         assunto: eram duas superficies para "como isto e feito", e a pessoa nao
+         tinha como saber qual das duas responderia a duvida dela. O painel
+         virou um bloco que abre dentro daquela secao. -->
     <button role="tab" id="tab-perfil" aria-controls="p-perfil" aria-selected="false" tabindex="-1" hidden>Perfil</button>
   </div>
 
@@ -706,7 +705,8 @@
     <div role="tabpanel" id="p-candidatos" aria-labelledby="tab-candidatos" tabindex="0">
       <h2>As {{N_CANDIDATURAS}} candidaturas</h2>
       <p class="metodo-p" style="margin-top:8px;color:var(--muted);font-size:.93rem;max-width:70ch">
-        Em ordem de número de urna. A ordem não expressa preferência nem posição em pesquisa.</p>
+        Em ordem de número de urna. A ordem não expressa preferência nem posição em pesquisa.
+        Ocupação, mandato e suplentes vêm do registro no TSE.</p>
       <ul class="grade-cands" id="lista-cands"></ul>
     </div>
 
@@ -759,10 +759,6 @@
       <div class="sugestoes" id="sugestoes"></div>
       <div aria-live="polite" id="saida-consulta"></div>
       <div id="pedir-fixo"></div>
-    </div>
-    <div role="tabpanel" id="p-metodo" aria-labelledby="tab-metodo" tabindex="0" hidden>
-      <h2>Como isto é feito</h2>
-      <div id="saida-metodo"></div>
     </div>
     <div role="tabpanel" id="p-perfil" aria-labelledby="tab-perfil" tabindex="0" hidden>
       <button class="voltar" id="btn-voltar" type="button">&larr; Voltar para a lista de candidaturas</button>
@@ -823,6 +819,13 @@
         ausência de menção, e não da leitura de um documento completo. Onde é o caso, a ressalva
         está escrita na própria informação.</li>
     </ul>
+
+    <details class="cargo" style="margin-top:34px">
+      <summary>As regras que decidem o que entra</summary>
+      <div class="dentro">
+        <div id="saida-metodo"></div>
+      </div>
+    </details>
   </div>
 </div>
 
@@ -870,8 +873,16 @@ document.getElementById('atualizado').textContent=D.atualizado;
        'daqui</strong> — a fonte não sustentava o que estava escrito. Ficam registradas nos '+
        'dados abertos do projeto, com o motivo, porque erro escondido é erro que volta.';
   }
-  if(falta) h+=' Enquanto a revisão não termina, confira na fonte antes de usar como referência.';
-  else h+=' Cada informação continua trazendo a fonte e o selo de origem, para você conferir.';
+  /* A MESMA INSTRUCAO ESTAVA SAINDO DUAS VEZES. Quando nada foi revisado, o
+     primeiro ramo ja diz "confira lá antes de usar como referência", e esta
+     linha acrescentava "confira na fonte antes de usar como referência" — a
+     mesma frase, com outras palavras, no mesmo aviso. Como 26 dos 27 estados
+     tem zero revisado, era o caso comum, e o aviso ocupava tres linhas para
+     dizer duas coisas. Agora a frase de reforco so entra quando ha revisao
+     parcial, que e o unico caso em que ela acrescenta algo. */
+  if(t.revisadas && falta)
+    h+=' Enquanto a revisão não termina, confira na fonte antes de usar como referência.';
+  else if(!falta) h+=' Cada informação continua trazendo a fonte e o selo de origem, para você conferir.';
   el.innerHTML=h;
 })();
 
@@ -1246,7 +1257,9 @@ function corpoTema(cid,tid){
            gastaria uma linha dizendo o que a pessoa acabou de ler. */
         '<p class="meta">'+esc(c.partido_nome)+
         (c.coligacao?' · Coligação '+esc(c.coligacao):' · Sem coligação')+'</p>'+
-        '<p class="bio">'+esc(c.bio)+'</p>'+
+        /* bio CURTA no cartao. A completa fica na ficha: no cartao ela
+           repetia em doze de doze a mesma abertura e o mesmo fecho. */
+        '<p class="bio">'+esc(c.bio_curta||c.bio)+'</p>'+
         /* Na lista a situacao so aparece quando existe. "Situacao do registro:
            null, observada em ." era o que 315 cartoes mostravam; e uma linha que
            nao informa nada, e some sem perda. */
