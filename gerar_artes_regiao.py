@@ -28,6 +28,7 @@ from __future__ import annotations
 
 import argparse
 import importlib.util
+import re
 import pathlib
 import unicodedata
 
@@ -49,7 +50,16 @@ SOBRE_ESCURO, APAGADO, LINHA_ESCURA = _ar.SOBRE_ESCURO, _ar.APAGADO, _ar.LINHA_E
 RAIZ = pathlib.Path(__file__).resolve().parent
 FOTO_BORDA = "#2FB4E4"          # o mesmo token do site: --foto-borda
 COLS = 5
-CREDITO = "FOTOS: TSE — REGISTRO DE CANDIDATURA"
+CREDITO = "FOTO E @ DECLARADOS NO REGISTRO NO TSE"
+
+# "NAO LOCALIZADO" SERIA FALSO PARA A MAIORIA. Das 14 candidaturas do Norte sem
+# @, dez nao declararam nada ao TSE — nao e que a busca falhou, e que nao ha o
+# que buscar. Outras duas declararam redes que nao sao Instagram, e duas
+# declararam algo que nao vira canal. Uma frase so tem de ser verdade nos tres
+# casos, e "sem Instagram no registro" e: nenhuma das tres tem @ utilizavel no
+# registro. E a mesma distincao que o site inteiro faz entre ausencia da FONTE e
+# ausencia da nossa BUSCA.
+SEM_HANDLE = "sem Instagram no registro"
 
 
 def sem_acento(s: str) -> str:
@@ -58,6 +68,25 @@ def sem_acento(s: str) -> str:
 
 def pasta_da_regiao(regiao: str) -> str:
     return f"5-{sem_acento(regiao).lower().replace(' ', '-')}-quem-sao"
+
+
+def handle_de(c: dict) -> str | None:
+    """O @ vem do que a candidatura declarou AO TSE, e nunca de busca nossa.
+    Contato achado em busca manda o eleitor escrever para um estranho — e a
+    regra do projeto e que contato so entra de fonte oficial.
+
+    Primeiro o campo ja escolhido em contato.instagram; depois, qualquer URL de
+    instagram.com entre as redes declaradas. Caminhos que nao sao perfil (/p/,
+    /reel/) ficam de fora."""
+    ct = c.get("contato") or {}
+    h = (ct.get("instagram") or "").strip()
+    if h:
+        return h if h.startswith("@") else "@" + h
+    for u in (ct.get("redes") or []):
+        m = re.search(r"instagram\.com/@?([A-Za-z0-9._]{2,40})", u, re.I)
+        if m and m.group(1).lower() not in ("p", "reel", "reels", "explore", "channel", "stories"):
+            return "@" + m.group(1).lower()
+    return None
 
 
 def medir(regiao: str) -> dict:
@@ -75,6 +104,7 @@ def medir(regiao: str) -> dict:
             arq = (c.get("foto") or {}).get("arquivo")
             gente.append({"nome": c["pessoa"]["nome_urna"],
                           "numero": str(c["numero_urna"]),
+                          "handle": handle_de(c),
                           "foto": RAIZ / arq if arq else None})
         saida.append({"uf": e["uf"], "nome": e["nome"], "gente": gente,
                       "posicoes": len(pos)})
@@ -109,7 +139,42 @@ def cartao(t: Tela, p: dict, x: int, y: int, larg: int, alt_foto: int) -> int:
     for ln in linhas[:3]:
         t.d.text((x, yy), ln, font=fn, fill=TINTA)
         yy += int(fn.size * 1.22)
+
+    # O @ TEM DE CABER NA CELULA, E quebra() NAO RESOLVE ISSO. quebra() corta em
+    # ESPACO, e handle nao tem espaco nenhum: ela devolvia a linha inteira e o
+    # texto invadia a celula vizinha — "@chicorodrigues" por cima de
+    # "@hiperion_oliveira". Aqui o corpo cede primeiro; se nem no menor couber,
+    # o handle vira duas linhas cortadas por LARGURA, nunca por espaco.
+    yy += 2
+    if p["handle"]:
+        yy = escreve_handle(t, p["handle"], x, yy, larg)
+    else:
+        fh = f("corpo", 14)
+        for ln in t.quebra(SEM_HANDLE, fh, larg):
+            t.d.text((x, yy), ln, font=fh, fill=APAGADO)
+            yy += int(fh.size * 1.24)
     return yy
+
+
+def escreve_handle(t: Tela, handle: str, x: int, y: int, larg: int) -> int:
+    """Desenha o @ dentro da largura da celula, custe o corpo que custar."""
+    for corpo in (16, 15, 14, 13, 12):
+        fh = f("corpo", corpo)
+        if t.d.textlength(handle, font=fh) <= larg:
+            t.d.text((x, y), handle, font=fh, fill=CIANO_FUNDO)
+            return y + int(fh.size * 1.24)
+    # Nem no corpo 12: parte em duas linhas pela largura. Handle nunca e cortado
+    # com reticencias — cortado ele nao serve para procurar ninguem, que e a
+    # unica coisa que ele existe para fazer.
+    fh = f("corpo", 13)
+    corte = len(handle)
+    while corte > 1 and t.d.textlength(handle[:corte], font=fh) > larg:
+        corte -= 1
+    for parte in (handle[:corte], handle[corte:]):
+        if parte:
+            t.d.text((x, y), parte, font=fh, fill=CIANO_FUNDO)
+            y += int(fh.size * 1.24)
+    return y
 
 
 def arte_estado(d: dict, e: dict, i: int):
@@ -117,13 +182,12 @@ def arte_estado(d: dict, e: dict, i: int):
     t.y = 92
     t.mono(f"{d['regiao'].upper()} · {e['uf']}", f("mono", 19), CIANO_FUNDO, espacamento=4)
     t.espaco(14)
-    t.texto(e["nome"], f("display", 76), TINTA, entre=1.05, larg=900)
-    t.espaco(8)
-    t.texto(f"{len(e['gente'])} candidaturas ao Senado, e este ano você vota em duas. "
-            f"Em ordem de número de urna — a ordem não expressa preferência nem "
-            f"posição em pesquisa.",
-            f("corpo", 26), TINTA2, entre=1.38, larg=880)
-    t.espaco(40)
+    t.texto(e["nome"], f("display", 64), TINTA, entre=1.05, larg=900)
+    t.espaco(6)
+    t.texto(f"{len(e['gente'])} candidaturas, e este ano você vota em duas. Em ordem de "
+            f"número de urna — a ordem não expressa preferência nem posição em pesquisa.",
+            f("corpo", 24), TINTA2, entre=1.36, larg=880)
+    t.espaco(26)
 
     gap = 16
     linhas_n = -(-len(e["gente"]) // COLS)

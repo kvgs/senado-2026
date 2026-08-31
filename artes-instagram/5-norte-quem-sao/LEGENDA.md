@@ -3,7 +3,7 @@
 Nove slides: capa clara, os sete estados em ordem alfabética, e o convite.
 A capa e o convite são bege; os estados, brancos — o carrossel tem começo,
 corpo e fim sem precisar de palavra dizendo isso.
-Foto, número de urna e nome, em ordem de número de urna.
+Foto, número de urna, nome e @ do Instagram — em ordem de número de urna.
 
 ---
 
@@ -13,7 +13,7 @@ Foto, número de urna e nome, em ordem de número de urna.
 
 São 7 estados, 74 candidaturas — e este ano você vota em duas.
 
-Deslize e veja todas: foto, número de urna e nome, estado por estado. 👉
+Deslize e veja todas: foto, número de urna, nome e o @ do Instagram, estado por estado. 👉
 
 **Se você ainda não decidiu, comente aqui o que te deixa indeciso.** Um tema que
 falta, uma dúvida sobre alguém, uma fonte que você conhece e o site não tem. O
@@ -24,7 +24,13 @@ Duas coisas sobre como isto é feito:
 ▪️ A ordem é a do **número de urna**, e só. Este site não ordena candidaturas por
 preferência, por pesquisa nem por nada que pareça um ranking.
 
-▪️ As fotos são as do **registro no TSE** — as mesmas que aparecem na urna.
+▪️ As fotos e os **@ do Instagram** vêm do que cada candidatura declarou no
+registro no TSE. Nada aqui foi procurado por nós: contato achado em busca manda
+o eleitor escrever para um estranho.
+
+▪️ Onde está escrito **"sem Instagram no registro"**, é isso mesmo — a
+candidatura não declarou um Instagram utilizável ao TSE. Não é que não
+procuramos: é que não há o que buscar na fonte oficial.
 
 No próximo carrossel começa a outra metade: **o que cada uma defende**, tema por
 tema, com a fonte de cada informação ao lado.
@@ -46,6 +52,16 @@ tema, com a fonte de cada informação ao lado.
 - **Nome nunca é cortado.** Se não couber em duas linhas, o corpo diminui.
 - Cada slide traz quantas informações daquele estado já estão no site.
 - `--sem-capa` gera o carrossel abrindo direto na primeira grade de rostos.
+- **O @ nunca é cortado.** O corpo da fonte cede primeiro; se nem no menor
+  couber, ele quebra em duas linhas por largura. Handle cortado não serve para
+  procurar ninguém, que é a única coisa que ele existe para fazer.
+- **"Sem Instagram no registro", e não "não localizado".** Dos 14 do Norte sem
+  @, dez não declararam nada ao TSE — não é que a busca falhou, é que não há o
+  que buscar. Dois declararam outras redes e dois declararam algo que não vira
+  canal. A frase escolhida é verdadeira nos três casos.
+- **Os 60 @ do Norte foram auditados um a um:** todos vêm de uma URL de
+  instagram.com declarada ao TSE, nenhum é repetido entre candidaturas e nenhum
+  é página de partido.
 
 ## Para os próximos posts
 
