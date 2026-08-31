@@ -286,8 +286,7 @@ def arte_comente(d: dict, i: int):
             f("display", 82), TINTA, entre=1.08, larg=890)
     t.espaco(26)
     t.texto("Um tema que falta, uma dúvida sobre alguém, uma fonte que você "
-            "conhece e o site não tem. O que aparecer aqui vira trabalho: "
-            "eu vou atrás.",
+            "conhece e o site não tem.",
             f("corpo", 34), TINTA2, entre=1.4, larg=860)
 
     t.espaco(44)
@@ -307,8 +306,8 @@ def arte_comente(d: dict, i: int):
 
     base = t.base_do_rodape()
     fc = f("corpo", 32)
-    frase = ("O próximo carrossel começa a mostrar o que cada candidatura "
-             "defende, tema por tema — com a fonte de cada informação ao lado.")
+    frase = ("No site, cada candidatura tem uma página com o que já foi levantado, "
+             "a fonte de cada informação e o que ainda não foi encontrado.")
     linhas = t.quebra(frase, fc, 830)
     alto = 32 + len(linhas) * int(fc.size * 1.45) + 32
     t.y = base - 52 - alto

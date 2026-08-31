@@ -16,8 +16,7 @@ São 7 estados, 74 candidaturas — e este ano você vota em duas.
 Deslize e veja todas: foto, número de urna, nome e o @ do Instagram, estado por estado. 👉
 
 **Se você ainda não decidiu, comente aqui o que te deixa indeciso.** Um tema que
-falta, uma dúvida sobre alguém, uma fonte que você conhece e o site não tem. O
-que aparecer nos comentários vira trabalho — eu vou atrás.
+falta, uma dúvida sobre alguém, uma fonte que você conhece e o site não tem.
 
 Duas coisas sobre como isto é feito:
 
@@ -32,10 +31,10 @@ o eleitor escrever para um estranho.
 candidatura não declarou um Instagram utilizável ao TSE. Não é que não
 procuramos: é que não há o que buscar na fonte oficial.
 
-No próximo carrossel começa a outra metade: **o que cada uma defende**, tema por
-tema, com a fonte de cada informação ao lado.
+No site, cada candidatura tem uma página com **o que já foi levantado**, a fonte
+de cada informação e o que ainda não foi encontrado.
 
-🔗 Tudo está em kvgs.github.io/senado-2026 — dados abertos, código público.
+🔗 kvgs.github.io/senado-2026 — dados abertos, código público.
 
 #eleições2026 #senado #norte #acre #amapá #amazonas #pará #rondônia #roraima
 #tocantins #dadosabertos #votoconsciente #transparência #política #brasil
@@ -63,11 +62,21 @@ tema, com a fonte de cada informação ao lado.
   instagram.com declarada ao TSE, nenhum é repetido entre candidaturas e nenhum
   é página de partido.
 
-## Para os próximos posts
+## Nada de promessa
 
-Trocar `--regiao` no comando gera as outras quatro. Ao adaptar a legenda, os
-números mudam: Nordeste 103 em 9 estados · Sudeste 59 em 4 · Centro-Oeste 44 em
-4 · Sul 35 em 3.
+Nem a arte nem a legenda anunciam o próximo post, e nenhuma das duas diz que o
+que aparecer nos comentários será atendido. Convidar não obriga a nada, e
+calendário anunciado vira dívida.
 
-Quando chegar o carrossel de propostas, decidir antes o que fazer com as
+O que estava escrito antes e saiu: "o que aparecer nos comentários vira trabalho
+— eu vou atrás" e "no próximo carrossel começa a outra metade". No lugar, a
+caixa aponta para o que o site JA tem hoje.
+
+## Para uso interno
+
+Trocar `--regiao` no comando gera as outras quatro regiões. Ao adaptar a
+legenda, os números mudam: Nordeste 103 em 9 estados · Sudeste 59 em 4 ·
+Centro-Oeste 44 em 4 · Sul 35 em 3.
+
+Se um dia houver um carrossel de propostas, decidir antes o que fazer com as
 candidaturas que ainda não têm nada no acervo — no Norte são 12 das 74.
