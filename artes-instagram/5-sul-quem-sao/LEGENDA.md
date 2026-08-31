@@ -1,6 +1,6 @@
-# Conheça as candidaturas do Norte
+# Conheça as candidaturas do Sul
 
-9 slides: capa clara, 7 estados em ordem alfabética, e o convite.
+5 slides: capa clara, 3 estados em ordem alfabética, e o convite.
 A capa e o convite são bege; os estados, brancos — o carrossel tem começo,
 corpo e fim sem precisar de palavra dizendo isso.
 Foto, número de urna, nome e @ do Instagram — em ordem de número de urna.
@@ -9,9 +9,9 @@ Foto, número de urna, nome e @ do Instagram — em ordem de número de urna.
 
 ## Legenda
 
-**Você conhece as 74 pessoas que disputam o Senado pelo Norte?**
+**Você conhece as 35 pessoas que disputam o Senado pelo Sul?**
 
-São 7 estados, 74 candidaturas — e este ano você vota em duas.
+São 3 estados, 35 candidaturas — e este ano você vota em duas.
 
 Deslize e veja todas: foto, número de urna, nome e o @ do Instagram, estado por estado. 👉
 
@@ -36,18 +36,18 @@ de cada informação e o que ainda não foi encontrado.
 
 🔗 kvgs.github.io/senado-2026 — dados abertos, código público.
 
-#eleições2026 #senado #norte #acre #amapá #amazonas #pará #rondônia #roraima #tocantins #dadosabertos #votoconsciente #transparência #política #brasil
+#eleições2026 #senado #sul #paraná #riograndedosul #santacatarina #dadosabertos #votoconsciente #transparência #política #brasil
 
 ---
 
 ## Números desta região
 
-- 74 candidaturas em 7 estados
-- 60 com @ declarado ao TSE, 14 sem
-- dos 14 sem @: 12 não declararam nenhuma rede ao TSE, 1 declarou outra rede e 1 declarou só o site do partido
-- 12 ainda não têm nenhuma informação no acervo
+- 35 candidaturas em 3 estados
+- 26 com @ declarado ao TSE, 9 sem
+- dos 9 sem @: 7 não declararam nenhuma rede ao TSE e 2 declararam só o site do partido
+- 2 ainda não têm nenhuma informação no acervo
 
-**Os 60 @ do Norte foram conferidos um a um:** todos saem de uma URL
+**Os 26 @ do Sul foram conferidos um a um:** todos saem de uma URL
 de instagram.com declarada ao TSE, nenhum se repete entre candidaturas e nenhum
 é página de partido.
 
@@ -74,7 +74,7 @@ de instagram.com declarada ao TSE, nenhum se repete entre candidaturas e nenhum
   oficial.
 - Cada slide traz quantas informações daquele estado já estão no site.
 - `--sem-capa` gera o carrossel abrindo direto na primeira grade de rostos.
-- Gerado por `python gerar_artes_regiao.py --regiao Norte`.
+- Gerado por `python gerar_artes_regiao.py --regiao Sul`.
 
 ## Nada de promessa
 

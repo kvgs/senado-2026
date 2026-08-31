@@ -1,6 +1,6 @@
-# Conheça as candidaturas do Norte
+# Conheça as candidaturas do Centro-Oeste
 
-9 slides: capa clara, 7 estados em ordem alfabética, e o convite.
+6 slides: capa clara, 4 estados em ordem alfabética, e o convite.
 A capa e o convite são bege; os estados, brancos — o carrossel tem começo,
 corpo e fim sem precisar de palavra dizendo isso.
 Foto, número de urna, nome e @ do Instagram — em ordem de número de urna.
@@ -9,9 +9,9 @@ Foto, número de urna, nome e @ do Instagram — em ordem de número de urna.
 
 ## Legenda
 
-**Você conhece as 74 pessoas que disputam o Senado pelo Norte?**
+**Você conhece as 44 pessoas que disputam o Senado pelo Centro-Oeste?**
 
-São 7 estados, 74 candidaturas — e este ano você vota em duas.
+São 4 estados, 44 candidaturas — e este ano você vota em duas.
 
 Deslize e veja todas: foto, número de urna, nome e o @ do Instagram, estado por estado. 👉
 
@@ -36,18 +36,18 @@ de cada informação e o que ainda não foi encontrado.
 
 🔗 kvgs.github.io/senado-2026 — dados abertos, código público.
 
-#eleições2026 #senado #norte #acre #amapá #amazonas #pará #rondônia #roraima #tocantins #dadosabertos #votoconsciente #transparência #política #brasil
+#eleições2026 #senado #centrooeste #distritofederal #goiás #matogrosso #matogrossodosul #dadosabertos #votoconsciente #transparência #política #brasil
 
 ---
 
 ## Números desta região
 
-- 74 candidaturas em 7 estados
-- 60 com @ declarado ao TSE, 14 sem
-- dos 14 sem @: 12 não declararam nenhuma rede ao TSE, 1 declarou outra rede e 1 declarou só o site do partido
-- 12 ainda não têm nenhuma informação no acervo
+- 44 candidaturas em 4 estados
+- 35 com @ declarado ao TSE, 9 sem
+- dos 9 sem @: 4 não declararam nenhuma rede ao TSE, 3 declararam outras redes e 2 declararam só o site do partido
+- 13 ainda não têm nenhuma informação no acervo
 
-**Os 60 @ do Norte foram conferidos um a um:** todos saem de uma URL
+**Os 35 @ do Centro-Oeste foram conferidos um a um:** todos saem de uma URL
 de instagram.com declarada ao TSE, nenhum se repete entre candidaturas e nenhum
 é página de partido.
 
@@ -74,7 +74,7 @@ de instagram.com declarada ao TSE, nenhum se repete entre candidaturas e nenhum
   oficial.
 - Cada slide traz quantas informações daquele estado já estão no site.
 - `--sem-capa` gera o carrossel abrindo direto na primeira grade de rostos.
-- Gerado por `python gerar_artes_regiao.py --regiao Norte`.
+- Gerado por `python gerar_artes_regiao.py --regiao Centro-Oeste`.
 
 ## Nada de promessa
 

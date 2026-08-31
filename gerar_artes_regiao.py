@@ -50,6 +50,12 @@ SOBRE_ESCURO, APAGADO, LINHA_ESCURA = _ar.SOBRE_ESCURO, _ar.APAGADO, _ar.LINHA_E
 RAIZ = pathlib.Path(__file__).resolve().parent
 FOTO_BORDA = "#2FB4E4"          # o mesmo token do site: --foto-borda
 COLS = 5
+# QUANTAS CABEM NUM SLIDE. Com cinco colunas, tres fileiras entram folgadas.
+# Acima disso o estado e dividido em dois slides — Piaui tem 20 candidaturas, e
+# forcar quatro fileiras fez a ultima passar por cima do rodape. Encolher a foto
+# NAO resolve: com a celula mais estreita o nome quebra em mais linhas, e a
+# fileira fica mais alta em vez de menor. O laco de encolhimento nao convergia.
+POR_SLIDE = COLS * 3
 CREDITO = "FOTO E @ DECLARADOS NO REGISTRO NO TSE"
 
 # "NAO LOCALIZADO" SERIA FALSO PARA A MAIORIA. Das 14 candidaturas do Norte sem
@@ -99,17 +105,30 @@ def medir(regiao: str) -> dict:
         cands = acervo.ler("candidaturas.json", e["uf"])["candidaturas"]
         pos = [p for p in acervo.ler("posicoes.json", e["uf"])["posicoes"]
                if (p.get("revisao") or {}).get("resultado") not in ("remover", "corrigir")]
-        gente = []
+        gente, sem = [], {"nada": 0, "outras": 0, "partido": 0}
         for c in sorted(cands, key=lambda c: int(c["numero_urna"])):
+            if not handle_de(c):
+                ct = c.get("contato") or {}
+                outras = [u for u in (ct.get("redes") or [])
+                          if u != ct.get("site_do_partido")]
+                sem["outras" if outras else
+                    "partido" if ct.get("site_do_partido") else "nada"] += 1
             arq = (c.get("foto") or {}).get("arquivo")
             gente.append({"nome": c["pessoa"]["nome_urna"],
                           "numero": str(c["numero_urna"]),
                           "handle": handle_de(c),
                           "foto": RAIZ / arq if arq else None})
+        com = {x.get("id_candidatura_contexto") or x.get("atribuido_a_id") for x in pos}
         saida.append({"uf": e["uf"], "nome": e["nome"], "gente": gente,
-                      "posicoes": len(pos)})
-    return {"regiao": regiao, "estados": saida,
-            "total": sum(len(x["gente"]) for x in saida)}
+                      "posicoes": len(pos), "sem": sem,
+                      "sem_acervo": sum(1 for c in cands
+                                        if c["id_candidatura"] not in com)})
+    total = sum(len(x["gente"]) for x in saida)
+    return {"regiao": regiao, "estados": saida, "total": total,
+            "com_handle": sum(1 for x in saida for g in x["gente"] if g["handle"]),
+            "sem_acervo": sum(x["sem_acervo"] for x in saida),
+            "sem": {k: sum(x["sem"][k] for x in saida)
+                    for k in ("nada", "outras", "partido")}}
 
 
 # ---------------------------------------------------------------------------
@@ -177,20 +196,27 @@ def escreve_handle(t: Tela, handle: str, x: int, y: int, larg: int) -> int:
     return y
 
 
-def arte_estado(d: dict, e: dict, i: int):
+def arte_estado(d: dict, e: dict, i: int, parte: int = 1, de: int = 1,
+                gente: list | None = None):
+    gente = e["gente"] if gente is None else gente
     t = Tela(PAPEL, 96)
     t.y = 92
-    t.mono(f"{d['regiao'].upper()} · {e['uf']}", f("mono", 19), CIANO_FUNDO, espacamento=4)
+    t.mono(f"{d['regiao'].upper()} · {e['uf']}" + (f" · {parte} DE {de}" if de > 1 else ""),
+           f("mono", 19), CIANO_FUNDO, espacamento=4)
     t.espaco(14)
     t.texto(e["nome"], f("display", 64), TINTA, entre=1.05, larg=900)
     t.espaco(6)
-    t.texto(f"{len(e['gente'])} candidaturas, e este ano você vota em duas. Em ordem de "
-            f"número de urna — a ordem não expressa preferência nem posição em pesquisa.",
+    faixa = (f"{len(e['gente'])} candidaturas, e este ano você vota em duas."
+             if de == 1 else
+             f"{len(e['gente'])} candidaturas — estas são as números "
+             f"{gente[0]['numero']} a {gente[-1]['numero']}. Você vota em duas.")
+    t.texto(f"{faixa} Em ordem de número de urna — a ordem não expressa "
+            f"preferência nem posição em pesquisa.",
             f("corpo", 24), TINTA2, entre=1.36, larg=880)
     t.espaco(26)
 
     gap = 16
-    linhas_n = -(-len(e["gente"]) // COLS)
+    linhas_n = -(-len(gente) // COLS)
     base = t.base_do_rodape()
     fim_grade = base - 52
 
@@ -200,7 +226,7 @@ def arte_estado(d: dict, e: dict, i: int):
     # que aconteceu em Roraima, e so apareceu no PNG.
     def mede(larg, alt_foto):
         prova = Tela(PAPEL, 96)
-        return max(cartao(prova, p, 0, 0, larg, alt_foto) for p in e["gente"]) + 22
+        return max(cartao(prova, p, 0, 0, larg, alt_foto) for p in gente) + 22
 
     # A foto nunca passa do tamanho nativo (161px de largura): ampliar borra o
     # rosto. Se com esse tamanho a grade nao couber, ela DIMINUI ate caber.
@@ -211,9 +237,14 @@ def arte_estado(d: dict, e: dict, i: int):
         if t.y + linhas_n * alt_linha <= fim_grade:
             break
         larg -= 6
+    else:
+        raise SystemExit(
+            f"PAROU: {e['nome']} nao cabe em {linhas_n} fileiras nem com a foto "
+            "no minimo. O desenho continuaria por cima do rodape, e isso ja foi "
+            "publicado uma vez sem ninguem ver. Diminua POR_SLIDE ou aumente COLS.")
     x0 = (L - (COLS * larg + (COLS - 1) * gap)) // 2
     y0 = t.y + max(0, (fim_grade - t.y - linhas_n * alt_linha) // 2)
-    for k, p in enumerate(e["gente"]):
+    for k, p in enumerate(gente):
         cartao(t, p, x0 + (k % COLS) * (larg + gap),
                y0 + (k // COLS) * alt_linha, larg, alt_foto)
 
@@ -222,7 +253,9 @@ def arte_estado(d: dict, e: dict, i: int):
            f("mono", 16), APAGADO, espacamento=2)
     t.rodape("kvgs.github.io/senado-2026", f"{e['uf']} · ARRASTA PARA O LADO",
              CIANO_FUNDO, APAGADO)
-    t.salvar(f"{pasta_da_regiao(d['regiao'])}/{i}-{sem_acento(e['nome']).lower().replace(' ', '-')}.png")
+    sufixo = f"-{parte}" if de > 1 else ""
+    t.salvar(f"{pasta_da_regiao(d['regiao'])}/{i}-"
+             f"{sem_acento(e['nome']).lower().replace(' ', '-')}{sufixo}.png")
 
 
 def arte_capa(d: dict, i: int):
@@ -320,6 +353,129 @@ def arte_comente(d: dict, i: int):
     t.salvar(f"{pasta_da_regiao(d['regiao'])}/{i}-comente.png")
 
 
+LEGENDA = """# Conheça as candidaturas do {regiao}
+
+{n_slides} slides: capa clara, {n_est} estados em ordem alfabética, e o convite.
+A capa e o convite são bege; os estados, brancos — o carrossel tem começo,
+corpo e fim sem precisar de palavra dizendo isso.
+Foto, número de urna, nome e @ do Instagram — em ordem de número de urna.
+
+---
+
+## Legenda
+
+**Você conhece as {total} pessoas que disputam o Senado pelo {regiao}?**
+
+São {n_est} estados, {total} candidaturas — e este ano você vota em duas.
+
+Deslize e veja todas: foto, número de urna, nome e o @ do Instagram, estado por estado. 👉
+
+**Se você ainda não decidiu, comente aqui o que te deixa indeciso.** Um tema que
+falta, uma dúvida sobre alguém, uma fonte que você conhece e o site não tem.
+
+Três coisas sobre como isto é feito:
+
+▪️ A ordem é a do **número de urna**, e só. Este site não ordena candidaturas por
+preferência, por pesquisa nem por nada que pareça um ranking.
+
+▪️ As fotos e os **@ do Instagram** vêm do que cada candidatura declarou no
+registro no TSE. Nada aqui foi procurado por nós: contato achado em busca manda
+o eleitor escrever para um estranho.
+
+▪️ Onde está escrito **"sem Instagram no registro"**, é isso mesmo — a
+candidatura não declarou um Instagram utilizável ao TSE. Não é que não
+procuramos: é que não há o que buscar na fonte oficial.
+
+No site, cada candidatura tem uma página com **o que já foi levantado**, a fonte
+de cada informação e o que ainda não foi encontrado.
+
+🔗 kvgs.github.io/senado-2026 — dados abertos, código público.
+
+{hashtags}
+
+---
+
+## Números desta região
+
+- {total} candidaturas em {n_est} estados
+- {com_handle} com @ declarado ao TSE, {sem_handle} sem
+- dos {sem_handle} sem @: {detalhe_sem}
+- {sem_acervo} ainda não têm nenhuma informação no acervo
+
+**Os {com_handle} @ do {regiao} foram conferidos um a um:** todos saem de uma URL
+de instagram.com declarada ao TSE, nenhum se repete entre candidaturas e nenhum
+é página de partido.
+
+## Notas de produção
+
+- **Um slide por estado**, e não por região: o Nordeste tem 103 candidaturas e
+  não caberiam numa grade legível.
+- **Estado com mais de 15 candidaturas vira dois slides.** Com cinco colunas
+  cabem três fileiras; forçar a quarta fez a última passar por cima do rodapé.
+  Encolher a foto não resolve — com a célula mais estreita o nome quebra em mais
+  linhas e a fileira fica *mais alta*. Hoje o gerador para com erro em vez de
+  desenhar por cima do rodapé, porque isso já foi publicado uma vez sem ninguém ver.
+- **Cinco colunas** porque as 315 fotos do TSE têm 161×225 pixels. Cinco por
+  linha dá 164px cada — o tamanho nativo. Três por linha exigiria ampliar 2,1×,
+  e rosto ampliado fica borrado.
+- **Nome nunca é cortado.** Se não couber em duas linhas, o corpo diminui.
+- **O @ nunca é cortado.** O corpo da fonte cede primeiro; se nem no menor
+  couber, ele quebra em duas linhas por largura. Handle cortado não serve para
+  procurar ninguém, que é a única coisa que ele existe para fazer.
+- **"Sem Instagram no registro", e não "não localizado".** A frase precisa ser
+  verdadeira nos três casos acima — quem não declarou nada, quem declarou outra
+  rede e quem declarou só o site do partido. "Não localizado" diria que a nossa
+  busca falhou, e não houve busca nenhuma: por regra, contato só entra de fonte
+  oficial.
+- Cada slide traz quantas informações daquele estado já estão no site.
+- `--sem-capa` gera o carrossel abrindo direto na primeira grade de rostos.
+- Gerado por `python gerar_artes_regiao.py --regiao {regiao}`.
+
+## Nada de promessa
+
+Nem a arte nem a legenda anunciam o próximo post, e nenhuma das duas diz que o
+que aparecer nos comentários será atendido. Convidar não obriga a nada, e
+calendário anunciado vira dívida.
+
+O que estava escrito antes e saiu: "o que aparecer nos comentários vira trabalho
+— eu vou atrás" e "no próximo carrossel começa a outra metade". No lugar, a
+caixa aponta para o que o site JÁ tem hoje.
+"""
+
+
+def escreve_legenda(d: dict, n_slides: int) -> None:
+    """A legenda sai do mesmo lugar que as artes. Escrita a mao, ela ficaria com
+    os numeros de outra regiao na primeira copia-e-cola."""
+    # Hashtag COM acento: o Instagram aceita, e e assim que se procura por
+    # "#pará" ou "#rondônia". Tirar o acento inventaria uma grafia que ninguem usa.
+    def tag(s: str) -> str:
+        return "#" + s.lower().replace(" ", "").replace("-", "")
+
+    tags = ([tag("eleições2026"), tag("senado"), tag(d["regiao"])]
+            + [tag(e["nome"]) for e in d["estados"]]
+            + [tag("dadosabertos"), tag("votoconsciente"), tag("transparência"),
+               tag("política"), tag("brasil")])
+    # So entra o caso que existe nesta regiao: "0 declararam outras redes" e
+    # ruido, e nao informacao.
+    casos = [(d["sem"]["nada"], "não declarou nenhuma rede ao TSE",
+              "não declararam nenhuma rede ao TSE"),
+             (d["sem"]["outras"], "declarou outra rede", "declararam outras redes"),
+             (d["sem"]["partido"], "declarou só o site do partido",
+              "declararam só o site do partido")]
+    ditos = [f"{n} {um if n == 1 else varios}" for n, um, varios in casos if n]
+    detalhe = (" e ".join([", ".join(ditos[:-1]), ditos[-1]]) if len(ditos) > 1
+               else ditos[0])
+    txt = LEGENDA.format(
+        regiao=d["regiao"], total=d["total"], n_est=len(d["estados"]),
+        n_slides=n_slides, com_handle=d["com_handle"],
+        sem_handle=d["total"] - d["com_handle"], detalhe_sem=detalhe,
+        sem_acervo=d["sem_acervo"], hashtags=" ".join(tags))
+    alvo = _ar.SAIDA / pasta_da_regiao(d["regiao"]) / "LEGENDA.md"
+    alvo.parent.mkdir(parents=True, exist_ok=True)
+    alvo.write_text(txt, encoding="utf-8")
+    print(f"  {alvo.parent.name}/LEGENDA.md")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--regiao", required=True)
@@ -344,8 +500,18 @@ def main() -> None:
     if not a.sem_capa:
         arte_capa(d, n); n += 1
     for e in d["estados"]:
-        arte_estado(d, e, n); n += 1
+        blocos = [e["gente"][k:k + POR_SLIDE]
+                  for k in range(0, len(e["gente"]), POR_SLIDE)]
+        # Dividido em dois, cada slide leva metade — e nao 15 e 5, que faria a
+        # segunda parte parecer sobra.
+        if len(blocos) > 1:
+            meio = -(-len(e["gente"]) // len(blocos))
+            blocos = [e["gente"][k:k + meio]
+                      for k in range(0, len(e["gente"]), meio)]
+        for j, bloco in enumerate(blocos, 1):
+            arte_estado(d, e, n, j, len(blocos), bloco); n += 1
     arte_comente(d, n)
+    escreve_legenda(d, n)
 
 
 if __name__ == "__main__":
