@@ -46,38 +46,52 @@ def medir() -> dict:
 
 # ---------------------------------------------------------------------------
 def arte1():
-    """O gancho. Um numero grande e a frase mais curta que diz o fato."""
+    """O gancho, em forma de pergunta.
+
+    A pergunta so funciona porque a resposta nao e obvia NEM ESTAVEL: quem
+    responde "um" de cabeca esta respondendo pela eleicao passada, e acertou em
+    2022. E isso que faz deslizar para o slide seguinte.
+
+    OS DOIS ALGARISMOS FICAM NO MESMO TOM. Destacar um deles responderia a
+    pergunta no proprio slide que a faz.
+
+    "Votos", e nao "senadores": o carrossel inteiro e sobre a cedula, e o ultimo
+    slide se chama "o que muda com dois votos". "Senadores" deslocaria para quem
+    e eleito, que e outro assunto.
+    """
     t = Tela(TINTA, 96)
     t.y = 118
     t.mono("ELEIÇÕES 2026 · SENADO FEDERAL", f("mono", 20), CIANO, espacamento=4)
     t.espaco(30)
-    t.texto("Este ano você vota em", f("display", 62), SOBRE_ESCURO, entre=1.1, larg=900)
-    t.espaco(6)
+    t.texto("Você tem quantos votos para o Senado?",
+            f("display", 78), PAPEL, entre=1.1, larg=890)
 
-    # O "2" ocupa o lugar de uma imagem: e o assunto inteiro do carrossel. E o
-    # bloco e CENTRADO na faixa que sobra ate a frase de baixo — encostado no
-    # titulo, sobravam 380px de nada, que num formato fixo le como corte.
-    fg = f("display", 400)
-    fc0 = f("corpo", 40)
-    fim_faixa = t.base_do_rodape() - 70 - 2 - 46 - 2 * int(fc0.size * 1.4)
-    t.y += max(0, (fim_faixa - t.y - int(fg.size * 0.92)) // 2)
-    t.d.text((t.m - 14, t.y), "2", font=fg, fill=CIANO)
+    fg, fou = f("display", 300), f("display", 84)
+    larg1 = t.d.textlength("1", font=fg)
+    largou = t.d.textlength("ou", font=fou)
     larg2 = t.d.textlength("2", font=fg)
-    t.d.text((t.m + larg2 + 18, t.y + 190), "senadores",
-             font=f("display", 96), fill=PAPEL)
-    t.y += int(fg.size * 0.92)
+    gap = 56
+    x = (L - (larg1 + gap + largou + gap + larg2)) // 2
 
-    base = t.base_do_rodape()
     fc = f("corpo", 40)
-    frase = "Em 2022 foi um. Em 2030 será um de novo. Este ano são dois — e há um motivo."
+    frase = ("Depende da eleição — e esta não é igual à passada. "
+             "O motivo está na Constituição.")
     linhas = t.quebra(frase, fc, 850)
-    alto = 2 + 46 + len(linhas) * int(fc.size * 1.4)
-    t.y = base - 70 - alto
+    alto_baixo = 2 + 46 + len(linhas) * int(fc.size * 1.4)
+    fim_faixa = t.base_do_rodape() - 70 - alto_baixo
+    y = t.y + max(0, (fim_faixa - t.y - int(fg.size * 0.92)) // 2)
+
+    t.d.text((x, y), "1", font=fg, fill=CIANO)
+    t.d.text((x + larg1 + gap, y + 150), "ou", font=fou, fill=APAGADO)
+    t.d.text((x + larg1 + gap + largou + gap, y), "2", font=fg, fill=CIANO)
+
+    t.y = fim_faixa
     t.d.rectangle([t.m, t.y, L - t.m, t.y + 2], fill=CIANO)
     t.espaco(46)
-    t.texto(frase, fc, PAPEL, entre=1.4, larg=850)
-    t.rodape("kvgs.github.io/senado-2026", "ARRASTA PARA O LADO", CIANO, APAGADO)
-    t.salvar("votos-1-gancho.png")
+    t.texto(frase, fc, SOBRE_ESCURO, entre=1.4, larg=850)
+    t.rodape("kvgs.github.io/senado-2026", "NÃO É O MESMO NÚMERO DA ÚLTIMA VEZ",
+             CIANO, APAGADO)
+    t.salvar("votos-1-pergunta.png")
 
 
 def arte2():
