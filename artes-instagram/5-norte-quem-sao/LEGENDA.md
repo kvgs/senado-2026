@@ -1,11 +1,13 @@
 # Você conhece os candidatos ao Senado? — Norte
 
-Nove slides: capa, os sete estados em ordem alfabética, e o convite.
+Nove slides: capa clara, os sete estados em ordem alfabética, e o convite.
+A capa e o convite são bege; os estados, brancos — o carrossel tem começo,
+corpo e fim sem precisar de palavra dizendo isso.
 Fotos, número de urna e nome, em ordem de número de urna.
 
 ---
 
-**Você conhece os candidatos ao Senado?**
+**Conheça as candidaturas do Norte.**
 
 São **74 candidaturas nos 7 estados do Norte** — e este ano você vota em duas.
 
@@ -45,3 +47,4 @@ Fotos: TSE — foto de registro de candidatura.
   e rosto ampliado fica borrado.
 - **Nome nunca é cortado.** Se não couber em duas linhas, o corpo diminui.
 - Cada slide traz quantas informações daquele estado já estão no site.
+- `--sem-capa` gera o carrossel abrindo direto na primeira grade de rostos.

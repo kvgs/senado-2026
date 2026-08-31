@@ -119,8 +119,9 @@ def arte_estado(d: dict, e: dict, i: int):
     t.espaco(14)
     t.texto(e["nome"], f("display", 76), TINTA, entre=1.05, larg=900)
     t.espaco(8)
-    t.texto(f"{len(e['gente'])} candidaturas ao Senado. Em ordem de número de urna — "
-            f"a ordem não expressa preferência nem posição em pesquisa.",
+    t.texto(f"{len(e['gente'])} candidaturas ao Senado, e este ano você vota em duas. "
+            f"Em ordem de número de urna — a ordem não expressa preferência nem "
+            f"posição em pesquisa.",
             f("corpo", 26), TINTA2, entre=1.38, larg=880)
     t.espaco(40)
 
@@ -160,39 +161,56 @@ def arte_estado(d: dict, e: dict, i: int):
     t.salvar(f"{pasta_da_regiao(d['regiao'])}/{i}-{sem_acento(e['nome']).lower().replace(' ', '-')}.png")
 
 
-def arte_capa(d: dict):
-    t = Tela(TINTA, 96)
-    t.y = 118
-    t.mono("ELEIÇÕES 2026 · SENADO FEDERAL", f("mono", 20), CIANO, espacamento=4)
-    t.espaco(30)
-    t.texto("Você conhece os candidatos ao Senado?",
-            f("display", 84), PAPEL, entre=1.08, larg=890)
-    t.espaco(30)
-    # Todas as cinco regioes levam "do" ("do Norte", "do Centro-Oeste"): o
-    # condicional que estava aqui escolhia entre "do" e "do".
+def arte_capa(d: dict, i: int):
+    """Capa clara, para nao brigar com a grade de rostos que vem logo depois.
+
+    O fundo bege fecha o carrossel com o slide do convite, que tambem e bege: no
+    meio ficam os estados, em branco. Assim a sequencia tem comeco, corpo e fim
+    sem precisar de nenhuma palavra dizendo isso.
+    """
+    t = Tela(PAPEL2, 96)
+    t.y = 100
+    t.mono(f"ELEIÇÕES 2026 · SENADO FEDERAL · {d['regiao'].upper()}",
+           f("mono", 20), CIANO_FUNDO, espacamento=4)
+    t.espaco(20)
+    t.texto(f"Conheça as candidaturas do {d['regiao']}",
+            f("display", 86), TINTA, entre=1.06, larg=890)
+    t.espaco(24)
     t.texto(f"São {d['total']} candidaturas nos {len(d['estados'])} estados "
             f"do {d['regiao']} — e este ano você vota em duas.",
-            f("corpo", 38), SOBRE_ESCURO, entre=1.36, larg=850)
+            f("corpo", 36), TINTA2, entre=1.38, larg=860)
 
-    fnum = f("display", 260)
-    fc = f("corpo", 34)
+    fnum = f("display", 230)
+    fc = f("corpo", 32)
     frase = ("Nos próximos slides, todas elas: foto, número de urna e nome, "
              "estado por estado.")
     linhas = t.quebra(frase, fc, 850)
-    alto_baixo = 2 + 44 + len(linhas) * int(fc.size * 1.42)
-    fim = t.base_do_rodape() - 66 - alto_baixo
-    y = t.y + max(0, (fim - t.y - int(fnum.size * 0.9)) // 2)
-    t.d.text((96, y), str(d["total"]), font=fnum, fill=CIANO)
+    alto_baixo = 2 + 42 + len(linhas) * int(fc.size * 1.42)
+    fim = t.base_do_rodape() - 62 - alto_baixo
+
+    # O numero e a lista dos estados dividem a faixa livre: o numero da a escala,
+    # e os nomes dizem de quais estados se trata, que e o que a pessoa procura.
+    fest = f("corpo", 30)
+    nomes = " · ".join(f"{e['nome']} {len(e['gente'])}" for e in d["estados"])
+    linhas_est = t.quebra(nomes, fest, 860)
+    alto_bloco = int(fnum.size * 0.9) + 26 + len(linhas_est) * int(fest.size * 1.4)
+    y = t.y + max(0, (fim - t.y - alto_bloco) // 2)
+
+    t.d.text((96, y), str(d["total"]), font=fnum, fill=CIANO_FUNDO)
     larg_n = t.d.textlength(str(d["total"]), font=fnum)
-    t.d.text((96 + larg_n + 26, y + 120), d["regiao"].upper(),
-             font=f("mono", 34), fill=APAGADO)
+    t.d.text((96 + larg_n + 24, y + 104), "CANDIDATURAS",
+             font=f("mono", 30), fill=APAGADO)
+    t.y = y + int(fnum.size * 0.9) + 26
+    for ln in linhas_est:
+        t.d.text((96, t.y), ln, font=fest, fill=TINTA2)
+        t.y += int(fest.size * 1.4)
 
     t.y = fim
-    t.d.rectangle([t.m, t.y, L - t.m, t.y + 2], fill=CIANO)
-    t.espaco(44)
-    t.texto(frase, fc, PAPEL, entre=1.42, larg=850)
-    t.rodape("kvgs.github.io/senado-2026", "ARRASTA PARA O LADO", CIANO, APAGADO)
-    t.salvar(f"{pasta_da_regiao(d['regiao'])}/1-capa.png")
+    t.d.rectangle([t.m, t.y, L - t.m, t.y + 2], fill=CIANO_FUNDO)
+    t.espaco(42)
+    t.texto(frase, fc, TINTA, entre=1.42, larg=850)
+    t.rodape("kvgs.github.io/senado-2026", "ARRASTA PARA O LADO", CIANO_FUNDO, APAGADO)
+    t.salvar(f"{pasta_da_regiao(d['regiao'])}/{i}-capa.png")
 
 
 def arte_comente(d: dict, i: int):
@@ -243,6 +261,8 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--regiao", required=True)
     ap.add_argument("--uf", help="gera so o slide deste estado, para conferir")
+    ap.add_argument("--sem-capa", action="store_true", dest="sem_capa",
+                    help="abre o carrossel direto na primeira grade de rostos")
     a = ap.parse_args()
 
     d = medir(a.regiao)
@@ -253,12 +273,16 @@ def main() -> None:
     print()
     if a.uf:
         e = next(x for x in d["estados"] if x["uf"] == a.uf.upper())
-        arte_estado(d, e, d["estados"].index(e) + 2)
+        arte_estado(d, e, d["estados"].index(e) + 1)
         return
-    arte_capa(d)
-    for k, e in enumerate(d["estados"]):
-        arte_estado(d, e, k + 2)
-    arte_comente(d, len(d["estados"]) + 2)
+    # A numeracao segue a ordem de postagem. Com --capa ela ocupa o 1 e os
+    # estados comecam no 2; sem ela, o primeiro estado E o primeiro slide.
+    n = 1
+    if not a.sem_capa:
+        arte_capa(d, n); n += 1
+    for e in d["estados"]:
+        arte_estado(d, e, n); n += 1
+    arte_comente(d, n)
 
 
 if __name__ == "__main__":
