@@ -127,10 +127,14 @@ class Tela:
         return base
 
     def salvar(self, nome: str):
-        SAIDA.mkdir(exist_ok=True)
+        """`nome` pode trazer a subpasta: "1-o-site/1-oito-anos.png". Cada
+        carrossel mora na sua pasta, e o numero do arquivo e a ordem em que o
+        slide entra no post — assim o proprio explorador de arquivos ja mostra
+        na ordem certa, e nao e preciso lembrar qual vinha antes."""
         p = SAIDA / nome
+        p.parent.mkdir(parents=True, exist_ok=True)
         self.img.save(p, "PNG", optimize=True)
-        print(f"  {p.name:26} {p.stat().st_size/1024:5.0f} KB")
+        print(f"  {nome:44} {p.stat().st_size/1024:5.0f} KB")
 
 
 # ---------------------------------------------------------------------------
@@ -163,7 +167,7 @@ def arte1():
     t.y = y_anos + alt_a + 74
     t.texto(corpo, fc, SOBRE_ESCURO, larg=760)
     t.rodape("kvgs.github.io/senado-2026", "CADA ESTADO ELEGE 2", CIANO, APAGADO)
-    t.salvar("arte-1-oito-anos.png")
+    t.salvar("1-o-site/1-oito-anos.png")
 
 
 def arte2():
@@ -192,7 +196,7 @@ def arte2():
         t.y = max(t.y, y0) + 26
     t.regua(LINHA, 1)
     t.rodape("kvgs.github.io/senado-2026", "", CIANO_FUNDO, APAGADO)
-    t.salvar("arte-2-so-o-senado.png")
+    t.salvar("1-o-site/2-so-o-senado.png")
 
 
 def arte3():
@@ -237,7 +241,7 @@ def arte3():
     t.texto(conclusao, fcc, PAPEL, entre=1.42, larg=860)
     t.espaco(16)
     t.mono("LEI 9.504/1997, ART. 11, §1º, IX", fl, APAGADO, espacamento=2)
-    t.salvar("arte-3-por-que-existe.png")
+    t.salvar("1-o-site/3-por-que-existe.png")
 
 
 def arte4():
@@ -293,7 +297,7 @@ def arte4():
         yy += int(fe.size * 1.45)
     t.rodape("kvgs.github.io/senado-2026", "FALTA MUITO — E FALTAR É O CONVITE",
              CIANO_FUNDO, APAGADO)
-    t.salvar("arte-4-faz-e-nao-faz.png")
+    t.salvar("1-o-site/4-faz-e-nao-faz.png")
 
 
 def arte5():
@@ -332,7 +336,7 @@ def arte5():
         t.y += alto + 30
     t.rodape("kvgs.github.io/senado-2026", "SILÊNCIO NÃO VIRA POSIÇÃO",
              CIANO_FUNDO, APAGADO)
-    t.salvar("arte-5-perguntar.png")
+    t.salvar("1-o-site/5-perguntar.png")
 
 
 def arte6():
@@ -377,7 +381,7 @@ def arte6():
     t.d.rectangle([t.m, t.y, L - t.m, t.y + 2], fill=CIANO)
     t.y += 44
     t.texto(conclusao, fcc, PAPEL, entre=1.4, larg=830)
-    t.salvar("arte-6-o-convite.png")
+    t.salvar("1-o-site/6-o-convite.png")
 
 
 ARTES = {1: arte1, 2: arte2, 3: arte3, 4: arte4, 5: arte5, 6: arte6}

@@ -150,7 +150,7 @@ def arte1(d: dict):
     t.texto(f"As outras {d['homens']} declararam masculino. São os dois únicos "
             f"valores que a base do TSE traz.", frot, TINTA2, entre=1.4, larg=860)
     t.rodape("kvgs.github.io/senado-2026", "@CANDIDATURASENADO", CIANO_FUNDO, APAGADO)
-    t.salvar("perfil-1-quem.png")
+    t.salvar("3-quem-se-candidata/1-quem.png")
 
 
 def arte2(d: dict):
@@ -176,7 +176,7 @@ def arte2(d: dict):
     t.mono("QUANTAS CANDIDATURAS EM CADA FAIXA", f("mono", 18), APAGADO, espacamento=3)
     t.rodape("kvgs.github.io/senado-2026", "DADOS ABERTOS · REGISTRO NO TSE",
              CIANO_FUNDO, APAGADO)
-    t.salvar("perfil-2-idade.png")
+    t.salvar("3-quem-se-candidata/2-idade.png")
 
 
 def arte3(d: dict):
@@ -201,7 +201,7 @@ def arte3(d: dict):
     t.mono("CADA CANDIDATURA APARECE UMA VEZ", f("mono", 18), APAGADO, espacamento=3)
     t.rodape("kvgs.github.io/senado-2026", "DADOS ABERTOS · REGISTRO NO TSE",
              CIANO_FUNDO, APAGADO)
-    t.salvar("perfil-3-escolaridade.png")
+    t.salvar("3-quem-se-candidata/3-escolaridade.png")
 
 
 def arte4(d: dict):
@@ -247,7 +247,7 @@ def arte4(d: dict):
     t.espaco(40)
     t.texto(frase, fc, PAPEL, entre=1.42, larg=860)
     t.rodape("kvgs.github.io/senado-2026", "@CANDIDATURASENADO", CIANO, APAGADO)
-    t.salvar("perfil-4-ocupacao.png")
+    t.salvar("3-quem-se-candidata/4-ocupacao.png")
 
 
 def main() -> None:

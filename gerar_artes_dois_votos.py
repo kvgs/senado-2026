@@ -91,7 +91,7 @@ def arte1():
     t.texto(frase, fc, SOBRE_ESCURO, entre=1.4, larg=850)
     t.rodape("kvgs.github.io/senado-2026", "NÃO É O MESMO NÚMERO DA ÚLTIMA VEZ",
              CIANO, APAGADO)
-    t.salvar("votos-1-pergunta.png")
+    t.salvar("4-dois-votos/1-pergunta.png")
 
 
 def arte2():
@@ -147,7 +147,7 @@ def arte2():
         t.d.text((t.m + 38, yy), ln, font=fc, fill=SOBRE_ESCURO)
         yy += int(fc.size * 1.45)
     t.rodape("kvgs.github.io/senado-2026", FONTE_LEI, CIANO_FUNDO, APAGADO)
-    t.salvar("votos-2-por-que.png")
+    t.salvar("4-dois-votos/2-por-que.png")
 
 
 def arte3():
@@ -189,7 +189,7 @@ def arte3():
     t.y = t.base_do_rodape() - 56
     t.mono("CADA BOLA É UM VOTO PARA SENADOR", f("mono", 18), APAGADO, espacamento=3)
     t.rodape("kvgs.github.io/senado-2026", FONTE_LEI, CIANO_FUNDO, APAGADO)
-    t.salvar("votos-3-alternancia.png")
+    t.salvar("4-dois-votos/3-alternancia.png")
 
 
 def arte4(d: dict):
@@ -238,7 +238,7 @@ def arte4(d: dict):
         t.d.text((t.m + 38, yy), ln, font=fc, fill=SOBRE_ESCURO)
         yy += int(fc.size * 1.45)
     t.rodape("kvgs.github.io/senado-2026", "@CANDIDATURASENADO", CIANO_FUNDO, APAGADO)
-    t.salvar("votos-4-na-urna.png")
+    t.salvar("4-dois-votos/4-na-urna.png")
 
 
 def main() -> None:

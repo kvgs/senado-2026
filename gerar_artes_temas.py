@@ -133,7 +133,7 @@ def arte1(d: dict):
            espacamento=3)
     t.rodape("kvgs.github.io/senado-2026", "DADOS ABERTOS · FONTE EM CADA LINHA",
              CIANO_FUNDO, APAGADO)
-    t.salvar("tema-1-ranking.png")
+    t.salvar("2-de-que-falam/1-ranking.png")
 
 
 def arte2(d: dict):
@@ -179,7 +179,7 @@ def arte2(d: dict):
     t.y += 44
     t.texto(frase, fc, PAPEL, entre=1.42, larg=860)
     t.rodape("kvgs.github.io/senado-2026", "@CANDIDATURASENADO", CIANO, APAGADO)
-    t.salvar("tema-2-quem-fala.png")
+    t.salvar("2-de-que-falam/2-quem-fala.png")
 
 
 def arte3(d: dict):
@@ -253,7 +253,7 @@ def arte3(d: dict):
         yy += int(fc.size * 1.45)
     t.rodape("contato.candidaturasenado@gmail.com", "@CANDIDATURASENADO",
              CIANO_FUNDO, APAGADO)
-    t.salvar("tema-3-silencio.png")
+    t.salvar("2-de-que-falam/3-silencio.png")
 
 
 def main() -> None:

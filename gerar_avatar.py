@@ -107,7 +107,11 @@ def main() -> None:
         d.line(pts + [pts[0]], fill=o["forma"], width=costura, joint="curve")
 
     img = img.resize((a.px, a.px), Image.LANCZOS)
-    saida = pathlib.Path(a.saida) if a.saida else RAIZ / f"avatar-{a.opcao.lower()}-{a.px}.png"
+    # A foto de perfil e material de Instagram, e nao codigo: mora junto com as
+    # artes, e nao solta na raiz do repositorio.
+    pasta = RAIZ / "artes-instagram" / "perfil-da-conta"
+    pasta.mkdir(parents=True, exist_ok=True)
+    saida = pathlib.Path(a.saida) if a.saida else pasta / f"avatar-{a.opcao.lower()}-{a.px}.png"
     img.save(saida, "PNG", optimize=True)
     print(f"gravado: {saida.name}  ({a.px}x{a.px}, {saida.stat().st_size/1024:.0f} KB)")
     print(f"  opcao {a.opcao} — {o['desc']}: forma {o['forma']} sobre {o['fundo']}, "
