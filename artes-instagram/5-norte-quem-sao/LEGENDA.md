@@ -1,40 +1,38 @@
-# Você conhece os candidatos ao Senado? — Norte
+# Conheça as candidaturas do Norte
 
 Nove slides: capa clara, os sete estados em ordem alfabética, e o convite.
 A capa e o convite são bege; os estados, brancos — o carrossel tem começo,
 corpo e fim sem precisar de palavra dizendo isso.
-Fotos, número de urna e nome, em ordem de número de urna.
+Foto, número de urna e nome, em ordem de número de urna.
 
 ---
 
-**Conheça as candidaturas do Norte.**
+## Legenda
 
-São **74 candidaturas nos 7 estados do Norte** — e este ano você vota em duas.
+**Você conhece as 74 pessoas que disputam o Senado pelo Norte?**
 
-Nos slides seguintes estão todas, estado por estado: foto, número de urna e
-nome. **A ordem é a do número de urna** e não expressa preferência nem posição
-em pesquisa — este site nunca ordena candidaturas por qualquer outro critério.
+São 7 estados, 74 candidaturas — e este ano você vota em duas.
 
-Acre 8 · Amapá 9 · Amazonas 9 · Pará 12 · Rondônia 10 · Roraima 13 · Tocantins 13
+Deslize e veja todas: foto, número de urna e nome, estado por estado. 👉
 
 **Se você ainda não decidiu, comente aqui o que te deixa indeciso.** Um tema que
 falta, uma dúvida sobre alguém, uma fonte que você conhece e o site não tem. O
-que aparecer nos comentários vira trabalho: eu vou atrás.
+que aparecer nos comentários vira trabalho — eu vou atrás.
 
-E se quiser apontar direto, os dez temas do site são: Segurança Pública ·
-Educação · Saúde · Economia e Emprego · Infraestrutura e Mobilidade Urbana ·
-Meio Ambiente e Mudança Climática · Habitação · Tecnologia e Inteligência
-Artificial · Cultura e Direitos Humanos · Organização do Estado
+Duas coisas sobre como isto é feito:
 
-O próximo carrossel começa a mostrar **o que cada candidatura defende**, tema
-por tema, com a fonte de cada informação ao lado.
+▪️ A ordem é a do **número de urna**, e só. Este site não ordena candidaturas por
+preferência, por pesquisa nem por nada que pareça um ranking.
 
-Fotos: TSE — foto de registro de candidatura.
+▪️ As fotos são as do **registro no TSE** — as mesmas que aparecem na urna.
 
-🔗 kvgs.github.io/senado-2026
+No próximo carrossel começa a outra metade: **o que cada uma defende**, tema por
+tema, com a fonte de cada informação ao lado.
 
-#eleições2026 #senado #norte #acre #amapa #amazonas #para #rondonia #roraima
-#tocantins #dadosabertos #votoconsciente
+🔗 Tudo está em kvgs.github.io/senado-2026 — dados abertos, código público.
+
+#eleições2026 #senado #norte #acre #amapá #amazonas #pará #rondônia #roraima
+#tocantins #dadosabertos #votoconsciente #transparência #política #brasil
 
 ---
 
@@ -48,3 +46,12 @@ Fotos: TSE — foto de registro de candidatura.
 - **Nome nunca é cortado.** Se não couber em duas linhas, o corpo diminui.
 - Cada slide traz quantas informações daquele estado já estão no site.
 - `--sem-capa` gera o carrossel abrindo direto na primeira grade de rostos.
+
+## Para os próximos posts
+
+Trocar `--regiao` no comando gera as outras quatro. Ao adaptar a legenda, os
+números mudam: Nordeste 103 em 9 estados · Sudeste 59 em 4 · Centro-Oeste 44 em
+4 · Sul 35 em 3.
+
+Quando chegar o carrossel de propostas, decidir antes o que fazer com as
+candidaturas que ainda não têm nada no acervo — no Norte são 12 das 74.
