@@ -9,12 +9,16 @@ poste na ordem em que o explorador de arquivos mostra.
 | `2-de-que-falam/` | 3 | `gerar_artes_temas.py` |
 | `3-quem-se-candidata/` | 4 | `gerar_artes_perfil.py` |
 | `4-dois-votos/` | 4 | `gerar_artes_dois_votos.py` |
+| `5-norte-quem-sao/` | 9 | `gerar_artes_regiao.py --regiao Norte` |
 | `perfil-da-conta/` | — | `gerar_avatar.py` |
 
 O número da **pasta** é a ordem em que os carrosséis foram feitos, e não uma
 afirmação sobre o que já foi publicado. Renumere se postar fora de ordem.
 
 Cada pasta tem um `LEGENDA.md` com o texto do post.
+
+O carrossel por região sai para as cinco regiões com o mesmo comando, trocando
+`--regiao`: Norte, Nordeste, Centro-Oeste, Sudeste, Sul.
 
 ## Nada aqui é editado à mão
 

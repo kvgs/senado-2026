@@ -1,0 +1,265 @@
+# -*- coding: utf-8 -*-
+"""Carrossel "Você conhece os candidatos ao Senado?" — um post por região,
+um slide por estado, com foto, número de urna e nome de cada candidatura.
+
+A ORDEM E O NUMERO DE URNA, E A ARTE DIZ ISSO EM TODO SLIDE. Uma grade de
+rostos e lida como ranking se nada disser o contrario. E a regra central do
+projeto: a pagina do estado escreve "a ordem nao expressa preferencia nem
+posicao em pesquisa", e aqui nao pode ser diferente.
+
+O SLIDE E O ESTADO, E NAO A REGIAO. O Nordeste tem 103 candidaturas; nao cabem
+numa grade legivel. Estado por estado, nenhum passa de 20, e cada slide fica
+sendo o espelho de uma pagina do site.
+
+CINCO COLUNAS, POR CAUSA DA FOTO. As 315 fotos do TSE tem 161x225 pixels. Em
+1080px de largura, cinco por linha da 164px cada — o tamanho nativo. Tres por
+linha exigiria ampliar 2,1x, e rosto ampliado fica borrado. O layout aqui e
+consequencia do material, nao escolha estetica.
+
+NOME NUNCA E CORTADO. Se nao couber em duas linhas, o corpo diminui ate caber.
+Cortar o nome de alguem com "..." para o layout fechar seria resolver um
+problema meu no nome de outra pessoa.
+
+USO
+    python gerar_artes_regiao.py --regiao Norte
+    python gerar_artes_regiao.py --regiao Norte --uf AC   # so um slide, para conferir
+"""
+from __future__ import annotations
+
+import argparse
+import importlib.util
+import pathlib
+import unicodedata
+
+from PIL import Image
+
+import acervo
+
+_spec = importlib.util.spec_from_file_location(
+    "artes", pathlib.Path(__file__).resolve().parent / "gerar_artes.py")
+_ar = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(_ar)
+
+Tela, f, L, A = _ar.Tela, _ar.f, _ar.L, _ar.A
+TINTA, TINTA2 = _ar.TINTA, _ar.TINTA2
+PAPEL, PAPEL2, LINHA = _ar.PAPEL, _ar.PAPEL2, _ar.LINHA
+CIANO, CIANO_FUNDO = _ar.CIANO, _ar.CIANO_FUNDO
+SOBRE_ESCURO, APAGADO, LINHA_ESCURA = _ar.SOBRE_ESCURO, _ar.APAGADO, _ar.LINHA_ESCURA
+
+RAIZ = pathlib.Path(__file__).resolve().parent
+FOTO_BORDA = "#2FB4E4"          # o mesmo token do site: --foto-borda
+COLS = 5
+CREDITO = "FOTOS: TSE — REGISTRO DE CANDIDATURA"
+
+
+def sem_acento(s: str) -> str:
+    return unicodedata.normalize("NFD", s).encode("ascii", "ignore").decode()
+
+
+def pasta_da_regiao(regiao: str) -> str:
+    return f"5-{sem_acento(regiao).lower().replace(' ', '-')}-quem-sao"
+
+
+def medir(regiao: str) -> dict:
+    est = [e for e in acervo.ler("estados.json")["estados"] if e["regiao"] == regiao]
+    if not est:
+        raise SystemExit(f"regiao {regiao!r} nao existe em estados.json")
+    est.sort(key=lambda e: sem_acento(e["nome"]))
+    saida = []
+    for e in est:
+        cands = acervo.ler("candidaturas.json", e["uf"])["candidaturas"]
+        pos = [p for p in acervo.ler("posicoes.json", e["uf"])["posicoes"]
+               if (p.get("revisao") or {}).get("resultado") not in ("remover", "corrigir")]
+        gente = []
+        for c in sorted(cands, key=lambda c: int(c["numero_urna"])):
+            arq = (c.get("foto") or {}).get("arquivo")
+            gente.append({"nome": c["pessoa"]["nome_urna"],
+                          "numero": str(c["numero_urna"]),
+                          "foto": RAIZ / arq if arq else None})
+        saida.append({"uf": e["uf"], "nome": e["nome"], "gente": gente,
+                      "posicoes": len(pos)})
+    return {"regiao": regiao, "estados": saida,
+            "total": sum(len(x["gente"]) for x in saida)}
+
+
+# ---------------------------------------------------------------------------
+def cartao(t: Tela, p: dict, x: int, y: int, larg: int, alt_foto: int) -> int:
+    """Uma foto, o numero de urna e o nome. Devolve o y do fim do cartao."""
+    if p["foto"] and p["foto"].exists():
+        img = Image.open(p["foto"]).convert("RGB")
+        img = img.resize((larg, alt_foto), Image.LANCZOS)
+        t.img.paste(img, (x, y))
+    else:
+        t.d.rectangle([x, y, x + larg, y + alt_foto], fill=PAPEL2, outline=LINHA)
+    # Fio fino na cor da moldura do site, para a foto nao sangrar no fundo.
+    t.d.rectangle([x, y, x + larg, y + alt_foto], outline=FOTO_BORDA, width=2)
+
+    yy = y + alt_foto + 12
+    fnum = f("mono", 21)
+    t.d.text((x, yy), p["numero"], font=fnum, fill=CIANO_FUNDO)
+    yy += int(fnum.size * 1.35)
+
+    # O corpo do nome cede antes do nome. Duas linhas e o limite; se nao couber,
+    # tenta um corpo menor, e so no fim aceita a terceira linha.
+    for corpo in (20, 18, 16, 15):
+        fn = f("corpo", corpo)
+        linhas = t.quebra(p["nome"], fn, larg)
+        if len(linhas) <= 2:
+            break
+    for ln in linhas[:3]:
+        t.d.text((x, yy), ln, font=fn, fill=TINTA)
+        yy += int(fn.size * 1.22)
+    return yy
+
+
+def arte_estado(d: dict, e: dict, i: int):
+    t = Tela(PAPEL, 96)
+    t.y = 92
+    t.mono(f"{d['regiao'].upper()} · {e['uf']}", f("mono", 19), CIANO_FUNDO, espacamento=4)
+    t.espaco(14)
+    t.texto(e["nome"], f("display", 76), TINTA, entre=1.05, larg=900)
+    t.espaco(8)
+    t.texto(f"{len(e['gente'])} candidaturas ao Senado. Em ordem de número de urna — "
+            f"a ordem não expressa preferência nem posição em pesquisa.",
+            f("corpo", 26), TINTA2, entre=1.38, larg=880)
+    t.espaco(40)
+
+    gap = 16
+    linhas_n = -(-len(e["gente"]) // COLS)
+    base = t.base_do_rodape()
+    fim_grade = base - 52
+
+    # A ALTURA DA LINHA E O MAIOR CARTAO, e nao o primeiro. Medindo pelo
+    # primeiro, um nome que quebra em duas linhas mais adiante ("Hiperion de
+    # Oliveira") empurra a ultima fileira para cima da linha de credito — foi o
+    # que aconteceu em Roraima, e so apareceu no PNG.
+    def mede(larg, alt_foto):
+        prova = Tela(PAPEL, 96)
+        return max(cartao(prova, p, 0, 0, larg, alt_foto) for p in e["gente"]) + 22
+
+    # A foto nunca passa do tamanho nativo (161px de largura): ampliar borra o
+    # rosto. Se com esse tamanho a grade nao couber, ela DIMINUI ate caber.
+    larg = min(164, (L - 2 * 96 - (COLS - 1) * gap) // COLS)
+    while larg > 96:
+        alt_foto = round(larg * 225 / 161)
+        alt_linha = mede(larg, alt_foto)
+        if t.y + linhas_n * alt_linha <= fim_grade:
+            break
+        larg -= 6
+    x0 = (L - (COLS * larg + (COLS - 1) * gap)) // 2
+    y0 = t.y + max(0, (fim_grade - t.y - linhas_n * alt_linha) // 2)
+    for k, p in enumerate(e["gente"]):
+        cartao(t, p, x0 + (k % COLS) * (larg + gap),
+               y0 + (k // COLS) * alt_linha, larg, alt_foto)
+
+    t.y = base - 40
+    t.mono(f"{e['posicoes']} INFORMAÇÕES DESTE ESTADO NO SITE · {CREDITO}",
+           f("mono", 16), APAGADO, espacamento=2)
+    t.rodape("kvgs.github.io/senado-2026", f"{e['uf']} · ARRASTA PARA O LADO",
+             CIANO_FUNDO, APAGADO)
+    t.salvar(f"{pasta_da_regiao(d['regiao'])}/{i}-{sem_acento(e['nome']).lower().replace(' ', '-')}.png")
+
+
+def arte_capa(d: dict):
+    t = Tela(TINTA, 96)
+    t.y = 118
+    t.mono("ELEIÇÕES 2026 · SENADO FEDERAL", f("mono", 20), CIANO, espacamento=4)
+    t.espaco(30)
+    t.texto("Você conhece os candidatos ao Senado?",
+            f("display", 84), PAPEL, entre=1.08, larg=890)
+    t.espaco(30)
+    # Todas as cinco regioes levam "do" ("do Norte", "do Centro-Oeste"): o
+    # condicional que estava aqui escolhia entre "do" e "do".
+    t.texto(f"São {d['total']} candidaturas nos {len(d['estados'])} estados "
+            f"do {d['regiao']} — e este ano você vota em duas.",
+            f("corpo", 38), SOBRE_ESCURO, entre=1.36, larg=850)
+
+    fnum = f("display", 260)
+    fc = f("corpo", 34)
+    frase = ("Nos próximos slides, todas elas: foto, número de urna e nome, "
+             "estado por estado.")
+    linhas = t.quebra(frase, fc, 850)
+    alto_baixo = 2 + 44 + len(linhas) * int(fc.size * 1.42)
+    fim = t.base_do_rodape() - 66 - alto_baixo
+    y = t.y + max(0, (fim - t.y - int(fnum.size * 0.9)) // 2)
+    t.d.text((96, y), str(d["total"]), font=fnum, fill=CIANO)
+    larg_n = t.d.textlength(str(d["total"]), font=fnum)
+    t.d.text((96 + larg_n + 26, y + 120), d["regiao"].upper(),
+             font=f("mono", 34), fill=APAGADO)
+
+    t.y = fim
+    t.d.rectangle([t.m, t.y, L - t.m, t.y + 2], fill=CIANO)
+    t.espaco(44)
+    t.texto(frase, fc, PAPEL, entre=1.42, larg=850)
+    t.rodape("kvgs.github.io/senado-2026", "ARRASTA PARA O LADO", CIANO, APAGADO)
+    t.salvar(f"{pasta_da_regiao(d['regiao'])}/1-capa.png")
+
+
+def arte_comente(d: dict, i: int):
+    t = Tela(PAPEL2, 96)
+    t.y = 100
+    t.mono("SE VOCÊ AINDA NÃO DECIDIU", f("mono", 20), CIANO_FUNDO, espacamento=4)
+    t.espaco(18)
+    t.texto("Comente aqui o que ainda te deixa indeciso",
+            f("display", 82), TINTA, entre=1.08, larg=890)
+    t.espaco(26)
+    t.texto("Um tema que falta, uma dúvida sobre alguém, uma fonte que você "
+            "conhece e o site não tem. O que aparecer aqui vira trabalho: "
+            "eu vou atrás.",
+            f("corpo", 34), TINTA2, entre=1.4, larg=860)
+
+    t.espaco(44)
+    t.mono("OS DEZ TEMAS DO SITE", f("mono", 18), APAGADO, espacamento=3)
+    t.espaco(12)
+    ft = f("corpo", 27)
+    x, y = t.m, t.y
+    for nome in [x["nome"] for x in acervo.ler("referencia.json")["temas"]]:
+        larg = t.d.textlength(nome, font=ft) + 34
+        if x + larg > L - t.m:
+            x = t.m; y += 58
+        t.d.rounded_rectangle([x, y, x + larg, y + 46], 23, fill=PAPEL,
+                              outline="#D8D0C8", width=2)
+        t.d.text((x + 17, y + 9), nome, font=ft, fill=TINTA2)
+        x += larg + 12
+    t.y = y + 46
+
+    base = t.base_do_rodape()
+    fc = f("corpo", 32)
+    frase = ("O próximo carrossel começa a mostrar o que cada candidatura "
+             "defende, tema por tema — com a fonte de cada informação ao lado.")
+    linhas = t.quebra(frase, fc, 830)
+    alto = 32 + len(linhas) * int(fc.size * 1.45) + 32
+    t.y = base - 52 - alto
+    t.d.rounded_rectangle([t.m, t.y, L - t.m, t.y + alto], 14, fill=TINTA)
+    yy = t.y + 32
+    for ln in linhas:
+        t.d.text((t.m + 38, yy), ln, font=fc, fill=SOBRE_ESCURO)
+        yy += int(fc.size * 1.45)
+    t.rodape("kvgs.github.io/senado-2026", "@CANDIDATURASENADO", CIANO_FUNDO, APAGADO)
+    t.salvar(f"{pasta_da_regiao(d['regiao'])}/{i}-comente.png")
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--regiao", required=True)
+    ap.add_argument("--uf", help="gera so o slide deste estado, para conferir")
+    a = ap.parse_args()
+
+    d = medir(a.regiao)
+    print(f"{a.regiao}: {len(d['estados'])} estados, {d['total']} candidaturas")
+    for e in d["estados"]:
+        print(f"    {e['uf']} {e['nome'][:18]:18} {len(e['gente']):3} candidaturas "
+              f"· {e['posicoes']:3} informacoes")
+    print()
+    if a.uf:
+        e = next(x for x in d["estados"] if x["uf"] == a.uf.upper())
+        arte_estado(d, e, d["estados"].index(e) + 2)
+        return
+    arte_capa(d)
+    for k, e in enumerate(d["estados"]):
+        arte_estado(d, e, k + 2)
+    arte_comente(d, len(d["estados"]) + 2)
+
+
+if __name__ == "__main__":
+    main()
