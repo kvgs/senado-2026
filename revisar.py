@@ -290,9 +290,18 @@ def gravar(uf, id_posicao, decisao, nota, citacao=""):
         # A frase colada na revisao vira a citacao literal do acervo: a revisao
         # nao so aprova, ela preenche a ancora que faltava. Guarda tambem a marca
         # de que veio da revisao humana, e nao da extracao automatica.
+        # UMA LINHA DE AUSENCIA NUNCA RECEBE CITACAO, venha o que vier da tela.
+        # Registro C e D afirmam que NAO ha proposta; escrever qualquer coisa no
+        # campo da citacao transforma o texto em trecho de fonte, e a pagina o
+        # publica entre aspas. Foi o que aconteceu: a curadoria escreveu "Nao ha
+        # frase a ser conferida" na caixa que pedia a frase da fonte, e a pagina do
+        # Acre passou a citar isso como se o documento dissesse.
         if citacao and citacao.strip():
-            r["citacao_literal"] = citacao.strip()
-            r["revisao"]["citacao_conferida_na_fonte"] = True
+            if r.get("estado_cobertura") in ("C", "D"):
+                r["revisao"]["_texto_recusado_no_campo_citacao"] = citacao.strip()
+            else:
+                r["citacao_literal"] = citacao.strip()
+                r["revisao"]["citacao_conferida_na_fonte"] = True
         # So "confere" marca como revisado por humano. As outras decisoes sao
         # registro de problema: um item com problema conhecido nao esta revisado,
         # esta condenado.
@@ -460,7 +469,19 @@ function desenhar(){
       (it.ressalva?'<span><strong>Ressalva anotada:</strong> '+esc(it.ressalva)+'</span>':'')+
     '</div>'+
     '<p class="confira">'+esc(it.o_que_conferir)+'</p>'+
-    (it.citacao
+    /* EM LINHA DE AUSENCIA A CAIXA DA CITACAO NAO EXISTE.
+       Ela existia, com o rotulo "Cole a frase da fonte que sustenta isto" — a
+       unica caixa grande da tela. Numa linha que diz que NAO ha proposta, essa
+       pergunta nao tem resposta possivel, e a curadoria respondeu o obvio: "Nao ha
+       frase a ser conferida". O servidor gravou isso no campo da citacao, e a
+       pagina do Acre publicou a frase entre aspas como se fosse trecho do
+       documento. O campo que nao deve ser preenchido nao pode estar na tela. */
+    ((it.estado==='C'||it.estado==='D')
+      ? '<p style="font-size:.84rem;color:var(--muted);margin-top:14px">'+
+        'Esta linha nao tem citacao, e nao deve ter: ela afirma que NAO ha proposta. '+
+        'O que se confere aqui e a lista de fontes acima. Se algo estiver faltando '+
+        'nela, use Corrigir e escreva o que falta na nota.</p>'
+      : it.citacao
       ? '<label for="cit" style="display:block;font-size:.84rem;color:var(--muted);margin-top:14px">'+
         'Citacao errada? Cole a correta (opcional)</label>'+
         '<textarea id="cit" rows="2"></textarea>'
