@@ -189,15 +189,30 @@ def contexto_na_fonte(cit: str, src: str, janela: int = 420) -> dict | None:
     citacao passaram pela revisao humana como aprovadas. Ver o paragrafo de origem
     ao lado e a diferenca entre conferir e confiar.
     """
-    chapado, de_onde = mapa_chapado(src)
-    alvo = nu(cit)
-    if not alvo:
+    if not nu(cit):
         return None
-    i = chapado.find(alvo)
-    if i < 0:
-        return None
-    ini = de_onde[i]
-    fim = de_onde[min(i + len(alvo) - 1, len(de_onde) - 1)] + 1
+    # CAMINHO RAPIDO, e ele resolve quase todos os casos.
+    #
+    # mapa_chapado percorre a fonte caractere por caractere em Python puro, e a
+    # tela de revisao precisa dela uma vez por FONTE — sao dezenas de programas
+    # partidarios de 30 a 140 mil caracteres. Com o cache frio, abrir a tela do
+    # Acre levava 74 segundos, e tela lenta e tela que ninguem usa.
+    #
+    # A quase totalidade das citacoes difere da fonte so por quebra de linha. Uma
+    # busca por expressao regular, com \\s+ entre as palavras, acha essas direto no
+    # texto original e devolve os indices sem construir mapa nenhum. O mapa fica
+    # para o que sobra: citacao com acento diferente do documento.
+    achado = re.search(r"\s+".join(re.escape(p) for p in esp(cit).split()), src)
+    if achado:
+        ini, fim = achado.start(), achado.end()
+    else:
+        chapado, de_onde = mapa_chapado(src)
+        alvo = nu(cit)
+        i = chapado.find(alvo)
+        if i < 0:
+            return None
+        ini = de_onde[i]
+        fim = de_onde[min(i + len(alvo) - 1, len(de_onde) - 1)] + 1
     return {"antes": esp(src[max(0, ini - janela):ini]),
             "trecho": esp(src[ini:fim]),
             "depois": esp(src[fim:fim + janela]),
