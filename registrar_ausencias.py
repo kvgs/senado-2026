@@ -117,6 +117,21 @@ def main() -> int:
             escopo.append(f"o site da candidatura ({end}), {s['paginas']} "
                           f"página(s) e {s['caracteres']} caracteres de texto, "
                           f"coletado em {s['em']}")
+        # O QUE FOI DECLARADO E NAO FOI LIDO TAMBEM E ESCOPO. A candidatura
+        # declarou perfis ao TSE; o projeto nao coleta rede social — post nao e
+        # documento de campanha e muda de hora em hora. Mas calar isso faz o
+        # registro dizer "procuramos em tudo" quando havia canal oficial por ler.
+        # A curadoria apontou: "outro canal oficial dele seria o instagram".
+        ct = c.get("contato") or {}
+        nao_lidas = []
+        if ct.get("instagram"):
+            nao_lidas.append(f"o Instagram {ct['instagram']}")
+        for u in (ct.get("redes") or []):
+            baixo = u.lower()
+            if "instagram" in baixo or u == ct.get("site_do_partido"):
+                continue
+            nao_lidas.append(u.lower().replace("https://", "").replace("http://", ""))
+
         if not lidas:
             sem_fonte.append((c["numero_urna"], c["pessoa"]["nome_urna"],
                               siglas.get(part, part),
@@ -149,7 +164,14 @@ def main() -> int:
                           "abaixo foram lidas e nenhuma delas trouxe posição "
                           "sobre este tema."),
                 "busca_realizada_em": HOJE,
-                "escopo_da_busca": "Foram lidos: " + "; ".join(escopo) + ".",
+                "escopo_da_busca": (
+                    "Foram lidos: " + "; ".join(escopo) + "."
+                    + (" NÃO foram lidos, e são canais que a candidatura declarou "
+                       "ao TSE: " + "; ".join(nao_lidas)
+                       + ". O projeto não coleta rede social — post não é documento "
+                       "de campanha e muda de hora em hora — mas isso limita esta "
+                       "afirmação, e por isso fica dito."
+                       if nao_lidas else "")),
                 "revisado_por_humano": False,
                 "_gerado_por": "registrar_ausencias.py",
             })
