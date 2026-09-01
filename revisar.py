@@ -597,6 +597,28 @@ def conferir_pagina():
 
 
 def main():
+    # PORTA OCUPADA TEM DE PARAR, e nao subir por cima.
+    #
+    # allow_reuse_address liga SO_REUSEADDR, que no Linux so serve para reaproveitar
+    # porta em TIME_WAIT. No Windows ele deixa DOIS processos escutarem a mesma
+    # porta ao mesmo tempo — e quem recebe as conexoes e o PRIMEIRO. O efeito: a
+    # curadoria abria a tela para revisar o Marcio Bittar, o navegador falava com um
+    # servidor esquecido do Gladson Cameli, e a tela dizia "13 de 13 decididas,
+    # restam 0". Tudo certo na aparencia, e a fila errada por tras.
+    import socket
+    with socket.socket() as s:
+        s.settimeout(0.5)
+        if s.connect_ex(("127.0.0.1", PORTA)) == 0:
+            raise SystemExit(
+                f"PAROU: ja existe algo respondendo em http://localhost:{PORTA}.\n"
+                "  E quase sempre uma tela de revisao anterior, aberta com outro "
+                "--uf ou outra --candidatura.\n"
+                "  Subir por cima nao daria erro no Windows, e o navegador "
+                "continuaria falando com a antiga.\n\n"
+                "  Feche a janela do terminal onde ela roda, ou no PowerShell:\n"
+                "    Get-NetTCPConnection -LocalPort " + str(PORTA) +
+                " -State Listen | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force }")
+
     conferir_pagina()
     novas = 0
     for uf in UFS:
