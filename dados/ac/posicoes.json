@@ -2525,12 +2525,19 @@
    "estado_cobertura": "D",
    "natureza": "ausencia",
    "nivel_fonte": null,
-   "citacao_literal": "",
+   "citacao_literal": "Não há frase a ser conferida.",
    "texto": "Não localizamos proposta sobre habitação. Isto é uma afirmação sobre a nossa busca: as fontes abaixo foram lidas e nenhuma delas trouxe posição sobre este tema.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foram lidos: o programa nacional do PP (“Programa Partidário do Progressistas”), lido por inteiro — rendeu 5 trecho(s) no acervo; o site da candidatura (gladsoncameli.com.br/), 11 página(s) e 33722 caracteres de texto, coletado em 2026-09-01.",
    "revisado_por_humano": false,
-   "_gerado_por": "registrar_ausencias.py"
+   "_gerado_por": "registrar_ausencias.py",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "remover",
+    "nota": "Não há frase a ser conferida. ",
+    "por_quem": "kvgs",
+    "citacao_conferida_na_fonte": true
+   }
   },
   {
    "id_posicao": "pos-sen-ac-2026-gladson-cameli-busca-t8",

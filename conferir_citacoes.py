@@ -258,7 +258,7 @@ def main() -> int:
                   for f in glob.glob(str(RAIZ / "dados" / "*" / "posicoes.json"))))
 
     r: collections.Counter = collections.Counter()
-    problemas, grafia, caixa = [], [], []
+    problemas, grafia, caixa, sem_ancora = [], [], [], []
     for uf in ufs:
         docs = {d["id_documento"]: d for d in json.load(
             open(RAIZ / "dados" / uf / "documentos.json", encoding="utf-8"))["documentos"]}
@@ -269,7 +269,22 @@ def main() -> int:
         for p in dpos["posicoes"]:
             cit = p.get("citacao_literal")
             if not cit:
-                r["sem citacao"] += 1
+                # "SEM CITACAO" JUNTAVA DUAS COISAS OPOSTAS, e escondia a pior.
+                # Registro de ausencia (C e D) nao TEM trecho a citar: ele diz que
+                # nao ha proposta, e isso esta certo. Mas linha de proposta sem
+                # citacao afirma que a candidatura defende algo e nao mostra onde —
+                # e parafrase sem ancora, o defeito que este arquivo existe para
+                # pegar. Contadas juntas, as 48 do segundo tipo sumiam no meio das
+                # 47 do primeiro. A curadoria perguntou "se nao tem citacao e
+                # porque nao localizou, nao?" — e nao era.
+                if p.get("estado_cobertura") in ("C", "D"):
+                    r["ausencia — nao ha trecho a citar, e esta certo"] += 1
+                else:
+                    r["PROPOSTA SEM CITACAO — afirma e nao mostra onde"] += 1
+                    sem_ancora.append((uf, p["id_posicao"],
+                                       p.get("estado_cobertura"),
+                                       bool(p.get("revisado_por_humano")),
+                                       (p.get("texto") or "")[:96]))
                 continue
             idd = p.get("id_documento") or ""
             doc = docs.get(idd) or {}
@@ -338,6 +353,17 @@ def main() -> int:
         print(f"  {r[k]:5}  {k}")
     print(f"  {total:5}  total")
 
+    if sem_ancora:
+        print(f"\n{len(sem_ancora)} PROPOSTA(S) SEM CITACAO LITERAL. A linha diz que "
+              "a candidatura ou o\n  partido defende algo, e nao traz o trecho que "
+              "sustenta — nao ha o que\n  conferir contra a fonte:")
+        for uf, idp, est, rev, txt in sem_ancora[:12]:
+            print(f"  [{uf}] {idp:12} estado {est} "
+                  f"{'revisada por gente' if rev else 'nao revisada'}")
+            print(f"        {txt}")
+        if len(sem_ancora) > 12:
+            print(f"  (+{len(sem_ancora) - 12} outras)")
+
     if grafia:
         print(f"\n{len(grafia)} citacao(oes) CERTA(S) transcrita(s) sem acento — "
               "corrigivel copiando a fonte:")
@@ -363,6 +389,9 @@ def main() -> int:
                 print(f"          {cit[:150]}")
 
     if a.porteiro:
+        if sem_ancora:
+            print(f"\nPORTEIRO: {len(sem_ancora)} proposta(s) sem citacao literal.")
+            return 1
         if problemas:
             print(f"\nPORTEIRO: {len(problemas)} citacao(oes) nao literal(is).")
             return 1
