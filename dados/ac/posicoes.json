@@ -44,14 +44,21 @@
    "texto": "Defende desmilitarizar a polícia e construir um modelo de polícia civil de ciclo completo, com controle interno e externo.",
    "url_especifica": "https://psol50.org.br/partido/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-professor-inacio-moreira-prog-psol-002",
@@ -67,14 +74,21 @@
    "texto": "Defende direito à educação pública, gratuita, laica e inclusiva em todas as idades.",
    "url_especifica": "https://psol50.org.br/partido/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-professor-inacio-moreira-prog-psol-003",
@@ -90,14 +104,21 @@
    "texto": "Coloca a defesa do SUS e o enfrentamento ao negacionismo científico como centrais.",
    "url_especifica": "https://psol50.org.br/partido/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-professor-inacio-moreira-prog-psol-004",
@@ -113,14 +134,21 @@
    "texto": "Defende serviços públicos universais, redução da jornada de trabalho e transição ecológica.",
    "url_especifica": "https://psol50.org.br/partido/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-professor-inacio-moreira-prog-psol-005",
@@ -136,14 +164,21 @@
    "texto": "Propõe enfrentar monopólios de mídia e regular as big techs, com soberania digital e responsabilização por conteúdo.",
    "url_especifica": "https://psol50.org.br/partido/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-professor-inacio-moreira-prog-psol-006",
@@ -159,14 +194,21 @@
    "texto": "Propõe transição para um modelo econômico pós-extrativista com planejamento ecológico de longo prazo.",
    "url_especifica": "https://psol50.org.br/partido/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-professor-inacio-moreira-prog-psol-007",
@@ -182,14 +224,21 @@
    "texto": "Propõe reforma urbana com combate à especulação imobiliária, tarifa zero e acesso a moradia e saneamento.",
    "url_especifica": "https://psol50.org.br/partido/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-marcio-bittar-prog-pl-001",
@@ -203,7 +252,7 @@
    "id_documento": "doc-programa-nacional-pl",
    "citacao_literal": "o Partido Liberal defende a necessidade de simplificar a legislação e reduzir a carga tributária. Os avanços da legislação trabalhista devem facilitar as contratações, desburocratizar e desregular as normas para favorecer a criação de empresas e o empreendedorismo.",
    "texto": "Defende simplificar a legislação e reduzir a carga tributária, e desburocratizar as normas trabalhistas para favorecer contratações e empreendedorismo.",
-   "url_especifica": "https://www.in.gov.br/",
+   "url_especifica": "https://github.com/kvgs/senado-2026/raw/main/fontes/programa-pl-2022-dou.pdf",
    "data_referencia": "2022-12-19",
    "revisado_por_humano": false,
    "conferido_por_ia": {
@@ -212,7 +261,20 @@
     "base": "trecho conferido palavra por palavra contra fontes/programa-pl-DOU.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "corrigir",
+    "nota": "Não achei na página",
+    "por_quem": "kvgs"
+   },
+   "_atendido": {
+    "em": "2026-09-01",
+    "o_que_foi_apontado": "Não achei na página",
+    "o_que_foi_feito": "A url do documento era a home da Imprensa Nacional (in.gov.br), onde o trecho nao esta. Passou a apontar para o PDF do DOU secao 3 n 240 de 22/12/2022, paginas 257-258, versionado neste repositorio. A referencia oficial e o codigo de autenticidade estao na nota do documento.",
+    "alcance": "132 posicoes em 25 estados tinham o mesmo link errado.",
+    "falta": "reconferir esta linha com o link novo"
+   }
   },
   {
    "id_posicao": "pos-sen-ac-2026-marcio-bittar-prog-pl-002",
@@ -226,7 +288,7 @@
    "id_documento": "doc-programa-nacional-pl",
    "citacao_literal": "a busca pela igualdade de salários entre homens e mulheres que desempenham a mesma ocupação. Merecem destaque as ações para a projeção econômica, a inclusão produtiva das mulheres e o aumento da participação de mulheres no parlamento e nas direções partidárias. Desenvolvimento de ações de combate ao feminicídio e na promoção de assistência às mulheres em situação de violência.",
    "texto": "Defende igualdade salarial entre homens e mulheres na mesma ocupação, combate ao feminicídio e assistência a mulheres em situação de violência.",
-   "url_especifica": "https://www.in.gov.br/",
+   "url_especifica": "https://github.com/kvgs/senado-2026/raw/main/fontes/programa-pl-2022-dou.pdf",
    "data_referencia": "2022-12-19",
    "revisado_por_humano": false,
    "conferido_por_ia": {
@@ -235,7 +297,20 @@
     "base": "trecho conferido palavra por palavra contra fontes/programa-pl-DOU.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "corrigir",
+    "nota": "Não deve ser esse link",
+    "por_quem": "kvgs"
+   },
+   "_atendido": {
+    "em": "2026-09-01",
+    "o_que_foi_apontado": "Não deve ser esse link",
+    "o_que_foi_feito": "A url do documento era a home da Imprensa Nacional (in.gov.br), onde o trecho nao esta. Passou a apontar para o PDF do DOU secao 3 n 240 de 22/12/2022, paginas 257-258, versionado neste repositorio. A referencia oficial e o codigo de autenticidade estao na nota do documento.",
+    "alcance": "132 posicoes em 25 estados tinham o mesmo link errado.",
+    "falta": "reconferir esta linha com o link novo"
+   }
   },
   {
    "id_posicao": "pos-sen-ac-2026-marcio-bittar-prog-pl-003",
@@ -249,16 +324,23 @@
    "id_documento": "doc-programa-nacional-pl",
    "citacao_literal": "Implementar políticas públicas voltadas para a inserção do jovem no mercado de trabalho de forma justa e assertiva, estabelecendo estratégias que alinhem ensino e as demandas sociais, econômicas e políticas, incentivando a formação de jovens líderes, facilitando o acesso ao crédito e incentivando o empreendedorismo.",
    "texto": "Propõe políticas de inserção do jovem no mercado de trabalho, alinhando ensino às demandas sociais e facilitando acesso ao crédito.",
-   "url_especifica": "https://www.in.gov.br/",
+   "url_especifica": "https://github.com/kvgs/senado-2026/raw/main/fontes/programa-pl-2022-dou.pdf",
    "data_referencia": "2022-12-19",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pl-DOU.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "O link não confere",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-marcio-bittar-prog-pl-004",
@@ -272,7 +354,7 @@
    "id_documento": "doc-programa-nacional-pl",
    "citacao_literal": "há uma irrevogável necessidade de implantação e expansão de novas tecnologias de digitalização e inovação que melhorem tanto a competitividade nacional como a qualidade de vida dos cidadãos, principalmente aqueles mais vulneráveis ou que se encontram em localidades remotas",
    "texto": "Defende expandir digitalização e conectividade, com foco em quem vive em localidades remotas.",
-   "url_especifica": "https://www.in.gov.br/",
+   "url_especifica": "https://github.com/kvgs/senado-2026/raw/main/fontes/programa-pl-2022-dou.pdf",
    "data_referencia": "2022-12-19",
    "revisado_por_humano": false,
    "conferido_por_ia": {
@@ -281,7 +363,20 @@
     "base": "trecho conferido palavra por palavra contra fontes/programa-pl-DOU.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "corrigir",
+    "nota": "Link não confere",
+    "por_quem": "kvgs"
+   },
+   "_atendido": {
+    "em": "2026-09-01",
+    "o_que_foi_apontado": "Link não confere",
+    "o_que_foi_feito": "A url do documento era a home da Imprensa Nacional (in.gov.br), onde o trecho nao esta. Passou a apontar para o PDF do DOU secao 3 n 240 de 22/12/2022, paginas 257-258, versionado neste repositorio. A referencia oficial e o codigo de autenticidade estao na nota do documento.",
+    "alcance": "132 posicoes em 25 estados tinham o mesmo link errado.",
+    "falta": "reconferir esta linha com o link novo"
+   }
   },
   {
    "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-001",
@@ -477,14 +572,21 @@
    "texto": "Na reforma tributária, defende acabar com a cobrança de tributo sobre tributo (efeito cascata).",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-008",
@@ -500,14 +602,21 @@
    "texto": "Defende tornar efetiva a participação dos trabalhadores nos lucros ou resultados das empresas.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-009",
@@ -523,14 +632,21 @@
    "texto": "Defende que a política de transporte urbano assegure transporte coletivo seguro e digno aos trabalhadores.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-010",
@@ -546,14 +662,21 @@
    "texto": "Defende conciliar atividade econômica e meio ambiente, com preservação da fauna, da flora e do equilíbrio ecológico.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-011",
@@ -569,14 +692,21 @@
    "texto": "Defende garantir a cada família o direito a uma moradia digna e própria.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-012",
@@ -592,14 +722,21 @@
    "texto": "Defende erradicar o preconceito racial, fazendo cumprir e aperfeiçoar a legislação específica.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-013",
@@ -615,14 +752,21 @@
    "texto": "Defende mecanismos de proteção da família contra pornografia e violência nos meios de comunicação.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-014",
@@ -638,14 +782,21 @@
    "texto": "Defende redistribuir encargos e recursos entre União, Estados e Municípios, valorizando o Município como base da federação.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-015",
@@ -661,14 +812,21 @@
    "texto": "Defende fortalecer os partidos políticos adotando o princípio da fidelidade partidária.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-016",
@@ -684,14 +842,21 @@
    "texto": "Defende punição severa por corrupção no trato da coisa pública, sem admitir impunidade.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-001",
@@ -797,14 +962,21 @@
    "texto": "Defende reduzir a jornada de trabalho e acabar imediatamente com a escala 6×1 (seis dias de trabalho para um de folga).",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-005",
@@ -820,14 +992,21 @@
    "texto": "Defende reforma tributária para corrigir distorções do sistema de impostos e financiar direitos.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-006",
@@ -843,14 +1022,21 @@
    "texto": "Defende o direito à mobilidade urbana com tarifa zero no transporte público.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-007",
@@ -866,14 +1052,21 @@
    "texto": "Defende uma reforma tecnológica pela soberania digital, com ampla regulamentação dos oligopólios das plataformas digitais.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-008",
@@ -896,7 +1089,13 @@
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "remover",
+    "nota": "Não acho que seja sobre tecnologia",
+    "por_quem": "kvgs"
+   }
   },
   {
    "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-009",
@@ -912,14 +1111,21 @@
    "texto": "Defende garantir os direitos à cultura, ao esporte e ao lazer, a assistência social e a igualdade de gênero, étnico-racial e regional.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-010",
@@ -935,14 +1141,21 @@
    "texto": "Defende reforma política e eleitoral que mude o modelo atual de execução do orçamento por emendas parlamentares.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-011",
@@ -958,14 +1171,21 @@
    "texto": "Defende reforma do Judiciário, com democratização e mecanismos de autocorreção.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-012",
@@ -981,14 +1201,21 @@
    "texto": "Defende reforma da comunicação para fazer cumprir a proibição constitucional de monopólios no setor.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-mara-rocha-prog-republicanos-001",
@@ -1034,14 +1261,21 @@
    "texto": "Defende adotar novas tecnologias para melhorar a saúde e a educação.",
    "url_especifica": "https://republicanos10.org.br/manifesto-e-programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-republicanos-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-mara-rocha-prog-republicanos-003",
@@ -1057,14 +1291,21 @@
    "texto": "Defende a liberdade para empreender e a independência econômica como caminho para a prosperidade.",
    "url_especifica": "https://republicanos10.org.br/manifesto-e-programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-republicanos-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-mara-rocha-prog-republicanos-004",
@@ -1080,14 +1321,21 @@
    "texto": "Defende que o Estado promova justiça social sem substituir o mercado, que deve ser o principal gerador de emprego e renda.",
    "url_especifica": "https://republicanos10.org.br/manifesto-e-programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-republicanos-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-mara-rocha-prog-republicanos-005",
@@ -1103,14 +1351,21 @@
    "texto": "Defende reformas estruturantes para fortalecer a indústria nacional e ampliar a presença de produtos brasileiros no exterior.",
    "url_especifica": "https://republicanos10.org.br/manifesto-e-programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-republicanos-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-mara-rocha-prog-republicanos-006",
@@ -1126,14 +1381,21 @@
    "texto": "Defende usar tecnologia para enxugar e modernizar a máquina pública, com mais transparência e rapidez.",
    "url_especifica": "https://republicanos10.org.br/manifesto-e-programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-republicanos-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-mara-rocha-prog-republicanos-007",
@@ -1149,14 +1411,21 @@
    "texto": "Defende a família como alicerce da sociedade e principal instituição de preservação das tradições.",
    "url_especifica": "https://republicanos10.org.br/manifesto-e-programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-republicanos-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-mara-rocha-prog-republicanos-008",
@@ -1172,14 +1441,21 @@
    "texto": "Defende liberdade de expressão plena e responsável como exigência da democracia.",
    "url_especifica": "https://republicanos10.org.br/manifesto-e-programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-republicanos-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-mara-rocha-prog-republicanos-009",
@@ -1195,14 +1471,21 @@
    "texto": "Defende harmonia e isonomia entre os poderes e os entes da federação.",
    "url_especifica": "https://republicanos10.org.br/manifesto-e-programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-republicanos-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-mara-rocha-prog-republicanos-010",
@@ -1218,14 +1501,21 @@
    "texto": "Defende negociações comerciais internacionais guiadas pelo pragmatismo, e não por ideologia.",
    "url_especifica": "https://republicanos10.org.br/manifesto-e-programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-republicanos-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-gladson-cameli-prog-pp-001",
@@ -1241,14 +1531,21 @@
    "texto": "Defende um sistema econômico livre, guiado pelas regras de mercado, tendo como objetivo maior o bem-estar e a redução das desigualdades.",
    "url_especifica": "https://progressistas.org.br/programa-partidario/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pp-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-gladson-cameli-prog-pp-002",
@@ -1264,14 +1561,21 @@
    "texto": "Defende uma atuação do Estado na economia voltada à geração de emprego e renda, numa economia social de mercado.",
    "url_especifica": "https://progressistas.org.br/programa-partidario/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pp-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-gladson-cameli-prog-pp-003",
@@ -1287,14 +1591,21 @@
    "texto": "Lista como direitos que defende a liberdade de culto, a privacidade, o trabalho digno, a moradia, a educação, a saúde, a segurança e a imprensa livre.",
    "url_especifica": "https://progressistas.org.br/programa-partidario/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pp-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-gladson-cameli-prog-pp-004",
@@ -1310,14 +1621,21 @@
    "texto": "Defende a Federação, a harmonia entre os poderes e mais autonomia para estados e municípios.",
    "url_especifica": "https://progressistas.org.br/programa-partidario/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pp-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-gladson-cameli-prog-pp-005",
@@ -1333,14 +1651,21 @@
    "texto": "Defende que a democracia depende de partidos organizados que garantam a legitimidade e a proporcionalidade da representação política.",
    "url_especifica": "https://progressistas.org.br/programa-partidario/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pp-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-eduardo-velloso-prog-solidariedade-001",
@@ -1386,14 +1711,21 @@
    "texto": "No âmbito federal, defende leis orientadas pela prevenção e pelos princípios do SUS: universalidade, equidade e integralidade.",
    "url_especifica": "https://solidariedade.org.br/media/2021/06/programa-partidario_paginas-duplas_web.pdf",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-solidariedade.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-eduardo-velloso-prog-solidariedade-003",
@@ -1409,14 +1741,21 @@
    "texto": "No âmbito federal, defende reduzir a jornada de trabalho sem reduzir o salário.",
    "url_especifica": "https://solidariedade.org.br/media/2021/06/programa-partidario_paginas-duplas_web.pdf",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-solidariedade.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-eduardo-velloso-prog-solidariedade-004",
@@ -1432,14 +1771,21 @@
    "texto": "No âmbito federal, defende regulamentar a terceirização para garantir os direitos dos terceirizados.",
    "url_especifica": "https://solidariedade.org.br/media/2021/06/programa-partidario_paginas-duplas_web.pdf",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-solidariedade.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-eduardo-velloso-prog-solidariedade-005",
@@ -1455,14 +1801,21 @@
    "texto": "No âmbito federal, defende eliminar o trabalho análogo ao escravo por meio de fiscalização em convênio com os órgãos competentes.",
    "url_especifica": "https://solidariedade.org.br/media/2021/06/programa-partidario_paginas-duplas_web.pdf",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-solidariedade.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-eduardo-velloso-prog-solidariedade-006",
@@ -1478,14 +1831,21 @@
    "texto": "No âmbito federal, defende que parlamentares destinem parte das emendas ao orçamento para centros e usinas de reciclagem de resíduos sólidos.",
    "url_especifica": "https://solidariedade.org.br/media/2021/06/programa-partidario_paginas-duplas_web.pdf",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-solidariedade.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-eduardo-velloso-prog-solidariedade-007",
@@ -1501,14 +1861,21 @@
    "texto": "No âmbito federal, defende exigir comprovação de práticas sustentáveis nas empresas contratadas por órgãos públicos.",
    "url_especifica": "https://solidariedade.org.br/media/2021/06/programa-partidario_paginas-duplas_web.pdf",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-solidariedade.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-eduardo-velloso-prog-solidariedade-008",
@@ -1524,14 +1891,21 @@
    "texto": "No âmbito federal, defende fortalecer o Sistema Nacional de Habitação de Interesse Social (SNHIS).",
    "url_especifica": "https://solidariedade.org.br/media/2021/06/programa-partidario_paginas-duplas_web.pdf",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-solidariedade.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-eduardo-velloso-prog-solidariedade-009",
@@ -1547,14 +1921,21 @@
    "texto": "No âmbito federal, defende garantir orçamento para o Plano Nacional de Habitação de Interesse Social e apoiar estados e municípios.",
    "url_especifica": "https://solidariedade.org.br/media/2021/06/programa-partidario_paginas-duplas_web.pdf",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-solidariedade.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-mara-rocha-site-001",
