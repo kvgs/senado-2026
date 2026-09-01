@@ -56,14 +56,16 @@ def plural(n: int, um: str, muitos: str) -> str:
 
 
 # A REDACAO E DA CURADORIA, palavra por palavra, com um "social" que estava
-# truncado. O "AINDA" em maiuscula e dela e muda o sentido da frase: diz que nao
-# coletar rede social e decisao de hoje, e nao regra permanente — o que importa
-# porque ha candidatura cujo UNICO canal declarado ao TSE e o Instagram.
+# truncado. O "ainda" e dela e muda o sentido da frase: diz que nao coletar rede
+# social e decisao de hoje, e nao regra permanente — o que importa porque ha
+# candidatura cujo UNICO canal declarado ao TSE e o Instagram. A curadoria pediu
+# em caixa baixa: a frase inteira ja e uma ressalva, e caixa alta no meio dela
+# grita sem precisar.
 def escopo_da_busca(lidas: list[str], nao_lidas: list[str]) -> str:
     txt = "Foram lidos: " + "; ".join(lidas) + "."
     if nao_lidas:
         txt += (" NÃO foram lidos, e são canais que a candidatura declarou ao TSE: "
-                + "; ".join(nao_lidas) + ". O projeto AINDA não coleta rede social.")
+                + "; ".join(nao_lidas) + ". O projeto ainda não coleta rede social.")
     return txt
 
 
