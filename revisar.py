@@ -52,6 +52,7 @@ RAIZ = pathlib.Path(__file__).resolve().parent
 import argparse as _argparse
 
 import acervo
+import conferir_citacoes as cc
 
 # SEM --uf, TODOS OS ESTADOS. O padrao antigo era um estado so, herdado de quando
 # o acervo tinha um. Revisar por estado nao e neutro: quem comeca por Sao Paulo
@@ -107,8 +108,26 @@ def lista(x, chave):
     return x[chave] if isinstance(x, dict) else x
 
 
+def fonte_guardada(uf, r, doc, prog, sites):
+    """O texto da fonte, quando o repositorio o guarda.
+
+    A tela mostrava a citacao e um LINK. Conferir exigia abrir um PDF no TSE e
+    procurar a frase a mao — e 23 citacoes que nao sao citacao passaram por esta
+    tela aprovadas. Onde o texto esta no repositorio, ele aparece ao lado.
+    """
+    idd = r.get("id_documento") or ""
+    sigla = cc.ALIAS.get(idd) or (idd[len("doc-programa-nacional-"):]
+                                  if idd.startswith("doc-programa-nacional-") else None)
+    if sigla:
+        return prog.get(sigla) or prog.get(cc.nu(sigla))
+    if doc.get("tipo") == "site_de_candidatura":
+        return sites.get(r.get("atribuido_a_id"))
+    return cc.arquivo_do_documento(doc)
+
+
 def itens_de(uf):
     pos, docs, cand, ref = carregar(uf)
+    prog, sites = cc.fontes_de_partido(), cc.texto_de_site(uf)
     dm = {d["id_documento"]: d for d in lista(docs, "documentos")}
     cm = {c["id_candidatura"]: c for c in lista(cand, "candidaturas")}
     pm = {p["id_partido"]: p for p in ref["partidos"]}
@@ -121,7 +140,18 @@ def itens_de(uf):
         alvo = r.get("id_candidatura_contexto") or r.get("atribuido_a_id")
         c = cm.get(alvo, {})
         de_partido = r.get("atribuido_a_tipo") == "partido"
+        cit = r.get("citacao_literal") or ""
+        src = fonte_guardada(uf, r, doc, prog, sites)
+        if not cit:
+            sit, ctx = "sem_citacao", None
+        elif src is None:
+            sit, ctx = "fonte_nao_guardada", None
+        else:
+            sit = cc.situacao(cit, src)
+            ctx = cc.contexto_na_fonte(cit, src)
         itens.append({
+            "situacao_citacao": sit,
+            "contexto": ctx,
             "id": r["id_posicao"],
             "uf": uf,
             "uf_nome": NOME_UF.get(uf, uf),
@@ -279,6 +309,14 @@ h1{font-size:1.25rem;margin:0 0 3px}
 .uf{display:block;font:700 .8rem/1 ui-monospace,monospace;letter-spacing:.08em;
   padding:6px 9px;border-radius:4px;background:var(--surface-2);
   border:1px solid var(--rule-forte);color:var(--ink-2);align-self:center}
+.nafonte{margin:10px 0 6px;padding:10px 12px;border-radius:8px;font-size:.9rem}
+.nafonte.ok{background:#EAF6EE;border:1px solid #BEDFC8}
+.nafonte.aviso{background:#FDF4E3;border:1px solid #EBD9A8}
+.nafonte.erro{background:#FCEBEA;border:1px solid #EDC3BF}
+.nafonte.neutro{background:#F2F2F0;border:1px solid #DDD}
+.nafonte .selo{margin:0;font-weight:600}
+.nafonte .ctx{margin:8px 0 0;color:#3A3A38;line-height:1.55;max-height:11em;overflow:auto}
+.nafonte mark{background:#FFE08A;padding:1px 0}
 blockquote{margin:0 0 12px;padding:11px 15px;background:var(--surface-2);
   border-left:4px solid var(--rule-forte);border-radius:0 4px 4px 0;font-size:1.02rem}
 .txt{margin:0 0 12px}
@@ -321,6 +359,37 @@ function progresso(){
   document.getElementById('preenche').style.width=(feitos/ITENS.length*100)+'%';
 }
 
+/* O TEXTO DA FONTE AO LADO DA CITACAO.
+   Antes daqui, conferir uma citacao era abrir um PDF no TSE e procurar a frase.
+   Vinte e tres citacoes que NAO sao citacao passaram por esta tela aprovadas — nao
+   por desatencao de quem revisou, mas porque a tela nao dava como conferir. Onde o
+   repositorio guarda o texto da fonte, ele aparece com o trecho marcado e o
+   paragrafo em volta.
+
+   O selo NAO decide nada: "confere" aqui quer dizer que a frase existe na fonte,
+   e nao que ela representa o que a candidatura defende. Essa segunda pergunta
+   continua sendo sua, e e a unica que a maquina nao pode responder. */
+var ROTULO = {
+  literal:                 ['ok',   'A frase existe na fonte, palavra por palavra.'],
+  literal_quebra_de_linha: ['ok',   'A frase existe na fonte. Difere so onde o documento quebra a linha.'],
+  sem_acento:              ['aviso','Existe na fonte, mas transcrita sem acento. Rode conferir_citacoes.py --corrigir-grafia.'],
+  difere_em_caixa:         ['aviso','Existe na fonte com outra caixa de letra. Pode ser a fonte que esta errada — decida voce.'],
+  nao_achei:               ['erro', 'NAO ACHEI esta frase na fonte guardada. O campo pode ter sintese em vez de citacao — e a tela do site mostra esse campo entre aspas.'],
+  sem_citacao:             ['erro', 'Sem citacao literal: nao ha trecho para conferir.'],
+  fonte_nao_guardada:      ['neutro','O repositorio nao guarda o texto desta fonte, entao a conferencia nao pode ser feita aqui. Abra o link.']
+};
+
+function naFonte(it){
+  var r = ROTULO[it.situacao_citacao] || ROTULO.fonte_nao_guardada;
+  var h = '<div class="nafonte '+r[0]+'"><p class="selo">'+esc(r[1])+'</p>';
+  if(it.contexto){
+    h += '<p class="ctx">'+(it.contexto.cortado_no_inicio?'(...) ':'')+
+         esc(it.contexto.antes)+'<mark>'+esc(it.contexto.trecho)+'</mark>'+
+         esc(it.contexto.depois)+(it.contexto.cortado_no_fim?' (...)':'')+'</p>';
+  }
+  return h+'</div>';
+}
+
 function desenhar(){
   progresso();
   var alvo=document.getElementById('alvo');
@@ -337,6 +406,7 @@ function desenhar(){
     (it.de_partido?'<span class="tag">programa do '+esc(it.partido)+'</span>':'')+
     '</div>'+
     (it.citacao?'<blockquote>'+esc(it.citacao)+'</blockquote>':'<p class="confira" style="border-style:solid"><strong>Sem citação literal.</strong> Esta linha é paráfrase da fonte, sem trecho citado que a ancore — é onde a redação costuma escorregar. Compare com o documento palavra a palavra.</p>')+
+    naFonte(it)+
     (it.texto?'<p class="txt">'+esc(it.texto)+'</p>':'')+
     (it.escopo?'<p class="txt"><strong>Escopo:</strong> '+esc(it.escopo)+'</p>':'')+
     '<div class="meta">'+

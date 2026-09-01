@@ -85,7 +85,11 @@ def esp(s: str) -> str:
 
 def nu(s: str) -> str:
     s = unicodedata.normalize("NFD", esp(s)).encode("ascii", "ignore").decode().lower()
-    return re.sub(r"-\s+", "", s)
+    # Colapsar o espaco DEPOIS de tirar o que nao e ASCII, e nao antes. O
+    # travessao "–" nao e ASCII e desaparece aqui: "pragmatismo – nao" ficava com
+    # dois espacos, enquanto o mapa de indices deixava um, e a citacao com
+    # travessao nao era localizada na fonte.
+    return re.sub(r"\s+", " ", re.sub(r"-\s+", "", s)).strip()
 
 
 def fontes_de_partido() -> dict[str, str]:
@@ -131,18 +135,7 @@ def trecho_da_fonte(cit: str, src: str) -> str | None:
     documento, e nao de mim escolhendo onde por acento. Acho a posicao casando as
     versoes sem acento e recorto o original na mesma posicao.
     """
-    # Mapa de indice: para cada caractere da versao normalizada, de onde ele veio.
-    plano, de_onde = [], []
-    for i, ch in enumerate(src):
-        d = unicodedata.normalize("NFD", ch).encode("ascii", "ignore").decode().lower()
-        if ch.isspace():
-            if plano and plano[-1] == " ":
-                continue
-            plano.append(" "); de_onde.append(i)
-            continue
-        for c in d:
-            plano.append(c); de_onde.append(i)
-    chapado = "".join(plano)
+    chapado, de_onde = mapa_chapado(src)
     alvo = nu(cit)
     i = chapado.find(alvo)
     if i < 0:
@@ -151,6 +144,71 @@ def trecho_da_fonte(cit: str, src: str) -> str | None:
     fim = de_onde[min(i + len(alvo) - 1, len(de_onde) - 1)] + 1
     achado = esp(src[ini:fim])
     return achado if nu(achado) == alvo else None
+
+
+def mapa_chapado(src: str) -> tuple[str, list[int]]:
+    """Versao sem acento/caixa/espaco-duplo do texto, com o indice de origem de
+    cada caractere. Usado para achar a citacao na fonte e recortar o ORIGINAL."""
+    plano, de_onde = [], []
+    i, n = 0, len(src)
+    while i < n:
+        ch = src[i]
+        # Hifen seguido de espaco e quebra de palavra do PDF ("compro- misso"): sai
+        # o hifen E o espaco, igual ao que nu() faz. Sem isto, o mapa e nu()
+        # discordavam e a citacao hifenizada ganhava selo verde sem paragrafo.
+        if ch == "-" and i + 1 < n and src[i + 1].isspace():
+            i += 1
+            while i < n and src[i].isspace():
+                i += 1
+            continue
+        if ch.isspace():
+            if not plano or plano[-1] != " ":
+                plano.append(" "); de_onde.append(i)
+            i += 1
+            continue
+        for c in unicodedata.normalize("NFD", ch).encode(
+                "ascii", "ignore").decode().lower():
+            plano.append(c); de_onde.append(i)
+        i += 1
+    return "".join(plano), de_onde
+
+
+def contexto_na_fonte(cit: str, src: str, janela: int = 420) -> dict | None:
+    """Onde a citacao aparece na fonte, com o texto em volta.
+
+    Existe para a tela de revisao. Sem isto, conferir uma citacao exige abrir um
+    PDF no TSE e procurar a frase a mao — e foi assim que 23 citacoes que NAO sao
+    citacao passaram pela revisao humana como aprovadas. Ver o paragrafo de origem
+    ao lado e a diferenca entre conferir e confiar.
+    """
+    chapado, de_onde = mapa_chapado(src)
+    alvo = nu(cit)
+    if not alvo:
+        return None
+    i = chapado.find(alvo)
+    if i < 0:
+        return None
+    ini = de_onde[i]
+    fim = de_onde[min(i + len(alvo) - 1, len(de_onde) - 1)] + 1
+    return {"antes": esp(src[max(0, ini - janela):ini]),
+            "trecho": esp(src[ini:fim]),
+            "depois": esp(src[fim:fim + janela]),
+            "cortado_no_inicio": ini - janela > 0,
+            "cortado_no_fim": fim + janela < len(src)}
+
+
+def situacao(cit: str, src: str) -> str:
+    """Como a citacao se compara com a fonte, num rotulo curto para a tela."""
+    if cit in src:
+        return "literal"
+    if esp(cit) in esp(src):
+        return "literal_quebra_de_linha"
+    if nu(cit) in nu(src):
+        novo = trecho_da_fonte(cit, src)
+        if novo and not so_acento(esp(cit), novo):
+            return "difere_em_caixa"
+        return "sem_acento"
+    return "nao_achei"
 
 
 def so_acento(a: str, b: str) -> bool:
