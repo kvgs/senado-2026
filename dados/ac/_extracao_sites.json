@@ -1,23 +1,50 @@
 {
-  "posicoes": [
-    {
-      "id_posicao": "pos-sen-ac-2026-jorge-viana-site-001",
-      "id_candidatura": "sen-ac-2026-jorge-viana",
-      "atribuido_a_id": "sen-ac-2026-jorge-viana",
-      "atribuido_a_tipo": "candidatura",
-      "tema": "t4",
-      "trecho": "Defendo a necessidade de uma distribuição de renda mais justa , para combater a fome e as enormes desigualdades sociais que temos no nosso país.",
-      "resumo": "Defende distribuicao de renda mais justa para combater a fome e a desigualdade social.",
-      "url": "https://jorgeviana.com.br/o-que-penso/",
-      "titulo_da_pagina": "O Que Penso - Jorge Viana",
-      "selo": "declaracao_do_candidato",
-      "estado_cobertura": "A",
-      "coletado_em": "2026-08-27",
-      "extraido_em": "2026-08-28",
-      "extraido_por": "modelo",
-      "revisado_por_humano": false,
-      "_nota_selo": "Declaracao da candidatura no site que ela declarou ao TSE. Prova que publicou isto, nao que seja verdade.",
-      "_como_conferir": "Abra a URL e procure o trecho. Ele foi conferido palavra por palavra contra o texto coletado em 2026-08-27; se a pagina mudou desde entao, a conferencia manda."
-    }
-  ]
+ "posicoes": [
+  {
+   "id_posicao": "pos-sen-ac-2026-jorge-viana-site-001",
+   "id_candidatura": "sen-ac-2026-jorge-viana",
+   "atribuido_a_id": "sen-ac-2026-jorge-viana",
+   "atribuido_a_tipo": "candidatura",
+   "tema": "t4",
+   "trecho": "Defendo a necessidade de uma distribuição de renda mais justa , para combater a fome e as enormes desigualdades sociais que temos no nosso país.",
+   "resumo": "Defende distribuicao de renda mais justa para combater a fome e a desigualdade social.",
+   "url": "https://jorgeviana.com.br/o-que-penso/",
+   "titulo_da_pagina": "O Que Penso - Jorge Viana",
+   "selo": "declaracao_do_candidato",
+   "estado_cobertura": "A",
+   "coletado_em": "2026-08-27",
+   "extraido_em": "2026-08-28",
+   "extraido_por": "modelo",
+   "revisado_por_humano": false,
+   "_nota_selo": "Declaracao da candidatura no site que ela declarou ao TSE. Prova que publicou isto, nao que seja verdade.",
+   "_como_conferir": "Abra a URL e procure o trecho. Ele foi conferido palavra por palavra contra o texto coletado em 2026-08-27; se a pagina mudou desde entao, a conferencia manda."
+  },
+  {
+   "id_posicao": "pos-sen-ac-2026-mara-rocha-site-001",
+   "id_candidatura": "sen-ac-2026-mara-rocha",
+   "atribuido_a_id": "sen-ac-2026-mara-rocha",
+   "atribuido_a_tipo": "candidatura",
+   "tema": "t2",
+   "trecho": "Formada em Educação Física e Jornalismo, levou internet e reformas a escolas rurais e defende cursos técnicos e bolsas para a juventude.",
+   "resumo": "Defende cursos técnicos e bolsas para a juventude.",
+   "url": "https://mararocha.com/",
+   "titulo_da_pagina": "Mara Rocha 100 · Senadora · Acre",
+   "selo": "declaracao_do_candidato",
+   "estado_cobertura": "A",
+   "coletado_em": "2026-08-31",
+   "extraido_em": "2026-08-31",
+   "extraido_por": "modelo",
+   "revisado_por_humano": false,
+   "prova_de_atribuicao": [
+    "O site traz o numero de urna 100, igual ao numero_urna do registro no TSE.",
+    "O site nomeia a coligacao 'Trabalho da Esperanca — Republicanos, PSD, Novo e Avante'; o registro traz a coligacao trabalho-da-esperanca-ac com composicao REPUBLICANOS / PSD / AVANTE / NOVO. Os mesmos quatro partidos.",
+    "O site nomeia os dois suplentes (Raimundo Moreira e Francisco Moreira); o registro traz 'Pr. Moreira' e 'Moreira', que sao as formas abreviadas dos mesmos nomes.",
+    "O site aponta para @mararochaacre e /soumararocha — exatamente os dois perfis que a candidatura declarou ao TSE.",
+    "O site publica o CNPJ de campanha 68.289.713/0001-50, que e o identificador da candidatura na prestacao de contas."
+   ],
+   "_nota_selo": "Declaração da candidatura no site dela. O endereço NÃO foi declarado ao TSE: entrou pela exceção de dados/sites-fora-do-registro.json, com prova de atribuição. Prova que publicou isto, não que seja verdade.",
+   "_como_conferir": "Abra a URL e procure o trecho. Ele foi conferido palavra por palavra contra o texto coletado em 2026-08-31; se a página mudou desde então, a conferência manda.",
+   "_o_que_ficou_de_fora": "A página inteira tem 3,3 mil caracteres e esta é a única frase no presente sobre um dos dez temas. Todo o resto é trajetória e realização de mandato passado. Não entraram: \"apresentou mais de 400 propostas\", \"mais de R$ 250 milhões em emendas\" e \"quase R$ 29 milhões\" para o Hospital de Amor — números autodeclarados, sem número de projeto e sem link. Também não entrou \"defensora da vida e da família\": dizer a que tema isso se refere seria interpretação nossa."
+  }
+ ]
 }

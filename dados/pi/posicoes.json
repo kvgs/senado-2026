@@ -2350,7 +2350,7 @@
    "natureza": "promessa",
    "nivel_fonte": "oficial",
    "id_documento": "doc-programa-nacional-mdb",
-   "citacao_literal": "foco na elevação do padrão das moradias destinadas a habitação de interesse social, especialmente na Faixa 1 do programa Minha Casa, Minha Vida",
+   "citacao_literal": "foco na elevação do padrão das moradias destinadas à habitação de interesse social, especialmente na Faixa 1 do programa Minha Casa, Minha Vida",
    "texto": "Defende elevar o padrão das moradias de interesse social, sobretudo na Faixa 1 do Minha Casa, Minha Vida.",
    "url_especifica": "https://www.mdb.org.br/documento-caminhos-para-o-brasil/",
    "data_referencia": "2025-10-23",
@@ -2361,7 +2361,15 @@
     "base": "trecho conferido palavra por palavra contra fontes/programa-mdb-2025-caminhos.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "_correcoes": [
+    {
+     "campo": "citacao_literal",
+     "em": "2026-09-01",
+     "porque": "a citacao estava transcrita sem acento; o trecho foi recopiado do documento de origem, sem escolha nossa de palavra",
+     "antes": "foco na elevação do padrão das moradias destinadas a habitação de interesse social, especialmente na Faixa 1 do programa Minha Casa, Minha Vida"
+    }
+   ]
   },
   {
    "id_posicao": "pos-sen-pi-2026-marcelo-castro-prog-mdb-014",

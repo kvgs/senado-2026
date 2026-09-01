@@ -11,7 +11,7 @@
    "nivel_fonte": "declaracao_candidato",
    "id_documento": "doc-site-sen-am-2026-wilson-lima",
    "citacao_literal": "Eu defendo e vou lutar no Congresso pela castração química de quem estupra criança, de quem abusa de menor de idade. Não tem conversa, tem que cortar o mal pela raiz. Bandido tem que estar na cadeia. Com a castração química, o criminoso vai pensar duas vezes",
-   "texto": "Diz que vai lutar no Congresso pela castracao quimica de condenados por estupro de crianca.",
+   "texto": "Diz que vai lutar no Congresso pela castração química de condenados por estupro de criança.",
    "url_especifica": "http://wilsonlimaam.com.br/2026/08/14/tem-que-cortar-o-mal-pela-raiz-afirma-wilson-ao-defender-castracao-quimica-para-estupradores-de-criancas-condenados-pela-justica/",
    "data_referencia": "2026-08-27",
    "revisado_por_humano": false,
@@ -33,7 +33,7 @@
    "nivel_fonte": "declaracao_candidato",
    "id_documento": "doc-site-sen-am-2026-wilson-lima",
    "citacao_literal": "Não adianta o governador equipar a polícia, contratar pessoal e comprar equipamento novo se as nossas leis ainda são frouxas demais. Não adianta a polícia prender se, no dia seguinte, o bandido passa por uma audiência de custódia e está de volta às ruas, afrontando a sociedade e a polícia. Quero estar no Congresso para tornar as leis mais duras, punir bandido e proteger o cidadão de bem",
-   "texto": "Defende endurecer a legislacao penal, criticando a audiencia de custodia.",
+   "texto": "Defende endurecer a legislação penal, criticando a audiencia de custodia.",
    "url_especifica": "http://wilsonlimaam.com.br/2026/08/14/no-lancamento-da-candidatura-de-wanderley-monteiro-wilson-lima-defende-leis-mais-duras-contra-criminosos/",
    "data_referencia": "2026-08-27",
    "revisado_por_humano": false,
@@ -55,7 +55,7 @@
    "nivel_fonte": "declaracao_candidato",
    "id_documento": "doc-site-sen-am-2026-wilson-lima",
    "citacao_literal": "Quem tem que ter medo é o bandido, e não o cidadão de bem. Quero estar em Brasília para endurecer as leis contra a bandidagem e também exigir do Governo Federal que cumpra a sua parte na proteção das nossas fronteiras, porque as polícias do Amazonas não conseguem fazer isso sozinhas",
-   "texto": "Quer endurecer leis e cobrar do governo federal a protecao das fronteiras do Amazonas.",
+   "texto": "Quer endurecer leis e cobrar do governo federal a proteção das fronteiras do Amazonas.",
    "url_especifica": "http://wilsonlimaam.com.br/2026/08/14/em-barcelos-wilson-lima-propoe-policia-de-fronteira-para-ampliar-atuacao-das-bases-fluviais-contra-o-narcotrafico/",
    "data_referencia": "2026-08-27",
    "revisado_por_humano": false,
@@ -1341,7 +1341,7 @@
    "natureza": "promessa",
    "nivel_fonte": "oficial",
    "id_documento": "doc-programa-nacional-mdb",
-   "citacao_literal": "foco na elevação do padrão das moradias destinadas a habitação de interesse social, especialmente na Faixa 1 do programa Minha Casa, Minha Vida",
+   "citacao_literal": "foco na elevação do padrão das moradias destinadas à habitação de interesse social, especialmente na Faixa 1 do programa Minha Casa, Minha Vida",
    "texto": "Defende elevar o padrão das moradias de interesse social, sobretudo na Faixa 1 do Minha Casa, Minha Vida.",
    "url_especifica": "https://www.mdb.org.br/documento-caminhos-para-o-brasil/",
    "data_referencia": "2025-10-23",
@@ -1352,7 +1352,15 @@
     "base": "trecho conferido palavra por palavra contra fontes/programa-mdb-2025-caminhos.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "_correcoes": [
+    {
+     "campo": "citacao_literal",
+     "em": "2026-09-01",
+     "porque": "a citacao estava transcrita sem acento; o trecho foi recopiado do documento de origem, sem escolha nossa de palavra",
+     "antes": "foco na elevação do padrão das moradias destinadas a habitação de interesse social, especialmente na Faixa 1 do programa Minha Casa, Minha Vida"
+    }
+   ]
   },
   {
    "id_posicao": "pos-sen-am-2026-eduardo-braga-prog-mdb-014",

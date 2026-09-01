@@ -38,8 +38,20 @@ from datetime import date
 import acervo
 
 
-def documento_do_site(cid: str, url: str, titulo: str, coletado_em: str) -> dict:
+# A procedencia ATRAVESSA, e nao fica fixa no texto. Estava escrito aqui que todo
+# site vinha declarado no registro no TSE — verdade para os 28 primeiros, e
+# mentira no dia em que entrou o primeiro site achado fora do registro. Frase
+# fixa sobre a origem envelhece calada.
+def documento_do_site(cid: str, url: str, titulo: str, coletado_em: str,
+                      fora: list[str] | None = None) -> dict:
     dominio = url.split("//", 1)[-1].split("/", 1)[0]
+    if fora:
+        origem = ("Endereco NAO declarado ao TSE. Admitido com prova de atribuicao, "
+                  "registrada em dados/sites-fora-do-registro.json: "
+                  + " ".join(fora))
+    else:
+        origem = ("Endereco declarado pela propria candidatura no registro no TSE "
+                  "(base de redes sociais 2026).")
     return {
         "id_documento": f"doc-site-{cid}",
         "tipo": "site_de_candidatura",
@@ -47,8 +59,7 @@ def documento_do_site(cid: str, url: str, titulo: str, coletado_em: str) -> dict
         "url": url,
         "publicado_em": None,
         "consultado_em": coletado_em,
-        "_origem": ("Endereco declarado pela propria candidatura no registro no TSE "
-                    "(base de redes sociais 2026)."),
+        "_origem": origem,
     }
 
 
@@ -75,7 +86,7 @@ def promover(uf: str, gravar: bool) -> tuple[int, int]:
         if did not in docs:
             ddoc["documentos"].append(
                 documento_do_site(cid, x["url"], x.get("titulo_da_pagina", ""),
-                                  x["coletado_em"]))
+                                  x["coletado_em"], x.get("prova_de_atribuicao")))
             docs.add(did); novos_docs += 1
         dpos["posicoes"].append({
             "id_posicao": x["id_posicao"],
@@ -97,7 +108,10 @@ def promover(uf: str, gravar: bool) -> tuple[int, int]:
                 "data": x["extraido_em"],
                 "forca": "alta",
                 "base": ("trecho conferido palavra por palavra contra o texto coletado "
-                         f"do site declarado ao TSE em {x['coletado_em']}"),
+                         + ("do site da candidatura (endereco nao declarado ao TSE, "
+                            "atribuicao provada) em " if x.get("prova_de_atribuicao")
+                            else "do site declarado ao TSE em ")
+                         + x["coletado_em"]),
                 "ressalva": ("Citacao literal conferida por comparacao de texto. O que "
                              "NAO foi conferido por gente: se o trecho representa o "
                              "conjunto do que a candidatura defende, e se a pagina mudou "

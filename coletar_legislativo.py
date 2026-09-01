@@ -34,6 +34,7 @@ Uso:
 """
 from __future__ import annotations
 
+import http.client
 import json
 import pathlib
 import re
@@ -86,7 +87,12 @@ def buscar(url: str, tentativas: int = 4) -> dict:
                 time.sleep(2 * (n + 1))
                 continue
             raise
-        except (urllib.error.URLError, TimeoutError) as e:
+        # IncompleteRead: a API do Senado corta a resposta em chunked no meio. Nao
+        # e URLError nem TimeoutError, e por isso escapava do retry e derrubava a
+        # coleta inteira — a gravacao e no fim, e as 103 proposicoes ja colhidas do
+        # Acre foram para o lixo por causa de 130 bytes que faltaram numa leitura.
+        except (urllib.error.URLError, TimeoutError, http.client.IncompleteRead,
+                ConnectionError, json.JSONDecodeError) as e:
             ultimo = e
             time.sleep(2 * (n + 1))
     raise RuntimeError(f"falhou depois de {tentativas} tentativas: {url} ({ultimo})")
@@ -287,16 +293,22 @@ def main() -> int:
     # coleta de PE — 40 registros de outro estado num arquivo que existe para
     # separar estados. Era o erro exato que a divisao por pasta deveria impedir, e
     # foi um id fixo aqui que furou a divisao.
-    ENCERRADOS = {"sen-sp-2026-tebet": {"casa": "senado", "id_externo": "5527",
-                                        "_nota": "senadora por MS, 2015-2022"}}
+    # A LISTA SAIU DO CODIGO. Era um dicionario fixo com uma entrada, escrita a
+    # mao para a Tebet — e por isso a Mara Rocha, deputada federal pelo AC de 2019
+    # a 2023, ficou de fora sem ninguem notar. Quem falta numa lista escrita a mao
+    # e invisivel por construcao. Agora a lista e um arquivo, produzido pelo
+    # resolver_mandatos_encerrados.py, e cada linha carrega a prova de identidade.
     ja_alvo = {a for a, _ in alvos}
     prefixo = f"sen-{_UF.lower()}-"
-    for cid, pl in ENCERRADOS.items():
-        if cid in ja_alvo:
-            continue
-        if not cid.startswith(prefixo):
-            continue          # candidatura de outro estado: nao e desta coleta
-        alvos.append((cid, pl))
+    arq_enc = pathlib.Path("dados/mandatos-encerrados.json")
+    encerrados = (json.loads(arq_enc.read_text(encoding="utf-8"))["mandatos"]
+                  if arq_enc.exists() else [])
+    for m in encerrados:
+        cid = m["id_candidatura"]
+        if cid in ja_alvo or not cid.startswith(prefixo):
+            continue          # ja e alvo, ou candidatura de outro estado
+        alvos.append((cid, {"casa": m["casa"], "id_externo": m["id_externo"],
+                            "_nota": m.get("_prova")}))
 
     novos: list[dict] = []
     for id_cand, pl in alvos:

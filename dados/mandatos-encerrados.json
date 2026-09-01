@@ -1,0 +1,589 @@
+{
+ "_nota": "Mandato federal ENCERRADO, descoberto por resolver_mandatos_encerrados.py. Cada linha foi confirmada por data de nascimento igual na API da casa legislativa e no registro no TSE — nome sozinho nao basta. O coletar_legislativo.py le este arquivo; antes ele tinha um dicionario fixo no codigo com uma entrada escrita a mao.",
+ "atualizado_em": "2026-09-01",
+ "mandatos": [
+  {
+   "id_candidatura": "sen-ac-2026-gladson-cameli",
+   "uf": "AC",
+   "nome_urna": "Gladson Camelí",
+   "casa": "camara",
+   "id_externo": "141446",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    53,
+    54
+   ],
+   "uf_do_mandato": [
+    "AC"
+   ],
+   "_prova": "nome civil GLADSON DE LIMA CAMELI e nascimento 1978-03-26 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-ac-2026-gladson-cameli",
+   "uf": "AC",
+   "nome_urna": "Gladson Camelí",
+   "casa": "senado",
+   "id_externo": "4558",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    55,
+    56
+   ],
+   "uf_do_mandato": [],
+   "_prova": "nome civil Gladson de Lima Cameli e nascimento 1978-03-26 na API do Senado, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-ac-2026-jorge-viana",
+   "uf": "AC",
+   "nome_urna": "Jorge Viana",
+   "casa": "senado",
+   "id_externo": "4990",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    54,
+    55
+   ],
+   "uf_do_mandato": [],
+   "_prova": "nome civil Jorge Ney Viana Macedo Neves e nascimento 1959-09-20 na API do Senado, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-ac-2026-mara-rocha",
+   "uf": "AC",
+   "nome_urna": "Mara Rocha",
+   "casa": "camara",
+   "id_externo": "204471",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    56
+   ],
+   "uf_do_mandato": [
+    "AC"
+   ],
+   "_prova": "nome civil CYLMARA FERNANDES DA ROCHA GRIPP e nascimento 1973-09-04 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-ap-2026-capi",
+   "uf": "AP",
+   "nome_urna": "Capi",
+   "casa": "senado",
+   "id_externo": "3394",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    52,
+    53,
+    54,
+    55
+   ],
+   "uf_do_mandato": [],
+   "_prova": "nome civil João Alberto Rodrigues Capiberibe e nascimento 1947-05-06 na API do Senado, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-ba-2026-joao-roma",
+   "uf": "BA",
+   "nome_urna": "João Roma",
+   "casa": "camara",
+   "id_externo": "204576",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    56
+   ],
+   "uf_do_mandato": [
+    "BA"
+   ],
+   "_prova": "nome civil JOÃO INÁCIO RIBEIRO ROMA NETO e nascimento 1972-11-17 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-ba-2026-rui-costa",
+   "uf": "BA",
+   "nome_urna": "Rui Costa",
+   "casa": "camara",
+   "id_externo": "104254",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    54
+   ],
+   "uf_do_mandato": [
+    "BA"
+   ],
+   "_prova": "nome civil RUI COSTA DOS SANTOS e nascimento 1963-01-18 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-ce-2026-capitao-wagner",
+   "uf": "CE",
+   "nome_urna": "Capitão Wagner",
+   "casa": "camara",
+   "id_externo": "204487",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    56
+   ],
+   "uf_do_mandato": [
+    "CE"
+   ],
+   "_prova": "nome civil WAGNER SOUSA GOMES e nascimento 1979-01-21 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-df-2026-ronaldo-fonseca",
+   "uf": "DF",
+   "nome_urna": "Ronaldo Fonseca",
+   "casa": "camara",
+   "id_externo": "160637",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    54,
+    55
+   ],
+   "uf_do_mandato": [
+    "DF"
+   ],
+   "_prova": "nome civil RONALDO FONSECA DE SOUZA e nascimento 1959-04-04 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-es-2026-renato-casagrande",
+   "uf": "ES",
+   "nome_urna": "Renato Casagrande",
+   "casa": "camara",
+   "id_externo": "74166",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    52
+   ],
+   "uf_do_mandato": [
+    "ES"
+   ],
+   "_prova": "nome civil JOSÉ RENATO CASAGRANDE e nascimento 1960-12-03 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-es-2026-renato-casagrande",
+   "uf": "ES",
+   "nome_urna": "Renato Casagrande",
+   "casa": "senado",
+   "id_externo": "3868",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    53,
+    54
+   ],
+   "uf_do_mandato": [],
+   "_prova": "nome civil José Renato Casagrande e nascimento 1960-12-03 na API do Senado, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-es-2026-rose-de-freitas",
+   "uf": "ES",
+   "nome_urna": "Rose de Freitas",
+   "casa": "camara",
+   "id_externo": "73507",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    52,
+    53,
+    54
+   ],
+   "uf_do_mandato": [
+    "ES"
+   ],
+   "_prova": "nome civil ROSILDA DE FREITAS e nascimento 1949-01-23 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-es-2026-rose-de-freitas",
+   "uf": "ES",
+   "nome_urna": "Rose de Freitas",
+   "casa": "senado",
+   "id_externo": "2331",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    55,
+    56
+   ],
+   "uf_do_mandato": [],
+   "_prova": "nome civil Rosilda de Freitas e nascimento 1949-01-23 na API do Senado, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-ma-2026-simplicio-araujo",
+   "uf": "MA",
+   "nome_urna": "Simplício Araújo",
+   "casa": "camara",
+   "id_externo": "168175",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    54,
+    56
+   ],
+   "uf_do_mandato": [
+    "MA"
+   ],
+   "_prova": "nome civil JOSE SIMPLICIO ALVES DE ARAUJO e nascimento 1969-04-18 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-mg-2026-marcelo-aro",
+   "uf": "MG",
+   "nome_urna": "Marcelo Aro",
+   "casa": "camara",
+   "id_externo": "146788",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    55,
+    56
+   ],
+   "uf_do_mandato": [
+    "MG"
+   ],
+   "_prova": "nome civil MARCELO GUILHERME DE ARO FERREIRA e nascimento 1987-06-12 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-mg-2026-aurea-carolina",
+   "uf": "MG",
+   "nome_urna": "Áurea Carolina",
+   "casa": "camara",
+   "id_externo": "204509",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    56
+   ],
+   "uf_do_mandato": [
+    "MG"
+   ],
+   "_prova": "nome civil ÁUREA CAROLINA DE FREITAS E SILVA e nascimento 1983-11-20 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-ms-2026-reinaldo-azambuja",
+   "uf": "MS",
+   "nome_urna": "Reinaldo Azambuja",
+   "casa": "camara",
+   "id_externo": "160615",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    54
+   ],
+   "uf_do_mandato": [
+    "MS"
+   ],
+   "_prova": "nome civil REINALDO AZAMBUJA SILVA e nascimento 1963-05-13 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-mt-2026-margareth-buzetti",
+   "uf": "MT",
+   "nome_urna": "Margareth Buzetti",
+   "casa": "senado",
+   "id_externo": "6304",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    56,
+    57
+   ],
+   "uf_do_mandato": [],
+   "_prova": "nome civil Margareth Gettert Busetti e nascimento 1959-10-31 na API do Senado, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-mt-2026-pedro-taques",
+   "uf": "MT",
+   "nome_urna": "Pedro Taques",
+   "casa": "senado",
+   "id_externo": "5010",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    54,
+    55
+   ],
+   "uf_do_mandato": [],
+   "_prova": "nome civil José Pedro Gonçalves Taques e nascimento 1968-03-15 na API do Senado, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-pb-2026-major-fabio",
+   "uf": "PB",
+   "nome_urna": "Major Fábio",
+   "casa": "camara",
+   "id_externo": "149327",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    53,
+    54
+   ],
+   "uf_do_mandato": [
+    "PB"
+   ],
+   "_prova": "nome civil FÁBIO RODRIGUES DE OLIVEIRA e nascimento 1969-11-04 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-pe-2026-marilia-arraes",
+   "uf": "PE",
+   "nome_urna": "Marília Arraes",
+   "casa": "camara",
+   "id_externo": "204428",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    56
+   ],
+   "uf_do_mandato": [
+    "PE"
+   ],
+   "_prova": "nome civil MARÍLIA VALENÇA ROCHA ARRAES DE ALENCAR e nascimento 1984-04-12 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-pe-2026-paulo-rubem-santiago",
+   "uf": "PE",
+   "nome_urna": "Paulo Rubem Santiago",
+   "casa": "camara",
+   "id_externo": "74047",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    52,
+    53,
+    54
+   ],
+   "uf_do_mandato": [
+    "PE"
+   ],
+   "_prova": "nome civil PAULO RUBEM SANTIAGO FERREIRA e nascimento 1955-07-17 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-pr-2026-deltan-dallagnol",
+   "uf": "PR",
+   "nome_urna": "Deltan Dallagnol",
+   "casa": "camara",
+   "id_externo": "220705",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    57
+   ],
+   "uf_do_mandato": [
+    "PR"
+   ],
+   "_prova": "nome civil DELTAN MARTINAZZO DALLAGNOL e nascimento 1980-01-15 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-pr-2026-dr-rosinha",
+   "uf": "PR",
+   "nome_urna": "Dr. Rosinha",
+   "casa": "camara",
+   "id_externo": "73459",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    52,
+    53,
+    54
+   ],
+   "uf_do_mandato": [
+    "PR"
+   ],
+   "_prova": "nome civil FLORISVALDO FIER e nascimento 1950-11-12 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-pr-2026-gleisi",
+   "uf": "PR",
+   "nome_urna": "Gleisi",
+   "casa": "senado",
+   "id_externo": "5006",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    54,
+    55
+   ],
+   "uf_do_mandato": [
+    "PR"
+   ],
+   "_prova": "nome civil Gleisi Helena Hoffmann e nascimento 1965-09-06 na API do Senado, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-rn-2026-rafael-motta",
+   "uf": "RN",
+   "nome_urna": "Rafael Motta",
+   "casa": "camara",
+   "id_externo": "178951",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    55,
+    56
+   ],
+   "uf_do_mandato": [
+    "RN"
+   ],
+   "_prova": "nome civil RAFAEL HUETE DA MOTTA e nascimento 1986-08-15 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-ro-2026-acir-gurgacz",
+   "uf": "RO",
+   "nome_urna": "Acir Gurgacz",
+   "casa": "senado",
+   "id_externo": "4981",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    53,
+    54,
+    55,
+    56
+   ],
+   "uf_do_mandato": [],
+   "_prova": "nome civil Acir Marcos Gurgacz e nascimento 1962-02-25 na API do Senado, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-ro-2026-mariana-carvalho",
+   "uf": "RO",
+   "nome_urna": "Mariana Carvalho",
+   "casa": "camara",
+   "id_externo": "178956",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    55,
+    56
+   ],
+   "uf_do_mandato": [
+    "RO"
+   ],
+   "_prova": "nome civil MARIANA FONSECA RIBEIRO CARVALHO DE MORAES e nascimento 1986-11-26 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-rr-2026-marcio-junqueira",
+   "uf": "RR",
+   "nome_urna": "Márcio Junqueira",
+   "casa": "camara",
+   "id_externo": "141496",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    53,
+    54
+   ],
+   "uf_do_mandato": [
+    "RR"
+   ],
+   "_prova": "nome civil MÁRCIO HENRIQUE JUNQUEIRA PEREIRA e nascimento 1968-01-27 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-rr-2026-teresa-surita",
+   "uf": "RR",
+   "nome_urna": "Teresa Surita",
+   "casa": "camara",
+   "id_externo": "160608",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    54
+   ],
+   "uf_do_mandato": [
+    "RR"
+   ],
+   "_prova": "nome civil MARIA TERESA SAENZ SURITA JUCÁ e nascimento 1956-08-14 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-rs-2026-manuela-d-avila",
+   "uf": "RS",
+   "nome_urna": "Manuela d'Ávila",
+   "casa": "camara",
+   "id_externo": "141492",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    53,
+    54
+   ],
+   "uf_do_mandato": [
+    "RS"
+   ],
+   "_prova": "nome civil MANUELA PINTO VIEIRA D'ÁVILA e nascimento 1981-08-18 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-sc-2026-decio-lima",
+   "uf": "SC",
+   "nome_urna": "Décio Lima",
+   "casa": "camara",
+   "id_externo": "141413",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    53,
+    54,
+    55
+   ],
+   "uf_do_mandato": [
+    "SC"
+   ],
+   "_prova": "nome civil DÉCIO NERY DE LIMA e nascimento 1960-10-01 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-se-2026-andre-moura",
+   "uf": "SE",
+   "nome_urna": "André Moura",
+   "casa": "camara",
+   "id_externo": "160543",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    54,
+    55
+   ],
+   "uf_do_mandato": [
+    "SE"
+   ],
+   "_prova": "nome civil ANDRÉ LUIS DANTAS FERREIRA e nascimento 1972-02-23 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-se-2026-eduardo-amorim",
+   "uf": "SE",
+   "nome_urna": "Eduardo Amorim",
+   "casa": "camara",
+   "id_externo": "141420",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    53
+   ],
+   "uf_do_mandato": [
+    "SE"
+   ],
+   "_prova": "nome civil EDUARDO ALVES DO AMORIM e nascimento 1963-05-17 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-se-2026-eduardo-amorim",
+   "uf": "SE",
+   "nome_urna": "Eduardo Amorim",
+   "casa": "senado",
+   "id_externo": "4721",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    54,
+    55
+   ],
+   "uf_do_mandato": [],
+   "_prova": "nome civil Eduardo Alves do Amorim e nascimento 1963-05-17 na API do Senado, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-se-2026-iran-barbosa",
+   "uf": "SE",
+   "nome_urna": "Iran Barbosa",
+   "casa": "camara",
+   "id_externo": "141468",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    53
+   ],
+   "uf_do_mandato": [
+    "SE"
+   ],
+   "_prova": "nome civil JOSÉ IRAN BARBOSA FILHO e nascimento 1966-06-21 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-sp-2026-tebet",
+   "uf": "SP",
+   "nome_urna": "Simone Tebet",
+   "casa": "senado",
+   "id_externo": "5527",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    55,
+    56
+   ],
+   "uf_do_mandato": [],
+   "_prova": "nome civil Simone Nassar Tebet e nascimento 1970-02-22 na API do Senado, iguais a nome_completo e data_nascimento do registro no TSE"
+  },
+  {
+   "id_candidatura": "sen-to-2026-ronaldo-dimas",
+   "uf": "TO",
+   "nome_urna": "Ronaldo Dimas",
+   "casa": "camara",
+   "id_externo": "73948",
+   "em_exercicio_hoje": false,
+   "legislaturas": [
+    52
+   ],
+   "uf_do_mandato": [
+    "TO"
+   ],
+   "_prova": "nome civil RONALDO DIMAS NOGUEIRA PEREIRA e nascimento 1961-04-27 na API da Camara, iguais a nome_completo e data_nascimento do registro no TSE"
+  }
+ ]
+}

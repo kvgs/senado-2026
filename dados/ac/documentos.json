@@ -79,6 +79,15 @@
    "consultado_em": "2026-08-28",
    "_ambito": "nacional",
    "_nota": "PDF de 55 paginas publicado pelo proprio partido na secao 'Downloads > Programa partidario' do site oficial (solidariedade.org.br/programa/), consultado em 28/ago/2026. O arquivo foi enviado ao site em junho de 2021 (segundo o caminho de upload) e nao traz data impressa. O programa e organizado em 21 temas, e cada tema tem um plano de acao separado por ambito municipal, estadual e FEDERAL. Como aqui se trata de candidatura ao Senado, todos os trechos foram tirados do ambito federal."
+  },
+  {
+   "id_documento": "doc-site-sen-ac-2026-mara-rocha",
+   "tipo": "site_de_candidatura",
+   "titulo": "Mara Rocha 100 · Senadora · Acre",
+   "url": "https://mararocha.com/",
+   "publicado_em": null,
+   "consultado_em": "2026-08-31",
+   "_origem": "Endereco NAO declarado ao TSE. Admitido com prova de atribuicao, registrada em dados/sites-fora-do-registro.json: O site traz o numero de urna 100, igual ao numero_urna do registro no TSE. O site nomeia a coligacao 'Trabalho da Esperanca — Republicanos, PSD, Novo e Avante'; o registro traz a coligacao trabalho-da-esperanca-ac com composicao REPUBLICANOS / PSD / AVANTE / NOVO. Os mesmos quatro partidos. O site nomeia os dois suplentes (Raimundo Moreira e Francisco Moreira); o registro traz 'Pr. Moreira' e 'Moreira', que sao as formas abreviadas dos mesmos nomes. O site aponta para @mararochaacre e /soumararocha — exatamente os dois perfis que a candidatura declarou ao TSE. O site publica o CNPJ de campanha 68.289.713/0001-50, que e o identificador da candidatura na prestacao de contas."
   }
  ]
 }

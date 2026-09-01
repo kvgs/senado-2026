@@ -11,7 +11,7 @@
    "nivel_fonte": "declaracao_candidato",
    "id_documento": "doc-site-sen-rs-2026-marcel-van-hattem",
    "citacao_literal": "Garantir a vida da população é o primeiro dever do Estado para com o pagador de impostos! Além disso, defendo que é direito do cidadão proteger sua propriedade e sua família.",
-   "texto": "Coloca a garantia da vida como primeiro dever do Estado e defende o direito de proteger propriedade e familia.",
+   "texto": "Coloca a garantia da vida como primeiro dever do Estado e defende o direito de proteger propriedade e família.",
    "url_especifica": "https://www.marcelvanhattem.com.br/",
    "data_referencia": "2026-08-27",
    "revisado_por_humano": false,
@@ -33,7 +33,7 @@
    "nivel_fonte": "declaracao_candidato",
    "id_documento": "doc-site-sen-rs-2026-marcel-van-hattem",
    "citacao_literal": "Seu compromisso com a redução de impostos e simplificação tributária busca estimular o crescimento econômico, enquanto o engajamento direto com a sociedade civil reflete sua convicção na participação ativa dos cidadãos.",
-   "texto": "O site descreve compromisso com reducao de impostos e simplificacao tributaria.",
+   "texto": "O site descreve compromisso com redução de impostos e simplificacao tributária.",
    "url_especifica": "https://www.marcelvanhattem.com.br/",
    "data_referencia": "2026-08-27",
    "revisado_por_humano": false,
@@ -55,7 +55,7 @@
    "nivel_fonte": "declaracao_candidato",
    "id_documento": "doc-site-sen-rs-2026-frederico-antunes",
    "citacao_literal": "Privatizar o Banrisul é mais do que vender. É fechar! Quero ser Senador pra defender a nossa economia, a nossa gente.",
-   "texto": "Posiciona-se contra a privatizacao do Banrisul, citando o lucro e a participacao do estado.",
+   "texto": "Posiciona-se contra a privatização do Banrisul, citando o lucro e a participação do estado.",
    "url_especifica": "https://fredericoantunes.com.br",
    "data_referencia": "2026-08-27",
    "revisado_por_humano": false,
@@ -1917,7 +1917,7 @@
    "natureza": "promessa",
    "nivel_fonte": "oficial",
    "id_documento": "doc-programa-nacional-mdb",
-   "citacao_literal": "foco na elevação do padrão das moradias destinadas a habitação de interesse social, especialmente na Faixa 1 do programa Minha Casa, Minha Vida",
+   "citacao_literal": "foco na elevação do padrão das moradias destinadas à habitação de interesse social, especialmente na Faixa 1 do programa Minha Casa, Minha Vida",
    "texto": "Defende elevar o padrão das moradias de interesse social, sobretudo na Faixa 1 do Minha Casa, Minha Vida.",
    "url_especifica": "https://www.mdb.org.br/documento-caminhos-para-o-brasil/",
    "data_referencia": "2025-10-23",
@@ -1928,7 +1928,15 @@
     "base": "trecho conferido palavra por palavra contra fontes/programa-mdb-2025-caminhos.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "_correcoes": [
+    {
+     "campo": "citacao_literal",
+     "em": "2026-09-01",
+     "porque": "a citacao estava transcrita sem acento; o trecho foi recopiado do documento de origem, sem escolha nossa de palavra",
+     "antes": "foco na elevação do padrão das moradias destinadas a habitação de interesse social, especialmente na Faixa 1 do programa Minha Casa, Minha Vida"
+    }
+   ]
   },
   {
    "id_posicao": "pos-sen-rs-2026-rigotto-prog-mdb-014",

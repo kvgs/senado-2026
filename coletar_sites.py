@@ -39,6 +39,7 @@ import collections
 import hashlib
 import html
 import json
+import pathlib
 import re
 import time
 import urllib.error
@@ -261,20 +262,31 @@ def diagnostico(t: str) -> str | None:
     return None
 
 
-def coletar_um(c: dict, uf: str) -> dict:
-    url = (c.get("contato") or {}).get("site")
+def coletar_um(c: dict, uf: str, fora: dict | None = None) -> dict:
+    """`fora` vem de dados/sites-fora-do-registro.json: site que existe mas que a
+    candidatura nao declarou ao TSE. Muda a PROCEDENCIA, e nao o selo — continua
+    roxo. O registro guarda a prova de atribuicao junto com o texto, porque quem
+    ler daqui a um ano tem de poder refazer a conferencia sem confiar em nos."""
+    url = fora["url"] if fora else (c.get("contato") or {}).get("site")
     reg = {
         "id_candidatura": c["id_candidatura"],
         "uf": uf,
         "nome_urna": c["pessoa"]["nome_urna"],
-        "url_declarada": url,
+        "url_declarada": None if fora else url,
         "coletado_em": date.today().isoformat(),
-        "_fonte": "Site declarado pela candidatura ao TSE (base de redes sociais 2026)",
+        "_fonte": ("Site NAO declarado ao TSE, achado fora do registro e admitido "
+                   "com prova de atribuicao (dados/sites-fora-do-registro.json)"
+                   if fora else
+                   "Site declarado pela candidatura ao TSE (base de redes sociais 2026)"),
         "_selo": "declaracao_do_candidato",
         "_nota_selo": ("Selo roxo: prova que a candidatura publicou isto, nunca que o "
                        "conteudo e verdadeiro."),
         "paginas": [],
     }
+    if fora:
+        reg["url_fora_do_registro"] = url
+        reg["prova_de_atribuicao"] = fora["prova_de_atribuicao"]
+        reg["encontrado_por"] = fora.get("encontrado_por")
 
     inicial = None
     tentativas = []
@@ -292,7 +304,7 @@ def coletar_um(c: dict, uf: str) -> dict:
         time.sleep(PAUSA)
 
     if inicial is None:
-        reg["_indisponivel"] = ("Site declarado nao respondeu com pagina HTML. Tentativas: "
+        reg["_indisponivel"] = ("Site nao respondeu com pagina HTML. Tentativas: "
                                 + "; ".join(tentativas))
         return reg
 
@@ -394,27 +406,43 @@ def main() -> None:
         raise SystemExit("passe --uf XX ou --todos")
 
     ufs = acervo.com_acervo() if a.todos else [a.uf.upper()]
+    fora_por_id = {}
+    arq_fora = pathlib.Path("dados/sites-fora-do-registro.json")
+    if arq_fora.exists():
+        for s in json.loads(arq_fora.read_text(encoding="utf-8"))["sites"]:
+            # Sem prova de atribuicao a linha nao vale. Uma lista vazia aqui
+            # significaria "confie em quem escreveu", e e exatamente isso que a
+            # regra do registro no TSE existia para nao precisar pedir.
+            if not s.get("prova_de_atribuicao"):
+                raise SystemExit(f"PAROU: {s.get('url')} esta em "
+                                 "sites-fora-do-registro.json sem prova_de_atribuicao.")
+            fora_por_id[s["id_candidatura"]] = s
     alvos = []
     for uf in ufs:
         for c in acervo.ler("candidaturas.json", uf)["candidaturas"]:
-            if (c.get("contato") or {}).get("site"):
-                alvos.append((uf, c))
+            f = fora_por_id.get(c["id_candidatura"])
+            if f and f["uf"] == uf:
+                alvos.append((uf, c, f))
+            elif (c.get("contato") or {}).get("site"):
+                alvos.append((uf, c, None))
     if a.limite:
         alvos = alvos[:a.limite]
 
     print(f"{len(alvos)} site(s) a coletar, {PAUSA}s entre requisicoes, "
           f"ate {PAGINAS_POR_SITE} paginas por site.")
     if not a.gravar:
-        for uf, c in alvos:
-            print(f"  {uf} {c['pessoa']['nome_urna'][:24]:24} {c['contato']['site'][:56]}")
+        for uf, c, f in alvos:
+            u = f["url"] if f else c["contato"]["site"]
+            print(f"  {uf} {c['pessoa']['nome_urna'][:24]:24} {u[:52]}"
+                  f"{'  [fora do registro]' if f else ''}")
         print("\n(sem --gravar: nada foi baixado nem escrito)")
         return
 
     por_uf: dict[str, list] = collections.defaultdict(list)
     resumo: collections.Counter = collections.Counter()
-    for i, (uf, c) in enumerate(alvos, 1):
+    for i, (uf, c, f) in enumerate(alvos, 1):
         print(f"[{i}/{len(alvos)}] {uf} {c['pessoa']['nome_urna'][:22]:22}", end="  ", flush=True)
-        reg = coletar_um(c, uf)
+        reg = coletar_um(c, uf, f)
         por_uf[uf].append(reg)
         if reg.get("_indisponivel"):
             print("indisponivel"); resumo["indisponivel"] += 1

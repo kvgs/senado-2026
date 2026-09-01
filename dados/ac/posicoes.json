@@ -11,7 +11,7 @@
    "nivel_fonte": "declaracao_candidato",
    "id_documento": "doc-site-sen-ac-2026-jorge-viana",
    "citacao_literal": "Defendo a necessidade de uma distribuição de renda mais justa , para combater a fome e as enormes desigualdades sociais que temos no nosso país.",
-   "texto": "Defende distribuicao de renda mais justa para combater a fome e a desigualdade social.",
+   "texto": "Defende distribuição de renda mais justa para combater a fome e a desigualdade social.",
    "url_especifica": "https://jorgeviana.com.br/o-que-penso/",
    "data_referencia": "2026-08-27",
    "revisado_por_humano": false,
@@ -1471,6 +1471,28 @@
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
    "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-ac-2026-mara-rocha-site-001",
+   "id_tema": "t2",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-ac-2026-mara-rocha",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-ac-2026-mara-rocha",
+   "citacao_literal": "Formada em Educação Física e Jornalismo, levou internet e reformas a escolas rurais e defende cursos técnicos e bolsas para a juventude.",
+   "texto": "Defende cursos técnicos e bolsas para a juventude.",
+   "url_especifica": "https://mararocha.com/",
+   "data_referencia": "2026-08-31",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-08-31",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site da candidatura (endereco nao declarado ao TSE, atribuicao provada) em 2026-08-31",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-09-01"
   }
  ]
 }
