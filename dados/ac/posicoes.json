@@ -254,7 +254,7 @@
    "texto": "Defende simplificar a legislação e reduzir a carga tributária, e desburocratizar as normas trabalhistas para favorecer contratações e empreendedorismo.",
    "url_especifica": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?jornal=530&pagina=257&data=22/12/2022&captchafield=firstAccess",
    "data_referencia": "2022-12-19",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
@@ -263,8 +263,10 @@
    },
    "_promovido_em": "2026-08-28",
    "revisao": {
-    "_reaberta_em": "2026-09-01",
-    "_porque_reaberta": "A revisao nao achou o trecho na pagina que o link abria, e estava certa: ele esta na pagina 257 do DOU, e o link abria a outra. A pagina agora e calculada da pagina do PDF, e nao da posicao do rodape no texto corrido — o DOU tem tres colunas e o rodape sai no meio da extracao.",
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
     "_antes": [
      {
       "_reaberta_em": "2026-09-01",
@@ -291,6 +293,10 @@
       "resultado": "corrigir",
       "nota": "Não localizei na página",
       "por_quem": "kvgs"
+     },
+     {
+      "_reaberta_em": "2026-09-01",
+      "_porque_reaberta": "A revisao nao achou o trecho na pagina que o link abria, e estava certa: ele esta na pagina 257 do DOU, e o link abria a outra. A pagina agora e calculada da pagina do PDF, e nao da posicao do rodape no texto corrido — o DOU tem tres colunas e o rodape sai no meio da extracao."
      }
     ]
    },
@@ -417,7 +423,7 @@
    "texto": "Defende expandir digitalização e conectividade, com foco em quem vive em localidades remotas.",
    "url_especifica": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?jornal=530&pagina=257&data=22/12/2022&captchafield=firstAccess",
    "data_referencia": "2022-12-19",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
@@ -426,8 +432,10 @@
    },
    "_promovido_em": "2026-08-28",
    "revisao": {
-    "_reaberta_em": "2026-09-01",
-    "_porque_reaberta": "A revisao nao achou o trecho na pagina que o link abria, e estava certa: ele esta na pagina 257 do DOU, e o link abria a outra. A pagina agora e calculada da pagina do PDF, e nao da posicao do rodape no texto corrido — o DOU tem tres colunas e o rodape sai no meio da extracao.",
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
     "_antes": [
      {
       "_reaberta_em": "2026-09-01",
@@ -454,6 +462,10 @@
       "resultado": "corrigir",
       "nota": "Não localizei nessa página",
       "por_quem": "kvgs"
+     },
+     {
+      "_reaberta_em": "2026-09-01",
+      "_porque_reaberta": "A revisao nao achou o trecho na pagina que o link abria, e estava certa: ele esta na pagina 257 do DOU, e o link abria a outra. A pagina agora e calculada da pagina do PDF, e nao da posicao do rodape no texto corrido — o DOU tem tres colunas e o rodape sai no meio da extracao."
      }
     ]
    },

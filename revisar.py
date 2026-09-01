@@ -187,7 +187,9 @@ def itens_de(uf):
             "escopo": r.get("escopo") or "",
             "data_referencia": r.get("data_referencia") or "",
             "fonte_titulo": doc.get("titulo", "fonte não registrada"),
-            "fonte_url": doc.get("url", ""),
+            "fonte_url": r.get("url_especifica") or doc.get("url", ""),
+            "fonte_url_documento": doc.get("url", ""),
+            "pagina_na_fonte": r.get("_pagina_no_dou"),
             "fonte_local": doc.get("arquivo_local", ""),
             "forca": conf.get("forca", ""),
             "base": conf.get("base", ""),
@@ -475,7 +477,9 @@ function desenhar(){
     (it.escopo?'<p class="txt"><strong>Escopo:</strong> '+esc(it.escopo)+'</p>':'')+
     '<div class="meta">'+
       '<span>Fonte: '+(it.fonte_url?'<a href="'+esc(it.fonte_url)+'" target="_blank" rel="noopener">'+
-        esc(it.fonte_titulo)+'</a>':esc(it.fonte_titulo))+'</span>'+
+        esc(it.fonte_titulo)+'</a>':esc(it.fonte_titulo))+
+        (it.pagina_na_fonte?' <b>— pagina '+esc(it.pagina_na_fonte)+
+          '</b>, que e onde ESTE trecho esta':'')+'</span>'+
       (it.fonte_local?'<span>Arquivo local: '+esc(it.fonte_local)+'</span>':'')+
       '<span>Data de referencia: '+esc(it.data_referencia)+'</span>'+
       (it.base?'<span>Base da conferencia por IA: '+esc(it.base)+'</span>':'')+
