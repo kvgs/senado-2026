@@ -2544,14 +2544,18 @@
    "texto": "Não localizamos proposta sobre habitação. Isto é uma afirmação sobre a nossa busca: as fontes abaixo foram lidas e nenhuma delas trouxe posição sobre este tema.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foram lidos: o programa nacional do PP, lido por inteiro — rendeu 5 trechos; o site da candidatura (gladsoncameli.com.br/), 11 páginas e 33.722 caracteres, coletado em 2026-09-01. NÃO foram lidos, e são canais que a candidatura declarou ao TSE: o Instagram @gladsoncameli. O projeto ainda não coleta rede social.",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "_gerado_por": "registrar_ausencias.py",
    "revisao": {
+    "resultado": "confere",
+    "por": "curadoria",
     "em": "2026-09-01",
-    "resultado": "remover",
-    "nota": "Não há frase a ser conferida. ",
-    "por_quem": "kvgs",
-    "citacao_conferida_na_fonte": true
+    "_decisao_anterior": {
+     "resultado": "remover",
+     "nota": "Não há frase a ser conferida. ",
+     "em": "2026-09-01",
+     "por_que_mudou": "A nota anterior — 'Nao ha frase a ser conferida' — descrevia corretamente o registro, mas nao era motivo para remove-lo: registro de ausencia nao TEM frase, porque diz que nao ha proposta. A curadoria confirmou o texto e o escopo palavra por palavra. As duas linhas identicas, de Meio Ambiente e Tecnologia, ja estavam aprovadas."
+    }
    }
   },
   {
