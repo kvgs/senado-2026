@@ -7,7 +7,10 @@
       "url": "https://mararocha.com/",
       "encontrado_em": "2026-08-31",
       "encontrado_por": "curadoria do projeto",
-      "declarou_ao_tse": ["https://www.facebook.com/soumararocha", "https://www.instagram.com/mararochaacre"],
+      "declarou_ao_tse": [
+        "https://www.facebook.com/soumararocha",
+        "https://www.instagram.com/mararochaacre"
+      ],
       "prova_de_atribuicao": [
         "O site traz o numero de urna 100, igual ao numero_urna do registro no TSE.",
         "O site nomeia a coligacao 'Trabalho da Esperanca — Republicanos, PSD, Novo e Avante'; o registro traz a coligacao trabalho-da-esperanca-ac com composicao REPUBLICANOS / PSD / AVANTE / NOVO. Os mesmos quatro partidos.",
@@ -15,6 +18,25 @@
         "O site aponta para @mararochaacre e /soumararocha — exatamente os dois perfis que a candidatura declarou ao TSE.",
         "O site publica o CNPJ de campanha 68.289.713/0001-50, que e o identificador da candidatura na prestacao de contas."
       ]
+    },
+    {
+      "id_candidatura": "sen-ac-2026-gladson-cameli",
+      "uf": "AC",
+      "url": "http://gladsoncameli.com.br/",
+      "encontrado_em": "2026-09-01",
+      "encontrado_por": "curadoria do projeto",
+      "declarou_ao_tse": [
+        "https://www.instagram.com/gladsoncameli"
+      ],
+      "prova_de_atribuicao": [
+        "A pagina traz o numero de urna 111, igual ao numero_urna do registro no TSE.",
+        "Nomeia a coligacao 'Avanca Acre'; o registro traz a coligacao avanca-acre-ac.",
+        "Nomeia os dois suplentes, 'Beatriz Barroso Cameli' e 'Debora Nunes da Silva'; o registro traz 'Beatriz Cameli' e 'Debora Nunes'.",
+        "Aponta para o perfil @gladsoncameli, que e exatamente o unico endereco que a candidatura declarou ao TSE.",
+        "Publica o CNPJ de campanha 68.526.823/0001-99 e a expressao 'Propaganda eleitoral'.",
+        "Traz materias datadas de agosto de 2026 — e material desta eleicao, e nao de mandato anterior."
+      ],
+      "_achado_depois_do_registro_D": "Este site foi encontrado DEPOIS de o acervo ja ter gravado sete registros de estado D para esta candidatura, dizendo que a busca nao achou proposta nos temas. A busca daquele momento nao incluia este site, e por isso os registros foram refeitos com o escopo certo. Fica escrito porque e a licao: D e uma afirmacao forte, e vale exatamente o que vale a lista de fontes."
     }
   ]
 }

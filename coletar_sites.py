@@ -401,10 +401,17 @@ def main() -> None:
     ap.add_argument("--todos", action="store_true")
     ap.add_argument("--gravar", action="store_true")
     ap.add_argument("--limite", type=int, default=0, help="para piloto")
+    # Site com uma pagina por proposta estoura o teto de 4: o do Gladson Cameli
+    # tem seis paginas de proposta, e com o teto padrao tres delas nunca foram
+    # lidas — e o acervo teria dito "nao localizamos" sobre temas que estavam la.
+    ap.add_argument("--paginas", type=int, default=0,
+                    help=f"paginas por site (padrao {PAGINAS_POR_SITE})")
     a = ap.parse_args()
     if not a.uf and not a.todos:
         raise SystemExit("passe --uf XX ou --todos")
 
+    if a.paginas:
+        globals()["PAGINAS_POR_SITE"] = a.paginas
     ufs = acervo.com_acervo() if a.todos else [a.uf.upper()]
     fora_por_id = {}
     arq_fora = pathlib.Path("dados/sites-fora-do-registro.json")
