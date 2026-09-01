@@ -1,6 +1,6 @@
 # 111 Gladson Camelí (PP) — Acre
 
-11 slides: capa, um slide por tema COM conteúdo, um slide juntando todos
+10 slides: capa, um slide por tema COM conteúdo, um slide juntando todos
 os temas sem conteúdo, o convite para perguntar, e o fecho com a legenda das tarjas.
 Gerado por `python gerar_artes_candidatura.py --uf AC --numero 111`.
 
@@ -13,8 +13,8 @@ Gerado por `python gerar_artes_candidatura.py --uf AC --numero 111`.
 São 10 temas. Em cada slide a tarja diz **de quem é a proposta** — da
 candidatura ou do partido — ou o que ainda não há.
 
-Neste levantamento: **5 tema(s) com proposta própria**, **2 com
-proposta do partido** e **3 sem conteúdo**.
+Neste levantamento: **4 tema(s) com proposta própria**, **2 com
+proposta do partido** e **4 sem conteúdo**.
 
 ⚠️ Estes três números são sobre **o nosso levantamento**, e não sobre a
 candidatura. Tema sem conteúdo aqui quer dizer que nós ainda não localizamos ou
@@ -41,5 +41,5 @@ link de cada fonte.
 
 ## Números desta candidatura
 
-- 5 proposta(s) própria(s), 2 do partido, 3 sem conteúdo
+- 4 proposta(s) própria(s), 2 do partido, 4 sem conteúdo
 - Cor e silhueta: verde da bandeira do Acre, escurecido de #009B3A (3,33:1) para 5,01:1 sobre o papel

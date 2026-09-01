@@ -2392,14 +2392,21 @@
    "texto": "Quer buscar recursos federais para transformar a Faculdade Estadual do Acre em universidade.",
    "url_especifica": "https://gladsoncameli.com.br/propostas/educacao",
    "data_referencia": "2026-09-01",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-09-01",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra o texto coletado do site da candidatura (endereco nao declarado ao TSE, atribuicao provada) em 2026-09-01",
     "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
    },
-   "_promovido_em": "2026-09-01"
+   "_promovido_em": "2026-09-01",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-gladson-cameli-site-003",
@@ -2414,14 +2421,21 @@
    "texto": "Defende mais verbas para regionalizar o atendimento de média e alta complexidade no Acre.",
    "url_especifica": "https://gladsoncameli.com.br/propostas/saude",
    "data_referencia": "2026-09-01",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-09-01",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra o texto coletado do site da candidatura (endereco nao declarado ao TSE, atribuicao provada) em 2026-09-01",
     "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
    },
-   "_promovido_em": "2026-09-01"
+   "_promovido_em": "2026-09-01",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-gladson-cameli-site-004",
@@ -2436,14 +2450,21 @@
    "texto": "Quer trazer recursos para obras que gerem emprego, estimular serviços e agro e proteger direitos do trabalhador.",
    "url_especifica": "https://gladsoncameli.com.br/propostas/emprego-e-renda",
    "data_referencia": "2026-09-01",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-09-01",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra o texto coletado do site da candidatura (endereco nao declarado ao TSE, atribuicao provada) em 2026-09-01",
     "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
    },
-   "_promovido_em": "2026-09-01"
+   "_promovido_em": "2026-09-01",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-gladson-cameli-site-005",
@@ -2458,14 +2479,21 @@
    "texto": "Defende a reconstrução total da BR-364.",
    "url_especifica": "https://gladsoncameli.com.br/propostas/infraestrutura",
    "data_referencia": "2026-09-01",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-09-01",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra o texto coletado do site da candidatura (endereco nao declarado ao TSE, atribuicao provada) em 2026-09-01",
     "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
    },
-   "_promovido_em": "2026-09-01"
+   "_promovido_em": "2026-09-01",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-gladson-cameli-busca-t6",
@@ -2514,6 +2542,22 @@
    "escopo_da_busca": "Foram lidos: o programa nacional do PP (“Programa Partidário do Progressistas”), lido por inteiro — rendeu 5 trecho(s) no acervo; o site da candidatura (gladsoncameli.com.br/), 11 página(s) e 33722 caracteres de texto, coletado em 2026-09-01.",
    "revisado_por_humano": false,
    "_gerado_por": "registrar_ausencias.py"
+  },
+  {
+   "id_posicao": "pos-sen-ac-2026-gladson-cameli-busca-t1",
+   "id_candidatura_contexto": "sen-ac-2026-gladson-cameli",
+   "id_tema": "t1",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-ac-2026-gladson-cameli",
+   "estado_cobertura": "D",
+   "natureza": "ausencia",
+   "nivel_fonte": null,
+   "citacao_literal": "",
+   "texto": "Não localizamos proposta de segurança pública. O site tem uma página do tema, mas o que ela traz é realização de mandato — batalhões de fronteira criados, policiais contratados, polícias aparelhadas. A única frase voltada ao futuro foi retirada na revisão por não enunciar uma proposta de forma direta.",
+   "busca_realizada_em": "2026-09-01",
+   "escopo_da_busca": "Foram lidos: o programa nacional do PP (“Programa Partidário do Progressistas”), lido por inteiro — rendeu 5 trecho(s) no acervo; o site da candidatura (gladsoncameli.com.br/), 11 página(s) e 33722 caracteres de texto, coletado em 2026-09-01.",
+   "revisado_por_humano": false,
+   "_veio_de": "A revisão marcou a posição pos-sen-ac-2026-gladson-cameli-site-001 como 'corrigir', com a nota 'Não parece ser uma proposta, de forma direta'. Sem este registro, o tema apareceria como 'ainda não trabalhado' — falso, porque a página foi lida. A decisão da revisão não foi tocada."
   }
  ]
 }

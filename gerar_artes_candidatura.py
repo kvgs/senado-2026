@@ -205,12 +205,14 @@ def medir(uf: str, numero: str | None = None) -> dict:
                                p.get("atribuido_a_tipo") == "partido" else "",
                     "revisado": bool(p.get("revisado_por_humano")),
                     "escopo": p.get("escopo_da_busca") or "",
+                    "generico": bool(p.get("_gerado_por")),
                     "mais": len(minhas) - 1,
                 })
             else:
                 blocos.append({"tema": t["nome"], "estado": "-", "citacao": "",
                                "texto": "", "selo": "", "fonte": "", "partido": "",
-                               "revisado": False, "escopo": "", "mais": 0})
+                               "revisado": False, "escopo": "",
+                               "generico": False, "mais": 0})
         arq = (c.get("foto") or {}).get("arquivo")
         saida.append({
             "cid": cid, "nome": c["pessoa"]["nome_urna"],
@@ -472,14 +474,18 @@ def arte_sem_conteudo(d: dict, p: dict, vazios: list, cor: str, i: int,
             if not nomes:
                 continue
             alto += 44
-            proprios = [x["texto"] for x in vazios if x["estado"] == est and x["texto"]]
-            if detalhado and proprios:
-                for txt in proprios:
-                    alto += len(t.quebra("— " + txt, fd, 780)) * 36 + 12
-            else:
-                alto += len(t.quebra(" · ".join(nomes), fl, 790)) * 39 + 8
-                esc = escopos.get(est)
-                alto += len(t.quebra(esc or ROTULO[est][2], fe, 780)) * 32
+            esp_ = [x for x in vazios
+                    if x["estado"] == est and x["texto"] and not x["generico"]]
+            rst_ = [x for x in vazios
+                    if x["estado"] == est and (not x["texto"] or x["generico"])]
+            if detalhado and esp_:
+                for x in esp_:
+                    alto += len(t.quebra("— " + x["texto"], fd, 780)) * 36 + 12
+            if rst_ or not (detalhado and esp_):
+                quais = [x["tema"] for x in (rst_ if (detalhado and esp_) else
+                         [y for y in vazios if y["estado"] == est])]
+                alto += len(t.quebra(" · ".join(quais), fl, 790)) * 39 + 8
+                alto += len(t.quebra(escopos.get(est) or ROTULO[est][2], fe, 780)) * 32
             alto += 26
         return alto
 
@@ -509,15 +515,25 @@ def arte_sem_conteudo(d: dict, p: dict, vazios: list, cor: str, i: int,
         t.d.text((t.m + 28, t.y), f"{titulo} ({len(nomes)})",
                  font=f("corpo", 29, 600), fill=TINTA)
         t.y += 44
-        proprios = [x["texto"] for x in vazios if x["estado"] == est and x["texto"]]
-        if detalhado and proprios:
-            for txt in proprios:
-                for ln in t.quebra("— " + txt, fd, 780):
+        # FORMA MISTA. Texto escrito para AQUELE tema ganha paragrafo; texto
+        # gerado por script e a mesma frase com o nome do tema trocado, e por isso
+        # os temas dele entram numa lista, com o escopo dito uma vez. Sem isto, o
+        # slide do Cameli repetia "Isto e uma afirmacao sobre a nossa busca: as
+        # fontes abaixo foram lidas..." tres vezes seguidas.
+        especificos = [x for x in vazios
+                       if x["estado"] == est and x["texto"] and not x["generico"]]
+        resto = [x for x in vazios
+                 if x["estado"] == est and (not x["texto"] or x["generico"])]
+        if detalhado and especificos:
+            for x in especificos:
+                for ln in t.quebra("— " + x["texto"], fd, 780):
                     t.d.text((t.m + 28, t.y), ln, font=fd, fill=TINTA2)
                     t.y += 36
                 t.espaco(12)
-        else:
-            for ln in t.quebra(" · ".join(nomes), fl, 790):
+        if resto or not (detalhado and especificos):
+            quais = [x["tema"] for x in (resto if (detalhado and especificos) else
+                                         [y for y in vazios if y["estado"] == est])]
+            for ln in t.quebra(" · ".join(quais), fl, 790):
                 t.d.text((t.m + 28, t.y), ln, font=fl, fill=TINTA2)
                 t.y += 39
             t.espaco(8)
