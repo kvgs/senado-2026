@@ -447,14 +447,21 @@
    "texto": "Defende fortalecer a empresa privada e limitar a atuação do Estado na economia.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-007",
