@@ -43,11 +43,17 @@
    "id_documento": "doc-programa-nacional-pl",
    "tipo": "programa_partidario",
    "titulo": "Programa do Partido Liberal (Estatuto e declaração programática, Diário Oficial da União)",
-   "url": "https://www.in.gov.br/",
+   "url": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?jornal=530&pagina=257&data=22/12/2022&captchafield=firstAccess",
    "publicado_em": "2022-12-19",
    "consultado_em": "2026-08-28",
    "_ambito": "nacional",
-   "_nota": "Estatuto e programa aprovados na Convenção Nacional de 19 de dezembro de 2022 e publicados no Diário Oficial da União, seção 3. Documento permanente do partido, não de uma eleição. O PDF está em fontes/programa-pl-2022-dou.pdf."
+   "_nota": "Estatuto e declaração programática aprovados na Convenção Nacional de 19 de dezembro de 2022 e publicados no Diário Oficial da União, SEÇÃO 3, edição nº 240 de 22 de dezembro de 2022, páginas 257 e 258. Código de autenticidade do DOU: 05302022122200257, conferível em in.gov.br/autenticidade.html. Documento permanente do partido, não de uma eleição.",
+   "_segunda_via": "https://github.com/kvgs/senado-2026/raw/main/fontes/programa-pl-2022-dou.pdf",
+   "_url_anterior": "https://www.in.gov.br/",
+   "_porque_a_url_mudou": "A url era https://www.in.gov.br/ — a HOME da Imprensa Nacional, onde o texto não está. A revisão humana clicou e não achou: 'Não achei na página', 'Não deve ser esse link', 'Link não confere'. Eram 132 posições em 25 estados apontando para uma home, e link errado é pior que link nenhum porque parece conferido. A url passa a ser a PÁGINA DO DOU onde o texto está — endereço montado a partir do código de autenticidade impresso no próprio documento (0530 = seção 3, 20221222 = a data, 00257 = a página) e aberto pela curadoria, porque deste ambiente o in.gov.br não responde. O PDF espelhado no repositório fica como segunda via, para o caso de o portal sair do ar.",
+   "_corrigido_em": "2026-09-01",
+   "_achado_por": "revisão humana, Acre",
+   "_conferido_por": "curadoria abriu a url e confirmou que o Diário Oficial da União aparece"
   },
   {
    "id_documento": "doc-programa-nacional-pco",
