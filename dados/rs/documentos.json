@@ -43,15 +43,11 @@
    "id_documento": "doc-programa-nacional-pl",
    "tipo": "programa_partidario",
    "titulo": "Programa do Partido Liberal (Estatuto e declaração programática, Diário Oficial da União)",
-   "url": "https://github.com/kvgs/senado-2026/raw/main/fontes/programa-pl-2022-dou.pdf",
+   "url": "https://www.in.gov.br/",
    "publicado_em": "2022-12-19",
    "consultado_em": "2026-08-28",
    "_ambito": "nacional",
-   "_nota": "Estatuto e declaracao programatica aprovados na Convencao Nacional de 19 de dezembro de 2022 e publicados no Diario Oficial da Uniao, SECAO 3, edicao n 240 de 22 de dezembro de 2022, paginas 257 e 258. Codigo de autenticidade do DOU: 05302022122200257 (conferivel em in.gov.br/autenticidade.html). Documento permanente do partido, nao de uma eleicao.",
-   "_url_anterior": "https://www.in.gov.br/",
-   "_porque_a_url_mudou": "A url era https://www.in.gov.br/ — a HOME da Imprensa Nacional, onde o texto nao esta. A revisao humana clicou e nao achou: 'Nao achei na pagina', 'Nao deve ser esse link', 'Link nao confere'. Eram 132 posicoes em 25 estados apontando para uma home. Link errado e pior que link nenhum, porque parece conferido. Nao consegui abrir o in.gov.br daqui para confirmar um link direto para a pagina do DOU, entao a url passa a apontar para o proprio PDF do DOU, que ja esta versionado neste repositorio; a referencia oficial completa fica na nota, para quem quiser conferir na fonte primaria.",
-   "_corrigido_em": "2026-09-01",
-   "_achado_por": "revisao humana, Acre"
+   "_nota": "Estatuto e programa aprovados na Convenção Nacional de 19 de dezembro de 2022 e publicados no Diário Oficial da União, seção 3. Documento permanente do partido, não de uma eleição. O PDF está em fontes/programa-pl-2022-dou.pdf."
   },
   {
    "id_documento": "doc-programa-nacional-pco",

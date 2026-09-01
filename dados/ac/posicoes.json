@@ -252,7 +252,7 @@
    "id_documento": "doc-programa-nacional-pl",
    "citacao_literal": "o Partido Liberal defende a necessidade de simplificar a legislação e reduzir a carga tributária. Os avanços da legislação trabalhista devem facilitar as contratações, desburocratizar e desregular as normas para favorecer a criação de empresas e o empreendedorismo.",
    "texto": "Defende simplificar a legislação e reduzir a carga tributária, e desburocratizar as normas trabalhistas para favorecer contratações e empreendedorismo.",
-   "url_especifica": "https://github.com/kvgs/senado-2026/raw/main/fontes/programa-pl-2022-dou.pdf",
+   "url_especifica": "https://www.in.gov.br/",
    "data_referencia": "2022-12-19",
    "revisado_por_humano": false,
    "conferido_por_ia": {
@@ -267,13 +267,6 @@
     "resultado": "corrigir",
     "nota": "Não achei na página",
     "por_quem": "kvgs"
-   },
-   "_atendido": {
-    "em": "2026-09-01",
-    "o_que_foi_apontado": "Não achei na página",
-    "o_que_foi_feito": "A url do documento era a home da Imprensa Nacional (in.gov.br), onde o trecho nao esta. Passou a apontar para o PDF do DOU secao 3 n 240 de 22/12/2022, paginas 257-258, versionado neste repositorio. A referencia oficial e o codigo de autenticidade estao na nota do documento.",
-    "alcance": "132 posicoes em 25 estados tinham o mesmo link errado.",
-    "falta": "reconferir esta linha com o link novo"
    }
   },
   {
@@ -288,7 +281,7 @@
    "id_documento": "doc-programa-nacional-pl",
    "citacao_literal": "a busca pela igualdade de salários entre homens e mulheres que desempenham a mesma ocupação. Merecem destaque as ações para a projeção econômica, a inclusão produtiva das mulheres e o aumento da participação de mulheres no parlamento e nas direções partidárias. Desenvolvimento de ações de combate ao feminicídio e na promoção de assistência às mulheres em situação de violência.",
    "texto": "Defende igualdade salarial entre homens e mulheres na mesma ocupação, combate ao feminicídio e assistência a mulheres em situação de violência.",
-   "url_especifica": "https://github.com/kvgs/senado-2026/raw/main/fontes/programa-pl-2022-dou.pdf",
+   "url_especifica": "https://www.in.gov.br/",
    "data_referencia": "2022-12-19",
    "revisado_por_humano": false,
    "conferido_por_ia": {
@@ -303,13 +296,6 @@
     "resultado": "corrigir",
     "nota": "Não deve ser esse link",
     "por_quem": "kvgs"
-   },
-   "_atendido": {
-    "em": "2026-09-01",
-    "o_que_foi_apontado": "Não deve ser esse link",
-    "o_que_foi_feito": "A url do documento era a home da Imprensa Nacional (in.gov.br), onde o trecho nao esta. Passou a apontar para o PDF do DOU secao 3 n 240 de 22/12/2022, paginas 257-258, versionado neste repositorio. A referencia oficial e o codigo de autenticidade estao na nota do documento.",
-    "alcance": "132 posicoes em 25 estados tinham o mesmo link errado.",
-    "falta": "reconferir esta linha com o link novo"
    }
   },
   {
@@ -324,7 +310,7 @@
    "id_documento": "doc-programa-nacional-pl",
    "citacao_literal": "Implementar políticas públicas voltadas para a inserção do jovem no mercado de trabalho de forma justa e assertiva, estabelecendo estratégias que alinhem ensino e as demandas sociais, econômicas e políticas, incentivando a formação de jovens líderes, facilitando o acesso ao crédito e incentivando o empreendedorismo.",
    "texto": "Propõe políticas de inserção do jovem no mercado de trabalho, alinhando ensino às demandas sociais e facilitando acesso ao crédito.",
-   "url_especifica": "https://github.com/kvgs/senado-2026/raw/main/fontes/programa-pl-2022-dou.pdf",
+   "url_especifica": "https://www.in.gov.br/",
    "data_referencia": "2022-12-19",
    "revisado_por_humano": true,
    "conferido_por_ia": {
@@ -354,7 +340,7 @@
    "id_documento": "doc-programa-nacional-pl",
    "citacao_literal": "há uma irrevogável necessidade de implantação e expansão de novas tecnologias de digitalização e inovação que melhorem tanto a competitividade nacional como a qualidade de vida dos cidadãos, principalmente aqueles mais vulneráveis ou que se encontram em localidades remotas",
    "texto": "Defende expandir digitalização e conectividade, com foco em quem vive em localidades remotas.",
-   "url_especifica": "https://github.com/kvgs/senado-2026/raw/main/fontes/programa-pl-2022-dou.pdf",
+   "url_especifica": "https://www.in.gov.br/",
    "data_referencia": "2022-12-19",
    "revisado_por_humano": false,
    "conferido_por_ia": {
@@ -369,13 +355,6 @@
     "resultado": "corrigir",
     "nota": "Link não confere",
     "por_quem": "kvgs"
-   },
-   "_atendido": {
-    "em": "2026-09-01",
-    "o_que_foi_apontado": "Link não confere",
-    "o_que_foi_feito": "A url do documento era a home da Imprensa Nacional (in.gov.br), onde o trecho nao esta. Passou a apontar para o PDF do DOU secao 3 n 240 de 22/12/2022, paginas 257-258, versionado neste repositorio. A referencia oficial e o codigo de autenticidade estao na nota do documento.",
-    "alcance": "132 posicoes em 25 estados tinham o mesmo link errado.",
-    "falta": "reconferir esta linha com o link novo"
    }
   },
   {
