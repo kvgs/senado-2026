@@ -37,7 +37,23 @@ SOBRE_ESCURO, APAGADO = "#EFE9E3", "#8C8279"
 LINHA_ESCURA = "#34302C"
 
 
-def f(nome: str, tam: int) -> ImageFont.FreeTypeFont:
+PESO_PADRAO = {"display": 700, "corpo": 400, "mono": 400}
+
+
+def f(nome: str, tam: int, peso: int | None = None) -> ImageFont.FreeTypeFont:
+    """A fonte, no tamanho e no PESO pedidos.
+
+    O PESO PRECISOU EXISTIR, E O PADRAO ESTAVA ERRADO. Public Sans e Bricolage
+    Grotesque sao fontes VARIAVEIS, com eixo wght. O Pillow abre a instancia
+    padrao do arquivo, e no Public Sans essa instancia e Thin (100) — o peso mais
+    fino que existe. Todo texto de corpo de todas as artes ja publicadas saiu em
+    Thin, sem ninguem ter escolhido isso; a curadoria leu uma arte no celular e
+    disse que o texto estava "muito claro e fino". Estava mesmo, e nao era
+    decisao de desenho: era o padrao do arquivo vazando.
+
+    Agora o padrao e Regular no corpo e Bold no display, e quem quiser outro peso
+    pede. Arte antiga so muda quando for regerada, que e o modelo do projeto.
+    """
     arq = {"display": "bricolage-grotesque.ttf", "corpo": "public-sans.ttf",
            "mono": "ibm-plex-mono.ttf"}[nome]
     p = FONTES / arq
@@ -47,7 +63,25 @@ def f(nome: str, tam: int) -> ImageFont.FreeTypeFont:
             + "  python -c \"import pathlib;from fontTools.ttLib import TTFont;"
               "[ (lambda t: (setattr(t,'flavor',None), t.save('fontes-ttf/'+w.stem+'.ttf')))"
               "(TTFont(str(w))) for w in pathlib.Path('fontes-web').glob('*.woff2') ]\"")
-    return ImageFont.truetype(str(p), tam)
+    fonte = ImageFont.truetype(str(p), tam)
+    alvo = peso if peso is not None else PESO_PADRAO[nome]
+    try:
+        eixos = fonte.get_variation_axes()
+    except OSError:
+        return fonte                      # fonte estatica: nao ha o que ajustar
+    # CASAR PELO NOME DO EIXO, e nao pela posicao. Passar uma lista de um valor
+    # ajusta o PRIMEIRO eixo — e no Bricolage o primeiro e "opsz", nao "wght".
+    # Escrito assim, o peso do display nao mudava e a largura do texto era a
+    # mesma em 400, 500 e 700; o defeito passava porque a arte continuava saindo.
+    valores = []
+    for e in eixos:
+        tag = e["name"]
+        tag = tag.decode() if isinstance(tag, bytes) else str(tag)
+        v = alvo if tag.lower().startswith("wght") or "weight" in tag.lower() else \
+            min(max(tam, e["minimum"]), e["maximum"])
+        valores.append(min(max(v, e["minimum"]), e["maximum"]))
+    fonte.set_variation_by_axes(valores)
+    return fonte
 
 
 class Tela:

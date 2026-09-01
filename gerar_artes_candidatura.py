@@ -359,7 +359,7 @@ def arte_tema(d: dict, p: dict, b: dict, cor: str, i: int, n_slides: int,
             fc = f("corpo", tam)
             linhas = t.quebra("“" + b["citacao"] + "”", fc, 860)
             alto_cit = len(linhas) * int(fc.size * 1.42)
-            fr = f("corpo", 28)
+            fr = f("corpo", 32, 500)
             l_res = t.quebra(b["texto"], fr, 830) if b["texto"] else []
             alto = alto_cit + (30 + len(l_res) * int(fr.size * 1.4) if l_res else 0) + 90
             if t.y + alto <= base:
@@ -418,6 +418,77 @@ def arte_tema(d: dict, p: dict, b: dict, cor: str, i: int, n_slides: int,
              f"{i}-{n_tema:02d}-{slug(b['tema'])}.png")
 
 
+def arte_sem_conteudo(d: dict, p: dict, vazios: list, cor: str, i: int,
+                      n_slides: int):
+    """Todos os temas sem conteudo num slide, agrupados pelo TIPO de ausencia.
+
+    Antes, cada tema vazio ocupava um slide inteiro. No Petecao isso dava dez
+    slides quase iguais, e o carrossel falava mais da nossa fila do que da
+    candidatura. Juntar encurta e, principalmente, deixa a desigualdade legivel
+    de uma vez.
+
+    O AGRUPAMENTO E POR TIPO, e nao tudo numa lista so. "Publicou material e nao
+    falou do tema", "nao localizamos fonte" e "ainda nao entrou na nossa fila"
+    continuam sendo tres coisas diferentes — juntar as tres num monte desfaria
+    exatamente a distincao que este carrossel existe para mostrar.
+    """
+    t = Tela(PAPEL, 96)
+    desenha_silhueta(t, d["uf"], cor, (L - 96 - 210, 74, L - 96, 74 + 150),
+                     opacidade=30)
+    t.y = 92
+    t.mono(f"{p['numero']} · {p['nome'].upper()} · {p['sigla']}",
+           f("mono", 19), APAGADO, espacamento=3)
+    t.espaco(14)
+    t.mono(f"{len(vazios)} DE {d['n_temas']} TEMAS", f("mono", 19), cor,
+           espacamento=3)
+    t.espaco(16)
+    t.texto("Temas sem conteúdo no acervo", f("display", 58), TINTA,
+            entre=1.06, larg=800)
+    t.espaco(22)
+    t.texto("Isto é uma afirmação sobre o nosso levantamento, e não sobre a "
+            "candidatura.", f("corpo", 30, 500), TINTA2, entre=1.38, larg=840)
+    t.espaco(36)
+
+    por_tipo = {}
+    for b in vazios:
+        por_tipo.setdefault(b["estado"], []).append(b["tema"])
+
+    for est in ("C", "D", "-"):
+        nomes = por_tipo.get(est)
+        if not nomes:
+            continue
+        _, tipo, frase, titulo = ROTULO[est]
+        t.d.rectangle([t.m, t.y + 10, t.m + 14, t.y + 24], fill=CINZA_BORDA)
+        t.d.text((t.m + 28, t.y), f"{titulo} ({len(nomes)})",
+                 font=f("corpo", 29, 600), fill=TINTA)
+        t.y += 44
+        fl = f("corpo", 28, 400)
+        for ln in t.quebra(" · ".join(nomes), fl, 790):
+            t.d.text((t.m + 28, t.y), ln, font=fl, fill=TINTA2)
+            t.y += 39
+        t.espaco(8)
+        fe = f("corpo", 23, 400)
+        for ln in t.quebra(frase, fe, 780):
+            t.d.text((t.m + 28, t.y), ln, font=fe, fill=APAGADO)
+            t.y += 32
+        t.espaco(26)
+        if t.y > t.base_do_rodape() - 40:
+            raise SystemExit(
+                f"PAROU: a lista de temas sem conteudo de {p['nome']} nao cabe no "
+                "slide. O desenho passaria por cima do rodape, e isso ja foi "
+                "publicado uma vez sem ninguem ver.")
+
+    # Quando so ha um tipo de ausencia, a lista e curta e sobra meia tela. A
+    # silhueta ocupa sem inventar informacao.
+    sobra = t.base_do_rodape() - 30 - (t.y + 30)
+    if sobra > 200:
+        desenha_silhueta(t, d["uf"], cor,
+                         (t.m, t.y + 30, L - t.m, t.y + 30 + sobra), opacidade=30)
+
+    t.rodape("kvgs.github.io/senado-2026", f"{i} DE {n_slides}", cor, APAGADO)
+    t.salvar(f"{pasta(d['uf'], p['nome'], p['numero'])}/{i}-temas-sem-conteudo.png")
+
+
 def arte_fecho(d: dict, p: dict, cor: str, i: int, n_slides: int):
     t = Tela(PAPEL2, 96)
     t.y = 100
@@ -460,7 +531,8 @@ def arte_fecho(d: dict, p: dict, cor: str, i: int, n_slides: int):
 
 LEGENDA = """# {numero} {nome} ({sigla}) — {uf_nome}
 
-{n_slides} slides: capa, os {n_temas} temas em ordem, e o fecho com a legenda das tarjas.
+{n_slides} slides: capa, um slide por tema COM conteúdo, um slide juntando todos
+os temas sem conteúdo, e o fecho com a legenda das tarjas.
 Gerado por `python gerar_artes_candidatura.py --uf {uf} --numero {numero}`.
 
 ---
@@ -538,15 +610,24 @@ def main() -> None:
 
     d = medir(uf, None if a.todos else a.numero)
     for p in d["gente"]:
-        n_slides = 1 + d["n_temas"] + 1
-        arte_capa(d, p, cor, 1, n_slides)
-        for k, b in enumerate(p["blocos"], 1):
-            arte_tema(d, p, b, cor, 1 + k, n_slides, k)
+        # Tema com conteudo ganha slide proprio; os vazios se juntam num so.
+        com = [(k, b) for k, b in enumerate(p["blocos"], 1)
+               if b["estado"] in ("A", "B")]
+        vazios = [b for b in p["blocos"] if b["estado"] not in ("A", "B")]
+        n_slides = 1 + len(com) + (1 if vazios else 0) + 1
+        i = 1
+        arte_capa(d, p, cor, i, n_slides)
+        for k, b in com:
+            i += 1
+            arte_tema(d, p, b, cor, i, n_slides, k)
+        if vazios:
+            i += 1
+            arte_sem_conteudo(d, p, vazios, cor, i, n_slides)
         arte_fecho(d, p, cor, n_slides, n_slides)
         escreve_legenda(d, p, n_slides, PALETA[uf]["de"])
         print(f"  {pasta(uf, p['nome'], p['numero'])}/  ({n_slides} slides · "
               f"{p['n_proprias']} próprias, {p['n_partido']} do partido, "
-              f"{p['n_vazios']} sem conteúdo)")
+              f"{p['n_vazios']} sem conteúdo, num slide só)")
 
 
 if __name__ == "__main__":

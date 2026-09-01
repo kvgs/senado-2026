@@ -1830,7 +1830,14 @@
     "base": "trecho conferido palavra por palavra contra fontes/programa-republicanos-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "resultado": "remover",
+    "nota": "Vaga demais: a frase serve tanto para Saúde quanto para Tecnologia, e por isso não sustenta nenhum dos dois. Decidido na revisão do Acre e aplicado a todas as candidaturas do Republicanos, porque o trecho e o tema são os mesmos nas 12.",
+    "por": "curadoria",
+    "em": "2026-09-01",
+    "_alcance": "decisão tomada olhando a arte do Acre; o mesmo trecho no mesmo tema aparece em 12 candidaturas de 10 estados, e o defeito é do par trecho+tema, não da candidatura"
+   }
   },
   {
    "id_posicao": "pos-sen-rj-2026-marcelo-crivella-prog-republicanos-003",
@@ -1945,7 +1952,14 @@
     "base": "trecho conferido palavra por palavra contra fontes/programa-republicanos-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "resultado": "remover",
+    "nota": "Tema errado: a frase é sobre família como instituição, e estava em Cultura e Direitos Humanos. Decidido na revisão do Acre e aplicado a todas as candidaturas do Republicanos, porque o trecho e o tema são os mesmos nas 12.",
+    "por": "curadoria",
+    "em": "2026-09-01",
+    "_alcance": "decisão tomada olhando a arte do Acre; o mesmo trecho no mesmo tema aparece em 12 candidaturas de 10 estados, e o defeito é do par trecho+tema, não da candidatura"
+   }
   },
   {
    "id_posicao": "pos-sen-rj-2026-marcelo-crivella-prog-republicanos-008",
@@ -2060,7 +2074,14 @@
     "base": "trecho conferido palavra por palavra contra fontes/programa-republicanos-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "resultado": "remover",
+    "nota": "Vaga demais: a frase serve tanto para Saúde quanto para Tecnologia, e por isso não sustenta nenhum dos dois. Decidido na revisão do Acre e aplicado a todas as candidaturas do Republicanos, porque o trecho e o tema são os mesmos nas 12.",
+    "por": "curadoria",
+    "em": "2026-09-01",
+    "_alcance": "decisão tomada olhando a arte do Acre; o mesmo trecho no mesmo tema aparece em 12 candidaturas de 10 estados, e o defeito é do par trecho+tema, não da candidatura"
+   }
   },
   {
    "id_posicao": "pos-sen-rj-2026-waguinho-prog-republicanos-003",
@@ -2175,7 +2196,14 @@
     "base": "trecho conferido palavra por palavra contra fontes/programa-republicanos-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "resultado": "remover",
+    "nota": "Tema errado: a frase é sobre família como instituição, e estava em Cultura e Direitos Humanos. Decidido na revisão do Acre e aplicado a todas as candidaturas do Republicanos, porque o trecho e o tema são os mesmos nas 12.",
+    "por": "curadoria",
+    "em": "2026-09-01",
+    "_alcance": "decisão tomada olhando a arte do Acre; o mesmo trecho no mesmo tema aparece em 12 candidaturas de 10 estados, e o defeito é do par trecho+tema, não da candidatura"
+   }
   },
   {
    "id_posicao": "pos-sen-rj-2026-waguinho-prog-republicanos-008",

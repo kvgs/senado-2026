@@ -1240,7 +1240,7 @@
    "texto": "Defende adotar novas tecnologias para melhorar a saúde e a educação.",
    "url_especifica": "https://republicanos10.org.br/manifesto-e-programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": true,
+   "revisado_por_humano": false,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
@@ -1249,10 +1249,11 @@
    },
    "_promovido_em": "2026-08-28",
    "revisao": {
+    "resultado": "remover",
+    "nota": "Vaga demais: a frase serve tanto para Saúde quanto para Tecnologia, e por isso não sustenta nenhum dos dois. Decidido na revisão do Acre e aplicado a todas as candidaturas do Republicanos, porque o trecho e o tema são os mesmos nas 12.",
+    "por": "curadoria",
     "em": "2026-09-01",
-    "resultado": "confere",
-    "nota": "",
-    "por_quem": "kvgs"
+    "_alcance": "decisão tomada olhando a arte do Acre; o mesmo trecho no mesmo tema aparece em 12 candidaturas de 10 estados, e o defeito é do par trecho+tema, não da candidatura"
    },
    "revisado_por": "kvgs"
   },
@@ -1390,7 +1391,7 @@
    "texto": "Defende a família como alicerce da sociedade e principal instituição de preservação das tradições.",
    "url_especifica": "https://republicanos10.org.br/manifesto-e-programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": true,
+   "revisado_por_humano": false,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
@@ -1399,10 +1400,11 @@
    },
    "_promovido_em": "2026-08-28",
    "revisao": {
+    "resultado": "remover",
+    "nota": "Tema errado: a frase é sobre família como instituição, e estava em Cultura e Direitos Humanos. Decidido na revisão do Acre e aplicado a todas as candidaturas do Republicanos, porque o trecho e o tema são os mesmos nas 12.",
+    "por": "curadoria",
     "em": "2026-09-01",
-    "resultado": "confere",
-    "nota": "",
-    "por_quem": "kvgs"
+    "_alcance": "decisão tomada olhando a arte do Acre; o mesmo trecho no mesmo tema aparece em 12 candidaturas de 10 estados, e o defeito é do par trecho+tema, não da candidatura"
    },
    "revisado_por": "kvgs"
   },

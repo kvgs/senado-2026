@@ -1,6 +1,7 @@
 # 100 Mara Rocha (REPUBLICANOS) — Acre
 
-12 slides: capa, os 10 temas em ordem, e o fecho com a legenda das tarjas.
+9 slides: capa, um slide por tema COM conteúdo, um slide juntando todos
+os temas sem conteúdo, e o fecho com a legenda das tarjas.
 Gerado por `python gerar_artes_candidatura.py --uf AC --numero 100`.
 
 ---
@@ -12,8 +13,8 @@ Gerado por `python gerar_artes_candidatura.py --uf AC --numero 100`.
 São 10 temas. Em cada slide a tarja diz **de quem é a proposta** — da
 candidatura ou do partido — ou o que ainda não há.
 
-Neste levantamento: **1 tema(s) com proposta própria**, **6 com
-proposta do partido** e **3 sem conteúdo**.
+Neste levantamento: **1 tema(s) com proposta própria**, **5 com
+proposta do partido** e **4 sem conteúdo**.
 
 ⚠️ Estes três números são sobre **o nosso levantamento**, e não sobre a
 candidatura. Tema sem conteúdo aqui quer dizer que nós ainda não localizamos ou
@@ -40,5 +41,5 @@ link de cada fonte.
 
 ## Números desta candidatura
 
-- 1 proposta(s) própria(s), 6 do partido, 3 sem conteúdo
+- 1 proposta(s) própria(s), 5 do partido, 4 sem conteúdo
 - Cor e silhueta: verde da bandeira do Acre, escurecido de #009B3A (3,33:1) para 5,01:1 sobre o papel
