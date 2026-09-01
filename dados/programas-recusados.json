@@ -1,0 +1,58 @@
+{
+  "_nota": "Partidos cujo programa nacional NÃO foi aplicado às candidaturas, e o motivo de cada um. Estas decisões já tinham sido tomadas e explicadas — mas só em mensagem de commit, e quem lê o site não lê commit. Sem este arquivo, uma candidatura desses partidos aparece com zero conteúdo e o leitor conclui que a pessoa não tem propostas, quando o que houve foi uma decisão NOSSA sobre o documento do partido. Ausência é informação só quando o motivo dela está à vista.",
+  "_regra": "Entra o que o partido publica HOJE como o seu programa, com a data à vista; não entra o que ele publica como memória. A regra é a mesma para todos, e por isso um partido antigo com programa antigo publicado como atual entra, e um partido com documento histórico apresentado como histórico não entra.",
+  "_como_isto_deixa_de_valer": "Se o partido publicar um programa atual, a linha sai daqui e as candidaturas dele deixam de ficar vazias. Recusa não é permanente: é sobre o que está publicado hoje.",
+  "_os_campos_visiveis": "motivo_curto e motivo vão para a arte e para o site, e por isso são escritos em português com acento. Os campos que começam com _ são internos.",
+  "_conferido_em": "2026-09-01",
+  "recusados": [
+    {
+      "id_partido": "psd",
+      "sigla": "PSD",
+      "motivo_curto": "o que o partido publica como programa é um documento histórico",
+      "motivo": "A página \"Princípios e Valores\" do PSD é o Manifesto à Nação de 2011, apresentado pelo próprio partido como documento histórico. Ele traz uma proposta com prazo vencido: \"uma constituinte exclusiva em 2014\". Publicar só os pedaços que envelheceram bem seria escolher a dedo.",
+      "tipo": "decisão de método"
+    },
+    {
+      "id_partido": "psdb",
+      "sigla": "PSDB",
+      "motivo_curto": "a página do programa traz só títulos de capítulo, em imagens",
+      "motivo": "A página do programa do PSDB mostra apenas os títulos dos capítulos, em imagens, sem texto. O texto completo só existe num PDF de 2007 que o partido não liga mais da página do programa. Título de capítulo não é proposta.",
+      "tipo": "decisão de método"
+    },
+    {
+      "id_partido": "avante",
+      "sigla": "AVANTE",
+      "motivo_curto": "não há página de programa; as propostas estão num post de 2017",
+      "motivo": "O site do Avante não tem página de programa. As únicas propostas concretas estão num post de notícia de dezembro de 2017. Matéria de nove anos atrás não é programa do partido, pela mesma regra que deixou o PSD de fora.",
+      "tipo": "decisão de método"
+    },
+    {
+      "id_partido": "prd",
+      "sigla": "PRD",
+      "motivo_curto": "publica só o estatuto e quatro valores de uma palavra",
+      "motivo": "O PRD publica apenas o estatuto e quatro valores de uma palavra cada. Palavra solta não diz o que a pessoa faria no Senado, e transformar valor de uma palavra em proposta seria interpretação nossa.",
+      "tipo": "decisão de método"
+    },
+    {
+      "id_partido": "democrata",
+      "sigla": "DEMOCRATA",
+      "motivo_curto": "o partido não publica programa nenhum",
+      "motivo": "O DEMOCRATA, ex-PMB renomeado em dezembro de 2025, não publica programa. Há um documento registrado no TSE que o próprio TSE devolve 403 para script; baixá-lo pelo navegador está na fila.",
+      "tipo": "bloqueio de fato"
+    },
+    {
+      "id_partido": "mobiliza",
+      "sigla": "MOBILIZA",
+      "motivo_curto": "o site do partido está fora do ar",
+      "motivo": "O site do Mobiliza não respondeu. Não é que o partido não tenha programa: é que não houve como ler.",
+      "tipo": "bloqueio de fato"
+    },
+    {
+      "id_partido": "agir",
+      "sigla": "AGIR",
+      "motivo_curto": "a página do programa responde, e está vazia",
+      "motivo": "A página de programa do Agir responde com 86 KB de HTML e zero parágrafos de conteúdo. Página que carrega vazia não é ausência de busca nossa: é ausência na fonte.",
+      "tipo": "bloqueio de fato"
+    }
+  ]
+}
