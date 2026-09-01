@@ -285,8 +285,21 @@ def gravar(uf, id_posicao, decisao, nota, citacao=""):
         # QUEM decidiu, e nao so QUE alguem decidiu. Com uma pessoa "humano" e
         # "ela" eram a mesma coisa; com colaboradores, sem isto nao da para
         # revisar de novo so o que uma pessoa fez.
+        # A HISTORIA NAO E SOBRESCRITA. Antes, esta linha trocava o objeto
+        # revisao inteiro — e levava junto tudo o que explicava como a linha
+        # chegou ate aqui: uma decisao anterior guardada, o motivo de uma
+        # reabertura. Quatro posicoes do programa do PL foram reabertas porque a
+        # fonte nao abria, a curadoria as decidiu na tela, e o registro do POR QUE
+        # elas voltaram a fila desapareceu no mesmo clique. Fica so a decisao
+        # final, sem como auditar o caminho.
+        antes = r.get("revisao") or {}
+        historia = list(antes.get("_antes", []))
+        if antes.get("resultado") or antes.get("_porque_reaberta"):
+            historia.append({k: v for k, v in antes.items() if k != "_antes"})
         r["revisao"] = {"em": date.today().isoformat(), "resultado": decisao,
                         "nota": nota or "", "por_quem": QUEM}
+        if historia:
+            r["revisao"]["_antes"] = historia
         # A frase colada na revisao vira a citacao literal do acervo: a revisao
         # nao so aprova, ela preenche a ancora que faltava. Guarda tambem a marca
         # de que veio da revisao humana, e nao da extracao automatica.

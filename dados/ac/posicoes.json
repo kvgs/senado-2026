@@ -254,7 +254,7 @@
    "texto": "Defende simplificar a legislação e reduzir a carga tributária, e desburocratizar as normas trabalhistas para favorecer contratações e empreendedorismo.",
    "url_especifica": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?jornal=530&pagina=257&data=22/12/2022&captchafield=firstAccess",
    "data_referencia": "2022-12-19",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
@@ -263,15 +263,24 @@
    },
    "_promovido_em": "2026-08-28",
    "revisao": {
-    "_reaberta_em": "2026-09-01",
-    "_porque_reaberta": "A url do documento era https://www.in.gov.br/, a home da Imprensa Nacional, onde o texto nao esta. Quem revisou nao tinha como abrir a fonte e conferir a redacao — a unica coisa que a revisao existe para fazer. A url agora e a pagina do DOU (secao 3, edicao 240 de 22/12/2022, pagina 257), e a curadoria pediu que tudo que depende deste programa seja revisado de novo, agora com a fonte acessivel.",
-    "_decisao_anterior": {
-     "em": "2026-09-01",
-     "resultado": "corrigir",
-     "nota": "Não achei na página",
-     "por_quem": "kvgs"
-    }
-   }
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_antes": [
+     {
+      "_reaberta_em": "2026-09-01",
+      "_porque_reaberta": "A url do documento era https://www.in.gov.br/, a home da Imprensa Nacional, onde o texto nao esta. Quem revisou nao tinha como abrir a fonte e conferir a redacao — a unica coisa que a revisao existe para fazer. A url agora e a pagina do DOU (secao 3, edicao 240 de 22/12/2022, pagina 257), e a curadoria pediu que tudo que depende deste programa seja revisado de novo, agora com a fonte acessivel.",
+      "_decisao_anterior": {
+       "em": "2026-09-01",
+       "resultado": "corrigir",
+       "nota": "Não achei na página",
+       "por_quem": "kvgs"
+      }
+     }
+    ]
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-marcio-bittar-prog-pl-002",
@@ -296,14 +305,22 @@
    },
    "_promovido_em": "2026-08-28",
    "revisao": {
-    "_reaberta_em": "2026-09-01",
-    "_porque_reaberta": "A url do documento era https://www.in.gov.br/, a home da Imprensa Nacional, onde o texto nao esta. Quem revisou nao tinha como abrir a fonte e conferir a redacao — a unica coisa que a revisao existe para fazer. A url agora e a pagina do DOU (secao 3, edicao 240 de 22/12/2022, pagina 257), e a curadoria pediu que tudo que depende deste programa seja revisado de novo, agora com a fonte acessivel.",
-    "_decisao_anterior": {
-     "em": "2026-09-01",
-     "resultado": "corrigir",
-     "nota": "Não deve ser esse link",
-     "por_quem": "kvgs"
-    }
+    "em": "2026-09-01",
+    "resultado": "corrigir",
+    "nota": "Não localizei no arquivo",
+    "por_quem": "kvgs",
+    "_antes": [
+     {
+      "_reaberta_em": "2026-09-01",
+      "_porque_reaberta": "A url do documento era https://www.in.gov.br/, a home da Imprensa Nacional, onde o texto nao esta. Quem revisou nao tinha como abrir a fonte e conferir a redacao — a unica coisa que a revisao existe para fazer. A url agora e a pagina do DOU (secao 3, edicao 240 de 22/12/2022, pagina 257), e a curadoria pediu que tudo que depende deste programa seja revisado de novo, agora com a fonte acessivel.",
+      "_decisao_anterior": {
+       "em": "2026-09-01",
+       "resultado": "corrigir",
+       "nota": "Não deve ser esse link",
+       "por_quem": "kvgs"
+      }
+     }
+    ]
    }
   },
   {
@@ -329,14 +346,22 @@
    },
    "_promovido_em": "2026-08-28",
    "revisao": {
-    "_reaberta_em": "2026-09-01",
-    "_porque_reaberta": "A url do documento era https://www.in.gov.br/, a home da Imprensa Nacional, onde o texto nao esta. Quem revisou nao tinha como abrir a fonte e conferir a redacao — a unica coisa que a revisao existe para fazer. A url agora e a pagina do DOU (secao 3, edicao 240 de 22/12/2022, pagina 257), e a curadoria pediu que tudo que depende deste programa seja revisado de novo, agora com a fonte acessivel.",
-    "_decisao_anterior": {
-     "em": "2026-09-01",
-     "resultado": "confere",
-     "nota": "O link não confere",
-     "por_quem": "kvgs"
-    }
+    "em": "2026-09-01",
+    "resultado": "corrigir",
+    "nota": "Não localizei no arquivo",
+    "por_quem": "kvgs",
+    "_antes": [
+     {
+      "_reaberta_em": "2026-09-01",
+      "_porque_reaberta": "A url do documento era https://www.in.gov.br/, a home da Imprensa Nacional, onde o texto nao esta. Quem revisou nao tinha como abrir a fonte e conferir a redacao — a unica coisa que a revisao existe para fazer. A url agora e a pagina do DOU (secao 3, edicao 240 de 22/12/2022, pagina 257), e a curadoria pediu que tudo que depende deste programa seja revisado de novo, agora com a fonte acessivel.",
+      "_decisao_anterior": {
+       "em": "2026-09-01",
+       "resultado": "confere",
+       "nota": "O link não confere",
+       "por_quem": "kvgs"
+      }
+     }
+    ]
    },
    "revisado_por": "kvgs"
   },
@@ -354,7 +379,7 @@
    "texto": "Defende expandir digitalização e conectividade, com foco em quem vive em localidades remotas.",
    "url_especifica": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?jornal=530&pagina=257&data=22/12/2022&captchafield=firstAccess",
    "data_referencia": "2022-12-19",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
@@ -363,15 +388,24 @@
    },
    "_promovido_em": "2026-08-28",
    "revisao": {
-    "_reaberta_em": "2026-09-01",
-    "_porque_reaberta": "A url do documento era https://www.in.gov.br/, a home da Imprensa Nacional, onde o texto nao esta. Quem revisou nao tinha como abrir a fonte e conferir a redacao — a unica coisa que a revisao existe para fazer. A url agora e a pagina do DOU (secao 3, edicao 240 de 22/12/2022, pagina 257), e a curadoria pediu que tudo que depende deste programa seja revisado de novo, agora com a fonte acessivel.",
-    "_decisao_anterior": {
-     "em": "2026-09-01",
-     "resultado": "corrigir",
-     "nota": "Link não confere",
-     "por_quem": "kvgs"
-    }
-   }
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_antes": [
+     {
+      "_reaberta_em": "2026-09-01",
+      "_porque_reaberta": "A url do documento era https://www.in.gov.br/, a home da Imprensa Nacional, onde o texto nao esta. Quem revisou nao tinha como abrir a fonte e conferir a redacao — a unica coisa que a revisao existe para fazer. A url agora e a pagina do DOU (secao 3, edicao 240 de 22/12/2022, pagina 257), e a curadoria pediu que tudo que depende deste programa seja revisado de novo, agora com a fonte acessivel.",
+      "_decisao_anterior": {
+       "em": "2026-09-01",
+       "resultado": "corrigir",
+       "nota": "Link não confere",
+       "por_quem": "kvgs"
+      }
+     }
+    ]
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-001",
@@ -1976,9 +2010,16 @@
    "texto": "Não localizamos proposta de saúde. O programa do Republicanos tem um tópico sobre o tema, mas a única frase dele foi retirada na revisão por servir igualmente a saúde e a tecnologia, sem sustentar nenhuma das duas. O site da candidatura não trata de saúde.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Lidos por inteiro, e nenhum dos dois traz proposta sobre este tema: (1) o Manifesto e Programa do Republicanos, os dez tópicos publicados em republicanos10.org.br/manifesto-e-programa/, extraídos em 28/ago/2026; (2) o site da candidatura, mararocha.com, 3.321 caracteres, coletado em 31/ago/2026. A candidatura não declarou outro endereço ao TSE além de Facebook e Instagram, e contato ou material achado em busca livre não entra no acervo por regra do projeto.",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "_porque_D_e_nao_vazio": "Sem este registro o tema aparecia como 'ainda não trabalhado', que diz que o cruzamento não passou pela nossa fila. Passou: as duas fontes foram lidas inteiras. D é afirmação sobre a NOSSA busca, e é o que aconteceu aqui.",
-   "_criado_em": "2026-09-01"
+   "_criado_em": "2026-09-01",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-mara-rocha-busca-t5",
@@ -1993,9 +2034,16 @@
    "texto": "Não localizamos proposta de infraestrutura ou mobilidade. O site da candidatura cita obras do mandato passado — pontes, asfalto e internet no interior —, e realização de mandato não é proposta para o próximo.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Lidos por inteiro, e nenhum dos dois traz proposta sobre este tema: (1) o Manifesto e Programa do Republicanos, os dez tópicos publicados em republicanos10.org.br/manifesto-e-programa/, extraídos em 28/ago/2026; (2) o site da candidatura, mararocha.com, 3.321 caracteres, coletado em 31/ago/2026. A candidatura não declarou outro endereço ao TSE além de Facebook e Instagram, e contato ou material achado em busca livre não entra no acervo por regra do projeto.",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "_porque_D_e_nao_vazio": "Sem este registro o tema aparecia como 'ainda não trabalhado', que diz que o cruzamento não passou pela nossa fila. Passou: as duas fontes foram lidas inteiras. D é afirmação sobre a NOSSA busca, e é o que aconteceu aqui.",
-   "_criado_em": "2026-09-01"
+   "_criado_em": "2026-09-01",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-mara-rocha-busca-t6",
@@ -2010,9 +2058,16 @@
    "texto": "Não localizamos proposta de meio ambiente ou clima em nenhuma das duas fontes lidas.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Lidos por inteiro, e nenhum dos dois traz proposta sobre este tema: (1) o Manifesto e Programa do Republicanos, os dez tópicos publicados em republicanos10.org.br/manifesto-e-programa/, extraídos em 28/ago/2026; (2) o site da candidatura, mararocha.com, 3.321 caracteres, coletado em 31/ago/2026. A candidatura não declarou outro endereço ao TSE além de Facebook e Instagram, e contato ou material achado em busca livre não entra no acervo por regra do projeto.",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "_porque_D_e_nao_vazio": "Sem este registro o tema aparecia como 'ainda não trabalhado', que diz que o cruzamento não passou pela nossa fila. Passou: as duas fontes foram lidas inteiras. D é afirmação sobre a NOSSA busca, e é o que aconteceu aqui.",
-   "_criado_em": "2026-09-01"
+   "_criado_em": "2026-09-01",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-mara-rocha-busca-t7",
@@ -2027,9 +2082,16 @@
    "texto": "Não localizamos proposta de habitação em nenhuma das duas fontes lidas.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Lidos por inteiro, e nenhum dos dois traz proposta sobre este tema: (1) o Manifesto e Programa do Republicanos, os dez tópicos publicados em republicanos10.org.br/manifesto-e-programa/, extraídos em 28/ago/2026; (2) o site da candidatura, mararocha.com, 3.321 caracteres, coletado em 31/ago/2026. A candidatura não declarou outro endereço ao TSE além de Facebook e Instagram, e contato ou material achado em busca livre não entra no acervo por regra do projeto.",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "_porque_D_e_nao_vazio": "Sem este registro o tema aparecia como 'ainda não trabalhado', que diz que o cruzamento não passou pela nossa fila. Passou: as duas fontes foram lidas inteiras. D é afirmação sobre a NOSSA busca, e é o que aconteceu aqui.",
-   "_criado_em": "2026-09-01"
+   "_criado_em": "2026-09-01",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-jorge-viana-busca-t1",
@@ -2044,8 +2106,15 @@
    "texto": "Não localizamos proposta sobre segurança pública. Isto é uma afirmação sobre a nossa busca: as fontes abaixo foram lidas e nenhuma delas trouxe posição sobre este tema.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foram lidos: o programa nacional do PT, lido por inteiro — rendeu 12 trechos; o site da candidatura (www.jorgeviana.com.br), 12 páginas e 64.913 caracteres, coletado em 2026-09-01. NÃO foram lidos, e são canais que a candidatura declarou ao TSE: o Instagram @jorgevianaacre; www.facebook.com/jorgevianaacre; www.tiktok.com/@jorge.vianaacre; www.youtube.com/@jorgevianaacre; x.com/jorgeviana; www.jorgeviana.com.br. O projeto ainda não coleta rede social.",
-   "revisado_por_humano": false,
-   "_gerado_por": "registrar_ausencias.py"
+   "revisado_por_humano": true,
+   "_gerado_por": "registrar_ausencias.py",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-jorge-viana-busca-t6",
@@ -2060,8 +2129,15 @@
    "texto": "Não localizamos proposta sobre meio ambiente e mudança climática. Isto é uma afirmação sobre a nossa busca: as fontes abaixo foram lidas e nenhuma delas trouxe posição sobre este tema.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foram lidos: o programa nacional do PT, lido por inteiro — rendeu 12 trechos; o site da candidatura (www.jorgeviana.com.br), 12 páginas e 64.913 caracteres, coletado em 2026-09-01. NÃO foram lidos, e são canais que a candidatura declarou ao TSE: o Instagram @jorgevianaacre; www.facebook.com/jorgevianaacre; www.tiktok.com/@jorge.vianaacre; www.youtube.com/@jorgevianaacre; x.com/jorgeviana; www.jorgeviana.com.br. O projeto ainda não coleta rede social.",
-   "revisado_por_humano": false,
-   "_gerado_por": "registrar_ausencias.py"
+   "revisado_por_humano": true,
+   "_gerado_por": "registrar_ausencias.py",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-jorge-viana-busca-t7",
@@ -2076,8 +2152,15 @@
    "texto": "Não localizamos proposta sobre habitação. Isto é uma afirmação sobre a nossa busca: as fontes abaixo foram lidas e nenhuma delas trouxe posição sobre este tema.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foram lidos: o programa nacional do PT, lido por inteiro — rendeu 12 trechos; o site da candidatura (www.jorgeviana.com.br), 12 páginas e 64.913 caracteres, coletado em 2026-09-01. NÃO foram lidos, e são canais que a candidatura declarou ao TSE: o Instagram @jorgevianaacre; www.facebook.com/jorgevianaacre; www.tiktok.com/@jorge.vianaacre; www.youtube.com/@jorgevianaacre; x.com/jorgeviana; www.jorgeviana.com.br. O projeto ainda não coleta rede social.",
-   "revisado_por_humano": false,
-   "_gerado_por": "registrar_ausencias.py"
+   "revisado_por_humano": true,
+   "_gerado_por": "registrar_ausencias.py",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-marcio-bittar-busca-t1",
@@ -2299,8 +2382,15 @@
    "texto": "Não localizamos proposta sobre tecnologia e inteligência artificial. Isto é uma afirmação sobre a nossa busca: as fontes abaixo foram lidas e nenhuma delas trouxe posição sobre este tema.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foram lidos: o programa nacional do DC, lido por inteiro — rendeu 16 trechos. NÃO foram lidos, e são canais que a candidatura declarou ao TSE: o Instagram @dr.junior_feitosa. O projeto ainda não coleta rede social.",
-   "revisado_por_humano": false,
-   "_gerado_por": "registrar_ausencias.py"
+   "revisado_por_humano": true,
+   "_gerado_por": "registrar_ausencias.py",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-professor-inacio-moreira-busca-t5",
@@ -2315,8 +2405,15 @@
    "texto": "Não localizamos proposta sobre infraestrutura e mobilidade urbana. Isto é uma afirmação sobre a nossa busca: as fontes abaixo foram lidas e nenhuma delas trouxe posição sobre este tema.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foram lidos: o programa nacional do PSOL, lido por inteiro — rendeu 7 trechos.",
-   "revisado_por_humano": false,
-   "_gerado_por": "registrar_ausencias.py"
+   "revisado_por_humano": true,
+   "_gerado_por": "registrar_ausencias.py",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-professor-inacio-moreira-busca-t9",
@@ -2331,8 +2428,15 @@
    "texto": "Não localizamos proposta sobre cultura e direitos humanos. Isto é uma afirmação sobre a nossa busca: as fontes abaixo foram lidas e nenhuma delas trouxe posição sobre este tema.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foram lidos: o programa nacional do PSOL, lido por inteiro — rendeu 7 trechos.",
-   "revisado_por_humano": false,
-   "_gerado_por": "registrar_ausencias.py"
+   "revisado_por_humano": true,
+   "_gerado_por": "registrar_ausencias.py",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-professor-inacio-moreira-busca-t10",
@@ -2347,8 +2451,15 @@
    "texto": "Não localizamos proposta sobre organização do estado e prioridades legislativas. Isto é uma afirmação sobre a nossa busca: as fontes abaixo foram lidas e nenhuma delas trouxe posição sobre este tema.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foram lidos: o programa nacional do PSOL, lido por inteiro — rendeu 7 trechos.",
-   "revisado_por_humano": false,
-   "_gerado_por": "registrar_ausencias.py"
+   "revisado_por_humano": true,
+   "_gerado_por": "registrar_ausencias.py",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-eduardo-velloso-busca-t2",
@@ -2363,8 +2474,15 @@
    "texto": "Não localizamos proposta sobre educação. Isto é uma afirmação sobre a nossa busca: as fontes abaixo foram lidas e nenhuma delas trouxe posição sobre este tema.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foram lidos: o programa nacional do SOLIDARIEDADE, lido por inteiro — rendeu 9 trechos.",
-   "revisado_por_humano": false,
-   "_gerado_por": "registrar_ausencias.py"
+   "revisado_por_humano": true,
+   "_gerado_por": "registrar_ausencias.py",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-eduardo-velloso-busca-t5",
@@ -2379,8 +2497,15 @@
    "texto": "Não localizamos proposta sobre infraestrutura e mobilidade urbana. Isto é uma afirmação sobre a nossa busca: as fontes abaixo foram lidas e nenhuma delas trouxe posição sobre este tema.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foram lidos: o programa nacional do SOLIDARIEDADE, lido por inteiro — rendeu 9 trechos.",
-   "revisado_por_humano": false,
-   "_gerado_por": "registrar_ausencias.py"
+   "revisado_por_humano": true,
+   "_gerado_por": "registrar_ausencias.py",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-eduardo-velloso-busca-t8",
@@ -2395,8 +2520,15 @@
    "texto": "Não localizamos proposta sobre tecnologia e inteligência artificial. Isto é uma afirmação sobre a nossa busca: as fontes abaixo foram lidas e nenhuma delas trouxe posição sobre este tema.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foram lidos: o programa nacional do SOLIDARIEDADE, lido por inteiro — rendeu 9 trechos.",
-   "revisado_por_humano": false,
-   "_gerado_por": "registrar_ausencias.py"
+   "revisado_por_humano": true,
+   "_gerado_por": "registrar_ausencias.py",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-eduardo-velloso-busca-t9",
@@ -2411,8 +2543,15 @@
    "texto": "Não localizamos proposta sobre cultura e direitos humanos. Isto é uma afirmação sobre a nossa busca: as fontes abaixo foram lidas e nenhuma delas trouxe posição sobre este tema.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foram lidos: o programa nacional do SOLIDARIEDADE, lido por inteiro — rendeu 9 trechos.",
-   "revisado_por_humano": false,
-   "_gerado_por": "registrar_ausencias.py"
+   "revisado_por_humano": true,
+   "_gerado_por": "registrar_ausencias.py",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-eduardo-velloso-busca-t10",
@@ -2427,8 +2566,15 @@
    "texto": "Não localizamos proposta sobre organização do estado e prioridades legislativas. Isto é uma afirmação sobre a nossa busca: as fontes abaixo foram lidas e nenhuma delas trouxe posição sobre este tema.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foram lidos: o programa nacional do SOLIDARIEDADE, lido por inteiro — rendeu 9 trechos.",
-   "revisado_por_humano": false,
-   "_gerado_por": "registrar_ausencias.py"
+   "revisado_por_humano": true,
+   "_gerado_por": "registrar_ausencias.py",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-gladson-cameli-site-001",
