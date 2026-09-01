@@ -263,8 +263,10 @@
    },
    "_promovido_em": "2026-08-28",
    "revisao": {
-    "_reaberta_em": "2026-09-01",
-    "_porque_reaberta": "A url abria a pagina 257 do DOU, e os trechos estao na 258. A revisao humana procurou e nao achou dois deles — 'Nao localizei no arquivo' —, e estava certa. Os outros dois foram conferidos contra a mesma pagina errada. Agora cada linha abre a pagina onde o trecho esta.",
+    "em": "2026-09-01",
+    "resultado": "corrigir",
+    "nota": "Não localizei na página",
+    "por_quem": "kvgs",
     "_antes": [
      {
       "_reaberta_em": "2026-09-01",
@@ -281,6 +283,10 @@
       "resultado": "confere",
       "nota": "",
       "por_quem": "kvgs"
+     },
+     {
+      "_reaberta_em": "2026-09-01",
+      "_porque_reaberta": "A url abria a pagina 257 do DOU, e os trechos estao na 258. A revisao humana procurou e nao achou dois deles — 'Nao localizei no arquivo' —, e estava certa. Os outros dois foram conferidos contra a mesma pagina errada. Agora cada linha abre a pagina onde o trecho esta."
      }
     ]
    },
@@ -301,7 +307,7 @@
    "texto": "Defende igualdade salarial entre homens e mulheres na mesma ocupação, combate ao feminicídio e assistência a mulheres em situação de violência.",
    "url_especifica": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?jornal=530&pagina=258&data=22/12/2022&captchafield=firstAccess",
    "data_referencia": "2022-12-19",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
@@ -310,8 +316,10 @@
    },
    "_promovido_em": "2026-08-28",
    "revisao": {
-    "_reaberta_em": "2026-09-01",
-    "_porque_reaberta": "A url abria a pagina 257 do DOU, e os trechos estao na 258. A revisao humana procurou e nao achou dois deles — 'Nao localizei no arquivo' —, e estava certa. Os outros dois foram conferidos contra a mesma pagina errada. Agora cada linha abre a pagina onde o trecho esta.",
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
     "_antes": [
      {
       "_reaberta_em": "2026-09-01",
@@ -328,10 +336,15 @@
       "resultado": "corrigir",
       "nota": "Não localizei no arquivo",
       "por_quem": "kvgs"
+     },
+     {
+      "_reaberta_em": "2026-09-01",
+      "_porque_reaberta": "A url abria a pagina 257 do DOU, e os trechos estao na 258. A revisao humana procurou e nao achou dois deles — 'Nao localizei no arquivo' —, e estava certa. Os outros dois foram conferidos contra a mesma pagina errada. Agora cada linha abre a pagina onde o trecho esta."
      }
     ]
    },
-   "_pagina_no_dou": 258
+   "_pagina_no_dou": 258,
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-marcio-bittar-prog-pl-003",
@@ -347,7 +360,7 @@
    "texto": "Propõe políticas de inserção do jovem no mercado de trabalho, alinhando ensino às demandas sociais e facilitando acesso ao crédito.",
    "url_especifica": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?jornal=530&pagina=258&data=22/12/2022&captchafield=firstAccess",
    "data_referencia": "2022-12-19",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
@@ -356,8 +369,10 @@
    },
    "_promovido_em": "2026-08-28",
    "revisao": {
-    "_reaberta_em": "2026-09-01",
-    "_porque_reaberta": "A url abria a pagina 257 do DOU, e os trechos estao na 258. A revisao humana procurou e nao achou dois deles — 'Nao localizei no arquivo' —, e estava certa. Os outros dois foram conferidos contra a mesma pagina errada. Agora cada linha abre a pagina onde o trecho esta.",
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
     "_antes": [
      {
       "_reaberta_em": "2026-09-01",
@@ -374,6 +389,10 @@
       "resultado": "corrigir",
       "nota": "Não localizei no arquivo",
       "por_quem": "kvgs"
+     },
+     {
+      "_reaberta_em": "2026-09-01",
+      "_porque_reaberta": "A url abria a pagina 257 do DOU, e os trechos estao na 258. A revisao humana procurou e nao achou dois deles — 'Nao localizei no arquivo' —, e estava certa. Os outros dois foram conferidos contra a mesma pagina errada. Agora cada linha abre a pagina onde o trecho esta."
      }
     ]
    },
@@ -403,8 +422,10 @@
    },
    "_promovido_em": "2026-08-28",
    "revisao": {
-    "_reaberta_em": "2026-09-01",
-    "_porque_reaberta": "A url abria a pagina 257 do DOU, e os trechos estao na 258. A revisao humana procurou e nao achou dois deles — 'Nao localizei no arquivo' —, e estava certa. Os outros dois foram conferidos contra a mesma pagina errada. Agora cada linha abre a pagina onde o trecho esta.",
+    "em": "2026-09-01",
+    "resultado": "corrigir",
+    "nota": "Não localizei nessa página",
+    "por_quem": "kvgs",
     "_antes": [
      {
       "_reaberta_em": "2026-09-01",
@@ -421,6 +442,10 @@
       "resultado": "confere",
       "nota": "",
       "por_quem": "kvgs"
+     },
+     {
+      "_reaberta_em": "2026-09-01",
+      "_porque_reaberta": "A url abria a pagina 257 do DOU, e os trechos estao na 258. A revisao humana procurou e nao achou dois deles — 'Nao localizei no arquivo' —, e estava certa. Os outros dois foram conferidos contra a mesma pagina errada. Agora cada linha abre a pagina onde o trecho esta."
      }
     ]
    },
