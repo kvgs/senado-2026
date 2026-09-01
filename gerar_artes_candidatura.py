@@ -383,7 +383,8 @@ def arte_tema(d: dict, p: dict, b: dict, cor: str, i: int, n_slides: int,
                 t.d.text((t.m, t.y), ln, font=fr, fill=TINTA2)
                 t.y += int(fr.size * 1.4)
     else:
-        _, _, frase, _ = ROTULO[b["estado"]]
+        _, _, generica, _ = ROTULO[b["estado"]]
+        frase = b["texto"] or generica
         # SEM CENTRAR. Centrado, o texto ficava solto no meio da tela com um vazio
         # acima da tarja — parecia erro. A frase vem logo abaixo da tarja, que e o
         # que ela explica, e o resto do espaco fica para a silhueta.
@@ -462,15 +463,32 @@ def arte_sem_conteudo(d: dict, p: dict, vazios: list, cor: str, i: int,
         t.d.text((t.m + 28, t.y), f"{titulo} ({len(nomes)})",
                  font=f("corpo", 29, 600), fill=TINTA)
         t.y += 44
-        fl = f("corpo", 28, 400)
-        for ln in t.quebra(" · ".join(nomes), fl, 790):
-            t.d.text((t.m + 28, t.y), ln, font=fl, fill=TINTA2)
-            t.y += 39
-        t.espaco(8)
-        fe = f("corpo", 23, 400)
-        for ln in t.quebra(frase, fe, 780):
-            t.d.text((t.m + 28, t.y), ln, font=fe, fill=APAGADO)
-            t.y += 32
+        # Registro proprio de cada tema, quando existe: e o que diz o que de fato
+        # foi procurado e o que nao foi achado, tema por tema.
+        proprios = [x["texto"] for x in vazios
+                    if x["estado"] == est and x["texto"]]
+        if proprios:
+            # A LISTA DE NOMES E A FRASE GENERICA SAIEM quando ha registro por
+            # tema: os nomes se repetiam dentro de cada linha ("proposta de
+            # saude", "de infraestrutura") e a frase generica repetia o
+            # subtitulo do slide. Tres vezes a mesma coisa cansa e esconde o que
+            # e especifico.
+            fd = f("corpo", 26, 400)
+            for txt in proprios:
+                for ln in t.quebra("— " + txt, fd, 780):
+                    t.d.text((t.m + 28, t.y), ln, font=fd, fill=TINTA2)
+                    t.y += 36
+                t.espaco(12)
+        else:
+            fl = f("corpo", 28, 400)
+            for ln in t.quebra(" · ".join(nomes), fl, 790):
+                t.d.text((t.m + 28, t.y), ln, font=fl, fill=TINTA2)
+                t.y += 39
+            t.espaco(8)
+            fe = f("corpo", 23, 400)
+            for ln in t.quebra(frase, fe, 780):
+                t.d.text((t.m + 28, t.y), ln, font=fe, fill=APAGADO)
+                t.y += 32
         t.espaco(26)
         if t.y > t.base_do_rodape() - 40:
             raise SystemExit(
@@ -487,6 +505,69 @@ def arte_sem_conteudo(d: dict, p: dict, vazios: list, cor: str, i: int,
 
     t.rodape("kvgs.github.io/senado-2026", f"{i} DE {n_slides}", cor, APAGADO)
     t.salvar(f"{pasta(d['uf'], p['nome'], p['numero'])}/{i}-temas-sem-conteudo.png")
+
+
+def arte_perguntar(d: dict, p: dict, vazios: list, cor: str, i: int,
+                   n_slides: int):
+    """O convite para cobrar a candidatura sobre o que falta.
+
+    A LINGUAGEM E A DO SITE, DE PROPOSITO. O formulario que existe la diz: a
+    pergunta entra numa fila, quando varias pessoas perguntam a mesma coisa uma
+    mensagem e escrita ao contato oficial representando todas, nada e enviado
+    automaticamente, e "nao prometemos resposta: quem responde e o gabinete".
+    A arte repete isso e nao promete mais do que o site cumpre — inventar aqui
+    uma promessa que a ferramenta nao faz seria pior do que nao convidar.
+    """
+    t = Tela(PAPEL2, 96)
+    t.y = 100
+    t.mono(f"{d['uf_nome'].upper()} · {p['numero']} {p['nome'].upper()}",
+           f("mono", 20), cor, espacamento=4)
+    t.espaco(20)
+    t.texto("Falta resposta sobre algum tema? Pergunte.",
+            f("display", 62), TINTA, entre=1.08, larg=880)
+    t.espaco(26)
+    if vazios:
+        nomes = " · ".join(x["tema"] for x in vazios)
+        t.texto(f"Sem conteúdo no acervo: {nomes}.",
+                f("corpo", 31, 500), TINTA2, entre=1.4, larg=860)
+        t.espaco(30)
+
+    t.mono("DOIS CAMINHOS", f("mono", 19), APAGADO, espacamento=3)
+    t.espaco(18)
+    for titulo, txt in (
+        ("Aqui nos comentários",
+         "Marque a candidatura e escreva a sua pergunta. Comentário público é "
+         "mais difícil de ignorar do que mensagem privada."),
+        ("Ou pelo site",
+         "Na aba Perguntar você pede que a gente pergunte. Sua pergunta entra "
+         "numa fila: quando várias pessoas perguntam a mesma coisa para a mesma "
+         "candidatura, uma mensagem é escrita ao contato oficial representando "
+         "todas. Nada é enviado automaticamente — uma pessoa lê antes."),
+    ):
+        t.d.rectangle([t.m, t.y + 10, t.m + 14, t.y + 24], fill=cor)
+        t.d.text((t.m + 28, t.y), titulo, font=f("corpo", 30, 600), fill=TINTA)
+        t.y += 44
+        fx = f("corpo", 27, 400)
+        for ln in t.quebra(txt, fx, 790):
+            t.d.text((t.m + 28, t.y), ln, font=fx, fill=TINTA2)
+            t.y += 38
+        t.espaco(24)
+
+    # A RESSALVA E A MESMA DO SITE. Convite sem ela viraria promessa de resposta.
+    fa = f("corpo", 24, 400)
+    for ln in t.quebra("Não prometemos resposta: quem responde é o gabinete. "
+                       "O que o projeto faz é registrar a pergunta e escrever.",
+                       fa, 830):
+        t.d.text((t.m, t.y), ln, font=fa, fill=APAGADO)
+        t.y += 33
+
+    sobra = t.base_do_rodape() - 30 - (t.y + 30)
+    if sobra > 180:
+        desenha_silhueta(t, d["uf"], cor,
+                         (t.m, t.y + 30, L - t.m, t.y + 30 + sobra), opacidade=34)
+
+    t.rodape("kvgs.github.io/senado-2026", f"{i} DE {n_slides}", cor, APAGADO)
+    t.salvar(f"{pasta(d['uf'], p['nome'], p['numero'])}/{i}-perguntar.png")
 
 
 def arte_fecho(d: dict, p: dict, cor: str, i: int, n_slides: int):
@@ -532,7 +613,7 @@ def arte_fecho(d: dict, p: dict, cor: str, i: int, n_slides: int):
 LEGENDA = """# {numero} {nome} ({sigla}) — {uf_nome}
 
 {n_slides} slides: capa, um slide por tema COM conteúdo, um slide juntando todos
-os temas sem conteúdo, e o fecho com a legenda das tarjas.
+os temas sem conteúdo, o convite para perguntar, e o fecho com a legenda das tarjas.
 Gerado por `python gerar_artes_candidatura.py --uf {uf} --numero {numero}`.
 
 ---
@@ -614,7 +695,7 @@ def main() -> None:
         com = [(k, b) for k, b in enumerate(p["blocos"], 1)
                if b["estado"] in ("A", "B")]
         vazios = [b for b in p["blocos"] if b["estado"] not in ("A", "B")]
-        n_slides = 1 + len(com) + (1 if vazios else 0) + 1
+        n_slides = 1 + len(com) + (1 if vazios else 0) + 2
         i = 1
         arte_capa(d, p, cor, i, n_slides)
         for k, b in com:
@@ -623,6 +704,8 @@ def main() -> None:
         if vazios:
             i += 1
             arte_sem_conteudo(d, p, vazios, cor, i, n_slides)
+        i += 1
+        arte_perguntar(d, p, vazios, cor, i, n_slides)
         arte_fecho(d, p, cor, n_slides, n_slides)
         escreve_legenda(d, p, n_slides, PALETA[uf]["de"])
         print(f"  {pasta(uf, p['nome'], p['numero'])}/  ({n_slides} slides · "

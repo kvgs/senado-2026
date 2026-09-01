@@ -1,7 +1,7 @@
 # 100 Mara Rocha (REPUBLICANOS) — Acre
 
-9 slides: capa, um slide por tema COM conteúdo, um slide juntando todos
-os temas sem conteúdo, e o fecho com a legenda das tarjas.
+10 slides: capa, um slide por tema COM conteúdo, um slide juntando todos
+os temas sem conteúdo, o convite para perguntar, e o fecho com a legenda das tarjas.
 Gerado por `python gerar_artes_candidatura.py --uf AC --numero 100`.
 
 ---
