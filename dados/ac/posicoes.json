@@ -2371,7 +2371,13 @@
     "base": "trecho conferido palavra por palavra contra o texto coletado do site da candidatura (endereco nao declarado ao TSE, atribuicao provada) em 2026-09-01",
     "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
    },
-   "_promovido_em": "2026-09-01"
+   "_promovido_em": "2026-09-01",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "corrigir",
+    "nota": "Não parece ser uma proposta, de forma direta",
+    "por_quem": "kvgs"
+   }
   },
   {
    "id_posicao": "pos-sen-ac-2026-gladson-cameli-site-002",

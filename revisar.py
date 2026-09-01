@@ -61,6 +61,12 @@ import conferir_citacoes as cc
 _ap = _argparse.ArgumentParser(add_help=False)
 _ap.add_argument("--uf", default=None)
 _ap.add_argument("--quem", default=None)
+# Filtrar por candidatura contraria a regra da intercalacao — que existe para nao
+# julgar quinze linhas seguidas da mesma pessoa. Existe assim mesmo porque ha um
+# caso em que o alvo E uma pessoa: quando material novo dela acabou de entrar e a
+# curadoria quer conferir aquilo, e nao o acervo inteiro.
+_ap.add_argument("--candidatura", default=None,
+                 help="numero de urna ou pedaco do nome; so revisa essa candidatura")
 _args = _ap.parse_known_args()[0]
 _UF = _args.uf.upper() if _args.uf else None
 
@@ -72,10 +78,22 @@ NOME_UF = {e["uf"]: e["nome"] for e in
 for _u in UFS:
     acervo.exige(_u)               # falha aqui, e nao no meio da revisao
 QUEM = acervo.quem(_args.quem)
+ALVO = (_args.candidatura or "").strip().lower()
 PORTA = 8765
 
 ORDEM_FORCA = {"baixa": 0, "media": 1, "alta": 2}
 ORDEM_FONTE = {"secundaria": 0, "declaracao_candidato": 1, "registro_legislativo": 2, "oficial": 3}
+
+# Registro de ausencia (C e D) nao tem selo de fonte, e por isso caia sem
+# instrucao nenhuma. E justamente nele que a instrucao importa mais: o que se
+# confere e a lista de fontes, nao um trecho.
+O_QUE_CONFERIR_AUSENCIA = (
+    "Aqui nao ha trecho a conferir — a linha diz que NAO ha proposta. O que voce "
+    "confere e a LISTA DE FONTES abaixo: ela cobre o que a candidatura publicou? "
+    "Se existir site, perfil ou documento que nao esta nessa lista, esta linha "
+    "afirma demais e deve ir para Corrigir. Foi o que aconteceu com o Gladson "
+    "Cameli: sete linhas diziam “nao localizamos” e o site dele tinha "
+    "pagina de proposta para cinco daqueles temas.")
 
 O_QUE_CONFERIR = {
     "secundaria": "Abra a fonte e confira duas coisas: a matéria diz isso mesmo, e atribui "
@@ -152,6 +170,8 @@ def itens_de(uf):
         itens.append({
             "situacao_citacao": sit,
             "contexto": ctx,
+            "escopo_busca": r.get("escopo_da_busca") or "",
+            "busca_em": r.get("busca_realizada_em") or "",
             "id": r["id_posicao"],
             "uf": uf,
             "uf_nome": NOME_UF.get(uf, uf),
@@ -172,12 +192,25 @@ def itens_de(uf):
             "forca": conf.get("forca", ""),
             "base": conf.get("base", ""),
             "ressalva": conf.get("ressalva", ""),
-            "o_que_conferir": O_QUE_CONFERIR.get(r.get("nivel_fonte"), "")
-                              .replace("{estado}", NOME_UF.get(uf, uf)),
+            "o_que_conferir": (
+                O_QUE_CONFERIR_AUSENCIA
+                if r.get("estado_cobertura") in ("C", "D")
+                else O_QUE_CONFERIR.get(r.get("nivel_fonte"), "")
+                     .replace("{estado}", NOME_UF.get(uf, uf))),
             "revisado": bool(r.get("revisado_por_humano")),
             "revisao": r.get("revisao") or {},
         })
     return itens
+
+
+def so_a_candidatura(itens):
+    if not ALVO:
+        return itens
+    fica = [x for x in itens
+            if ALVO == str(x["numero"]).lower() or ALVO in x["candidatura"].lower()]
+    if not fica:
+        raise SystemExit(f"nenhuma candidatura casa com {ALVO!r} em {', '.join(UFS)}")
+    return fica
 
 
 def faixa_de_risco(x):
@@ -222,6 +255,7 @@ def montar_itens():
     itens = []
     for uf in UFS:
         itens.extend(itens_de(uf))
+    itens = so_a_candidatura(itens)
     # Intercala DENTRO de cada faixa de risco, e nunca entre faixas: misturar as
     # faixas daria variedade e perderia a garantia de que parar na metade deixa
     # revisada a metade que importa.
@@ -408,6 +442,14 @@ function desenhar(){
     (it.citacao?'<blockquote>'+esc(it.citacao)+'</blockquote>':'<p class="confira" style="border-style:solid"><strong>Sem citação literal.</strong> Esta linha é paráfrase da fonte, sem trecho citado que a ancore — é onde a redação costuma escorregar. Compare com o documento palavra a palavra.</p>')+
     naFonte(it)+
     (it.texto?'<p class="txt">'+esc(it.texto)+'</p>':'')+
+    /* O ESCOPO DA BUSCA E O QUE SE REVISA num registro de ausencia. Sem ele na
+       tela, a decisao seria sobre uma frase ("nao localizamos") sem o unico dado
+       que permite julga-la: onde se procurou. */
+    (it.escopo_busca
+      ? '<div class="nafonte neutro"><p class="selo">Onde se procurou'+
+        (it.busca_em?' (busca em '+esc(it.busca_em)+')':'')+'</p>'+
+        '<p class="ctx">'+esc(it.escopo_busca)+'</p></div>'
+      : '')+
     (it.escopo?'<p class="txt"><strong>Escopo:</strong> '+esc(it.escopo)+'</p>':'')+
     '<div class="meta">'+
       '<span>Fonte: '+(it.fonte_url?'<a href="'+esc(it.fonte_url)+'" target="_blank" rel="noopener">'+
@@ -452,8 +494,15 @@ function decidir(d){
     document.getElementById('nota').focus(); return;
   }
   /* Confirmar linha sem ancora exige a frase. Nao e burocracia: foi assim que
-     "controle estatal dos precos" virou "congelamento de precos" sem ninguem ver. */
-  if(d==='confere' && !it.citacao && !cit.trim()){
+     "controle estatal dos precos" virou "congelamento de precos" sem ninguem ver.
+
+     MAS A TRAVA NAO VALE PARA AUSENCIA. Registro C e D nao tem trecho a citar —
+     eles dizem que NAO ha proposta, e o que a revisao confere neles e o escopo da
+     busca. Exigir citacao aqui impediria de aprovar exatamente o registro que
+     afirma que nada foi achado, e deixaria a ausencia fora da revisao para
+     sempre. */
+  var ausencia = (it.estado==='C' || it.estado==='D');
+  if(d==='confere' && !ausencia && !it.citacao && !cit.trim()){
     alert('Cole a frase da fonte que sustenta esta linha.\n\n'+
           'Sem trecho citado nao ha como conferir depois se a redacao escorregou.');
     document.getElementById('cit').focus(); return;
