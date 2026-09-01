@@ -1,6 +1,6 @@
 # 222 Marcio Bittar (PL) — Acre
 
-5 slides: capa, um slide por tema COM conteúdo, um slide juntando todos
+7 slides: capa, um slide por tema COM conteúdo, um slide juntando todos
 os temas sem conteúdo, o convite para perguntar, e o fecho com a legenda das tarjas.
 Gerado por `python gerar_artes_candidatura.py --uf AC --numero 222`.
 
@@ -13,8 +13,8 @@ Gerado por `python gerar_artes_candidatura.py --uf AC --numero 222`.
 São 10 temas. Em cada slide a tarja diz **de quem é a proposta** — da
 candidatura ou do partido — ou o que ainda não há.
 
-Neste levantamento: **0 tema(s) com proposta própria**, **1 com
-proposta do partido** e **9 sem conteúdo**.
+Neste levantamento: **0 tema(s) com proposta própria**, **3 com
+proposta do partido** e **7 sem conteúdo**.
 
 ⚠️ Estes três números são sobre **o nosso levantamento**, e não sobre a
 candidatura. Tema sem conteúdo aqui quer dizer que nós ainda não localizamos ou
@@ -41,5 +41,5 @@ link de cada fonte.
 
 ## Números desta candidatura
 
-- 0 proposta(s) própria(s), 1 do partido, 9 sem conteúdo
+- 0 proposta(s) própria(s), 3 do partido, 7 sem conteúdo
 - Cor e silhueta: verde da bandeira do Acre, escurecido de #009B3A (3,33:1) para 5,01:1 sobre o papel

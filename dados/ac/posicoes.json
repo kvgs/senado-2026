@@ -263,10 +263,14 @@
    },
    "_promovido_em": "2026-08-28",
    "revisao": {
-    "em": "2026-09-01",
-    "resultado": "corrigir",
-    "nota": "Não achei na página",
-    "por_quem": "kvgs"
+    "_reaberta_em": "2026-09-01",
+    "_porque_reaberta": "A url do documento era https://www.in.gov.br/, a home da Imprensa Nacional, onde o texto nao esta. Quem revisou nao tinha como abrir a fonte e conferir a redacao — a unica coisa que a revisao existe para fazer. A url agora e a pagina do DOU (secao 3, edicao 240 de 22/12/2022, pagina 257), e a curadoria pediu que tudo que depende deste programa seja revisado de novo, agora com a fonte acessivel.",
+    "_decisao_anterior": {
+     "em": "2026-09-01",
+     "resultado": "corrigir",
+     "nota": "Não achei na página",
+     "por_quem": "kvgs"
+    }
    }
   },
   {
@@ -292,10 +296,14 @@
    },
    "_promovido_em": "2026-08-28",
    "revisao": {
-    "em": "2026-09-01",
-    "resultado": "corrigir",
-    "nota": "Não deve ser esse link",
-    "por_quem": "kvgs"
+    "_reaberta_em": "2026-09-01",
+    "_porque_reaberta": "A url do documento era https://www.in.gov.br/, a home da Imprensa Nacional, onde o texto nao esta. Quem revisou nao tinha como abrir a fonte e conferir a redacao — a unica coisa que a revisao existe para fazer. A url agora e a pagina do DOU (secao 3, edicao 240 de 22/12/2022, pagina 257), e a curadoria pediu que tudo que depende deste programa seja revisado de novo, agora com a fonte acessivel.",
+    "_decisao_anterior": {
+     "em": "2026-09-01",
+     "resultado": "corrigir",
+     "nota": "Não deve ser esse link",
+     "por_quem": "kvgs"
+    }
    }
   },
   {
@@ -312,7 +320,7 @@
    "texto": "Propõe políticas de inserção do jovem no mercado de trabalho, alinhando ensino às demandas sociais e facilitando acesso ao crédito.",
    "url_especifica": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?jornal=530&pagina=257&data=22/12/2022&captchafield=firstAccess",
    "data_referencia": "2022-12-19",
-   "revisado_por_humano": true,
+   "revisado_por_humano": false,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
@@ -321,10 +329,14 @@
    },
    "_promovido_em": "2026-08-28",
    "revisao": {
-    "em": "2026-09-01",
-    "resultado": "confere",
-    "nota": "O link não confere",
-    "por_quem": "kvgs"
+    "_reaberta_em": "2026-09-01",
+    "_porque_reaberta": "A url do documento era https://www.in.gov.br/, a home da Imprensa Nacional, onde o texto nao esta. Quem revisou nao tinha como abrir a fonte e conferir a redacao — a unica coisa que a revisao existe para fazer. A url agora e a pagina do DOU (secao 3, edicao 240 de 22/12/2022, pagina 257), e a curadoria pediu que tudo que depende deste programa seja revisado de novo, agora com a fonte acessivel.",
+    "_decisao_anterior": {
+     "em": "2026-09-01",
+     "resultado": "confere",
+     "nota": "O link não confere",
+     "por_quem": "kvgs"
+    }
    },
    "revisado_por": "kvgs"
   },
@@ -351,10 +363,14 @@
    },
    "_promovido_em": "2026-08-28",
    "revisao": {
-    "em": "2026-09-01",
-    "resultado": "corrigir",
-    "nota": "Link não confere",
-    "por_quem": "kvgs"
+    "_reaberta_em": "2026-09-01",
+    "_porque_reaberta": "A url do documento era https://www.in.gov.br/, a home da Imprensa Nacional, onde o texto nao esta. Quem revisou nao tinha como abrir a fonte e conferir a redacao — a unica coisa que a revisao existe para fazer. A url agora e a pagina do DOU (secao 3, edicao 240 de 22/12/2022, pagina 257), e a curadoria pediu que tudo que depende deste programa seja revisado de novo, agora com a fonte acessivel.",
+    "_decisao_anterior": {
+     "em": "2026-09-01",
+     "resultado": "corrigir",
+     "nota": "Link não confere",
+     "por_quem": "kvgs"
+    }
    }
   },
   {
