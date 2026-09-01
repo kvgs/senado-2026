@@ -52,6 +52,7 @@ import re
 import sys
 import unicodedata
 from datetime import date
+from functools import lru_cache
 
 HOJE = date.today().isoformat()
 
@@ -92,6 +93,7 @@ def nu(s: str) -> str:
     return re.sub(r"\s+", " ", re.sub(r"-\s+", "", s)).strip()
 
 
+@lru_cache(maxsize=1)
 def fontes_de_partido() -> dict[str, str]:
     """id_documento de programa -> texto da fonte, via extracoes/partido-*.json."""
     saida = {}
@@ -146,6 +148,12 @@ def trecho_da_fonte(cit: str, src: str) -> str | None:
     return achado if nu(achado) == alvo else None
 
 
+# MEMORIA OBRIGATORIA, e nao otimizacao. Esta funcao percorre a fonte caractere
+# por caractere, e a fonte tem de 30 a 140 mil caracteres. Sem cache ela roda duas
+# vezes por posicao — uma para situacao(), outra para o contexto — e a tela de
+# revisao passou a levar 30 SEGUNDOS para abrir com treze itens. Com o acervo
+# inteiro seria inutilizavel, e a tela deixaria de ser usada por lentidao.
+@lru_cache(maxsize=64)
 def mapa_chapado(src: str) -> tuple[str, list[int]]:
     """Versao sem acento/caixa/espaco-duplo do texto, com o indice de origem de
     cada caractere. Usado para achar a citacao na fonte e recortar o ORIGINAL."""

@@ -2513,8 +2513,15 @@
    "texto": "Não localizamos proposta sobre meio ambiente e mudança climática. Isto é uma afirmação sobre a nossa busca: as fontes abaixo foram lidas e nenhuma delas trouxe posição sobre este tema.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foram lidos: o programa nacional do PP (“Programa Partidário do Progressistas”), lido por inteiro — rendeu 5 trecho(s) no acervo; o site da candidatura (gladsoncameli.com.br/), 11 página(s) e 33722 caracteres de texto, coletado em 2026-09-01.",
-   "revisado_por_humano": false,
-   "_gerado_por": "registrar_ausencias.py"
+   "revisado_por_humano": true,
+   "_gerado_por": "registrar_ausencias.py",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-gladson-cameli-busca-t7",
@@ -2552,8 +2559,15 @@
    "texto": "Não localizamos proposta sobre tecnologia e inteligência artificial. Isto é uma afirmação sobre a nossa busca: as fontes abaixo foram lidas e nenhuma delas trouxe posição sobre este tema.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foram lidos: o programa nacional do PP (“Programa Partidário do Progressistas”), lido por inteiro — rendeu 5 trecho(s) no acervo; o site da candidatura (gladsoncameli.com.br/), 11 página(s) e 33722 caracteres de texto, coletado em 2026-09-01.",
-   "revisado_por_humano": false,
-   "_gerado_por": "registrar_ausencias.py"
+   "revisado_por_humano": true,
+   "_gerado_por": "registrar_ausencias.py",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   }
  ]
 }
