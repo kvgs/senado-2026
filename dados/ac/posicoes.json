@@ -2364,7 +2364,7 @@
    "texto": "Diz que vai buscar recursos em Brasília para combater a violência doméstica e o feminicídio.",
    "url_especifica": "https://gladsoncameli.com.br/propostas/seguranca",
    "data_referencia": "2026-09-01",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-09-01",
     "forca": "alta",
@@ -2373,10 +2373,15 @@
    },
    "_promovido_em": "2026-09-01",
    "revisao": {
+    "resultado": "confere",
+    "por": "curadoria",
     "em": "2026-09-01",
-    "resultado": "corrigir",
-    "nota": "Não parece ser uma proposta, de forma direta",
-    "por_quem": "kvgs"
+    "_decisao_anterior": {
+     "resultado": "corrigir",
+     "nota": "Não parece ser uma proposta, de forma direta",
+     "em": "2026-09-01",
+     "por_que_mudou": "A curadoria releu com o contexto da pagina inteira: a frase enuncia sim o compromisso de buscar recursos em Brasilia contra a violencia domestica e o feminicidio. A leitura anterior foi feita sem o contexto."
+    }
    }
   },
   {
@@ -2542,22 +2547,6 @@
    "escopo_da_busca": "Foram lidos: o programa nacional do PP (“Programa Partidário do Progressistas”), lido por inteiro — rendeu 5 trecho(s) no acervo; o site da candidatura (gladsoncameli.com.br/), 11 página(s) e 33722 caracteres de texto, coletado em 2026-09-01.",
    "revisado_por_humano": false,
    "_gerado_por": "registrar_ausencias.py"
-  },
-  {
-   "id_posicao": "pos-sen-ac-2026-gladson-cameli-busca-t1",
-   "id_candidatura_contexto": "sen-ac-2026-gladson-cameli",
-   "id_tema": "t1",
-   "atribuido_a_tipo": "candidatura",
-   "atribuido_a_id": "sen-ac-2026-gladson-cameli",
-   "estado_cobertura": "D",
-   "natureza": "ausencia",
-   "nivel_fonte": null,
-   "citacao_literal": "",
-   "texto": "Não localizamos proposta de segurança pública. O site tem uma página do tema, mas o que ela traz é realização de mandato — batalhões de fronteira criados, policiais contratados, polícias aparelhadas. A única frase voltada ao futuro foi retirada na revisão por não enunciar uma proposta de forma direta.",
-   "busca_realizada_em": "2026-09-01",
-   "escopo_da_busca": "Foram lidos: o programa nacional do PP (“Programa Partidário do Progressistas”), lido por inteiro — rendeu 5 trecho(s) no acervo; o site da candidatura (gladsoncameli.com.br/), 11 página(s) e 33722 caracteres de texto, coletado em 2026-09-01.",
-   "revisado_por_humano": false,
-   "_veio_de": "A revisão marcou a posição pos-sen-ac-2026-gladson-cameli-site-001 como 'corrigir', com a nota 'Não parece ser uma proposta, de forma direta'. Sem este registro, o tema apareceria como 'ainda não trabalhado' — falso, porque a página foi lida. A decisão da revisão não foi tocada."
   }
  ]
 }
