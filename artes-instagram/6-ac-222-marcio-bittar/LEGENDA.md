@@ -1,6 +1,7 @@
 # 222 Marcio Bittar (PL) — Acre
 
-12 slides: capa, os 10 temas em ordem, e o fecho com a legenda das tarjas.
+5 slides: capa, um slide por tema COM conteúdo, um slide juntando todos
+os temas sem conteúdo, o convite para perguntar, e o fecho com a legenda das tarjas.
 Gerado por `python gerar_artes_candidatura.py --uf AC --numero 222`.
 
 ---

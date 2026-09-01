@@ -204,12 +204,13 @@ def medir(uf: str, numero: str | None = None) -> dict:
                     "partido": partidos.get(p.get("atribuido_a_id"), "") if
                                p.get("atribuido_a_tipo") == "partido" else "",
                     "revisado": bool(p.get("revisado_por_humano")),
+                    "escopo": p.get("escopo_da_busca") or "",
                     "mais": len(minhas) - 1,
                 })
             else:
                 blocos.append({"tema": t["nome"], "estado": "-", "citacao": "",
                                "texto": "", "selo": "", "fonte": "", "partido": "",
-                               "revisado": False, "mais": 0})
+                               "revisado": False, "escopo": "", "mais": 0})
         arq = (c.get("foto") or {}).get("arquivo")
         saida.append({
             "cid": cid, "nome": c["pessoa"]["nome_urna"],
@@ -454,6 +455,51 @@ def arte_sem_conteudo(d: dict, p: dict, vazios: list, cor: str, i: int,
     for b in vazios:
         por_tipo.setdefault(b["estado"], []).append(b["tema"])
 
+    # MEDIR ANTES DE DESENHAR, e escolher a forma que cabe.
+    #
+    # A guarda de transbordamento disparou no Gladson Cameli, que tem sete temas
+    # sem conteudo: sete paragrafos nao cabem num slide. E ao disparar ela mostrou
+    # uma redundancia — quando as fontes lidas sao as mesmas para todos os temas,
+    # os sete textos sao a mesma frase com o nome do tema trocado, e o escopo da
+    # busca e identico. A forma compacta nao e um recuo: e mais curta E mais
+    # legivel, porque diz uma vez o que estava dito sete.
+    fd, fl, fe = f("corpo", 26, 400), f("corpo", 28, 400), f("corpo", 23, 400)
+
+    def altura(detalhado: bool) -> int:
+        alto = 0
+        for est in ("C", "D", "-"):
+            nomes = por_tipo.get(est)
+            if not nomes:
+                continue
+            alto += 44
+            proprios = [x["texto"] for x in vazios if x["estado"] == est and x["texto"]]
+            if detalhado and proprios:
+                for txt in proprios:
+                    alto += len(t.quebra("— " + txt, fd, 780)) * 36 + 12
+            else:
+                alto += len(t.quebra(" · ".join(nomes), fl, 790)) * 39 + 8
+                esc = escopos.get(est)
+                alto += len(t.quebra(esc or ROTULO[est][2], fe, 780)) * 32
+            alto += 26
+        return alto
+
+    # O escopo da busca e o mesmo para todos os temas de uma candidatura, e por
+    # isso na forma compacta ele aparece UMA vez, embaixo da lista de nomes.
+    escopos = {}
+    for est in ("C", "D", "-"):
+        unicos = {x.get("escopo") for x in vazios
+                  if x["estado"] == est and x.get("escopo")}
+        if len(unicos) == 1:
+            escopos[est] = unicos.pop()
+
+    cabe_no_espaco = t.base_do_rodape() - 40 - t.y
+    detalhado = altura(True) <= cabe_no_espaco
+    if not detalhado and altura(False) > cabe_no_espaco:
+        raise SystemExit(
+            f"PAROU: a lista de temas sem conteudo de {p['nome']} nao cabe no "
+            "slide nem na forma compacta. O desenho passaria por cima do rodape, "
+            "e isso ja foi publicado uma vez sem ninguem ver.")
+
     for est in ("C", "D", "-"):
         nomes = por_tipo.get(est)
         if not nomes:
@@ -463,38 +509,22 @@ def arte_sem_conteudo(d: dict, p: dict, vazios: list, cor: str, i: int,
         t.d.text((t.m + 28, t.y), f"{titulo} ({len(nomes)})",
                  font=f("corpo", 29, 600), fill=TINTA)
         t.y += 44
-        # Registro proprio de cada tema, quando existe: e o que diz o que de fato
-        # foi procurado e o que nao foi achado, tema por tema.
-        proprios = [x["texto"] for x in vazios
-                    if x["estado"] == est and x["texto"]]
-        if proprios:
-            # A LISTA DE NOMES E A FRASE GENERICA SAIEM quando ha registro por
-            # tema: os nomes se repetiam dentro de cada linha ("proposta de
-            # saude", "de infraestrutura") e a frase generica repetia o
-            # subtitulo do slide. Tres vezes a mesma coisa cansa e esconde o que
-            # e especifico.
-            fd = f("corpo", 26, 400)
+        proprios = [x["texto"] for x in vazios if x["estado"] == est and x["texto"]]
+        if detalhado and proprios:
             for txt in proprios:
                 for ln in t.quebra("— " + txt, fd, 780):
                     t.d.text((t.m + 28, t.y), ln, font=fd, fill=TINTA2)
                     t.y += 36
                 t.espaco(12)
         else:
-            fl = f("corpo", 28, 400)
             for ln in t.quebra(" · ".join(nomes), fl, 790):
                 t.d.text((t.m + 28, t.y), ln, font=fl, fill=TINTA2)
                 t.y += 39
             t.espaco(8)
-            fe = f("corpo", 23, 400)
-            for ln in t.quebra(frase, fe, 780):
+            for ln in t.quebra(escopos.get(est) or frase, fe, 780):
                 t.d.text((t.m + 28, t.y), ln, font=fe, fill=APAGADO)
                 t.y += 32
         t.espaco(26)
-        if t.y > t.base_do_rodape() - 40:
-            raise SystemExit(
-                f"PAROU: a lista de temas sem conteudo de {p['nome']} nao cabe no "
-                "slide. O desenho passaria por cima do rodape, e isso ja foi "
-                "publicado uma vez sem ninguem ver.")
 
     # Quando so ha um tipo de ausencia, a lista e curta e sobra meia tela. A
     # silhueta ocupa sem inventar informacao.
