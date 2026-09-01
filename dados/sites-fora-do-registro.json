@@ -37,6 +37,25 @@
         "Traz materias datadas de agosto de 2026 — e material desta eleicao, e nao de mandato anterior."
       ],
       "_achado_depois_do_registro_D": "Este site foi encontrado DEPOIS de o acervo ja ter gravado sete registros de estado D para esta candidatura, dizendo que a busca nao achou proposta nos temas. A busca daquele momento nao incluia este site, e por isso os registros foram refeitos com o escopo certo. Fica escrito porque e a licao: D e uma afirmacao forte, e vale exatamente o que vale a lista de fontes."
+    },
+    {
+      "id_candidatura": "sen-ac-2026-marcio-bittar",
+      "uf": "AC",
+      "url": "https://www.marciobittar.com.br/",
+      "encontrado_em": "2026-09-01",
+      "encontrado_por": "curadoria do projeto, pelo link no Instagram oficial",
+      "declarou_ao_tse": [
+        "https://www.instagram.com/marciobittar_"
+      ],
+      "prova_de_atribuicao": [
+        "O site aponta para instagram.com/marciobittar_ — exatamente o unico endereco que a candidatura declarou ao TSE. A curadoria chegou ao site pelo caminho inverso, a partir desse mesmo perfil.",
+        "A pagina traz o numero de urna 222, igual ao numero_urna do registro.",
+        "Nomeia a coligacao 'Avanca Acre'; o registro traz a coligacao avanca-acre-ac.",
+        "Escreve o nome civil completo 'Marcio Miguel Bittar', igual ao nome_completo do registro no TSE.",
+        "Publica o CNPJ 68.526.697/0001-72.",
+        "Traz o cargo e o ano desta eleicao: 'Senador Marcio Bittar 222', 'Nessas eleicoes'."
+      ],
+      "_robots": "robots.txt permite o agente do projeto (User-agent: * / Allow: /) e declara Content-Signal: search=yes, ai-train=no, use=reference. O uso aqui e de referencia — trecho citado com link e atribuicao — e o projeto nao treina modelo com nada. Os rastejadores de IA de uso geral estao bloqueados no arquivo, e o nosso agente nao e um deles: ele se identifica como senado-2026 e da endereco para reclamacao."
     }
   ]
 }
