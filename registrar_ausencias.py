@@ -46,6 +46,27 @@ RAIZ = pathlib.Path(__file__).resolve().parent
 HOJE = date.today().isoformat()
 
 
+def mil(n: int) -> str:
+    """33722 -> 33.722. Numero de cinco digitos corrido nao se le."""
+    return f"{n:,}".replace(",", ".")
+
+
+def plural(n: int, um: str, muitos: str) -> str:
+    return f"{n} {um if n == 1 else muitos}"
+
+
+# A REDACAO E DA CURADORIA, palavra por palavra, com um "social" que estava
+# truncado. O "AINDA" em maiuscula e dela e muda o sentido da frase: diz que nao
+# coletar rede social e decisao de hoje, e nao regra permanente — o que importa
+# porque ha candidatura cujo UNICO canal declarado ao TSE e o Instagram.
+def escopo_da_busca(lidas: list[str], nao_lidas: list[str]) -> str:
+    txt = "Foram lidos: " + "; ".join(lidas) + "."
+    if nao_lidas:
+        txt += (" NÃO foram lidos, e são canais que a candidatura declarou ao TSE: "
+                + "; ".join(nao_lidas) + ". O projeto AINDA não coleta rede social.")
+    return txt
+
+
 def fontes_lidas(uf: str) -> tuple[dict, dict, set]:
     """(programa por partido, site por candidatura, partidos recusados)."""
     prog = {}
@@ -106,16 +127,17 @@ def main() -> int:
             # o "link" do programa do PL e https://www.in.gov.br/, a home da
             # Imprensa Nacional, que a revisao humana ja pegou como errada — e
             # este campo passaria a publicar o erro num segundo lugar.
-            escopo.append(f"o programa nacional do {siglas.get(part, part)} "
-                          f"(“{pr['titulo']}”), lido por inteiro — rendeu "
-                          f"{pr['trechos']} trecho(s) no acervo")
+            escopo.append(f"o programa nacional do {siglas.get(part, part)}, lido "
+                          "por inteiro — rendeu "
+                          + plural(pr["trechos"], "trecho", "trechos"))
         s = sites.get(cid)
         if s:
             lidas.append("site")
             # O TSE devolve o endereco em caixa alta; minusculo e como se le.
             end = (s["url"] or "").lower().replace("https://", "").replace("http://", "")
-            escopo.append(f"o site da candidatura ({end}), {s['paginas']} "
-                          f"página(s) e {s['caracteres']} caracteres de texto, "
+            escopo.append(f"o site da candidatura ({end}), "
+                          + plural(s["paginas"], "página", "páginas")
+                          + f" e {mil(s['caracteres'])} caracteres, "
                           f"coletado em {s['em']}")
         # O QUE FOI DECLARADO E NAO FOI LIDO TAMBEM E ESCOPO. A candidatura
         # declarou perfis ao TSE; o projeto nao coleta rede social — post nao e
@@ -164,14 +186,7 @@ def main() -> int:
                           "abaixo foram lidas e nenhuma delas trouxe posição "
                           "sobre este tema."),
                 "busca_realizada_em": HOJE,
-                "escopo_da_busca": (
-                    "Foram lidos: " + "; ".join(escopo) + "."
-                    + (" NÃO foram lidos, e são canais que a candidatura declarou "
-                       "ao TSE: " + "; ".join(nao_lidas)
-                       + ". O projeto não coleta rede social — post não é documento "
-                       "de campanha e muda de hora em hora — mas isso limita esta "
-                       "afirmação, e por isso fica dito."
-                       if nao_lidas else "")),
+                "escopo_da_busca": escopo_da_busca(escopo, nao_lidas),
                 "revisado_por_humano": False,
                 "_gerado_por": "registrar_ausencias.py",
             })
