@@ -2942,14 +2942,21 @@
    "texto": "Propõe um hospital regional em Brasiléia para o Alto Acre.",
    "url_especifica": "https://drjuniorfeitoza.com.br/",
    "data_referencia": "2026-09-01",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-09-01",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra o texto coletado do site da candidatura (endereco nao declarado ao TSE, atribuicao provada) em 2026-09-01",
     "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
    },
-   "_promovido_em": "2026-09-01"
+   "_promovido_em": "2026-09-01",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-site-003",
@@ -2964,14 +2971,21 @@
    "texto": "Propõe UTI em todos os municípios do Acre.",
    "url_especifica": "https://drjuniorfeitoza.com.br/",
    "data_referencia": "2026-09-01",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-09-01",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra o texto coletado do site da candidatura (endereco nao declarado ao TSE, atribuicao provada) em 2026-09-01",
     "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
    },
-   "_promovido_em": "2026-09-01"
+   "_promovido_em": "2026-09-01",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-site-004",
@@ -2986,14 +3000,21 @@
    "texto": "Propõe um hospital do câncer no Juruá, para evitar deslocamento a Rio Branco.",
    "url_especifica": "https://drjuniorfeitoza.com.br/",
    "data_referencia": "2026-09-01",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-09-01",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra o texto coletado do site da candidatura (endereco nao declarado ao TSE, atribuicao provada) em 2026-09-01",
     "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
    },
-   "_promovido_em": "2026-09-01"
+   "_promovido_em": "2026-09-01",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-site-005",
@@ -3008,14 +3029,21 @@
    "texto": "Defende reduzir a maioridade penal para 16 anos e ampliar o tempo de internação em casos graves.",
    "url_especifica": "https://drjuniorfeitoza.com.br/",
    "data_referencia": "2026-09-01",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-09-01",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra o texto coletado do site da candidatura (endereco nao declarado ao TSE, atribuicao provada) em 2026-09-01",
     "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
    },
-   "_promovido_em": "2026-09-01"
+   "_promovido_em": "2026-09-01",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-site-006",
@@ -3030,14 +3058,21 @@
    "texto": "Defende enquadrar a corrupção como crime hediondo.",
    "url_especifica": "https://drjuniorfeitoza.com.br/",
    "data_referencia": "2026-09-01",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-09-01",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra o texto coletado do site da candidatura (endereco nao declarado ao TSE, atribuicao provada) em 2026-09-01",
     "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
    },
-   "_promovido_em": "2026-09-01"
+   "_promovido_em": "2026-09-01",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-site-007",
@@ -3052,14 +3087,21 @@
    "texto": "Propõe um hospital regional em Tarauacá/Envira para o Alto Juruá.",
    "url_especifica": "https://drjuniorfeitoza.com.br/",
    "data_referencia": "2026-09-01",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-09-01",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra o texto coletado do site da candidatura (endereco nao declarado ao TSE, atribuicao provada) em 2026-09-01",
     "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
    },
-   "_promovido_em": "2026-09-01"
+   "_promovido_em": "2026-09-01",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-busca-t8",
@@ -3074,8 +3116,15 @@
    "texto": "Não localizamos proposta sobre tecnologia e inteligência artificial. Isto é uma afirmação sobre a nossa busca: as fontes abaixo foram lidas e nenhuma delas trouxe posição sobre este tema.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foram lidos: o programa nacional do DC, lido por inteiro — rendeu 16 trechos; o site da candidatura (drjuniorfeitoza.com.br/), 1 página e 3.674 caracteres, coletado em 2026-09-01. NÃO foram lidos, e são canais que a candidatura declarou ao TSE: o Instagram @dr.junior_feitosa. O projeto ainda não coleta rede social.",
-   "revisado_por_humano": false,
-   "_gerado_por": "registrar_ausencias.py"
+   "revisado_por_humano": true,
+   "_gerado_por": "registrar_ausencias.py",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   }
  ]
 }
