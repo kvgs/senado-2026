@@ -15,6 +15,7 @@ poste na ordem em que o explorador de arquivos mostra.
 | `5-sudeste-quem-sao/` | 8 | `gerar_artes_regiao.py --regiao Sudeste` |
 | `5-sul-quem-sao/` | 5 | `gerar_artes_regiao.py --regiao Sul` |
 | `6-<uf>-<numero>-<nome>/` | 12 | `gerar_artes_candidatura.py --uf AC --todos` |
+| `7-<uf>-analise/` | 6 | `gerar_artes_analise_uf.py --uf AC` |
 | `perfil-da-conta/` | — | `gerar_avatar.py` |
 
 O número da **pasta** é a ordem em que os carrosséis foram feitos, e não uma
@@ -50,6 +51,21 @@ que mostra uma pessoa sozinha, e por isso é a que mais precisa de cuidado:
   4,5:1 sobre o papel. Estado sem cor definida faz o script parar.
 
 São 12 imagens por candidatura. O Acre inteiro dá 96 imagens e 6,8 MB.
+
+## O carrossel de análise
+
+A série `7-` é a única com **gráficos**, e por isso tem duas travas próprias:
+
+- **Só existe para estado 100% revisado.** O script para com erro se houver linha
+  sem decisão da revisão. Gráfico tem cara de fato e não mostra o selo "não
+  revisado" que cada linha carrega no site.
+- **Nenhum gráfico compara candidaturas entre si.** Contar propostas por pessoa e
+  ordenar mediria verba de campanha e tamanho de assessoria, não qualidade de
+  candidatura — é o mesmo alerta que o `validar.py` dá. Os recortes são por tema,
+  por origem da informação e sobre a nossa própria busca.
+
+As cores foram medidas em contraste, não escolhidas no olho, e o `LEGENDA.md` da
+pasta registra o que foi descartado e por quê.
 
 ## Nada aqui é editado à mão
 
