@@ -42,4 +42,4 @@ link de cada fonte.
 ## Números desta candidatura
 
 - 2 proposta(s) própria(s), 7 do partido, 1 sem conteúdo
-- Cor e silhueta: verde da bandeira do Acre, escurecido de #009B3A (3,33:1) para 5,01:1 sobre o papel
+- Cor e silhueta: verde, a familia de cor da bandeira do Acre; tom escolhido para dar 5,01:1 sobre o papel

@@ -20,11 +20,15 @@ mesmos: quem publicou material e nao falou do tema, quem nao tem material que
 achassemos, e quem simplesmente nao chegou a nossa fila sao tres situacoes
 diferentes. A frase de cada uma e a mesma que esta na tela do site.
 
-A IDENTIDADE DO ESTADO E A SILHUETA DELE, mais uma cor tirada da bandeira. A
-silhueta sai da malha do IBGE que o projeto ja usa no mapa da pagina inicial
-(dados/mapa-uf.json) — serve para os 27 sem eu desenhar nada, e nenhum estado se
-confunde com outro. A cor vem da bandeira, ESCURECIDA ate passar 4,5:1 sobre o
-papel: o verde oficial do Acre da 3,33:1 e nao serve para texto.
+A IDENTIDADE DO ESTADO E A SILHUETA DELE, mais uma cor na familia de cor da
+bandeira. A silhueta sai da malha do IBGE que o projeto ja usa no mapa da pagina
+inicial (dados/mapa-uf.json) — serve para os 27 sem eu desenhar nada, e nenhum
+estado se confunde com outro.
+
+A COR E ESCOLHA NOSSA, e nao o hex oficial da bandeira. A familia de cor vem da
+bandeira; o tom e calibrado para passar 4,5:1 sobre o papel, e o numero fica
+escrito. A versao anterior deste texto dizia "a cor vem da bandeira, escurecida"
+e citava um hex como se fosse o do Acre — era o da bandeira do Brasil. Ver PALETA.
 
 O SCRIPT PARA em vez de desenhar por cima do rodape, e para em vez de inventar
 paleta de estado que ninguem escolheu. Ja foi publicada uma arte com a ultima
@@ -52,15 +56,30 @@ from gerar_artes import (A, APAGADO, L, LINHA, PAPEL, PAPEL2, SOBRE_ESCURO, TINT
 RAIZ = pathlib.Path(__file__).resolve().parent
 
 # ---------------------------------------------------------------- paleta por UF
-# A cor sai da BANDEIRA do estado, escurecida ate passar 4,5:1 sobre o papel
-# (#F7F4F1). Cada linha diz de onde a cor veio, porque "verde do Acre" e uma
-# afirmacao sobre a bandeira e alguem tem de poder conferir.
+# A cor fica na FAMILIA DE COR da bandeira do estado, e o tom exato e escolha
+# nossa, calibrada para passar 4,5:1 sobre o papel (#F7F4F1). Cada linha diz de
+# que cor da bandeira ela parte e quanto mede.
+#
+# O QUE ESTA FRASE NAO PODE DIZER, e dizia. A versao anterior afirmava "verde da
+# bandeira do Acre, escurecido de #009B3A". O #009B3A e o verde da bandeira do
+# BRASIL, e nao ha, numa fonte que este projeto guarde, o hex oficial da bandeira
+# do Acre. A frase afirmava mais do que se sabia — e foi publicada em cinco
+# LEGENDA.md antes de alguem notar. O que e verdade: a familia de cor vem da
+# bandeira; o tom e nosso, e o numero do contraste e medido.
+#
+# A COR TAMBEM SEPARA OS ESTADOS, e nao so decora. Por isso o Amapa entrou no azul
+# da bandeira dele, e nao no verde: verde ao lado de verde faz dois estados
+# parecerem o mesmo post no feed.
 #
 # Estado que nao esta aqui faz o script PARAR. Escolher cor por conta propria
 # seria inventar identidade visual para um lugar sem ninguem ter decidido.
 PALETA = {
-    "AC": {"cor": "#007A2E", "de": "verde da bandeira do Acre, escurecido de "
-                                   "#009B3A (3,33:1) para 5,01:1 sobre o papel"},
+    "AC": {"cor": "#007A2E", "de": "verde, a familia de cor da bandeira do Acre; "
+                                   "tom escolhido para dar 5,01:1 sobre o papel"},
+    "AP": {"cor": "#00548C", "de": "azul, uma das cores da bandeira do Amapa; tom "
+                                   "escolhido para dar 7,24:1 sobre o papel. Azul "
+                                   "e nao verde para o estado nao se confundir com "
+                                   "o Acre no feed"},
 }
 
 SELO = {

@@ -1,20 +1,20 @@
-# 777 Eduardo Velloso (SOLIDARIEDADE) — Acre
+# 130 Randolfe (PT) — Amapá
 
-9 slides: capa, um slide por tema COM conteúdo, um slide juntando todos
+12 slides: capa, um slide por tema COM conteúdo, um slide juntando todos
 os temas sem conteúdo, o convite para perguntar, e o fecho com a legenda das tarjas.
-Gerado por `python gerar_artes_candidatura.py --uf AC --numero 777`.
+Gerado por `python gerar_artes_candidatura.py --uf AP --numero 130`.
 
 ---
 
 ## Legenda
 
-**O que já foi levantado sobre Eduardo Velloso (SOLIDARIEDADE), tema a tema.**
+**O que já foi levantado sobre Randolfe (PT), tema a tema.**
 
 São 10 temas. Em cada slide a tarja diz **de quem é a proposta** — da
 candidatura ou do partido — ou o que ainda não há.
 
-Neste levantamento: **0 tema(s) com proposta própria**, **5 com
-proposta do partido** e **5 sem conteúdo**.
+Neste levantamento: **3 tema(s) com proposta própria**, **5 com
+proposta do partido** e **2 sem conteúdo**.
 
 ⚠️ Estes três números são sobre **o nosso levantamento**, e não sobre a
 candidatura. Tema sem conteúdo aqui quer dizer que nós ainda não localizamos ou
@@ -26,7 +26,7 @@ link de cada fonte.
 
 🔗 kvgs.github.io/senado-2026
 
-#eleições2026 #senado #acre #eduardovelloso #solidariedade #dadosabertos #votoconsciente #transparência
+#eleições2026 #senado #amapa #randolfe #pt #dadosabertos #votoconsciente #transparência
 
 ---
 
@@ -41,5 +41,5 @@ link de cada fonte.
 
 ## Números desta candidatura
 
-- 0 proposta(s) própria(s), 5 do partido, 5 sem conteúdo
-- Cor e silhueta: verde, a familia de cor da bandeira do Acre; tom escolhido para dar 5,01:1 sobre o papel
+- 3 proposta(s) própria(s), 5 do partido, 2 sem conteúdo
+- Cor e silhueta: azul, uma das cores da bandeira do Amapa; tom escolhido para dar 7,24:1 sobre o papel. Azul e nao verde para o estado nao se confundir com o Acre no feed

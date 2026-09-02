@@ -47,8 +47,12 @@ que mostra uma pessoa sozinha, e por isso é a que mais precisa de cuidado:
   lido de `dados/programas-recusados.json`. Sem isso, "0 do partido" leria como
   afirmação sobre a pessoa.
 - **A identidade do estado é a silhueta dele** (da mesma malha do IBGE que o mapa
-  da página inicial usa) mais uma cor tirada da bandeira, escurecida até passar
-  4,5:1 sobre o papel. Estado sem cor definida faz o script parar.
+  da página inicial usa) mais uma cor na **família de cor** da bandeira. O tom é
+  escolha nossa, calibrada para passar 4,5:1 sobre o papel — não é o hex oficial
+  da bandeira, e o `PALETA` diz isso. Estado sem cor definida faz o script parar.
+- **A cor também separa os estados.** O Amapá entrou no azul da bandeira dele, e
+  não no verde: verde ao lado do verde do Acre faria dois estados parecerem o
+  mesmo post no feed.
 
 São 12 imagens por candidatura. O Acre inteiro dá 96 imagens e 6,8 MB.
 
