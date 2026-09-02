@@ -200,9 +200,9 @@ Gerado por `python gerar_reels_senado.py`.
 
 **Sem trilha.** A música entra no próprio Instagram, onde é licenciada.
 
-**O carrossel `9-o-cargo-em-disputa/` conta a mesma coisa em 12 imagens**, com a
-citação inteira em cada slide. O vídeo prende; o carrossel é onde a frase da
-fonte cabe legível e fica no grid para consulta.
+**A citação inteira de cada frase não cabe no vídeo** — o que aparece na tela é o
+artigo. As frases citadas, palavra por palavra, estão em
+`dados/institucional-senado.json`, e é contra elas que o conferidor roda.
 
 ## Como as frases são conferidas
 

@@ -15,15 +15,15 @@ poste na ordem em que o explorador de arquivos mostra.
 | `5-sudeste-quem-sao/` | 8 | `gerar_artes_regiao.py --regiao Sudeste` |
 | `5-sul-quem-sao/` | 5 | `gerar_artes_regiao.py --regiao Sul` |
 | `6-<uf>-<numero>-<nome>/` | 12 | `gerar_artes_candidatura.py --uf AC --todos` |
-| `7-<uf>-analise/` | 6 | `gerar_artes_analise_uf.py --uf AC` |
-| `9-o-cargo-em-disputa/` | 12 | `gerar_artes_senado.py` |
 | `reels/ac.mp4` | vídeo | `gerar_reels_uf.py --uf AC` |
 | `reels/o-cargo.mp4` | vídeo | `gerar_reels_senado.py` |
 | `perfil-da-conta/` | — | `gerar_avatar.py` |
 
 O número da **pasta** é a ordem em que os carrosséis foram feitos, e não uma
 afirmação sobre o que já foi publicado. Renumere se postar fora de ordem. Faltam
-o 8 e o 10 porque eram os dois Reels, que hoje moram juntos em `reels/`.
+o 7, o 8, o 9 e o 10: o 8 e o 10 eram os dois Reels, e o 7 e o 9 eram carrosséis
+que **a curadoria decidiu não publicar** — a mesma matéria sai em vídeo, e dois
+formatos da mesma coisa é uma escolha, não um acervo maior.
 
 Cada pasta de carrossel tem um `LEGENDA.md` com o texto do post. **Os vídeos
 ficam todos em `reels/`**, um arquivo por vídeo, com a legenda ao lado no `.md`
@@ -62,9 +62,11 @@ que mostra uma pessoa sozinha, e por isso é a que mais precisa de cuidado:
 
 São 12 imagens por candidatura. O Acre inteiro dá 96 imagens e 6,8 MB.
 
-## O carrossel de análise
+## As travas do vídeo do estado
 
-A série `7-` é a única com **gráficos**, e por isso tem duas travas próprias:
+`reels/ac.mp4` é o único que **mostra gráfico** (a barra 20/60/32), e por isso
+carrega duas travas próprias. Elas nasceram no carrossel `7-`, que não é mais
+publicado, e valem igual — ou mais — em vídeo:
 
 - **Só existe para estado 100% revisado.** O script para com erro se houver linha
   sem decisão da revisão. Gráfico tem cara de fato e não mostra o selo "não
@@ -74,8 +76,10 @@ A série `7-` é a única com **gráficos**, e por isso tem duas travas própria
   candidatura — é o mesmo alerta que o `validar.py` dá. Os recortes são por tema,
   por origem da informação e sobre a nossa própria busca.
 
-As cores foram medidas em contraste, não escolhidas no olho, e o `LEGENDA.md` da
-pasta registra o que foi descartado e por quê.
+As cores foram medidas em contraste, não escolhidas no olho. O script
+`gerar_artes_analise_uf.py` continua no repositório: é dele que sai o `medir()`
+com os números do estado e a paleta que o vídeo usa. Ele ainda gera o carrossel
+de seis imagens se alguém rodar — só não é o que se posta.
 
 ## Os Reels
 
@@ -113,10 +117,10 @@ Git) para conferir a arte sem esperar o encode.
 
 ## O cargo, e não as candidaturas
 
-O carrossel `9-` e o vídeo `reels/o-cargo.mp4` são as únicas peças que **não saem do acervo**. Elas explicam o
+`reels/o-cargo.mp4` é a única peça que **não sai do acervo**. Ele explica o
 cargo em disputa — quanto paga, o que faz, quantos votos tem este ano, por que
-pesa — e saem da Constituição e do demonstrativo de remuneração do próprio
-Senado, guardados em `fontes/`.
+pesa — e sai da Constituição e do demonstrativo de remuneração do próprio Senado,
+guardados em `fontes/`.
 
 Sem acervo não há revisão humana linha por linha, então a trava é outra:
 
@@ -124,10 +128,10 @@ Sem acervo não há revisão humana linha por linha, então a trava é outra:
   dispositivo**, e `institucional.py` abre o arquivo de `fontes/`, confere
   palavra por palavra e **para com erro** se a frase não estiver lá. Ele separa
   dois casos: citação que não existe na fonte, e citação que só casa sem acento —
-  são defeitos diferentes. O carrossel e o Reels chamam o conferidor **antes** de
-  desenhar.
-- **Vídeo e carrossel leem o mesmo arquivo.** Mudar um texto muda nos dois; não
-  existe versão do vídeo que diga coisa diferente da imagem.
+  são defeitos diferentes. O gerador chama o conferidor **antes** de desenhar.
+- **A citação inteira não cabe no vídeo**, e o que entra na tela é o artigo. As
+  frases citadas palavra por palavra ficam no JSON, que é onde o conferidor
+  procura — e no site, ao lado de cada informação.
 - **O valor do subsídio nunca aparece sozinho.** Vigência, quem fixa o valor e o
   que ele não inclui entram na mesma peça. Valor de remuneração sem data
   envelhece calado, e este é dos que mais circulam errados.
@@ -135,6 +139,10 @@ Sem acervo não há revisão humana linha por linha, então a trava é outra:
   respondido em quatro competências com o artigo ao lado — aprovar ministro do
   STF, julgar o presidente por crime de responsabilidade, os três quintos de
   qualquer emenda e suspender lei declarada inconstitucional. Isso é conferível.
+- **`gerar_artes_senado.py` continua no repositório**, e ainda gera o carrossel
+  de 12 imagens. Ele fica porque o vídeo importa dele a paleta e o endereço, e
+  porque a versão em imagem é onde a citação inteira caberia se algum dia for
+  preciso mostrá-la.
 - **O número do subsídio não sobe num contador no vídeo.** A primeira versão
   animava o valor e colocava na tela, por dois segundos, quantias que não são o
   subsídio. Um print no meio da subida seria um salário errado publicado. O
