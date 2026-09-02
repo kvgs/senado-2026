@@ -123,6 +123,16 @@
    "publicado_em": null,
    "consultado_em": "2026-09-01",
    "_origem": "Endereco NAO declarado ao TSE. Admitido com prova de atribuicao, registrada em dados/sites-fora-do-registro.json: O dominio escreve 'feitoza' com Z e o nome de urna e 'Feitosa' com S — mas o NOME CIVIL do registro no TSE e 'Ribamar de Sousa Feitoza Junior', com Z. A pagina traz esse nome civil por extenso. Numero de urna 277, igual ao registro. Partido Democracia Crista (DC), igual ao registro. Nomeia os dois suplentes, Walter Damasceno e Raimundo Moreira, iguais aos do registro. Publica 'CNPJ Candidato: 68.373.608/0001-03' — identificacao exigida da propaganda eleitoral. O unico link de rede social e instagram.com/dr.junior_feitosa, exatamente o endereco declarado ao TSE."
+  },
+  {
+   "id_documento": "doc-site-sen-ac-2026-petecao",
+   "tipo": "site_de_candidatura",
+   "titulo": "Petecão 555 — Senador do Acre",
+   "url": "https://www.petecao.com.br/",
+   "publicado_em": null,
+   "consultado_em": "2026-09-01",
+   "_origem": "Endereço NÃO declarado ao TSE. Admitido com prova de atribuição (dados/sites-fora-do-registro.json): o rodapé traz “CNPJ: 68.357.585/0001-35 ELEICAO 2026 SERGIO DE OLIVEIRA CUNHA SENADOR” — o nome civil do registro — e a página traz “Petecão 555 — Senador do Acre”.",
+   "_limite_de_leitura": "Site feito em Wix: 794 KB de HTML e 688 caracteres de texto. O conteúdo das páginas internas é carregado por JavaScript em tempo de execução e não está no HTML nem no pacote — o coletor não o alcança."
   }
  ]
 }

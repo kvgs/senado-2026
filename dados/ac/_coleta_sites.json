@@ -501,6 +501,40 @@
       "robots": "robots.txt lido",
       "url_final": "https://drjuniorfeitoza.com.br/",
       "links_de_proposta_encontrados": []
+    },
+    {
+      "id_candidatura": "sen-ac-2026-petecao",
+      "uf": "AC",
+      "nome_urna": "Petecão",
+      "url_declarada": null,
+      "coletado_em": "2026-09-01",
+      "_fonte": "Site NAO declarado ao TSE, achado fora do registro e admitido com prova de atribuicao (dados/sites-fora-do-registro.json)",
+      "_selo": "declaracao_do_candidato",
+      "_nota_selo": "Selo roxo: prova que a candidatura publicou isto, nunca que o conteudo e verdadeiro.",
+      "paginas": [
+        {
+          "_texto_do_bundle": false,
+          "url": "https://www.petecao.com.br/",
+          "rotulo_do_link": "pagina inicial",
+          "titulo": "INÍCIO | Petecão",
+          "bytes": 804535,
+          "sha256_16": "238e62b5950ba9d4",
+          "caracteres_de_texto": 688,
+          "texto": "-->\n\n INÍCIO | Petecão \n\n top of page \n\n INÍCIO \n\n MATERIAL DE CAMPANHA \n\n BIOGRAFIA \n\n 📲 BAIXE E COMPARTILHE O MATERIAL DO PETECÃO! \n\n Conheça nosso projeto incrível \n\n ​ \n\n Já estão disponíveis os materiais oficiais da campanha do senador Sérgio Petecão. Baixe os cards, vídeos e demais conteúdos para publicar nas suas redes sociais e compartilhar com amigos e familiares.\n\n ​ \n\n Vamos juntos divulgar o trabalho de quem sempre esteve ao lado do povo acreano!\n\n ​ \n\n Baixe, publique e compartilhe! \nPetecão 555 — Senador do Acre. \n\n BAIXE AGORA \n\n Copyright 2026 | CNPJ: 68.357.585/0001-35 ELEICAO 2026 SERGIO DE OLIVEIRA CUNHA SENADOR | Todos os direitos reservados. \n\n bottom of page",
+          "caracteres_proprios": 688
+        }
+      ],
+      "url_fora_do_registro": "https://www.petecao.com.br/",
+      "prova_de_atribuicao": [
+        "O rodape traz 'CNPJ: 68.357.585/0001-35 ELEICAO 2026 SERGIO DE OLIVEIRA CUNHA SENADOR' — o nome civil e exatamente o nome_completo do registro no TSE, e o texto identifica a eleicao e o cargo.",
+        "A pagina traz 'Petecao 555 — Senador do Acre': nome de urna e numero iguais ao registro.",
+        "Fala de 'materiais oficiais da campanha do senador Sergio Petecao', ligando o apelido ao nome civil.",
+        "Copyright 2026: e material desta eleicao."
+      ],
+      "encontrado_por": "curadoria do projeto, pelo Instagram dele",
+      "robots": "robots.txt lido",
+      "url_final": "https://www.petecao.com.br/",
+      "links_de_proposta_encontrados": []
     }
   ]
 }

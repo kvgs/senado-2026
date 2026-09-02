@@ -76,6 +76,25 @@
       ],
       "_ressalva_de_leitura": "A pagina e escrita em TERCEIRA PESSOA e tem secao 'Por que votar em'. Isso nao muda a atribuicao — o CNPJ de candidato e o link para o perfil declarado sao de propaganda eleitoral —, mas muda a leitura: o selo roxo continua provando que a candidatura publicou aquilo, e nunca que e verdade. A pagina tambem faz afirmacoes SOBRE ele ('um dos unicos a chegar a disputa sem nunca ter ocupado cargo eletivo') que nao entram no acervo: nao sao proposta e nao foram conferidas.",
       "_robots": "User-agent: * / Disallow: (vazio) — coleta permitida sem restricao."
+    },
+    {
+      "id_candidatura": "sen-ac-2026-petecao",
+      "uf": "AC",
+      "url": "https://www.petecao.com.br/",
+      "encontrado_em": "2026-09-01",
+      "encontrado_por": "curadoria do projeto, pelo Instagram dele",
+      "declarou_ao_tse": [
+        "https://www.facebook.com/senadorpetecao",
+        "https://www.instagram.com/senadorpetecao/"
+      ],
+      "prova_de_atribuicao": [
+        "O rodape traz 'CNPJ: 68.357.585/0001-35 ELEICAO 2026 SERGIO DE OLIVEIRA CUNHA SENADOR' — o nome civil e exatamente o nome_completo do registro no TSE, e o texto identifica a eleicao e o cargo.",
+        "A pagina traz 'Petecao 555 — Senador do Acre': nome de urna e numero iguais ao registro.",
+        "Fala de 'materiais oficiais da campanha do senador Sergio Petecao', ligando o apelido ao nome civil.",
+        "Copyright 2026: e material desta eleicao."
+      ],
+      "_robots": "User-agent: * / Allow: / — coleta permitida. Bloqueia so PetalBot e limita AdsBot.",
+      "_ressalva": "Site feito em JavaScript: 794 KB de HTML e 642 caracteres de texto na home. O coletor do projeto tem tratamento para isso, e foi por essa razao que ele existe — ja se perderam seis propostas por ler so o HTML cru."
     }
   ]
 }
