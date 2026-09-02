@@ -2239,16 +2239,30 @@
    "citacao_literal": "",
    "texto": "Não localizamos proposta sobre infraestrutura e mobilidade urbana. Isto é uma afirmação sobre a nossa busca: as fontes abaixo foram lidas e nenhuma delas trouxe posição sobre este tema.",
    "busca_realizada_em": "2026-09-01",
-   "escopo_da_busca": "Foram lidos: o programa nacional do PSOL, lido por inteiro — rendeu 7 trechos.",
-   "revisado_por_humano": true,
+   "escopo_da_busca": "Foram lidos: o programa nacional do PSOL, lido por inteiro — rendeu 7 trechos. Não localizamos site de campanha: a curadoria procurou em 01/09/2026 e não achou nenhum. O único canal encontrado é um perfil de Instagram, @inacio.moreira, que a candidatura NÃO declarou ao TSE e que o projeto ainda não coleta.",
+   "revisado_por_humano": false,
    "_gerado_por": "registrar_ausencias.py",
    "revisao": {
-    "em": "2026-09-01",
-    "resultado": "confere",
-    "nota": "",
-    "por_quem": "kvgs"
+    "_reaberta_em": "2026-09-01",
+    "_porque_reaberta": "o escopo da busca mudou depois da aprovacao: agora diz que a curadoria procurou site e nao achou",
+    "_antes": [
+     {
+      "em": "2026-09-01",
+      "resultado": "confere",
+      "nota": "",
+      "por_quem": "kvgs"
+     }
+    ]
    },
-   "revisado_por": "kvgs"
+   "revisado_por": "kvgs",
+   "_correcoes": [
+    {
+     "campo": "escopo_da_busca",
+     "em": "2026-09-01",
+     "antes": "Foram lidos: o programa nacional do PSOL, lido por inteiro — rendeu 7 trechos.",
+     "porque": "A curadoria procurou site de campanha desta candidatura e nao achou. Isso e parte do escopo da busca e estava faltando: sem essa linha, o registro dizia so que o programa do partido foi lido, e quem lesse nao saberia se alguem tinha ido atras de material proprio. Nas outras quatro candidaturas do Acre a mesma busca ACHOU site, e por isso ela precisa aparecer tambem quando nao acha."
+    }
+   ]
   },
   {
    "id_posicao": "pos-sen-ac-2026-professor-inacio-moreira-busca-t9",
@@ -2262,16 +2276,30 @@
    "citacao_literal": "",
    "texto": "Não localizamos proposta sobre cultura e direitos humanos. Isto é uma afirmação sobre a nossa busca: as fontes abaixo foram lidas e nenhuma delas trouxe posição sobre este tema.",
    "busca_realizada_em": "2026-09-01",
-   "escopo_da_busca": "Foram lidos: o programa nacional do PSOL, lido por inteiro — rendeu 7 trechos.",
-   "revisado_por_humano": true,
+   "escopo_da_busca": "Foram lidos: o programa nacional do PSOL, lido por inteiro — rendeu 7 trechos. Não localizamos site de campanha: a curadoria procurou em 01/09/2026 e não achou nenhum. O único canal encontrado é um perfil de Instagram, @inacio.moreira, que a candidatura NÃO declarou ao TSE e que o projeto ainda não coleta.",
+   "revisado_por_humano": false,
    "_gerado_por": "registrar_ausencias.py",
    "revisao": {
-    "em": "2026-09-01",
-    "resultado": "confere",
-    "nota": "",
-    "por_quem": "kvgs"
+    "_reaberta_em": "2026-09-01",
+    "_porque_reaberta": "o escopo da busca mudou depois da aprovacao: agora diz que a curadoria procurou site e nao achou",
+    "_antes": [
+     {
+      "em": "2026-09-01",
+      "resultado": "confere",
+      "nota": "",
+      "por_quem": "kvgs"
+     }
+    ]
    },
-   "revisado_por": "kvgs"
+   "revisado_por": "kvgs",
+   "_correcoes": [
+    {
+     "campo": "escopo_da_busca",
+     "em": "2026-09-01",
+     "antes": "Foram lidos: o programa nacional do PSOL, lido por inteiro — rendeu 7 trechos.",
+     "porque": "A curadoria procurou site de campanha desta candidatura e nao achou. Isso e parte do escopo da busca e estava faltando: sem essa linha, o registro dizia so que o programa do partido foi lido, e quem lesse nao saberia se alguem tinha ido atras de material proprio. Nas outras quatro candidaturas do Acre a mesma busca ACHOU site, e por isso ela precisa aparecer tambem quando nao acha."
+    }
+   ]
   },
   {
    "id_posicao": "pos-sen-ac-2026-professor-inacio-moreira-busca-t10",
@@ -2285,16 +2313,30 @@
    "citacao_literal": "",
    "texto": "Não localizamos proposta sobre organização do estado e prioridades legislativas. Isto é uma afirmação sobre a nossa busca: as fontes abaixo foram lidas e nenhuma delas trouxe posição sobre este tema.",
    "busca_realizada_em": "2026-09-01",
-   "escopo_da_busca": "Foram lidos: o programa nacional do PSOL, lido por inteiro — rendeu 7 trechos.",
-   "revisado_por_humano": true,
+   "escopo_da_busca": "Foram lidos: o programa nacional do PSOL, lido por inteiro — rendeu 7 trechos. Não localizamos site de campanha: a curadoria procurou em 01/09/2026 e não achou nenhum. O único canal encontrado é um perfil de Instagram, @inacio.moreira, que a candidatura NÃO declarou ao TSE e que o projeto ainda não coleta.",
+   "revisado_por_humano": false,
    "_gerado_por": "registrar_ausencias.py",
    "revisao": {
-    "em": "2026-09-01",
-    "resultado": "confere",
-    "nota": "",
-    "por_quem": "kvgs"
+    "_reaberta_em": "2026-09-01",
+    "_porque_reaberta": "o escopo da busca mudou depois da aprovacao: agora diz que a curadoria procurou site e nao achou",
+    "_antes": [
+     {
+      "em": "2026-09-01",
+      "resultado": "confere",
+      "nota": "",
+      "por_quem": "kvgs"
+     }
+    ]
    },
-   "revisado_por": "kvgs"
+   "revisado_por": "kvgs",
+   "_correcoes": [
+    {
+     "campo": "escopo_da_busca",
+     "em": "2026-09-01",
+     "antes": "Foram lidos: o programa nacional do PSOL, lido por inteiro — rendeu 7 trechos.",
+     "porque": "A curadoria procurou site de campanha desta candidatura e nao achou. Isso e parte do escopo da busca e estava faltando: sem essa linha, o registro dizia so que o programa do partido foi lido, e quem lesse nao saberia se alguem tinha ido atras de material proprio. Nas outras quatro candidaturas do Acre a mesma busca ACHOU site, e por isso ela precisa aparecer tambem quando nao acha."
+    }
+   ]
   },
   {
    "id_posicao": "pos-sen-ac-2026-eduardo-velloso-busca-t2",
