@@ -1,8 +1,8 @@
 {
- "uf": "AC",
- "uf_nome": "Acre",
- "uf_por": "pelo Acre",
- "uf_assembleia": "Assembleia Legislativa do Estado do Acre",
+ "uf": "AP",
+ "uf_nome": "Amapá",
+ "uf_por": "pelo Amapá",
+ "uf_assembleia": "Assembleia Legislativa do Estado do Amapá",
  "site_url": "https://kvgs.github.io/senado-2026/",
  "temas": [
   {
@@ -48,65 +48,65 @@
  ],
  "candidaturas": [
   {
-   "id": "sen-ac-2026-mara-rocha",
-   "nome": "Mara Rocha",
-   "partido": "REPUBLICANOS",
-   "numero": "100",
-   "email": null,
-   "email_fonte": null,
-   "email_tipo": null,
-   "instagram": "@mararochaacre",
-   "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
-  },
-  {
-   "id": "sen-ac-2026-gladson-cameli",
-   "nome": "Gladson Camelí",
-   "partido": "PP",
-   "numero": "111",
-   "email": null,
-   "email_fonte": null,
-   "email_tipo": null,
-   "instagram": "@gladsoncameli",
-   "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
-  },
-  {
-   "id": "sen-ac-2026-jorge-viana",
-   "nome": "Jorge Viana",
+   "id": "sen-ap-2026-randolfe",
+   "nome": "Randolfe",
    "partido": "PT",
-   "numero": "131",
+   "numero": "130",
    "email": null,
    "email_fonte": null,
    "email_tipo": null,
-   "instagram": "@jorgevianaacre",
+   "instagram": "@randolferodrigues",
    "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
   },
   {
-   "id": "sen-ac-2026-marcio-bittar",
-   "nome": "Marcio Bittar",
-   "partido": "PL",
-   "numero": "222",
+   "id": "sen-ap-2026-acacio-favacho",
+   "nome": "Acácio Favacho",
+   "partido": "MDB",
+   "numero": "151",
    "email": null,
    "email_fonte": null,
    "email_tipo": null,
-   "instagram": "@marciobittar_",
+   "instagram": "@acacio.senador",
    "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
   },
   {
-   "id": "sen-ac-2026-dr-junior-feitosa",
-   "nome": "Dr. Junior Feitosa",
+   "id": "sen-ap-2026-rayssa-furlan",
+   "nome": "Rayssa Furlan",
+   "partido": "PODE",
+   "numero": "200",
+   "email": null,
+   "email_fonte": null,
+   "email_tipo": null,
+   "instagram": "@drarayssafurlan",
+   "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
+  },
+  {
+   "id": "sen-ap-2026-professor-uzian-pinto",
+   "nome": "Professor Uzian Pinto",
+   "partido": "DC",
+   "numero": "272",
+   "email": null,
+   "email_fonte": null,
+   "email_tipo": null,
+   "instagram": "@uzianpinto",
+   "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
+  },
+  {
+   "id": "sen-ap-2026-juiza-jo",
+   "nome": "Juíza Jô",
    "partido": "DC",
    "numero": "277",
    "email": null,
    "email_fonte": null,
    "email_tipo": null,
-   "instagram": "@dr.junior_feitosa",
+   "instagram": "@dra.joamapa",
    "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
   },
   {
-   "id": "sen-ac-2026-professor-inacio-moreira",
-   "nome": "Professor Inacio Moreira",
-   "partido": "PSOL",
-   "numero": "500",
+   "id": "sen-ap-2026-helio-silva",
+   "nome": "Helio Silva",
+   "partido": "PCO",
+   "numero": "290",
    "email": null,
    "email_fonte": null,
    "email_tipo": null,
@@ -114,26 +114,37 @@
    "instagram_fonte": null
   },
   {
-   "id": "sen-ac-2026-petecao",
-   "nome": "Petecão",
+   "id": "sen-ap-2026-capi",
+   "nome": "Capi",
+   "partido": "PSB",
+   "numero": "401",
+   "email": null,
+   "email_fonte": null,
+   "email_tipo": null,
+   "instagram": "@capi401senador",
+   "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
+  },
+  {
+   "id": "sen-ap-2026-alliny-serrao",
+   "nome": "Alliny Serrão",
+   "partido": "UNIÃO",
+   "numero": "444",
+   "email": null,
+   "email_fonte": null,
+   "email_tipo": null,
+   "instagram": "@allinyserrao",
+   "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
+  },
+  {
+   "id": "sen-ap-2026-lucas-barreto",
+   "nome": "Lucas Barreto",
    "partido": "PSD",
    "numero": "555",
    "email": null,
    "email_fonte": null,
    "email_tipo": null,
-   "instagram": "@senadorpetecao",
+   "instagram": "@lucasbarreto_ap",
    "instagram_fonte": "TSE — Redes sociais de candidatos 2026 (autodeclarado no registro)"
-  },
-  {
-   "id": "sen-ac-2026-eduardo-velloso",
-   "nome": "Eduardo Velloso",
-   "partido": "SOLIDARIEDADE",
-   "numero": "777",
-   "email": null,
-   "email_fonte": null,
-   "email_tipo": null,
-   "instagram": null,
-   "instagram_fonte": null
   }
  ]
 }

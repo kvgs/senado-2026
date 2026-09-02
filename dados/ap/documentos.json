@@ -82,6 +82,15 @@
    "consultado_em": "2026-08-28",
    "_ambito": "nacional",
    "_nota": "Pagina 'Conheca o Podemos > Manifesto de Fundacao' do site oficial, consultada em 28/ago/2026. O site nao tem pagina de programa partidario: /programa/ e /programa-partidario/ devolvem 404. O manifesto e apresentado como texto vivo, para ser assinado por quem se identifica com ele ('Assine o manifesto'), e traz paragrafos recentes — cita TEA, TDAH e doencas raras. E escrito em primeira pessoa, em forma de desejo ('Quero um pais onde...'), e nao lista medidas: os trechos entram como o que sao. O manifesto nao trata de seguranca publica, economia, habitacao, mobilidade urbana, meio ambiente nem tecnologia; essas ausencias ficam como ausencias."
+  },
+  {
+   "id_documento": "doc-site-sen-ap-2026-randolfe",
+   "tipo": "site_de_candidatura",
+   "titulo": "Randolfe 130 — Site Oficial",
+   "url": "https://randolferodrigues.com.br/",
+   "publicado_em": null,
+   "consultado_em": "2026-09-02",
+   "_origem": "Endereco NAO declarado ao TSE. Admitido com prova de atribuicao, registrada em dados/sites-fora-do-registro.json: A pagina se identifica como 'Randolfe 130 | Site Oficial' — nome de urna e numero iguais ao registro no TSE. Traz o nome civil 'RANDOLPH ... RODRIGUES ALVES', igual ao nome_completo do registro ('Randolph Frederich Rodrigues Alves'). Publica o CNPJ 68.545.878/0001-46. Aponta para instagram.com/randolferodrigues, um dos quatro enderecos que a candidatura declarou ao TSE. Menciona 2026 e o cargo."
   }
  ]
 }

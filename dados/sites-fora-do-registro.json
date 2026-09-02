@@ -95,6 +95,28 @@
       ],
       "_robots": "User-agent: * / Allow: / — coleta permitida. Bloqueia so PetalBot e limita AdsBot.",
       "_ressalva": "Site feito em JavaScript: 794 KB de HTML e 642 caracteres de texto na home. O coletor do projeto tem tratamento para isso, e foi por essa razao que ele existe — ja se perderam seis propostas por ler so o HTML cru."
+    },
+    {
+      "id_candidatura": "sen-ap-2026-randolfe",
+      "uf": "AP",
+      "url": "https://randolferodrigues.com.br/",
+      "encontrado_em": "2026-09-02",
+      "encontrado_por": "curadoria do projeto, pelo Instagram dele",
+      "declarou_ao_tse": [
+        "https://www.facebook.com/randolferodrigues",
+        "https://www.instagram.com/randolferodrigues",
+        "https://www.tiktok.com/@randolfe.rodrigues",
+        "https://x.com/randolfeap"
+      ],
+      "prova_de_atribuicao": [
+        "A pagina se identifica como 'Randolfe 130 | Site Oficial' — nome de urna e numero iguais ao registro no TSE.",
+        "Traz o nome civil 'RANDOLPH ... RODRIGUES ALVES', igual ao nome_completo do registro ('Randolph Frederich Rodrigues Alves').",
+        "Publica o CNPJ 68.545.878/0001-46.",
+        "Aponta para instagram.com/randolferodrigues, um dos quatro enderecos que a candidatura declarou ao TSE.",
+        "Menciona 2026 e o cargo."
+      ],
+      "_endereco_divulgado_que_nao_existe": "A curadoria chegou por um link divulgado no perfil dele: https://contraataque.randolferodrigues.com.br/. Esse subdominio NAO EXISTE no DNS — getaddrinfo falha, e nao e 404 nem servidor fora do ar. Ou o endereco foi retirado, ou o link no perfil esta errado. Fica registrado porque 'o link do perfil nao abre' e 'o site nao existe' sao coisas diferentes, e a segunda seria falsa: o dominio principal responde.",
+      "_robots": "User-agent: * / Disallow: /wp-admin/ — coleta permitida."
     }
   ]
 }

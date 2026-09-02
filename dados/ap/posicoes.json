@@ -2211,6 +2211,79 @@
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
    "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-ap-2026-randolfe-site-001",
+   "id_tema": "t4",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-ap-2026-randolfe",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-ap-2026-randolfe",
+   "citacao_literal": "Ao longo de sua atuação parlamentar, algumas pautas se tornaram centrais em seu mandato: a luta pelo fim da escala 6x1 e por melhores condições de trabalho; a defesa da transposição dos servidores do Amapá para o quadro da União; e a busca por novas oportunidades de desenvolvimento para o estado, incluindo a pesquisa e exploração responsável de petróleo na Margem Equatorial.",
+   "texto": "Defende o fim da escala 6x1 e melhores condições de trabalho.",
+   "url_especifica": "https://randolferodrigues.com.br/",
+   "data_referencia": "2026-09-02",
+   "revisado_por_humano": true,
+   "conferido_por_ia": {
+    "data": "2026-09-02",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site da candidatura (endereco nao declarado ao TSE, atribuicao provada) em 2026-09-02",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-09-02",
+   "revisao": {
+    "em": "2026-09-02",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
+  },
+  {
+   "id_posicao": "pos-sen-ap-2026-randolfe-site-002",
+   "id_tema": "t10",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-ap-2026-randolfe",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-ap-2026-randolfe",
+   "citacao_literal": "Ao longo de sua atuação parlamentar, algumas pautas se tornaram centrais em seu mandato: a luta pelo fim da escala 6x1 e por melhores condições de trabalho; a defesa da transposição dos servidores do Amapá para o quadro da União; e a busca por novas oportunidades de desenvolvimento para o estado, incluindo a pesquisa e exploração responsável de petróleo na Margem Equatorial.",
+   "texto": "Defende a transposição dos servidores do Amapá para o quadro da União.",
+   "url_especifica": "https://randolferodrigues.com.br/",
+   "data_referencia": "2026-09-02",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-09-02",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site da candidatura (endereco nao declarado ao TSE, atribuicao provada) em 2026-09-02",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-09-02"
+  },
+  {
+   "id_posicao": "pos-sen-ap-2026-randolfe-site-003",
+   "id_tema": "t6",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-ap-2026-randolfe",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-ap-2026-randolfe",
+   "citacao_literal": "Ao longo de sua atuação parlamentar, algumas pautas se tornaram centrais em seu mandato: a luta pelo fim da escala 6x1 e por melhores condições de trabalho; a defesa da transposição dos servidores do Amapá para o quadro da União; e a busca por novas oportunidades de desenvolvimento para o estado, incluindo a pesquisa e exploração responsável de petróleo na Margem Equatorial.",
+   "texto": "Defende a pesquisa e a exploração de petróleo na Margem Equatorial, descrita no site como responsável.",
+   "url_especifica": "https://randolferodrigues.com.br/",
+   "data_referencia": "2026-09-02",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-09-02",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site da candidatura (endereco nao declarado ao TSE, atribuicao provada) em 2026-09-02",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-09-02"
   }
  ]
 }
