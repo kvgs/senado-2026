@@ -33,7 +33,8 @@ from gerar_reels_uf import (ALT, LARG, MARGEM, SEGURO_BASE, entra, janela,
                             quebra)
 
 RAIZ = pathlib.Path(__file__).resolve().parent
-SAIDA = RAIZ / "artes-instagram" / "10-o-cargo-em-disputa-reels"
+SAIDA = RAIZ / "artes-instagram" / "reels"
+NOME = "o-cargo"
 CINZA_NO_ESCURO = "#C9C1B9"
 
 
@@ -224,7 +225,7 @@ que pesa" está em quatro competências com artigo ao lado.
 """
     linhas = "\n".join(f"{k + 1}. {nome} — {seg:.1f}s"
                        for k, (_, seg, nome) in enumerate(cenas))
-    (SAIDA / "LEGENDA.md").write_text(corpo + linhas + "\n", encoding="utf-8")
+    (SAIDA / f"{NOME}.md").write_text(corpo + linhas + "\n", encoding="utf-8")
 
 
 def main() -> None:
@@ -248,8 +249,8 @@ def main() -> None:
           f"({int(total * a.fps)} quadros de {LARG}x{ALT})")
 
     if a.so_quadros:
-        conf = SAIDA / "_quadros"
-        conf.mkdir(exist_ok=True)
+        conf = SAIDA / "_quadros" / NOME
+        conf.mkdir(parents=True, exist_ok=True)
         for k, (fn, seg, nome) in enumerate(cenas):
             for frac in (0.45, 0.99):
                 fn(seg * frac, seg).convert("RGB").save(
@@ -257,7 +258,7 @@ def main() -> None:
         print(f"  amostra em {conf.name}/")
         return
 
-    saida = SAIDA / "reels-o-cargo.mp4"
+    saida = SAIDA / f"{NOME}.mp4"
     cmd = ["ffmpeg", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24",
            "-s", f"{LARG}x{ALT}", "-framerate", str(a.fps), "-i", "-",
            "-c:v", "libx264", "-preset", "slow", "-crf", "20",

@@ -16,15 +16,18 @@ poste na ordem em que o explorador de arquivos mostra.
 | `5-sul-quem-sao/` | 5 | `gerar_artes_regiao.py --regiao Sul` |
 | `6-<uf>-<numero>-<nome>/` | 12 | `gerar_artes_candidatura.py --uf AC --todos` |
 | `7-<uf>-analise/` | 6 | `gerar_artes_analise_uf.py --uf AC` |
-| `8-<uf>-reels/` | 1 vídeo | `gerar_reels_uf.py --uf AC` |
 | `9-o-cargo-em-disputa/` | 12 | `gerar_artes_senado.py` |
-| `10-o-cargo-em-disputa-reels/` | 1 vídeo | `gerar_reels_senado.py` |
+| `reels/ac.mp4` | vídeo | `gerar_reels_uf.py --uf AC` |
+| `reels/o-cargo.mp4` | vídeo | `gerar_reels_senado.py` |
 | `perfil-da-conta/` | — | `gerar_avatar.py` |
 
 O número da **pasta** é a ordem em que os carrosséis foram feitos, e não uma
-afirmação sobre o que já foi publicado. Renumere se postar fora de ordem.
+afirmação sobre o que já foi publicado. Renumere se postar fora de ordem. Faltam
+o 8 e o 10 porque eram os dois Reels, que hoje moram juntos em `reels/`.
 
-Cada pasta tem um `LEGENDA.md` com o texto do post.
+Cada pasta de carrossel tem um `LEGENDA.md` com o texto do post. **Os vídeos
+ficam todos em `reels/`**, um arquivo por vídeo, com a legenda ao lado no `.md`
+de mesmo nome — uma pasta por vídeo daria 27 pastas para guardar 27 arquivos.
 
 O carrossel por região sai para as cinco regiões com o mesmo comando, trocando
 `--regiao`: Norte, Nordeste, Centro-Oeste, Sudeste, Sul. O `LEGENDA.md` também é
@@ -74,11 +77,14 @@ A série `7-` é a única com **gráficos**, e por isso tem duas travas própria
 As cores foram medidas em contraste, não escolhidas no olho, e o `LEGENDA.md` da
 pasta registra o que foi descartado e por quê.
 
-## O Reels
+## Os Reels
 
-A série `8-` é a única que não é imagem: um MP4 vertical de 1080×1920, cinco cenas,
-27 segundos. Os quadros são desenhados com o mesmo Pillow, a mesma tipografia e a
-mesma paleta das artes estáticas; o ffmpeg só junta.
+`reels/` guarda todos os vídeos: MP4 vertical de 1080×1920, `<nome>.mp4` com a
+legenda em `<nome>.md`. Os quadros são desenhados com o mesmo Pillow, a mesma
+tipografia e a mesma paleta das artes estáticas; o ffmpeg só junta.
+
+Hoje são dois: `ac.mp4`, sobre o que o acervo do Acre mostra, e `o-cargo.mp4`,
+que é o carrossel `9-` em vídeo. As regras abaixo valem para os dois.
 
 - **Não tem áudio, e isso é deliberado.** Reels toca sem som por padrão e este
   projeto não licencia trilha. A música entra no próprio Instagram, onde ela é
@@ -93,20 +99,21 @@ mesma paleta das artes estáticas; o ffmpeg só junta.
   ficava num alpha diferente — no telefone lia como degradê cinza com a última
   linha apagada. A regra em segundos: texto de Reels tem de estar legível em menos
   de 1s.
-- **As frases são contas.** "Menos de duas", "seis tinham", "dois temas" saem do
-  acervo na geração, com a concordância resolvida. Onde a redação não cabe no dado
+- **As frases são contas** (no vídeo do estado). "Menos de duas", "seis tinham",
+  "dois temas" saem do acervo na geração, com a concordância resolvida. Onde a redação não cabe no dado
   o script para com erro, em vez de publicar a frase de outro estado.
 - **O roteiro muda com o acervo.** A cena dos sites achados só existe onde houve
   site achado; a dos temas em zero, só onde há tema em zero.
 - **A trava do estado 100% revisado vale aqui e é mais forte** que na série `7-`:
-  número animado tem ainda mais cara de fato do que número impresso.
+  número animado tem ainda mais cara de fato do que número impresso. O vídeo do
+  cargo não sai do acervo e tem a trava própria dele, descrita na seção abaixo.
 
-`--so-quadros` escreve uma amostra de PNG em `_quadros/` (fora do Git) para
-conferir a arte sem esperar o encode.
+`--so-quadros` escreve uma amostra de PNG em `reels/_quadros/<nome>/` (fora do
+Git) para conferir a arte sem esperar o encode.
 
 ## O cargo, e não as candidaturas
 
-As séries `9-` e `10-` são as únicas que **não saem do acervo**. Elas explicam o
+O carrossel `9-` e o vídeo `reels/o-cargo.mp4` são as únicas peças que **não saem do acervo**. Elas explicam o
 cargo em disputa — quanto paga, o que faz, quantos votos tem este ano, por que
 pesa — e saem da Constituição e do demonstrativo de remuneração do próprio
 Senado, guardados em `fontes/`.

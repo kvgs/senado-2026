@@ -442,7 +442,7 @@ não mostra o selo "não revisado" que cada linha carrega no site.
 """
     linhas = "\n".join(f"{k + 1}. `{fn.__name__}` — {seg:.1f}s"
                        for k, (fn, seg) in enumerate(cenas))
-    (saida / "LEGENDA.md").write_text(corpo + linhas + "\n", encoding="utf-8")
+    (saida).write_text(corpo + linhas + "\n", encoding="utf-8")
 
 
 def cenas_para(d: dict) -> list[tuple]:
@@ -484,30 +484,34 @@ def main() -> None:
     d = medir(uf)                        # a trava de estado revisado esta aqui
     d["prep"] = acervo.por_extenso(uf)
 
-    pasta = SAIDA / f"8-{uf.lower()}-reels"
+    # UMA PASTA PARA TODOS OS VIDEOS. Antes era uma pasta por Reels, e
+    # cada uma guardava um arquivo: 27 estados dariam 27 pastas no
+    # explorador para 27 arquivos. Aqui o nome do arquivo e que separa.
+    pasta = SAIDA / "reels"
     pasta.mkdir(parents=True, exist_ok=True)
+    nome = uf.lower()
     cenas = cenas_para(d)
     total = sum(dur for _, dur in cenas)
     print(f"{uf}: {len(cenas)} cenas, {total:.0f}s, {a.fps} qps "
           f"({int(total * a.fps)} quadros de {LARG}x{ALT})")
 
-    escreve_legenda(d, cenas, pasta, total)
+    escreve_legenda(d, cenas, pasta / f"{nome}.md", total)
 
     if a.so_quadros:
         # Amostra vai para uma subpasta propria, e nao para o lado do MP4: nas
         # pastas de arte o numero do arquivo e a ordem do slide, e dez PNG de
         # conferencia ali dentro leem como se fossem o post.
-        conf = pasta / "_quadros"
-        conf.mkdir(exist_ok=True)
+        conf = pasta / "_quadros" / nome
+        conf.mkdir(parents=True, exist_ok=True)
         for fn, dur in cenas:
             for frac in (0.35, 0.99):
                 img = fn(dur * frac, dur, d, cor)
-                nome = f"{fn.__name__}-{int(frac*100)}.png"
-                img.convert("RGB").save(conf / nome)
-                print(f"  _quadros/{nome}")
+                arq = f"{fn.__name__}-{int(frac*100)}.png"
+                img.convert("RGB").save(conf / arq)
+                print(f"  _quadros/{uf.lower()}/{arq}")
         return
 
-    saida = pasta / f"reels-{uf.lower()}.mp4"
+    saida = pasta / f"{nome}.mp4"
     cmd = ["ffmpeg", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24",
            "-s", f"{LARG}x{ALT}", "-framerate", str(a.fps), "-i", "-",
            "-c:v", "libx264", "-preset", "slow", "-crf", "20",
