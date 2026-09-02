@@ -2240,17 +2240,23 @@
    "texto": "Não localizamos proposta sobre infraestrutura e mobilidade urbana. Isto é uma afirmação sobre a nossa busca: as fontes abaixo foram lidas e nenhuma delas trouxe posição sobre este tema.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foram lidos: o programa nacional do PSOL, lido por inteiro — rendeu 7 trechos. Não localizamos site de campanha: a curadoria procurou em 01/09/2026 e não achou nenhum. O único canal encontrado é um perfil de Instagram, @inacio.moreira, que a candidatura NÃO declarou ao TSE e que o projeto ainda não coleta.",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "_gerado_por": "registrar_ausencias.py",
    "revisao": {
-    "_reaberta_em": "2026-09-01",
-    "_porque_reaberta": "o escopo da busca mudou depois da aprovacao: agora diz que a curadoria procurou site e nao achou",
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
     "_antes": [
      {
       "em": "2026-09-01",
       "resultado": "confere",
       "nota": "",
       "por_quem": "kvgs"
+     },
+     {
+      "_reaberta_em": "2026-09-01",
+      "_porque_reaberta": "o escopo da busca mudou depois da aprovacao: agora diz que a curadoria procurou site e nao achou"
      }
     ]
    },
@@ -2277,17 +2283,23 @@
    "texto": "Não localizamos proposta sobre cultura e direitos humanos. Isto é uma afirmação sobre a nossa busca: as fontes abaixo foram lidas e nenhuma delas trouxe posição sobre este tema.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foram lidos: o programa nacional do PSOL, lido por inteiro — rendeu 7 trechos. Não localizamos site de campanha: a curadoria procurou em 01/09/2026 e não achou nenhum. O único canal encontrado é um perfil de Instagram, @inacio.moreira, que a candidatura NÃO declarou ao TSE e que o projeto ainda não coleta.",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "_gerado_por": "registrar_ausencias.py",
    "revisao": {
-    "_reaberta_em": "2026-09-01",
-    "_porque_reaberta": "o escopo da busca mudou depois da aprovacao: agora diz que a curadoria procurou site e nao achou",
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
     "_antes": [
      {
       "em": "2026-09-01",
       "resultado": "confere",
       "nota": "",
       "por_quem": "kvgs"
+     },
+     {
+      "_reaberta_em": "2026-09-01",
+      "_porque_reaberta": "o escopo da busca mudou depois da aprovacao: agora diz que a curadoria procurou site e nao achou"
      }
     ]
    },
@@ -2314,17 +2326,23 @@
    "texto": "Não localizamos proposta sobre organização do estado e prioridades legislativas. Isto é uma afirmação sobre a nossa busca: as fontes abaixo foram lidas e nenhuma delas trouxe posição sobre este tema.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foram lidos: o programa nacional do PSOL, lido por inteiro — rendeu 7 trechos. Não localizamos site de campanha: a curadoria procurou em 01/09/2026 e não achou nenhum. O único canal encontrado é um perfil de Instagram, @inacio.moreira, que a candidatura NÃO declarou ao TSE e que o projeto ainda não coleta.",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "_gerado_por": "registrar_ausencias.py",
    "revisao": {
-    "_reaberta_em": "2026-09-01",
-    "_porque_reaberta": "o escopo da busca mudou depois da aprovacao: agora diz que a curadoria procurou site e nao achou",
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
     "_antes": [
      {
       "em": "2026-09-01",
       "resultado": "confere",
       "nota": "",
       "por_quem": "kvgs"
+     },
+     {
+      "_reaberta_em": "2026-09-01",
+      "_porque_reaberta": "o escopo da busca mudou depois da aprovacao: agora diz que a curadoria procurou site e nao achou"
      }
     ]
    },
@@ -3181,8 +3199,15 @@
    "texto": "Não localizamos proposta sobre segurança pública. Isto é uma afirmação sobre a nossa busca, e ela tem um limite conhecido: parte do site não pôde ser lida.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foi lido o site da candidatura (petecao.com.br), localizado pela curadoria em 01/09/2026 — a candidatura não o declarou ao TSE. A página inicial tem 688 caracteres e é uma página de download de material de campanha, sem proposta. As páginas “BIOGRAFIA” e “RECURSOS MUNICÍPIOS” existem e respondem, mas o conteúdo delas só aparece com JavaScript, que o coletor do projeto não executa — então elas NÃO foram lidas. O programa do PSD não entrou no acervo: o que o partido publica como programa é o Manifesto à Nação de 2011, apresentado por ele próprio como documento histórico. Também não foram lidos os canais declarados ao TSE, o Instagram @senadorpetecao e o Facebook /senadorpetecao: o projeto ainda não coleta rede social.",
-   "revisado_por_humano": false,
-   "_gerado_por": "a mao, porque o escopo desta candidatura tem um limite que o registrar_ausencias.py nao sabe descrever"
+   "revisado_por_humano": true,
+   "_gerado_por": "a mao, porque o escopo desta candidatura tem um limite que o registrar_ausencias.py nao sabe descrever",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-petecao-busca-t2",
@@ -3197,8 +3222,15 @@
    "texto": "Não localizamos proposta sobre educação. Isto é uma afirmação sobre a nossa busca, e ela tem um limite conhecido: parte do site não pôde ser lida.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foi lido o site da candidatura (petecao.com.br), localizado pela curadoria em 01/09/2026 — a candidatura não o declarou ao TSE. A página inicial tem 688 caracteres e é uma página de download de material de campanha, sem proposta. As páginas “BIOGRAFIA” e “RECURSOS MUNICÍPIOS” existem e respondem, mas o conteúdo delas só aparece com JavaScript, que o coletor do projeto não executa — então elas NÃO foram lidas. O programa do PSD não entrou no acervo: o que o partido publica como programa é o Manifesto à Nação de 2011, apresentado por ele próprio como documento histórico. Também não foram lidos os canais declarados ao TSE, o Instagram @senadorpetecao e o Facebook /senadorpetecao: o projeto ainda não coleta rede social.",
-   "revisado_por_humano": false,
-   "_gerado_por": "a mao, porque o escopo desta candidatura tem um limite que o registrar_ausencias.py nao sabe descrever"
+   "revisado_por_humano": true,
+   "_gerado_por": "a mao, porque o escopo desta candidatura tem um limite que o registrar_ausencias.py nao sabe descrever",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-petecao-busca-t3",
@@ -3213,8 +3245,15 @@
    "texto": "Não localizamos proposta sobre saúde. Isto é uma afirmação sobre a nossa busca, e ela tem um limite conhecido: parte do site não pôde ser lida.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foi lido o site da candidatura (petecao.com.br), localizado pela curadoria em 01/09/2026 — a candidatura não o declarou ao TSE. A página inicial tem 688 caracteres e é uma página de download de material de campanha, sem proposta. As páginas “BIOGRAFIA” e “RECURSOS MUNICÍPIOS” existem e respondem, mas o conteúdo delas só aparece com JavaScript, que o coletor do projeto não executa — então elas NÃO foram lidas. O programa do PSD não entrou no acervo: o que o partido publica como programa é o Manifesto à Nação de 2011, apresentado por ele próprio como documento histórico. Também não foram lidos os canais declarados ao TSE, o Instagram @senadorpetecao e o Facebook /senadorpetecao: o projeto ainda não coleta rede social.",
-   "revisado_por_humano": false,
-   "_gerado_por": "a mao, porque o escopo desta candidatura tem um limite que o registrar_ausencias.py nao sabe descrever"
+   "revisado_por_humano": true,
+   "_gerado_por": "a mao, porque o escopo desta candidatura tem um limite que o registrar_ausencias.py nao sabe descrever",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-petecao-busca-t4",
@@ -3229,8 +3268,15 @@
    "texto": "Não localizamos proposta sobre economia e emprego. Isto é uma afirmação sobre a nossa busca, e ela tem um limite conhecido: parte do site não pôde ser lida.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foi lido o site da candidatura (petecao.com.br), localizado pela curadoria em 01/09/2026 — a candidatura não o declarou ao TSE. A página inicial tem 688 caracteres e é uma página de download de material de campanha, sem proposta. As páginas “BIOGRAFIA” e “RECURSOS MUNICÍPIOS” existem e respondem, mas o conteúdo delas só aparece com JavaScript, que o coletor do projeto não executa — então elas NÃO foram lidas. O programa do PSD não entrou no acervo: o que o partido publica como programa é o Manifesto à Nação de 2011, apresentado por ele próprio como documento histórico. Também não foram lidos os canais declarados ao TSE, o Instagram @senadorpetecao e o Facebook /senadorpetecao: o projeto ainda não coleta rede social.",
-   "revisado_por_humano": false,
-   "_gerado_por": "a mao, porque o escopo desta candidatura tem um limite que o registrar_ausencias.py nao sabe descrever"
+   "revisado_por_humano": true,
+   "_gerado_por": "a mao, porque o escopo desta candidatura tem um limite que o registrar_ausencias.py nao sabe descrever",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-petecao-busca-t5",
@@ -3245,8 +3291,15 @@
    "texto": "Não localizamos proposta sobre infraestrutura e mobilidade urbana. Isto é uma afirmação sobre a nossa busca, e ela tem um limite conhecido: parte do site não pôde ser lida.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foi lido o site da candidatura (petecao.com.br), localizado pela curadoria em 01/09/2026 — a candidatura não o declarou ao TSE. A página inicial tem 688 caracteres e é uma página de download de material de campanha, sem proposta. As páginas “BIOGRAFIA” e “RECURSOS MUNICÍPIOS” existem e respondem, mas o conteúdo delas só aparece com JavaScript, que o coletor do projeto não executa — então elas NÃO foram lidas. O programa do PSD não entrou no acervo: o que o partido publica como programa é o Manifesto à Nação de 2011, apresentado por ele próprio como documento histórico. Também não foram lidos os canais declarados ao TSE, o Instagram @senadorpetecao e o Facebook /senadorpetecao: o projeto ainda não coleta rede social.",
-   "revisado_por_humano": false,
-   "_gerado_por": "a mao, porque o escopo desta candidatura tem um limite que o registrar_ausencias.py nao sabe descrever"
+   "revisado_por_humano": true,
+   "_gerado_por": "a mao, porque o escopo desta candidatura tem um limite que o registrar_ausencias.py nao sabe descrever",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-petecao-busca-t6",
@@ -3261,8 +3314,15 @@
    "texto": "Não localizamos proposta sobre meio ambiente e mudança climática. Isto é uma afirmação sobre a nossa busca, e ela tem um limite conhecido: parte do site não pôde ser lida.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foi lido o site da candidatura (petecao.com.br), localizado pela curadoria em 01/09/2026 — a candidatura não o declarou ao TSE. A página inicial tem 688 caracteres e é uma página de download de material de campanha, sem proposta. As páginas “BIOGRAFIA” e “RECURSOS MUNICÍPIOS” existem e respondem, mas o conteúdo delas só aparece com JavaScript, que o coletor do projeto não executa — então elas NÃO foram lidas. O programa do PSD não entrou no acervo: o que o partido publica como programa é o Manifesto à Nação de 2011, apresentado por ele próprio como documento histórico. Também não foram lidos os canais declarados ao TSE, o Instagram @senadorpetecao e o Facebook /senadorpetecao: o projeto ainda não coleta rede social.",
-   "revisado_por_humano": false,
-   "_gerado_por": "a mao, porque o escopo desta candidatura tem um limite que o registrar_ausencias.py nao sabe descrever"
+   "revisado_por_humano": true,
+   "_gerado_por": "a mao, porque o escopo desta candidatura tem um limite que o registrar_ausencias.py nao sabe descrever",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-petecao-busca-t7",
@@ -3277,8 +3337,15 @@
    "texto": "Não localizamos proposta sobre habitação. Isto é uma afirmação sobre a nossa busca, e ela tem um limite conhecido: parte do site não pôde ser lida.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foi lido o site da candidatura (petecao.com.br), localizado pela curadoria em 01/09/2026 — a candidatura não o declarou ao TSE. A página inicial tem 688 caracteres e é uma página de download de material de campanha, sem proposta. As páginas “BIOGRAFIA” e “RECURSOS MUNICÍPIOS” existem e respondem, mas o conteúdo delas só aparece com JavaScript, que o coletor do projeto não executa — então elas NÃO foram lidas. O programa do PSD não entrou no acervo: o que o partido publica como programa é o Manifesto à Nação de 2011, apresentado por ele próprio como documento histórico. Também não foram lidos os canais declarados ao TSE, o Instagram @senadorpetecao e o Facebook /senadorpetecao: o projeto ainda não coleta rede social.",
-   "revisado_por_humano": false,
-   "_gerado_por": "a mao, porque o escopo desta candidatura tem um limite que o registrar_ausencias.py nao sabe descrever"
+   "revisado_por_humano": true,
+   "_gerado_por": "a mao, porque o escopo desta candidatura tem um limite que o registrar_ausencias.py nao sabe descrever",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-petecao-busca-t8",
@@ -3293,8 +3360,15 @@
    "texto": "Não localizamos proposta sobre tecnologia e inteligência artificial. Isto é uma afirmação sobre a nossa busca, e ela tem um limite conhecido: parte do site não pôde ser lida.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foi lido o site da candidatura (petecao.com.br), localizado pela curadoria em 01/09/2026 — a candidatura não o declarou ao TSE. A página inicial tem 688 caracteres e é uma página de download de material de campanha, sem proposta. As páginas “BIOGRAFIA” e “RECURSOS MUNICÍPIOS” existem e respondem, mas o conteúdo delas só aparece com JavaScript, que o coletor do projeto não executa — então elas NÃO foram lidas. O programa do PSD não entrou no acervo: o que o partido publica como programa é o Manifesto à Nação de 2011, apresentado por ele próprio como documento histórico. Também não foram lidos os canais declarados ao TSE, o Instagram @senadorpetecao e o Facebook /senadorpetecao: o projeto ainda não coleta rede social.",
-   "revisado_por_humano": false,
-   "_gerado_por": "a mao, porque o escopo desta candidatura tem um limite que o registrar_ausencias.py nao sabe descrever"
+   "revisado_por_humano": true,
+   "_gerado_por": "a mao, porque o escopo desta candidatura tem um limite que o registrar_ausencias.py nao sabe descrever",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-petecao-busca-t9",
@@ -3309,8 +3383,15 @@
    "texto": "Não localizamos proposta sobre cultura e direitos humanos. Isto é uma afirmação sobre a nossa busca, e ela tem um limite conhecido: parte do site não pôde ser lida.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foi lido o site da candidatura (petecao.com.br), localizado pela curadoria em 01/09/2026 — a candidatura não o declarou ao TSE. A página inicial tem 688 caracteres e é uma página de download de material de campanha, sem proposta. As páginas “BIOGRAFIA” e “RECURSOS MUNICÍPIOS” existem e respondem, mas o conteúdo delas só aparece com JavaScript, que o coletor do projeto não executa — então elas NÃO foram lidas. O programa do PSD não entrou no acervo: o que o partido publica como programa é o Manifesto à Nação de 2011, apresentado por ele próprio como documento histórico. Também não foram lidos os canais declarados ao TSE, o Instagram @senadorpetecao e o Facebook /senadorpetecao: o projeto ainda não coleta rede social.",
-   "revisado_por_humano": false,
-   "_gerado_por": "a mao, porque o escopo desta candidatura tem um limite que o registrar_ausencias.py nao sabe descrever"
+   "revisado_por_humano": true,
+   "_gerado_por": "a mao, porque o escopo desta candidatura tem um limite que o registrar_ausencias.py nao sabe descrever",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ac-2026-petecao-busca-t10",
@@ -3325,8 +3406,15 @@
    "texto": "Não localizamos proposta sobre organização do estado e prioridades legislativas. Isto é uma afirmação sobre a nossa busca, e ela tem um limite conhecido: parte do site não pôde ser lida.",
    "busca_realizada_em": "2026-09-01",
    "escopo_da_busca": "Foi lido o site da candidatura (petecao.com.br), localizado pela curadoria em 01/09/2026 — a candidatura não o declarou ao TSE. A página inicial tem 688 caracteres e é uma página de download de material de campanha, sem proposta. As páginas “BIOGRAFIA” e “RECURSOS MUNICÍPIOS” existem e respondem, mas o conteúdo delas só aparece com JavaScript, que o coletor do projeto não executa — então elas NÃO foram lidas. O programa do PSD não entrou no acervo: o que o partido publica como programa é o Manifesto à Nação de 2011, apresentado por ele próprio como documento histórico. Também não foram lidos os canais declarados ao TSE, o Instagram @senadorpetecao e o Facebook /senadorpetecao: o projeto ainda não coleta rede social.",
-   "revisado_por_humano": false,
-   "_gerado_por": "a mao, porque o escopo desta candidatura tem um limite que o registrar_ausencias.py nao sabe descrever"
+   "revisado_por_humano": true,
+   "_gerado_por": "a mao, porque o escopo desta candidatura tem um limite que o registrar_ausencias.py nao sabe descrever",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   }
  ]
 }
