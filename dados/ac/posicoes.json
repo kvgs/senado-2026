@@ -2228,29 +2228,6 @@
    "revisado_por": "kvgs"
   },
   {
-   "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-busca-t8",
-   "id_candidatura_contexto": "sen-ac-2026-dr-junior-feitosa",
-   "id_tema": "t8",
-   "atribuido_a_tipo": "candidatura",
-   "atribuido_a_id": "sen-ac-2026-dr-junior-feitosa",
-   "estado_cobertura": "D",
-   "natureza": "ausencia",
-   "nivel_fonte": null,
-   "citacao_literal": "",
-   "texto": "Não localizamos proposta sobre tecnologia e inteligência artificial. Isto é uma afirmação sobre a nossa busca: as fontes abaixo foram lidas e nenhuma delas trouxe posição sobre este tema.",
-   "busca_realizada_em": "2026-09-01",
-   "escopo_da_busca": "Foram lidos: o programa nacional do DC, lido por inteiro — rendeu 16 trechos. NÃO foram lidos, e são canais que a candidatura declarou ao TSE: o Instagram @dr.junior_feitosa. O projeto ainda não coleta rede social.",
-   "revisado_por_humano": true,
-   "_gerado_por": "registrar_ausencias.py",
-   "revisao": {
-    "em": "2026-09-01",
-    "resultado": "confere",
-    "nota": "",
-    "por_quem": "kvgs"
-   },
-   "revisado_por": "kvgs"
-  },
-  {
    "id_posicao": "pos-sen-ac-2026-professor-inacio-moreira-busca-t5",
    "id_candidatura_contexto": "sen-ac-2026-professor-inacio-moreira",
    "id_tema": "t5",
@@ -2922,6 +2899,183 @@
     "por_quem": "kvgs"
    },
    "revisado_por": "kvgs"
+  },
+  {
+   "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-site-001",
+   "id_tema": "t3",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-ac-2026-dr-junior-feitosa",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-ac-2026-dr-junior-feitosa",
+   "citacao_literal": "Hospital Regional em Sena Madureira , ampliando o acesso à saúde para o Purus.",
+   "texto": "Propõe um hospital regional em Sena Madureira para o Purus.",
+   "url_especifica": "https://drjuniorfeitoza.com.br/",
+   "data_referencia": "2026-09-01",
+   "revisado_por_humano": true,
+   "conferido_por_ia": {
+    "data": "2026-09-01",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site da candidatura (endereco nao declarado ao TSE, atribuicao provada) em 2026-09-01",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-09-01",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
+  },
+  {
+   "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-site-002",
+   "id_tema": "t3",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-ac-2026-dr-junior-feitosa",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-ac-2026-dr-junior-feitosa",
+   "citacao_literal": "Hospital Regional em Brasiléia , fortalecendo o atendimento no Alto Acre.",
+   "texto": "Propõe um hospital regional em Brasiléia para o Alto Acre.",
+   "url_especifica": "https://drjuniorfeitoza.com.br/",
+   "data_referencia": "2026-09-01",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-09-01",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site da candidatura (endereco nao declarado ao TSE, atribuicao provada) em 2026-09-01",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-09-01"
+  },
+  {
+   "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-site-003",
+   "id_tema": "t3",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-ac-2026-dr-junior-feitosa",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-ac-2026-dr-junior-feitosa",
+   "citacao_literal": "Implantação de UTI em todos os municípios do Acre , para garantir que nenhum acreano precise viajar horas em busca de atendimento de urgência.",
+   "texto": "Propõe UTI em todos os municípios do Acre.",
+   "url_especifica": "https://drjuniorfeitoza.com.br/",
+   "data_referencia": "2026-09-01",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-09-01",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site da candidatura (endereco nao declarado ao TSE, atribuicao provada) em 2026-09-01",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-09-01"
+  },
+  {
+   "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-site-004",
+   "id_tema": "t3",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-ac-2026-dr-junior-feitosa",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-ac-2026-dr-junior-feitosa",
+   "citacao_literal": "Hospital do Câncer no Juruá , levando tratamento oncológico especializado para perto de quem mais precisa, encerrando a dependência de translados a Rio Branco ou outros estados.",
+   "texto": "Propõe um hospital do câncer no Juruá, para evitar deslocamento a Rio Branco.",
+   "url_especifica": "https://drjuniorfeitoza.com.br/",
+   "data_referencia": "2026-09-01",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-09-01",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site da candidatura (endereco nao declarado ao TSE, atribuicao provada) em 2026-09-01",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-09-01"
+  },
+  {
+   "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-site-005",
+   "id_tema": "t1",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-ac-2026-dr-junior-feitosa",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-ac-2026-dr-junior-feitosa",
+   "citacao_literal": "Redução da maioridade penal para 16 anos , com aumento do tempo máximo de internação em medida socioeducativa para atos infracionais equiparados a crimes hediondos ou cometidos com violência ou grave ameaça à pessoa.",
+   "texto": "Defende reduzir a maioridade penal para 16 anos e ampliar o tempo de internação em casos graves.",
+   "url_especifica": "https://drjuniorfeitoza.com.br/",
+   "data_referencia": "2026-09-01",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-09-01",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site da candidatura (endereco nao declarado ao TSE, atribuicao provada) em 2026-09-01",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-09-01"
+  },
+  {
+   "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-site-006",
+   "id_tema": "t1",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-ac-2026-dr-junior-feitosa",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-ac-2026-dr-junior-feitosa",
+   "citacao_literal": "Aumento da pena para crimes de corrupção , com a proposta de que a corrupção passe a ser enquadrada como crime hediondo.",
+   "texto": "Defende enquadrar a corrupção como crime hediondo.",
+   "url_especifica": "https://drjuniorfeitoza.com.br/",
+   "data_referencia": "2026-09-01",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-09-01",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site da candidatura (endereco nao declarado ao TSE, atribuicao provada) em 2026-09-01",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-09-01"
+  },
+  {
+   "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-site-007",
+   "id_tema": "t3",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-ac-2026-dr-junior-feitosa",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-ac-2026-dr-junior-feitosa",
+   "citacao_literal": "Hospital Regional em Tarauacá/Envira , para atender com dignidade a população do Alto Juruá, hoje dependente de longos deslocamentos até a capital.",
+   "texto": "Propõe um hospital regional em Tarauacá/Envira para o Alto Juruá.",
+   "url_especifica": "https://drjuniorfeitoza.com.br/",
+   "data_referencia": "2026-09-01",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-09-01",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site da candidatura (endereco nao declarado ao TSE, atribuicao provada) em 2026-09-01",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-09-01"
+  },
+  {
+   "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-busca-t8",
+   "id_candidatura_contexto": "sen-ac-2026-dr-junior-feitosa",
+   "id_tema": "t8",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-ac-2026-dr-junior-feitosa",
+   "estado_cobertura": "D",
+   "natureza": "ausencia",
+   "nivel_fonte": null,
+   "citacao_literal": "",
+   "texto": "Não localizamos proposta sobre tecnologia e inteligência artificial. Isto é uma afirmação sobre a nossa busca: as fontes abaixo foram lidas e nenhuma delas trouxe posição sobre este tema.",
+   "busca_realizada_em": "2026-09-01",
+   "escopo_da_busca": "Foram lidos: o programa nacional do DC, lido por inteiro — rendeu 16 trechos; o site da candidatura (drjuniorfeitoza.com.br/), 1 página e 3.674 caracteres, coletado em 2026-09-01. NÃO foram lidos, e são canais que a candidatura declarou ao TSE: o Instagram @dr.junior_feitosa. O projeto ainda não coleta rede social.",
+   "revisado_por_humano": false,
+   "_gerado_por": "registrar_ausencias.py"
   }
  ]
 }

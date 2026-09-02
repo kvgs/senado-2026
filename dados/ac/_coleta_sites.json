@@ -465,6 +465,42 @@
           "rotulo": "Prioridades"
         }
       ]
+    },
+    {
+      "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+      "uf": "AC",
+      "nome_urna": "Dr. Junior Feitosa",
+      "url_declarada": null,
+      "coletado_em": "2026-09-01",
+      "_fonte": "Site NAO declarado ao TSE, achado fora do registro e admitido com prova de atribuicao (dados/sites-fora-do-registro.json)",
+      "_selo": "declaracao_do_candidato",
+      "_nota_selo": "Selo roxo: prova que a candidatura publicou isto, nunca que o conteudo e verdadeiro.",
+      "paginas": [
+        {
+          "_texto_do_bundle": false,
+          "url": "https://drjuniorfeitoza.com.br/",
+          "rotulo_do_link": "pagina inicial",
+          "titulo": "Home",
+          "bytes": 81243,
+          "sha256_16": "f63d0ebd3230f918",
+          "caracteres_de_texto": 3674,
+          "texto": "Home \n\n Dr. Júnior Feitosa\n\n Candidato ao Senado Federal pelo Acre — Democracia Cristã (DC) — Número 277\n Quem é Dr. Júnior Feitosa\n Ribamar de Sousa Feitoza Júnior, conhecido no meio político e jurídico como Dr. Júnior Feitosa , é advogado, natural de Tarauacá, no interior do Acre. Aos 44 anos, casado, com ensino superior completo, ele leva ao Senado Federal a experiência de quem construiu sua trajetória profissional e pública fora da capital, com raízes firmes no interior do estado.\n Trajetória\n Antes de se lançar candidato ao Senado, Dr. Júnior Feitosa já havia buscado servir sua cidade natal: em 2020, concorreu à Prefeitura de Tarauacá pelo MDB. Embora não tenha exercido mandato eletivo até hoje, essa primeira experiência política consolidou seu compromisso com a vida pública e com as demandas do interior acreano.\n Como advogado, atua diretamente com as questões e os desafios enfrentados pela população de Tarauacá e da região — uma vivência que hoje fundamenta sua candidatura ao Senado.\n A candidatura ao Senado 2026\n Em 2026, Dr. Júnior Feitosa registrou sua candidatura ao Senado Federal pelo Acre, na legenda do Democracia Cristã (DC) , concorrendo em chapa própria sob o número 277 . Seus suplentes são Walter Damasceno e Raimundo Moreira, ambos também do DC.\n Ele é um dos oito candidatos que disputam as duas vagas do Acre no Senado nestas eleições — e um dos únicos, entre eles, a chegar à disputa sem nunca ter ocupado um cargo eletivo, o que ele apresenta como uma marca de renovação na política acreana.\n Principais bandeiras\n A candidatura de Dr. Júnior Feitosa tem a saúde do interior como eixo central de suas propostas para o Senado:\n Hospital Regional em Tarauacá/Envira , para atender com dignidade a população do Alto Juruá, hoje dependente de longos deslocamentos até a capital.\n\n Hospital Regional em Sena Madureira , ampliando o acesso à saúde para o Purus.\n\n Hospital Regional em Brasiléia , fortalecendo o atendimento no Alto Acre.\n\n Implantação de UTI em todos os municípios do Acre , para garantir que nenhum acreano precise viajar horas em busca de atendimento de urgência.\n\n Hospital do Câncer no Juruá , levando tratamento oncológico especializado para perto de quem mais precisa, encerrando a dependência de translados a Rio Branco ou outros estados.\n\n Redução da maioridade penal para 16 anos , com aumento do tempo máximo de internação em medida socioeducativa para atos infracionais equiparados a crimes hediondos ou cometidos com violência ou grave ameaça à pessoa.\n\n Aumento da pena para crimes de corrupção , com a proposta de que a corrupção passe a ser enquadrada como crime hediondo.\n\n Para Dr. Júnior Feitosa, interiorizar a saúde pública é interiorizar a dignidade, endurecer a resposta a crimes graves cometidos por adolescentes é dar segurança às famílias acreanas, e tratar a corrupção com o rigor de um crime hediondo é devolver a confiança do acreano na política. Essas são as pautas que ele pretende levar ao Senado Federal.\n Por que votar em Dr. Júnior Feitosa\n Origem no interior: natural de Tarauacá, conhece de perto as dificuldades de quem vive fora da capital.\n\n Formação jurídica: advogado, com base técnica para atuar na elaboração e fiscalização de leis.\n\n Compromisso público: já buscou servir sua cidade nas urnas antes de disputar o Senado.\n\n Renovação: um novo nome na política acreana, sem passagem por mandatos anteriores.\n\n Saúde para o interior: propostas concretas de hospitais regionais e UTIs para reduzir a distância entre o acreano e o atendimento de que ele precisa.\n\n Nome de urna: Dr. Junior Feitosa — Número: 277 — Partido: Democracia Cristã (DC) \n\n CNPJ Candidato: 68.373.608/0001-03",
+          "caracteres_proprios": 3674
+        }
+      ],
+      "url_fora_do_registro": "https://drjuniorfeitoza.com.br/",
+      "prova_de_atribuicao": [
+        "O dominio escreve 'feitoza' com Z e o nome de urna e 'Feitosa' com S — mas o NOME CIVIL do registro no TSE e 'Ribamar de Sousa Feitoza Junior', com Z. A pagina traz esse nome civil por extenso.",
+        "Numero de urna 277, igual ao registro.",
+        "Partido Democracia Crista (DC), igual ao registro.",
+        "Nomeia os dois suplentes, Walter Damasceno e Raimundo Moreira, iguais aos do registro.",
+        "Publica 'CNPJ Candidato: 68.373.608/0001-03' — identificacao exigida da propaganda eleitoral.",
+        "O unico link de rede social e instagram.com/dr.junior_feitosa, exatamente o endereco declarado ao TSE."
+      ],
+      "encontrado_por": "curadoria do projeto",
+      "robots": "robots.txt lido",
+      "url_final": "https://drjuniorfeitoza.com.br/",
+      "links_de_proposta_encontrados": []
     }
   ]
 }

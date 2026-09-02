@@ -56,6 +56,26 @@
         "Traz o cargo e o ano desta eleicao: 'Senador Marcio Bittar 222', 'Nessas eleicoes'."
       ],
       "_robots": "robots.txt permite o agente do projeto (User-agent: * / Allow: /) e declara Content-Signal: search=yes, ai-train=no, use=reference. O uso aqui e de referencia — trecho citado com link e atribuicao — e o projeto nao treina modelo com nada. Os rastejadores de IA de uso geral estao bloqueados no arquivo, e o nosso agente nao e um deles: ele se identifica como senado-2026 e da endereco para reclamacao."
+    },
+    {
+      "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+      "uf": "AC",
+      "url": "https://drjuniorfeitoza.com.br/",
+      "encontrado_em": "2026-09-01",
+      "encontrado_por": "curadoria do projeto",
+      "declarou_ao_tse": [
+        "https://www.instagram.com/dr.junior_feitosa"
+      ],
+      "prova_de_atribuicao": [
+        "O dominio escreve 'feitoza' com Z e o nome de urna e 'Feitosa' com S — mas o NOME CIVIL do registro no TSE e 'Ribamar de Sousa Feitoza Junior', com Z. A pagina traz esse nome civil por extenso.",
+        "Numero de urna 277, igual ao registro.",
+        "Partido Democracia Crista (DC), igual ao registro.",
+        "Nomeia os dois suplentes, Walter Damasceno e Raimundo Moreira, iguais aos do registro.",
+        "Publica 'CNPJ Candidato: 68.373.608/0001-03' — identificacao exigida da propaganda eleitoral.",
+        "O unico link de rede social e instagram.com/dr.junior_feitosa, exatamente o endereco declarado ao TSE."
+      ],
+      "_ressalva_de_leitura": "A pagina e escrita em TERCEIRA PESSOA e tem secao 'Por que votar em'. Isso nao muda a atribuicao — o CNPJ de candidato e o link para o perfil declarado sao de propaganda eleitoral —, mas muda a leitura: o selo roxo continua provando que a candidatura publicou aquilo, e nunca que e verdade. A pagina tambem faz afirmacoes SOBRE ele ('um dos unicos a chegar a disputa sem nunca ter ocupado cargo eletivo') que nao entram no acervo: nao sao proposta e nao foram conferidas.",
+      "_robots": "User-agent: * / Disallow: (vazio) — coleta permitida sem restricao."
     }
   ]
 }

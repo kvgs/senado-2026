@@ -114,6 +114,15 @@
    "publicado_em": null,
    "consultado_em": "2026-09-01",
    "_origem": "Endereco NAO declarado ao TSE. Admitido com prova de atribuicao, registrada em dados/sites-fora-do-registro.json: O site aponta para instagram.com/marciobittar_ — exatamente o unico endereco que a candidatura declarou ao TSE. A curadoria chegou ao site pelo caminho inverso, a partir desse mesmo perfil. A pagina traz o numero de urna 222, igual ao numero_urna do registro. Nomeia a coligacao 'Avanca Acre'; o registro traz a coligacao avanca-acre-ac. Escreve o nome civil completo 'Marcio Miguel Bittar', igual ao nome_completo do registro no TSE. Publica o CNPJ 68.526.697/0001-72. Traz o cargo e o ano desta eleicao: 'Senador Marcio Bittar 222', 'Nessas eleicoes'."
+  },
+  {
+   "id_documento": "doc-site-sen-ac-2026-dr-junior-feitosa",
+   "tipo": "site_de_candidatura",
+   "titulo": "Dr. Júnior Feitosa — Candidato ao Senado Federal pelo Acre",
+   "url": "https://drjuniorfeitoza.com.br/",
+   "publicado_em": null,
+   "consultado_em": "2026-09-01",
+   "_origem": "Endereco NAO declarado ao TSE. Admitido com prova de atribuicao, registrada em dados/sites-fora-do-registro.json: O dominio escreve 'feitoza' com Z e o nome de urna e 'Feitosa' com S — mas o NOME CIVIL do registro no TSE e 'Ribamar de Sousa Feitoza Junior', com Z. A pagina traz esse nome civil por extenso. Numero de urna 277, igual ao registro. Partido Democracia Crista (DC), igual ao registro. Nomeia os dois suplentes, Walter Damasceno e Raimundo Moreira, iguais aos do registro. Publica 'CNPJ Candidato: 68.373.608/0001-03' — identificacao exigida da propaganda eleitoral. O unico link de rede social e instagram.com/dr.junior_feitosa, exatamente o endereco declarado ao TSE."
   }
  ]
 }
