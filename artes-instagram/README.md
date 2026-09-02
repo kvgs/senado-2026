@@ -17,6 +17,8 @@ poste na ordem em que o explorador de arquivos mostra.
 | `6-<uf>-<numero>-<nome>/` | 12 | `gerar_artes_candidatura.py --uf AC --todos` |
 | `7-<uf>-analise/` | 6 | `gerar_artes_analise_uf.py --uf AC` |
 | `8-<uf>-reels/` | 1 vídeo | `gerar_reels_uf.py --uf AC` |
+| `9-o-cargo-em-disputa/` | 12 | `gerar_artes_senado.py` |
+| `10-o-cargo-em-disputa-reels/` | 1 vídeo | `gerar_reels_senado.py` |
 | `perfil-da-conta/` | — | `gerar_avatar.py` |
 
 O número da **pasta** é a ordem em que os carrosséis foram feitos, e não uma
@@ -101,6 +103,35 @@ mesma paleta das artes estáticas; o ffmpeg só junta.
 
 `--so-quadros` escreve uma amostra de PNG em `_quadros/` (fora do Git) para
 conferir a arte sem esperar o encode.
+
+## O cargo, e não as candidaturas
+
+As séries `9-` e `10-` são as únicas que **não saem do acervo**. Elas explicam o
+cargo em disputa — quanto paga, o que faz, quantos votos tem este ano, por que
+pesa — e saem da Constituição e do demonstrativo de remuneração do próprio
+Senado, guardados em `fontes/`.
+
+Sem acervo não há revisão humana linha por linha, então a trava é outra:
+
+- **`dados/institucional-senado.json` guarda cada frase com a citação literal e o
+  dispositivo**, e `institucional.py` abre o arquivo de `fontes/`, confere
+  palavra por palavra e **para com erro** se a frase não estiver lá. Ele separa
+  dois casos: citação que não existe na fonte, e citação que só casa sem acento —
+  são defeitos diferentes. O carrossel e o Reels chamam o conferidor **antes** de
+  desenhar.
+- **Vídeo e carrossel leem o mesmo arquivo.** Mudar um texto muda nos dois; não
+  existe versão do vídeo que diga coisa diferente da imagem.
+- **O valor do subsídio nunca aparece sozinho.** Vigência, quem fixa o valor e o
+  que ele não inclui entram na mesma peça. Valor de remuneração sem data
+  envelhece calado, e este é dos que mais circulam errados.
+- **Nada de adjetivo sobre a importância do cargo.** "Por que pesa" está
+  respondido em quatro competências com o artigo ao lado — aprovar ministro do
+  STF, julgar o presidente por crime de responsabilidade, os três quintos de
+  qualquer emenda e suspender lei declarada inconstitucional. Isso é conferível.
+- **O número do subsídio não sobe num contador no vídeo.** A primeira versão
+  animava o valor e colocava na tela, por dois segundos, quantias que não são o
+  subsídio. Um print no meio da subida seria um salário errado publicado. O
+  número entra inteiro, crescendo e ganhando corpo.
 
 ## Nada aqui é editado à mão
 
