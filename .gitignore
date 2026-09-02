@@ -57,3 +57,7 @@ fontes-ttf/
 # tamanho e o sha256 ficam em documentos.json, que e o que prova que o arquivo
 # baixado hoje e o mesmo que foi lido.
 fontes/programa-mdb-2025-caminhos-para-o-brasil.pdf
+
+# Amostra de quadros do Reels, escrita por gerar_reels_uf.py --so-quadros so
+# para conferir a arte antes de encodar. Derivado do MP4 que esta ao lado.
+artes-instagram/*/_quadros/

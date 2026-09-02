@@ -16,6 +16,7 @@ poste na ordem em que o explorador de arquivos mostra.
 | `5-sul-quem-sao/` | 5 | `gerar_artes_regiao.py --regiao Sul` |
 | `6-<uf>-<numero>-<nome>/` | 12 | `gerar_artes_candidatura.py --uf AC --todos` |
 | `7-<uf>-analise/` | 6 | `gerar_artes_analise_uf.py --uf AC` |
+| `8-<uf>-reels/` | 1 vídeo | `gerar_reels_uf.py --uf AC` |
 | `perfil-da-conta/` | — | `gerar_avatar.py` |
 
 O número da **pasta** é a ordem em que os carrosséis foram feitos, e não uma
@@ -70,6 +71,36 @@ A série `7-` é a única com **gráficos**, e por isso tem duas travas própria
 
 As cores foram medidas em contraste, não escolhidas no olho, e o `LEGENDA.md` da
 pasta registra o que foi descartado e por quê.
+
+## O Reels
+
+A série `8-` é a única que não é imagem: um MP4 vertical de 1080×1920, cinco cenas,
+27 segundos. Os quadros são desenhados com o mesmo Pillow, a mesma tipografia e a
+mesma paleta das artes estáticas; o ffmpeg só junta.
+
+- **Não tem áudio, e isso é deliberado.** Reels toca sem som por padrão e este
+  projeto não licencia trilha. A música entra no próprio Instagram, onde ela é
+  licenciada — colar uma faixa aqui seria uso não licenciado.
+- **A área segura é menor que a tela.** O Instagram desenha a interface dele por
+  cima do vídeo: perfil no alto, legenda, áudio e botões embaixo. Tudo o que se lê
+  fica entre 230 e 1560 de 1920. A primeira versão tinha o rodapé em `ALT-150`,
+  atrás dos botões: o endereço do site, que é a razão de o vídeo existir, ficava
+  invisível.
+- **O tempo é contado em segundos, não em fração da cena.** Com fração o título da
+  cena da barra levava 3,5s para acabar de entrar, e no meio disso cada linha
+  ficava num alpha diferente — no telefone lia como degradê cinza com a última
+  linha apagada. A regra em segundos: texto de Reels tem de estar legível em menos
+  de 1s.
+- **As frases são contas.** "Menos de duas", "seis tinham", "dois temas" saem do
+  acervo na geração, com a concordância resolvida. Onde a redação não cabe no dado
+  o script para com erro, em vez de publicar a frase de outro estado.
+- **O roteiro muda com o acervo.** A cena dos sites achados só existe onde houve
+  site achado; a dos temas em zero, só onde há tema em zero.
+- **A trava do estado 100% revisado vale aqui e é mais forte** que na série `7-`:
+  número animado tem ainda mais cara de fato do que número impresso.
+
+`--so-quadros` escreve uma amostra de PNG em `_quadros/` (fora do Git) para
+conferir a arte sem esperar o encode.
 
 ## Nada aqui é editado à mão
 
