@@ -425,16 +425,38 @@ dados = {
 # So o que e publicavel entra: se uma posicao foi reprovada na revisao e saiu do
 # site, o backend tambem nao deve aceitar redigir a partir dela. Deixar o hash
 # para tras manteria o texto errado alcancavel por um cliente adulterado.
-chaves = sorted({
-    hashlib.sha256(((r.get("texto") or "") + chr(0) + (r.get("citacao_literal") or ""))
-                   .encode("utf-8")).hexdigest()[:16]
-    for r in pos_publicaveis
-})
+#
+# A CONFIGURACAO DO AGENTE PERTENCE A UMA UF SO, E NAO A ULTIMA QUE RODOU.
+#
+# O agente publicado atende o estado declarado em referencia.json (site.uf).
+# Enquanto estes dois arquivos eram reescritos a cada `gerar_site.py --uf XX`,
+# gerar a pagina de outro estado trocava, em silencio, a configuracao do agente
+# que esta no ar: os hashes viravam os daquele estado e o catalogo passava a
+# listar as candidaturas dele, com o nome do estado errado nos textos que o
+# worker gera. Um `wrangler deploy` depois disso transformaria o agente de Sao
+# Paulo num agente do Tocantins — e o backend passaria a RECUSAR toda linha de
+# Sao Paulo, porque nenhum hash dela estaria mais na lista.
+#
+# Isto nao apareceu antes porque ninguem deployou no meio; o repositorio ficou
+# meses com o arquivo de um estado qualquer. A regra operacional do projeto
+# ("mexeu em posicoes.json, rode gerar_site.py E wrangler deploy") tornava o
+# defeito uma armadilha armada.
+UF_DO_AGENTE = ((ref.get("site") or {}).get("uf") or "").upper()
 ag = HERE/"agente"
 ag.mkdir(exist_ok=True)
-(ag/"acervo-hashes.json").write_text(
-    json.dumps({"gerado_de": "dados/posicoes.json", "n": len(chaves), "chaves": chaves},
-               ensure_ascii=False, indent=1), encoding="utf-8")
+# `_est` so e resolvido mais abaixo; aqui a UF sai do mesmo lugar que ele usa.
+ESCREVE_AGENTE = acervo.estado(_UF)["uf"].upper() == UF_DO_AGENTE
+
+if ESCREVE_AGENTE:
+    chaves = sorted({
+        hashlib.sha256(((r.get("texto") or "") + chr(0) + (r.get("citacao_literal") or ""))
+                       .encode("utf-8")).hexdigest()[:16]
+        for r in pos_publicaveis
+    })
+    (ag/"acervo-hashes.json").write_text(
+        json.dumps({"gerado_de": f"dados/{UF_DO_AGENTE.lower()}/posicoes.json",
+                    "uf": UF_DO_AGENTE, "n": len(chaves), "chaves": chaves},
+                   ensure_ascii=False, indent=1), encoding="utf-8")
 
 # Catalogo para o backend: quem sao as candidaturas e os temas validos, e qual
 # o contato OFICIAL de cada uma. O worker recusa pergunta dirigida a id que nao
@@ -455,30 +477,37 @@ OUT.parent.mkdir(parents=True, exist_ok=True)
 # compartilhadas pelos 27 estados em vez de copiadas 27 vezes.
 PREFIXO = "../"
 
-(ag/"catalogo.json").write_text(json.dumps({
-    "uf": _est["uf"],
-    "uf_nome": _est["nome"],
-    # "por Sao Paulo", "pelo Acre", "pela Bahia" — a preposicao vem do dado
-    # porque concordancia errada em texto que sai de casa parece descuido.
-    "uf_por": {"de": "por", "do": "pelo", "da": "pela"}[_est["preposicao"]] + " " + _est["nome"],
-    "uf_assembleia": _est["assembleia"],
-    "site_url": _sitecfg.get("url", ""),
-    "temas": [{"id": t["id_tema"], "nome": t["nome"]} for t in temas],
-    "candidaturas": [{
-        "id": cid,
-        "nome": cand_por_id[cid]["nome"],
-        "partido": cand_por_id[cid]["partido"],
-        "numero": cand_por_id[cid]["numero"],
-        "email": (cand_por_id[cid].get("contato") or {}).get("email"),
-        "email_fonte": (cand_por_id[cid].get("contato") or {}).get("email_fonte"),
-        "email_tipo": (cand_por_id[cid].get("contato") or {}).get("email_tipo"),
-        # Instagram entra como ATALHO manual, nunca como envio automatico: a API
-        # so permite responder quem escreveu nas ultimas 24h, e automatizar conta
-        # pessoal por fora viola os termos e derruba a conta.
-        "instagram": (cand_por_id[cid].get("contato") or {}).get("instagram"),
-        "instagram_fonte": (cand_por_id[cid].get("contato") or {}).get("instagram_fonte"),
-    } for cid in ordem],
-}, ensure_ascii=False, indent=1), encoding="utf-8")
+if ESCREVE_AGENTE:
+    (ag/"catalogo.json").write_text(json.dumps({
+        "uf": _est["uf"],
+        "uf_nome": _est["nome"],
+        # "por Sao Paulo", "pelo Acre", "pela Bahia" — a preposicao vem do dado
+        # porque concordancia errada em texto que sai de casa parece descuido.
+        "uf_por": {"de": "por", "do": "pelo", "da": "pela"}[_est["preposicao"]] + " " + _est["nome"],
+        "uf_assembleia": _est["assembleia"],
+        "site_url": _sitecfg.get("url", ""),
+        "temas": [{"id": t["id_tema"], "nome": t["nome"]} for t in temas],
+        "candidaturas": [{
+            "id": cid,
+            "nome": cand_por_id[cid]["nome"],
+            "partido": cand_por_id[cid]["partido"],
+            "numero": cand_por_id[cid]["numero"],
+            "email": (cand_por_id[cid].get("contato") or {}).get("email"),
+            "email_fonte": (cand_por_id[cid].get("contato") or {}).get("email_fonte"),
+            "email_tipo": (cand_por_id[cid].get("contato") or {}).get("email_tipo"),
+            # Instagram entra como ATALHO manual, nunca como envio automatico: a API
+            # so permite responder quem escreveu nas ultimas 24h, e automatizar conta
+            # pessoal por fora viola os termos e derruba a conta.
+            "instagram": (cand_por_id[cid].get("contato") or {}).get("instagram"),
+            "instagram_fonte": (cand_por_id[cid].get("contato") or {}).get("instagram_fonte"),
+        } for cid in ordem],
+    }, ensure_ascii=False, indent=1), encoding="utf-8")
+else:
+    # Nao apaga o que esta la: so avisa. O arquivo do agente continua sendo o do
+    # estado que ele atende.
+    print(f"  agente/: intocado — a configuracao dele e de {UF_DO_AGENTE}, "
+          f"e esta rodada gerou {acervo.estado(_UF)['uf']}")
+
 
 tpl = (HERE/"_template_site.html").read_text(encoding="utf-8")
 # A UF vai para o JS do site: o e-mail que o eleitor abre pronto e o texto de

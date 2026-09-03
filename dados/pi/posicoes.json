@@ -2078,7 +2078,7 @@
    "natureza": "promessa",
    "nivel_fonte": "oficial",
    "id_documento": "doc-programa-nacional-mdb",
-   "citacao_literal": "Aplicação de reconhecimento facial em todas as áreas centrais e de grande circulação nos principais centros urbanos",
+   "citacao_literal": "Aplicação de reconhecimento facial em todas as áreas centrais e de grande circulação nos principais centros urbanos, aeroportos, estações rodoviárias e metrôs do Brasil.",
    "texto": "Defende usar reconhecimento facial nas áreas centrais e de grande circulação dos principais centros urbanos.",
    "url_especifica": "https://fundacaoulysses.org.br/wp-content/uploads/2025/10/FUG-18x26cm-DIGITAL.pdf#page=59",
    "data_referencia": "2025-10-23",
@@ -2090,7 +2090,12 @@
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
    "_promovido_em": "2026-08-28",
-   "_url_antes": "https://www.mdb.org.br/documento-caminhos-para-o-brasil/"
+   "_url_antes": "https://www.mdb.org.br/documento-caminhos-para-o-brasil/",
+   "revisao": {
+    "_antes": [],
+    "_reaberta_em": "2026-09-03",
+    "_motivo": "A citacao foi estendida ate o fim da frase: antes parava no meio e o resto da enumeracao ficava de fora. Texto anterior: Aplicação de reconhecimento facial em todas as áreas centrais e de grande circulação nos principais centros urbanos"
+   }
   },
   {
    "id_posicao": "pos-sen-pi-2026-marcelo-castro-prog-mdb-002",
@@ -2198,7 +2203,7 @@
    "natureza": "promessa",
    "nivel_fonte": "oficial",
    "id_documento": "doc-programa-nacional-mdb",
-   "citacao_literal": "Promoção da alfabetização digital básica e da formação crítica, voltada ao desenvolvimento de competências digitais essenciais",
+   "citacao_literal": "Promoção da alfabetização digital básica e da formação crítica, voltada ao desenvolvimento de competências digitais essenciais, raciocínio lógico, pensamento computacional e preparação para o trabalho e a inovação.",
    "texto": "Defende alfabetização digital básica e formação crítica na escola.",
    "url_especifica": "https://fundacaoulysses.org.br/wp-content/uploads/2025/10/FUG-18x26cm-DIGITAL.pdf#page=49",
    "data_referencia": "2025-10-23",
@@ -2210,7 +2215,12 @@
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
    "_promovido_em": "2026-08-28",
-   "_url_antes": "https://www.mdb.org.br/documento-caminhos-para-o-brasil/"
+   "_url_antes": "https://www.mdb.org.br/documento-caminhos-para-o-brasil/",
+   "revisao": {
+    "_antes": [],
+    "_reaberta_em": "2026-09-03",
+    "_motivo": "A citacao foi estendida ate o fim da frase: antes parava no meio e o resto da enumeracao ficava de fora. Texto anterior: Promoção da alfabetização digital básica e da formação crítica, voltada ao desenvolvimento de competências digitais essenciais"
+   }
   },
   {
    "id_posicao": "pos-sen-pi-2026-marcelo-castro-prog-mdb-007",
@@ -2342,7 +2352,7 @@
    "natureza": "promessa",
    "nivel_fonte": "oficial",
    "id_documento": "doc-programa-nacional-mdb",
-   "citacao_literal": "Nesse contexto, é essencial aumentar o sistema de habitação subsidiada, estendendo-o também à classe média brasileira. Para isso, propõe-se a criação de faixas de financiamento que considerem as diferentes realidades regionais, contemplando famílias com renda de até 15 salários mínimos",
+   "citacao_literal": "Nesse contexto, é essencial aumentar o sistema de habitação subsidiada, estendendo-o também à classe média brasileira. Para isso, propõe-se a criação de faixas de financiamento que considerem as diferentes realidades regionais, contemplando famílias com renda de até 15 salários mínimos e permitindo a realização do sonho da casa própria de forma acessível e sustentável.",
    "texto": "Defende ampliar a habitação subsidiada até a classe média, com faixas de financiamento regionais para famílias com renda de até 15 salários mínimos.",
    "url_especifica": "https://fundacaoulysses.org.br/wp-content/uploads/2025/10/FUG-18x26cm-DIGITAL.pdf#page=61",
    "data_referencia": "2025-10-23",
@@ -2354,7 +2364,12 @@
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
    "_promovido_em": "2026-08-28",
-   "_url_antes": "https://www.mdb.org.br/documento-caminhos-para-o-brasil/"
+   "_url_antes": "https://www.mdb.org.br/documento-caminhos-para-o-brasil/",
+   "revisao": {
+    "_antes": [],
+    "_reaberta_em": "2026-09-03",
+    "_motivo": "A citacao foi estendida ate o fim da frase: antes parava no meio e o resto da enumeracao ficava de fora. Texto anterior: Nesse contexto, é essencial aumentar o sistema de habitação subsidiada, estendendo-o também à classe média brasileira. Para isso, propõe-se a criação de faixas de financiamento que considerem as diferentes realidades regionais, contemplando famílias com renda de até 15 salários mínimos"
+   }
   },
   {
    "id_posicao": "pos-sen-pi-2026-marcelo-castro-prog-mdb-013",
