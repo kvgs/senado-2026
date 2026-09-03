@@ -503,7 +503,7 @@ def arte_sem_conteudo(d: dict, p: dict, vazios: list, cor: str, i: int,
     # legivel, porque diz uma vez o que estava dito sete.
     fd, fl, fe = f("corpo", 26, 400), f("corpo", 28, 400), f("corpo", 23, 400)
 
-    def altura(detalhado: bool) -> int:
+    def altura(detalhado: bool, curto: bool = False) -> int:
         alto = 0
         for est in ("C", "D", "-"):
             nomes = por_tipo.get(est)
@@ -521,7 +521,7 @@ def arte_sem_conteudo(d: dict, p: dict, vazios: list, cor: str, i: int,
                 quais = [x["tema"] for x in (rst_ if (detalhado and esp_) else
                          [y for y in vazios if y["estado"] == est])]
                 alto += len(t.quebra(" · ".join(quais), fl, 790)) * 39 + 8
-                alto += len(t.quebra(escopos.get(est) or ROTULO[est][2], fe, 780)) * 32
+                alto += len(t.quebra(texto_escopo(est, curto), fe, 780)) * 32
             alto += 26
         return alto
 
@@ -534,13 +534,36 @@ def arte_sem_conteudo(d: dict, p: dict, vazios: list, cor: str, i: int,
         if len(unicos) == 1:
             escopos[est] = unicos.pop()
 
+    # TERCEIRA FORMA: escopo curto, com ponteiro para onde esta o inteiro.
+    #
+    # A guarda disparou na Rayssa Furlan, que tem seis temas sem conteudo e um
+    # escopo de busca longo — ele descreve quatro paginas lidas, os textos de
+    # espaco reservado que o site publica, e os sete canais declarados que NAO
+    # foram lidos. Imprimir isso inteiro estoura o slide.
+    #
+    # Encurtar o escopo NO ACERVO nao era opcao: a completude dele e o que
+    # sustenta a afirmacao "nao localizamos", e ele ja foi revisado assim. Quem
+    # encurta e a ARTE, que nunca foi o acervo — e no lugar do texto ela diz onde
+    # o texto esta. Cortar sem dizer seria fazer a arte parecer mais segura do
+    # que o registro.
+    def texto_escopo(est: str, curto: bool) -> str:
+        cheio = escopos.get(est) or ROTULO[est][2]
+        if not curto:
+            return cheio
+        return (ROTULO[est][2] + " O escopo inteiro da busca — o que foi lido e "
+                "o que não foi — está no site, em cada uma destas linhas.")
+
     cabe_no_espaco = t.base_do_rodape() - 40 - t.y
     detalhado = altura(True) <= cabe_no_espaco
+    curto = False
     if not detalhado and altura(False) > cabe_no_espaco:
-        raise SystemExit(
-            f"PAROU: a lista de temas sem conteudo de {p['nome']} nao cabe no "
-            "slide nem na forma compacta. O desenho passaria por cima do rodape, "
-            "e isso ja foi publicado uma vez sem ninguem ver.")
+        curto = True
+        if altura(False, curto=True) > cabe_no_espaco:
+            raise SystemExit(
+                f"PAROU: a lista de temas sem conteudo de {p['nome']} nao cabe no "
+                "slide nem na forma compacta com escopo curto. O desenho passaria "
+                "por cima do rodape, e isso ja foi publicado uma vez sem ninguem "
+                "ver.")
 
     for est in ("C", "D", "-"):
         nomes = por_tipo.get(est)
@@ -573,7 +596,7 @@ def arte_sem_conteudo(d: dict, p: dict, vazios: list, cor: str, i: int,
                 t.d.text((t.m + 28, t.y), ln, font=fl, fill=TINTA2)
                 t.y += 39
             t.espaco(8)
-            for ln in t.quebra(escopos.get(est) or frase, fe, 780):
+            for ln in t.quebra(texto_escopo(est, curto), fe, 780):
                 t.d.text((t.m + 28, t.y), ln, font=fe, fill=APAGADO)
                 t.y += 32
         t.espaco(26)
