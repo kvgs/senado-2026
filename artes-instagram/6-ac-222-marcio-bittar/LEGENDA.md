@@ -13,7 +13,7 @@ Gerado por `python gerar_artes_candidatura.py --uf AC --numero 222`.
 São 10 temas. Em cada slide a tarja diz **de quem é a proposta** — da
 candidatura ou do partido — ou o que ainda não há.
 
-Neste levantamento: **6 tema(s) com proposta própria**, **1 com
+Neste levantamento: **6 temas com proposta própria**, **1 com
 proposta do partido** e **3 sem conteúdo**.
 
 ⚠️ Estes três números são sobre **o nosso levantamento**, e não sobre a
@@ -41,5 +41,5 @@ link de cada fonte.
 
 ## Números desta candidatura
 
-- 6 proposta(s) própria(s), 1 do partido, 3 sem conteúdo
-- Cor e silhueta: verde, a familia de cor da bandeira do Acre; tom escolhido para dar 5,01:1 sobre o papel
+- 6 temas com proposta própria, 1 com proposta do partido, 3 sem conteúdo (os dez temas somados)
+- Cor e silhueta: verde, a família de cor da bandeira do Acre; tom escolhido para dar 5,01:1 sobre o papel

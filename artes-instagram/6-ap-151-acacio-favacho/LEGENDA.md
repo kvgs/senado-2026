@@ -1,19 +1,19 @@
-# 277 Dr. Junior Feitosa (DC) — Acre
+# 151 Acácio Favacho (MDB) — Amapá
 
 13 slides: capa, um slide por tema COM conteúdo, um slide juntando todos
 os temas sem conteúdo, o convite para perguntar, e o fecho com a legenda das tarjas.
-Gerado por `python gerar_artes_candidatura.py --uf AC --numero 277`.
+Gerado por `python gerar_artes_candidatura.py --uf AP --numero 151`.
 
 ---
 
 ## Legenda
 
-**O que já foi levantado sobre Dr. Junior Feitosa (DC), tema a tema.**
+**O que já foi levantado sobre Acácio Favacho (MDB), tema a tema.**
 
 São 10 temas. Em cada slide a tarja diz **de quem é a proposta** — da
 candidatura ou do partido — ou o que ainda não há.
 
-Neste levantamento: **2 temas com proposta própria**, **7 com
+Neste levantamento: **1 tema com proposta própria**, **8 com
 proposta do partido** e **1 sem conteúdo**.
 
 ⚠️ Estes três números são sobre **o nosso levantamento**, e não sobre a
@@ -26,7 +26,7 @@ link de cada fonte.
 
 🔗 kvgs.github.io/senado-2026
 
-#eleições2026 #senado #acre #drjuniorfeitosa #dc #dadosabertos #votoconsciente #transparência
+#eleições2026 #senado #amapa #acaciofavacho #mdb #dadosabertos #votoconsciente #transparência
 
 ---
 
@@ -41,5 +41,5 @@ link de cada fonte.
 
 ## Números desta candidatura
 
-- 2 temas com proposta própria, 7 com proposta do partido, 1 sem conteúdo (os dez temas somados)
-- Cor e silhueta: verde, a família de cor da bandeira do Acre; tom escolhido para dar 5,01:1 sobre o papel
+- 1 tema com proposta própria, 8 com proposta do partido, 1 sem conteúdo (os dez temas somados)
+- Cor e silhueta: azul, uma das cores da bandeira do Amapá; tom escolhido para dar 7,24:1 sobre o papel. Azul e não verde para o estado não se confundir com o Acre no feed

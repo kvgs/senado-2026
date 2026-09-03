@@ -74,11 +74,13 @@ RAIZ = pathlib.Path(__file__).resolve().parent
 # Estado que nao esta aqui faz o script PARAR. Escolher cor por conta propria
 # seria inventar identidade visual para um lugar sem ninguem ter decidido.
 PALETA = {
-    "AC": {"cor": "#007A2E", "de": "verde, a familia de cor da bandeira do Acre; "
+    # O texto do "de" vai IMPRESSO na LEGENDA.md, que e o que se copia para o
+    # Instagram: aqui ele leva acento como qualquer outro texto que sai de casa.
+    "AC": {"cor": "#007A2E", "de": "verde, a família de cor da bandeira do Acre; "
                                    "tom escolhido para dar 5,01:1 sobre o papel"},
-    "AP": {"cor": "#00548C", "de": "azul, uma das cores da bandeira do Amapa; tom "
+    "AP": {"cor": "#00548C", "de": "azul, uma das cores da bandeira do Amapá; tom "
                                    "escolhido para dar 7,24:1 sobre o papel. Azul "
-                                   "e nao verde para o estado nao se confundir com "
+                                   "e não verde para o estado não se confundir com "
                                    "o Acre no feed"},
 }
 
@@ -129,6 +131,16 @@ CINZA_BORDA = "#DDD6CF"
 
 def sem_acento(s: str) -> str:
     return unicodedata.normalize("NFD", s).encode("ascii", "ignore").decode()
+
+
+def plural(n: int, palavra: str) -> str:
+    """"1 tema", "8 temas" — e nunca "1 tema(s)".
+
+    O numero e conhecido na hora de escrever a legenda. "tema(s)" e formulario,
+    e a legenda e o texto que vai colado no Instagram: ali ele le como quem
+    gerou e nao olhou.
+    """
+    return palavra if n == 1 else palavra + "s"
 
 
 def slug(s: str) -> str:
@@ -367,7 +379,12 @@ def arte_tema(d: dict, p: dict, b: dict, cor: str, i: int, n_slides: int,
     if b["fonte"]:
         pes.append("Fonte: " + b["fonte"])
     if b["mais"]:
-        pes.append(f"Há mais {b['mais']} informação(ões) neste tema no site.")
+        # O numero e conhecido na hora de escrever, entao a concordancia sai
+        # resolvida. "informação(ões)" e formulario, e nao frase: numa arte que
+        # vai para o Instagram le como descuido de quem gerou sem olhar.
+        n = b["mais"]
+        pes.append(f"Há mais {n} informação{'' if n == 1 else 'ões'} "
+                   f"neste tema no site.")
     fp = f("corpo", 22)
     alto_pe = (sum(len(t.quebra(x, fp, 830)) for x in pes) * int(fp.size * 1.36) + 34
                if pes else 0)
@@ -690,7 +707,7 @@ Gerado por `python gerar_artes_candidatura.py --uf {uf} --numero {numero}`.
 São {n_temas} temas. Em cada slide a tarja diz **de quem é a proposta** — da
 candidatura ou do partido — ou o que ainda não há.
 
-Neste levantamento: **{n_proprias} tema(s) com proposta própria**, **{n_partido} com
+Neste levantamento: **{n_proprias} {palavra_tema} com proposta própria**, **{n_partido} com
 proposta do partido** e **{n_vazios} sem conteúdo**.
 
 ⚠️ Estes três números são sobre **o nosso levantamento**, e não sobre a
@@ -718,7 +735,7 @@ link de cada fonte.
 
 ## Números desta candidatura
 
-- {n_proprias} proposta(s) própria(s), {n_partido} do partido, {n_vazios} sem conteúdo
+- {n_proprias} {palavra_tema} com proposta própria, {n_partido} com proposta do partido, {n_vazios} sem conteúdo (os dez temas somados)
 - Cor e silhueta: {cor_de}
 """
 
@@ -731,6 +748,7 @@ def escreve_legenda(d: dict, p: dict, n_slides: int, cor_de: str) -> None:
         numero=p["numero"], nome=p["nome"], sigla=p["sigla"], uf=d["uf"],
         uf_nome=d["uf_nome"], n_slides=n_slides, n_temas=d["n_temas"],
         n_proprias=p["n_proprias"], n_partido=p["n_partido"],
+        palavra_tema=plural(p["n_proprias"], "tema"),
         n_vazios=p["n_vazios"], cor_de=cor_de, hashtags=" ".join(tags))
     alvo = _ar.SAIDA / pasta(d["uf"], p["nome"], p["numero"]) / "LEGENDA.md"
     alvo.parent.mkdir(parents=True, exist_ok=True)
