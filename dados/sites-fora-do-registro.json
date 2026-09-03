@@ -117,6 +117,60 @@
       ],
       "_endereco_divulgado_que_nao_existe": "A curadoria chegou por um link divulgado no perfil dele: https://contraataque.randolferodrigues.com.br/. Esse subdominio NAO EXISTE no DNS — getaddrinfo falha, e nao e 404 nem servidor fora do ar. Ou o endereco foi retirado, ou o link no perfil esta errado. Fica registrado porque 'o link do perfil nao abre' e 'o site nao existe' sao coisas diferentes, e a segunda seria falsa: o dominio principal responde.",
       "_robots": "User-agent: * / Disallow: /wp-admin/ — coleta permitida."
+    },
+    {
+      "id_candidatura": "sen-ap-2026-acacio-favacho",
+      "uf": "AP",
+      "url": "https://acaciofavacho.com.br/",
+      "encontrado_em": "2026-09-02",
+      "encontrado_por": "curadoria do projeto, por um dos Instagrams que ele declarou ao TSE",
+      "declarou_ao_tse": [
+        "https://www.facebook.com/share/1DRWARWBPK/",
+        "https://www.instagram.com/acacio.senador",
+        "https://www.instagram.com/acaciofavacho",
+        "https://www.instagram.com/cortesacacio",
+        "https://www.tiktok.com/@acaciofavacho",
+        "https://youtube.com/@acaciofavacho5604"
+      ],
+      "prova_de_atribuicao": [
+        "O titulo da pagina e 'Acácio Favacho :: Deputado Federal - AP' — nome de urna e cargo atual iguais ao registro no TSE.",
+        "O site aponta para https://www.youtube.com/@acaciofavacho5604, que e EXATAMENTE um dos enderecos que a candidatura declarou ao TSE.",
+        "Aponta tambem para instagram.com/acaciofavacho, um dos tres Instagrams declarados, e para tiktok.com/@acaciofavacho, mesmo identificador do TikTok declarado.",
+        "Traz o nome civil 'Acácio da Silva Favacho Neto', igual ao nome_completo do registro ('Acacio da Silva Favacho Neto').",
+        "Uma noticia do proprio site diz 'Acácio concorre com o número 151' — igual ao numero_urna do registro.",
+        "Identifica o partido como MDB/AP, igual ao id_partido do registro, e diz que ele preside o diretorio estadual."
+      ],
+      "_ressalva_de_leitura": "E SITE DE MANDATO, E NAO DE CAMPANHA. O rodape diz 'Desenvolvido por Jairo Santos - 2023', o titulo e o cargo atual ('Deputado Federal - AP') e o endereco de contato e o gabinete 414 do Anexo IV da Camara. O conteudo e biografia, registro legislativo e noticias. Isso muda o que se pode tirar dele: o que ha e declaracao do candidato sobre a atuacao dele, e nao programa de governo para o Senado.",
+      "_robots": "O robots.txt LIBERA o coletor deste projeto e PROIBE oito rastreadores de IA, entre eles o ClaudeBot da Anthropic, o GPTBot e o CCBot. O agente do projeto cai na regra 'User-agent: * / Allow: /' e nao e nenhum dos proibidos. Content-Signal: search=yes, ai-train=no, use=reference — o projeto nao treina modelo e publica trecho literal curto com link de volta, que e uso de referencia. A curadoria decidiu em 02/set/2026 coletar com o agente do projeto, ciente do bloqueio dirigido a rastreadores de IA. Registrado aqui porque e decisao, e nao detalhe tecnico: quem ler o acervo depois tem de saber que ela foi tomada e por quem."
+    },
+    {
+      "id_candidatura": "sen-ap-2026-acacio-favacho",
+      "uf": "AP",
+      "url": "https://pec47.acaciofavacho.com.br/",
+      "encontrado_em": "2026-09-02",
+      "encontrado_por": "link no menu do site principal ('Saiba sobre a PEC 47')",
+      "declarou_ao_tse": [
+        "https://www.facebook.com/share/1DRWARWBPK/",
+        "https://www.instagram.com/acacio.senador",
+        "https://www.instagram.com/acaciofavacho",
+        "https://www.instagram.com/cortesacacio",
+        "https://www.tiktok.com/@acaciofavacho",
+        "https://youtube.com/@acaciofavacho5604"
+      ],
+      "prova_de_atribuicao": [
+        "O titulo da pagina e 'Acácio Favacho :: Deputado Federal - AP' — nome de urna e cargo atual iguais ao registro no TSE.",
+        "O site aponta para https://www.youtube.com/@acaciofavacho5604, que e EXATAMENTE um dos enderecos que a candidatura declarou ao TSE.",
+        "Aponta tambem para instagram.com/acaciofavacho, um dos tres Instagrams declarados, e para tiktok.com/@acaciofavacho, mesmo identificador do TikTok declarado.",
+        "Traz o nome civil 'Acácio da Silva Favacho Neto', igual ao nome_completo do registro ('Acacio da Silva Favacho Neto').",
+        "Uma noticia do proprio site diz 'Acácio concorre com o número 151' — igual ao numero_urna do registro.",
+        "Identifica o partido como MDB/AP, igual ao id_partido do registro, e diz que ele preside o diretorio estadual.",
+        "O subdominio se identifica no cabecalho como 'Gabinete Deputado Acácio Favacho • MDB-AP'.",
+        "O titulo e 'PEC 47/2023 - Justiça para os Ex-Territórios | Deputado Acácio Favacho'.",
+        "Esta linkado no menu do dominio principal, que ja tem a atribuicao provada."
+      ],
+      "_ressalva_de_leitura": "Pagina de GABINETE sobre uma proposicao de que ele e relator, e nao peca de campanha. O texto explica a PEC 47/2023 com historico e tramitacao. Serve como declaracao do candidato sobre uma posicao legislativa — com o contexto que a regra do projeto exige para citar defesa de lei — e nao como proposta de governo.",
+      "_robots": "O robots.txt LIBERA o coletor deste projeto e PROIBE oito rastreadores de IA, entre eles o ClaudeBot da Anthropic, o GPTBot e o CCBot. O agente do projeto cai na regra 'User-agent: * / Allow: /' e nao e nenhum dos proibidos. Content-Signal: search=yes, ai-train=no, use=reference — o projeto nao treina modelo e publica trecho literal curto com link de volta, que e uso de referencia. A curadoria decidiu em 02/set/2026 coletar com o agente do projeto, ciente do bloqueio dirigido a rastreadores de IA. Registrado aqui porque e decisao, e nao detalhe tecnico: quem ler o acervo depois tem de saber que ela foi tomada e por quem. Vale igual para este subdominio, que tem robots.txt proprio e identico.",
+      "_por_que_subdominio_separado": "Host diferente tem robots.txt proprio, e o do Randolfe ensinou que subdominio divulgado pode nem existir. Este responde 200 e foi conferido em 02/set/2026."
     }
   ]
 }

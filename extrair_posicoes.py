@@ -77,10 +77,29 @@ CONCRETO = (
 
 
 def carregar_coleta(uf: str) -> dict[str, dict]:
+    """Junta os registros de coleta POR CANDIDATURA, somando as paginas.
+
+    Uma candidatura pode ter mais de um site — o Acacio Favacho tem o site do
+    mandato e um subdominio inteiro sobre a PEC 47. Enquanto isto era
+    `{r["id_candidatura"]: r}`, o segundo registro apagava o primeiro e metade
+    das paginas ficava invisivel: a posicao seria RECUSADA com "url nao esta
+    entre as paginas coletadas", que e uma mensagem que manda procurar o defeito
+    no lugar errado.
+
+    Cada pagina leva junto a data da coleta DELA, porque dois sites podem ter
+    sido coletados em dias diferentes e a data e o que permite conferir depois.
+    """
     f = acervo.de(uf) / "_coleta_sites.json"
     if not f.exists():
         raise SystemExit(f"nao ha coleta de sites em {uf}. Rode coletar_sites.py --uf {uf}")
-    return {r["id_candidatura"]: r for r in json.loads(f.read_text(encoding="utf-8"))["registros"]}
+    junto: dict[str, dict] = {}
+    for r in json.loads(f.read_text(encoding="utf-8"))["registros"]:
+        cid = r["id_candidatura"]
+        if cid not in junto:
+            junto[cid] = dict(r, paginas=[])
+        for p in r.get("paginas") or []:
+            junto[cid]["paginas"].append(dict(p, _coletado_em=r["coletado_em"]))
+    return junto
 
 
 def main() -> None:
@@ -137,14 +156,15 @@ def main() -> None:
             "titulo_da_pagina": pagina["titulo"],
             "selo": "declaracao_do_candidato",
             "estado_cobertura": "A",
-            "coletado_em": coleta[cid]["coletado_em"],
+            "coletado_em": pagina.get("_coletado_em", coleta[cid]["coletado_em"]),
             "extraido_em": date.today().isoformat(),
             "extraido_por": "modelo",
             "revisado_por_humano": False,
             "_nota_selo": ("Declaracao da candidatura no site que ela declarou ao TSE. Prova "
                            "que publicou isto, nao que seja verdade."),
             "_como_conferir": ("Abra a URL e procure o trecho. Ele foi conferido palavra por "
-                               "palavra contra o texto coletado em " + coleta[cid]["coletado_em"] +
+                               "palavra contra o texto coletado em "
+                               + pagina.get("_coletado_em", coleta[cid]["coletado_em"]) +
                                "; se a pagina mudou desde entao, a conferencia manda."),
         })
 

@@ -413,7 +413,12 @@ def main() -> None:
     if a.paginas:
         globals()["PAGINAS_POR_SITE"] = a.paginas
     ufs = acervo.com_acervo() if a.todos else [a.uf.upper()]
-    fora_por_id = {}
+    # UMA CANDIDATURA PODE TER MAIS DE UM SITE, e por isso aqui e lista e nao
+    # dicionario. Enquanto era `fora_por_id[id] = s`, a segunda entrada apagava a
+    # primeira EM SILENCIO: o Acacio Favacho tem o site do mandato e um
+    # subdominio inteiro sobre a PEC 47, e o principal sumiu da coleta sem uma
+    # linha de aviso. Sumico silencioso e pior que erro.
+    fora_por_id: dict[str, list] = {}
     arq_fora = pathlib.Path("dados/sites-fora-do-registro.json")
     if arq_fora.exists():
         for s in json.loads(arq_fora.read_text(encoding="utf-8"))["sites"]:
@@ -423,14 +428,15 @@ def main() -> None:
             if not s.get("prova_de_atribuicao"):
                 raise SystemExit(f"PAROU: {s.get('url')} esta em "
                                  "sites-fora-do-registro.json sem prova_de_atribuicao.")
-            fora_por_id[s["id_candidatura"]] = s
+            fora_por_id.setdefault(s["id_candidatura"], []).append(s)
     alvos = []
     for uf in ufs:
         for c in acervo.ler("candidaturas.json", uf)["candidaturas"]:
-            f = fora_por_id.get(c["id_candidatura"])
-            if f and f["uf"] == uf:
+            achados = [f for f in fora_por_id.get(c["id_candidatura"], [])
+                       if f["uf"] == uf]
+            for f in achados:
                 alvos.append((uf, c, f))
-            elif (c.get("contato") or {}).get("site"):
+            if not achados and (c.get("contato") or {}).get("site"):
                 alvos.append((uf, c, None))
     if a.limite:
         alvos = alvos[:a.limite]
@@ -465,8 +471,20 @@ def main() -> None:
     for uf, regs in por_uf.items():
         f = acervo.de(uf) / "_coleta_sites.json"
         antigo = json.loads(f.read_text(encoding="utf-8"))["registros"] if f.exists() else []
-        novos = {r["id_candidatura"]: r for r in antigo}
-        novos.update({r["id_candidatura"]: r for r in regs})
+
+        # A CHAVE E CANDIDATURA + SITE, e nao so a candidatura. Com a chave so na
+        # candidatura, a coleta do segundo site do Acacio Favacho substituiu a do
+        # primeiro na hora de gravar — 5 paginas do site do mandato sumiram sem
+        # aviso, e o arquivo dizia "4 registro(s)" para 5 sites coletados. Este
+        # foi o TERCEIRO lugar com o mesmo defeito na mesma passagem: montar a
+        # lista, gravar, e criar o id do documento.
+        def chave(r: dict) -> tuple:
+            paginas = r.get("paginas") or []
+            u = r.get("url_fora_do_registro") or (paginas[0]["url"] if paginas else "")
+            return (r["id_candidatura"], u.split("//", 1)[-1].split("/", 1)[0].lower())
+
+        novos = {chave(r): r for r in antigo}
+        novos.update({chave(r): r for r in regs})
         f.write_text(json.dumps({"registros": list(novos.values())},
                                 ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(f"gravado: {f}  ({len(novos)} registro(s))")

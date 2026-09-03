@@ -115,11 +115,17 @@ def texto_de_site(uf: str) -> dict[str, str]:
     p = RAIZ / "dados" / uf / "_coleta_sites.json"
     if not p.exists():
         return {}
-    saida = {}
+    # SOMA os registros da mesma candidatura, em vez de o ultimo apagar o
+    # primeiro. Uma candidatura pode ter mais de um site, e com a atribuicao
+    # simples as citacoes tiradas do segundo eram conferidas contra o texto do
+    # primeiro: davam 13% e 17% de casamento e apareciam como "NAO LITERAL —
+    # composta". Duas citacoes literais acusadas de sintese, que e o oposto do
+    # que este conferidor existe para dizer.
+    saida: dict[str, list[str]] = {}
     for r in json.loads(p.read_text(encoding="utf-8"))["registros"]:
-        saida[r["id_candidatura"]] = "\n".join(
+        saida.setdefault(r["id_candidatura"], []).extend(
             x.get("texto") or "" for x in r.get("paginas") or [])
-    return saida
+    return {k: "\n".join(v) for k, v in saida.items()}
 
 
 def arquivo_do_documento(doc: dict) -> str | None:

@@ -33,6 +33,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from datetime import date
 
 import acervo
@@ -42,8 +43,33 @@ import acervo
 # site vinha declarado no registro no TSE — verdade para os 28 primeiros, e
 # mentira no dia em que entrou o primeiro site achado fora do registro. Frase
 # fixa sobre a origem envelhece calada.
+def host_de(url: str) -> str:
+    return url.split("//", 1)[-1].split("/", 1)[0].lower()
+
+
+def id_do_documento(cid: str, url: str, ja_existentes: dict) -> str:
+    """Um documento por HOST, e nao por candidatura.
+
+    Enquanto era `doc-site-<cid>` e ponto, uma candidatura com dois sites tinha
+    as paginas do segundo penduradas no documento do primeiro: a posicao saia no
+    site com a fonte apontando para o dominio errado. O `url_especifica` da
+    posicao continuava certo, o que torna o defeito pior — ele nao aparece no
+    conferidor de citacao, que le o arquivo guardado, e so aparece para quem
+    clica. Foi exatamente assim que o link do programa do PL passou quatro vezes.
+
+    O id antigo e preservado para o primeiro host de cada candidatura, senao
+    todos os 28 documentos ja gravados mudariam de nome.
+    """
+    base = f"doc-site-{cid}"
+    host = host_de(url)
+    if base not in ja_existentes or ja_existentes[base] == host:
+        return base
+    sufixo = re.sub(r"[^a-z0-9]+", "-", host.split(".")[0]).strip("-")
+    return f"{base}-{sufixo}"
+
+
 def documento_do_site(cid: str, url: str, titulo: str, coletado_em: str,
-                      fora: list[str] | None = None) -> dict:
+                      fora: list[str] | None = None, did: str | None = None) -> dict:
     dominio = url.split("//", 1)[-1].split("/", 1)[0]
     if fora:
         origem = ("Endereco NAO declarado ao TSE. Admitido com prova de atribuicao, "
@@ -53,7 +79,7 @@ def documento_do_site(cid: str, url: str, titulo: str, coletado_em: str,
         origem = ("Endereco declarado pela propria candidatura no registro no TSE "
                   "(base de redes sociais 2026).")
     return {
-        "id_documento": f"doc-site-{cid}",
+        "id_documento": did or f"doc-site-{cid}",
         "tipo": "site_de_candidatura",
         "titulo": titulo or f"Site da candidatura ({dominio})",
         "url": url,
@@ -76,18 +102,25 @@ def promover(uf: str, gravar: bool) -> tuple[int, int]:
     f_doc = acervo.de(uf) / "documentos.json"
     ddoc = json.loads(f_doc.read_text(encoding="utf-8"))
     docs = {d["id_documento"] for d in ddoc["documentos"]}
+    # host de cada documento ja gravado, para nao renomear o que existe e ainda
+    # dar documento proprio ao segundo site de uma mesma candidatura
+    host_do_doc = {d["id_documento"]: host_de(d.get("url", ""))
+                   for d in ddoc["documentos"]}
 
     novas, novos_docs = 0, 0
     for x in extraidas:
         if x["id_posicao"] in existentes:
             continue                      # ja promovida; revisao nao se sobrescreve
         cid = x["id_candidatura"]
-        did = f"doc-site-{cid}"
+        did = id_do_documento(cid, x["url"], host_do_doc)
         if did not in docs:
             ddoc["documentos"].append(
                 documento_do_site(cid, x["url"], x.get("titulo_da_pagina", ""),
-                                  x["coletado_em"], x.get("prova_de_atribuicao")))
-            docs.add(did); novos_docs += 1
+                                  x["coletado_em"], x.get("prova_de_atribuicao"),
+                                  did=did))
+            docs.add(did)
+            host_do_doc[did] = host_de(x["url"])
+            novos_docs += 1
         dpos["posicoes"].append({
             "id_posicao": x["id_posicao"],
             "id_tema": x["tema"],

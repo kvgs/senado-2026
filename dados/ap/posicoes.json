@@ -2382,6 +2382,50 @@
     "por_quem": "kvgs"
    },
    "revisado_por": "kvgs"
+  },
+  {
+   "id_posicao": "pos-sen-ap-2026-acacio-favacho-site-001",
+   "id_tema": "t10",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-ap-2026-acacio-favacho",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-ap-2026-acacio-favacho",
+   "citacao_literal": "Estamos falando de uma pauta que impacta diretamente a vida de milhares de trabalhadores e suas famílias. São servidores públicos, policiais e funcionários que ajudaram a construir o Amapá, Roraima e Rondônia quando ainda eram territórios federais. Nosso compromisso é conduzir esse processo com responsabilidade e celeridade.",
+   "texto": "Fala dele, datada de 6 de março de 2026, sobre a PEC 47/2023, de que é relator na CCJ da Câmara. A PEC estende aos servidores dos ex-territórios de Amapá e Roraima o prazo de dez anos que Rondônia teve, equiparando direitos.",
+   "url_especifica": "https://pec47.acaciofavacho.com.br/",
+   "data_referencia": "2026-09-02",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-09-02",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-09-02",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-09-02"
+  },
+  {
+   "id_posicao": "pos-sen-ap-2026-acacio-favacho-site-002",
+   "id_tema": "t10",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-ap-2026-acacio-favacho",
+   "estado_cobertura": "A",
+   "natureza": "promessa",
+   "nivel_fonte": "declaracao_candidato",
+   "id_documento": "doc-site-sen-ap-2026-acacio-favacho",
+   "citacao_literal": "Uma luta de décadas chegando ao fim: equiparação de direitos para servidores públicos que construíram a história de Amapá , Roraima e Rondônia",
+   "texto": "Como o site do gabinete dele apresenta a PEC 47/2023: equiparação de direitos dos servidores dos três ex-territórios federais.",
+   "url_especifica": "https://pec47.acaciofavacho.com.br/",
+   "data_referencia": "2026-09-02",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-09-02",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-09-02",
+    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+   },
+   "_promovido_em": "2026-09-02"
   }
  ]
 }
