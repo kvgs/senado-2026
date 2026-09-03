@@ -1068,7 +1068,7 @@
    "texto": "Defende usar reconhecimento facial nas áreas centrais e de grande circulação dos principais centros urbanos.",
    "url_especifica": "https://fundacaoulysses.org.br/wp-content/uploads/2025/10/FUG-18x26cm-DIGITAL.pdf#page=59",
    "data_referencia": "2025-10-23",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
@@ -1077,6 +1077,10 @@
    },
    "_promovido_em": "2026-08-28",
    "revisao": {
+    "em": "2026-09-03",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
     "_antes": [
      {
       "em": "2026-09-03",
@@ -1084,11 +1088,10 @@
       "nota": "Não achei no site",
       "por_quem": "kvgs"
      }
-    ],
-    "_reaberta_em": "2026-09-03",
-    "_motivo": "A citacao foi estendida ate o fim da frase: antes parava no meio e o resto da enumeracao ficava de fora. Texto anterior: Aplicação de reconhecimento facial em todas as áreas centrais e de grande circulação nos principais centros urbanos"
+    ]
    },
-   "_url_antes": "https://www.mdb.org.br/documento-caminhos-para-o-brasil/"
+   "_url_antes": "https://www.mdb.org.br/documento-caminhos-para-o-brasil/",
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ap-2026-acacio-favacho-prog-mdb-002",
@@ -1228,7 +1231,7 @@
    "texto": "Defende alfabetização digital básica e formação crítica na escola.",
    "url_especifica": "https://fundacaoulysses.org.br/wp-content/uploads/2025/10/FUG-18x26cm-DIGITAL.pdf#page=49",
    "data_referencia": "2025-10-23",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
@@ -1237,6 +1240,10 @@
    },
    "_promovido_em": "2026-08-28",
    "revisao": {
+    "em": "2026-09-03",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
     "_antes": [
      {
       "em": "2026-09-03",
@@ -1244,9 +1251,7 @@
       "nota": "",
       "por_quem": "kvgs"
      }
-    ],
-    "_reaberta_em": "2026-09-03",
-    "_motivo": "A citacao foi estendida ate o fim da frase: antes parava no meio e o resto da enumeracao ficava de fora. Texto anterior: Promoção da alfabetização digital básica e da formação crítica, voltada ao desenvolvimento de competências digitais essenciais"
+    ]
    },
    "revisado_por": "kvgs",
    "_url_antes": "https://www.mdb.org.br/documento-caminhos-para-o-brasil/"
@@ -1420,7 +1425,7 @@
    "texto": "Defende ampliar a habitação subsidiada até a classe média, com faixas de financiamento regionais para famílias com renda de até 15 salários mínimos.",
    "url_especifica": "https://fundacaoulysses.org.br/wp-content/uploads/2025/10/FUG-18x26cm-DIGITAL.pdf#page=61",
    "data_referencia": "2025-10-23",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
@@ -1429,6 +1434,10 @@
    },
    "_promovido_em": "2026-08-28",
    "revisao": {
+    "em": "2026-09-03",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
     "_antes": [
      {
       "em": "2026-09-03",
@@ -1436,9 +1445,7 @@
       "nota": "",
       "por_quem": "kvgs"
      }
-    ],
-    "_reaberta_em": "2026-09-03",
-    "_motivo": "A citacao foi estendida ate o fim da frase: antes parava no meio e o resto da enumeracao ficava de fora. Texto anterior: Nesse contexto, é essencial aumentar o sistema de habitação subsidiada, estendendo-o também à classe média brasileira. Para isso, propõe-se a criação de faixas de financiamento que considerem as diferentes realidades regionais, contemplando famílias com renda de até 15 salários mínimos"
+    ]
    },
    "revisado_por": "kvgs",
    "_url_antes": "https://www.mdb.org.br/documento-caminhos-para-o-brasil/"
