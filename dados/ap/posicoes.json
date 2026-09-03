@@ -2347,14 +2347,21 @@
    "texto": "Quer um país que garanta às crianças e adolescentes educação de qualidade e proteção contra abusos.",
    "url_especifica": "https://www.podemos.org.br/manifesto/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pode-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-03",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ap-2026-rayssa-furlan-prog-pode-002",
@@ -2370,14 +2377,21 @@
    "texto": "Defende políticas públicas, tratamento e apoio às famílias de pessoas com TEA, TDAH e doenças raras.",
    "url_especifica": "https://www.podemos.org.br/manifesto/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pode-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-03",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ap-2026-rayssa-furlan-prog-pode-003",
@@ -2393,14 +2407,21 @@
    "texto": "Quer um país onde as mulheres tenham segurança, respeito e oportunidades iguais.",
    "url_especifica": "https://www.podemos.org.br/manifesto/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pode-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-03",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ap-2026-rayssa-furlan-prog-pode-004",
@@ -2416,14 +2437,21 @@
    "texto": "Quer direitos garantidos e acessibilidade plena para pessoas com deficiência.",
    "url_especifica": "https://www.podemos.org.br/manifesto/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pode-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-03",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ap-2026-rayssa-furlan-prog-pode-005",
@@ -2439,14 +2467,21 @@
    "texto": "Quer mais transparência, mais participação e mais democracia direta.",
    "url_especifica": "https://www.podemos.org.br/manifesto/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pode-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-03",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ap-2026-randolfe-site-001",
