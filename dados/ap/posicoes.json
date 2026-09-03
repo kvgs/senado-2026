@@ -332,14 +332,28 @@
    "texto": "Defende combate total ao tráfico de drogas, com punição severa a traficantes.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-001",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-professor-uzian-pinto-prog-dc-002",
@@ -355,14 +369,28 @@
    "texto": "Propõe um Plano Nacional de Segurança Pública.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-002",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-professor-uzian-pinto-prog-dc-003",
@@ -378,14 +406,28 @@
    "texto": "Defende garantir acesso à educação tanto pela rede pública quanto pela rede privada, com bolsas e crédito educativo para estudantes carentes.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-003",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-professor-uzian-pinto-prog-dc-004",
@@ -401,14 +443,28 @@
    "texto": "Defende subsídio público a escolas particulares mantidas por entidades sem fins lucrativos.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-004",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-professor-uzian-pinto-prog-dc-005",
@@ -424,14 +480,28 @@
    "texto": "Defende um sistema nacional de saúde unificado e descentralizado, com atendimento médico, odontológico e hospitalar e ênfase em prevenção.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-005",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-professor-uzian-pinto-prog-dc-006",
@@ -447,14 +517,28 @@
    "texto": "Defende fortalecer a empresa privada e limitar a atuação do Estado na economia.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-006",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-professor-uzian-pinto-prog-dc-007",
@@ -470,14 +554,28 @@
    "texto": "Na reforma tributária, defende acabar com a cobrança de tributo sobre tributo (efeito cascata).",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-007",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-professor-uzian-pinto-prog-dc-008",
@@ -493,14 +591,28 @@
    "texto": "Defende tornar efetiva a participação dos trabalhadores nos lucros ou resultados das empresas.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-008",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-professor-uzian-pinto-prog-dc-009",
@@ -516,14 +628,28 @@
    "texto": "Defende que a política de transporte urbano assegure transporte coletivo seguro e digno aos trabalhadores.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-009",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-professor-uzian-pinto-prog-dc-010",
@@ -539,14 +665,28 @@
    "texto": "Defende conciliar atividade econômica e meio ambiente, com preservação da fauna, da flora e do equilíbrio ecológico.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-010",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-professor-uzian-pinto-prog-dc-011",
@@ -562,14 +702,28 @@
    "texto": "Defende garantir a cada família o direito a uma moradia digna e própria.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-011",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-professor-uzian-pinto-prog-dc-012",
@@ -585,14 +739,28 @@
    "texto": "Defende erradicar o preconceito racial, fazendo cumprir e aperfeiçoar a legislação específica.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-012",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-professor-uzian-pinto-prog-dc-013",
@@ -608,14 +776,28 @@
    "texto": "Defende mecanismos de proteção da família contra pornografia e violência nos meios de comunicação.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-013",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-professor-uzian-pinto-prog-dc-014",
@@ -631,14 +813,28 @@
    "texto": "Defende redistribuir encargos e recursos entre União, Estados e Municípios, valorizando o Município como base da federação.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-014",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-professor-uzian-pinto-prog-dc-015",
@@ -654,14 +850,28 @@
    "texto": "Defende fortalecer os partidos políticos adotando o princípio da fidelidade partidária.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-015",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-professor-uzian-pinto-prog-dc-016",
@@ -677,14 +887,28 @@
    "texto": "Defende punição severa por corrupção no trato da coisa pública, sem admitir impunidade.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-016",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-juiza-jo-prog-dc-001",
@@ -700,14 +924,28 @@
    "texto": "Defende combate total ao tráfico de drogas, com punição severa a traficantes.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-001",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-juiza-jo-prog-dc-002",
@@ -723,14 +961,28 @@
    "texto": "Propõe um Plano Nacional de Segurança Pública.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-002",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-juiza-jo-prog-dc-003",
@@ -746,14 +998,28 @@
    "texto": "Defende garantir acesso à educação tanto pela rede pública quanto pela rede privada, com bolsas e crédito educativo para estudantes carentes.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-003",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-juiza-jo-prog-dc-004",
@@ -769,14 +1035,28 @@
    "texto": "Defende subsídio público a escolas particulares mantidas por entidades sem fins lucrativos.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-004",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-juiza-jo-prog-dc-005",
@@ -792,14 +1072,28 @@
    "texto": "Defende um sistema nacional de saúde unificado e descentralizado, com atendimento médico, odontológico e hospitalar e ênfase em prevenção.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-005",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-juiza-jo-prog-dc-006",
@@ -815,14 +1109,28 @@
    "texto": "Defende fortalecer a empresa privada e limitar a atuação do Estado na economia.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-006",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-juiza-jo-prog-dc-007",
@@ -838,14 +1146,28 @@
    "texto": "Na reforma tributária, defende acabar com a cobrança de tributo sobre tributo (efeito cascata).",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-007",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-juiza-jo-prog-dc-008",
@@ -861,14 +1183,28 @@
    "texto": "Defende tornar efetiva a participação dos trabalhadores nos lucros ou resultados das empresas.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-008",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-juiza-jo-prog-dc-009",
@@ -884,14 +1220,28 @@
    "texto": "Defende que a política de transporte urbano assegure transporte coletivo seguro e digno aos trabalhadores.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-009",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-juiza-jo-prog-dc-010",
@@ -907,14 +1257,28 @@
    "texto": "Defende conciliar atividade econômica e meio ambiente, com preservação da fauna, da flora e do equilíbrio ecológico.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-010",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-juiza-jo-prog-dc-011",
@@ -930,14 +1294,28 @@
    "texto": "Defende garantir a cada família o direito a uma moradia digna e própria.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-011",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-juiza-jo-prog-dc-012",
@@ -953,14 +1331,28 @@
    "texto": "Defende erradicar o preconceito racial, fazendo cumprir e aperfeiçoar a legislação específica.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-012",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-juiza-jo-prog-dc-013",
@@ -976,14 +1368,28 @@
    "texto": "Defende mecanismos de proteção da família contra pornografia e violência nos meios de comunicação.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-013",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-juiza-jo-prog-dc-014",
@@ -999,14 +1405,28 @@
    "texto": "Defende redistribuir encargos e recursos entre União, Estados e Municípios, valorizando o Município como base da federação.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-014",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-juiza-jo-prog-dc-015",
@@ -1022,14 +1442,28 @@
    "texto": "Defende fortalecer os partidos políticos adotando o princípio da fidelidade partidária.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-015",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-juiza-jo-prog-dc-016",
@@ -1045,14 +1479,28 @@
    "texto": "Defende punição severa por corrupção no trato da coisa pública, sem admitir impunidade.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-016",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ap-2026-acacio-favacho-prog-mdb-001",

@@ -244,7 +244,7 @@
    "texto": "Defende simplificar a legislação e reduzir a carga tributária, e desburocratizar as normas trabalhistas para favorecer contratações e empreendedorismo.",
    "url_especifica": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?jornal=530&pagina=257&data=22/12/2022&captchafield=firstAccess",
    "data_referencia": "2022-12-19",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
@@ -252,7 +252,21 @@
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
    "_promovido_em": "2026-08-28",
-   "_pagina_no_dou": 257
+   "_pagina_no_dou": 257,
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-marcio-bittar-prog-pl-001",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-marcio-bittar",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ce-2026-alcides-fernandes-prog-pl-002",
@@ -268,7 +282,7 @@
    "texto": "Defende igualdade salarial entre homens e mulheres na mesma ocupação, combate ao feminicídio e assistência a mulheres em situação de violência.",
    "url_especifica": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?jornal=530&pagina=258&data=22/12/2022&captchafield=firstAccess",
    "data_referencia": "2022-12-19",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
@@ -276,7 +290,21 @@
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
    "_promovido_em": "2026-08-28",
-   "_pagina_no_dou": 258
+   "_pagina_no_dou": 258,
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-marcio-bittar-prog-pl-002",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-marcio-bittar",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ce-2026-alcides-fernandes-prog-pl-003",
@@ -292,7 +320,7 @@
    "texto": "Propõe políticas de inserção do jovem no mercado de trabalho, alinhando ensino às demandas sociais e facilitando acesso ao crédito.",
    "url_especifica": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?jornal=530&pagina=258&data=22/12/2022&captchafield=firstAccess",
    "data_referencia": "2022-12-19",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
@@ -300,7 +328,21 @@
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
    "_promovido_em": "2026-08-28",
-   "_pagina_no_dou": 258
+   "_pagina_no_dou": 258,
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-marcio-bittar-prog-pl-003",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-marcio-bittar",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ce-2026-alcides-fernandes-prog-pl-004",
@@ -316,7 +358,7 @@
    "texto": "Defende expandir digitalização e conectividade, com foco em quem vive em localidades remotas.",
    "url_especifica": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?jornal=530&pagina=257&data=22/12/2022&captchafield=firstAccess",
    "data_referencia": "2022-12-19",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
@@ -324,7 +366,21 @@
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
    "_promovido_em": "2026-08-28",
-   "_pagina_no_dou": 257
+   "_pagina_no_dou": 257,
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-marcio-bittar-prog-pl-004",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-marcio-bittar",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-ce-2026-lino-alves-prog-pco-001",

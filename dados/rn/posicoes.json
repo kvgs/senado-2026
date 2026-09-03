@@ -222,14 +222,28 @@
    "texto": "Defende desmilitarizar a polícia e construir um modelo de polícia civil de ciclo completo, com controle interno e externo.",
    "url_especifica": "https://psol50.org.br/partido/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-professor-inacio-moreira-prog-psol-001",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-professor-inacio-moreira",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-sandro-pimentel-prog-psol-002",
@@ -245,14 +259,28 @@
    "texto": "Defende direito à educação pública, gratuita, laica e inclusiva em todas as idades.",
    "url_especifica": "https://psol50.org.br/partido/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-professor-inacio-moreira-prog-psol-002",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-professor-inacio-moreira",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-sandro-pimentel-prog-psol-003",
@@ -268,14 +296,28 @@
    "texto": "Coloca a defesa do SUS e o enfrentamento ao negacionismo científico como centrais.",
    "url_especifica": "https://psol50.org.br/partido/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-professor-inacio-moreira-prog-psol-003",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-professor-inacio-moreira",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-sandro-pimentel-prog-psol-004",
@@ -291,14 +333,28 @@
    "texto": "Defende serviços públicos universais, redução da jornada de trabalho e transição ecológica.",
    "url_especifica": "https://psol50.org.br/partido/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-professor-inacio-moreira-prog-psol-004",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-professor-inacio-moreira",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-sandro-pimentel-prog-psol-005",
@@ -314,14 +370,28 @@
    "texto": "Propõe enfrentar monopólios de mídia e regular as big techs, com soberania digital e responsabilização por conteúdo.",
    "url_especifica": "https://psol50.org.br/partido/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-professor-inacio-moreira-prog-psol-005",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-professor-inacio-moreira",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-sandro-pimentel-prog-psol-006",
@@ -337,14 +407,28 @@
    "texto": "Propõe transição para um modelo econômico pós-extrativista com planejamento ecológico de longo prazo.",
    "url_especifica": "https://psol50.org.br/partido/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-professor-inacio-moreira-prog-psol-006",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-professor-inacio-moreira",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-sandro-pimentel-prog-psol-007",
@@ -360,14 +444,28 @@
    "texto": "Propõe reforma urbana com combate à especulação imobiliária, tarifa zero e acesso a moradia e saneamento.",
    "url_especifica": "https://psol50.org.br/partido/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-professor-inacio-moreira-prog-psol-007",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-professor-inacio-moreira",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-sonia-godeiro-prog-psol-001",
@@ -383,14 +481,28 @@
    "texto": "Defende desmilitarizar a polícia e construir um modelo de polícia civil de ciclo completo, com controle interno e externo.",
    "url_especifica": "https://psol50.org.br/partido/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-professor-inacio-moreira-prog-psol-001",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-professor-inacio-moreira",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-sonia-godeiro-prog-psol-002",
@@ -406,14 +518,28 @@
    "texto": "Defende direito à educação pública, gratuita, laica e inclusiva em todas as idades.",
    "url_especifica": "https://psol50.org.br/partido/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-professor-inacio-moreira-prog-psol-002",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-professor-inacio-moreira",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-sonia-godeiro-prog-psol-003",
@@ -429,14 +555,28 @@
    "texto": "Coloca a defesa do SUS e o enfrentamento ao negacionismo científico como centrais.",
    "url_especifica": "https://psol50.org.br/partido/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-professor-inacio-moreira-prog-psol-003",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-professor-inacio-moreira",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-sonia-godeiro-prog-psol-004",
@@ -452,14 +592,28 @@
    "texto": "Defende serviços públicos universais, redução da jornada de trabalho e transição ecológica.",
    "url_especifica": "https://psol50.org.br/partido/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-professor-inacio-moreira-prog-psol-004",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-professor-inacio-moreira",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-sonia-godeiro-prog-psol-005",
@@ -475,14 +629,28 @@
    "texto": "Propõe enfrentar monopólios de mídia e regular as big techs, com soberania digital e responsabilização por conteúdo.",
    "url_especifica": "https://psol50.org.br/partido/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-professor-inacio-moreira-prog-psol-005",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-professor-inacio-moreira",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-sonia-godeiro-prog-psol-006",
@@ -498,14 +666,28 @@
    "texto": "Propõe transição para um modelo econômico pós-extrativista com planejamento ecológico de longo prazo.",
    "url_especifica": "https://psol50.org.br/partido/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-professor-inacio-moreira-prog-psol-006",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-professor-inacio-moreira",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-sonia-godeiro-prog-psol-007",
@@ -521,14 +703,28 @@
    "texto": "Propõe reforma urbana com combate à especulação imobiliária, tarifa zero e acesso a moradia e saneamento.",
    "url_especifica": "https://psol50.org.br/partido/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psol-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-professor-inacio-moreira-prog-psol-007",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-professor-inacio-moreira",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-coronel-helio-prog-pl-001",
@@ -544,7 +740,7 @@
    "texto": "Defende simplificar a legislação e reduzir a carga tributária, e desburocratizar as normas trabalhistas para favorecer contratações e empreendedorismo.",
    "url_especifica": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?jornal=530&pagina=257&data=22/12/2022&captchafield=firstAccess",
    "data_referencia": "2022-12-19",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
@@ -552,7 +748,21 @@
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
    "_promovido_em": "2026-08-28",
-   "_pagina_no_dou": 257
+   "_pagina_no_dou": 257,
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-marcio-bittar-prog-pl-001",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-marcio-bittar",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-coronel-helio-prog-pl-002",
@@ -568,7 +778,7 @@
    "texto": "Defende igualdade salarial entre homens e mulheres na mesma ocupação, combate ao feminicídio e assistência a mulheres em situação de violência.",
    "url_especifica": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?jornal=530&pagina=258&data=22/12/2022&captchafield=firstAccess",
    "data_referencia": "2022-12-19",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
@@ -576,7 +786,21 @@
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
    "_promovido_em": "2026-08-28",
-   "_pagina_no_dou": 258
+   "_pagina_no_dou": 258,
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-marcio-bittar-prog-pl-002",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-marcio-bittar",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-coronel-helio-prog-pl-003",
@@ -592,7 +816,7 @@
    "texto": "Propõe políticas de inserção do jovem no mercado de trabalho, alinhando ensino às demandas sociais e facilitando acesso ao crédito.",
    "url_especifica": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?jornal=530&pagina=258&data=22/12/2022&captchafield=firstAccess",
    "data_referencia": "2022-12-19",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
@@ -600,7 +824,21 @@
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
    "_promovido_em": "2026-08-28",
-   "_pagina_no_dou": 258
+   "_pagina_no_dou": 258,
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-marcio-bittar-prog-pl-003",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-marcio-bittar",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-coronel-helio-prog-pl-004",
@@ -616,7 +854,7 @@
    "texto": "Defende expandir digitalização e conectividade, com foco em quem vive em localidades remotas.",
    "url_especifica": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?jornal=530&pagina=257&data=22/12/2022&captchafield=firstAccess",
    "data_referencia": "2022-12-19",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
@@ -624,7 +862,21 @@
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
    "_promovido_em": "2026-08-28",
-   "_pagina_no_dou": 257
+   "_pagina_no_dou": 257,
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-marcio-bittar-prog-pl-004",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-marcio-bittar",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-luciana-mandu-prog-pstu-001",
@@ -1330,14 +1582,28 @@
    "texto": "Defende combate total ao tráfico de drogas, com punição severa a traficantes.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-001",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-linhares-jiboia-prog-dc-002",
@@ -1353,14 +1619,28 @@
    "texto": "Propõe um Plano Nacional de Segurança Pública.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-002",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-linhares-jiboia-prog-dc-003",
@@ -1376,14 +1656,28 @@
    "texto": "Defende garantir acesso à educação tanto pela rede pública quanto pela rede privada, com bolsas e crédito educativo para estudantes carentes.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-003",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-linhares-jiboia-prog-dc-004",
@@ -1399,14 +1693,28 @@
    "texto": "Defende subsídio público a escolas particulares mantidas por entidades sem fins lucrativos.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-004",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-linhares-jiboia-prog-dc-005",
@@ -1422,14 +1730,28 @@
    "texto": "Defende um sistema nacional de saúde unificado e descentralizado, com atendimento médico, odontológico e hospitalar e ênfase em prevenção.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-005",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-linhares-jiboia-prog-dc-006",
@@ -1445,14 +1767,28 @@
    "texto": "Defende fortalecer a empresa privada e limitar a atuação do Estado na economia.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-006",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-linhares-jiboia-prog-dc-007",
@@ -1468,14 +1804,28 @@
    "texto": "Na reforma tributária, defende acabar com a cobrança de tributo sobre tributo (efeito cascata).",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-007",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-linhares-jiboia-prog-dc-008",
@@ -1491,14 +1841,28 @@
    "texto": "Defende tornar efetiva a participação dos trabalhadores nos lucros ou resultados das empresas.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-008",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-linhares-jiboia-prog-dc-009",
@@ -1514,14 +1878,28 @@
    "texto": "Defende que a política de transporte urbano assegure transporte coletivo seguro e digno aos trabalhadores.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-009",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-linhares-jiboia-prog-dc-010",
@@ -1537,14 +1915,28 @@
    "texto": "Defende conciliar atividade econômica e meio ambiente, com preservação da fauna, da flora e do equilíbrio ecológico.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-010",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-linhares-jiboia-prog-dc-011",
@@ -1560,14 +1952,28 @@
    "texto": "Defende garantir a cada família o direito a uma moradia digna e própria.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-011",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-linhares-jiboia-prog-dc-012",
@@ -1583,14 +1989,28 @@
    "texto": "Defende erradicar o preconceito racial, fazendo cumprir e aperfeiçoar a legislação específica.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-012",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-linhares-jiboia-prog-dc-013",
@@ -1606,14 +2026,28 @@
    "texto": "Defende mecanismos de proteção da família contra pornografia e violência nos meios de comunicação.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-013",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-linhares-jiboia-prog-dc-014",
@@ -1629,14 +2063,28 @@
    "texto": "Defende redistribuir encargos e recursos entre União, Estados e Municípios, valorizando o Município como base da federação.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-014",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-linhares-jiboia-prog-dc-015",
@@ -1652,14 +2100,28 @@
    "texto": "Defende fortalecer os partidos políticos adotando o princípio da fidelidade partidária.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-015",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-linhares-jiboia-prog-dc-016",
@@ -1675,14 +2137,28 @@
    "texto": "Defende punição severa por corrupção no trato da coisa pública, sem admitir impunidade.",
    "url_especifica": "https://www.democraciacrista.org.br/sobre-nos/programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-dc-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-dr-junior-feitosa-prog-dc-016",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-dr-junior-feitosa",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-samanda-de-lula-prog-pt-001",
@@ -1698,14 +2174,28 @@
    "texto": "Defende universalizar a escola em tempo integral para todas as crianças, em todos os municípios, com investimento em infraestrutura, magistério e gestão.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-001",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-samanda-de-lula-prog-pt-002",
@@ -1721,14 +2211,28 @@
    "texto": "Defende universalizar o acesso à creche e à alfabetização infantil.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-002",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-samanda-de-lula-prog-pt-003",
@@ -1744,14 +2248,28 @@
    "texto": "Defende universalizar o direito à segurança alimentar e ao atendimento à saúde.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-003",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-samanda-de-lula-prog-pt-004",
@@ -1767,14 +2285,28 @@
    "texto": "Defende reduzir a jornada de trabalho e acabar imediatamente com a escala 6×1 (seis dias de trabalho para um de folga).",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-004",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-samanda-de-lula-prog-pt-005",
@@ -1790,14 +2322,28 @@
    "texto": "Defende reforma tributária para corrigir distorções do sistema de impostos e financiar direitos.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-005",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-samanda-de-lula-prog-pt-006",
@@ -1813,14 +2359,28 @@
    "texto": "Defende o direito à mobilidade urbana com tarifa zero no transporte público.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-006",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-samanda-de-lula-prog-pt-007",
@@ -1836,14 +2396,28 @@
    "texto": "Defende uma reforma tecnológica pela soberania digital, com ampla regulamentação dos oligopólios das plataformas digitais.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-007",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-samanda-de-lula-prog-pt-008",
@@ -1882,14 +2456,28 @@
    "texto": "Defende garantir os direitos à cultura, ao esporte e ao lazer, a assistência social e a igualdade de gênero, étnico-racial e regional.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-009",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-samanda-de-lula-prog-pt-010",
@@ -1905,14 +2493,28 @@
    "texto": "Defende reforma política e eleitoral que mude o modelo atual de execução do orçamento por emendas parlamentares.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-010",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-samanda-de-lula-prog-pt-011",
@@ -1928,14 +2530,28 @@
    "texto": "Defende reforma do Judiciário, com democratização e mecanismos de autocorreção.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-011",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-samanda-de-lula-prog-pt-012",
@@ -1951,14 +2567,28 @@
    "texto": "Defende reforma da comunicação para fazer cumprir a proibição constitucional de monopólios no setor.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-012",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-rafael-motta-prog-pdt-001",
@@ -2411,14 +3041,28 @@
    "texto": "Quer um país que garanta às crianças e adolescentes educação de qualidade e proteção contra abusos.",
    "url_especifica": "https://www.podemos.org.br/manifesto/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pode-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-03",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-rayssa-furlan-prog-pode-001",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-rayssa-furlan",
+     "conferida_em": "2026-09-03"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-styvenson-valentim-prog-pode-002",
@@ -2434,14 +3078,28 @@
    "texto": "Defende políticas públicas, tratamento e apoio às famílias de pessoas com TEA, TDAH e doenças raras.",
    "url_especifica": "https://www.podemos.org.br/manifesto/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pode-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-03",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-rayssa-furlan-prog-pode-002",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-rayssa-furlan",
+     "conferida_em": "2026-09-03"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-styvenson-valentim-prog-pode-003",
@@ -2457,14 +3115,28 @@
    "texto": "Quer um país onde as mulheres tenham segurança, respeito e oportunidades iguais.",
    "url_especifica": "https://www.podemos.org.br/manifesto/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pode-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-03",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-rayssa-furlan-prog-pode-003",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-rayssa-furlan",
+     "conferida_em": "2026-09-03"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-styvenson-valentim-prog-pode-004",
@@ -2480,14 +3152,28 @@
    "texto": "Quer direitos garantidos e acessibilidade plena para pessoas com deficiência.",
    "url_especifica": "https://www.podemos.org.br/manifesto/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pode-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-03",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-rayssa-furlan-prog-pode-004",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-rayssa-furlan",
+     "conferida_em": "2026-09-03"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-rn-2026-styvenson-valentim-prog-pode-005",
@@ -2503,14 +3189,28 @@
    "texto": "Quer mais transparência, mais participação e mais democracia direta.",
    "url_especifica": "https://www.podemos.org.br/manifesto/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pode-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-03",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-rayssa-furlan-prog-pode-005",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-rayssa-furlan",
+     "conferida_em": "2026-09-03"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   }
  ]
 }

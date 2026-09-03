@@ -310,7 +310,7 @@
    "texto": "Defende simplificar a legislação e reduzir a carga tributária, e desburocratizar as normas trabalhistas para favorecer contratações e empreendedorismo.",
    "url_especifica": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?jornal=530&pagina=257&data=22/12/2022&captchafield=firstAccess",
    "data_referencia": "2022-12-19",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
@@ -318,7 +318,21 @@
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
    "_promovido_em": "2026-08-28",
-   "_pagina_no_dou": 257
+   "_pagina_no_dou": 257,
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-marcio-bittar-prog-pl-001",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-marcio-bittar",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-filipe-barros-prog-pl-002",
@@ -334,7 +348,7 @@
    "texto": "Defende igualdade salarial entre homens e mulheres na mesma ocupação, combate ao feminicídio e assistência a mulheres em situação de violência.",
    "url_especifica": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?jornal=530&pagina=258&data=22/12/2022&captchafield=firstAccess",
    "data_referencia": "2022-12-19",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
@@ -342,7 +356,21 @@
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
    "_promovido_em": "2026-08-28",
-   "_pagina_no_dou": 258
+   "_pagina_no_dou": 258,
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-marcio-bittar-prog-pl-002",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-marcio-bittar",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-filipe-barros-prog-pl-003",
@@ -358,7 +386,7 @@
    "texto": "Propõe políticas de inserção do jovem no mercado de trabalho, alinhando ensino às demandas sociais e facilitando acesso ao crédito.",
    "url_especifica": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?jornal=530&pagina=258&data=22/12/2022&captchafield=firstAccess",
    "data_referencia": "2022-12-19",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
@@ -366,7 +394,21 @@
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
    "_promovido_em": "2026-08-28",
-   "_pagina_no_dou": 258
+   "_pagina_no_dou": 258,
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-marcio-bittar-prog-pl-003",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-marcio-bittar",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-filipe-barros-prog-pl-004",
@@ -382,7 +424,7 @@
    "texto": "Defende expandir digitalização e conectividade, com foco em quem vive em localidades remotas.",
    "url_especifica": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?jornal=530&pagina=257&data=22/12/2022&captchafield=firstAccess",
    "data_referencia": "2022-12-19",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
@@ -390,7 +432,21 @@
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
    "_promovido_em": "2026-08-28",
-   "_pagina_no_dou": 257
+   "_pagina_no_dou": 257,
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-marcio-bittar-prog-pl-004",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-marcio-bittar",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-marcelo-marcelino-prog-pco-001",
@@ -613,14 +669,28 @@
    "texto": "Defende universalizar a escola em tempo integral para todas as crianças, em todos os municípios, com investimento em infraestrutura, magistério e gestão.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-001",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-gleisi-prog-pt-002",
@@ -636,14 +706,28 @@
    "texto": "Defende universalizar o acesso à creche e à alfabetização infantil.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-002",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-gleisi-prog-pt-003",
@@ -659,14 +743,28 @@
    "texto": "Defende universalizar o direito à segurança alimentar e ao atendimento à saúde.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-003",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-gleisi-prog-pt-004",
@@ -682,14 +780,28 @@
    "texto": "Defende reduzir a jornada de trabalho e acabar imediatamente com a escala 6×1 (seis dias de trabalho para um de folga).",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-004",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-gleisi-prog-pt-005",
@@ -705,14 +817,28 @@
    "texto": "Defende reforma tributária para corrigir distorções do sistema de impostos e financiar direitos.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-005",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-gleisi-prog-pt-006",
@@ -728,14 +854,28 @@
    "texto": "Defende o direito à mobilidade urbana com tarifa zero no transporte público.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-006",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-gleisi-prog-pt-007",
@@ -751,14 +891,28 @@
    "texto": "Defende uma reforma tecnológica pela soberania digital, com ampla regulamentação dos oligopólios das plataformas digitais.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-007",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-gleisi-prog-pt-008",
@@ -797,14 +951,28 @@
    "texto": "Defende garantir os direitos à cultura, ao esporte e ao lazer, a assistência social e a igualdade de gênero, étnico-racial e regional.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-009",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-gleisi-prog-pt-010",
@@ -820,14 +988,28 @@
    "texto": "Defende reforma política e eleitoral que mude o modelo atual de execução do orçamento por emendas parlamentares.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-010",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-gleisi-prog-pt-011",
@@ -843,14 +1025,28 @@
    "texto": "Defende reforma do Judiciário, com democratização e mecanismos de autocorreção.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-011",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-gleisi-prog-pt-012",
@@ -866,14 +1062,28 @@
    "texto": "Defende reforma da comunicação para fazer cumprir a proibição constitucional de monopólios no setor.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-012",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-dr-rosinha-prog-pt-001",
@@ -889,14 +1099,28 @@
    "texto": "Defende universalizar a escola em tempo integral para todas as crianças, em todos os municípios, com investimento em infraestrutura, magistério e gestão.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-001",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-dr-rosinha-prog-pt-002",
@@ -912,14 +1136,28 @@
    "texto": "Defende universalizar o acesso à creche e à alfabetização infantil.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-002",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-dr-rosinha-prog-pt-003",
@@ -935,14 +1173,28 @@
    "texto": "Defende universalizar o direito à segurança alimentar e ao atendimento à saúde.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-003",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-dr-rosinha-prog-pt-004",
@@ -958,14 +1210,28 @@
    "texto": "Defende reduzir a jornada de trabalho e acabar imediatamente com a escala 6×1 (seis dias de trabalho para um de folga).",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-004",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-dr-rosinha-prog-pt-005",
@@ -981,14 +1247,28 @@
    "texto": "Defende reforma tributária para corrigir distorções do sistema de impostos e financiar direitos.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-005",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-dr-rosinha-prog-pt-006",
@@ -1004,14 +1284,28 @@
    "texto": "Defende o direito à mobilidade urbana com tarifa zero no transporte público.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-006",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-dr-rosinha-prog-pt-007",
@@ -1027,14 +1321,28 @@
    "texto": "Defende uma reforma tecnológica pela soberania digital, com ampla regulamentação dos oligopólios das plataformas digitais.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-007",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-dr-rosinha-prog-pt-008",
@@ -1073,14 +1381,28 @@
    "texto": "Defende garantir os direitos à cultura, ao esporte e ao lazer, a assistência social e a igualdade de gênero, étnico-racial e regional.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-009",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-dr-rosinha-prog-pt-010",
@@ -1096,14 +1418,28 @@
    "texto": "Defende reforma política e eleitoral que mude o modelo atual de execução do orçamento por emendas parlamentares.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-010",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-dr-rosinha-prog-pt-011",
@@ -1119,14 +1455,28 @@
    "texto": "Defende reforma do Judiciário, com democratização e mecanismos de autocorreção.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-011",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-dr-rosinha-prog-pt-012",
@@ -1142,14 +1492,28 @@
    "texto": "Defende reforma da comunicação para fazer cumprir a proibição constitucional de monopólios no setor.",
    "url_especifica": "https://pt.org.br/construindo-o-futuro-manifesto-do-pt-para-seguir-transformando-o-pais/",
    "data_referencia": "2026-04-26",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pt-2026-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-jorge-viana-prog-pt-012",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-jorge-viana",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-deltan-dallagnol-prog-novo-001",
@@ -1395,14 +1759,28 @@
    "texto": "Defende fortalecer permanentemente o sistema e os aparatos de repressão do Estado, sem concessões a grupos criminosos.",
    "url_especifica": "https://republicanos10.org.br/manifesto-e-programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-republicanos-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-mara-rocha-prog-republicanos-001",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-mara-rocha",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-alexandre-curi-prog-republicanos-002",
@@ -1448,14 +1826,28 @@
    "texto": "Defende a liberdade para empreender e a independência econômica como caminho para a prosperidade.",
    "url_especifica": "https://republicanos10.org.br/manifesto-e-programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-republicanos-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-mara-rocha-prog-republicanos-003",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-mara-rocha",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-alexandre-curi-prog-republicanos-004",
@@ -1471,14 +1863,28 @@
    "texto": "Defende que o Estado promova justiça social sem substituir o mercado, que deve ser o principal gerador de emprego e renda.",
    "url_especifica": "https://republicanos10.org.br/manifesto-e-programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-republicanos-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-mara-rocha-prog-republicanos-004",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-mara-rocha",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-alexandre-curi-prog-republicanos-005",
@@ -1494,14 +1900,28 @@
    "texto": "Defende reformas estruturantes para fortalecer a indústria nacional e ampliar a presença de produtos brasileiros no exterior.",
    "url_especifica": "https://republicanos10.org.br/manifesto-e-programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-republicanos-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-mara-rocha-prog-republicanos-005",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-mara-rocha",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-alexandre-curi-prog-republicanos-006",
@@ -1517,14 +1937,28 @@
    "texto": "Defende usar tecnologia para enxugar e modernizar a máquina pública, com mais transparência e rapidez.",
    "url_especifica": "https://republicanos10.org.br/manifesto-e-programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-republicanos-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-mara-rocha-prog-republicanos-006",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-mara-rocha",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-alexandre-curi-prog-republicanos-007",
@@ -1570,14 +2004,28 @@
    "texto": "Defende liberdade de expressão plena e responsável como exigência da democracia.",
    "url_especifica": "https://republicanos10.org.br/manifesto-e-programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-republicanos-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-mara-rocha-prog-republicanos-008",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-mara-rocha",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-alexandre-curi-prog-republicanos-009",
@@ -1593,14 +2041,28 @@
    "texto": "Defende harmonia e isonomia entre os poderes e os entes da federação.",
    "url_especifica": "https://republicanos10.org.br/manifesto-e-programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-republicanos-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-mara-rocha-prog-republicanos-009",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-mara-rocha",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-alexandre-curi-prog-republicanos-010",
@@ -1616,14 +2078,28 @@
    "texto": "Defende negociações comerciais internacionais guiadas pelo pragmatismo, e não por ideologia.",
    "url_especifica": "https://republicanos10.org.br/manifesto-e-programa/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-republicanos-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-01",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ac-2026-mara-rocha-prog-republicanos-010",
+     "uf": "AC",
+     "id_candidatura": "sen-ac-2026-mara-rocha",
+     "conferida_em": "2026-09-01"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-03.",
+    "_propagada_em": "2026-09-03"
+   }
   },
   {
    "id_posicao": "pos-sen-pr-2026-karen-guerreiro-prog-missão-001",
