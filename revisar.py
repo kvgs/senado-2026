@@ -44,6 +44,7 @@ import pathlib
 import shutil
 import socketserver
 import threading
+import unicodedata
 import webbrowser
 from datetime import date
 from urllib.parse import urlparse
@@ -205,13 +206,30 @@ def itens_de(uf):
     return itens
 
 
+def sem_acento(s: str) -> str:
+    """Para COMPARAR nome digitado no terminal, e nunca para exibir.
+
+    `--candidatura acacio` nao achava "Acácio Favacho": a comparacao era crua e o
+    acento fazia falhar. Quem digita o filtro esta com pressa e no teclado, e a
+    lista de nomes deste acervo e cheia de acento — Petecao, Cameli, Serrao,
+    Inacio. Errar aqui devolve "nenhuma candidatura casa", que soa como "esta
+    pessoa nao esta no acervo": manda procurar o problema no lugar errado.
+    """
+    return "".join(c for c in unicodedata.normalize("NFD", s.lower())
+                   if not unicodedata.combining(c))
+
+
 def so_a_candidatura(itens):
     if not ALVO:
         return itens
+    alvo = sem_acento(ALVO)
     fica = [x for x in itens
-            if ALVO == str(x["numero"]).lower() or ALVO in x["candidatura"].lower()]
+            if alvo == str(x["numero"]).lower() or alvo in sem_acento(x["candidatura"])]
     if not fica:
-        raise SystemExit(f"nenhuma candidatura casa com {ALVO!r} em {', '.join(UFS)}")
+        nomes = sorted({x["candidatura"] for x in itens})
+        raise SystemExit(
+            f"nenhuma candidatura casa com {ALVO!r} em {', '.join(UFS)}.\n"
+            "  Estas existem aqui: " + "; ".join(nomes))
     return fica
 
 
