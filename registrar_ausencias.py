@@ -98,10 +98,21 @@ def fontes_lidas(uf: str) -> tuple[dict, dict, set]:
     return prog, sites, rec
 
 
+def sem_acento_baixo(s: str) -> str:
+    import unicodedata
+    return "".join(ch for ch in unicodedata.normalize("NFD", s.lower())
+                   if not unicodedata.combining(ch))
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--uf", required=True)
     ap.add_argument("--gravar", action="store_true")
+    # Registrar ausencia estado por estado joga 17 linhas de uma vez na fila da
+    # revisao, e a revisao e de uma pessoa. O filtro existe para acompanhar o
+    # ritmo dela: uma candidatura por vez, quando ela pedir aquela candidatura.
+    ap.add_argument("--candidatura", default=None,
+                    help="numero de urna ou pedaco do nome; so registra essa")
     a = ap.parse_args()
     uf = a.uf.upper()
     dpast = acervo.exige(uf)
@@ -116,6 +127,17 @@ def main() -> int:
     siglas = {p["id_partido"]: p["sigla"]
               for p in acervo.ler("referencia.json")["partidos"]}
     prog, sites, recusados = fontes_lidas(uf)
+
+    if a.candidatura:
+        # sem acento e sem caixa: quem digita o filtro esta no teclado, e a lista
+        # de nomes deste acervo e cheia de acento
+        alvo = sem_acento_baixo(a.candidatura)
+        cands = [c for c in cands
+                 if alvo == str(c["numero_urna"]).lower()
+                 or alvo in sem_acento_baixo(c["pessoa"]["nome_urna"])]
+        if not cands:
+            print(f"nenhuma candidatura casa com {a.candidatura!r} em {uf}")
+            return 1
 
     novos, sem_fonte = [], []
     for c in sorted(cands, key=lambda c: int(c["numero_urna"])):
