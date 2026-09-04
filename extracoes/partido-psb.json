@@ -34,6 +34,12 @@
    "tema": "t10",
    "trecho": "O Estado será organizado democraticamente, mantendo sua tradicional forma federativa",
    "resumo": "Defende um Estado democrático de forma federativa, respeitada a autonomia dos municípios."
+  },
+  {
+   "tema": "t9",
+   "trecho": "asseguradas as liberdades de locomoção; de reunião; de associação; jurídica do homem e da mulher; de manifestação do pensamento, pela palavra escrita, falada ou irradiada; de crença e de cultos",
+   "resumo": "Do capítulo “Dos direitos fundamentais do cidadão”: o programa enumera as liberdades que assegura, entre elas a igualdade jurídica entre homem e mulher e a manifestação do pensamento.",
+   "_nota_trecho": "A frase completa na fonte comeca em 'Todos os cidadaos serao iguais perante a Lei em si, sendo -lhes asseguradas...'. A citacao comeca depois porque 'sendo -lhes' e artefato de espacamento da extracao do PDF — o mesmo aparece no PDF e na pagina — e reproduzi-lo entre aspas no site poria um defeito nosso na boca do partido."
   }
  ]
 }

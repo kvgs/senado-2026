@@ -3324,14 +3324,28 @@
    "texto": "Defende que o ensino oficial seja laico e organizado pelo interesse público, não por fins comerciais.",
    "url_especifica": "https://psb40.org.br/documentos/programa-do-partido-socialista-brasileiro-psb/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psb-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-capi-prog-psb-001",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-capi",
+     "conferida_em": "2026-09-04"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-04.",
+    "_propagada_em": "2026-09-04"
+   }
   },
   {
    "id_posicao": "pos-sen-pb-2026-joao-azevedo-prog-psb-002",
@@ -3347,14 +3361,28 @@
    "texto": "Defende que o Estado garanta a todos assistência médica, sanitária e hospitalar.",
    "url_especifica": "https://psb40.org.br/documentos/programa-do-partido-socialista-brasileiro-psb/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psb-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-capi-prog-psb-002",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-capi",
+     "conferida_em": "2026-09-04"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-04.",
+    "_propagada_em": "2026-09-04"
+   }
   },
   {
    "id_posicao": "pos-sen-pb-2026-joao-azevedo-prog-psb-003",
@@ -3370,14 +3398,28 @@
    "texto": "Defende colocar o comércio exterior sob controle do Estado, até que se torne função exclusiva dele.",
    "url_especifica": "https://psb40.org.br/documentos/programa-do-partido-socialista-brasileiro-psb/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psb-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-capi-prog-psb-003",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-capi",
+     "conferida_em": "2026-09-04"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-04.",
+    "_propagada_em": "2026-09-04"
+   }
   },
   {
    "id_posicao": "pos-sen-pb-2026-joao-azevedo-prog-psb-004",
@@ -3393,14 +3435,28 @@
    "texto": "Considera o trabalho um direito e uma obrigação social de todo cidadão, cujo exercício o Estado deve assegurar.",
    "url_especifica": "https://psb40.org.br/documentos/programa-do-partido-socialista-brasileiro-psb/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psb-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-capi-prog-psb-004",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-capi",
+     "conferida_em": "2026-09-04"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-04.",
+    "_propagada_em": "2026-09-04"
+   }
   },
   {
    "id_posicao": "pos-sen-pb-2026-joao-azevedo-prog-psb-005",
@@ -3416,14 +3472,28 @@
    "texto": "Defende liberdade e autonomia sindical e o direito de greve assegurado.",
    "url_especifica": "https://psb40.org.br/documentos/programa-do-partido-socialista-brasileiro-psb/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psb-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-capi-prog-psb-005",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-capi",
+     "conferida_em": "2026-09-04"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-04.",
+    "_propagada_em": "2026-09-04"
+   }
   },
   {
    "id_posicao": "pos-sen-pb-2026-joao-azevedo-prog-psb-006",
@@ -3439,14 +3509,28 @@
    "texto": "Defende um Estado democrático de forma federativa, respeitada a autonomia dos municípios.",
    "url_especifica": "https://psb40.org.br/documentos/programa-do-partido-socialista-brasileiro-psb/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-psb-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-capi-prog-psb-006",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-capi",
+     "conferida_em": "2026-09-04"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-04.",
+    "_propagada_em": "2026-09-04"
+   }
   },
   {
    "id_posicao": "pos-sen-pb-2026-adriano-trajano-prog-pco-010",
@@ -3738,6 +3822,43 @@
      "id_posicao": "pos-sen-ap-2026-helio-silva-prog-pco-017",
      "uf": "AP",
      "id_candidatura": "sen-ap-2026-helio-silva",
+     "conferida_em": "2026-09-04"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-04.",
+    "_propagada_em": "2026-09-04"
+   }
+  },
+  {
+   "id_posicao": "pos-sen-pb-2026-joao-azevedo-prog-psb-007",
+   "id_candidatura_contexto": "sen-pb-2026-joao-azevedo",
+   "id_tema": "t9",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "psb",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-psb",
+   "citacao_literal": "asseguradas as liberdades de locomoção; de reunião; de associação; jurídica do homem e da mulher; de manifestação do pensamento, pela palavra escrita, falada ou irradiada; de crença e de cultos",
+   "texto": "Do capítulo “Dos direitos fundamentais do cidadão”: o programa enumera as liberdades que assegura, entre elas a igualdade jurídica entre homem e mulher e a manifestação do pensamento.",
+   "url_especifica": "https://psb40.org.br/documentos/programa-do-partido-socialista-brasileiro-psb/",
+   "data_referencia": "2026-09-04",
+   "revisado_por_humano": true,
+   "conferido_por_ia": {
+    "data": "2026-09-04",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-psb-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
+   },
+   "_promovido_em": "2026-09-04",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-capi-prog-psb-007",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-capi",
      "conferida_em": "2026-09-04"
     },
     "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-04.",
