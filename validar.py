@@ -32,7 +32,23 @@ NIVEIS_FONTE = {
     "declaracao_candidato", "registro_legislativo",
 }
 ESTADOS = {"A", "B", "C", "D"}
-NATUREZAS = {"promessa", "resultado_entregue"}
+# "ausencia" ENTRA AQUI porque o acervo a usa e o modelo a previu: estado C e D
+# sao registros de ausencia, e ausencia nao e promessa nem resultado entregue.
+# O validador nao sabia disso e reprovava os 40 registros de ausencia do acervo —
+# 96 erros no Acre, 24 no Amapa — sem ninguem ver, porque ele roda em um estado
+# por vez e o padrao e Sao Paulo. Regra que reprova a pratica correta e regra que
+# se aprende a ignorar.
+NATUREZAS = {"promessa", "resultado_entregue", "ausencia"}
+# SO O D. C e D sao os dois estados de ausencia, mas de tipos opostos, e a
+# primeira versao desta regra tratou os dois como iguais — reprovando 58 linhas
+# de Sao Paulo que estavam certas.
+#
+#   C  "li este documento e ele NAO trata do tema". TEM fonte: o documento lido,
+#      com nivel_fonte e data_referencia. A ausencia foi constatada DENTRO de uma
+#      fonte, e apontar qual e o que a sustenta.
+#   D  "nao localizei fonte nenhuma". NAO tem fonte, por definicao, e o que a
+#      sustenta e dizer quando se procurou e onde.
+ESTADOS_SEM_FONTE = {"D"}
 
 erros: list[str] = []
 avisos: list[str] = []
@@ -188,13 +204,42 @@ def main():
 
         if p["id_tema"] not in ids_tema:
             erros.append(f"[fk] {pid}: id_tema '{p['id_tema']}' inexistente")
-        if p.get("nivel_fonte") not in NIVEIS_FONTE:
+        sem_fonte = p.get("estado_cobertura") in ESTADOS_SEM_FONTE
+        # REGISTRO DE AUSENCIA NAO TEM FONTE, e exigir nivel_fonte dele seria
+        # exigir que se nomeie a origem de uma coisa que nao foi encontrada.
+        if sem_fonte:
+            # AVISO, E NAO ERRO. A pratica do acervo e nivel_fonte nulo no estado
+            # D, e sao 40 registros assim. Mas ha um, o p054 de Sao Paulo, que
+            # nomeia a base de candidaturas como fonte da busca — e ele foi
+            # conferido e aprovado pela curadoria. Transformar isso em erro
+            # bloquearia a publicacao por causa de uma decisao humana ja tomada.
+            # O validador aponta a divergencia; quem decide continua sendo gente.
+            if p.get("nivel_fonte") is not None:
+                avisos.append(f"[R3] {pid}: estado D com nivel_fonte "
+                              f"'{p.get('nivel_fonte')}'. No resto do acervo o "
+                              "estado D vai com nivel_fonte nulo, porque ausencia "
+                              "de fonte nao tem fonte. Se aqui a intencao e "
+                              "apontar ONDE se procurou, isso ja vive em "
+                              "escopo_da_busca.")
+        elif p.get("nivel_fonte") not in NIVEIS_FONTE:
             erros.append(f"[R3] {pid}: nivel_fonte '{p.get('nivel_fonte')}' inválido")
         if p.get("estado_cobertura") not in ESTADOS:
             erros.append(f"[R2] {pid}: estado_cobertura '{p.get('estado_cobertura')}' inválido")
         if p.get("natureza") and p["natureza"] not in NATUREZAS:
             erros.append(f"[R5] {pid}: natureza '{p['natureza']}' inválida")
-        if not p.get("data_referencia"):
+        # A DATA DA AUSENCIA E A DA BUSCA. data_referencia responde "de quando e
+        # esta declaracao"; num registro de ausencia nao ha declaracao, e a
+        # pergunta certa e "quando foi que procuramos" — busca_realizada_em.
+        if sem_fonte:
+            if not p.get("busca_realizada_em"):
+                erros.append(f"[R10] {pid}: registro de ausencia sem "
+                             "busca_realizada_em — sem a data, 'nao localizamos' "
+                             "nao diz de quando")
+            if not p.get("escopo_da_busca"):
+                erros.append(f"[R10] {pid}: registro de ausencia sem "
+                             "escopo_da_busca — afirmar que nao achamos exige "
+                             "dizer onde procuramos")
+        elif not p.get("data_referencia"):
             erros.append(f"[R10] {pid}: sem data_referencia")
         if p.get("id_documento") and p["id_documento"] not in ids_doc:
             erros.append(f"[fk] {pid}: id_documento '{p['id_documento']}' inexistente")

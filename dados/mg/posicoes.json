@@ -840,14 +840,28 @@
    "texto": "Propõe aumento emergencial de 50% em salários e aposentadorias e salário mínimo de pelo menos R$ 7.500.",
    "url_especifica": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
    "data_referencia": "2026",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pco-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-helio-silva-prog-pco-001",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-helio-silva",
+     "conferida_em": "2026-09-04"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-04.",
+    "_propagada_em": "2026-09-04"
+   }
   },
   {
    "id_posicao": "pos-sen-mg-2026-tiao-pessoa-prog-pco-002",
@@ -863,14 +877,28 @@
    "texto": "Propõe jornada máxima de 7 horas por dia, cinco dias por semana, totalizando 35 horas semanais.",
    "url_especifica": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
    "data_referencia": "2026",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pco-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-helio-silva-prog-pco-002",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-helio-silva",
+     "conferida_em": "2026-09-04"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-04.",
+    "_propagada_em": "2026-09-04"
+   }
   },
   {
    "id_posicao": "pos-sen-mg-2026-tiao-pessoa-prog-pco-003",
@@ -886,14 +914,28 @@
    "texto": "Defende cancelar a reforma trabalhista e restaurar a legislação de proteção ao trabalho.",
    "url_especifica": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
    "data_referencia": "2026",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pco-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-helio-silva-prog-pco-003",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-helio-silva",
+     "conferida_em": "2026-09-04"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-04.",
+    "_propagada_em": "2026-09-04"
+   }
   },
   {
    "id_posicao": "pos-sen-mg-2026-tiao-pessoa-prog-pco-004",
@@ -909,14 +951,28 @@
    "texto": "Propõe aposentadoria com no máximo 25 anos de trabalho para mulheres e 30 para homens, e imposto sobre grandes fortunas para custear.",
    "url_especifica": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
    "data_referencia": "2026",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pco-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-helio-silva-prog-pco-004",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-helio-silva",
+     "conferida_em": "2026-09-04"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-04.",
+    "_propagada_em": "2026-09-04"
+   }
   },
   {
    "id_posicao": "pos-sen-mg-2026-tiao-pessoa-prog-pco-005",
@@ -932,14 +988,28 @@
    "texto": "Propõe cancelar as privatizações já feitas e nacionalizar o petróleo, com Petrobrás 100% estatal.",
    "url_especifica": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
    "data_referencia": "2026",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pco-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-helio-silva-prog-pco-005",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-helio-silva",
+     "conferida_em": "2026-09-04"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-04.",
+    "_propagada_em": "2026-09-04"
+   }
   },
   {
    "id_posicao": "pos-sen-mg-2026-tiao-pessoa-prog-pco-006",
@@ -955,14 +1025,28 @@
    "texto": "Defende mais verbas para saúde e educação e o fim do teto de gastos e da Lei de Responsabilidade Fiscal.",
    "url_especifica": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
    "data_referencia": "2026",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pco-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-helio-silva-prog-pco-006",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-helio-silva",
+     "conferida_em": "2026-09-04"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-04.",
+    "_propagada_em": "2026-09-04"
+   }
   },
   {
    "id_posicao": "pos-sen-mg-2026-tiao-pessoa-prog-pco-007",
@@ -978,14 +1062,28 @@
    "texto": "Propõe proibir despejos e cortes de serviços essenciais como água, luz e gás.",
    "url_especifica": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
    "data_referencia": "2026",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pco-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-helio-silva-prog-pco-007",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-helio-silva",
+     "conferida_em": "2026-09-04"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-04.",
+    "_propagada_em": "2026-09-04"
+   }
   },
   {
    "id_posicao": "pos-sen-mg-2026-tiao-pessoa-prog-pco-008",
@@ -1001,14 +1099,28 @@
    "texto": "Propõe passe livre no transporte para desempregados e trabalhadores informais.",
    "url_especifica": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
    "data_referencia": "2026",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pco-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-helio-silva-prog-pco-008",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-helio-silva",
+     "conferida_em": "2026-09-04"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-04.",
+    "_propagada_em": "2026-09-04"
+   }
   },
   {
    "id_posicao": "pos-sen-mg-2026-tiao-pessoa-prog-pco-009",
@@ -1024,14 +1136,28 @@
    "texto": "Propõe reforma agrária com expropriação do latifúndio e demarcação das terras indígenas.",
    "url_especifica": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
    "data_referencia": "2026",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pco-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-helio-silva-prog-pco-009",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-helio-silva",
+     "conferida_em": "2026-09-04"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-04.",
+    "_propagada_em": "2026-09-04"
+   }
   },
   {
    "id_posicao": "pos-sen-mg-2026-jordano-metalurgico-prog-pstu-001",
@@ -4590,14 +4716,28 @@
    "texto": "Defende dissolver a Polícia Militar e o que o programa chama de aparato repressivo, no item “Abaixo a repressão”.",
    "url_especifica": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
    "data_referencia": "2026",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-09-04",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pco-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-09-04"
+   "_promovido_em": "2026-09-04",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-helio-silva-prog-pco-010",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-helio-silva",
+     "conferida_em": "2026-09-04"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-04.",
+    "_propagada_em": "2026-09-04"
+   }
   },
   {
    "id_posicao": "pos-sen-mg-2026-tiao-pessoa-prog-pco-011",
@@ -4613,14 +4753,28 @@
    "texto": "Propõe comitês de autodefesa de trabalhadores da cidade, do campo e de comunidades indígenas.",
    "url_especifica": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
    "data_referencia": "2026",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-09-04",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pco-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-09-04"
+   "_promovido_em": "2026-09-04",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-helio-silva-prog-pco-011",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-helio-silva",
+     "conferida_em": "2026-09-04"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-04.",
+    "_propagada_em": "2026-09-04"
+   }
   },
   {
    "id_posicao": "pos-sen-mg-2026-tiao-pessoa-prog-pco-012",
@@ -4636,14 +4790,28 @@
    "texto": "Propõe acabar com o vestibular e garantir ingresso livre nas universidades.",
    "url_especifica": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
    "data_referencia": "2026",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-09-04",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pco-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-09-04"
+   "_promovido_em": "2026-09-04",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-helio-silva-prog-pco-012",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-helio-silva",
+     "conferida_em": "2026-09-04"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-04.",
+    "_propagada_em": "2026-09-04"
+   }
   },
   {
    "id_posicao": "pos-sen-mg-2026-tiao-pessoa-prog-pco-013",
@@ -4659,14 +4827,28 @@
    "texto": "Propõe piso salarial nacional de professores de no mínimo R$ 8,5 mil.",
    "url_especifica": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
    "data_referencia": "2026",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-09-04",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pco-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-09-04"
+   "_promovido_em": "2026-09-04",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-helio-silva-prog-pco-013",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-helio-silva",
+     "conferida_em": "2026-09-04"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-04.",
+    "_propagada_em": "2026-09-04"
+   }
   },
   {
    "id_posicao": "pos-sen-mg-2026-tiao-pessoa-prog-pco-014",
@@ -4682,14 +4864,28 @@
    "texto": "Defende que verba pública vá só para o ensino público.",
    "url_especifica": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
    "data_referencia": "2026",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-09-04",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pco-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-09-04"
+   "_promovido_em": "2026-09-04",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-helio-silva-prog-pco-014",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-helio-silva",
+     "conferida_em": "2026-09-04"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-04.",
+    "_propagada_em": "2026-09-04"
+   }
   },
   {
    "id_posicao": "pos-sen-mg-2026-tiao-pessoa-prog-pco-015",
@@ -4705,14 +4901,28 @@
    "texto": "Propõe quebrar o monopólio das empresas privadas de telecomunicações na internet e oferecer internet gratuita a toda a população.",
    "url_especifica": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
    "data_referencia": "2026",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-09-04",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pco-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-09-04"
+   "_promovido_em": "2026-09-04",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-helio-silva-prog-pco-015",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-helio-silva",
+     "conferida_em": "2026-09-04"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-04.",
+    "_propagada_em": "2026-09-04"
+   }
   },
   {
    "id_posicao": "pos-sen-mg-2026-tiao-pessoa-prog-pco-016",
@@ -4728,14 +4938,28 @@
    "texto": "Defende recursos públicos para acesso à cultura e ao esporte e o fim dos monopólios do setor, citando carnaval, samba e futebol.",
    "url_especifica": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
    "data_referencia": "2026",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-09-04",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pco-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-09-04"
+   "_promovido_em": "2026-09-04",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-helio-silva-prog-pco-016",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-helio-silva",
+     "conferida_em": "2026-09-04"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-04.",
+    "_propagada_em": "2026-09-04"
+   }
   },
   {
    "id_posicao": "pos-sen-mg-2026-tiao-pessoa-prog-pco-017",
@@ -4751,14 +4975,28 @@
    "texto": "Propõe investimento na cultura popular e patrocínio público das festas populares, sob controle de organizações populares.",
    "url_especifica": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
    "data_referencia": "2026",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-09-04",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-pco-NACIONAL-site.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-09-04"
+   "_promovido_em": "2026-09-04",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs",
+    "_herdada_de": {
+     "id_posicao": "pos-sen-ap-2026-helio-silva-prog-pco-017",
+     "uf": "AP",
+     "id_candidatura": "sen-ap-2026-helio-silva",
+     "conferida_em": "2026-09-04"
+    },
+    "_por_que": "Mesmo trecho, do mesmo documento, no mesmo tema. O que a conferencia de uma linha de programa de partido verifica e se a redacao bate com o documento, e isso foi verificado uma vez por uma pessoa. A propagacao foi autorizada pela curadoria em 2026-09-04.",
+    "_propagada_em": "2026-09-04"
+   }
   }
  ]
 }
