@@ -3379,6 +3379,190 @@
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
    "_promovido_em": "2026-08-28"
+  },
+  {
+   "id_posicao": "pos-sen-sc-2026-carol-prog-pco-010",
+   "id_candidatura_contexto": "sen-sc-2026-carol",
+   "id_tema": "t1",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pco",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pco",
+   "citacao_literal": "Dissolução da Polícia Militar e de todo o aparato repressivo;",
+   "texto": "Defende dissolver a Polícia Militar e o que o programa chama de aparato repressivo, no item “Abaixo a repressão”.",
+   "url_especifica": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
+   "data_referencia": "2026",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-09-04",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pco-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
+   },
+   "_promovido_em": "2026-09-04"
+  },
+  {
+   "id_posicao": "pos-sen-sc-2026-carol-prog-pco-011",
+   "id_candidatura_contexto": "sen-sc-2026-carol",
+   "id_tema": "t1",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pco",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pco",
+   "citacao_literal": "Formar comitês de autodefesa dos trabalhadores da cidade, do campo e nas comunidades de índios;",
+   "texto": "Propõe comitês de autodefesa de trabalhadores da cidade, do campo e de comunidades indígenas.",
+   "url_especifica": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
+   "data_referencia": "2026",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-09-04",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pco-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
+   },
+   "_promovido_em": "2026-09-04"
+  },
+  {
+   "id_posicao": "pos-sen-sc-2026-carol-prog-pco-012",
+   "id_candidatura_contexto": "sen-sc-2026-carol",
+   "id_tema": "t2",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pco",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pco",
+   "citacao_literal": "Fim dos vestibulares. Livre ingresso nas universidades;",
+   "texto": "Propõe acabar com o vestibular e garantir ingresso livre nas universidades.",
+   "url_especifica": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
+   "data_referencia": "2026",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-09-04",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pco-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
+   },
+   "_promovido_em": "2026-09-04"
+  },
+  {
+   "id_posicao": "pos-sen-sc-2026-carol-prog-pco-013",
+   "id_candidatura_contexto": "sen-sc-2026-carol",
+   "id_tema": "t2",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pco",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pco",
+   "citacao_literal": "Piso salarial nacional dos professores de, pelo menos, R$ 8,5 mil;",
+   "texto": "Propõe piso salarial nacional de professores de no mínimo R$ 8,5 mil.",
+   "url_especifica": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
+   "data_referencia": "2026",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-09-04",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pco-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
+   },
+   "_promovido_em": "2026-09-04"
+  },
+  {
+   "id_posicao": "pos-sen-sc-2026-carol-prog-pco-014",
+   "id_candidatura_contexto": "sen-sc-2026-carol",
+   "id_tema": "t2",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pco",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pco",
+   "citacao_literal": "Verbas públicas somente para o ensino público;",
+   "texto": "Defende que verba pública vá só para o ensino público.",
+   "url_especifica": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
+   "data_referencia": "2026",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-09-04",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pco-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
+   },
+   "_promovido_em": "2026-09-04"
+  },
+  {
+   "id_posicao": "pos-sen-sc-2026-carol-prog-pco-015",
+   "id_candidatura_contexto": "sen-sc-2026-carol",
+   "id_tema": "t8",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pco",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pco",
+   "citacao_literal": "Quebra do monopólio na internet pelas grandes empresas privadas de telecomunicações. Internet gratuita para toda a população;",
+   "texto": "Propõe quebrar o monopólio das empresas privadas de telecomunicações na internet e oferecer internet gratuita a toda a população.",
+   "url_especifica": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
+   "data_referencia": "2026",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-09-04",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pco-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
+   },
+   "_promovido_em": "2026-09-04"
+  },
+  {
+   "id_posicao": "pos-sen-sc-2026-carol-prog-pco-016",
+   "id_candidatura_contexto": "sen-sc-2026-carol",
+   "id_tema": "t9",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pco",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pco",
+   "citacao_literal": "Contra a política da direita de atacar sistematicamente todas as manifestações culturais do povo, como o carnaval, o samba e o futebol, garantir os recursos públicos necessários para o acesso à cultura e ao esporte, pondo fim aos monopólios do setor;",
+   "texto": "Defende recursos públicos para acesso à cultura e ao esporte e o fim dos monopólios do setor, citando carnaval, samba e futebol.",
+   "url_especifica": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
+   "data_referencia": "2026",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-09-04",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pco-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
+   },
+   "_promovido_em": "2026-09-04"
+  },
+  {
+   "id_posicao": "pos-sen-sc-2026-carol-prog-pco-017",
+   "id_candidatura_contexto": "sen-sc-2026-carol",
+   "id_tema": "t9",
+   "atribuido_a_tipo": "partido",
+   "atribuido_a_id": "pco",
+   "estado_cobertura": "B",
+   "natureza": "promessa",
+   "nivel_fonte": "oficial",
+   "id_documento": "doc-programa-nacional-pco",
+   "citacao_literal": "Pesados investimentos na cultura popular, patrocínio público das festas populares, sob o controle das organizações populares e dos trabalhadores dos setores.",
+   "texto": "Propõe investimento na cultura popular e patrocínio público das festas populares, sob controle de organizações populares.",
+   "url_especifica": "https://causaoperaria.org.br/2026/um-programa-de-luta-em-defesa-do-povo-trabalhador-e-da-revolucao/",
+   "data_referencia": "2026",
+   "revisado_por_humano": false,
+   "conferido_por_ia": {
+    "data": "2026-09-04",
+    "forca": "alta",
+    "base": "trecho conferido palavra por palavra contra fontes/programa-pco-NACIONAL-site.txt",
+    "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
+   },
+   "_promovido_em": "2026-09-04"
   }
  ]
 }

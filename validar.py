@@ -373,8 +373,16 @@ def relatar(n_pos=0, n_cand=0, n_reg=0):
             for a in outros:
                 print(f"   {a}")
         if curadoria:
-            print(f"\n📋 {len(curadoria)} posição(ões) aguardando revisão humana "
-                  "(curadoria incremental — nada disso é publicável ainda).")
+            # O ESTADO ENTRA NA FRASE, e nao e detalhe. Este validador roda em UM
+            # estado (--uf, ou o padrao de referencia.json), e a frase sem a
+            # sigla foi lida como se fosse o acervo inteiro: "122 aguardando
+            # revisao" era so Sao Paulo, quando o acervo tinha 1.216. Numero sem
+            # escopo engana quem confia nele — inclusive quem o escreveu.
+            print(f"\n📋 {len(curadoria)} posição(ões) de {_UF} aguardando "
+                  "revisão humana (curadoria incremental — nada disso é "
+                  "publicável ainda).")
+            print("   Este validador olha um estado por vez. Para o acervo "
+                  "inteiro, rode com --uf de cada um.")
 
     print()
     sys.exit(1 if erros else 0)
