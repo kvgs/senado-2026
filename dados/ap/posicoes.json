@@ -3219,6 +3219,22 @@
     "por_quem": "kvgs"
    },
    "revisado_por": "kvgs"
+  },
+  {
+   "id_posicao": "pos-sen-ap-2026-professor-uzian-pinto-busca-t8",
+   "id_candidatura_contexto": "sen-ap-2026-professor-uzian-pinto",
+   "id_tema": "t8",
+   "atribuido_a_tipo": "candidatura",
+   "atribuido_a_id": "sen-ap-2026-professor-uzian-pinto",
+   "estado_cobertura": "D",
+   "natureza": "ausencia",
+   "nivel_fonte": null,
+   "citacao_literal": "",
+   "texto": "Não localizamos proposta sobre tecnologia e inteligência artificial. Isto é uma afirmação sobre a nossa busca: o programa do partido, que é o material desta candidatura no acervo, não trata do tema, e a candidatura não declarou site ao TSE.",
+   "busca_realizada_em": "2026-09-04",
+   "escopo_da_busca": "Foi lido o programa nacional da Democracia Cristã, que é o material que existe para esta candidatura — publicado pelo próprio partido em democraciacrista.org.br/sobre-nos/programa e consultado em 28/08/2026. O programa tem 13.114 caracteres e foi lido por inteiro: nele não aparece nenhuma ocorrência de “tecnologia”, “digital”, “internet”, “inteligência artificial”, “inovação”, “ciência”, “dados”, “algoritmo” ou “software” — a contagem é zero para todos. O documento não trata do tema. A candidatura NÃO declarou site ao TSE: no registro constam apenas o Facebook, o Instagram @uzianpinto e o TikTok @uzianpinto, que NÃO foram lidos, porque o projeto ainda não coleta rede social. Não há, portanto, fonte em que este tema pudesse ser encontrado além do programa do partido, e nele ele não está.",
+   "revisado_por_humano": false,
+   "_gerado_por": "a mao, porque o escopo cita a contagem de termos no programa do partido, que o registrar_ausencias.py nao mede"
   }
  ]
 }
