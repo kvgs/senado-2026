@@ -134,13 +134,22 @@ def sem_acento(s: str) -> str:
 
 
 def plural(n: int, palavra: str) -> str:
-    """"1 tema", "8 temas" — e nunca "1 tema(s)".
+    """"1 tema", "8 temas", "3 informações" — e nunca "1 tema(s)".
 
     O numero e conhecido na hora de escrever a legenda. "tema(s)" e formulario,
     e a legenda e o texto que vai colado no Instagram: ali ele le como quem
     gerou e nao olhou.
+
+    PALAVRA EM -AO TROCA A TERMINACAO. Enquanto isto so acrescentava "s", a arte
+    saiu com "Ha mais 3 informacaooes neste tema no site" — o sufixo colado no
+    singular. As poucas palavras que este projeto pluraliza estao aqui; qualquer
+    outra terminacao irregular deve entrar antes de ser usada.
     """
-    return palavra if n == 1 else palavra + "s"
+    if n == 1:
+        return palavra
+    if palavra.endswith("ão"):
+        return palavra[:-2] + "ões"
+    return palavra + "s"
 
 
 def slug(s: str) -> str:
@@ -235,6 +244,13 @@ def medir(uf: str, numero: str | None = None) -> dict:
                     "partido": partidos.get(p.get("atribuido_a_id"), "") if
                                p.get("atribuido_a_tipo") == "partido" else "",
                     "revisado": bool(p.get("revisado_por_humano")),
+                    # ENTREGUE NAO E PROMETIDO, e a arte tem de dizer isso. As
+                    # quatro leis da Alliny Serrao — com numero e ano, listadas no
+                    # site de mandato dela — sairiam com a mesma tarja "PROPOSTA
+                    # PROPRIA" de uma promessa de campanha. O site ja separa os
+                    # dois desde 04/09/2026; a arte passa a separar tambem, senao
+                    # o Instagram diz o que a pagina desmente.
+                    "entregue": p.get("natureza") == "resultado_entregue",
                     "escopo": p.get("escopo_da_busca") or "",
                     "generico": bool(p.get("_gerado_por")),
                     "mais": len(minhas) - 1,
@@ -242,7 +258,7 @@ def medir(uf: str, numero: str | None = None) -> dict:
             else:
                 blocos.append({"tema": t["nome"], "estado": "-", "citacao": "",
                                "texto": "", "selo": "", "fonte": "", "partido": "",
-                               "revisado": False, "escopo": "",
+                               "revisado": False, "entregue": False, "escopo": "",
                                "generico": False, "mais": 0})
         arq = (c.get("foto") or {}).get("arquivo")
         saida.append({
@@ -253,6 +269,8 @@ def medir(uf: str, numero: str | None = None) -> dict:
             "foto": RAIZ / arq if arq else None,
             "blocos": blocos,
             "n_proprias": sum(1 for b in blocos if b["estado"] == "A"),
+            "n_entregues": sum(1 for b in blocos
+                               if b["estado"] == "A" and b.get("entregue")),
             "n_partido": sum(1 for b in blocos if b["estado"] == "B"),
             "n_vazios": sum(1 for b in blocos if b["estado"] in ("-", "C", "D")),
         })
@@ -317,6 +335,21 @@ def arte_capa(d: dict, p: dict, cor: str, i: int, n_slides: int):
     if p["recusa"] and not p["n_partido"]:
         aviso += (f" O programa do {p['recusa']['sigla']} não entrou no acervo: "
                   f"{p['recusa']['motivo_curto']}.")
+    # "PRÓPRIAS" NAO QUER DIZER "PROMETIDAS". Na Alliny Serrao as quatro sao leis
+    # ja aprovadas, listadas no site de mandato dela — nenhuma e proposta para o
+    # Senado. O placar sozinho convidava a leitura errada no slide mais visto do
+    # carrossel, e a ressalva geral nao cobria este caso.
+    ne = p.get("n_entregues") or 0
+    if ne:
+        if ne == p["n_proprias"]:
+            aviso += (f" Das {p['n_proprias']} com conteúdo próprio, todas são "
+                      "leis já aprovadas, e não promessas para o Senado.")
+        elif ne == 1:
+            aviso += (f" Das {p['n_proprias']} com conteúdo próprio, uma é lei já "
+                      "aprovada, e não promessa para o Senado.")
+        else:
+            aviso += (f" Das {p['n_proprias']} com conteúdo próprio, {ne} são leis "
+                      "já aprovadas, e não promessas para o Senado.")
     for ln in t.quebra(aviso, fa, 880):
         t.d.text((t.m, t.y), ln, font=fa, fill=APAGADO)
         t.y += int(fa.size * 1.36)
@@ -335,11 +368,16 @@ def arte_capa(d: dict, p: dict, cor: str, i: int, n_slides: int):
     t.salvar(f"{pasta(d['uf'], p['nome'], p['numero'])}/{i}-capa.png")
 
 
-def caixa_rotulo(t: Tela, estado: str, cor: str, sigla: str) -> None:
+def caixa_rotulo(t: Tela, estado: str, cor: str, sigla: str,
+                 entregue: bool = False) -> None:
     """A tarja que diz DE QUEM e — a informacao mais importante do slide."""
     rot, tipo, _, _ = ROTULO[estado]
     if estado == "B" and sigla:
         rot = f"PROPOSTA DO {sigla}"
+    elif estado == "A" and entregue:
+        # Continua sendo dela, e por isso mantem a cor de acento. O que muda e o
+        # tempo do verbo: ja aconteceu, e nao vai acontecer.
+        rot = "JÁ APROVADO"
     fundo, tinta = ((cor, SOBRE_ESCURO) if tipo == "acento"
                     else (CINZA_CAIXA, TINTA) if tipo == "neutro"
                     else (PAPEL2, APAGADO))
@@ -365,7 +403,7 @@ def arte_tema(d: dict, p: dict, b: dict, cor: str, i: int, n_slides: int,
     t.espaco(16)
     t.texto(b["tema"], f("display", 62), TINTA, entre=1.06, larg=820)
     t.espaco(30)
-    caixa_rotulo(t, b["estado"], cor, b["partido"])
+    caixa_rotulo(t, b["estado"], cor, b["partido"], b.get("entregue", False))
     t.espaco(30)
 
     # O PE DO SLIDE E MEDIDO ANTES do corpo, para o corpo saber ate onde vai e para
@@ -383,8 +421,12 @@ def arte_tema(d: dict, p: dict, b: dict, cor: str, i: int, n_slides: int,
         # resolvida. "informação(ões)" e formulario, e nao frase: numa arte que
         # vai para o Instagram le como descuido de quem gerou sem olhar.
         n = b["mais"]
-        pes.append(f"Há mais {n} informação{'' if n == 1 else 'ões'} "
-                   f"neste tema no site.")
+        # "informacao" -> "informacoes" TROCA a terminacao, e nao acrescenta.
+        # A primeira versao desta correcao colou o sufixo no singular e imprimiu
+        # "Ha mais 3 informacaooes neste tema no site" em arte que ja tinha sido
+        # gerada. Consertar plural com concatenacao e como consertar acento com
+        # replace: funciona no caso que se olhou.
+        pes.append(f"Há mais {n} {plural(n, 'informação')} neste tema no site.")
     fp = f("corpo", 22)
     alto_pe = (sum(len(t.quebra(x, fp, 830)) for x in pes) * int(fp.size * 1.36) + 34
                if pes else 0)
@@ -423,6 +465,9 @@ def arte_tema(d: dict, p: dict, b: dict, cor: str, i: int, n_slides: int,
                 t.y += int(fr.size * 1.4)
     else:
         _, _, generica, _ = ROTULO[b["estado"]]
+        if b.get("entregue"):
+            generica = ("Já aprovado, e não uma promessa para o Senado: é lei "
+                        "com número e ano, publicada pela própria candidatura.")
         frase = b["texto"] or generica
         # SEM CENTRAR. Centrado, o texto ficava solto no meio da tela com um vazio
         # acima da tarja — parecia erro. A frase vem logo abaixo da tarja, que e o
