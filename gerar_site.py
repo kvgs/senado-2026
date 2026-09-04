@@ -242,6 +242,13 @@ for r in pos_publicaveis:
     doc = docs.get(r.get("id_documento"), {})
     grade[r["id_tema"]][alvo].append({
         "estado": r["estado_cobertura"], "selo": r.get("nivel_fonte"),
+        # A NATUREZA VAI PARA A TELA. O modelo manda separar visualmente
+        # resultado_entregue de promessa (regra 4) desde o inicio, e ninguem
+        # lia o campo: lei ja aprovada saia com o mesmo rotulo de "Proposta
+        # propria" que uma promessa de campanha. A primeira candidatura a
+        # expor isso foi a Alliny Serrao, cujo site de mandato lista cinco leis
+        # com numero e ano.
+        "natureza": r.get("natureza") or "promessa",
         "texto": r.get("texto") or "", "citacao": r.get("citacao_literal") or "",
         "escopo": r.get("escopo") or "",
         "de_partido": r.get("atribuido_a_tipo") == "partido",

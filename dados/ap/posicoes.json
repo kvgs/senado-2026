@@ -349,21 +349,29 @@
    "atribuido_a_tipo": "candidatura",
    "atribuido_a_id": "sen-ap-2026-alliny-serrao",
    "estado_cobertura": "A",
-   "natureza": "promessa",
+   "natureza": "resultado_entregue",
    "nivel_fonte": "declaracao_candidato",
    "id_documento": "doc-site-sen-ap-2026-alliny-serrao",
    "citacao_literal": "Lei nº 3.311/2025 Código Amapaense da Mulher Consolida o Código Amapaense da Mulher – CAM, fortalecendo os direitos, a proteção e as políticas públicas voltadas às mulheres.",
    "texto": "Autora da lei que consolida o Código Amapaense da Mulher, reunindo direitos, proteção e políticas públicas para mulheres.",
    "url_especifica": "https://allinyserrao.com.br",
    "data_referencia": "2026-08-27",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
     "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "_natureza_corrigida": "Estava como 'promessa'. A citacao e uma LEI JA APROVADA, com numero e ano, publicada no site de mandato dela entre as 'leis aprovadas'. Chamar isso de proposta para o Senado diz o que a fonte nao diz. O modelo do projeto tem natureza='resultado_entregue' desde o inicio e manda separar visualmente das promessas (regra 4) — ate 04/09/2026 nenhuma posicao do acervo usava o valor, e nenhum gerador lia o campo.",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ap-2026-alliny-serrao-site-002",
@@ -371,21 +379,29 @@
    "atribuido_a_tipo": "candidatura",
    "atribuido_a_id": "sen-ap-2026-alliny-serrao",
    "estado_cobertura": "A",
-   "natureza": "promessa",
+   "natureza": "resultado_entregue",
    "nivel_fonte": "declaracao_candidato",
    "id_documento": "doc-site-sen-ap-2026-alliny-serrao",
    "citacao_literal": "Lei nº 3.201/2025 Box Lilás Atendimento especializado, humanizado e prioritário para mulheres vítimas de violência.",
    "texto": "Autora da lei do Box Lilás, de atendimento especializado e prioritário a mulheres vítimas de violência.",
    "url_especifica": "https://allinyserrao.com.br",
    "data_referencia": "2026-08-27",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
     "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "_natureza_corrigida": "Estava como 'promessa'. A citacao e uma LEI JA APROVADA, com numero e ano, publicada no site de mandato dela entre as 'leis aprovadas'. Chamar isso de proposta para o Senado diz o que a fonte nao diz. O modelo do projeto tem natureza='resultado_entregue' desde o inicio e manda separar visualmente das promessas (regra 4) — ate 04/09/2026 nenhuma posicao do acervo usava o valor, e nenhum gerador lia o campo.",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ap-2026-alliny-serrao-site-003",
@@ -393,21 +409,29 @@
    "atribuido_a_tipo": "candidatura",
    "atribuido_a_id": "sen-ap-2026-alliny-serrao",
    "estado_cobertura": "A",
-   "natureza": "promessa",
+   "natureza": "resultado_entregue",
    "nivel_fonte": "declaracao_candidato",
    "id_documento": "doc-site-sen-ap-2026-alliny-serrao",
    "citacao_literal": "Lei nº 3.299/2025 Mulheres do Agro 4.0 Institui a Política Estadual de Incentivo às Mulheres do Agro 4.0, promovendo inovação, capacitação e empreendedorismo no campo.",
    "texto": "Autora da lei que institui a Política Estadual de Incentivo às Mulheres do Agro 4.0.",
    "url_especifica": "https://allinyserrao.com.br",
    "data_referencia": "2026-08-27",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
     "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "_natureza_corrigida": "Estava como 'promessa'. A citacao e uma LEI JA APROVADA, com numero e ano, publicada no site de mandato dela entre as 'leis aprovadas'. Chamar isso de proposta para o Senado diz o que a fonte nao diz. O modelo do projeto tem natureza='resultado_entregue' desde o inicio e manda separar visualmente das promessas (regra 4) — ate 04/09/2026 nenhuma posicao do acervo usava o valor, e nenhum gerador lia o campo.",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ap-2026-alliny-serrao-site-004",
@@ -415,21 +439,29 @@
    "atribuido_a_tipo": "candidatura",
    "atribuido_a_id": "sen-ap-2026-alliny-serrao",
    "estado_cobertura": "A",
-   "natureza": "promessa",
+   "natureza": "resultado_entregue",
    "nivel_fonte": "declaracao_candidato",
    "id_documento": "doc-site-sen-ap-2026-alliny-serrao",
    "citacao_literal": "Lei nº 3.242/2025 Menopausa e Climatério Cria programa estadual de apoio, acolhimento e assistência às mulheres durante a menopausa e o climatério.",
    "texto": "Autora da lei que cria programa estadual de apoio a mulheres na menopausa e no climatério.",
    "url_especifica": "https://allinyserrao.com.br",
    "data_referencia": "2026-08-27",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
     "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "_natureza_corrigida": "Estava como 'promessa'. A citacao e uma LEI JA APROVADA, com numero e ano, publicada no site de mandato dela entre as 'leis aprovadas'. Chamar isso de proposta para o Senado diz o que a fonte nao diz. O modelo do projeto tem natureza='resultado_entregue' desde o inicio e manda separar visualmente das promessas (regra 4) — ate 04/09/2026 nenhuma posicao do acervo usava o valor, e nenhum gerador lia o campo.",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ap-2026-alliny-serrao-site-005",
@@ -437,7 +469,7 @@
    "atribuido_a_tipo": "candidatura",
    "atribuido_a_id": "sen-ap-2026-alliny-serrao",
    "estado_cobertura": "A",
-   "natureza": "promessa",
+   "natureza": "resultado_entregue",
    "nivel_fonte": "declaracao_candidato",
    "id_documento": "doc-site-sen-ap-2026-alliny-serrao",
    "citacao_literal": "Lei nº 2.750/2022 Isonomia nas Premiações Garante igualdade entre homens e mulheres nas premiações de competições esportivas e culturais financiadas com recursos públicos.",
@@ -451,7 +483,15 @@
     "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-27",
     "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "_natureza_corrigida": "Estava como 'promessa'. A citacao e uma LEI JA APROVADA, com numero e ano, publicada no site de mandato dela entre as 'leis aprovadas'. Chamar isso de proposta para o Senado diz o que a fonte nao diz. O modelo do projeto tem natureza='resultado_entregue' desde o inicio e manda separar visualmente das promessas (regra 4) — ate 04/09/2026 nenhuma posicao do acervo usava o valor, e nenhum gerador lia o campo.",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "corrigir",
+    "nota": "Não achei no site",
+    "por_quem": "kvgs"
+   },
+   "_por_que_nao_esta_no_site": "A revisao marcou 'Nao achei no site' e a nota estava certa, por um motivo que so apareceu depois: o bloco desta lei esta dentro de um comentario HTML na pagina (<!-- ISONOMIA NAS PREMIACOES ... -->). O navegador nao mostra nada dele. O extrator do coletor tirava as tags e nao os comentarios, e leu texto OCULTO como se a candidatura o tivesse publicado. O coletor foi corrigido em 04/09/2026 e um conferidor novo (conferir_oculto.py) varreu as 99 citacoes de site do acervo: esta era a unica. A linha fica no acervo como memoria do erro e NAO e publicada."
   },
   {
    "id_posicao": "pos-sen-ap-2026-professor-uzian-pinto-prog-dc-001",
@@ -2719,14 +2759,21 @@
    "texto": "Assume como compromisso garantir o direito de ir e vir e a livre circulação dos cidadãos nas cidades.",
    "url_especifica": "https://uniaobrasil.org.br/wp-content/uploads/2024/08/BOOK-148x210mm-Manifesto_Uniao_BRASIL.pdf",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-uniao-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ap-2026-alliny-serrao-prog-união-002",
@@ -2742,14 +2789,21 @@
    "texto": "Defende que o Estado exerça o monopólio da força com responsabilidade e com rigor no enfrentamento da criminalidade.",
    "url_especifica": "https://uniaobrasil.org.br/wp-content/uploads/2024/08/BOOK-148x210mm-Manifesto_Uniao_BRASIL.pdf",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-uniao-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ap-2026-alliny-serrao-prog-união-003",
@@ -2765,14 +2819,21 @@
    "texto": "Afirma que o país não pode mais aceitar índices de morte violenta de país em guerra nem as mortes de jovens pobres e negros.",
    "url_especifica": "https://uniaobrasil.org.br/wp-content/uploads/2024/08/BOOK-148x210mm-Manifesto_Uniao_BRASIL.pdf",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-uniao-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ap-2026-alliny-serrao-prog-união-004",
@@ -2788,14 +2849,21 @@
    "texto": "Assume o compromisso de fazer da educação o principal caminho para a cidadania plena e a inclusão social.",
    "url_especifica": "https://uniaobrasil.org.br/wp-content/uploads/2024/08/BOOK-148x210mm-Manifesto_Uniao_BRASIL.pdf",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-uniao-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ap-2026-alliny-serrao-prog-união-005",
@@ -2811,14 +2879,21 @@
    "texto": "Defende priorizar a qualificação escolar e profissional como caminho para superar a pobreza.",
    "url_especifica": "https://uniaobrasil.org.br/wp-content/uploads/2024/08/BOOK-148x210mm-Manifesto_Uniao_BRASIL.pdf",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-uniao-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ap-2026-alliny-serrao-prog-união-006",
@@ -2834,14 +2909,21 @@
    "texto": "Assume como compromisso o fortalecimento do SUS.",
    "url_especifica": "https://uniaobrasil.org.br/wp-content/uploads/2024/08/BOOK-148x210mm-Manifesto_Uniao_BRASIL.pdf",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-uniao-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ap-2026-alliny-serrao-prog-união-007",
@@ -2857,14 +2939,21 @@
    "texto": "Apoia os programas de transferência de renda como ferramenta de segurança social e alimentar das famílias mais pobres.",
    "url_especifica": "https://uniaobrasil.org.br/wp-content/uploads/2024/08/BOOK-148x210mm-Manifesto_Uniao_BRASIL.pdf",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-uniao-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ap-2026-alliny-serrao-prog-união-008",
@@ -2880,14 +2969,21 @@
    "texto": "Assume como compromisso resgatar e fortalecer uma política ambiental responsável e sustentável.",
    "url_especifica": "https://uniaobrasil.org.br/wp-content/uploads/2024/08/BOOK-148x210mm-Manifesto_Uniao_BRASIL.pdf",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-uniao-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ap-2026-alliny-serrao-prog-união-009",
@@ -2903,14 +2999,21 @@
    "texto": "Defende usar a ciência na formulação de políticas públicas e priorizar programas de desenvolvimento científico e tecnológico.",
    "url_especifica": "https://uniaobrasil.org.br/wp-content/uploads/2024/08/BOOK-148x210mm-Manifesto_Uniao_BRASIL.pdf",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-uniao-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ap-2026-alliny-serrao-prog-união-010",
@@ -2926,14 +3029,21 @@
    "texto": "Defende priorizar as políticas públicas voltadas para a primeira infância.",
    "url_especifica": "https://uniaobrasil.org.br/wp-content/uploads/2024/08/BOOK-148x210mm-Manifesto_Uniao_BRASIL.pdf",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-uniao-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ap-2026-alliny-serrao-prog-união-011",
@@ -2949,14 +3059,21 @@
    "texto": "Defende a liberdade de imprensa como condição da democracia.",
    "url_especifica": "https://uniaobrasil.org.br/wp-content/uploads/2024/08/BOOK-148x210mm-Manifesto_Uniao_BRASIL.pdf",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra fontes/programa-uniao-manifesto.txt",
     "ressalva": "Proposta do partido, não da candidatura. O documento usa título em caixa alta; a caixa foi normalizada para leitura, as palavras não."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-04",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-ap-2026-rayssa-furlan-prog-pode-001",

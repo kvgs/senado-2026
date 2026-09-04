@@ -152,6 +152,19 @@ def texto(corpo: bytes, tipo: str) -> str:
     s = corpo.decode(cs, "replace")
     if not m and re.search(r'charset=["\']?iso-8859-1', s[:2000], re.I):
         s = corpo.decode("latin-1", "replace")
+    # COMENTARIO HTML NAO E CONTEUDO PUBLICADO, e sai antes de tudo.
+    #
+    # O site da Alliny Serrao mantinha um bloco inteiro dentro de <!-- -->: a Lei
+    # 2.750/2022, com titulo, numero e descricao. O navegador nao mostra nada
+    # disso. O coletor tirava as tags e nao os comentarios, entao leu texto
+    # OCULTO como se a candidatura o tivesse publicado — e a linha foi para o
+    # acervo como declaracao dela.
+    #
+    # Quem pegou foi a revisao humana, com a nota "Nao achei no site", pela
+    # terceira vez nesta temporada. Nenhum conferidor automatico pegaria: todos
+    # comparam a citacao com o texto que ESTE extrator produziu, e o defeito
+    # estava aqui.
+    s = re.sub(r"<!--.*?-->", " ", s, flags=re.S)
     s = re.sub(r"<(script|style|noscript|svg)\b.*?</\1>", " ", s, flags=re.S | re.I)
     s = re.sub(r"<br\s*/?>|</(p|div|li|h[1-6]|tr)>", "\n", s, flags=re.I)
     s = re.sub(r"<[^>]+>", " ", s)

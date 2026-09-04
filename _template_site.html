@@ -269,6 +269,11 @@
   .quem{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin-bottom:7px;font-size:.82rem;
     font-weight:600}
   .quem .part{color:var(--s-declaracao)}
+  /* O "ja aprovado" tem peso proprio e nao imita o rotulo de partido: e sobre a
+     candidatura, so que sobre o passado dela. Sublinhado pontilhado para nao
+     depender de cor — a distincao tem de chegar a quem nao distingue as duas. */
+  .quem .feito{color:var(--s-registro);font-weight:600;
+    text-decoration:underline dotted;text-underline-offset:3px}
   .quem .nrev{color:var(--muted);font-weight:600;font-size:.72rem;letter-spacing:.08em;
     text-transform:uppercase}
   /* Quando o selo vira link, precisa PARECER clicavel: sublinhado, e nao so cor
@@ -947,7 +952,13 @@ let COLETA=null;
 function proposta(i){
   if(COLETA) COLETA.push(i);
   let h='<div class="prop"><p class="quem">';
+  /* ENTREGUE NAO E PROMETIDO. Lei ja aprovada e promessa de campanha sao coisas
+     diferentes, e o modelo manda separar as duas desde o comeco (regra 4). Ate
+     04/09/2026 a tela chamava as duas de "Proposta própria" — quem lia via uma
+     lei em vigor com a mesma cara de uma intencao. */
+  const entregue = i.natureza === 'resultado_entregue';
   h+= i.de_partido ? '<span class="part">Proposta do '+esc(i.partido)+', não da candidatura</span>'
+     : entregue    ? '<span class="feito">Já aprovado, não é promessa</span>'
                    : '<span>Proposta própria</span>';
   /* O aviso carrega a acao. "Não revisado" sozinho conta um problema e deixa o
      leitor sem saída; com o link, a mesma linha diz o que fazer a respeito — e a
