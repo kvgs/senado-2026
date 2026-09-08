@@ -1,31 +1,36 @@
-# 290 Helio Silva (PCO) — Amapá
+# 555 Lucas Barreto (PSD) — Amapá
 
-13 slides: capa, um slide por tema COM conteúdo, um slide juntando todos
+4 slides: capa, um slide por tema COM conteúdo, um slide juntando todos
 os temas sem conteúdo, o convite para perguntar, e o fecho com a legenda das tarjas.
-Gerado por `python gerar_artes_candidatura.py --uf AP --numero 290`.
+Gerado por `python gerar_artes_candidatura.py --uf AP --numero 555`.
 
 ---
 
 ## Legenda — copie daqui até as hashtags, sem mexer
 
-O que já foi levantado sobre Helio Silva (PCO), tema a tema.
+O que já foi levantado sobre Lucas Barreto (PSD), tema a tema.
 
 São 10 temas. Em cada slide a tarja diz de quem é a proposta — da candidatura ou do partido — ou o que ainda não há.
 
 Neste levantamento:
 
 ▪️ 0 temas com proposta própria
-▪️ 10 com proposta do partido
-▪️ 0 sem conteúdo
+▪️ 0 com proposta do partido
+▪️ 10 sem conteúdo
 
 ⚠️ Estes três números são sobre o NOSSO levantamento, e não sobre a candidatura. Tema sem conteúdo aqui quer dizer que nós ainda não localizamos ou ainda não trabalhamos aquele cruzamento — não que a pessoa não tenha o que dizer.
+
+Neste caso, o motivo do vazio está registrado, e é este:
+
+▪️ Esta candidatura não declarou site próprio no registro no TSE, e é lá que a lei manda declarar.
+▪️ O que o PSD publica como programa foi lido e não entrou no acervo: o que o partido publica como programa é um documento histórico.
 
 
 Cada informação traz a citação literal do documento de onde saiu, o selo de origem e se já passou por revisão humana. No site tem a página completa, com o link de cada fonte.
 
 🔗 kvgs.github.io/senado-2026
 
-#eleições2026 #senado #amapa #heliosilva #pco #dadosabertos #votoconsciente #transparência
+#eleições2026 #senado #amapa #lucasbarreto #psd #dadosabertos #votoconsciente #transparência
 
 ---
 
@@ -49,5 +54,5 @@ quando precisa, é CAIXA ALTA ou lista com `▪️`.
 
 ## Números desta candidatura
 
-- 0 temas com proposta própria, 10 com proposta do partido, 0 sem conteúdo (os dez temas somados)
+- 0 temas com proposta própria, 0 com proposta do partido, 10 sem conteúdo (os dez temas somados)
 - Cor e silhueta: azul, uma das cores da bandeira do Amapá; tom escolhido para dar 7,24:1 sobre o papel. Azul e não verde para o estado não se confundir com o Acre no feed

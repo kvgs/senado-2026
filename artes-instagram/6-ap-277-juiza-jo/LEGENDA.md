@@ -20,6 +20,7 @@ Neste levantamento:
 
 ⚠️ Estes três números são sobre o NOSSO levantamento, e não sobre a candidatura. Tema sem conteúdo aqui quer dizer que nós ainda não localizamos ou ainda não trabalhamos aquele cruzamento — não que a pessoa não tenha o que dizer.
 
+
 Cada informação traz a citação literal do documento de onde saiu, o selo de origem e se já passou por revisão humana. No site tem a página completa, com o link de cada fonte.
 
 🔗 kvgs.github.io/senado-2026

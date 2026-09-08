@@ -264,6 +264,13 @@ def medir(uf: str, numero: str | None = None) -> dict:
         saida.append({
             "cid": cid, "nome": c["pessoa"]["nome_urna"],
             "recusa": recusados().get(c["id_partido"]),
+            # POR QUE ESTA VAZIO, quando esta vazio por decisao nossa e nao por
+            # fila. O Lucas Barreto e senador em exercicio e tem zero linha: nao
+            # declarou site e o programa do PSD foi lido e recusado. A arte dizia
+            # "ainda nao passou pela nossa fila" dez vezes, o que e falso — e o
+            # site dele, desde 08/09/2026, ja diz a verdade. Arte contradizendo a
+            # pagina e pior que as duas erradas juntas.
+            "sem_site": not (c.get("contato") or {}).get("site"),
             "numero": str(c["numero_urna"]),
             "sigla": partidos.get(c["id_partido"], c["id_partido"]),
             "foto": RAIZ / arq if arq else None,
@@ -593,6 +600,25 @@ def arte_sem_conteudo(d: dict, p: dict, vazios: list, cor: str, i: int,
     # que o registro.
     def texto_escopo(est: str, curto: bool) -> str:
         cheio = escopos.get(est) or ROTULO[est][2]
+        # "AINDA NAO PASSOU PELA NOSSA FILA" SO VALE QUANDO E VERDADE. Onde a
+        # candidatura nao declarou site e o programa do partido foi lido e
+        # recusado, nao houve fila: houve busca e houve decisao nossa. A frase
+        # aqui e a mesma que a pagina dela mostra, para arte e site nao se
+        # contradizerem.
+        if est == "-":
+            partes = []
+            if p.get("sem_site"):
+                partes.append("Esta candidatura não declarou site próprio no "
+                              "registro no TSE, e é lá que a lei manda declarar.")
+            if p.get("recusa"):
+                partes.append(f"O que o {p['recusa']['sigla']} publica como "
+                              f"programa foi lido e não entrou no acervo: "
+                              f"{p['recusa']['motivo_curto']}.")
+            if partes:
+                cheio = " ".join(partes)
+                if not curto:
+                    return cheio
+                return cheio + " O motivo inteiro está no site."
         if not curto:
             return cheio
         return (ROTULO[est][2] + " O escopo inteiro da busca — o que foi lido e "
@@ -615,6 +641,12 @@ def arte_sem_conteudo(d: dict, p: dict, vazios: list, cor: str, i: int,
         if not nomes:
             continue
         _, tipo, frase, titulo = ROTULO[est]
+        # O TITULO NAO PODE DESMENTIR A FRASE LOGO ABAIXO DELE. Onde o motivo do
+        # vazio e conhecido — nao declarou site e o programa do partido foi lido
+        # e recusado —, "Ainda nao trabalhado" contradiz o paragrafo seguinte,
+        # que diz justamente que foi trabalhado.
+        if est == "-" and (p.get("sem_site") or p.get("recusa")):
+            titulo = "Nada localizado, e o motivo é este"
         t.d.rectangle([t.m, t.y + 10, t.m + 14, t.y + 24], fill=CINZA_BORDA)
         t.d.text((t.m + 28, t.y), f"{titulo} ({len(nomes)})",
                  font=f("corpo", 29, 600), fill=TINTA)
@@ -760,6 +792,39 @@ def arte_fecho(d: dict, p: dict, cor: str, i: int, n_slides: int):
     t.salvar(f"{pasta(d['uf'], p['nome'], p['numero'])}/{i}-fecho.png")
 
 
+def por_que_vazio(p: dict) -> str:
+    """A razao do vazio, na LEGENDA e nao so na imagem.
+
+    O post do Lucas Barreto e 0 propria, 0 do partido, 10 sem conteudo. A capa
+    dizia o motivo e a legenda nao — e a legenda e o texto que vai colado no
+    Instagram. Sem o motivo, o post inteiro le como "este candidato nao tem
+    nada", que e afirmacao sobre ELE, quando o que houve foi busca nossa e
+    decisao nossa.
+    """
+    if p["n_proprias"] or p["n_partido"]:
+        return ""
+    # SO ONDE NAO HA ESCOPO ESPECIFICO. O Petecao tambem tem 0 e 0, mas os dez
+    # registros dele sao estado D com escopo escrito: dizem que a curadoria ACHOU
+    # o site (petecao.com.br), que ele nao foi declarado ao TSE, e que parte das
+    # paginas nao pode ser lida porque depende de JavaScript. Colar por cima
+    # disso a frase generica "nao declarou site" seria trocar o que se sabe pelo
+    # que se sabe menos — e as duas apareceriam no mesmo post, se contradizendo.
+    if any(b.get("escopo") for b in p["blocos"]):
+        return ""
+    linhas = []
+    if p.get("sem_site"):
+        linhas.append("▪️ Esta candidatura não declarou site próprio no registro "
+                      "no TSE, e é lá que a lei manda declarar.")
+    if p.get("recusa"):
+        linhas.append(f"▪️ O que o {p['recusa']['sigla']} publica como programa "
+                      f"foi lido e não entrou no acervo: "
+                      f"{p['recusa']['motivo_curto']}.")
+    if not linhas:
+        return ""
+    return ("\nNeste caso, o motivo do vazio está registrado, e é este:\n\n"
+            + "\n".join(linhas) + "\n")
+
+
 LEGENDA = """# {numero} {nome} ({sigla}) — {uf_nome}
 
 {n_slides} slides: capa, um slide por tema COM conteúdo, um slide juntando todos
@@ -781,6 +846,7 @@ Neste levantamento:
 ▪️ {n_vazios} sem conteúdo
 
 ⚠️ Estes três números são sobre o NOSSO levantamento, e não sobre a candidatura. Tema sem conteúdo aqui quer dizer que nós ainda não localizamos ou ainda não trabalhamos aquele cruzamento — não que a pessoa não tenha o que dizer.
+{por_que_vazio}
 
 Cada informação traz a citação literal do documento de onde saiu, o selo de origem e se já passou por revisão humana. No site tem a página completa, com o link de cada fonte.
 
@@ -824,6 +890,7 @@ def escreve_legenda(d: dict, p: dict, n_slides: int, cor_de: str) -> None:
         uf_nome=d["uf_nome"], n_slides=n_slides, n_temas=d["n_temas"],
         n_proprias=p["n_proprias"], n_partido=p["n_partido"],
         palavra_tema=plural(p["n_proprias"], "tema"),
+        por_que_vazio=por_que_vazio(p),
         n_vazios=p["n_vazios"], cor_de=cor_de, hashtags=" ".join(tags))
     alvo = _ar.SAIDA / pasta(d["uf"], p["nome"], p["numero"]) / "LEGENDA.md"
     alvo.parent.mkdir(parents=True, exist_ok=True)
