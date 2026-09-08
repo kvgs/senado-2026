@@ -288,6 +288,14 @@ if _f.exists():
     _coleta_sites = {r["id_candidatura"]: r
                      for r in json.loads(_f.read_text(encoding="utf-8"))["registros"]}
 
+# O motivo de cada programa recusado, lido do acervo e nao escrito aqui: quem
+# muda a decisao mexe em dados/programas-recusados.json, num lugar so.
+_arq_rec = HERE / "dados" / "programas-recusados.json"
+recusados_por_partido = (
+    {x["id_partido"]: x for x in
+     json.loads(_arq_rec.read_text(encoding="utf-8"))["recusados"]}
+    if _arq_rec.exists() else {})
+
 for _c in cands:
     _cid = _c["id_candidatura"]
     _ct = _c.get("contato") or {}
@@ -318,6 +326,28 @@ for _c in cands:
               "texto": ("Lemos " + str(len(_col.get("paginas") or [])) + " página(s) do site "
                         "que esta candidatura declarou ao TSE, em " + str(_col.get("coletado_em")) +
                         ", e não encontramos nada dela sobre este tema.")}
+    # O PROGRAMA DO PARTIDO TAMBEM FOI PROCURADO, e ate agora a tela nao dizia.
+    #
+    # Sete partidos tem o programa recusado no acervo, com o motivo registrado em
+    # dados/programas-recusados.json. Cinquenta e uma candidaturas desses partidos
+    # nao tem NENHUMA linha — e a pagina delas dizia apenas "nao declarou site",
+    # o que leva a concluir que a unica coisa que faltou foi o site. Faltou mais,
+    # e por decisao nossa: lemos o que o partido publica como programa e nao
+    # aplicamos. Quem le tem direito de saber disso, e de saber o motivo.
+    #
+    # O caso que expos isto foi o Lucas Barreto, senador em exercicio pelo Amapa,
+    # com zero linha no acervo.
+    _rec = recusados_por_partido.get(_c.get("id_partido"))
+    if _rec:
+        _b = dict(_b)
+        _b["programa_recusado"] = {
+            "sigla": _rec["sigla"],
+            "motivo": _rec["motivo"],
+            "motivo_curto": _rec["motivo_curto"],
+        }
+        _b["texto"] = (_b["texto"] + " Também lemos o que o " + _rec["sigla"] +
+                       " publica como programa, e ele não entrou no acervo: " +
+                       _rec["motivo_curto"] + ".")
     cand_por_id[_cid]["busca"] = _b
 
 leg = {t["id_tema"]: {} for t in temas}
