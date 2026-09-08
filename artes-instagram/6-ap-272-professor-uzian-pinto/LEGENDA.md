@@ -6,29 +6,36 @@ Gerado por `python gerar_artes_candidatura.py --uf AP --numero 272`.
 
 ---
 
-## Legenda
+## Legenda — copie daqui até as hashtags, sem mexer
 
-**O que já foi levantado sobre Professor Uzian Pinto (DC), tema a tema.**
+O que já foi levantado sobre Professor Uzian Pinto (DC), tema a tema.
 
-São 10 temas. Em cada slide a tarja diz **de quem é a proposta** — da
-candidatura ou do partido — ou o que ainda não há.
+São 10 temas. Em cada slide a tarja diz de quem é a proposta — da candidatura ou do partido — ou o que ainda não há.
 
-Neste levantamento: **0 temas com proposta própria**, **9 com
-proposta do partido** e **1 sem conteúdo**.
+Neste levantamento:
 
-⚠️ Estes três números são sobre **o nosso levantamento**, e não sobre a
-candidatura. Tema sem conteúdo aqui quer dizer que nós ainda não localizamos ou
-ainda não trabalhamos aquele cruzamento — não que a pessoa não tenha o que dizer.
+▪️ 0 temas com proposta própria
+▪️ 9 com proposta do partido
+▪️ 1 sem conteúdo
 
-Cada informação traz a citação literal do documento de onde saiu, o selo de
-origem e se já passou por revisão humana. No site tem a página completa, com o
-link de cada fonte.
+⚠️ Estes três números são sobre o NOSSO levantamento, e não sobre a candidatura. Tema sem conteúdo aqui quer dizer que nós ainda não localizamos ou ainda não trabalhamos aquele cruzamento — não que a pessoa não tenha o que dizer.
+
+Cada informação traz a citação literal do documento de onde saiu, o selo de origem e se já passou por revisão humana. No site tem a página completa, com o link de cada fonte.
 
 🔗 kvgs.github.io/senado-2026
 
 #eleições2026 #senado #amapa #professoruzianpinto #dc #dadosabertos #votoconsciente #transparência
 
 ---
+
+## Por que a legenda está em texto puro
+
+O Instagram **não renderiza Markdown**: `**assim**` chega no feed com os asteriscos
+à mostra. E ele **preserva cada quebra de linha** — parágrafo quebrado em 78
+colunas, que é o certo no resto deste arquivo, chega picado em degrau, porque o
+próprio Instagram já quebra de novo por volta dos 35 caracteres. Por isso o bloco
+acima tem **um parágrafo por linha**, por mais longa que a linha fique aqui. Ênfase,
+quando precisa, é CAIXA ALTA ou lista com `▪️`.
 
 ## O que a arte NÃO faz
 
