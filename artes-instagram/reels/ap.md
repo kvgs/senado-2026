@@ -1,32 +1,33 @@
-# Reels — Acre
+# Reels — Amapá
 
-Vídeo vertical de 27s, 5 cenas, **sem áudio**.
-Gerado por `python gerar_reels_uf.py --uf AC`.
+Vídeo vertical de 28s, 5 cenas, **sem áudio**.
+Gerado por `python gerar_reels_uf.py --uf AP`.
 
 ---
 
 ## Legenda
 
-**8 candidaturas ao Senado pelo Acre. Você sabe o que elas propõem?**
+**9 candidaturas ao Senado pelo Amapá. Você sabe o que elas propõem?**
 
-O Acre é o primeiro de dois estados do site conferidos por inteiro: 112 informações
+O Amapá é o segundo de dois estados do site conferidos por inteiro: 122 informações
 lidas uma a uma por uma pessoa, cada uma com a fonte, o trecho citado e a data.
 
-▪️ **De cada dez informações publicadas, 1,8 são da própria candidatura** (20 de 112).
-60 vêm do programa do partido e 32 são temas em que não localizamos nada.
+▪️ **De cada dez informações publicadas, 0,7 são da própria candidatura** (9 de 122).
+100 vêm do programa do partido e 13 são temas em que não localizamos nada.
 
-▪️ **Uma candidatura declarou site ao TSE. Seis tinham.** Os outros cinco foram
-encontrados um a um — e é de onde saíram 19 das 20 propostas próprias do estado.
+▪️ **Três candidaturas declararam site ao TSE. Seis tinham.** Os outros três foram
+encontrados um a um — e é de onde saíram 5 das 9 propostas próprias do estado.
 
-▪️ **Dois temas não têm proposta própria de ninguém:** Habitação, Tecnologia e
-Inteligência Artificial. O que aparece ali vem do programa dos partidos.
+▪️ **Quatro temas não têm proposta própria de ninguém:** Educação, Infraestrutura e
+Mobilidade Urbana, Habitação, Tecnologia e Inteligência Artificial. O que aparece ali
+vem do programa dos partidos.
 
 **"Sem conteúdo" é sobre a nossa busca, não sobre a candidatura.** Cada uma dessas
 linhas diz, no site, onde procuramos e quando.
 
 🔗 kvgs.github.io/senado-2026 — dados abertos, código público.
 
-#eleições2026 #senado #acre #dadosabertos #votoconsciente #transparência #jornalismodedados #política #brasil
+#eleições2026 #senado #amapá #dadosabertos #votoconsciente #transparência #jornalismodedados #política #brasil
 
 ---
 
@@ -60,5 +61,5 @@ não mostra o selo "não revisado" que cada linha carrega no site.
 1. `cena_abre` — 4.0s
 2. `cena_contador` — 6.0s
 3. `cena_barra` — 7.0s
-4. `cena_zero` — 5.0s
+4. `cena_zero` — 6.0s
 5. `cena_fecha` — 5.0s

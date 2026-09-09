@@ -47,7 +47,40 @@ RAIZ = pathlib.Path(__file__).resolve().parent
 
 # Luminancia crescente: escuro = da candidatura, medio = do partido, claro = ausencia.
 # A ordem e a mesma em todos os graficos, e e o que o leitor aprende no primeiro.
-ACENTO = "#0B5D2A"      # 7,33:1 sobre o papel
+NUM_EXTENSO = {0: "nenhuma", 1: "uma", 2: "duas", 3: "três", 4: "quatro",
+               5: "cinco", 6: "seis", 7: "sete", 8: "oito", 9: "nove",
+               10: "dez", 11: "onze", 12: "doze", 13: "treze", 14: "catorze",
+               15: "quinze", 16: "dezesseis", 17: "dezessete", 18: "dezoito",
+               19: "dezenove", 20: "vinte"}
+
+
+def num_extenso(n: int, fem: bool = True) -> str:
+    """Numero por extenso na frase, algarismo no grafico.
+
+    Frase de arte se le em voz alta; grafico se le com o olho. O numero escrito
+    aqui entra em texto corrido, e por isso vai por extenso — mas se for grande
+    demais para a tabela, o algarismo e melhor que um palpite.
+
+    O GENERO E PARAMETRO porque a tabela nasceu para "candidaturas" e a primeira
+    frase masculina que a usou saiu "de DUAS estados".
+    """
+    p = NUM_EXTENSO.get(n, str(n))
+    if not fem:
+        p = {"uma": "um", "duas": "dois", "nenhuma": "nenhum"}.get(p, p)
+    return p
+
+
+# A COR DA SERIE E A DO ESTADO, e nao uma so para todos. Este numero continua
+# aqui porque outros scripts o importam e porque e o padrao de quem nao passa cor,
+# mas as artes usam PALETA[uf], a mesma do carrossel por candidatura. Sem isso, a
+# analise do Amapa saia no verde do Acre: dois estados com a mesma cara no feed,
+# que e exatamente o que a paleta existe para evitar.
+#
+# Medido antes de trocar: o azul do Amapa (#00548C) da 7,93:1 sobre o papel e
+# 6,59:1 para o rotulo claro dentro da barra, contra 8,04:1 e 6,67:1 do verde do
+# Acre. Nenhuma das duas separa por cor do cinza medio (2,1:1), e por isso o que
+# separa os segmentos continua sendo luminancia e rotulo escrito.
+ACENTO = "#0B5D2A"      # 7,33:1 sobre o papel — padrao, quando nao ha cor de UF
 MEIO = "#8C8279"        # 3,43:1
 CLARO = "#DDD6CF"       # 1,31:1 — abaixo de 3:1, e por isso SEMPRE com rotulo visivel
 GAP = 6                 # folga em cor de papel entre segmentos que se tocam
@@ -146,9 +179,77 @@ def legenda(t: Tela, itens: list[tuple[str, str]]):
     t.y += 40
 
 
+ORDINAL = {1: "O PRIMEIRO", 2: "O SEGUNDO", 3: "O TERCEIRO", 4: "O QUARTO",
+           5: "O QUINTO", 6: "O SEXTO", 7: "O SÉTIMO", 8: "O OITAVO",
+           9: "O NONO", 10: "O DÉCIMO"}
+
+
+def chapeu_da_ordem(d: dict) -> str:
+    """Em que posicao ESTE estado ficou pronto, pela DATA e nao pelo alfabeto.
+
+    Estado conferido por inteiro e aquele em que toda posicao publicavel passou
+    pela revisao humana. A ordem entre eles sai da data da ULTIMA revisao de cada
+    um — que e o dia em que ele ficou pronto. A primeira versao disto ordenava
+    pela ordem em que os estados aparecem no acervo, que e alfabetica: para AC e
+    AP dava certo por coincidencia, e afirmaria "o segundo" sem saber.
+
+    A conta e feita na hora. Lista escrita a mao envelhece no dia em que o
+    proximo estado fica pronto — foi assim que "O PRIMEIRO ESTADO CONFERIDO POR
+    INTEIRO", escrito para o Acre, saiu tambem na capa do Amapa.
+    """
+    prontos = []
+    for uf in acervo.com_acervo():
+        pos = [p for p in acervo.ler("posicoes.json", uf)["posicoes"]
+               if (p.get("revisao") or {}).get("resultado") not in ("remover", "corrigir")]
+        if not pos or not all(p.get("revisado_por_humano") for p in pos):
+            continue
+        datas = [(p.get("revisao") or {}).get("em") or "" for p in pos]
+        prontos.append((max(datas), uf))
+    prontos.sort()
+    ufs = [uf for _, uf in prontos]
+    if d["uf"] not in ufs:
+        return "ESTADO CONFERIDO POR INTEIRO"
+    if len(ufs) == 1:
+        return "O PRIMEIRO ESTADO CONFERIDO POR INTEIRO"
+    ord_ = ORDINAL.get(ufs.index(d["uf"]) + 1)
+    if not ord_:
+        return f"UM DOS {len(ufs)} ESTADOS CONFERIDOS POR INTEIRO"
+    return f"{ord_} DE {len(ufs)} ESTADOS CONFERIDOS POR INTEIRO"
+
+
+ORDINAL_PROSA = {1: "o primeiro", 2: "o segundo", 3: "o terceiro",
+                 4: "o quarto", 5: "o quinto", 6: "o sexto", 7: "o sétimo",
+                 8: "o oitavo", 9: "o nono", 10: "o décimo"}
+
+
+def ordem_em_prosa(d: dict) -> str:
+    """A mesma posicao do chapeu, mas escrita para caber numa frase.
+
+    O chapeu vai em CAIXA ALTA e sem artigo, o que serve na tarja e nao serve no
+    meio de um paragrafo: "O Amapa e PRIMEIRO DE 2 ESTADOS" nao e portugues. Duas
+    formas para o mesmo dado, cada uma escrita para o lugar onde e lida.
+    """
+    chapeu = chapeu_da_ordem(d)
+    if chapeu == "ESTADO CONFERIDO POR INTEIRO":
+        return "um estado do site conferido por inteiro"
+    if chapeu == "O PRIMEIRO ESTADO CONFERIDO POR INTEIRO":
+        return "o primeiro estado do site conferido por inteiro"
+    prontos = chapeu.split(" DE ")[1].split()[0]
+    ordinal = ORDINAL_PROSA.get(
+        [k for k, v in ORDINAL.items() if chapeu.startswith(v + " ")][0]
+        if any(chapeu.startswith(v + " ") for v in ORDINAL.values()) else 0,
+        "um")
+    return (f"{ordinal} de {num_extenso(int(prontos), fem=False)} estados do site "
+            "conferidos por inteiro")
+
+
 def arte_capa(d: dict, cor: str, i: int, n: int):
     t = Tela(PAPEL2, 96)
-    cabecalho(t, d, cor, "O PRIMEIRO ESTADO CONFERIDO POR INTEIRO")
+    # "O PRIMEIRO" ERA VERDADE UMA VEZ SO. A frase foi escrita para o Acre e
+    # ficou chumbada: o Amapa saiu com ela tambem, dizendo que era o primeiro
+    # estado conferido por inteiro quando era o segundo. O chapeu agora sai da
+    # ordem em que os estados FICARAM prontos, contada no acervo.
+    cabecalho(t, d, cor, chapeu_da_ordem(d))
     t.texto(f"O que o acervo do {d['uf_nome']} mostra",
             f("display", 78), TINTA, entre=1.06, larg=880)
     t.espaco(24)
@@ -166,8 +267,14 @@ def arte_capa(d: dict, cor: str, i: int, n: int):
              fill=TINTA2)
     t.y += int(fnum.size * 0.92)
     t.espaco(18)
-    t.texto(f"De {d['publicadas']} publicadas. Outras {d['retiradas']} foram "
-            "retiradas na revisão.", f("corpo", 28, 400), APAGADO, entre=1.36, larg=840)
+    r = d["retiradas"]
+    if r:
+        retirada = (f"Outra {r} foi retirada na revisão." if r == 1
+                    else f"Outras {r} foram retiradas na revisão.")
+    else:
+        retirada = "Nenhuma foi retirada na revisão."
+    t.texto(f"De {d['publicadas']} publicadas. {retirada}",
+            f("corpo", 28, 400), APAGADO, entre=1.36, larg=840)
 
     livre = t.base_do_rodape() - 30 - (t.y + 30)
     if livre > 150:
@@ -191,7 +298,7 @@ def arte_origem(d: dict, cor: str, i: int, n: int):
     # A TINTA DE CADA ROTULO FOI MEDIDA CONTRA O SEU FUNDO, e nao escolhida pelo
     # que parecia. Texto claro sobre o cinza medio dava 3,12:1 e reprova em 4,5:1;
     # em tinta escura da 5,00:1. Rotulo dentro da barra e texto, e nao enfeite.
-    partes = [("Da candidatura", d["origem"]["A"], ACENTO, SOBRE_ESCURO),   # 6,67:1
+    partes = [("Da candidatura", d["origem"]["A"], cor, SOBRE_ESCURO),   # 6,59:1 no AP
               ("Do partido", d["origem"]["B"], MEIO, TINTA),                # 5,00:1
               ("Sem conteúdo", d["origem"]["D"] + d["origem"]["C"], CLARO, TINTA)]  # 13,1:1
     total = sum(x[1] for x in partes)
@@ -207,7 +314,7 @@ def arte_origem(d: dict, cor: str, i: int, n: int):
             t.d.text((x + 18, t.y + 22), str(valor), font=fv, fill=tinta)
         x += w + GAP
     t.y += alt + 26
-    legenda(t, [(ACENTO, f"Da candidatura · {d['origem']['A']}"),
+    legenda(t, [(cor, f"Da candidatura · {d['origem']['A']}"),
                 (MEIO, f"Do partido · {d['origem']['B']}"),
                 (CLARO, f"Sem conteúdo · {d['origem']['D'] + d['origem']['C']}")])
 
@@ -229,11 +336,25 @@ def arte_por_tema(d: dict, cor: str, i: int, n: int):
     nominal duplicaria o comprimento na cor sem acrescentar informacao."""
     t = Tela(PAPEL, 96)
     cabecalho(t, d, cor, "PROPOSTA DA PRÓPRIA CANDIDATURA, POR TEMA")
-    t.texto("Em quantas das oito candidaturas cada tema tem proposta própria",
-            f("display", 52), TINTA, entre=1.08, larg=880)
+    # TODO O TEXTO DESTE SLIDE E CONTA. A versao anterior foi escrita para o Acre
+    # e ficou chumbada: no Amapa ela dizia "das OITO candidaturas" (sao nove),
+    # "DOIS nao tem nenhuma" (sao quatro) e citava "Habitacao e Tecnologia", que
+    # sao os zeros do ACRE. Tres frases falsas num slide de grafico, que e onde
+    # numero tem mais cara de fato.
+    n_cand = d["candidaturas"]
+    valores = [x["propria"] for x in d["por_tema"]]
+    zeros = [x["tema"] for x in d["por_tema"] if x["propria"] == 0]
+    teto = max(valores) if valores else 0
+    t.texto(f"Em quantas das {num_extenso(n_cand)} candidaturas cada tema tem "
+            "proposta própria", f("display", 52), TINTA, entre=1.08, larg=880)
     t.espaco(20)
-    t.texto("Nenhum tema passa de três. Dois não têm nenhuma.",
-            f("corpo", 30, 500), TINTA2, entre=1.38, larg=860)
+    if zeros:
+        sub = (f"Nenhum tema passa de {num_extenso(teto)}. "
+               + (f"{num_extenso(len(zeros)).capitalize()} não têm nenhuma."
+                  if len(zeros) > 1 else "Um não tem nenhuma."))
+    else:
+        sub = f"Nenhum tema passa de {num_extenso(teto)}."
+    t.texto(sub, f("corpo", 30, 500), TINTA2, entre=1.38, larg=860)
     t.espaco(34)
 
     linhas = sorted(d["por_tema"], key=lambda x: (-x["propria"], x["tema"]))
@@ -255,8 +376,15 @@ def arte_por_tema(d: dict, cor: str, i: int, n: int):
 
     # A altura de linha sai do espaco livre, e nao de um numero fixo: assim o
     # grafico ocupa a tela em vez de deixar meio slide vazio embaixo.
-    rodape_txt = ("Habitação e Tecnologia não têm proposta própria de ninguém no "
-                  "estado. O que aparece nesses temas vem do programa dos partidos.")
+    if zeros:
+        lista = (zeros[0] if len(zeros) == 1
+                 else ", ".join(zeros[:-1]) + " e " + zeros[-1])
+        rodape_txt = (f"{lista} não {'tem' if len(zeros) == 1 else 'têm'} proposta "
+                      "própria de ninguém no estado. O que aparece nesses temas vem "
+                      "do programa dos partidos.")
+    else:
+        rodape_txt = ("Todos os dez temas têm proposta própria de pelo menos uma "
+                      "candidatura no estado.")
     fr = f("corpo", 27, 400)
     alto_rodape = len(t.quebra(rodape_txt, fr, 860)) * 38 + 40
     livre = t.base_do_rodape() - 40 - alto_rodape - t.y
@@ -277,7 +405,7 @@ def arte_por_tema(d: dict, cor: str, i: int, n: int):
         if w > 0:
             t.d.rounded_rectangle([x0, t.y, x0 + max(w, 10), t.y + alt_barra],
                                   radius=11, corners=(False, True, True, False),
-                                  fill=ACENTO)
+                                  fill=cor)
             t.d.text((x0 + w + 16, t.y + 1), str(r["propria"]), font=fv, fill=TINTA)
         else:
             # Zero e um dado, e nao a falta de um: mostra a trilha e o numero.
@@ -299,12 +427,23 @@ def arte_sites(d: dict, cor: str, i: int, n: int):
     seria pior que o numero."""
     t = Tela(PAPEL2, 96)
     cabecalho(t, d, cor, "O QUE O REGISTRO NO TSE NÃO MOSTRA")
-    t.texto("Uma candidatura declarou site ao TSE. Seis tinham.",
+    # A MANCHETE ESTAVA CONTRADIZENDO O PLACAR LOGO ABAIXO DELA. O texto foi
+    # escrito para o Acre — "Uma candidatura declarou site ao TSE. Seis tinham" —
+    # e no Amapa saiu igual, com o placar dizendo TRES declararam. Manchete e
+    # numero na mesma tela, um desmentindo o outro.
+    dec, com, ach = d["declararam_site"], d["com_site"], d["achados"]
+    t.texto(f"{num_extenso(dec).capitalize()} "
+            f"candidatura{'' if dec == 1 else 's'} "
+            f"{'declarou' if dec == 1 else 'declararam'} site ao TSE. "
+            f"{num_extenso(com).capitalize()} {'tinha' if com == 1 else 'tinham'}.",
             f("display", 58), TINTA, entre=1.08, larg=880)
     t.espaco(24)
-    t.texto("Os outros cinco foram encontrados um a um, e cada um teve a "
-            "atribuição conferida antes de entrar: número de urna, coligação, "
-            "suplentes, CNPJ de campanha.",
+    if ach == 1:
+        abre = "O outro foi encontrado na mão, e teve"
+    else:
+        abre = f"Os outros {num_extenso(ach)} foram encontrados um a um, e cada um teve"
+    t.texto(f"{abre} a atribuição conferida antes de entrar, contra o que a "
+            "candidatura declarou no registro no TSE.",
             f("corpo", 29, 400), TINTA2, entre=1.4, larg=860)
     t.espaco(48)
 

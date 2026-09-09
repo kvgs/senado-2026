@@ -36,7 +36,10 @@ from PIL import Image, ImageDraw
 
 import acervo
 from gerar_artes import APAGADO, PAPEL, PAPEL2, SOBRE_ESCURO, TINTA, TINTA2, f
-from gerar_artes_analise_uf import ACENTO, CLARO, MEIO, medir
+# ACENTO nao entra: a cor da serie e a do ESTADO, como no carrossel. A barra
+# do Reels do Amapa saia no verde do Acre com a regua azul embaixo, na mesma
+# tela — a paleta existe para os estados nao se confundirem no feed.
+from gerar_artes_analise_uf import CLARO, MEIO, medir
 from gerar_artes_candidatura import PALETA, silhueta
 
 RAIZ = pathlib.Path(__file__).resolve().parent
@@ -237,7 +240,7 @@ def cena_barra(t: float, dur: float, d: dict, cor: str) -> Image.Image:
               f"{'é' if quanto == 'uma' else 'são'} da própria candidatura.",
           f("display", 76), TINTA, MARGEM, 270, LARG - 2 * MARGEM, t)
 
-    partes = [("Da candidatura", d["origem"]["A"], ACENTO, SOBRE_ESCURO),
+    partes = [("Da candidatura", d["origem"]["A"], cor, SOBRE_ESCURO),
               ("Do partido", d["origem"]["B"], MEIO, TINTA),
               ("Sem conteúdo", d["origem"]["D"] + d["origem"]["C"], CLARO, TINTA)]
     total = sum(x[1] for x in partes)
@@ -383,10 +386,15 @@ def escreve_legenda(d: dict, cenas: list, saida: pathlib.Path, dur: float) -> No
     # isto a legenda chega ao Instagram partida no meio das frases, nos pontos em
     # que a f-string virava de linha no fonte.
     bullets = "\n\n".join(textwrap.fill(x, 88) for x in itens)
+    # "O PRIMEIRO" FOI VERDADE UMA VEZ SO. A frase nasceu com o Acre e ficou
+    # chumbada: a legenda do Amapa saiu dizendo que ele era o primeiro estado
+    # conferido por inteiro, quando era o segundo. A posicao sai da conta que o
+    # gerar_artes_analise_uf.py faz, pela data da ultima revisao de cada estado.
+    from gerar_artes_analise_uf import ordem_em_prosa
     abertura = textwrap.fill(
-        f"O {nome} é o primeiro estado do site conferido por inteiro: "
-        f"{d['revisadas']} informações lidas uma a uma por uma pessoa, cada uma "
-        f"com a fonte, o trecho citado e a data.", 88)
+        f"O {nome} é {ordem_em_prosa(d)}: {d['revisadas']} informações lidas uma "
+        f"a uma por uma pessoa, cada uma com a fonte, o trecho citado e a data.",
+        88)
 
     corpo = f"""# Reels — {nome}
 
