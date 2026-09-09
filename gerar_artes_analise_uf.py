@@ -539,6 +539,105 @@ def pasta(d: dict) -> str:
     return f"7-{d['uf'].lower()}-analise"
 
 
+def escreve_legenda(d: dict, cor_de: str, n_slides: int) -> None:
+    """A legenda sai do mesmo lugar que os graficos.
+
+    A do Acre foi escrita a mao e trazia os numeros do Acre. Isso funciona uma
+    vez: no segundo estado, quem copia herda "o primeiro estado conferido por
+    inteiro", "oito candidaturas" e "Habitacao e Tecnologia" — os tres erros que
+    a arte tinha e que esta rodada corrigiu. Legenda escrita a mao envelhece com
+    a arte.
+    """
+    nome = d["uf_nome"]
+    tag = lambda s: "#" + s.lower().replace(" ", "").replace("-", "")
+    tags = " ".join([tag("eleições2026"), tag("senado"), tag(nome),
+                     tag("dadosabertos"), tag("votoconsciente"),
+                     tag("transparência"), tag("jornalismodedados"),
+                     tag("política"), tag("brasil")])
+    zeros = [x["tema"] for x in d["por_tema"] if x["propria"] == 0]
+    teto = max([x["propria"] for x in d["por_tema"]] or [0])
+    A, B = d["origem"]["A"], d["origem"]["B"]
+    vazio = d["origem"]["C"] + d["origem"]["D"]
+    dec, com, ach = d["declararam_site"], d["com_site"], d["achados"]
+
+    itens = [
+        f"▪️ De cada dez informações publicadas, "
+        f"{A / max(1, d['publicadas']) * 10:.1f}".replace(".", ",")
+        + f" são da própria candidatura: {A} de {d['publicadas']}. "
+        f"{B} vêm do programa do partido e {vazio} são temas em que não "
+        "localizamos nada.",
+
+        f"▪️ Nenhum tema tem proposta própria em mais de "
+        f"{num_extenso(teto)} das {num_extenso(d['candidaturas'])} candidaturas."
+        + (f" {', '.join(zeros)} não "
+           f"{'tem' if len(zeros) == 1 else 'têm'} nenhuma: o que aparece ali é "
+           "programa de partido." if zeros else ""),
+
+        f"▪️ {num_extenso(dec).capitalize()} candidatura"
+        f"{'' if dec == 1 else 's'} {'declarou' if dec == 1 else 'declararam'} "
+        f"site ao TSE. {num_extenso(com).capitalize()} "
+        f"{'tinha' if com == 1 else 'tinham'}."
+        + (f" {'O outro foi' if ach == 1 else f'Os outros {num_extenso(ach)} foram'} "
+           f"encontrado{'' if ach == 1 else 's'} um a um — e é de onde "
+           f"{'saiu' if d['proprias_de_achado'] == 1 else 'saíram'} "
+           f"{d['proprias_de_achado']} das {d['proprias']} propostas próprias do "
+           f"estado. Antes dessa busca o acervo tinha {d['proprias_antes']}."
+           if ach else ""),
+    ]
+
+    corpo = f"""# O que o acervo do {nome} mostra — análise
+
+{n_slides} slides: capa com o número principal, três recortes de dados, as
+ressalvas do que os números não medem, e o fecho.
+Gerado por `python gerar_artes_analise_uf.py --uf {d["uf"]}`.
+
+---
+
+## Legenda — copie daqui até as hashtags, sem mexer
+
+O {nome} é {ordem_em_prosa(d)} — e agora dá para olhar os números.
+
+São {d["candidaturas"]} candidaturas e {d["temas"]} temas. As {d["revisadas"]} informações publicadas foram lidas uma a uma por uma pessoa. Aqui está o que elas mostram. 👇
+
+""" + f"""{(chr(10) + chr(10)).join(itens)}
+
+⚠️ O QUE ESTES NÚMEROS NÃO DIZEM: nenhum gráfico aqui compara candidaturas entre si. Contar propostas por pessoa e ordenar mediria verba de campanha e tamanho de assessoria, não qualidade de candidatura. Por isso todos os recortes são por tema e por origem da informação.
+
+E "sem conteúdo" não quer dizer que a candidatura não tenha proposta: quer dizer que NÓS não localizamos — e cada uma dessas {vazio} linhas diz, no site, onde procuramos.
+
+🔗 kvgs.github.io/senado-2026 — dados abertos, código público.
+
+{tags}
+
+---
+
+## Como os números foram apurados
+
+Todos saem do acervo **na hora de gerar a imagem**, e nenhum foi digitado. Se a
+revisão reprovar uma informação, a próxima geração muda o gráfico.
+
+O script **para com erro** se o estado tiver alguma linha sem decisão da revisão.
+Gráfico tem cara de fato e não mostra o selo "não revisado" que cada linha
+carrega no site.
+
+## Decisões de visualização
+
+- **Nenhum gráfico compara candidaturas.** É a regra que mais restringiu o que
+  podia ser desenhado.
+- **Uma série por gráfico.** As barras por tema têm uma cor só.
+- **Os sites viraram número, não gráfico.** São três valores soltos; barra de
+  valor único é pior que o número.
+- **Zero é um dado.** Tema sem proposta própria aparece com a trilha da escala e
+  o "0" escrito, e não como linha em branco.
+- **A escala vai até o total de candidaturas**, e não até o maior valor. Cortar a
+  escala faria "{teto} de {d['candidaturas']}" parecer muito.
+- **A cor é a do estado**: {cor_de}
+"""
+    alvo = RAIZ / "artes-instagram" / pasta(d) / "LEGENDA.md"
+    alvo.parent.mkdir(parents=True, exist_ok=True)
+    alvo.write_text(corpo, encoding="utf-8")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--uf", required=True)
@@ -555,6 +654,7 @@ def main() -> None:
     arte_sites(d, cor, 4, n)
     arte_nao_mede(d, cor, 5, n)
     arte_fecho(d, cor, 6, n)
+    escreve_legenda(d, PALETA[uf]["de"], n)
     print(f"  {pasta(d)}/  ({n} slides · {d['publicadas']} publicadas, "
           f"{d['revisadas']} revisadas)")
 

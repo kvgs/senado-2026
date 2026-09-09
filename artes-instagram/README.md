@@ -15,15 +15,18 @@ poste na ordem em que o explorador de arquivos mostra.
 | `5-sudeste-quem-sao/` | 8 | `gerar_artes_regiao.py --regiao Sudeste` |
 | `5-sul-quem-sao/` | 5 | `gerar_artes_regiao.py --regiao Sul` |
 | `6-<uf>-<numero>-<nome>/` | 12 | `gerar_artes_candidatura.py --uf AC --todos` |
-| `reels/ac.mp4` | vídeo | `gerar_reels_uf.py --uf AC` |
+| `7-<uf>-analise/` | 6 | `gerar_artes_analise_uf.py --uf AP` |
+| `reels/<uf>.mp4` | vídeo | `gerar_reels_uf.py --uf AC` |
 | `reels/o-cargo.mp4` | vídeo | `gerar_reels_senado.py` |
 | `perfil-da-conta/` | — | `gerar_avatar.py` |
 
 O número da **pasta** é a ordem em que os carrosséis foram feitos, e não uma
-afirmação sobre o que já foi publicado. Renumere se postar fora de ordem. Faltam
-o 7, o 8, o 9 e o 10: o 8 e o 10 eram os dois Reels, e o 7 e o 9 eram carrosséis
-que **a curadoria decidiu não publicar** — a mesma matéria sai em vídeo, e dois
-formatos da mesma coisa é uma escolha, não um acervo maior.
+afirmação sobre o que já foi publicado. Renumere se postar fora de ordem. Faltam o 8, o
+9 e o 10: o 8 e o 10 eram os dois Reels, que hoje moram juntos em `reels/`, e o
+9 era o carrossel do cargo, cuja versão publicada é `reels/o-cargo.mp4`. O `7-`
+saiu do acervo em 03/09/2026 e voltou em 08/09, quando a curadoria pediu a
+análise do Amapá em carrossel — qual formato publicar é decisão dela, e muda.
+Os scripts das pastas que saíram continuam aqui: rodar recria a pasta.
 
 Cada pasta de carrossel tem um `LEGENDA.md` com o texto do post. **Os vídeos
 ficam todos em `reels/`**, um arquivo por vídeo, com a legenda ao lado no `.md`
@@ -62,11 +65,10 @@ que mostra uma pessoa sozinha, e por isso é a que mais precisa de cuidado:
 
 São 12 imagens por candidatura. O Acre inteiro dá 96 imagens e 6,8 MB.
 
-## As travas do vídeo do estado
+## As travas da análise por estado
 
-`reels/ac.mp4` é o único que **mostra gráfico** (a barra 20/60/32), e por isso
-carrega duas travas próprias. Elas nasceram no carrossel `7-`, que não é mais
-publicado, e valem igual — ou mais — em vídeo:
+A série `7-` e a barra dos Reels são as únicas peças com **gráfico**, e por isso
+carregam duas travas próprias:
 
 - **Só existe para estado 100% revisado.** O script para com erro se houver linha
   sem decisão da revisão. Gráfico tem cara de fato e não mostra o selo "não
@@ -76,10 +78,21 @@ publicado, e valem igual — ou mais — em vídeo:
   candidatura — é o mesmo alerta que o `validar.py` dá. Os recortes são por tema,
   por origem da informação e sobre a nossa própria busca.
 
-As cores foram medidas em contraste, não escolhidas no olho. O script
-`gerar_artes_analise_uf.py` continua no repositório: é dele que sai o `medir()`
-com os números do estado e a paleta que o vídeo usa. Ele ainda gera o carrossel
-de seis imagens se alguém rodar — só não é o que se posta.
+As cores foram medidas em contraste, não escolhidas no olho, **e são as do
+estado** — a mesma `PALETA` do carrossel por candidatura. Até 08/09/2026 a série
+usava o verde do Acre em todo estado, e a análise do Amapá saía verde com a régua
+azul do rodapé na mesma tela.
+
+**Todo texto desses slides é conta.** A primeira versão foi escrita para o Acre e
+ficou fixa: no Amapá ela dizia "o PRIMEIRO estado conferido por inteiro" (é o
+segundo), "das OITO candidaturas" (são nove), "DOIS não têm nenhuma" (são quatro),
+citava os zeros do Acre, e a manchete "UMA candidatura declarou site" aparecia
+sobre um placar que dizia três. Seis frases falsas em arte de gráfico, que é onde
+número tem mais cara de fato. A ordem entre estados sai da **data da última
+revisão** de cada um, e não do alfabeto.
+
+O `LEGENDA.md` também é gerado, pela mesma razão: a do Acre era escrita à mão e
+levaria os números do Acre para o segundo estado.
 
 ## Os Reels
 
