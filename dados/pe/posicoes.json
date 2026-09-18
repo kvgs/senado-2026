@@ -604,14 +604,21 @@
    "texto": "Apresentou projeto que prevê pelo menos duas refeições por dia aos estudantes da educação básica da rede pública.",
    "url_especifica": "https://eduardodafonte.com.br/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28",
     "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-18",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-pe-2026-eduardo-da-fonte-site-010",
@@ -626,14 +633,21 @@
    "texto": "Apresentou projeto de marco legal para o Subsistema de Inteligência de Segurança Pública, com compartilhamento de dados entre órgãos.",
    "url_especifica": "https://eduardodafonte.com.br/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28",
     "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-18",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-pe-2026-eduardo-da-fonte-site-011",
@@ -645,17 +659,44 @@
    "nivel_fonte": "declaracao_candidato",
    "id_documento": "doc-site-sen-pe-2026-eduardo-da-fonte",
    "citacao_literal": "Entre as propostas voltadas ao Semiárido está o PL 5.641/2023, que prevê isenção de IPI para determinados tratores, colheitadeiras, motoniveladoras e implementos agrícolas adquiridos por produtores rurais da região.",
-   "texto": "Apresentou projeto que isenta de IPI tratores, colheitadeiras e implementos agrícolas comprados por produtores rurais do Semiárido.",
+   "texto": "O site da candidatura apresenta, entre as propostas para o Semiárido, a isenção de IPI para tratores, colheitadeiras, motoniveladoras e implementos agrícolas de produtores rurais da região, e atribui o conteúdo ao PL 5.641/2023.",
    "url_especifica": "https://eduardodafonte.com.br/",
    "data_referencia": "2026-08-28",
    "revisado_por_humano": false,
    "conferido_por_ia": {
-    "data": "2026-08-28",
+    "data": "2026-09-18",
     "forca": "alta",
-    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28",
-    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28, e numero do projeto conferido contra a API da Camara dos Deputados em 2026-09-18",
+    "ressalva": "O numero citado nao corresponde: na Camara, o PL 5.641/2023 e de Fernanda Melchionna, Samia Bomfim e Glauber Braga, e trata de aplicativos de inteligencia artificial que criam imagens pornograficas nao autorizadas. Nenhum projeto de isencao de IPI para maquina agricola aparece entre os 364 registros de autoria desta candidatura. O que esta conferido e que o site publica esta proposta; a autoria do projeto citado, nao."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-18",
+    "resultado": "remover",
+    "nota": "O numero citado pelo site corresponde, na Camara, a projeto de outra autoria e de outro assunto, e nenhum projeto de isencao de IPI para maquina agricola aparece entre os 364 registros desta candidatura. A proposta existe apenas como alegacao do site, sem como amarrar ao documento que ela invoca.",
+    "por_quem": "kvgs",
+    "_antes": [
+     {
+      "em": "2026-09-18",
+      "resultado": "confere",
+      "nota": "",
+      "por_quem": "kvgs"
+     },
+     {
+      "_reaberta_em": "2026-09-18",
+      "_motivo": "O texto dizia 'Apresentou projeto que isenta de IPI tratores...', afirmando em voz propria uma autoria que a API da Camara contradiz. A citacao literal cita o site fielmente — o numero errado e do site —, mas a nossa parafrase transformava a afirmacao dele em afirmacao nossa. Reescrito para atribuir a alegacao ao site. Texto anterior: Apresentou projeto que isenta de IPI tratores, colheitadeiras e implementos agrícolas comprados por produtores rurais do Semiárido."
+     }
+    ],
+    "_registrada_fora_da_tela": "Decisao da curadoria, tomada na conversa de 2026-09-18 e gravada por mim neste arquivo, e nao pela tela do revisar.py. O apelido registrado e o da curadoria porque a decisao e dela; o que eu fiz foi transcrever."
+   },
+   "_correcoes": [
+    {
+     "campo": "texto",
+     "em": "2026-09-18",
+     "antes": "Apresentou projeto que isenta de IPI tratores, colheitadeiras e implementos agrícolas comprados por produtores rurais do Semiárido.",
+     "porque": "Atribuicao de autoria que a fonte nao sustenta e que a API da Camara contradiz."
+    }
+   ]
   },
   {
    "id_posicao": "pos-sen-pe-2026-eduardo-da-fonte-site-012",
@@ -670,14 +711,21 @@
    "texto": "Foi relator do projeto que reduz a jornada dos Agentes Comunitários de Saúde de 40 para 30 horas sem redução salarial, posicionou-se contra a Reforma Trabalhista e é coautor da proposta de fim da escala 6x1.",
    "url_especifica": "https://eduardodafonte.com.br/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28",
     "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-18",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-pe-2026-eduardo-da-fonte-site-013",
@@ -692,14 +740,29 @@
    "texto": "Apresentou projeto para usar recursos do Fundo Nacional de Segurança Pública em casas-abrigo para mulheres vítimas de violência, e proposta de monitoramento eletrônico de agressores.",
    "url_especifica": "https://eduardodafonte.com.br/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
-    "data": "2026-08-28",
+    "data": "2026-09-18",
     "forca": "alta",
-    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28",
-    "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
+    "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28, e numero do projeto conferido contra a API da Camara dos Deputados em 2026-09-18",
+    "ressalva": "O ano citado pelo site nao confere: o projeto desta candidatura sobre casas-abrigo e o PL 6.337/2025, do qual ela e autora unica. O PL 6.337/2019 e de Luis Miranda e trata de direito de resposta. O conteudo da proposta esta confirmado; o ano no numero, nao."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-18",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs",
+   "_correcoes": [
+    {
+     "campo": "conferido_por_ia.ressalva",
+     "em": "2026-09-18",
+     "antes": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta.",
+     "porque": "A conferencia contra a API da Camara achou o ano errado no numero citado pelo site. O campo texto nao cita ano e continua correto, entao a decisao de revisao segue valendo — a ressalva so acrescenta o que foi descoberto depois."
+    }
+   ]
   },
   {
    "id_posicao": "pos-sen-pe-2026-eduardo-da-fonte-site-014",
@@ -714,14 +777,21 @@
    "texto": "Apresentou projeto que leva o modelo das unidades Casa Azul, de atendimento a pessoas com autismo, para política pública nacional.",
    "url_especifica": "https://eduardodafonte.com.br/",
    "data_referencia": "2026-08-28",
-   "revisado_por_humano": false,
+   "revisado_por_humano": true,
    "conferido_por_ia": {
     "data": "2026-08-28",
     "forca": "alta",
     "base": "trecho conferido palavra por palavra contra o texto coletado do site declarado ao TSE em 2026-08-28",
     "ressalva": "Citacao literal conferida por comparacao de texto. O que NAO foi conferido por gente: se o trecho representa o conjunto do que a candidatura defende, e se a pagina mudou depois da coleta."
    },
-   "_promovido_em": "2026-08-28"
+   "_promovido_em": "2026-08-28",
+   "revisao": {
+    "em": "2026-09-18",
+    "resultado": "confere",
+    "nota": "",
+    "por_quem": "kvgs"
+   },
+   "revisado_por": "kvgs"
   },
   {
    "id_posicao": "pos-sen-pe-2026-mendonca-filho-prog-pl-001",
