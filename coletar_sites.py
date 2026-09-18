@@ -38,6 +38,7 @@ import argparse
 import collections
 import hashlib
 import html
+from html.parser import HTMLParser
 import json
 import pathlib
 import re
@@ -144,6 +145,62 @@ def robo(base: str) -> tuple[urllib.robotparser.RobotFileParser | None, str]:
         return None, f"robots.txt nao obtido ({type(e).__name__}): nada proibido explicitamente"
 
 
+class SoOTexto(HTMLParser):
+    """Devolve o texto que o NAVEGADOR mostra, e nada mais.
+
+    POR QUE NAO DA PARA TIRAR TAG COM EXPRESSAO REGULAR. A versao anterior usava
+    re.sub(r"<[^>]+>", " ", s), que para no primeiro ">" — e atributo com ">"
+    dentro faz a expressao fechar a tag no lugar errado e derramar o resto do
+    atributo como se fosse texto da pagina.
+
+    Foi assim que o pliniovalerio.online, cuja pagina o navegador renderiza com
+    DEZENOVE caracteres ("SENADOR DO AMAZONAS"), entrou no acervo com 6.713: o
+    que vazou foi a tabela de idiomas de um app de planilha guardada em
+    atributo — "Valor absoluto. Remove os sinais de menos dos numeros
+    negativos", "Calcula o valor futuro de um investimento", "Canguru (animo,
+    energia, vontade de agir)". Um extrator poderia tirar "proposta" dali, e a
+    trava de citacao literal aprovaria, porque o texto ESTAVA no arquivo
+    coletado. O defeito era do extrator, e nenhum conferidor do projeto olha para
+    ele.
+
+    O que fica de fora, e por que:
+      script, style   codigo, nao conteudo
+      noscript        so aparece para quem desligou o JavaScript
+      template        molde para o JavaScript usar; o navegador nao mostra
+      svg             marcacao de desenho
+      title           e o titulo da aba, guardado em campo proprio
+      comentario      HTML comentado nao e publicado (o caso da Alliny Serrao)
+    """
+
+    FORA = {"script", "style", "noscript", "template", "svg", "title", "head"}
+    QUEBRA = {"br", "p", "div", "li", "tr", "h1", "h2", "h3", "h4", "h5", "h6",
+              "section", "article", "header", "footer", "td", "th", "option"}
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.partes: list[str] = []
+        self.ignorando = 0
+
+    def handle_starttag(self, tag, attrs):
+        if tag in self.FORA:
+            self.ignorando += 1
+        elif tag in self.QUEBRA:
+            self.partes.append("\n")
+
+    def handle_endtag(self, tag):
+        if tag in self.FORA:
+            self.ignorando = max(0, self.ignorando - 1)
+        elif tag in self.QUEBRA:
+            self.partes.append("\n")
+
+    def handle_data(self, dado):
+        if not self.ignorando:
+            self.partes.append(dado)
+
+    def resultado(self) -> str:
+        return "".join(self.partes)
+
+
 def texto(corpo: bytes, tipo: str) -> str:
     cs = "utf-8"
     m = re.search(r"charset=([\w-]+)", tipo, re.I)
@@ -152,23 +209,26 @@ def texto(corpo: bytes, tipo: str) -> str:
     s = corpo.decode(cs, "replace")
     if not m and re.search(r'charset=["\']?iso-8859-1', s[:2000], re.I):
         s = corpo.decode("latin-1", "replace")
-    # COMENTARIO HTML NAO E CONTEUDO PUBLICADO, e sai antes de tudo.
-    #
-    # O site da Alliny Serrao mantinha um bloco inteiro dentro de <!-- -->: a Lei
-    # 2.750/2022, com titulo, numero e descricao. O navegador nao mostra nada
-    # disso. O coletor tirava as tags e nao os comentarios, entao leu texto
-    # OCULTO como se a candidatura o tivesse publicado — e a linha foi para o
-    # acervo como declaracao dela.
-    #
-    # Quem pegou foi a revisao humana, com a nota "Nao achei no site", pela
-    # terceira vez nesta temporada. Nenhum conferidor automatico pegaria: todos
-    # comparam a citacao com o texto que ESTE extrator produziu, e o defeito
-    # estava aqui.
-    s = re.sub(r"<!--.*?-->", " ", s, flags=re.S)
-    s = re.sub(r"<(script|style|noscript|svg)\b.*?</\1>", " ", s, flags=re.S | re.I)
-    s = re.sub(r"<br\s*/?>|</(p|div|li|h[1-6]|tr)>", "\n", s, flags=re.I)
-    s = re.sub(r"<[^>]+>", " ", s)
-    s = html.unescape(s)
+
+    # O QUE VEM DEPOIS DE </html> NAO E A PAGINA: o navegador para ali.
+    corte = re.search(r"</html\s*>", s, re.I)
+    if corte:
+        s = s[:corte.end()]
+
+    pr = SoOTexto()
+    try:
+        pr.feed(s)
+        pr.close()
+        s = pr.resultado()
+    except Exception:                    # noqa: BLE001 — HTML quebrado existe
+        # Se o analisador engasgar, volta para a forma antiga E DIZ, em vez de
+        # devolver texto que ninguem sabe de onde veio.
+        s = re.sub(r"<!--.*?-->", " ", s, flags=re.S)
+        s = re.sub(r"<(script|style|noscript|svg|template)\b.*?</\1>", " ", s,
+                   flags=re.S | re.I)
+        s = re.sub(r"<[^>]+>", " ", s)
+        s = html.unescape(s)
+        s = "[extracao por expressao regular: o analisador de HTML falhou]\n" + s
     # Erro de PHP vazando para dentro da pagina. O site de um senador imprime
     # "Warning: Use of undefined constant..." no meio do conteudo, e isso entraria
     # na coleta como se fosse texto da candidatura.
@@ -275,12 +335,16 @@ def diagnostico(t: str) -> str | None:
     return None
 
 
-def coletar_um(c: dict, uf: str, fora: dict | None = None) -> dict:
+def coletar_um(c: dict, uf: str, fora: dict | None = None,
+               url_alvo: str | None = None) -> dict:
     """`fora` vem de dados/sites-fora-do-registro.json: site que existe mas que a
     candidatura nao declarou ao TSE. Muda a PROCEDENCIA, e nao o selo — continua
     roxo. O registro guarda a prova de atribuicao junto com o texto, porque quem
     ler daqui a um ano tem de poder refazer a conferencia sem confiar em nos."""
-    url = fora["url"] if fora else (c.get("contato") or {}).get("site")
+    # `url_alvo` diz QUAL dos enderecos declarados esta sendo coletado agora. Sem
+    # ele a funcao voltava sempre ao campo `site`, e a candidatura com quatro
+    # enderecos declarados tinha o mesmo lido quatro vezes.
+    url = url_alvo or (fora["url"] if fora else (c.get("contato") or {}).get("site"))
     reg = {
         "id_candidatura": c["id_candidatura"],
         "uf": uf,
@@ -408,6 +472,62 @@ def coletar_um(c: dict, uf: str, fora: dict | None = None) -> dict:
     return reg
 
 
+# ---------------------------------------------------- o que conta como SITE
+# NAO E REDE SOCIAL, NAO E AGREGADOR, NAO E LOJA DE MIDIA. O registro no TSE
+# guarda tudo junto no mesmo campo de redes, e ali aparecem endereco de site,
+# perfil de rede, encurtador de link, canal de audio, galeria de foto, grupo de
+# WhatsApp e ate o perfil institucional do senador no site do Senado.
+#
+# So os primeiros interessam a este projeto: o que se procura e material de
+# campanha publicado pela candidatura em pagina propria. Perfil de rede social o
+# projeto nao coleta (e a decisao esta registrada em cada escopo de busca);
+# agregador de link nao tem conteudo proprio; e o perfil no site do Senado e
+# pagina do Senado, nao da candidatura.
+NAO_E_SITE = (
+    "instagram.", "facebook.", "fb.com", "fb.me", "tiktok.", "twitter.", "x.com",
+    "youtube.", "youtu.be", "threads.", "linkedin.", "kwai.", "bsky.app",
+    "gettr.com", "rumble.com", "truthsocial.", "cos.tv", "pinterest.",
+    "linktr.ee", "lnk.bio", "linkr.bio", "beacons.", "bio.link", "twb.nz",
+    "twibbonize.", "sticker.ly", "giphy.com", "flickr.", "spotify.",
+    "soundcloud.", "deezer.", "tidal.com", "music.apple.", "music.amazon.",
+    "suamusica.", "wa.me", "whatsapp.", "t.me", "telegram.",
+    "senado.leg.br", "camara.leg.br",
+)
+
+
+def e_site(url: str) -> bool:
+    u = (url or "").strip().lower()
+    if not u.startswith(("http://", "https://")) and "." not in u:
+        return False
+    return not any(m in u for m in NAO_E_SITE)
+
+
+def sites_declarados(c: dict) -> list[str]:
+    """Todos os enderecos de SITE que a candidatura declarou ao TSE.
+
+    POR QUE ISTO FALTAVA. O coletor lia so `contato.site`, um endereco por
+    candidatura, e o registro no TSE traz varios. No acervo havia 179 URLs
+    declaradas que nao eram rede social e que nunca foram lidas — entre elas o
+    site de mandato do Eduardo Braga (eduardobragaam.com.br, 4.627 caracteres de
+    conteudo), enquanto o coletor lia br319ja.com.br, um site de causa unica
+    sobre a BR-319 que por acaso estava no campo `site`.
+    E material que a propria candidatura declarou no registro: a atribuicao, que
+    e a razao de o projeto seguir so endereco declarado, esta garantida.
+    """
+    ct = c.get("contato") or {}
+    vistos, saida = set(), []
+    for u in ([ct.get("site")] + list(ct.get("redes") or [])):
+        if not u or not e_site(u):
+            continue
+        # http/https e barra final nao fazem dois sites
+        chave = u.strip().lower().rstrip("/").split("://", 1)[-1]
+        if chave in vistos:
+            continue
+        vistos.add(chave)
+        saida.append(u.strip())
+    return saida
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--uf")
@@ -448,17 +568,18 @@ def main() -> None:
             achados = [f for f in fora_por_id.get(c["id_candidatura"], [])
                        if f["uf"] == uf]
             for f in achados:
-                alvos.append((uf, c, f))
-            if not achados and (c.get("contato") or {}).get("site"):
-                alvos.append((uf, c, None))
+                alvos.append((uf, c, f, f["url"]))
+            # TODOS os enderecos declarados, e nao so o primeiro. Um site
+            # achado fora do registro nao substitui os declarados: some.
+            for u in sites_declarados(c):
+                alvos.append((uf, c, None, u))
     if a.limite:
         alvos = alvos[:a.limite]
 
     print(f"{len(alvos)} site(s) a coletar, {PAUSA}s entre requisicoes, "
           f"ate {PAGINAS_POR_SITE} paginas por site.")
     if not a.gravar:
-        for uf, c, f in alvos:
-            u = f["url"] if f else c["contato"]["site"]
+        for uf, c, f, u in alvos:
             print(f"  {uf} {c['pessoa']['nome_urna'][:24]:24} {u[:52]}"
                   f"{'  [fora do registro]' if f else ''}")
         print("\n(sem --gravar: nada foi baixado nem escrito)")
@@ -466,9 +587,9 @@ def main() -> None:
 
     por_uf: dict[str, list] = collections.defaultdict(list)
     resumo: collections.Counter = collections.Counter()
-    for i, (uf, c, f) in enumerate(alvos, 1):
+    for i, (uf, c, f, u) in enumerate(alvos, 1):
         print(f"[{i}/{len(alvos)}] {uf} {c['pessoa']['nome_urna'][:22]:22}", end="  ", flush=True)
-        reg = coletar_um(c, uf, f)
+        reg = coletar_um(c, uf, f, u)
         por_uf[uf].append(reg)
         if reg.get("_indisponivel"):
             print("indisponivel"); resumo["indisponivel"] += 1
