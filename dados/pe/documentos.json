@@ -8,6 +8,8 @@
    "url": "https://mendoncafilho.com.br/propostas/",
    "publicado_em": null,
    "consultado_em": "2026-08-27",
+   "acessivel": false,
+   "motivo_inacessivel": "HTTP 404 em 2026-09-18. O site foi refeito entre a coleta e esta data: a home passou de \"Mendonça Filho – Deputado Federal\" para \"Mendonça Senador 222 – A voz de Pernambuco no Senado\", e /propostas/ deixou de existir. A pagina de noticia sobre o decreto de redes sociais, que sustentava a oitava posicao, tambem responde 404. Ninguem consegue mais abrir esta fonte para conferir.",
    "_origem": "Endereco declarado pela propria candidatura no registro no TSE (base de redes sociais 2026)."
   },
   {
